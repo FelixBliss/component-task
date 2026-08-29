@@ -1,18 +1,48 @@
 import React, { useEffect, useState } from "react";
 
 const procedureCategories = [
-  { icon: "🩺", name: "General Nursing (RGN)" },
-  { icon: "🤰", name: "Midwifery (RM)" },
-  { icon: "🧠", name: "Community Mental Health Nursing (RCMN)" },
-  { icon: "🧠", name: "Mental Health Nursing (RMN)" },
-  { icon: "🌍", name: "Public Health Nursing (PHN)" },
-  { icon: "👶", name: "Paediatric Nursing (PAED)" },
-  { icon: "❤️", name: "Pain Management (PM)" }
+  {
+    icon: "🩺",
+    name: "General Nursing (RGN)",
+    description: "Registered General Nursing procedures",
+  },
+  {
+    icon: "🤰",
+    name: "Midwifery (RM)",
+    description: "Midwifery procedures",
+  },
+  {
+    icon: "🧠",
+    name: "Community Mental Health Nursing (RCMN)",
+    description: "Community mental health procedures",
+  },
+  {
+    icon: "🧠",
+    name: "Mental Health Nursing (RMN)",
+    description: "Mental health nursing procedures",
+  },
+  {
+    icon: "🌍",
+    name: "Public Health Nursing (PHN)",
+    description: "Public health nursing procedures",
+  },
+  {
+    icon: "👶",
+    name: "Paediatric Nursing (PAED)",
+    description: "Paediatric nursing procedures",
+  },
+  {
+    icon: "❤️",
+    name: "Pain Management (PM)",
+    description: "Pain management procedures",
+  },
 ];
+
+type Tab = "home" | "procedures" | "about" | "settings" | "credits";
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
-  const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState<Tab>("home");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -25,44 +55,45 @@ export default function App() {
   if (showSplash) {
     return (
       <div className="splash-screen">
-        <div className="splash-circle splash-circle-one"></div>
-        <div className="splash-circle splash-circle-two"></div>
+        <div className="splash-decoration splash-decoration-one" />
+        <div className="splash-decoration splash-decoration-two" />
 
         <div className="splash-content">
-          <div className="medical-symbol">✚</div>
-
-          <div className="splash-title">
-            NURSING
-            <br />
-            <span>COMPONENT TASK</span>
+          <div className="splash-logo">
+            <span>✚</span>
           </div>
+
+          <h1 className="splash-title">
+            NURSING
+            <strong>COMPONENT TASK</strong>
+          </h1>
 
           <p className="splash-subtitle">
             Nursing procedures & clinical learning
           </p>
 
-          <div className="nursing-illustration">
-            <div className="nurse-head">👩🏾‍⚕️</div>
-
-            <div className="procedure-card card-one">
-              <span>🩺</span>
+          <div className="splash-visual">
+            <div className="floating-procedure procedure-one">
+              🩺
               <small>Assessment</small>
             </div>
 
-            <div className="procedure-card card-two">
-              <span>💉</span>
+            <div className="nurse-illustration">👩🏾‍⚕️</div>
+
+            <div className="floating-procedure procedure-two">
+              💉
               <small>Medication</small>
             </div>
 
-            <div className="procedure-card card-three">
-              <span>🩹</span>
+            <div className="floating-procedure procedure-three">
+              🩹
               <small>Wound Care</small>
             </div>
           </div>
 
-          <div className="loading-area">
-            <div className="loading-bar">
-              <div className="loading-progress"></div>
+          <div className="splash-loading">
+            <div className="loading-track">
+              <div className="loading-progress" />
             </div>
 
             <p>Preparing your clinical learning experience...</p>
@@ -72,67 +103,137 @@ export default function App() {
     );
   }
 
+  const navigate = (tab: Tab) => {
+    setActiveTab(tab);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="app">
       <header className="header">
         <div className="header-inner">
-          <div className="top-row">
+          <div className="brand">
+            <div className="brand-icon">🩺</div>
             <div>
-              <div className="logo">🩺 Nursing Component Task</div>
+              <div className="logo">Nursing Component Task</div>
               <div className="tagline">
                 Nursing procedures & clinical learning
               </div>
             </div>
-
-            <button
-              className="credits-badge"
-              onClick={() => setActiveTab("credits")}
-              aria-label="Open credits"
-            >
-              ⭐ 25
-            </button>
           </div>
+
+          <button
+            className="credits-badge"
+            onClick={() => navigate("credits")}
+            aria-label="View credits"
+          >
+            <span>⭐</span>
+            <strong>25</strong>
+            <small>Credits</small>
+          </button>
         </div>
       </header>
 
       <main className="content">
-
         {activeTab === "home" && (
           <>
-            <section className="hero">
+            <section className="home-welcome">
+              <span className="welcome-label">WELCOME 👋</span>
               <h1>Learn. Practice. Care.</h1>
-
               <p>
-                Explore nursing procedures and clinical learning resources
-                designed to support your nursing practice.
+                Your practical companion for learning and reviewing nursing
+                procedures and clinical skills.
               </p>
-
-              <input
-                className="search"
-                type="search"
-                placeholder="Search nursing procedures..."
-                aria-label="Search nursing procedures"
-              />
             </section>
 
-            <section>
+            <section className="search-section">
+              <label htmlFor="procedure-search">
+                What procedure are you looking for?
+              </label>
+
+              <div className="search-wrapper">
+                <span className="search-icon">🔍</span>
+                <input
+                  id="procedure-search"
+                  className="search"
+                  type="search"
+                  placeholder="Search nursing procedures..."
+                />
+              </div>
+            </section>
+
+            <section className="featured-procedure">
+              <div className="featured-icon">🩺</div>
+
+              <div className="featured-content">
+                <span className="featured-label">PRACTICAL LEARNING</span>
+                <h2>Nursing Procedures</h2>
+                <p>
+                  Explore nursing procedures organized according to the
+                  available N&MC procedure manuals.
+                </p>
+
+                <button
+                  className="primary-button"
+                  onClick={() => navigate("procedures")}
+                >
+                  Browse Procedures
+                  <span>→</span>
+                </button>
+              </div>
+            </section>
+
+            <section className="quick-section">
               <h2 className="section-title">Quick Access</h2>
 
-              <div className="card-grid">
-                <div
-                  className="card"
-                  onClick={() => setActiveTab("procedures")}
+              <div className="quick-grid">
+                <button
+                  className="quick-card"
+                  onClick={() => navigate("procedures")}
                 >
-                  <div className="category-icon">🩺</div>
-                  <h3>Procedures</h3>
-                  <p>Browse nursing procedures and clinical skills.</p>
-                </div>
+                  <span className="quick-icon">📋</span>
+                  <span className="quick-text">
+                    <strong>All Procedures</strong>
+                    <small>Browse the procedure library</small>
+                  </span>
+                  <span className="arrow">›</span>
+                </button>
 
-                <div className="card">
-                  <div className="category-icon">⭐</div>
-                  <h3>Credits</h3>
-                  <p>View your available credits.</p>
-                </div>
+                <button
+                  className="quick-card"
+                  onClick={() => navigate("credits")}
+                >
+                  <span className="quick-icon">⭐</span>
+                  <span className="quick-text">
+                    <strong>My Credits</strong>
+                    <small>View your available credits</small>
+                  </span>
+                  <span className="arrow">›</span>
+                </button>
+              </div>
+            </section>
+
+            <section className="recent-section">
+              <h2 className="section-title">Recently Viewed</h2>
+
+              <div className="empty-state">
+                <div className="empty-icon">🕘</div>
+                <h3>No procedures viewed yet</h3>
+                <p>
+                  Procedures you open will appear here for quick access.
+                </p>
+              </div>
+            </section>
+
+            <section className="nmc-info">
+              <div className="nmc-icon">✓</div>
+
+              <div>
+                <h3>N&MC Procedure Resources</h3>
+                <p>
+                  Procedure resources are organized using the relevant
+                  Nursing and Midwifery Council procedure manuals.
+                </p>
               </div>
             </section>
           </>
@@ -140,19 +241,39 @@ export default function App() {
 
         {activeTab === "procedures" && (
           <section>
-            <h1 className="page-title">Nursing Procedures</h1>
+            <div className="page-heading">
+              <span className="page-kicker">CLINICAL SKILLS</span>
+              <h1 className="page-title">Nursing Procedures</h1>
+              <p className="page-description">
+                Select a category to explore nursing procedures.
+              </p>
+            </div>
 
-            <p className="page-description">
-              Select a category to explore nursing procedures.
-            </p>
+            <div className="procedure-search">
+              <span>🔍</span>
+              <input
+                type="search"
+                placeholder="Search within procedures..."
+              />
+            </div>
 
-            <div className="card-grid">
+            <h2 className="section-title">Categories</h2>
+
+            <div className="category-list">
               {procedureCategories.map((category) => (
-                <div className="card procedure-category" key={category.name}>
-                  <div className="category-icon">{category.icon}</div>
-                  <h3>{category.name}</h3>
-                  <p>View procedures →</p>
-                </div>
+                <button
+                  className="category-card"
+                  key={category.name}
+                >
+                  <span className="category-icon">{category.icon}</span>
+
+                  <span className="category-content">
+                    <strong>{category.name}</strong>
+                    <small>{category.description}</small>
+                  </span>
+
+                  <span className="category-arrow">›</span>
+                </button>
               ))}
             </div>
           </section>
@@ -160,108 +281,187 @@ export default function App() {
 
         {activeTab === "credits" && (
           <section>
-            <h1 className="page-title">Credits</h1>
+            <div className="page-heading">
+              <span className="page-kicker">YOUR ACCOUNT</span>
+              <h1 className="page-title">Credits</h1>
+              <p className="page-description">
+                Manage and use your Nursing Component Task credits.
+              </p>
+            </div>
 
-            <div className="credits-card">
-              <div className="credits-star">⭐</div>
-              <div className="credits-number">25</div>
-              <p>Available Credits</p>
+            <div className="credits-display">
+              <div className="large-star">⭐</div>
+              <strong>25</strong>
+              <span>Available Credits</span>
+            </div>
+
+            <div className="info-card">
+              <h3>How credits work</h3>
+              <p>
+                Credits will be used for selected premium features and
+                learning activities as they become available.
+              </p>
             </div>
           </section>
         )}
 
         {activeTab === "about" && (
           <section>
-            <h1 className="page-title">About</h1>
+            <div className="page-heading">
+              <span className="page-kicker">ABOUT THE APP</span>
+              <h1 className="page-title">About</h1>
+            </div>
 
-            <div className="card about-card">
-              <div className="category-icon">🩺</div>
+            <div className="about-card">
+              <div className="about-logo">🩺</div>
 
-              <h3>Nursing Component Task</h3>
+              <h2>Nursing Component Task</h2>
 
               <p>
-                A nursing learning application designed to help nurses and
-                nursing students study clinical procedures and strengthen
-                practical knowledge.
+                A practical learning app designed to help nursing students
+                and nurses review nursing procedures and clinical skills
+                through concise procedure guides and videos.
               </p>
 
-              <div className="about-info">
-                <strong>Version</strong>
-                <span>1.0</span>
+              <div className="about-details">
+                <div>
+                  <span>Version</span>
+                  <strong>3.0</strong>
+                </div>
+
+                <div>
+                  <span>Developer</span>
+                  <strong>Bliss Innovation</strong>
+                </div>
+
+                <div>
+                  <span>Developed by</span>
+                  <strong>Felix Nuakoh</strong>
+                </div>
               </div>
 
-              <div className="about-info">
-                <strong>Platform</strong>
-                <span>Web / PWA</span>
+              <div className="nmc-credit">
+                <strong>Credit</strong>
+                <p>
+                  Nursing procedures are based on the Nursing and Midwifery
+                  Council (N&MC) procedure manuals.
+                </p>
               </div>
+
+              <div className="developer-contact">
+                <h3>Have feedback or questions?</h3>
+                <p>I'd love to hear from you.</p>
+
+                <div className="contact-buttons">
+                  <a
+                    href="mailto:felixbliss1@gmail.com"
+                    className="contact-button"
+                  >
+                    📧 Email Developer
+                  </a>
+
+                  <a
+                    href="https://wa.me/233541743817"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-button whatsapp-button"
+                  >
+                    💬 WhatsApp Developer
+                  </a>
+                </div>
+              </div>
+
+              <p className="about-disclaimer">
+                For educational purposes. Always follow current N&MC
+                guidance and your institution's approved protocols.
+              </p>
             </div>
           </section>
         )}
 
         {activeTab === "settings" && (
           <section>
-            <h1 className="page-title">Settings</h1>
-
-            <div className="card">
-              <h3>App Settings</h3>
-              <p>
-                Settings and preferences will be available here.
+            <div className="page-heading">
+              <span className="page-kicker">PERSONALIZE</span>
+              <h1 className="page-title">Settings</h1>
+              <p className="page-description">
+                Manage your app preferences.
               </p>
+            </div>
+
+            <div className="settings-list">
+              <div className="setting-item">
+                <div>
+                  <strong>Appearance</strong>
+                  <small>Choose how the app looks</small>
+                </div>
+                <span>Light</span>
+              </div>
+
+              <div className="setting-item">
+                <div>
+                  <strong>Notifications</strong>
+                  <small>Manage learning reminders</small>
+                </div>
+                <span>Off</span>
+              </div>
+
+              <div className="setting-item">
+                <div>
+                  <strong>About</strong>
+                  <small>App information and developer</small>
+                </div>
+
+                <button onClick={() => navigate("about")}>View →</button>
+              </div>
             </div>
           </section>
         )}
-
       </main>
 
       <nav className="bottom-nav">
         <div className="bottom-nav-inner">
-
           <button
             className={`nav-button ${
               activeTab === "home" ? "active" : ""
             }`}
-            onClick={() => setActiveTab("home")}
+            onClick={() => navigate("home")}
           >
-            🏠
-            <br />
-            Home
+            <span>🏠</span>
+            <small>Home</small>
           </button>
 
           <button
             className={`nav-button ${
               activeTab === "procedures" ? "active" : ""
             }`}
-            onClick={() => setActiveTab("procedures")}
+            onClick={() => navigate("procedures")}
           >
-            🩺
-            <br />
-            Procedures
+            <span>🩺</span>
+            <small>Procedures</small>
           </button>
 
           <button
             className={`nav-button ${
               activeTab === "about" ? "active" : ""
             }`}
-            onClick={() => setActiveTab("about")}
+            onClick={() => navigate("about")}
           >
-            ℹ️
-            <br />
-            About
+            <span>ℹ️</span>
+            <small>About</small>
           </button>
 
           <button
             className={`nav-button ${
               activeTab === "settings" ? "active" : ""
             }`}
-            onClick={() => setActiveTab("settings")}
+            onClick={() => navigate("settings")}
           >
-            ⚙️
-            <br />
-            Settings
+            <span>⚙️</span>
+            <small>Settings</small>
           </button>
-
         </div>
       </nav>
     </div>
   );
-            }
+              }
