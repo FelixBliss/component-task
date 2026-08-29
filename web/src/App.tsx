@@ -1,7 +1,7 @@
 import Settings from "./Settings";
 import ProcedureList from "./components/ProcedureList";
 import ProcedureDetails from "./components/ProcedureDetails";
-import type { Procedure } from "./data/procedures";
+import { procedures, type Procedure } from "./data/procedures";
 import React, { useEffect, useState } from "react";
 
 type Tab = "home" | "procedures" | "about" | "settings" | "credits";
@@ -53,8 +53,13 @@ const procedureCategories: Category[] = [
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
   const [activeTab, setActiveTab] = useState<Tab>("home");
+
   const [selectedCategory, setSelectedCategory] =
     useState<Category | null>(null);
+
+  const [selectedProcedure, setSelectedProcedure] =
+    useState<Procedure | null>(null);
+
   const [procedureSearch, setProcedureSearch] = useState("");
 
   useEffect(() => {
@@ -68,6 +73,7 @@ export default function App() {
   const navigate = (tab: Tab) => {
     setActiveTab(tab);
     setSelectedCategory(null);
+    setSelectedProcedure(null);
     setProcedureSearch("");
 
     window.scrollTo({
@@ -78,7 +84,17 @@ export default function App() {
 
   const openCategory = (category: Category) => {
     setSelectedCategory(category);
+    setSelectedProcedure(null);
     setProcedureSearch("");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const openProcedure = (procedure: Procedure) => {
+    setSelectedProcedure(procedure);
 
     window.scrollTo({
       top: 0,
@@ -88,6 +104,7 @@ export default function App() {
 
   const backToCategories = () => {
     setSelectedCategory(null);
+    setSelectedProcedure(null);
     setProcedureSearch("");
 
     window.scrollTo({
@@ -331,6 +348,7 @@ export default function App() {
 
               <div>
                 <strong>Choose a category</strong>
+
                 <small>
                   Select your programme to view its procedures.
                 </small>
@@ -389,81 +407,68 @@ export default function App() {
 
         {/* ================= CATEGORY PROCEDURES ================= */}
 
-        {activeTab === "procedures" && selectedCategory && (
-          <section>
-            <button
-              className="back-button"
-              onClick={backToCategories}
-            >
-              ← All Categories
-            </button>
+        {activeTab === "procedures" &&
+          selectedCategory &&
+          !selectedProcedure && (
+            <section>
+              <button
+                className="back-button"
+                onClick={backToCategories}
+              >
+                ← All Categories
+              </button>
 
-            <div className="category-header">
-              <div className="category-header-icon">
-                {selectedCategory.icon}
+              <div className="category-header">
+                <div className="category-header-icon">
+                  {selectedCategory.icon}
+                </div>
+
+                <div>
+                  <span className="page-kicker">
+                    PROCEDURE LIBRARY
+                  </span>
+
+                  <h1 className="page-title">
+                    {selectedCategory.name}
+                  </h1>
+
+                  <p className="page-description">
+                    {selectedCategory.description}
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <span className="page-kicker">
-                  PROCEDURE LIBRARY
-                </span>
+              <div className="procedure-search">
+                <span>🔍</span>
 
-                <h1 className="page-title">
-                  {selectedCategory.name}
-                </h1>
-
-                <p className="page-description">
-                  {selectedCategory.description}
-                </p>
+                <input
+                  type="search"
+                  placeholder="Search procedures..."
+                  value={procedureSearch}
+                  onChange={(e) =>
+                    setProcedureSearch(e.target.value)
+                  }
+                />
               </div>
-            </div>
 
-            <div className="procedure-search">
-              <span>🔍</span>
-
-              <input
-                type="search"
-                placeholder="Search procedures..."
-                value={procedureSearch}
-                onChange={(e) =>
-                  setProcedureSearch(e.target.value)
-                }
+              <ProcedureList
+                category={selectedCategory.name}
+                search={procedureSearch}
+                onSelectProcedure={openProcedure}
               />
-            </div>
+            </section>
+          )}
 
-            <div className="procedure-count">
-              <strong>Procedure Library</strong>
+        {/* ================= PROCEDURE DETAILS ================= */}
 
-              <span>Ready for procedures</span>
-            </div>
-
-            <div className="empty-procedure-library">
-              <div className="empty-library-icon">
-                📋
-              </div>
-
-              <h2>Procedures coming next</h2>
-
-              <p>
-                The procedure library for{" "}
-                <strong>
-                  {selectedCategory.name}
-                </strong>{" "}
-                will appear here.
-              </p>
-
-              <div className="library-flow">
-                <span>Procedure</span>
-                <b>→</b>
-                <span>Details</span>
-                <b>→</b>
-                <span>Video</span>
-                <b>→</b>
-                <span>Quiz</span>
-              </div>
-            </div>
-          </section>
-        )}
+        {activeTab === "procedures" &&
+          selectedCategory &&
+          selectedProcedure && (
+            <ProcedureDetails
+              procedure={selectedProcedure}
+              onBack={() => setSelectedProcedure(null)}
+            />
+          )}
 
         {/* ================= CREDITS ================= */}
 
@@ -601,10 +606,10 @@ export default function App() {
         {/* ================= SETTINGS ================= */}
 
         {activeTab === "settings" && (
-  <Settings
-    onAbout={() => navigate("about")}
-  />
-)}
+          <Settings
+            onAbout={() => navigate("about")}
+          />
+        )}
       </main>
 
       {/* ================= BOTTOM NAV ================= */}
@@ -656,4 +661,4 @@ export default function App() {
       </nav>
     </div>
   );
-        }
+            }
