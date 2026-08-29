@@ -217,28 +217,6 @@ export default function App() {
               </p>
             </section>
 
-            <section className="search-section">
-              <label htmlFor="home-search">
-                What procedure are you looking for?
-              </label>
-
-              <div className="search-wrapper">
-                <span className="search-icon">
-                  🔍
-                </span>
-
-                <input
-                  id="home-search"
-                  className="search"
-                  type="search"
-                  placeholder="Search nursing procedures..."
-                  onFocus={() =>
-                    navigate("procedures")
-                  }
-                />
-              </div>
-            </section>
-
             <section className="featured-procedure">
               <div className="featured-icon">
                 🩺
@@ -765,4 +743,4 @@ export default function App() {
       </nav>
     </div>
   );
-}
+                  }
