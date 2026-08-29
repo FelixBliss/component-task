@@ -1,3 +1,4 @@
+import Settings from "./Settings";
 import React, { useEffect, useState } from "react";
 
 type Tab = "home" | "procedures" | "about" | "settings" | "credits";
@@ -597,64 +598,10 @@ export default function App() {
         {/* ================= SETTINGS ================= */}
 
         {activeTab === "settings" && (
-          <section>
-            <div className="page-heading">
-              <span className="page-kicker">
-                PERSONALIZE
-              </span>
-
-              <h1 className="page-title">
-                Settings
-              </h1>
-
-              <p className="page-description">
-                Manage your app preferences.
-              </p>
-            </div>
-
-            <div className="settings-list">
-              <div className="setting-item">
-                <div>
-                  <strong>Appearance</strong>
-
-                  <small>
-                    Choose how the app looks
-                  </small>
-                </div>
-
-                <span>Light</span>
-              </div>
-
-              <div className="setting-item">
-                <div>
-                  <strong>Notifications</strong>
-
-                  <small>
-                    Manage learning reminders
-                  </small>
-                </div>
-
-                <span>Off</span>
-              </div>
-
-              <div className="setting-item">
-                <div>
-                  <strong>About</strong>
-
-                  <small>
-                    App information and developer
-                  </small>
-                </div>
-
-                <button
-                  onClick={() => navigate("about")}
-                >
-                  View →
-                </button>
-              </div>
-            </div>
-          </section>
-        )}
+  <Settings
+    onAbout={() => navigate("about")}
+  />
+)}
       </main>
 
       {/* ================= BOTTOM NAV ================= */}
