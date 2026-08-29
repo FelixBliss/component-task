@@ -1545,3 +1545,14 @@ html.dark-mode .procedure-card {
 html.dark-mode .procedure-card-content strong {
   color: #ffffff;
   }
+.procedure-library {
+  width: 100%;
+}
+
+.procedure-library .procedure-search {
+  margin-bottom: 12px;
+}
+
+html.dark-mode .procedure-library .procedure-search {
+  background: #172019;
+}
