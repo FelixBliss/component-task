@@ -1,4 +1,4 @@
-import type { Procedure } from "../procedures";
+import type { Procedure } from "../procedureTypes";
 
 export const rgnProcedures: Procedure[] = [
   {
