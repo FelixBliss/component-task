@@ -1462,3 +1462,86 @@ html.dark-mode .info-card h3,
 html.dark-mode .nmc-info h3 {
   color: #ffffff;
 }
+/* =========================
+   PROCEDURE CARD
+========================= */
+
+.procedure-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  background: #ffffff;
+  text-align: left;
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.procedure-card:active {
+  transform: scale(0.98);
+}
+
+.procedure-card:hover {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.procedure-card-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: var(--light-green);
+  font-size: 21px;
+}
+
+.procedure-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.procedure-card-category {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.procedure-card-content strong {
+  display: block;
+  color: var(--dark-green);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.procedure-card-content small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.procedure-card-arrow {
+  flex-shrink: 0;
+  color: var(--green);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+html.dark-mode .procedure-card {
+  background: #172019;
+}
+
+html.dark-mode .procedure-card-content strong {
+  color: #ffffff;
+  }
