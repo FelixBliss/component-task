@@ -1,4 +1,7 @@
 import Settings from "./Settings";
+import ProcedureList from "./components/ProcedureList";
+import ProcedureDetails from "./components/ProcedureDetails";
+import type { Procedure } from "./data/procedures";
 import React, { useEffect, useState } from "react";
 
 type Tab = "home" | "procedures" | "about" | "settings" | "credits";
