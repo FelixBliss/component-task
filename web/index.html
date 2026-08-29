@@ -3,9 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0f766e" />
+
+  <meta name="theme-color" content="#008A4B" />
+  <meta name="description" content="Nursing Component Task - Nursing procedures, learning resources and clinical skills." />
+
+  <link rel="manifest" href="/manifest.json" />
+
   <title>Nursing Component Task</title>
+
+  <style>
+    :root {
+      --primary-green: #008A4B;
+      --dark-green: #006B3C;
+      --light-green: #E8F5EE;
+      --background: #FFFFFF;
+      --text: #1F2937;
+      --secondary-text: #6B7280;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    #root {
+      min-height: 100vh;
+    }
+  </style>
 </head>
+
 <body>
   <div id="root"></div>
 </body>
