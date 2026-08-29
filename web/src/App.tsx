@@ -139,7 +139,9 @@ export default function App() {
               <small>Assessment</small>
             </div>
 
-            <div className="nurse-illustration">👩🏾‍⚕️</div>
+            <div className="nurse-illustration">
+              👩🏾‍⚕️
+            </div>
 
             <div className="floating-procedure procedure-two">
               💉
@@ -157,7 +159,9 @@ export default function App() {
               <div className="loading-progress" />
             </div>
 
-            <p>Preparing your clinical learning experience...</p>
+            <p>
+              Preparing your clinical learning experience...
+            </p>
           </div>
         </div>
       </div>
@@ -172,7 +176,10 @@ export default function App() {
             <div className="brand-icon">🩺</div>
 
             <div>
-              <div className="logo">Nursing Component Task</div>
+              <div className="logo">
+                Nursing Component Task
+              </div>
+
               <div className="tagline">
                 Nursing procedures & clinical learning
               </div>
@@ -197,13 +204,16 @@ export default function App() {
         {activeTab === "home" && (
           <>
             <section className="home-welcome">
-              <span className="welcome-label">WELCOME 👋</span>
+              <span className="welcome-label">
+                WELCOME 👋
+              </span>
 
               <h1>Learn. Practice. Care.</h1>
 
               <p>
-                Your practical companion for learning and reviewing nursing
-                procedures and clinical skills.
+                Your practical companion for learning and
+                reviewing nursing procedures and clinical
+                skills.
               </p>
             </section>
 
@@ -213,20 +223,26 @@ export default function App() {
               </label>
 
               <div className="search-wrapper">
-                <span className="search-icon">🔍</span>
+                <span className="search-icon">
+                  🔍
+                </span>
 
                 <input
                   id="home-search"
                   className="search"
                   type="search"
                   placeholder="Search nursing procedures..."
-                  onFocus={() => navigate("procedures")}
+                  onFocus={() =>
+                    navigate("procedures")
+                  }
                 />
               </div>
             </section>
 
             <section className="featured-procedure">
-              <div className="featured-icon">🩺</div>
+              <div className="featured-icon">
+                🩺
+              </div>
 
               <div className="featured-content">
                 <span className="featured-label">
@@ -236,13 +252,15 @@ export default function App() {
                 <h2>Nursing Procedures</h2>
 
                 <p>
-                  Explore nursing procedures organized into clear
-                  professional categories.
+                  Explore nursing procedures organized
+                  into clear professional categories.
                 </p>
 
                 <button
                   className="primary-button"
-                  onClick={() => navigate("procedures")}
+                  onClick={() =>
+                    navigate("procedures")
+                  }
                 >
                   Browse Procedures
                   <span>→</span>
@@ -251,62 +269,98 @@ export default function App() {
             </section>
 
             <section className="quick-section">
-              <h2 className="section-title">Quick Access</h2>
+              <h2 className="section-title">
+                Quick Access
+              </h2>
 
               <div className="quick-grid">
                 <button
                   className="quick-card"
-                  onClick={() => navigate("procedures")}
+                  onClick={() =>
+                    navigate("procedures")
+                  }
                 >
-                  <span className="quick-icon">📋</span>
-
-                  <span className="quick-text">
-                    <strong>All Procedures</strong>
-                    <small>Browse the procedure library</small>
+                  <span className="quick-icon">
+                    📋
                   </span>
 
-                  <span className="arrow">›</span>
+                  <span className="quick-text">
+                    <strong>
+                      All Procedures
+                    </strong>
+
+                    <small>
+                      Browse the procedure library
+                    </small>
+                  </span>
+
+                  <span className="arrow">
+                    ›
+                  </span>
                 </button>
 
                 <button
                   className="quick-card"
-                  onClick={() => navigate("credits")}
+                  onClick={() =>
+                    navigate("credits")
+                  }
                 >
-                  <span className="quick-icon">⭐</span>
-
-                  <span className="quick-text">
-                    <strong>My Credits</strong>
-                    <small>View your available credits</small>
+                  <span className="quick-icon">
+                    ⭐
                   </span>
 
-                  <span className="arrow">›</span>
+                  <span className="quick-text">
+                    <strong>
+                      My Credits
+                    </strong>
+
+                    <small>
+                      View your available credits
+                    </small>
+                  </span>
+
+                  <span className="arrow">
+                    ›
+                  </span>
                 </button>
               </div>
             </section>
 
             <section className="recent-section">
-              <h2 className="section-title">Recently Viewed</h2>
+              <h2 className="section-title">
+                Recently Viewed
+              </h2>
 
               <div className="empty-state">
-                <div className="empty-icon">🕘</div>
+                <div className="empty-icon">
+                  🕘
+                </div>
 
-                <h3>No procedures viewed yet</h3>
+                <h3>
+                  No procedures viewed yet
+                </h3>
 
                 <p>
-                  Procedures you open will appear here for quick access.
+                  Procedures you open will appear
+                  here for quick access.
                 </p>
               </div>
             </section>
 
             <section className="nmc-info">
-              <div className="nmc-icon">✓</div>
+              <div className="nmc-icon">
+                ✓
+              </div>
 
               <div>
-                <h3>N&MC Procedure Resources</h3>
+                <h3>
+                  N&MC Procedure Resources
+                </h3>
 
                 <p>
-                  Procedure resources are organized using the relevant
-                  Nursing and Midwifery Council procedure manuals.
+                  Procedure resources are organized
+                  using the relevant Nursing and
+                  Midwifery Council procedure manuals.
                 </p>
               </div>
             </section>
@@ -315,95 +369,116 @@ export default function App() {
 
         {/* ================= PROCEDURES ================= */}
 
-        {activeTab === "procedures" && !selectedCategory && (
-          <section>
-            <div className="page-heading">
-              <span className="page-kicker">CLINICAL SKILLS</span>
+        {activeTab === "procedures" &&
+          !selectedCategory && (
+            <section>
+              <div className="page-heading">
+                <span className="page-kicker">
+                  CLINICAL SKILLS
+                </span>
 
-              <h1 className="page-title">
-                Nursing Procedures
-              </h1>
+                <h1 className="page-title">
+                  Nursing Procedures
+                </h1>
 
-              <p className="page-description">
-                Choose your nursing programme to explore its procedure
-                library.
-              </p>
-            </div>
-
-            <div className="procedure-search">
-              <span>🔍</span>
-
-              <input
-                type="search"
-                placeholder="Search categories..."
-                value={procedureSearch}
-                onChange={(e) =>
-                  setProcedureSearch(e.target.value)
-                }
-              />
-            </div>
-
-            <div className="procedure-helper">
-              <span>🩺</span>
-
-              <div>
-                <strong>Choose a category</strong>
-
-                <small>
-                  Select your programme to view its procedures.
-                </small>
+                <p className="page-description">
+                  Choose your nursing programme to
+                  explore its procedure library.
+                </p>
               </div>
-            </div>
 
-            <div className="category-list">
-              {procedureCategories
-                .filter((category) =>
-                  category.name
-                    .toLowerCase()
-                    .includes(procedureSearch.toLowerCase())
-                )
-                .map((category) => (
-                  <button
-                    className="category-card"
-                    key={category.name}
-                    onClick={() => openCategory(category)}
-                  >
-                    <span className="category-icon">
-                      {category.icon}
-                    </span>
+              <div className="procedure-search">
+                <span>🔍</span>
 
-                    <span className="category-content">
-                      <strong>{category.name}</strong>
+                <input
+                  type="search"
+                  placeholder="Search categories..."
+                  value={procedureSearch}
+                  onChange={(e) =>
+                    setProcedureSearch(
+                      e.target.value
+                    )
+                  }
+                />
+              </div>
 
-                      <small>
-                        {category.description}
-                      </small>
-                    </span>
+              <div className="procedure-helper">
+                <span>🩺</span>
 
-                    <span className="category-arrow">
-                      ›
-                    </span>
-                  </button>
-                ))}
+                <div>
+                  <strong>
+                    Choose a category
+                  </strong>
 
-              {procedureCategories.filter((category) =>
-                category.name
-                  .toLowerCase()
-                  .includes(procedureSearch.toLowerCase())
-              ).length === 0 && (
-                <div className="empty-state">
-                  <div className="empty-icon">🔍</div>
-
-                  <h3>No category found</h3>
-
-                  <p>
-                    Try a different search term.
-                  </p>
+                  <small>
+                    Select your programme to view
+                    its procedures.
+                  </small>
                 </div>
-              )}
-            </div>
-          </section>
-        )}
+              </div>
+
+              <div className="category-list">
+                {procedureCategories
+                  .filter((category) =>
+                    category.name
+                      .toLowerCase()
+                      .includes(
+                        procedureSearch.toLowerCase()
+                      )
+                  )
+                  .map((category) => (
+                    <button
+                      className="category-card"
+                      key={category.name}
+                      onClick={() =>
+                        openCategory(category)
+                      }
+                    >
+                      <span className="category-icon">
+                        {category.icon}
+                      </span>
+
+                      <span className="category-content">
+                        <strong>
+                          {category.name}
+                        </strong>
+
+                        <small>
+                          {category.description}
+                        </small>
+                      </span>
+
+                      <span className="category-arrow">
+                        ›
+                      </span>
+                    </button>
+                  ))}
+
+                {procedureCategories.filter(
+                  (category) =>
+                    category.name
+                      .toLowerCase()
+                      .includes(
+                        procedureSearch.toLowerCase()
+                      )
+                ).length === 0 && (
+                  <div className="empty-state">
+                    <div className="empty-icon">
+                      🔍
+                    </div>
+
+                    <h3>
+                      No category found
+                    </h3>
+
+                    <p>
+                      Try a different search term.
+                    </p>
+                  </div>
+                )}
+              </div>
+            </section>
+          )}
 
         {/* ================= CATEGORY PROCEDURES ================= */}
 
@@ -438,23 +513,21 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="procedure-search">
-                <span>🔍</span>
-
-                <input
-                  type="search"
-                  placeholder="Search procedures..."
-                  value={procedureSearch}
-                  onChange={(e) =>
-                    setProcedureSearch(e.target.value)
-                  }
-                />
-              </div>
-
               <ProcedureList
                 category={selectedCategory.name}
-                search={procedureSearch}
-                onSelectProcedure={openProcedure}
+                onSelectProcedure={(
+                  procedureId
+                ) => {
+                  const procedure =
+                    procedures.find(
+                      (item) =>
+                        item.id === procedureId
+                    );
+
+                  if (procedure) {
+                    openProcedure(procedure);
+                  }
+                }}
               />
             </section>
           )}
@@ -466,7 +539,9 @@ export default function App() {
           selectedProcedure && (
             <ProcedureDetails
               procedure={selectedProcedure}
-              onBack={() => setSelectedProcedure(null)}
+              onBack={() =>
+                setSelectedProcedure(null)
+              }
             />
           )}
 
@@ -484,26 +559,32 @@ export default function App() {
               </h1>
 
               <p className="page-description">
-                Manage and use your Nursing Component Task
-                credits.
+                Manage and use your Nursing Component
+                Task credits.
               </p>
             </div>
 
             <div className="credits-display">
-              <div className="large-star">⭐</div>
+              <div className="large-star">
+                ⭐
+              </div>
 
               <strong>25</strong>
 
-              <span>Available Credits</span>
+              <span>
+                Available Credits
+              </span>
             </div>
 
             <div className="info-card">
-              <h3>How credits work</h3>
+              <h3>
+                How credits work
+              </h3>
 
               <p>
-                Credits will be used for selected premium
-                features and learning activities as they
-                become available.
+                Credits will be used for selected
+                premium features and learning activities
+                as they become available.
               </p>
             </div>
           </section>
@@ -533,10 +614,11 @@ export default function App() {
               </h2>
 
               <p>
-                A practical learning app designed to help
-                nursing students and nurses review nursing
-                procedures and clinical skills through concise
-                procedure guides and videos.
+                A practical learning app designed to
+                help nursing students and nurses review
+                nursing procedures and clinical skills
+                through concise procedure guides and
+                videos.
               </p>
 
               <div className="about-details">
@@ -547,12 +629,16 @@ export default function App() {
 
                 <div>
                   <span>Developer</span>
-                  <strong>Bliss Innovation</strong>
+                  <strong>
+                    Bliss Innovation
+                  </strong>
                 </div>
 
                 <div>
                   <span>Developed by</span>
-                  <strong>Felix Nuakoh</strong>
+                  <strong>
+                    Felix Nuakoh
+                  </strong>
                 </div>
               </div>
 
@@ -595,9 +681,9 @@ export default function App() {
               </div>
 
               <p className="about-disclaimer">
-                For educational purposes. Always follow
-                current N&MC guidance and your institution's
-                approved protocols.
+                For educational purposes. Always
+                follow current N&MC guidance and your
+                institution's approved protocols.
               </p>
             </div>
           </section>
@@ -607,7 +693,9 @@ export default function App() {
 
         {activeTab === "settings" && (
           <Settings
-            onAbout={() => navigate("about")}
+            onAbout={() =>
+              navigate("about")
+            }
           />
         )}
       </main>
@@ -619,9 +707,13 @@ export default function App() {
 
           <button
             className={`nav-button ${
-              activeTab === "home" ? "active" : ""
+              activeTab === "home"
+                ? "active"
+                : ""
             }`}
-            onClick={() => navigate("home")}
+            onClick={() =>
+              navigate("home")
+            }
           >
             <span>🏠</span>
             <small>Home</small>
@@ -629,9 +721,13 @@ export default function App() {
 
           <button
             className={`nav-button ${
-              activeTab === "procedures" ? "active" : ""
+              activeTab === "procedures"
+                ? "active"
+                : ""
             }`}
-            onClick={() => navigate("procedures")}
+            onClick={() =>
+              navigate("procedures")
+            }
           >
             <span>🩺</span>
             <small>Procedures</small>
@@ -639,9 +735,13 @@ export default function App() {
 
           <button
             className={`nav-button ${
-              activeTab === "about" ? "active" : ""
+              activeTab === "about"
+                ? "active"
+                : ""
             }`}
-            onClick={() => navigate("about")}
+            onClick={() =>
+              navigate("about")
+            }
           >
             <span>ℹ️</span>
             <small>About</small>
@@ -649,9 +749,13 @@ export default function App() {
 
           <button
             className={`nav-button ${
-              activeTab === "settings" ? "active" : ""
+              activeTab === "settings"
+                ? "active"
+                : ""
             }`}
-            onClick={() => navigate("settings")}
+            onClick={() =>
+              navigate("settings")
+            }
           >
             <span>⚙️</span>
             <small>Settings</small>
@@ -661,4 +765,4 @@ export default function App() {
       </nav>
     </div>
   );
-            }
+}
