@@ -1449,3 +1449,16 @@ html.dark-mode .setting-toggle {
 html.dark-mode .setting-toggle.active {
   background: var(--green);
     }
+/* Dark mode text */
+html.dark-mode .page-title,
+html.dark-mode .section-title,
+html.dark-mode .quick-text strong,
+html.dark-mode .category-content strong,
+html.dark-mode .setting-item strong,
+html.dark-mode .setting-action strong,
+html.dark-mode .about-card h2,
+html.dark-mode .about-card h3,
+html.dark-mode .info-card h3,
+html.dark-mode .nmc-info h3 {
+  color: #ffffff;
+}
