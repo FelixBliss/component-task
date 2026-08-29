@@ -1140,3 +1140,151 @@ button {
     font-size: 11px;
   }
   }
+/* =========================
+   PROCEDURE UX ADDITIONS
+========================= */
+
+.procedure-helper {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 17px;
+  padding: 13px 14px;
+  border-radius: 14px;
+  background: var(--pale-green);
+  border: 1px solid #dceee3;
+}
+
+.procedure-helper > span {
+  font-size: 22px;
+}
+
+.procedure-helper strong {
+  display: block;
+  color: var(--dark-green);
+  font-size: 12px;
+}
+
+.procedure-helper small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.back-button {
+  border: 0;
+  background: transparent;
+  color: var(--green);
+  padding: 0;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.category-header-icon {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 17px;
+  background: var(--light-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+}
+
+.category-header .page-title {
+  margin-top: 4px;
+  font-size: 22px;
+}
+
+.procedure-count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 0 12px;
+}
+
+.procedure-count strong {
+  color: var(--dark-green);
+  font-size: 14px;
+}
+
+.procedure-count span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.empty-procedure-library {
+  border: 1px dashed #cfd9d3;
+  border-radius: 19px;
+  background: #ffffff;
+  padding: 30px 18px;
+  text-align: center;
+}
+
+.empty-library-icon {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.empty-procedure-library h2 {
+  margin: 0 0 7px;
+  color: var(--dark-green);
+  font-size: 17px;
+}
+
+.empty-procedure-library p {
+  margin: 0 auto;
+  max-width: 420px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.library-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.library-flow span {
+  padding: 7px 9px;
+  border-radius: 9px;
+  background: var(--light-green);
+  color: var(--dark-green);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.library-flow b {
+  color: var(--green);
+  font-size: 12px;
+}
+
+@media (max-width: 420px) {
+  .category-header {
+    align-items: flex-start;
+  }
+
+  .category-header-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .category-header .page-title {
+    font-size: 19px;
+  }
+}
