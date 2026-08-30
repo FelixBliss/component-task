@@ -1307,7 +1307,3 @@ html.dark-mode .appearance-apply-button {
 
   border-color: #008a4b;
 }
-
-Important: Do not add another "onAppearance" prop in "App.tsx". The "Settings.tsx" above handles the Appearance dialog itself, so the existing broken "onAppearance" dependency is removed rather than creating a second implementation.
-
-The key fix for your “Clear History works button appearing as text on the Settings page” is the ".confirmation-overlay" + ".confirmation-box" CSS. The overlay is now "position: fixed" with a high "z-index", and the buttons have explicit button styling.
