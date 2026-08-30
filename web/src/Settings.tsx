@@ -3,53 +3,27 @@ import React, { useEffect, useState } from "react";
 type SettingsProps = {
   onAbout?: () => void;
   onClearRecentHistory?: () => void;
+  onAppearance?: () => void;
 };
 
-const NOTIFICATIONS_KEY = "nct-notifications-enabled";
 const SAVE_PROGRESS_KEY = "nct-save-progress";
-const APPEARANCE_KEY = "nct-appearance";
-const STYLE_KEY = "nct-style";
-
-type Appearance = "light" | "dark";
-type AppStyle = "default" | "compact";
 
 export default function Settings({
   onAbout,
   onClearRecentHistory,
+  onAppearance,
 }: SettingsProps) {
-  const [notificationsEnabled, setNotificationsEnabled] =
-    useState<boolean>(true);
-
   const [saveProgressEnabled, setSaveProgressEnabled] =
     useState<boolean>(true);
 
-  const [appearance, setAppearance] =
-    useState<Appearance>("light");
+  const [showClearConfirmation, setShowClearConfirmation] =
+    useState<boolean>(false);
 
-  const [appStyle, setAppStyle] =
-    useState<AppStyle>("default");
-
-  const [showClearConfirm, setShowClearConfirm] =
-    useState(false);
-
-  const [notificationMessage, setNotificationMessage] =
-    useState("");
-
-  /* =====================================================
-     LOAD SETTINGS
-  ===================================================== */
-
+  /*
+   * Load saved settings.
+   */
   useEffect(() => {
     try {
-      const savedNotifications =
-        localStorage.getItem(NOTIFICATIONS_KEY);
-
-      if (savedNotifications !== null) {
-        setNotificationsEnabled(
-          savedNotifications === "true"
-        );
-      }
-
       const savedProgress =
         localStorage.getItem(SAVE_PROGRESS_KEY);
 
@@ -58,169 +32,14 @@ export default function Settings({
           savedProgress === "true"
         );
       }
-
-      const savedAppearance =
-        localStorage.getItem(APPEARANCE_KEY);
-
-      if (
-        savedAppearance === "dark" ||
-        savedAppearance === "light"
-      ) {
-        setAppearance(savedAppearance);
-      }
-
-      const savedStyle =
-        localStorage.getItem(STYLE_KEY);
-
-      if (
-        savedStyle === "compact" ||
-        savedStyle === "default"
-      ) {
-        setAppStyle(savedStyle);
-      }
     } catch {
-      // Ignore storage errors.
+      // Ignore localStorage errors.
     }
   }, []);
 
-  /* =====================================================
-     APPLY APPEARANCE
-  ===================================================== */
-
-  useEffect(() => {
-    const root = document.documentElement;
-
-    if (appearance === "dark") {
-      root.classList.add("dark-mode");
-    } else {
-      root.classList.remove("dark-mode");
-    }
-
-    try {
-      localStorage.setItem(
-        APPEARANCE_KEY,
-        appearance
-      );
-    } catch {
-      // Ignore storage errors.
-    }
-  }, [appearance]);
-
-  /* =====================================================
-     APPLY APP STYLE
-  ===================================================== */
-
-  useEffect(() => {
-    const root = document.documentElement;
-
-    root.classList.remove(
-      "style-default",
-      "style-compact"
-    );
-
-    root.classList.add(
-      appStyle === "compact"
-        ? "style-compact"
-        : "style-default"
-    );
-
-    try {
-      localStorage.setItem(
-        STYLE_KEY,
-        appStyle
-      );
-    } catch {
-      // Ignore storage errors.
-    }
-  }, [appStyle]);
-
-  /* =====================================================
-     NOTIFICATIONS
-  ===================================================== */
-
-  const toggleNotifications = async () => {
-    const next = !notificationsEnabled;
-
-    if (next) {
-      /*
-       * Browser notification permission.
-       */
-      if ("Notification" in window) {
-        try {
-          if (
-            Notification.permission === "denied"
-          ) {
-            setNotificationMessage(
-              "Notifications are blocked in your browser. Enable them in your browser settings."
-            );
-            return;
-          }
-
-          if (
-            Notification.permission !== "granted"
-          ) {
-            const permission =
-              await Notification.requestPermission();
-
-            if (permission !== "granted") {
-              setNotificationMessage(
-                "Notification permission was not granted."
-              );
-              return;
-            }
-          }
-
-          /*
-           * Send a test notification.
-           */
-          new Notification(
-            "Nursing Component Task",
-            {
-              body:
-                "Learning notifications are now enabled.",
-              icon: "/icon-192.png",
-            }
-          );
-
-          setNotificationMessage(
-            "Notifications enabled."
-          );
-        } catch {
-          setNotificationMessage(
-            "Your device/browser does not support notifications."
-          );
-        }
-      } else {
-        setNotificationMessage(
-          "Notifications are not supported on this device."
-        );
-      }
-    } else {
-      setNotificationMessage(
-        "Learning notifications disabled."
-      );
-    }
-
-    setNotificationsEnabled(next);
-
-    try {
-      localStorage.setItem(
-        NOTIFICATIONS_KEY,
-        String(next)
-      );
-    } catch {
-      // Ignore storage errors.
-    }
-
-    window.setTimeout(() => {
-      setNotificationMessage("");
-    }, 3500);
-  };
-
-  /* =====================================================
-     SAVE PROGRESS
-  ===================================================== */
-
+  /*
+   * Toggle Save Progress.
+   */
   const toggleSaveProgress = () => {
     setSaveProgressEnabled((current) => {
       const next = !current;
@@ -231,68 +50,43 @@ export default function Settings({
           String(next)
         );
       } catch {
-        // Ignore storage errors.
+        // Ignore localStorage errors.
       }
 
       return next;
     });
   };
 
-  /* =====================================================
-     APPEARANCE
-  ===================================================== */
-
-  const toggleAppearance = () => {
-    setAppearance((current) =>
-      current === "light"
-        ? "dark"
-        : "light"
-    );
+  /*
+   * Open custom confirmation box.
+   */
+  const handleClearRecentHistory = () => {
+    setShowClearConfirmation(true);
   };
 
-  /* =====================================================
-     STYLE
-  ===================================================== */
-
-  const toggleStyle = () => {
-    setAppStyle((current) =>
-      current === "default"
-        ? "compact"
-        : "default"
-    );
-  };
-
-  /* =====================================================
-     CLEAR HISTORY
-  ===================================================== */
-
-  const requestClearHistory = () => {
-    setShowClearConfirm(true);
-  };
-
-  const cancelClearHistory = () => {
-    setShowClearConfirm(false);
-  };
-
+  /*
+   * Confirm clearing recent history.
+   */
   const confirmClearHistory = () => {
-    setShowClearConfirm(false);
+    setShowClearConfirmation(false);
 
     if (onClearRecentHistory) {
       onClearRecentHistory();
     }
   };
 
-  /* =====================================================
-     RENDER
-  ===================================================== */
+  /*
+   * Cancel clearing history.
+   */
+  const cancelClearHistory = () => {
+    setShowClearConfirmation(false);
+  };
 
   return (
     <>
       <section className="settings-page">
 
-        {/* =================================================
-           HEADER
-        ================================================= */}
+        {/* ================= PAGE HEADER ================= */}
 
         <div className="page-heading">
           <span className="page-kicker">
@@ -309,127 +103,11 @@ export default function Settings({
           </p>
         </div>
 
-        {/* =================================================
-           SETTINGS
-        ================================================= */}
+        {/* ================= SETTINGS LIST ================= */}
 
         <div className="settings-list">
 
-          {/* NOTIFICATIONS */}
-
-          <div className="settings-card">
-
-            <div className="settings-card-icon">
-              🔔
-            </div>
-
-            <div className="settings-card-content">
-              <strong>
-                Notifications
-              </strong>
-
-              <small>
-                Receive learning reminders
-              </small>
-            </div>
-
-            <button
-              type="button"
-              className={`settings-toggle ${
-                notificationsEnabled
-                  ? "active"
-                  : ""
-              }`}
-              onClick={toggleNotifications}
-              aria-label={
-                notificationsEnabled
-                  ? "Disable notifications"
-                  : "Enable notifications"
-              }
-              aria-pressed={
-                notificationsEnabled
-              }
-            >
-              <span />
-            </button>
-
-          </div>
-
-          {/* APPEARANCE */}
-
-          <button
-            type="button"
-            className="settings-action-card"
-            onClick={toggleAppearance}
-          >
-
-            <div className="settings-card-icon">
-              {appearance === "dark"
-                ? "🌙"
-                : "☀️"}
-            </div>
-
-            <div className="settings-card-content">
-              <strong>
-                Appearance
-              </strong>
-
-              <small>
-                {appearance === "dark"
-                  ? "Dark mode is currently active"
-                  : "Light mode is currently active"}
-              </small>
-            </div>
-
-            <span className="settings-value">
-              {appearance === "dark"
-                ? "Dark"
-                : "Light"}
-            </span>
-
-            <span className="settings-action-arrow">
-              ›
-            </span>
-
-          </button>
-
-          {/* STYLE */}
-
-          <button
-            type="button"
-            className="settings-action-card"
-            onClick={toggleStyle}
-          >
-
-            <div className="settings-card-icon">
-              🎨
-            </div>
-
-            <div className="settings-card-content">
-              <strong>
-                Style
-              </strong>
-
-              <small>
-                {appStyle === "compact"
-                  ? "Compact layout"
-                  : "Standard layout"}
-              </small>
-            </div>
-
-            <span className="settings-value">
-              {appStyle === "compact"
-                ? "Compact"
-                : "Standard"}
-            </span>
-
-            <span className="settings-action-arrow">
-              ›
-            </span>
-
-          </button>
-
-          {/* SAVE PROGRESS */}
+          {/* ================= SAVE PROGRESS ================= */}
 
           <div className="settings-card">
 
@@ -455,9 +133,7 @@ export default function Settings({
                   ? "active"
                   : ""
               }`}
-              onClick={
-                toggleSaveProgress
-              }
+              onClick={toggleSaveProgress}
               aria-label={
                 saveProgressEnabled
                   ? "Disable save progress"
@@ -472,14 +148,41 @@ export default function Settings({
 
           </div>
 
-          {/* CLEAR HISTORY */}
+          {/* ================= APPEARANCE ================= */}
+
+          <button
+            type="button"
+            className="settings-action-card"
+            onClick={onAppearance}
+          >
+
+            <div className="settings-card-icon">
+              🎨
+            </div>
+
+            <div className="settings-card-content">
+              <strong>
+                Appearance
+              </strong>
+
+              <small>
+                Customize the app appearance
+                and display style
+              </small>
+            </div>
+
+            <span className="settings-action-arrow">
+              ›
+            </span>
+
+          </button>
+
+          {/* ================= CLEAR HISTORY ================= */}
 
           <button
             type="button"
             className="settings-action-card danger"
-            onClick={
-              requestClearHistory
-            }
+            onClick={handleClearRecentHistory}
           >
 
             <div className="settings-card-icon">
@@ -505,19 +208,7 @@ export default function Settings({
 
         </div>
 
-        {/* =================================================
-           NOTIFICATION MESSAGE
-        ================================================= */}
-
-        {notificationMessage && (
-          <div className="settings-notification-message">
-            {notificationMessage}
-          </div>
-        )}
-
-        {/* =================================================
-           ABOUT
-        ================================================= */}
+        {/* ================= ABOUT ================= */}
 
         <div className="settings-section">
 
@@ -554,9 +245,7 @@ export default function Settings({
 
         </div>
 
-        {/* =================================================
-           VERSION
-        ================================================= */}
+        {/* ================= VERSION ================= */}
 
         <div className="settings-footer">
 
@@ -580,24 +269,21 @@ export default function Settings({
 
       </section>
 
-      {/* ===================================================
-         CUSTOM CLEAR CONFIRMATION MODAL
-      =================================================== */}
+      {/* =====================================================
+          CUSTOM CLEAR CONFIRMATION MODAL
+      ===================================================== */}
 
-      {showClearConfirm && (
+      {showClearConfirmation && (
         <div
-          className="settings-modal-overlay"
-          role="presentation"
+          className="confirmation-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="clear-history-title"
         >
 
-          <div
-            className="settings-confirm-modal"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="clear-history-title"
-          >
+          <div className="confirmation-box">
 
-            <div className="settings-confirm-icon">
+            <div className="confirmation-icon">
               🧹
             </div>
 
@@ -606,29 +292,24 @@ export default function Settings({
             </h2>
 
             <p>
-              This will remove all recently
-              viewed procedures from this
-              device.
+              Are you sure you want to remove
+              all recently viewed procedures?
             </p>
 
-            <div className="settings-confirm-actions">
+            <div className="confirmation-actions">
 
               <button
                 type="button"
-                className="settings-confirm-cancel"
-                onClick={
-                  cancelClearHistory
-                }
+                className="confirmation-cancel"
+                onClick={cancelClearHistory}
               >
                 Cancel
               </button>
 
               <button
                 type="button"
-                className="settings-confirm-danger"
-                onClick={
-                  confirmClearHistory
-                }
+                className="confirmation-danger"
+                onClick={confirmClearHistory}
               >
                 Clear History
               </button>
@@ -641,4 +322,4 @@ export default function Settings({
       )}
     </>
   );
-          }
+}
