@@ -1478,7 +1478,6 @@ button {
 
 /* =========================================================
    PROCEDURE TABS
-   THREE TABS ALWAYS IN ONE HORIZONTAL ROW
 ========================================================= */
 
 .procedure-tabs {
@@ -1976,293 +1975,6 @@ button {
 }
 
 /* =========================================================
-   DARK MODE
-========================================================= */
-
-html.dark-mode {
-  --text: #edf5f0;
-  --muted: #a9b7af;
-  --border: #29362f;
-  --background: #101612;
-  --white: #172019;
-  --light-green: #193a29;
-  --pale-green: #15251c;
-}
-
-html.dark-mode body {
-  background: var(--background);
-  color: var(--text);
-}
-
-html.dark-mode .quick-card,
-html.dark-mode .category-card,
-html.dark-mode .about-card,
-html.dark-mode .setting-item,
-html.dark-mode .setting-action,
-html.dark-mode .info-card,
-html.dark-mode .empty-state,
-html.dark-mode .empty-procedure-library,
-html.dark-mode .search,
-html.dark-mode .procedure-search input,
-html.dark-mode .procedure-card,
-html.dark-mode .procedure-detail-section,
-html.dark-mode .quiz-question,
-html.dark-mode .quiz-option,
-html.dark-mode .quiz-intro-card,
-html.dark-mode .quiz-card,
-html.dark-mode .quiz-result-card,
-html.dark-mode .quiz-empty,
-html.dark-mode .quiz-answer {
-  background: #172019;
-  color: var(--text);
-}
-
-html.dark-mode .bottom-nav {
-  background: rgba(23, 32, 25, 0.97);
-}
-
-html.dark-mode .setting-toggle {
-  background: #4b5750;
-}
-
-html.dark-mode .setting-toggle.active {
-  background: var(--green);
-}
-
-html.dark-mode .page-title,
-html.dark-mode .section-title,
-html.dark-mode .quick-text strong,
-html.dark-mode .category-content strong,
-html.dark-mode .setting-item strong,
-html.dark-mode .setting-action strong,
-html.dark-mode .about-card h2,
-html.dark-mode .about-card h3,
-html.dark-mode .info-card h3,
-html.dark-mode .nmc-info h3,
-html.dark-mode .procedure-card-content strong,
-html.dark-mode .procedure-detail-header h1,
-html.dark-mode .procedure-detail-section h2,
-html.dark-mode .quiz-question h3,
-html.dark-mode .quiz-question-title,
-html.dark-mode .quiz-intro-card h2,
-html.dark-mode .quiz-result-card h2,
-html.dark-mode .quiz-empty h2,
-html.dark-mode .video-fallback-card h3 {
-  color: #ffffff;
-}
-
-html.dark-mode .procedure-tabs {
-  background: #193a29;
-}
-
-html.dark-mode .procedure-tab {
-  color: #d9f2e3;
-}
-
-html.dark-mode .procedure-tab.active {
-  background: #172019;
-  color: #ffffff;
-}
-
-html.dark-mode .quiz-secondary-button {
-  background: #172019;
-  border-color: #29362f;
-  color: #ffffff;
-}
-
-html.dark-mode .quiz-answer {
-  border-color: #29362f;
-}
-
-html.dark-mode .quiz-answer:hover {
-  background: #1d2a22;
-}
-
-html.dark-mode .quiz-answer.selected {
-  background: #193a29;
-  border-color: var(--green);
-}
-
-html.dark-mode .video-fallback-card,
-html.dark-mode .video-empty-state {
-  background: #172019;
-  border-color: #29362f;
-}
-
-html.dark-mode .video-fallback-card p,
-html.dark-mode .video-help-text {
-  color: var(--muted);
-}
-
-html.dark-mode .procedure-video {
-  background: #000000;
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media (max-width: 500px) {
-  .header-inner {
-    min-height: 72px;
-    padding: 12px 13px;
-  }
-
-  .brand-icon {
-    width: 38px;
-    height: 38px;
-  }
-
-  .logo {
-    font-size: 15px;
-  }
-
-  .tagline {
-    font-size: 9px;
-  }
-
-  .credits-badge {
-    min-width: 69px;
-    padding: 6px 8px;
-  }
-
-  .credits-badge small {
-    display: none;
-  }
-
-  .content {
-    padding: 18px 13px 25px;
-  }
-
-  .home-welcome {
-    padding: 23px 18px;
-  }
-
-  .home-welcome h1 {
-    font-size: 27px;
-  }
-
-  .featured-procedure {
-    align-items: flex-start;
-    padding: 18px;
-  }
-
-  .featured-icon {
-    width: 51px;
-    height: 51px;
-    font-size: 24px;
-  }
-
-  .featured-content h2 {
-    font-size: 18px;
-  }
-
-  .contact-buttons {
-    grid-template-columns: 1fr;
-  }
-
-  /*
-     IMPORTANT:
-     Keep all three procedure tabs horizontal
-     even on mobile.
-  */
-  .procedure-tabs {
-    gap: 3px;
-    padding: 4px;
-  }
-
-  .procedure-tab {
-    padding: 11px 3px;
-    font-size: 11px;
-    white-space: nowrap;
-  }
-
-  .procedure-detail-header {
-    padding: 16px;
-  }
-
-  .procedure-detail-header h1 {
-    font-size: 19px;
-  }
-
-  .quiz-card,
-  .quiz-intro-card,
-  .quiz-result-card,
-  .quiz-empty {
-    border-radius: 18px;
-    padding: 20px 14px;
-  }
-
-  .quiz-question-title {
-    font-size: 17px;
-  }
-
-  .quiz-answer {
-    padding: 11px;
-  }
-
-  .quiz-answer.selected {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 420px) {
-  .category-header {
-    align-items: flex-start;
-  }
-
-  .category-header-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-  }
-
-  .category-header .page-title {
-    font-size: 19px;
-  }
-}
-
-@media (max-width: 360px) {
-  .logo {
-    font-size: 13px;
-  }
-
-  .tagline {
-    display: none;
-  }
-
-  .credits-badge {
-    min-width: 62px;
-  }
-
-  .home-welcome h1 {
-    font-size: 24px;
-  }
-
-  .featured-procedure {
-    gap: 11px;
-  }
-
-  .featured-content p {
-    font-size: 11px;
-  }
-
-  /*
-     Very small phones:
-     still keep Details / Video / Quiz
-     on one row.
-  */
-  .procedure-tabs {
-    gap: 2px;
-    padding: 3px;
-  }
-
-  .procedure-tab {
-    padding: 10px 2px;
-    font-size: 10px;
-  }
-  }
-/* =========================================================
    SETTINGS - UPDATED
 ========================================================= */
 
@@ -2275,8 +1987,6 @@ html.dark-mode .procedure-video {
   flex-direction: column;
   gap: 10px;
 }
-
-/* Main setting card */
 
 .settings-card,
 .settings-action-card {
@@ -2310,8 +2020,6 @@ html.dark-mode .procedure-video {
   transform: scale(0.985);
 }
 
-/* Icon */
-
 .settings-card-icon {
   width: 43px;
   height: 43px;
@@ -2323,8 +2031,6 @@ html.dark-mode .procedure-video {
   justify-content: center;
   font-size: 20px;
 }
-
-/* Text */
 
 .settings-card-content {
   flex: 1;
@@ -2345,8 +2051,6 @@ html.dark-mode .procedure-video {
   font-size: 10px;
   line-height: 1.4;
 }
-
-/* Toggle */
 
 .settings-toggle {
   position: relative;
@@ -2384,16 +2088,12 @@ html.dark-mode .procedure-video {
   transform: scale(0.94);
 }
 
-/* Value */
-
 .settings-value {
   flex-shrink: 0;
   color: var(--green);
   font-size: 10px;
   font-weight: 800;
 }
-
-/* Arrow */
 
 .settings-action-arrow {
   flex-shrink: 0;
@@ -2402,8 +2102,6 @@ html.dark-mode .procedure-video {
   font-weight: 300;
   line-height: 1;
 }
-
-/* Danger */
 
 .settings-action-card.danger {
   border-color: #f0d8d5;
@@ -2421,8 +2119,6 @@ html.dark-mode .procedure-video {
   color: #a33a32;
 }
 
-/* Section */
-
 .settings-section {
   margin-top: 28px;
 }
@@ -2433,8 +2129,6 @@ html.dark-mode .procedure-video {
   font-size: 16px;
   font-weight: 800;
 }
-
-/* Footer */
 
 .settings-footer {
   margin-top: 30px;
@@ -2601,8 +2295,563 @@ html.style-compact .settings-card-content small {
 }
 
 /* =========================================================
-   DARK MODE - UPDATED SETTINGS
+   DARK MODE
+   FULL CONTRAST FIX
 ========================================================= */
+
+html.dark-mode {
+  --text: #edf5f0;
+  --muted: #a9b7af;
+  --border: #29362f;
+  --background: #101612;
+  --white: #172019;
+  --light-green: #193a29;
+  --pale-green: #15251c;
+  --dark-green: #7bd5a3;
+}
+
+html.dark-mode body {
+  background: var(--background);
+  color: var(--text);
+}
+
+/* -------------------------
+   HOME PAGE
+------------------------- */
+
+html.dark-mode .home-welcome {
+  background: linear-gradient(135deg, #193a29, #15251c);
+  border-color: #2d5840;
+}
+
+html.dark-mode .home-welcome h1 {
+  color: #ffffff;
+}
+
+html.dark-mode .home-welcome p {
+  color: var(--muted);
+}
+
+html.dark-mode .welcome-label {
+  color: #7bd5a3;
+}
+
+html.dark-mode .section-title {
+  color: #ffffff;
+}
+
+html.dark-mode .search-section label {
+  color: #ffffff;
+}
+
+html.dark-mode .quick-card {
+  background: #172019;
+  border-color: #29362f;
+  color: #edf5f0;
+}
+
+html.dark-mode .quick-text strong {
+  color: #ffffff;
+}
+
+html.dark-mode .quick-text small {
+  color: var(--muted);
+}
+
+html.dark-mode .empty-state {
+  background: #172019;
+  border-color: #34443b;
+}
+
+html.dark-mode .empty-state h3 {
+  color: #ffffff;
+}
+
+html.dark-mode .empty-state p {
+  color: var(--muted);
+}
+
+html.dark-mode .nmc-info {
+  background: #172019;
+  border-color: #29362f;
+}
+
+html.dark-mode .nmc-info h3 {
+  color: #ffffff;
+}
+
+html.dark-mode .nmc-info p {
+  color: var(--muted);
+}
+
+/* -------------------------
+   SEARCH
+------------------------- */
+
+html.dark-mode .search,
+html.dark-mode .procedure-search input {
+  background: #172019;
+  border-color: #29362f;
+  color: #ffffff;
+}
+
+html.dark-mode .search::placeholder,
+html.dark-mode .procedure-search input::placeholder {
+  color: #7f8d85;
+}
+
+html.dark-mode .search:focus,
+html.dark-mode .procedure-search input:focus {
+  border-color: #008a4b;
+}
+
+/* -------------------------
+   PAGE HEADINGS
+------------------------- */
+
+html.dark-mode .page-title {
+  color: #ffffff;
+}
+
+html.dark-mode .page-description {
+  color: var(--muted);
+}
+
+html.dark-mode .page-kicker {
+  color: #7bd5a3;
+}
+
+/* -------------------------
+   CATEGORIES
+------------------------- */
+
+html.dark-mode .category-card {
+  background: #172019;
+  border-color: #29362f;
+  color: #edf5f0;
+}
+
+html.dark-mode .category-content strong {
+  color: #ffffff;
+}
+
+html.dark-mode .category-content small {
+  color: var(--muted);
+}
+
+html.dark-mode .category-icon {
+  background: #193a29;
+}
+
+html.dark-mode .category-arrow {
+  color: #7bd5a3;
+}
+
+/* -------------------------
+   CREDITS
+------------------------- */
+
+html.dark-mode .credits-display {
+  background: linear-gradient(145deg, #193a29, #15251c);
+  border-color: #2d5840;
+}
+
+html.dark-mode .credits-display strong {
+  color: #ffffff;
+}
+
+html.dark-mode .credits-display span {
+  color: var(--muted);
+}
+
+html.dark-mode .info-card {
+  background: #172019;
+  border-color: #29362f;
+}
+
+html.dark-mode .info-card h3 {
+  color: #ffffff;
+}
+
+html.dark-mode .info-card p {
+  color: var(--muted);
+}
+
+/* -------------------------
+   ABOUT
+------------------------- */
+
+html.dark-mode .about-card {
+  background: #172019;
+  border-color: #29362f;
+}
+
+html.dark-mode .about-card h2,
+html.dark-mode .about-card h3 {
+  color: #ffffff;
+}
+
+html.dark-mode .about-card > p {
+  color: var(--muted);
+}
+
+html.dark-mode .about-details {
+  border-color: #29362f;
+}
+
+html.dark-mode .about-details > div {
+  border-color: #29362f;
+}
+
+html.dark-mode .about-details span {
+  color: var(--muted);
+}
+
+html.dark-mode .about-details strong {
+  color: #ffffff;
+}
+
+html.dark-mode .nmc-credit {
+  background: #193a29;
+}
+
+html.dark-mode .nmc-credit strong {
+  color: #ffffff;
+}
+
+html.dark-mode .nmc-credit p {
+  color: var(--muted);
+}
+
+html.dark-mode .developer-contact h3 {
+  color: #ffffff;
+}
+
+html.dark-mode .developer-contact > p {
+  color: var(--muted);
+}
+
+html.dark-mode .about-disclaimer {
+  color: var(--muted);
+}
+
+/* -------------------------
+   PROCEDURE LIST
+------------------------- */
+
+html.dark-mode .procedure-helper {
+  background: #15251c;
+  border-color: #2d5840;
+}
+
+html.dark-mode .procedure-helper strong {
+  color: #ffffff;
+}
+
+html.dark-mode .procedure-helper small {
+  color: var(--muted);
+}
+
+html.dark-mode .back-button {
+  color: #7bd5a3;
+}
+
+html.dark-mode .category-header-icon {
+  background: #193a29;
+}
+
+html.dark-mode .procedure-count strong {
+  color: #ffffff;
+}
+
+html.dark-mode .procedure-count span {
+  color: var(--muted);
+}
+
+html.dark-mode .empty-procedure-library {
+  background: #172019;
+  border-color: #34443b;
+}
+
+html.dark-mode .empty-procedure-library h2 {
+  color: #ffffff;
+}
+
+html.dark-mode .empty-procedure-library p {
+  color: var(--muted);
+}
+
+html.dark-mode .library-flow span {
+  background: #193a29;
+  color: #d9f2e3;
+}
+
+html.dark-mode .library-flow b {
+  color: #7bd5a3;
+}
+
+html.dark-mode .procedure-card {
+  background: #172019;
+  border-color: #29362f;
+  color: #edf5f0;
+}
+
+html.dark-mode .procedure-card-content strong {
+  color: #ffffff;
+}
+
+html.dark-mode .procedure-card-content small {
+  color: var(--muted);
+}
+
+html.dark-mode .procedure-card-icon {
+  background: #193a29;
+}
+
+html.dark-mode .procedure-card-arrow {
+  color: #7bd5a3;
+}
+
+html.dark-mode .procedure-card-category {
+  color: #7bd5a3;
+}
+
+/* -------------------------
+   PROCEDURE DETAILS
+------------------------- */
+
+html.dark-mode .procedure-detail-header {
+  background: #193a29;
+}
+
+html.dark-mode .procedure-detail-header h1 {
+  color: #ffffff;
+}
+
+html.dark-mode .procedure-detail-header p {
+  color: var(--muted);
+}
+
+html.dark-mode .procedure-detail-section {
+  background: #172019;
+  border-color: #29362f;
+}
+
+html.dark-mode .procedure-detail-section h2 {
+  color: #ffffff;
+}
+
+html.dark-mode .procedure-detail-section li {
+  color: #edf5f0;
+}
+
+html.dark-mode .procedure-steps p {
+  color: #edf5f0;
+}
+
+html.dark-mode .procedure-steps li > span {
+  background: #193a29;
+  color: #7bd5a3;
+}
+
+/* -------------------------
+   PROCEDURE TABS
+------------------------- */
+
+html.dark-mode .procedure-tabs {
+  background: #193a29;
+}
+
+html.dark-mode .procedure-tab {
+  color: #d9f2e3;
+}
+
+html.dark-mode .procedure-tab.active {
+  background: #172019;
+  color: #ffffff;
+}
+
+/* -------------------------
+   VIDEO
+------------------------- */
+
+html.dark-mode .procedure-video {
+  background: #000000;
+}
+
+html.dark-mode .video-help-text {
+  color: var(--muted);
+}
+
+html.dark-mode .video-empty-state {
+  background: #172019;
+  border-color: #29362f;
+}
+
+html.dark-mode .video-empty-state h2 {
+  color: #ffffff;
+}
+
+html.dark-mode .video-empty-state p {
+  color: var(--muted);
+}
+
+html.dark-mode .video-fallback-card {
+  background: #172019;
+  border-color: #29362f;
+}
+
+html.dark-mode .video-fallback-icon {
+  background: #193a29;
+  color: #7bd5a3;
+}
+
+html.dark-mode .video-fallback-card h3 {
+  color: #ffffff;
+}
+
+html.dark-mode .video-fallback-card p {
+  color: var(--muted);
+}
+
+/* -------------------------
+   QUIZ
+------------------------- */
+
+html.dark-mode .quiz-intro-card,
+html.dark-mode .quiz-card,
+html.dark-mode .quiz-result-card,
+html.dark-mode .quiz-empty,
+html.dark-mode .quiz-question {
+  background: #172019;
+  border-color: #29362f;
+  color: #edf5f0;
+}
+
+html.dark-mode .quiz-intro-card h2,
+html.dark-mode .quiz-result-card h2,
+html.dark-mode .quiz-empty h2,
+html.dark-mode .quiz-question h3,
+html.dark-mode .quiz-question-title {
+  color: #ffffff;
+}
+
+html.dark-mode .quiz-intro-card p,
+html.dark-mode .quiz-result-card p,
+html.dark-mode .quiz-empty p {
+  color: var(--muted);
+}
+
+html.dark-mode .quiz-kicker {
+  color: #7bd5a3;
+}
+
+html.dark-mode .quiz-card-top strong {
+  color: #7bd5a3;
+}
+
+html.dark-mode .quiz-progress {
+  background: #193a29;
+}
+
+html.dark-mode .quiz-secondary-button {
+  background: #172019;
+  border-color: #29362f;
+  color: #ffffff;
+}
+
+html.dark-mode .quiz-answer {
+  background: #172019;
+  border-color: #29362f;
+  color: #edf5f0;
+}
+
+html.dark-mode .quiz-answer:hover {
+  background: #1d2a22;
+}
+
+html.dark-mode .quiz-answer.selected {
+  background: #193a29;
+  border-color: #008a4b;
+}
+
+html.dark-mode .quiz-answer-letter {
+  background: #1d2a22;
+  color: #7bd5a3;
+}
+
+html.dark-mode .quiz-answer.selected .quiz-answer-letter {
+  background: #008a4b;
+  color: #ffffff;
+}
+
+html.dark-mode .quiz-option {
+  background: #172019;
+  border-color: #29362f;
+  color: #edf5f0;
+}
+
+html.dark-mode .quiz-option.selected {
+  border-color: #008a4b;
+}
+
+html.dark-mode .quiz-result {
+  background: #193a29;
+  color: #ffffff;
+}
+
+html.dark-mode .quiz-score {
+  color: #7bd5a3;
+}
+
+/* -------------------------
+   OLD SETTINGS
+------------------------- */
+
+html.dark-mode .setting-item,
+html.dark-mode .setting-action {
+  background: #172019;
+  border-color: #29362f;
+  color: var(--text);
+}
+
+html.dark-mode .setting-item strong,
+html.dark-mode .setting-action strong {
+  color: #ffffff;
+}
+
+html.dark-mode .setting-item small,
+html.dark-mode .setting-action small {
+  color: var(--muted);
+}
+
+html.dark-mode .setting-item > span {
+  color: var(--muted);
+}
+
+html.dark-mode .setting-icon {
+  background: #193a29;
+}
+
+html.dark-mode .setting-toggle {
+  background: #4b5750;
+}
+
+html.dark-mode .setting-toggle.active {
+  background: var(--green);
+}
+
+html.dark-mode .setting-action > b {
+  color: #7bd5a3;
+}
+
+html.dark-mode .setting-status {
+  color: #7bd5a3 !important;
+}
+
+/* -------------------------
+   UPDATED SETTINGS
+------------------------- */
 
 html.dark-mode .settings-card,
 html.dark-mode .settings-action-card {
@@ -2611,16 +2860,11 @@ html.dark-mode .settings-action-card {
   color: var(--text);
 }
 
-html.dark-mode .settings-card-content strong,
-html.dark-mode .settings-section-title,
-html.dark-mode .settings-footer strong {
+html.dark-mode .settings-card-content strong {
   color: #ffffff;
 }
 
-html.dark-mode .settings-card-content small,
-html.dark-mode .settings-footer,
-html.dark-mode .settings-footer span,
-html.dark-mode .settings-footer small {
+html.dark-mode .settings-card-content small {
   color: var(--muted);
 }
 
@@ -2640,11 +2884,60 @@ html.dark-mode .settings-value {
   color: #7bd5a3;
 }
 
+html.dark-mode .settings-action-arrow {
+  color: #7bd5a3;
+}
+
+html.dark-mode .settings-section-title {
+  color: #ffffff;
+}
+
+html.dark-mode .settings-footer {
+  color: var(--muted);
+}
+
+html.dark-mode .settings-footer strong {
+  color: #ffffff;
+}
+
+html.dark-mode .settings-footer span,
+html.dark-mode .settings-footer small {
+  color: var(--muted);
+}
+
+html.dark-mode .settings-footer-logo {
+  background: #193a29;
+}
+
 html.dark-mode .settings-notification-message {
   background: #193a29;
   border-color: #2d5840;
   color: #d9f2e3;
 }
+
+/* -------------------------
+   DANGER ACTION
+------------------------- */
+
+html.dark-mode .settings-action-card.danger {
+  border-color: #59312e;
+}
+
+html.dark-mode .settings-action-card.danger .settings-card-icon {
+  background: #3a211f;
+}
+
+html.dark-mode .settings-action-card.danger .settings-card-content strong {
+  color: #ffaaa3;
+}
+
+html.dark-mode .settings-action-card.danger .settings-action-arrow {
+  color: #ffaaa3;
+}
+
+/* -------------------------
+   MODAL
+------------------------- */
 
 html.dark-mode .settings-confirm-modal {
   background: #172019;
@@ -2665,64 +2958,120 @@ html.dark-mode .settings-confirm-cancel {
   color: #ffffff;
 }
 
-html.dark-mode .settings-action-card.danger {
-  border-color: #59312e;
+/* -------------------------
+   BOTTOM NAV
+------------------------- */
+
+html.dark-mode .bottom-nav {
+  background: rgba(23, 32, 25, 0.97);
+  border-color: #29362f;
+}
+
+html.dark-mode .nav-button {
+  color: #84928a;
+}
+
+html.dark-mode .nav-button.active {
+  color: #7bd5a3;
 }
 
 /* =========================================================
-   ANIMATIONS
+   RESPONSIVE
 ========================================================= */
 
-@keyframes settingsModalFade {
-  from {
-    opacity: 0;
+@media (max-width: 500px) {
+  .header-inner {
+    min-height: 72px;
+    padding: 12px 13px;
   }
 
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes settingsModalScale {
-  from {
-    opacity: 0;
-    transform: scale(0.92);
+  .brand-icon {
+    width: 38px;
+    height: 38px;
   }
 
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 420px) {
-  .settings-card,
-  .settings-action-card {
-    padding: 13px;
+  .logo {
+    font-size: 15px;
   }
 
-  .settings-card-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .settings-card-content strong {
-    font-size: 12px;
-  }
-
-  .settings-card-content small {
+  .tagline {
     font-size: 9px;
   }
 
-  .settings-value {
+  .credits-badge {
+    min-width: 69px;
+    padding: 6px 8px;
+  }
+
+  .credits-badge small {
     display: none;
   }
 
-  .settings-confirm-modal {
-    padding: 23px 17px 17px;
+  .content {
+    padding: 18px 13px 25px;
   }
-}
+
+  .home-welcome {
+    padding: 23px 18px;
+  }
+
+  .home-welcome h1 {
+    font-size: 27px;
+  }
+
+  .featured-procedure {
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .featured-icon {
+    width: 51px;
+    height: 51px;
+    font-size: 24px;
+  }
+
+  .featured-content h2 {
+    font-size: 18px;
+  }
+
+  .contact-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .procedure-tabs {
+    gap: 3px;
+    padding: 4px;
+  }
+
+  .procedure-tab {
+    padding: 11px 3px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .procedure-detail-header {
+    padding: 16px;
+  }
+
+  .procedure-detail-header h1 {
+    font-size: 19px;
+  }
+
+  .quiz-card,
+  .quiz-intro-card,
+  .quiz-result-card,
+  .quiz-empty {
+    border-radius: 18px;
+    padding: 20px 14px;
+  }
+
+  .quiz-question-title {
+    font-size: 17px;
+  }
+
+  .quiz-answer {
+    padding: 11px;
+  }
+
+  .quiz-answer.selected {
+   
