@@ -12,6 +12,9 @@ type Category = {
   description: string;
 };
 
+const RECENTLY_VIEWED_KEY = "nursing-component-task-recently-viewed";
+const MAX_RECENTLY_VIEWED = 5;
+
 const procedureCategories: Category[] = [
   {
     icon: "🩺",
@@ -50,6 +53,39 @@ const procedureCategories: Category[] = [
   },
 ];
 
+function loadRecentlyViewed(): string[] {
+  try {
+    const saved = localStorage.getItem(RECENTLY_VIEWED_KEY);
+
+    if (!saved) {
+      return [];
+    }
+
+    const parsed = JSON.parse(saved);
+
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+
+    return parsed
+      .filter((id): id is string => typeof id === "string")
+      .slice(0, MAX_RECENTLY_VIEWED);
+  } catch {
+    return [];
+  }
+}
+
+function saveRecentlyViewed(ids: string[]) {
+  try {
+    localStorage.setItem(
+      RECENTLY_VIEWED_KEY,
+      JSON.stringify(ids.slice(0, MAX_RECENTLY_VIEWED))
+    );
+  } catch {
+    // Ignore storage errors so the app continues working normally.
+  }
+}
+
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
   const [activeTab, setActiveTab] = useState<Tab>("home");
@@ -62,6 +98,13 @@ export default function App() {
 
   const [procedureSearch, setProcedureSearch] = useState("");
 
+  const [recentlyViewedIds, setRecentlyViewedIds] =
+    useState<string[]>([]);
+
+  useEffect(() => {
+    setRecentlyViewedIds(loadRecentlyViewed());
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
@@ -69,6 +112,15 @@ export default function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const recentlyViewedProcedures = recentlyViewedIds
+    .map((id) =>
+      procedures.find((procedure) => procedure.id === id)
+    )
+    .filter(
+      (procedure): procedure is Procedure =>
+        Boolean(procedure)
+    );
 
   const navigate = (tab: Tab) => {
     setActiveTab(tab);
@@ -96,10 +148,45 @@ export default function App() {
   const openProcedure = (procedure: Procedure) => {
     setSelectedProcedure(procedure);
 
+    setRecentlyViewedIds((currentIds) => {
+      const updatedIds = [
+        procedure.id,
+        ...currentIds.filter(
+          (id) => id !== procedure.id
+        ),
+      ].slice(0, MAX_RECENTLY_VIEWED);
+
+      saveRecentlyViewed(updatedIds);
+
+      return updatedIds;
+    });
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+  };
+
+  const openRecentlyViewedProcedure = (
+    procedure: Procedure
+  ) => {
+    const category = procedureCategories.find(
+      (item) => item.name === procedure.category
+    );
+
+    setActiveTab("procedures");
+
+    if (category) {
+      setSelectedCategory(category);
+    } else {
+      setSelectedCategory({
+        icon: "🩺",
+        name: procedure.category,
+        description: "Nursing procedures",
+      });
+    }
+
+    openProcedure(procedure);
   };
 
   const backToCategories = () => {
@@ -309,20 +396,56 @@ export default function App() {
                 Recently Viewed
               </h2>
 
-              <div className="empty-state">
-                <div className="empty-icon">
-                  🕘
+              {recentlyViewedProcedures.length === 0 ? (
+                <div className="empty-state">
+                  <div className="empty-icon">
+                    🕘
+                  </div>
+
+                  <h3>
+                    No procedures viewed yet
+                  </h3>
+
+                  <p>
+                    Procedures you open will appear
+                    here for quick access.
+                  </p>
                 </div>
+              ) : (
+                <div className="category-list">
+                  {recentlyViewedProcedures.map(
+                    (procedure) => (
+                      <button
+                        key={procedure.id}
+                        className="category-card"
+                        onClick={() =>
+                          openRecentlyViewedProcedure(
+                            procedure
+                          )
+                        }
+                      >
+                        <span className="category-icon">
+                          🩺
+                        </span>
 
-                <h3>
-                  No procedures viewed yet
-                </h3>
+                        <span className="category-content">
+                          <strong>
+                            {procedure.title}
+                          </strong>
 
-                <p>
-                  Procedures you open will appear
-                  here for quick access.
-                </p>
-              </div>
+                          <small>
+                            {procedure.category}
+                          </small>
+                        </span>
+
+                        <span className="category-arrow">
+                          ›
+                        </span>
+                      </button>
+                    )
+                  )}
+                </div>
+              )}
             </section>
 
             <section className="nmc-info">
@@ -743,4 +866,4 @@ export default function App() {
       </nav>
     </div>
   );
-                  }
+        }
