@@ -1549,7 +1549,3 @@ export const rgnBatch02: Procedure[] = [
     ]
   }
 ];
-
-Video choices used: Procedure 11 is the Ghana/N&MC-focused demonstration; Procedure 12 uses UCLA's teach-back education video, which specifically demonstrates plain-language education and asking the patient to explain instructions back; Procedure 13 uses Cleveland Clinic's discharge-planning nursing material; Procedure 14 uses Osmosis' nurse-focused hospital-discharge video; Procedures 15–19 use the RegisteredNurseRN vital-signs demonstration; and Procedure 20 uses RegisteredNurseRN's glucometer demonstration.
-
-One thing I deliberately did: I used a normal URL for non-YouTube educational pages in "videoUrl". If your "ProcedureDetails.tsx" currently assumes every "videoUrl" is a YouTube URL and constructs an iframe using "youtube.com/embed/...", then Procedures 13 and 14 will need a small frontend change to support external nursing-resource URLs. Your current data model already uses "videoUrl", so I would recommend making the video renderer support both YouTube and normal web video/resource URLs rather than restricting NurseMaster to YouTube.
