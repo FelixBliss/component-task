@@ -5,19 +5,13 @@ type SettingsProps = {
   onClearRecentHistory?: () => void;
 };
 
-type Appearance =
-  | "light"
-  | "dark"
-  | "system";
+const NOTIFICATIONS_KEY = "nct-notifications-enabled";
+const SAVE_PROGRESS_KEY = "nct-save-progress";
+const APPEARANCE_KEY = "nct-appearance";
+const STYLE_KEY = "nct-style";
 
-const NOTIFICATIONS_KEY =
-  "nct-notifications-enabled";
-
-const SAVE_PROGRESS_KEY =
-  "nct-save-progress";
-
-const APPEARANCE_KEY =
-  "nct-appearance";
+type Appearance = "light" | "dark";
+type AppStyle = "default" | "compact";
 
 export default function Settings({
   onAbout,
@@ -30,9 +24,12 @@ export default function Settings({
     useState<boolean>(true);
 
   const [appearance, setAppearance] =
-    useState<Appearance>("system");
+    useState<Appearance>("light");
 
-  const [showClearModal, setShowClearModal] =
+  const [appStyle, setAppStyle] =
+    useState<AppStyle>("default");
+
+  const [showClearConfirm, setShowClearConfirm] =
     useState(false);
 
   const [notificationMessage, setNotificationMessage] =
@@ -40,14 +37,12 @@ export default function Settings({
 
   /* =====================================================
      LOAD SETTINGS
-     ===================================================== */
+  ===================================================== */
 
   useEffect(() => {
     try {
       const savedNotifications =
-        localStorage.getItem(
-          NOTIFICATIONS_KEY
-        );
+        localStorage.getItem(NOTIFICATIONS_KEY);
 
       if (savedNotifications !== null) {
         setNotificationsEnabled(
@@ -56,9 +51,7 @@ export default function Settings({
       }
 
       const savedProgress =
-        localStorage.getItem(
-          SAVE_PROGRESS_KEY
-        );
+        localStorage.getItem(SAVE_PROGRESS_KEY);
 
       if (savedProgress !== null) {
         setSaveProgressEnabled(
@@ -67,43 +60,40 @@ export default function Settings({
       }
 
       const savedAppearance =
-        localStorage.getItem(
-          APPEARANCE_KEY
-        );
+        localStorage.getItem(APPEARANCE_KEY);
 
       if (
-        savedAppearance === "light" ||
         savedAppearance === "dark" ||
-        savedAppearance === "system"
+        savedAppearance === "light"
       ) {
-        setAppearance(
-          savedAppearance
-        );
+        setAppearance(savedAppearance);
+      }
+
+      const savedStyle =
+        localStorage.getItem(STYLE_KEY);
+
+      if (
+        savedStyle === "compact" ||
+        savedStyle === "default"
+      ) {
+        setAppStyle(savedStyle);
       }
     } catch {
-      // Ignore localStorage errors.
+      // Ignore storage errors.
     }
   }, []);
 
   /* =====================================================
      APPLY APPEARANCE
-     ===================================================== */
+  ===================================================== */
 
   useEffect(() => {
-    const root =
-      document.documentElement;
-
-    root.classList.remove(
-      "light",
-      "dark"
-    );
-
-    if (appearance === "light") {
-      root.classList.add("light");
-    }
+    const root = document.documentElement;
 
     if (appearance === "dark") {
-      root.classList.add("dark");
+      root.classList.add("dark-mode");
+    } else {
+      root.classList.remove("dark-mode");
     }
 
     try {
@@ -112,200 +102,180 @@ export default function Settings({
         appearance
       );
     } catch {
-      // Ignore localStorage errors.
+      // Ignore storage errors.
     }
   }, [appearance]);
 
   /* =====================================================
-     NOTIFICATION SUPPORT
-     ===================================================== */
+     APPLY APP STYLE
+  ===================================================== */
 
-  const showBrowserNotification = () => {
-    if (
-      typeof window === "undefined" ||
-      !("Notification" in window)
-    ) {
-      setNotificationMessage(
-        "Notifications are not supported by this browser."
+  useEffect(() => {
+    const root = document.documentElement;
+
+    root.classList.remove(
+      "style-default",
+      "style-compact"
+    );
+
+    root.classList.add(
+      appStyle === "compact"
+        ? "style-compact"
+        : "style-default"
+    );
+
+    try {
+      localStorage.setItem(
+        STYLE_KEY,
+        appStyle
       );
-
-      return;
+    } catch {
+      // Ignore storage errors.
     }
-
-    if (
-      Notification.permission ===
-      "granted"
-    ) {
-      new Notification(
-        "Nursing Component Task",
-        {
-          body:
-            "Learning reminders are enabled. Keep learning and practicing your nursing procedures.",
-          icon: "/icon-192.png",
-        }
-      );
-
-      setNotificationMessage(
-        "Notification test sent successfully."
-      );
-
-      return;
-    }
-
-    if (
-      Notification.permission ===
-      "denied"
-    ) {
-      setNotificationMessage(
-        "Notifications are blocked. Enable them in your browser or device settings."
-      );
-
-      return;
-    }
-  };
+  }, [appStyle]);
 
   /* =====================================================
-     TOGGLE NOTIFICATIONS
-     ===================================================== */
+     NOTIFICATIONS
+  ===================================================== */
 
   const toggleNotifications = async () => {
-    if (notificationsEnabled) {
-      setNotificationsEnabled(false);
+    const next = !notificationsEnabled;
 
-      try {
-        localStorage.setItem(
-          NOTIFICATIONS_KEY,
-          "false"
-        );
-      } catch {
-        // Ignore storage errors.
-      }
-
-      setNotificationMessage(
-        "Learning notifications have been turned off."
-      );
-
-      return;
-    }
-
-    /*
-     * Check browser support.
-     */
-    if (
-      typeof window === "undefined" ||
-      !("Notification" in window)
-    ) {
-      setNotificationMessage(
-        "This browser does not support notifications."
-      );
-
-      return;
-    }
-
-    /*
-     * Request permission when necessary.
-     */
-    if (
-      Notification.permission ===
-      "default"
-    ) {
-      try {
-        const permission =
-          await Notification.requestPermission();
-
-        if (permission !== "granted") {
-          setNotificationsEnabled(false);
-
-          try {
-            localStorage.setItem(
-              NOTIFICATIONS_KEY,
-              "false"
+    if (next) {
+      /*
+       * Browser notification permission.
+       */
+      if ("Notification" in window) {
+        try {
+          if (
+            Notification.permission === "denied"
+          ) {
+            setNotificationMessage(
+              "Notifications are blocked in your browser. Enable them in your browser settings."
             );
-          } catch {
-            // Ignore storage errors.
+            return;
           }
 
-          setNotificationMessage(
-            "Notification permission was not granted."
+          if (
+            Notification.permission !== "granted"
+          ) {
+            const permission =
+              await Notification.requestPermission();
+
+            if (permission !== "granted") {
+              setNotificationMessage(
+                "Notification permission was not granted."
+              );
+              return;
+            }
+          }
+
+          /*
+           * Send a test notification.
+           */
+          new Notification(
+            "Nursing Component Task",
+            {
+              body:
+                "Learning notifications are now enabled.",
+              icon: "/icon-192.png",
+            }
           );
 
-          return;
+          setNotificationMessage(
+            "Notifications enabled."
+          );
+        } catch {
+          setNotificationMessage(
+            "Your device/browser does not support notifications."
+          );
         }
-      } catch {
+      } else {
         setNotificationMessage(
-          "Unable to request notification permission."
+          "Notifications are not supported on this device."
         );
-
-        return;
       }
-    }
-
-    /*
-     * Permission is granted.
-     */
-    if (
-      Notification.permission ===
-      "granted"
-    ) {
-      setNotificationsEnabled(true);
-
-      try {
-        localStorage.setItem(
-          NOTIFICATIONS_KEY,
-          "true"
-        );
-      } catch {
-        // Ignore storage errors.
-      }
-
+    } else {
       setNotificationMessage(
-        "Notifications enabled."
+        "Learning notifications disabled."
       );
-
-      /*
-       * Send a test notification.
-       */
-      showBrowserNotification();
     }
+
+    setNotificationsEnabled(next);
+
+    try {
+      localStorage.setItem(
+        NOTIFICATIONS_KEY,
+        String(next)
+      );
+    } catch {
+      // Ignore storage errors.
+    }
+
+    window.setTimeout(() => {
+      setNotificationMessage("");
+    }, 3500);
   };
 
   /* =====================================================
      SAVE PROGRESS
-     ===================================================== */
+  ===================================================== */
 
   const toggleSaveProgress = () => {
-    setSaveProgressEnabled(
-      (current) => {
-        const next = !current;
+    setSaveProgressEnabled((current) => {
+      const next = !current;
 
-        try {
-          localStorage.setItem(
-            SAVE_PROGRESS_KEY,
-            String(next)
-          );
-        } catch {
-          // Ignore storage errors.
-        }
-
-        return next;
+      try {
+        localStorage.setItem(
+          SAVE_PROGRESS_KEY,
+          String(next)
+        );
+      } catch {
+        // Ignore storage errors.
       }
+
+      return next;
+    });
+  };
+
+  /* =====================================================
+     APPEARANCE
+  ===================================================== */
+
+  const toggleAppearance = () => {
+    setAppearance((current) =>
+      current === "light"
+        ? "dark"
+        : "light"
     );
   };
 
   /* =====================================================
-     CLEAR HISTORY — OPEN CUSTOM MODAL
-     ===================================================== */
+     STYLE
+  ===================================================== */
 
-  const handleClearRecentHistory = () => {
-    setShowClearModal(true);
+  const toggleStyle = () => {
+    setAppStyle((current) =>
+      current === "default"
+        ? "compact"
+        : "default"
+    );
   };
 
   /* =====================================================
-     CONFIRM CLEAR HISTORY
-     ===================================================== */
+     CLEAR HISTORY
+  ===================================================== */
 
-  const confirmClearRecentHistory = () => {
-    setShowClearModal(false);
+  const requestClearHistory = () => {
+    setShowClearConfirm(true);
+  };
+
+  const cancelClearHistory = () => {
+    setShowClearConfirm(false);
+  };
+
+  const confirmClearHistory = () => {
+    setShowClearConfirm(false);
 
     if (onClearRecentHistory) {
       onClearRecentHistory();
@@ -313,29 +283,16 @@ export default function Settings({
   };
 
   /* =====================================================
-     CANCEL CLEAR HISTORY
-     ===================================================== */
-
-  const cancelClearRecentHistory = () => {
-    setShowClearModal(false);
-  };
-
-  /* =====================================================
-     APPEARANCE LABEL
-     ===================================================== */
-
-  const appearanceLabel =
-    appearance === "light"
-      ? "Light"
-      : appearance === "dark"
-      ? "Dark"
-      : "System";
+     RENDER
+  ===================================================== */
 
   return (
     <>
       <section className="settings-page">
 
-        {/* ================= PAGE HEADER ================= */}
+        {/* =================================================
+           HEADER
+        ================================================= */}
 
         <div className="page-heading">
           <span className="page-kicker">
@@ -352,11 +309,13 @@ export default function Settings({
           </p>
         </div>
 
-        {/* ================= SETTINGS LIST ================= */}
+        {/* =================================================
+           SETTINGS
+        ================================================= */}
 
         <div className="settings-list">
 
-          {/* ================= NOTIFICATIONS ================= */}
+          {/* NOTIFICATIONS */}
 
           <div className="settings-card">
 
@@ -372,18 +331,6 @@ export default function Settings({
               <small>
                 Receive learning reminders
               </small>
-
-              {notificationMessage && (
-                <small
-                  style={{
-                    display: "block",
-                    marginTop: "4px",
-                    opacity: 0.75,
-                  }}
-                >
-                  {notificationMessage}
-                </small>
-              )}
             </div>
 
             <button
@@ -393,9 +340,7 @@ export default function Settings({
                   ? "active"
                   : ""
               }`}
-              onClick={
-                toggleNotifications
-              }
+              onClick={toggleNotifications}
               aria-label={
                 notificationsEnabled
                   ? "Disable notifications"
@@ -410,7 +355,81 @@ export default function Settings({
 
           </div>
 
-          {/* ================= SAVE PROGRESS ================= */}
+          {/* APPEARANCE */}
+
+          <button
+            type="button"
+            className="settings-action-card"
+            onClick={toggleAppearance}
+          >
+
+            <div className="settings-card-icon">
+              {appearance === "dark"
+                ? "🌙"
+                : "☀️"}
+            </div>
+
+            <div className="settings-card-content">
+              <strong>
+                Appearance
+              </strong>
+
+              <small>
+                {appearance === "dark"
+                  ? "Dark mode is currently active"
+                  : "Light mode is currently active"}
+              </small>
+            </div>
+
+            <span className="settings-value">
+              {appearance === "dark"
+                ? "Dark"
+                : "Light"}
+            </span>
+
+            <span className="settings-action-arrow">
+              ›
+            </span>
+
+          </button>
+
+          {/* STYLE */}
+
+          <button
+            type="button"
+            className="settings-action-card"
+            onClick={toggleStyle}
+          >
+
+            <div className="settings-card-icon">
+              🎨
+            </div>
+
+            <div className="settings-card-content">
+              <strong>
+                Style
+              </strong>
+
+              <small>
+                {appStyle === "compact"
+                  ? "Compact layout"
+                  : "Standard layout"}
+              </small>
+            </div>
+
+            <span className="settings-value">
+              {appStyle === "compact"
+                ? "Compact"
+                : "Standard"}
+            </span>
+
+            <span className="settings-action-arrow">
+              ›
+            </span>
+
+          </button>
+
+          {/* SAVE PROGRESS */}
 
           <div className="settings-card">
 
@@ -453,64 +472,13 @@ export default function Settings({
 
           </div>
 
-          {/* ================= APPEARANCE ================= */}
-
-          <div className="settings-card">
-
-            <div className="settings-card-icon">
-              🎨
-            </div>
-
-            <div className="settings-card-content">
-              <strong>
-                Appearance
-              </strong>
-
-              <small>
-                {appearanceLabel} mode
-              </small>
-            </div>
-
-            <select
-              value={appearance}
-              onChange={(event) =>
-                setAppearance(
-                  event.target.value as Appearance
-                )
-              }
-              aria-label="Choose appearance"
-              style={{
-                border: "none",
-                background:
-                  "transparent",
-                fontSize: "14px",
-                fontWeight: 600,
-                cursor: "pointer",
-                outline: "none",
-              }}
-            >
-              <option value="system">
-                System
-              </option>
-
-              <option value="light">
-                Light
-              </option>
-
-              <option value="dark">
-                Dark
-              </option>
-            </select>
-
-          </div>
-
-          {/* ================= CLEAR HISTORY ================= */}
+          {/* CLEAR HISTORY */}
 
           <button
             type="button"
             className="settings-action-card danger"
             onClick={
-              handleClearRecentHistory
+              requestClearHistory
             }
           >
 
@@ -537,7 +505,19 @@ export default function Settings({
 
         </div>
 
-        {/* ================= ABOUT ================= */}
+        {/* =================================================
+           NOTIFICATION MESSAGE
+        ================================================= */}
+
+        {notificationMessage && (
+          <div className="settings-notification-message">
+            {notificationMessage}
+          </div>
+        )}
+
+        {/* =================================================
+           ABOUT
+        ================================================= */}
 
         <div className="settings-section">
 
@@ -574,7 +554,9 @@ export default function Settings({
 
         </div>
 
-        {/* ================= VERSION ================= */}
+        {/* =================================================
+           VERSION
+        ================================================= */}
 
         <div className="settings-footer">
 
@@ -598,135 +580,55 @@ export default function Settings({
 
       </section>
 
-      {/* ==================================================
-          CUSTOM CLEAR HISTORY MODAL
-          ================================================== */}
+      {/* ===================================================
+         CUSTOM CLEAR CONFIRMATION MODAL
+      =================================================== */}
 
-      {showClearModal && (
+      {showClearConfirm && (
         <div
+          className="settings-modal-overlay"
           role="presentation"
-          onClick={
-            cancelClearRecentHistory
-          }
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 9999,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            padding: "20px",
-            background:
-              "rgba(0, 0, 0, 0.5)",
-          }}
         >
 
           <div
+            className="settings-confirm-modal"
             role="dialog"
             aria-modal="true"
             aria-labelledby="clear-history-title"
-            onClick={(event) =>
-              event.stopPropagation()
-            }
-            style={{
-              width: "100%",
-              maxWidth: "400px",
-              background:
-                "var(--card-bg, #ffffff)",
-              borderRadius: "20px",
-              padding: "24px",
-              boxShadow:
-                "0 20px 60px rgba(0,0,0,0.25)",
-            }}
           >
 
-            <div
-              style={{
-                width: "54px",
-                height: "54px",
-                borderRadius: "16px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                background:
-                  "rgba(220, 38, 38, 0.1)",
-                fontSize: "26px",
-                marginBottom: "16px",
-              }}
-            >
+            <div className="settings-confirm-icon">
               🧹
             </div>
 
-            <h2
-              id="clear-history-title"
-              style={{
-                margin: "0 0 8px",
-                fontSize: "20px",
-                fontWeight: 700,
-              }}
-            >
-              Clear recent history?
+            <h2 id="clear-history-title">
+              Clear Recent History?
             </h2>
 
-            <p
-              style={{
-                margin: "0",
-                lineHeight: 1.6,
-                opacity: 0.75,
-                fontSize: "14px",
-              }}
-            >
-              This will remove all procedures
-              from your Recently Viewed list.
-              Your procedures and saved
-              learning progress will not be
-              affected.
+            <p>
+              This will remove all recently
+              viewed procedures from this
+              device.
             </p>
 
-            <div
-              style={{
-                display: "flex",
-                gap: "12px",
-                marginTop: "24px",
-              }}
-            >
+            <div className="settings-confirm-actions">
 
               <button
                 type="button"
+                className="settings-confirm-cancel"
                 onClick={
-                  cancelClearRecentHistory
+                  cancelClearHistory
                 }
-                style={{
-                  flex: 1,
-                  minHeight: "46px",
-                  borderRadius: "12px",
-                  border:
-                    "1px solid rgba(0,0,0,0.12)",
-                  background:
-                    "transparent",
-                  fontWeight: 600,
-                  cursor: "pointer",
-                }}
               >
                 Cancel
               </button>
 
               <button
                 type="button"
+                className="settings-confirm-danger"
                 onClick={
-                  confirmClearRecentHistory
+                  confirmClearHistory
                 }
-                style={{
-                  flex: 1,
-                  minHeight: "46px",
-                  border: "none",
-                  borderRadius: "12px",
-                  background:
-                    "#dc2626",
-                  color: "#ffffff",
-                  fontWeight: 700,
-                  cursor: "pointer",
-                }}
               >
                 Clear History
               </button>
@@ -737,7 +639,6 @@ export default function Settings({
 
         </div>
       )}
-
     </>
   );
-      }
+          }
