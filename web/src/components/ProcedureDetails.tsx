@@ -66,7 +66,7 @@ export default function ProcedureDetails({
   const quizzes = procedure.quiz ?? [];
 
   const [activeTab, setActiveTab] =
-    useState<"details" | "quiz">("details");
+    useState<"details" | "video" | "quiz">("details");
 
   const [quizStarted, setQuizStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -172,13 +172,25 @@ export default function ProcedureDetails({
         <button
           type="button"
           role="tab"
+          aria-selected={activeTab === "video"}
+          className={`procedure-tab ${
+            activeTab === "video" ? "active" : ""
+          }`}
+          onClick={() => setActiveTab("video")}
+        >
+          🎥 Video
+        </button>
+
+        <button
+          type="button"
+          role="tab"
           aria-selected={activeTab === "quiz"}
           className={`procedure-tab ${
             activeTab === "quiz" ? "active" : ""
           }`}
           onClick={() => setActiveTab("quiz")}
         >
-          Test Yourself
+          📝 Quiz
           {quizzes.length > 0 && ` · ${quizzes.length}`}
         </button>
       </div>
@@ -241,85 +253,6 @@ export default function ProcedureDetails({
             </ul>
           </div>
 
-          {/* ================= VIDEO ================= */}
-
-          {procedure.videoUrl && (
-            <div className="procedure-detail-section">
-
-              <h2>Video Demonstration</h2>
-
-              {!videoError && videoEmbedUrl ? (
-                <>
-                  <div className="procedure-video">
-                    <iframe
-                      src={videoEmbedUrl}
-                      title={`${procedure.title} video demonstration`}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      onError={() => setVideoError(true)}
-                    />
-                  </div>
-
-                  <button
-                    type="button"
-                    className="video-youtube-button"
-                    onClick={() => {
-                      if (videoWatchUrl) {
-                        window.open(
-                          videoWatchUrl,
-                          "_blank",
-                          "noopener,noreferrer"
-                        );
-                      }
-                    }}
-                  >
-                    ▶ Watch on YouTube
-                  </button>
-
-                  <p className="video-help-text">
-                    If the video cannot play inside the app,
-                    use the YouTube button above.
-                  </p>
-                </>
-              ) : (
-                <div className="video-fallback-card">
-
-                  <div className="video-fallback-icon">
-                    ▶
-                  </div>
-
-                  <h3>
-                    Video unavailable in the app
-                  </h3>
-
-                  <p>
-                    This video may have embedding
-                    restrictions. You can watch it
-                    directly on YouTube.
-                  </p>
-
-                  {videoWatchUrl && (
-                    <button
-                      type="button"
-                      className="video-youtube-button"
-                      onClick={() =>
-                        window.open(
-                          videoWatchUrl,
-                          "_blank",
-                          "noopener,noreferrer"
-                        )
-                      }
-                    >
-                      ▶ Watch on YouTube
-                    </button>
-                  )}
-                </div>
-              )}
-
-            </div>
-          )}
-
           {/* Quiz shortcut */}
 
           {quizzes.length > 0 && (
@@ -330,6 +263,100 @@ export default function ProcedureDetails({
             >
               🧠 Test Yourself →
             </button>
+          )}
+
+        </div>
+      )}
+
+      {/* ================= VIDEO ================= */}
+
+      {activeTab === "video" && (
+        <div className="procedure-detail-content">
+
+          {!procedure.videoUrl ? (
+            <div className="video-empty-state">
+              <div className="video-empty-icon">🎥</div>
+              <h2>No video available</h2>
+              <p>
+                No video demonstration is available for this procedure.
+              </p>
+            </div>
+          ) : !videoError && videoEmbedUrl ? (
+            <div className="procedure-detail-section">
+
+              <div className="procedure-video">
+                <iframe
+                  src={videoEmbedUrl}
+                  title={`${procedure.title} video demonstration`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  onError={() => setVideoError(true)}
+                  onLoad={() => {
+                    // Video loaded successfully
+                  }}
+                />
+              </div>
+
+              <button
+                type="button"
+                className="video-youtube-button"
+                onClick={() => {
+                  if (videoWatchUrl) {
+                    window.open(
+                      videoWatchUrl,
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
+                  }
+                }}
+              >
+                ▶ Watch on YouTube
+              </button>
+
+              <p className="video-help-text">
+                If the video cannot play inside the app,
+                use the YouTube button above.
+              </p>
+
+            </div>
+          ) : (
+            <div className="procedure-detail-section">
+
+              <div className="video-fallback-card">
+
+                <div className="video-fallback-icon">
+                  ▶
+                </div>
+
+                <h3>
+                  This video cannot be played inside the app
+                </h3>
+
+                <p>
+                  This video may have embedding restrictions.
+                  You can watch it directly on YouTube.
+                </p>
+
+                {videoWatchUrl && (
+                  <button
+                    type="button"
+                    className="video-youtube-button"
+                    onClick={() =>
+                      window.open(
+                        videoWatchUrl,
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
+                  >
+                    ▶ Watch on YouTube
+                  </button>
+                )}
+
+              </div>
+
+            </div>
           )}
 
         </div>
@@ -541,4 +568,4 @@ export default function ProcedureDetails({
 
     </section>
   );
-              }
+}
