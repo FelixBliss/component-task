@@ -1,10 +1,15 @@
+import React, { useEffect, useState } from "react";
 import Settings from "./Settings";
 import ProcedureList from "./components/ProcedureList";
 import ProcedureDetails from "./components/ProcedureDetails";
 import { procedures, type Procedure } from "./data/procedures";
-import React, { useEffect, useState } from "react";
 
-type Tab = "home" | "procedures" | "about" | "settings" | "credits";
+type Tab =
+  | "home"
+  | "procedures"
+  | "about"
+  | "settings"
+  | "credits";
 
 type Category = {
   icon: string;
@@ -12,8 +17,12 @@ type Category = {
   description: string;
 };
 
-const RECENTLY_VIEWED_KEY = "nursing-component-task-recently-viewed";
+const RECENTLY_VIEWED_KEY =
+  "nursing-component-task-recently-viewed";
+
 const MAX_RECENTLY_VIEWED = 5;
+
+const SAVE_PROGRESS_KEY = "nct-save-progress";
 
 const procedureCategories: Category[] = [
   {
@@ -55,20 +64,25 @@ const procedureCategories: Category[] = [
 
 function loadRecentlyViewed(): string[] {
   try {
-    const saved = localStorage.getItem(RECENTLY_VIEWED_KEY);
+    const saved = localStorage.getItem(
+      RECENTLY_VIEWED_KEY
+    );
 
     if (!saved) {
       return [];
     }
 
-    const parsed = JSON.parse(saved);
+    const parsed: unknown = JSON.parse(saved);
 
     if (!Array.isArray(parsed)) {
       return [];
     }
 
     return parsed
-      .filter((id): id is string => typeof id === "string")
+      .filter(
+        (id): id is string =>
+          typeof id === "string"
+      )
       .slice(0, MAX_RECENTLY_VIEWED);
   } catch {
     return [];
@@ -79,16 +93,21 @@ function saveRecentlyViewed(ids: string[]) {
   try {
     localStorage.setItem(
       RECENTLY_VIEWED_KEY,
-      JSON.stringify(ids.slice(0, MAX_RECENTLY_VIEWED))
+      JSON.stringify(
+        ids.slice(0, MAX_RECENTLY_VIEWED)
+      )
     );
   } catch {
-    // Ignore storage errors so the app continues working normally.
+    // Ignore localStorage errors.
   }
 }
 
 export default function App() {
-  const [showSplash, setShowSplash] = useState(true);
-  const [activeTab, setActiveTab] = useState<Tab>("home");
+  const [showSplash, setShowSplash] =
+    useState(true);
+
+  const [activeTab, setActiveTab] =
+    useState<Tab>("home");
 
   const [selectedCategory, setSelectedCategory] =
     useState<Category | null>(null);
@@ -96,15 +115,24 @@ export default function App() {
   const [selectedProcedure, setSelectedProcedure] =
     useState<Procedure | null>(null);
 
-  const [procedureSearch, setProcedureSearch] = useState("");
+  const [procedureSearch, setProcedureSearch] =
+    useState("");
 
   const [recentlyViewedIds, setRecentlyViewedIds] =
     useState<string[]>([]);
 
+  /*
+   * Load Recently Viewed once when the app starts.
+   */
   useEffect(() => {
-    setRecentlyViewedIds(loadRecentlyViewed());
+    setRecentlyViewedIds(
+      loadRecentlyViewed()
+    );
   }, []);
 
+  /*
+   * Splash screen.
+   */
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
@@ -113,15 +141,28 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  const recentlyViewedProcedures = recentlyViewedIds
-    .map((id) =>
-      procedures.find((procedure) => procedure.id === id)
-    )
-    .filter(
-      (procedure): procedure is Procedure =>
-        Boolean(procedure)
-    );
+  /*
+   * Resolve Recently Viewed IDs into actual
+   * procedure objects.
+   */
+  const recentlyViewedProcedures =
+    recentlyViewedIds
+      .map((id) =>
+        procedures.find(
+          (procedure) =>
+            procedure.id === id
+        )
+      )
+      .filter(
+        (
+          procedure
+        ): procedure is Procedure =>
+          Boolean(procedure)
+      );
 
+  /*
+   * Navigation helper.
+   */
   const navigate = (tab: Tab) => {
     setActiveTab(tab);
     setSelectedCategory(null);
@@ -134,7 +175,13 @@ export default function App() {
     });
   };
 
-  const openCategory = (category: Category) => {
+  /*
+   * Open a procedure category.
+   */
+  const openCategory = (
+    category: Category
+  ) => {
+    setActiveTab("procedures");
     setSelectedCategory(category);
     setSelectedProcedure(null);
     setProcedureSearch("");
@@ -145,21 +192,33 @@ export default function App() {
     });
   };
 
-  const openProcedure = (procedure: Procedure) => {
+  /*
+   * Open a procedure and update Recently Viewed.
+   *
+   * The selected procedure is moved to the front.
+   * Existing duplicates are removed.
+   * Only the latest five are retained.
+   */
+  const openProcedure = (
+    procedure: Procedure
+  ) => {
     setSelectedProcedure(procedure);
 
-    setRecentlyViewedIds((currentIds) => {
-      const updatedIds = [
-        procedure.id,
-        ...currentIds.filter(
-          (id) => id !== procedure.id
-        ),
-      ].slice(0, MAX_RECENTLY_VIEWED);
+    setRecentlyViewedIds(
+      (currentIds) => {
+        const updatedIds = [
+          procedure.id,
+          ...currentIds.filter(
+            (id) =>
+              id !== procedure.id
+          ),
+        ].slice(0, MAX_RECENTLY_VIEWED);
 
-      saveRecentlyViewed(updatedIds);
+        saveRecentlyViewed(updatedIds);
 
-      return updatedIds;
-    });
+        return updatedIds;
+      }
+    );
 
     window.scrollTo({
       top: 0,
@@ -167,28 +226,65 @@ export default function App() {
     });
   };
 
+  /*
+   * Open a procedure from Recently Viewed.
+   */
   const openRecentlyViewedProcedure = (
     procedure: Procedure
   ) => {
-    const category = procedureCategories.find(
-      (item) => item.name === procedure.category
-    );
+    const matchingCategory =
+      procedureCategories.find(
+        (category) =>
+          category.name ===
+          procedure.category
+      );
 
     setActiveTab("procedures");
 
-    if (category) {
-      setSelectedCategory(category);
+    if (matchingCategory) {
+      setSelectedCategory(
+        matchingCategory
+      );
     } else {
+      /*
+       * Fallback for any procedure whose
+       * category is not currently listed above.
+       */
       setSelectedCategory({
         icon: "🩺",
         name: procedure.category,
-        description: "Nursing procedures",
+        description:
+          "Nursing procedures",
       });
     }
 
     openProcedure(procedure);
   };
 
+  /*
+   * Clear Recently Viewed from both:
+   *
+   * 1. React state
+   * 2. localStorage
+   *
+   * This is also used by Settings.tsx.
+   */
+  const clearRecentlyViewed = () => {
+    setRecentlyViewedIds([]);
+
+    try {
+      localStorage.removeItem(
+        RECENTLY_VIEWED_KEY
+      );
+    } catch {
+      // Ignore localStorage errors.
+    }
+  };
+
+  /*
+   * Return from a category to the
+   * procedure-category list.
+   */
   const backToCategories = () => {
     setSelectedCategory(null);
     setSelectedProcedure(null);
@@ -200,6 +296,9 @@ export default function App() {
     });
   };
 
+  /*
+   * Splash screen.
+   */
   if (showSplash) {
     return (
       <div className="splash-screen">
@@ -213,17 +312,22 @@ export default function App() {
 
           <h1 className="splash-title">
             NURSING
-            <strong>COMPONENT TASK</strong>
+            <strong>
+              COMPONENT TASK
+            </strong>
           </h1>
 
           <p className="splash-subtitle">
-            Nursing procedures & clinical learning
+            Nursing procedures & clinical
+            learning
           </p>
 
           <div className="splash-visual">
             <div className="floating-procedure procedure-one">
               🩺
-              <small>Assessment</small>
+              <small>
+                Assessment
+              </small>
             </div>
 
             <div className="nurse-illustration">
@@ -232,12 +336,16 @@ export default function App() {
 
             <div className="floating-procedure procedure-two">
               💉
-              <small>Medication</small>
+              <small>
+                Medication
+              </small>
             </div>
 
             <div className="floating-procedure procedure-three">
               🩹
-              <small>Wound Care</small>
+              <small>
+                Wound Care
+              </small>
             </div>
           </div>
 
@@ -247,7 +355,8 @@ export default function App() {
             </div>
 
             <p>
-              Preparing your clinical learning experience...
+              Preparing your clinical
+              learning experience...
             </p>
           </div>
         </div>
@@ -257,10 +366,16 @@ export default function App() {
 
   return (
     <div className="app">
+
+      {/* ================= HEADER ================= */}
+
       <header className="header">
         <div className="header-inner">
+
           <div className="brand">
-            <div className="brand-icon">🩺</div>
+            <div className="brand-icon">
+              🩺
+            </div>
 
             <div>
               <div className="logo">
@@ -268,19 +383,24 @@ export default function App() {
               </div>
 
               <div className="tagline">
-                Nursing procedures & clinical learning
+                Nursing procedures & clinical
+                learning
               </div>
             </div>
           </div>
 
           <button
             className="credits-badge"
-            onClick={() => navigate("credits")}
+            onClick={() =>
+              navigate("credits")
+            }
+            type="button"
           >
             <span>⭐</span>
             <strong>25</strong>
             <small>Credits</small>
           </button>
+
         </div>
       </header>
 
@@ -295,12 +415,14 @@ export default function App() {
                 WELCOME 👋
               </span>
 
-              <h1>Learn. Practice. Care.</h1>
+              <h1>
+                Learn. Practice. Care.
+              </h1>
 
               <p>
-                Your practical companion for learning and
-                reviewing nursing procedures and clinical
-                skills.
+                Your practical companion for
+                learning and reviewing nursing
+                procedures and clinical skills.
               </p>
             </section>
 
@@ -314,18 +436,24 @@ export default function App() {
                   PRACTICAL LEARNING
                 </span>
 
-                <h2>Nursing Procedures</h2>
+                <h2>
+                  Nursing Procedures
+                </h2>
 
                 <p>
-                  Explore nursing procedures organized
-                  into clear professional categories.
+                  Explore nursing procedures
+                  organized into clear
+                  professional categories.
                 </p>
 
                 <button
                   className="primary-button"
                   onClick={() =>
-                    navigate("procedures")
+                    navigate(
+                      "procedures"
+                    )
                   }
+                  type="button"
                 >
                   Browse Procedures
                   <span>→</span>
@@ -333,17 +461,23 @@ export default function App() {
               </div>
             </section>
 
+            {/* ================= QUICK ACCESS ================= */}
+
             <section className="quick-section">
               <h2 className="section-title">
                 Quick Access
               </h2>
 
               <div className="quick-grid">
+
                 <button
                   className="quick-card"
                   onClick={() =>
-                    navigate("procedures")
+                    navigate(
+                      "procedures"
+                    )
                   }
+                  type="button"
                 >
                   <span className="quick-icon">
                     📋
@@ -355,7 +489,8 @@ export default function App() {
                     </strong>
 
                     <small>
-                      Browse the procedure library
+                      Browse the procedure
+                      library
                     </small>
                   </span>
 
@@ -369,6 +504,7 @@ export default function App() {
                   onClick={() =>
                     navigate("credits")
                   }
+                  type="button"
                 >
                   <span className="quick-icon">
                     ⭐
@@ -380,7 +516,8 @@ export default function App() {
                     </strong>
 
                     <small>
-                      View your available credits
+                      View your available
+                      credits
                     </small>
                   </span>
 
@@ -388,15 +525,19 @@ export default function App() {
                     ›
                   </span>
                 </button>
+
               </div>
             </section>
+
+            {/* ================= RECENTLY VIEWED ================= */}
 
             <section className="recent-section">
               <h2 className="section-title">
                 Recently Viewed
               </h2>
 
-              {recentlyViewedProcedures.length === 0 ? (
+              {recentlyViewedProcedures.length ===
+              0 ? (
                 <div className="empty-state">
                   <div className="empty-icon">
                     🕘
@@ -407,12 +548,14 @@ export default function App() {
                   </h3>
 
                   <p>
-                    Procedures you open will appear
-                    here for quick access.
+                    Procedures you open will
+                    appear here for quick
+                    access.
                   </p>
                 </div>
               ) : (
                 <div className="category-list">
+
                   {recentlyViewedProcedures.map(
                     (procedure) => (
                       <button
@@ -423,6 +566,7 @@ export default function App() {
                             procedure
                           )
                         }
+                        type="button"
                       >
                         <span className="category-icon">
                           🩺
@@ -444,9 +588,12 @@ export default function App() {
                       </button>
                     )
                   )}
+
                 </div>
               )}
             </section>
+
+            {/* ================= NMC INFO ================= */}
 
             <section className="nmc-info">
               <div className="nmc-icon">
@@ -459,20 +606,22 @@ export default function App() {
                 </h3>
 
                 <p>
-                  Procedure resources are organized
-                  using the relevant Nursing and
-                  Midwifery Council procedure manuals.
+                  Procedure resources are
+                  organized using the relevant
+                  Nursing and Midwifery Council
+                  procedure manuals.
                 </p>
               </div>
             </section>
           </>
         )}
 
-        {/* ================= PROCEDURES ================= */}
+        {/* ================= PROCEDURE CATEGORIES ================= */}
 
         {activeTab === "procedures" &&
           !selectedCategory && (
             <section>
+
               <div className="page-heading">
                 <span className="page-kicker">
                   CLINICAL SKILLS
@@ -483,8 +632,9 @@ export default function App() {
                 </h1>
 
                 <p className="page-description">
-                  Choose your nursing programme to
-                  explore its procedure library.
+                  Choose your nursing programme
+                  to explore its procedure
+                  library.
                 </p>
               </div>
 
@@ -494,10 +644,12 @@ export default function App() {
                 <input
                   type="search"
                   placeholder="Search categories..."
-                  value={procedureSearch}
-                  onChange={(e) =>
+                  value={
+                    procedureSearch
+                  }
+                  onChange={(event) =>
                     setProcedureSearch(
-                      e.target.value
+                      event.target.value
                     )
                   }
                 />
@@ -512,19 +664,21 @@ export default function App() {
                   </strong>
 
                   <small>
-                    Select your programme to view
-                    its procedures.
+                    Select your programme to
+                    view its procedures.
                   </small>
                 </div>
               </div>
 
               <div className="category-list">
+
                 {procedureCategories
                   .filter((category) =>
                     category.name
                       .toLowerCase()
                       .includes(
-                        procedureSearch.toLowerCase()
+                        procedureSearch
+                          .toLowerCase()
                       )
                   )
                   .map((category) => (
@@ -532,8 +686,11 @@ export default function App() {
                       className="category-card"
                       key={category.name}
                       onClick={() =>
-                        openCategory(category)
+                        openCategory(
+                          category
+                        )
                       }
+                      type="button"
                     >
                       <span className="category-icon">
                         {category.icon}
@@ -545,7 +702,9 @@ export default function App() {
                         </strong>
 
                         <small>
-                          {category.description}
+                          {
+                            category.description
+                          }
                         </small>
                       </span>
 
@@ -560,7 +719,8 @@ export default function App() {
                     category.name
                       .toLowerCase()
                       .includes(
-                        procedureSearch.toLowerCase()
+                        procedureSearch
+                          .toLowerCase()
                       )
                 ).length === 0 && (
                   <div className="empty-state">
@@ -573,30 +733,38 @@ export default function App() {
                     </h3>
 
                     <p>
-                      Try a different search term.
+                      Try a different search
+                      term.
                     </p>
                   </div>
                 )}
+
               </div>
             </section>
           )}
 
-        {/* ================= CATEGORY PROCEDURES ================= */}
+        {/* ================= PROCEDURES IN CATEGORY ================= */}
 
         {activeTab === "procedures" &&
           selectedCategory &&
           !selectedProcedure && (
             <section>
+
               <button
                 className="back-button"
-                onClick={backToCategories}
+                onClick={
+                  backToCategories
+                }
+                type="button"
               >
                 ← All Categories
               </button>
 
               <div className="category-header">
                 <div className="category-header-icon">
-                  {selectedCategory.icon}
+                  {
+                    selectedCategory.icon
+                  }
                 </div>
 
                 <div>
@@ -605,31 +773,41 @@ export default function App() {
                   </span>
 
                   <h1 className="page-title">
-                    {selectedCategory.name}
+                    {
+                      selectedCategory.name
+                    }
                   </h1>
 
                   <p className="page-description">
-                    {selectedCategory.description}
+                    {
+                      selectedCategory.description
+                    }
                   </p>
                 </div>
               </div>
 
               <ProcedureList
-                category={selectedCategory.name}
+                category={
+                  selectedCategory.name
+                }
                 onSelectProcedure={(
                   procedureId
                 ) => {
                   const procedure =
                     procedures.find(
                       (item) =>
-                        item.id === procedureId
+                        item.id ===
+                        procedureId
                     );
 
                   if (procedure) {
-                    openProcedure(procedure);
+                    openProcedure(
+                      procedure
+                    );
                   }
                 }}
               />
+
             </section>
           )}
 
@@ -639,9 +817,13 @@ export default function App() {
           selectedCategory &&
           selectedProcedure && (
             <ProcedureDetails
-              procedure={selectedProcedure}
+              procedure={
+                selectedProcedure
+              }
               onBack={() =>
-                setSelectedProcedure(null)
+                setSelectedProcedure(
+                  null
+                )
               }
             />
           )}
@@ -650,6 +832,7 @@ export default function App() {
 
         {activeTab === "credits" && (
           <section>
+
             <div className="page-heading">
               <span className="page-kicker">
                 YOUR ACCOUNT
@@ -660,8 +843,8 @@ export default function App() {
               </h1>
 
               <p className="page-description">
-                Manage and use your Nursing Component
-                Task credits.
+                Manage and use your Nursing
+                Component Task credits.
               </p>
             </div>
 
@@ -683,11 +866,13 @@ export default function App() {
               </h3>
 
               <p>
-                Credits will be used for selected
-                premium features and learning activities
-                as they become available.
+                Credits will be used for
+                selected premium features and
+                learning activities as they
+                become available.
               </p>
             </div>
+
           </section>
         )}
 
@@ -695,6 +880,7 @@ export default function App() {
 
         {activeTab === "about" && (
           <section>
+
             <div className="page-heading">
               <span className="page-kicker">
                 ABOUT THE APP
@@ -706,6 +892,7 @@ export default function App() {
             </div>
 
             <div className="about-card">
+
               <div className="about-logo">
                 🩺
               </div>
@@ -715,45 +902,64 @@ export default function App() {
               </h2>
 
               <p>
-                A practical learning app designed to
-                help nursing students and nurses review
-                nursing procedures and clinical skills
-                through concise procedure guides and
+                A practical learning app
+                designed to help nursing
+                students and nurses review
+                nursing procedures and
+                clinical skills through
+                concise procedure guides and
                 videos.
               </p>
 
               <div className="about-details">
+
                 <div>
-                  <span>Version</span>
-                  <strong>3.0</strong>
+                  <span>
+                    Version
+                  </span>
+
+                  <strong>
+                    3.0
+                  </strong>
                 </div>
 
                 <div>
-                  <span>Developer</span>
+                  <span>
+                    Developer
+                  </span>
+
                   <strong>
                     Bliss Innovation
                   </strong>
                 </div>
 
                 <div>
-                  <span>Developed by</span>
+                  <span>
+                    Developed by
+                  </span>
+
                   <strong>
                     Felix Nuakoh
                   </strong>
                 </div>
+
               </div>
 
               <div className="nmc-credit">
-                <strong>Credit</strong>
+                <strong>
+                  Credit
+                </strong>
 
                 <p>
-                  Nursing procedures are based on the
-                  Nursing and Midwifery Council (N&MC)
-                  procedure manuals.
+                  Nursing procedures are based
+                  on the Nursing and Midwifery
+                  Council (N&MC) procedure
+                  manuals.
                 </p>
               </div>
 
               <div className="developer-contact">
+
                 <h3>
                   Have feedback or questions?
                 </h3>
@@ -763,6 +969,7 @@ export default function App() {
                 </p>
 
                 <div className="contact-buttons">
+
                   <a
                     href="mailto:felixbliss1@gmail.com"
                     className="contact-button"
@@ -778,14 +985,18 @@ export default function App() {
                   >
                     💬 WhatsApp Developer
                   </a>
+
                 </div>
+
               </div>
 
               <p className="about-disclaimer">
-                For educational purposes. Always
-                follow current N&MC guidance and your
-                institution's approved protocols.
+                For educational purposes.
+                Always follow current N&MC
+                guidance and your institution's
+                approved protocols.
               </p>
+
             </div>
           </section>
         )}
@@ -797,11 +1008,15 @@ export default function App() {
             onAbout={() =>
               navigate("about")
             }
+            onClearRecentHistory={
+              clearRecentlyViewed
+            }
           />
         )}
+
       </main>
 
-      {/* ================= BOTTOM NAV ================= */}
+      {/* ================= BOTTOM NAVIGATION ================= */}
 
       <nav className="bottom-nav">
         <div className="bottom-nav-inner">
@@ -815,9 +1030,12 @@ export default function App() {
             onClick={() =>
               navigate("home")
             }
+            type="button"
           >
             <span>🏠</span>
-            <small>Home</small>
+            <small>
+              Home
+            </small>
           </button>
 
           <button
@@ -829,9 +1047,12 @@ export default function App() {
             onClick={() =>
               navigate("procedures")
             }
+            type="button"
           >
             <span>🩺</span>
-            <small>Procedures</small>
+            <small>
+              Procedures
+            </small>
           </button>
 
           <button
@@ -843,9 +1064,12 @@ export default function App() {
             onClick={() =>
               navigate("about")
             }
+            type="button"
           >
             <span>ℹ️</span>
-            <small>About</small>
+            <small>
+              About
+            </small>
           </button>
 
           <button
@@ -857,13 +1081,17 @@ export default function App() {
             onClick={() =>
               navigate("settings")
             }
+            type="button"
           >
             <span>⚙️</span>
-            <small>Settings</small>
+            <small>
+              Settings
+            </small>
           </button>
 
         </div>
       </nav>
+
     </div>
   );
-        }
+    }
