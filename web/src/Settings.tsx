@@ -8,105 +8,231 @@ type SettingsProps = {
 const RECENTLY_VIEWED_KEY =
   "nursing-component-task-recently-viewed";
 
-const NOTIFICATIONS_KEY = "nct-notifications";
-const DARK_MODE_KEY = "nct-dark-mode";
-const SAVE_PROGRESS_KEY = "nct-save-progress";
+const NOTIFICATIONS_KEY =
+  "nct-notifications";
+
+const SAVE_PROGRESS_KEY =
+  "nct-save-progress";
+
+const DARK_MODE_KEY =
+  "nct-dark-mode";
 
 export default function Settings({
   onAbout,
   onClearRecentHistory,
 }: SettingsProps) {
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem(DARK_MODE_KEY) === "true";
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
+    try {
+      return (
+        localStorage.getItem(DARK_MODE_KEY) ===
+        "true"
+      );
+    } catch {
+      return false;
+    }
   });
 
-  const [notifications, setNotifications] = useState(() => {
-    return localStorage.getItem(NOTIFICATIONS_KEY) === "true";
-  });
+  const [notifications, setNotifications] =
+    useState<boolean>(() => {
+      try {
+        return (
+          localStorage.getItem(
+            NOTIFICATIONS_KEY
+          ) === "true"
+        );
+      } catch {
+        return false;
+      }
+    });
 
-  const [saveProgress, setSaveProgress] = useState(() => {
-    const saved = localStorage.getItem(SAVE_PROGRESS_KEY);
+  const [saveProgress, setSaveProgress] =
+    useState<boolean>(() => {
+      try {
+        const saved =
+          localStorage.getItem(
+            SAVE_PROGRESS_KEY
+          );
 
-    // Default to ON for existing users.
-    return saved === null ? true : saved === "true";
-  });
+        // Existing users default to ON.
+        return saved === null
+          ? true
+          : saved === "true";
+      } catch {
+        return true;
+      }
+    });
 
+  /*
+   * Persist appearance preference.
+   */
   useEffect(() => {
+    try {
+      localStorage.setItem(
+        DARK_MODE_KEY,
+        String(darkMode)
+      );
+    } catch {
+      // Ignore storage errors.
+    }
+
     document.documentElement.classList.toggle(
       "dark-mode",
       darkMode
     );
-
-    localStorage.setItem(
-      DARK_MODE_KEY,
-      String(darkMode)
-    );
   }, [darkMode]);
 
+  /*
+   * Persist notification preference.
+   */
   useEffect(() => {
-    localStorage.setItem(
-      NOTIFICATIONS_KEY,
-      String(notifications)
-    );
+    try {
+      localStorage.setItem(
+        NOTIFICATIONS_KEY,
+        String(notifications)
+      );
+    } catch {
+      // Ignore storage errors.
+    }
   }, [notifications]);
 
+  /*
+   * Persist Save Progress preference.
+   *
+   * ProcedureDetails.tsx reads the same key.
+   */
   useEffect(() => {
-    localStorage.setItem(
-      SAVE_PROGRESS_KEY,
-      String(saveProgress)
-    );
+    try {
+      localStorage.setItem(
+        SAVE_PROGRESS_KEY,
+        String(saveProgress)
+      );
+    } catch {
+      // Ignore storage errors.
+    }
   }, [saveProgress]);
 
-  const handleNotifications = async () => {
+  /*
+   * Notifications.
+   *
+   * This requests browser permission when available.
+   * It does not falsely claim that a background
+   * reminder has been scheduled.
+   */
+  const toggleNotifications = async () => {
     const nextValue = !notifications;
 
-    if (
-      nextValue &&
-      "Notification" in window
-    ) {
-      try {
-        const permission =
-          await Notification.requestPermission();
-
-        if (permission !== "granted") {
-          setNotifications(false);
-
-          alert(
-            "Notifications were not enabled. Please allow notifications in your browser/device settings."
-          );
-
-          return;
-        }
-      } catch {
-        // Keep the preference disabled if permission
-        // cannot be requested.
-        setNotifications(false);
-        return;
-      }
+    if (!nextValue) {
+      setNotifications(false);
+      return;
     }
 
-    setNotifications(nextValue);
+    if (
+      typeof window === "undefined" ||
+      !("Notification" in window)
+    ) {
+      setNotifications(true);
+
+      alert(
+        "Notifications are not supported by this browser. Your preference has been saved."
+      );
+
+      return;
+    }
+
+    try {
+      if (
+        Notification.permission ===
+        "granted"
+      ) {
+        setNotifications(true);
+        return;
+      }
+
+      if (
+        Notification.permission ===
+        "denied"
+      ) {
+        setNotifications(false);
+
+        alert(
+          "Notifications are blocked for this site. Please enable them in your browser or device settings."
+        );
+
+        return;
+      }
+
+      const permission =
+        await Notification.requestPermission();
+
+      if (permission === "granted") {
+        setNotifications(true);
+
+        /*
+         * Optional immediate confirmation.
+         * This verifies that browser notifications
+         * are actually working.
+         */
+        try {
+          new Notification(
+            "Nursing Component Task",
+            {
+              body:
+                "Learning notifications are now enabled.",
+              icon: "/pwa-192x192.png",
+            }
+          );
+        } catch {
+          // Permission was granted even if
+          // constructing the notification fails.
+        }
+      } else {
+        setNotifications(false);
+
+        alert(
+          "Notification permission was not granted."
+        );
+      }
+    } catch {
+      setNotifications(false);
+
+      alert(
+        "Unable to enable notifications on this device."
+      );
+    }
   };
 
+  /*
+   * Clear Recently Viewed.
+   *
+   * IMPORTANT:
+   * This uses exactly the same key used by App.tsx.
+   */
   const clearHistory = () => {
     const confirmed = window.confirm(
-      "Clear all recently viewed procedures?"
+      "Are you sure you want to clear all recently viewed procedures?"
     );
 
     if (!confirmed) {
       return;
     }
 
-    localStorage.removeItem(
-      RECENTLY_VIEWED_KEY
-    );
+    try {
+      localStorage.removeItem(
+        RECENTLY_VIEWED_KEY
+      );
+    } catch {
+      // Ignore storage errors.
+    }
 
+    /*
+     * Tell App.tsx to clear its React state too.
+     */
     if (onClearRecentHistory) {
       onClearRecentHistory();
     }
 
     alert(
-      "Recent procedure history has been cleared."
+      "Recently viewed procedures have been cleared."
     );
   };
 
@@ -129,39 +255,8 @@ export default function Settings({
 
       <div className="settings-list">
 
-        {/* Appearance */}
-        <div className="setting-item">
-          <div className="setting-main">
-            <div className="setting-icon">
-              🌗
-            </div>
+        {/* ================= NOTIFICATIONS ================= */}
 
-            <div>
-              <strong>
-                Appearance
-              </strong>
-
-              <small>
-                Switch between light and dark mode
-              </small>
-            </div>
-          </div>
-
-          <button
-            className={`setting-toggle ${
-              darkMode ? "active" : ""
-            }`}
-            onClick={() =>
-              setDarkMode((value) => !value)
-            }
-            aria-label="Toggle dark mode"
-            aria-pressed={darkMode}
-          >
-            <span />
-          </button>
-        </div>
-
-        {/* Notifications */}
         <div className="setting-item">
           <div className="setting-main">
             <div className="setting-icon">
@@ -180,18 +275,26 @@ export default function Settings({
           </div>
 
           <button
+            type="button"
             className={`setting-toggle ${
-              notifications ? "active" : ""
+              notifications
+                ? "active"
+                : ""
             }`}
-            onClick={handleNotifications}
+            onClick={
+              toggleNotifications
+            }
             aria-label="Toggle notifications"
-            aria-pressed={notifications}
+            aria-pressed={
+              notifications
+            }
           >
             <span />
           </button>
         </div>
 
-        {/* Save Progress */}
+        {/* ================= SAVE PROGRESS ================= */}
+
         <div className="setting-item">
           <div className="setting-main">
             <div className="setting-icon">
@@ -204,31 +307,39 @@ export default function Settings({
               </strong>
 
               <small>
-                Your learning progress is saved on
-                this device
+                Your quiz and learning progress
+                is saved on this device
               </small>
             </div>
           </div>
 
           <button
+            type="button"
             className={`setting-toggle ${
-              saveProgress ? "active" : ""
+              saveProgress
+                ? "active"
+                : ""
             }`}
             onClick={() =>
-              setSaveProgress((value) => !value)
+              setSaveProgress(
+                (value) => !value
+              )
             }
             aria-label="Toggle save progress"
-            aria-pressed={saveProgress}
+            aria-pressed={
+              saveProgress
+            }
           >
             <span />
           </button>
         </div>
 
-        {/* Clear Recent History */}
+        {/* ================= CLEAR HISTORY ================= */}
+
         <button
+          type="button"
           className="setting-action danger-action"
           onClick={clearHistory}
-          type="button"
         >
           <span className="setting-icon">
             🧹
@@ -240,18 +351,20 @@ export default function Settings({
             </strong>
 
             <small>
-              Remove recently viewed procedures
+              Remove recently viewed
+              procedures
             </small>
           </span>
 
           <b>›</b>
         </button>
 
-        {/* About */}
+        {/* ================= ABOUT ================= */}
+
         <button
+          type="button"
           className="setting-action"
           onClick={onAbout}
-          type="button"
         >
           <span className="setting-icon">
             ℹ️
@@ -263,14 +376,16 @@ export default function Settings({
             </strong>
 
             <small>
-              Developer, credits and app information
+              Developer, credits and app
+              information
             </small>
           </span>
 
           <b>›</b>
         </button>
 
-        {/* Version */}
+        {/* ================= VERSION ================= */}
+
         <div className="version-display">
           Nursing Component Task
 
@@ -282,4 +397,4 @@ export default function Settings({
       </div>
     </section>
   );
-}
+        }
