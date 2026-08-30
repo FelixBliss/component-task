@@ -23,6 +23,42 @@ function shuffle<T>(items: T[]): T[] {
   return result;
 }
 
+function getYouTubeId(url?: string): string | null {
+  if (!url) return null;
+
+  const match = url.match(
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&?/]+)/
+  );
+
+  return match ? match[1] : null;
+}
+
+function getYouTubeEmbedUrl(url?: string): string | null {
+  if (!url) return null;
+
+  const id = getYouTubeId(url);
+
+  if (!id) {
+    if (url.includes("youtube-nocookie.com/embed/")) {
+      return url;
+    }
+
+    return url;
+  }
+
+  return `https://www.youtube.com/embed/${id}`;
+}
+
+function getYouTubeWatchUrl(url?: string): string | null {
+  if (!url) return null;
+
+  const id = getYouTubeId(url);
+
+  if (!id) return url;
+
+  return `https://www.youtube.com/watch?v=${id}`;
+}
+
 export default function ProcedureDetails({
   procedure,
   onBack,
@@ -43,11 +79,8 @@ export default function ProcedureDetails({
   const [showResults, setShowResults] = useState(false);
   const [attempt, setAttempt] = useState(0);
 
-  /*
-   * Every quiz attempt gets a fresh shuffle.
-   * This randomizes the position of the correct answer
-   * as well as the distractors.
-   */
+  const [videoError, setVideoError] = useState(false);
+
   const questions = useMemo<PreparedQuestion[]>(() => {
     return quizzes.map((quiz) => ({
       ...quiz,
@@ -68,10 +101,7 @@ export default function ProcedureDetails({
     setCurrentQuestion(0);
     setSelectedAnswer(null);
     setShowResults(false);
-
-    // Forces a completely new random arrangement.
     setAttempt((value) => value + 1);
-
     setQuizStarted(true);
     setActiveTab("quiz");
   };
@@ -94,6 +124,9 @@ export default function ProcedureDetails({
     setCurrentQuestion((value) => value + 1);
     setSelectedAnswer(null);
   };
+
+  const videoEmbedUrl = getYouTubeEmbedUrl(procedure.videoUrl);
+  const videoWatchUrl = getYouTubeWatchUrl(procedure.videoUrl);
 
   return (
     <section className="procedure-details">
@@ -150,12 +183,11 @@ export default function ProcedureDetails({
         </button>
       </div>
 
-      {/* ================= DETAILS TAB ================= */}
+      {/* ================= DETAILS ================= */}
 
       {activeTab === "details" && (
         <div className="procedure-detail-content">
 
-          {/* Purpose */}
           <div className="procedure-detail-section">
             <h2>Purpose</h2>
 
@@ -166,7 +198,6 @@ export default function ProcedureDetails({
             </ul>
           </div>
 
-          {/* Indications */}
           <div className="procedure-detail-section">
             <h2>Indications</h2>
 
@@ -177,7 +208,6 @@ export default function ProcedureDetails({
             </ul>
           </div>
 
-          {/* Requirements */}
           <div className="procedure-detail-section">
             <h2>Requirements</h2>
 
@@ -188,7 +218,6 @@ export default function ProcedureDetails({
             </ul>
           </div>
 
-          {/* Procedure Steps */}
           <div className="procedure-detail-section">
             <h2>Procedure Steps</h2>
 
@@ -196,14 +225,12 @@ export default function ProcedureDetails({
               {procedure.steps.map((step, index) => (
                 <li key={index}>
                   <span>{index + 1}</span>
-
                   <p>{step}</p>
                 </li>
               ))}
             </ol>
           </div>
 
-          {/* Precautions */}
           <div className="procedure-detail-section">
             <h2>Precautions</h2>
 
@@ -214,23 +241,87 @@ export default function ProcedureDetails({
             </ul>
           </div>
 
-          {/* Video */}
+          {/* ================= VIDEO ================= */}
+
           {procedure.videoUrl && (
             <div className="procedure-detail-section">
+
               <h2>Video Demonstration</h2>
 
-              <div className="procedure-video">
-                <iframe
-                  src={procedure.videoUrl}
-                  title={`${procedure.title} video`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
+              {!videoError && videoEmbedUrl ? (
+                <>
+                  <div className="procedure-video">
+                    <iframe
+                      src={videoEmbedUrl}
+                      title={`${procedure.title} video demonstration`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      onError={() => setVideoError(true)}
+                    />
+                  </div>
+
+                  <button
+                    type="button"
+                    className="video-youtube-button"
+                    onClick={() => {
+                      if (videoWatchUrl) {
+                        window.open(
+                          videoWatchUrl,
+                          "_blank",
+                          "noopener,noreferrer"
+                        );
+                      }
+                    }}
+                  >
+                    ▶ Watch on YouTube
+                  </button>
+
+                  <p className="video-help-text">
+                    If the video cannot play inside the app,
+                    use the YouTube button above.
+                  </p>
+                </>
+              ) : (
+                <div className="video-fallback-card">
+
+                  <div className="video-fallback-icon">
+                    ▶
+                  </div>
+
+                  <h3>
+                    Video unavailable in the app
+                  </h3>
+
+                  <p>
+                    This video may have embedding
+                    restrictions. You can watch it
+                    directly on YouTube.
+                  </p>
+
+                  {videoWatchUrl && (
+                    <button
+                      type="button"
+                      className="video-youtube-button"
+                      onClick={() =>
+                        window.open(
+                          videoWatchUrl,
+                          "_blank",
+                          "noopener,noreferrer"
+                        )
+                      }
+                    >
+                      ▶ Watch on YouTube
+                    </button>
+                  )}
+                </div>
+              )}
+
             </div>
           )}
 
-          {/* Start Quiz */}
+          {/* Quiz shortcut */}
+
           {quizzes.length > 0 && (
             <button
               type="button"
@@ -240,15 +331,15 @@ export default function ProcedureDetails({
               🧠 Test Yourself →
             </button>
           )}
+
         </div>
       )}
 
-      {/* ================= QUIZ TAB ================= */}
+      {/* ================= QUIZ ================= */}
 
       {activeTab === "quiz" && (
         <div className="procedure-quiz-panel">
 
-          {/* No Questions */}
           {quizzes.length === 0 && (
             <div className="quiz-empty">
               <div className="quiz-empty-icon">
@@ -264,38 +355,38 @@ export default function ProcedureDetails({
             </div>
           )}
 
-          {/* Quiz Introduction */}
-          {quizzes.length > 0 && !quizStarted && (
-            <div className="quiz-intro-card">
+          {quizzes.length > 0 &&
+            !quizStarted && (
+              <div className="quiz-intro-card">
 
-              <div className="quiz-intro-icon">
-                🧠
+                <div className="quiz-intro-icon">
+                  🧠
+                </div>
+
+                <span className="quiz-kicker">
+                  TEST YOURSELF
+                </span>
+
+                <h2>Check your knowledge</h2>
+
+                <p>
+                  Answer all {quizzes.length} questions
+                  based on this procedure.
+                  Answer positions are randomized
+                  on every attempt.
+                </p>
+
+                <button
+                  type="button"
+                  className="quiz-primary-button"
+                  onClick={startQuiz}
+                >
+                  Start Quiz
+                </button>
+
               </div>
+            )}
 
-              <span className="quiz-kicker">
-                TEST YOURSELF
-              </span>
-
-              <h2>Check your knowledge</h2>
-
-              <p>
-                Answer all {quizzes.length} questions
-                based on this procedure.
-                The answer positions are randomized
-                for every attempt.
-              </p>
-
-              <button
-                type="button"
-                className="quiz-primary-button"
-                onClick={startQuiz}
-              >
-                Start Quiz
-              </button>
-            </div>
-          )}
-
-          {/* Results */}
           {quizStarted && showResults && (
             <div className="quiz-result-card">
 
@@ -310,7 +401,9 @@ export default function ProcedureDetails({
               <h2>
                 {score === quizzes.length
                   ? "Excellent work!"
-                  : score >= Math.ceil(quizzes.length * 0.7)
+                  : score >= Math.ceil(
+                      quizzes.length * 0.7
+                    )
                   ? "Good work!"
                   : "Keep practising!"}
               </h2>
@@ -333,7 +426,9 @@ export default function ProcedureDetails({
                 <button
                   type="button"
                   className="quiz-secondary-button"
-                  onClick={() => setActiveTab("details")}
+                  onClick={() =>
+                    setActiveTab("details")
+                  }
                 >
                   Review Procedure
                 </button>
@@ -342,13 +437,11 @@ export default function ProcedureDetails({
             </div>
           )}
 
-          {/* Question Card */}
           {quizStarted &&
             !showResults &&
             question && (
               <div className="quiz-card">
 
-                {/* Question header */}
                 <div className="quiz-card-top">
 
                   <span className="quiz-kicker">
@@ -359,9 +452,9 @@ export default function ProcedureDetails({
                     {currentQuestion + 1} /{" "}
                     {questions.length}
                   </strong>
+
                 </div>
 
-                {/* Progress */}
                 <div
                   className="quiz-progress"
                   aria-hidden="true"
@@ -377,12 +470,10 @@ export default function ProcedureDetails({
                   />
                 </div>
 
-                {/* Question */}
                 <h2 className="quiz-question-title">
                   {question.question}
                 </h2>
 
-                {/* Answers */}
                 <div className="quiz-options-card">
 
                   {question.shuffledOptions.map(
@@ -396,7 +487,9 @@ export default function ProcedureDetails({
                           type="button"
                           key={option}
                           className={`quiz-answer ${
-                            selected ? "selected" : ""
+                            selected
+                              ? "selected"
+                              : ""
                           }`}
                           onClick={() =>
                             setSelectedAnswer(option)
@@ -426,7 +519,6 @@ export default function ProcedureDetails({
 
                 </div>
 
-                {/* Next */}
                 <button
                   type="button"
                   className="quiz-next-button"
@@ -443,8 +535,10 @@ export default function ProcedureDetails({
 
               </div>
             )}
+
         </div>
       )}
+
     </section>
   );
-                  }
+              }
