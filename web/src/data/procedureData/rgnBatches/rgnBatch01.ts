@@ -5,1659 +5,993 @@ export const rgnBatch01: Procedure[] = [
     id: "rgn-001",
     title: "Immediate Post-Operative Care of a Patient",
     category: "General Nursing (RGN)",
-
     overview:
-      "Immediate nursing care provided to a patient following surgery to maintain safety, monitor recovery, identify complications early and promote comfort.",
-
+      "Immediate nursing care provided after surgery to maintain airway, circulation, safety, comfort and early recognition of complications.",
     purpose: [
-      "Promote safe recovery from anaesthesia and surgery.",
-      "Monitor the patient's condition and detect complications early.",
-      "Maintain airway, circulation, fluid balance and comfort.",
-      "Provide appropriate post-operative nursing care."
+      "Promote safe recovery following surgery and anaesthesia.",
+      "Maintain airway, breathing and circulation.",
+      "Detect post-operative complications early.",
+      "Promote comfort and patient safety.",
+      "Monitor and document the patient's response to surgery."
     ],
-
     indications: [
-      "Patients returning from surgery.",
-      "Patients requiring immediate post-operative monitoring.",
-      "Patients recovering from anaesthesia."
+      "Patient returning from an operation.",
+      "Patient recovering from anaesthesia.",
+      "Patient requiring immediate post-operative monitoring."
     ],
-
     equipment: [
-      "Operation bed with side rails",
-      "Post anaesthetic tray e.g. vomit bowl, wound dressing set, padded spatula or tongue holding forceps, receiver for soiled swab, adhesive tape, sterile gauze etc.",
-      "Oxygen apparatus",
-      "Suction machine",
-      "Vital signs tray",
-      "Medication tray",
-      "Infusion stand",
-      "Mouth care tray",
-      "Observation chart"
+      "Bed and clean bed linen",
+      "Vital-sign monitoring equipment",
+      "Oxygen equipment where indicated",
+      "Suction equipment where indicated",
+      "Prescribed intravenous fluids and infusion equipment",
+      "Documentation materials"
     ],
-
     steps: [
-      "Assess patient level of consciousness by the use of stimulus e.g. pointed object or by calling patient by name.",
-      "Remove hot water bottles and receive patient gently into bed.",
-      "Place patient flat on bed with the head turned to one side or in the appropriate position according to the operation performed.",
-      "Reassure patient if conscious.",
-      "Provide side rails for safety if necessary.",
-      "Read through the patient's case notes for post-operative instructions.",
-      "Observe operational site for bleeding and report for possible reinforcement.",
-      "Monitor vital signs for 15 minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes.",
-      "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered.",
-      "Check and ensure that all drainage tubes e.g. naso-gastric tube and catheter are in situ and are draining well.",
-      "Record intake and output accurately.",
-      "Assess for pain, administer prescribed analgesics and record.",
-      "Check and administer all prescribed medication per the appropriate route.",
-      "Maintain personal and oral hygiene.",
-      "Observe any abnormality in the patient's condition.",
-      "Put patient in a desirable position or as ordered by surgeon when he/she is fully conscious.",
-      "Follow nutritional orders as prescribed by the surgeon.",
-      "Educate patient and relatives on post-operative restrictions if any.",
-      "Document findings and nursing interventions in appropriate notes (manual or electronic)."
+      "Receive the patient using appropriate handover information.",
+      "Confirm the patient's identity and operative procedure.",
+      "Assess airway, breathing and circulation.",
+      "Assess level of consciousness and response to stimuli.",
+      "Check vital signs and compare with baseline findings.",
+      "Assess the operative site, dressing, drains and tubes.",
+      "Check prescribed intravenous fluids and infusions.",
+      "Assess pain, nausea and other immediate post-operative symptoms.",
+      "Maintain appropriate positioning and safety precautions.",
+      "Document assessment findings and report significant abnormalities promptly."
     ],
-
     precautions: [
-      "Maintain close observation during recovery from anaesthesia.",
-      "Monitor airway, breathing and circulation.",
-      "Observe the operative site for bleeding.",
-      "Check drainage tubes and intravenous access.",
-      "Report abnormalities promptly.",
-      "Follow prescribed post-operative orders."
+      "Maintain appropriate infection-prevention measures.",
+      "Do not leave an unstable patient unattended.",
+      "Report deterioration promptly.",
+      "Observe closely for bleeding, respiratory compromise and altered consciousness.",
+      "Follow institutional post-operative protocols."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=2WT8z8KsHJo",
     quiz: [
       {
-        question: "What should the nurse assess first when receiving a patient immediately after surgery?",
-        options: [
-          "The patient's appetite",
-          "The patient's level of consciousness",
-          "The patient's discharge date",
-          "The patient's family history"
-        ],
-        answer: "The patient's level of consciousness"
+        question: "What should be assessed first when receiving a patient immediately after surgery?",
+        options: ["Airway", "Diet preference", "Family history", "Discharge destination"],
+        answer: "Airway"
       },
       {
-        question: "How often are vital signs monitored during the first hour according to the procedure?",
-        options: [
-          "Every 4 hours",
-          "Every 2 hours",
-          "Every 15 minutes",
-          "Once only"
-        ],
-        answer: "Every 15 minutes"
+        question: "Which finding requires urgent attention in the immediate post-operative period?",
+        options: ["Mild thirst", "Respiratory difficulty", "Request for a blanket", "Desire to sleep"],
+        answer: "Respiratory difficulty"
       },
       {
-        question: "What should the nurse observe at the operative site?",
-        options: [
-          "Hair growth",
-          "Skin colour only",
-          "Bleeding",
-          "Appetite"
-        ],
-        answer: "Bleeding"
+        question: "Why are vital signs monitored closely after surgery?",
+        options: ["To complete paperwork", "To identify changes in the patient's condition", "To determine occupation", "To decide the patient's meal"],
+        answer: "To identify changes in the patient's condition"
       },
       {
-        question: "Why should the patient's drainage tubes be checked?",
-        options: [
-          "To ensure they are in situ and draining well",
-          "To determine the patient's weight",
-          "To measure temperature",
-          "To assess hearing"
-        ],
-        answer: "To ensure they are in situ and draining well"
+        question: "Which area should be assessed for possible post-operative bleeding?",
+        options: ["Operative site and drainage", "Hair and scalp only", "Hands only", "Feet only"],
+        answer: "Operative site and drainage"
       },
       {
-        question: "What should the nurse do if the patient is conscious after surgery?",
-        options: [
-          "Leave the patient alone",
-          "Reassure the patient",
-          "Give food immediately",
-          "Remove all tubes"
-        ],
-        answer: "Reassure the patient"
+        question: "Which observation is particularly important after anaesthesia?",
+        options: ["Level of consciousness", "Favourite food", "Usual bedtime", "Educational history"],
+        answer: "Level of consciousness"
       },
       {
-        question: "What should be recorded accurately during post-operative care?",
-        options: [
-          "Only the patient's temperature",
-          "Only medication given",
-          "Intake and output",
-          "Only the patient's pulse"
-        ],
-        answer: "Intake and output"
+        question: "What should the nurse do when significant deterioration is detected?",
+        options: ["Wait until the next shift", "Report promptly according to protocol", "Ignore it if sleeping", "Remove monitoring equipment"],
+        answer: "Report promptly according to protocol"
       },
       {
-        question: "When should prescribed analgesics be administered?",
-        options: [
-          "When the patient has pain and as prescribed",
-          "Only after discharge",
-          "Only before surgery",
-          "Whenever the nurse chooses"
-        ],
-        answer: "When the patient has pain and as prescribed"
+        question: "Which symptom should be assessed as part of immediate post-operative care?",
+        options: ["Pain", "Favourite sport", "Occupation", "Birthplace"],
+        answer: "Pain"
       },
       {
-        question: "When may the patient be placed in a desirable position after surgery?",
-        options: [
-          "Immediately regardless of condition",
-          "When fully conscious or as ordered by the surgeon",
-          "Only after 24 hours",
-          "Only after eating"
-        ],
-        answer: "When fully conscious or as ordered by the surgeon"
+        question: "What is an important purpose of post-operative documentation?",
+        options: ["Record patient care and clinical findings", "Replace patient assessment", "Avoid communication", "Delay treatment"],
+        answer: "Record patient care and clinical findings"
       },
       {
-        question: "What should the nurse review for post-operative instructions?",
-        options: [
-          "The patient's case notes",
-          "The ward menu",
-          "The visitors' book",
-          "The laundry register"
-        ],
-        answer: "The patient's case notes"
+        question: "Why should drains and tubes be assessed after surgery?",
+        options: ["To assess their condition and function", "To remove them routinely", "To hide them", "To prevent documentation"],
+        answer: "To assess their condition and function"
       },
       {
-        question: "What should be done when an abnormality is observed?",
-        options: [
-          "Ignore it",
-          "Wait until discharge",
-          "Report it appropriately",
-          "Remove the patient's records"
-        ],
-        answer: "Report it appropriately"
+        question: "Which principle is most important during immediate post-operative care?",
+        options: ["Patient safety", "Speed of discharge", "Avoiding communication", "Reducing observations"],
+        answer: "Patient safety"
       }
     ]
   },
 
   {
     id: "rgn-002",
-    title: "Care of Stoma or Ostomy and Changing of Pouch",
+    title: "Care of a Stoma and Changing of a Stoma Pouch",
     category: "General Nursing (RGN)",
-
     overview:
-      "Nursing care involving assessment and cleansing of a stoma and replacement of the stoma pouch while maintaining skin integrity, hygiene and patient dignity.",
-
+      "Nursing care of a patient with a stoma, including assessment of the stoma and surrounding skin and appropriate pouch management.",
     purpose: [
-      "Maintain cleanliness of the stoma and surrounding skin.",
-      "Prevent complications and skin irritation.",
-      "Provide a secure and functional stoma pouch.",
-      "Promote patient comfort and dignity."
+      "Maintain stoma function and cleanliness.",
+      "Protect the skin around the stoma.",
+      "Prevent leakage and infection.",
+      "Promote patient comfort and independence."
     ],
-
     indications: [
-      "Patients with a stoma or ostomy.",
-      "When the stoma pouch requires changing.",
-      "When the pouch is soiled, full or no longer functioning appropriately."
+      "Patient with an established stoma.",
+      "Pouch is full or leaking.",
+      "Pouch requires routine replacement.",
+      "Peristomal skin requires assessment."
     ],
-
     equipment: [
-      "New stoma pouch",
-      "Sterile gloves",
-      "Disposable gloves",
-      "Wipes or tissue",
-      "Measuring template",
-      "Gallipot with gauze swabs",
-      "Mackintosh and dressing towel",
-      "Towel",
-      "Bowl of tepid water",
-      "Barrier cream",
-      "Large receiver",
-      "Deodorizing tablet or liquid",
-      "Plastic bag",
-      "Scissors",
-      "Soap/mild detergent"
+      "Appropriate stoma pouch",
+      "Clean gloves",
+      "Waste receptacle",
+      "Warm water and appropriate cleansing materials",
+      "Measuring guide where required",
+      "Skin protection products where indicated"
     ],
-
     steps: [
-      "Establish rapport with patient.",
-      "Explain procedure to patient.",
-      "Provide privacy.",
-      "Prepare and send trolley to bedside.",
-      "Position the patient and turn down top sheet to expose stoma.",
-      "Protect site with mackintosh and dressing towel.",
-      "Perform hand hygiene and put on disposable gloves.",
-      "Gently remove soiled pouch and place in large receiver/plastic bag.",
-      "Remove disposable gloves and perform hand hygiene.",
-      "Put on sterile gloves.",
-      "Examine the stoma and note any abnormalities.",
-      "Clean the stoma with the wipes/tissue.",
-      "Wash area around the stoma with mild soap/detergent and tepid water.",
-      "Dry area gently with sterile swabs.",
-      "Cover the stoma with a swab while you prepare a new pouch.",
-      "Estimate stoma using the measuring template and cut the desired opening on the pouch.",
-      "Apply barrier cream.",
-      "Put a few drops of the deodorizing liquid or tablets in the pouch if available.",
-      "Attach one side of the edge of the pouch to the skin, rolling it up and over the stoma.",
-      "Press the edges of the pouch to secure it in position.",
-      "Remove gloves and perform hand hygiene.",
-      "Reposition patient.",
-      "Remove mackintosh and dressing towel.",
-      "Dispose off, decontaminate, clean and store used items.",
-      "Document procedure and report findings to appropriate officer."
+      "Explain the procedure and provide privacy.",
+      "Perform hand hygiene and put on appropriate gloves.",
+      "Assess the stoma and surrounding skin.",
+      "Gently remove the existing pouch.",
+      "Dispose of the used pouch appropriately.",
+      "Clean the stoma and surrounding skin gently.",
+      "Measure the stoma when required.",
+      "Prepare the new pouching system.",
+      "Apply the pouch securely while protecting surrounding skin.",
+      "Dispose of waste, remove gloves, perform hand hygiene and document care."
     ],
-
     precautions: [
-      "Maintain privacy and dignity.",
-      "Use appropriate hand hygiene and infection-prevention measures.",
-      "Examine the stoma for abnormalities.",
-      "Avoid damaging the skin around the stoma.",
-      "Ensure the pouch opening is appropriately sized.",
-      "Report abnormal findings."
+      "Avoid unnecessary trauma to the stoma.",
+      "Observe for abnormal colour, bleeding or swelling.",
+      "Protect peristomal skin from moisture and effluent.",
+      "Use the appropriate pouch size.",
+      "Report significant abnormalities."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=VM-WZqF6xhw",
     quiz: [
       {
-        question: "What should the nurse do before removing the soiled stoma pouch?",
-        options: [
-          "Give the patient food",
-          "Provide privacy and prepare the patient",
-          "Remove the patient's clothing completely",
-          "Disconnect all hospital equipment"
-        ],
-        answer: "Provide privacy and prepare the patient"
+        question: "What should be assessed before changing a stoma pouch?",
+        options: ["The stoma and surrounding skin", "The patient's hairstyle", "The patient's footwear", "The room temperature only"],
+        answer: "The stoma and surrounding skin"
       },
       {
-        question: "Which gloves are used when initially removing the soiled pouch?",
-        options: [
-          "Disposable gloves",
-          "Sterile gloves only",
-          "No gloves",
-          "Wool gloves"
-        ],
-        answer: "Disposable gloves"
+        question: "Why should the pouch fit appropriately?",
+        options: ["To reduce leakage and protect the skin", "To increase waste production", "To make removal difficult", "To prevent stoma assessment"],
+        answer: "To reduce leakage and protect the skin"
       },
       {
-        question: "What should be done after removing the disposable gloves?",
-        options: [
-          "Apply medication",
-          "Perform hand hygiene",
-          "Immediately apply the new pouch",
-          "Leave the patient"
-        ],
+        question: "What should be done before the procedure?",
+        options: ["Perform hand hygiene", "Remove all bed linen", "Give unrelated medication", "Ask the patient to leave"],
         answer: "Perform hand hygiene"
       },
       {
-        question: "Why is the stoma examined during the procedure?",
-        options: [
-          "To determine the patient's weight",
-          "To identify abnormalities",
-          "To measure blood pressure",
-          "To assess hearing"
-        ],
-        answer: "To identify abnormalities"
+        question: "Which finding should be reported?",
+        options: ["Marked abnormal stoma colour", "Correctly fitting pouch", "Clean surrounding skin", "Normal stoma appearance"],
+        answer: "Marked abnormal stoma colour"
       },
       {
-        question: "What is used to estimate the size of the stoma opening?",
-        options: [
-          "Blood pressure cuff",
-          "Measuring template",
-          "Tongue depressor",
-          "Thermometer"
-        ],
-        answer: "Measuring template"
+        question: "What should be protected during pouch changing?",
+        options: ["Peristomal skin", "Hair", "Shoes", "Nails only"],
+        answer: "Peristomal skin"
       },
       {
-        question: "What is applied around the stoma to help protect the skin?",
-        options: [
-          "Barrier cream",
-          "Alcohol",
-          "Bleach",
-          "Powdered medication routinely"
-        ],
-        answer: "Barrier cream"
+        question: "How should the stoma area generally be cleaned?",
+        options: ["Gently", "By vigorous scrubbing", "With a sharp instrument", "By applying unnecessary pressure"],
+        answer: "Gently"
       },
       {
-        question: "What type of water is specified for washing the area around the stoma?",
-        options: [
-          "Ice water",
-          "Boiling water",
-          "Tepid water",
-          "Salt water only"
-        ],
-        answer: "Tepid water"
+        question: "What is one purpose of stoma care?",
+        options: ["Promote comfort and protect the skin", "Prevent all oral intake", "Restrict mobility permanently", "Avoid patient education"],
+        answer: "Promote comfort and protect the skin"
       },
       {
-        question: "What should be done after securing the new pouch?",
-        options: [
-          "Remove all bed linen",
-          "Remove gloves and perform hand hygiene",
-          "Immediately discharge the patient",
-          "Remove the stoma"
-        ],
-        answer: "Remove gloves and perform hand hygiene"
+        question: "What should be done with the used pouch?",
+        options: ["Dispose of it appropriately", "Place it on the bedside table", "Reuse it routinely", "Leave it beside the patient"],
+        answer: "Dispose of it appropriately"
       },
       {
-        question: "Why is the stoma covered with a swab while preparing the pouch?",
-        options: [
-          "To protect the stoma during preparation",
-          "To measure temperature",
-          "To increase output",
-          "To prevent breathing"
-        ],
-        answer: "To protect the stoma during preparation"
+        question: "What is important after completing stoma care?",
+        options: ["Document relevant findings and care", "Leave the patient without instructions", "Remove the new pouch", "Avoid hand hygiene"],
+        answer: "Document relevant findings and care"
       },
       {
-        question: "What should be done at the end of the procedure?",
-        options: [
-          "Leave used equipment at the bedside",
-          "Ignore findings",
-          "Document the procedure and report findings",
-          "Remove the patient's records"
-        ],
-        answer: "Document the procedure and report findings"
+        question: "What can leakage around a stoma cause?",
+        options: ["Skin irritation and breakdown", "Improved skin integrity", "Better pouch adhesion", "Reduced need for assessment"],
+        answer: "Skin irritation and breakdown"
       }
     ]
   },
 
   {
     id: "rgn-003",
-    title: "Treatment of Pressure Areas",
+    title: "Prevention and Treatment of Pressure Areas",
     category: "General Nursing (RGN)",
-
     overview:
-      "Nursing care of vulnerable pressure areas to maintain skin integrity, promote comfort and prevent or identify pressure-related injury.",
-
+      "Nursing measures used to prevent pressure injury and provide appropriate care when pressure-related skin damage is identified.",
     purpose: [
+      "Prevent pressure injury.",
       "Maintain skin integrity.",
-      "Prevent pressure-related injury.",
-      "Promote comfort.",
-      "Identify abnormalities of pressure areas."
+      "Reduce prolonged pressure and shear.",
+      "Promote healing where pressure injury exists."
     ],
-
     indications: [
-      "Patients with limited mobility.",
-      "Patients at risk of pressure injury.",
-      "Patients requiring regular pressure-area care."
+      "Patients with reduced mobility.",
+      "Patients confined to bed or chair.",
+      "Patients with impaired sensation.",
+      "Patients at increased risk of pressure injury."
     ],
-
     equipment: [
-      "A bowl",
-      "Soap in a dish",
-      "Barrier cream",
-      "2/3 hand towels",
-      "Jug of warm water",
-      "Bucket for used water",
-      "Mackintosh and dressing towel",
-      "Bed linen"
+      "Clean bed linen",
+      "Pressure-relieving equipment where indicated",
+      "Pillows or positioning aids",
+      "Skin-care materials",
+      "Appropriate dressing materials where prescribed"
     ],
-
     steps: [
-      "Explain procedure to patient.",
-      "Assess patient's skin.",
-      "Perform hand hygiene.",
-      "Set trolley and send to patient bedside.",
-      "Provide privacy.",
-      "Remove patient's bedclothes and cover with a sheet.",
-      "Protect bed with long mackintosh and bath towel/blanket.",
-      "Pour water into the basin.",
-      "Roll patient onto the side, left/right lateral or prone, with head turned to one side.",
-      "Examine and note any abnormality.",
-      "Clean all pressure areas (back of the head, ears, hand, scapula, sacrum, elbows, hips, buttocks, knees, ankles, heels and toes) with soap and water in a soft towel with gloved hands.",
-      "Knead or rub in a circular motion all pressure areas with tip of fingers, or pad of one area at a time.",
-      "Rinse and dry skin with a soft dry towel.",
-      "Ensure skin is dry without any moisture.",
-      "Apply moisturizing cream or barrier cream.",
-      "Groom and dress patient in clean clothing.",
-      "Position patient intermittently in any of the following positions at 30° angle: prone, supine, right or left lateral, right or left Sim's.",
-      "Remove long mackintosh and dressing towel.",
-      "Dispose off used items, decontaminate trolley and used linen.",
-      "Perform hand hygiene.",
-      "Document procedure and report findings.",
-      "Inform the appropriate officer of any abnormality."
+      "Assess the patient's pressure-injury risk.",
+      "Inspect vulnerable pressure areas.",
+      "Maintain clean and dry skin.",
+      "Reposition the patient according to individual need and care plan.",
+      "Use appropriate pressure-relieving devices.",
+      "Avoid unnecessary friction and shear.",
+      "Maintain adequate nutrition and hydration as appropriate.",
+      "Provide wound care according to the patient's condition and prescribed plan.",
+      "Educate the patient and caregiver about pressure-injury prevention.",
+      "Document findings, interventions and patient response."
     ],
-
     precautions: [
-      "Maintain privacy and dignity.",
-      "Inspect all relevant pressure areas carefully.",
-      "Keep skin clean and dry.",
-      "Report abnormalities promptly.",
-      "Use appropriate positioning techniques."
+      "Do not massage damaged skin.",
+      "Avoid prolonged pressure on vulnerable areas.",
+      "Maintain skin hygiene.",
+      "Use appropriate repositioning techniques.",
+      "Report deterioration promptly."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=5OOgeqj1Hc8",
     quiz: [
       {
-        question: "What should the nurse do before beginning pressure-area treatment?",
-        options: [
-          "Assess the patient's skin",
-          "Give a meal",
-          "Remove all clothing permanently",
-          "Discharge the patient"
-        ],
-        answer: "Assess the patient's skin"
+        question: "What is the main goal of pressure-area care?",
+        options: ["Maintain skin integrity", "Increase pressure", "Restrict movement", "Delay assessment"],
+        answer: "Maintain skin integrity"
       },
       {
-        question: "Which item is used to protect the bed during the procedure?",
-        options: [
-          "Stethoscope",
-          "Long mackintosh and bath towel/blanket",
-          "Thermometer",
-          "Medication tray"
-        ],
-        answer: "Long mackintosh and bath towel/blanket"
+        question: "Which patient is at increased risk of pressure injury?",
+        options: ["A patient with reduced mobility", "A fully mobile patient", "A patient walking independently", "A patient with no risk factors"],
+        answer: "A patient with reduced mobility"
       },
       {
-        question: "Which area is specifically included among pressure areas to examine?",
-        options: [
-          "Forehead only",
-          "Sacrum",
-          "Tongue",
-          "Eyes"
-        ],
-        answer: "Sacrum"
+        question: "Which action helps prevent pressure injury?",
+        options: ["Regular repositioning", "Maintaining one position all day", "Ignoring skin changes", "Increasing friction"],
+        answer: "Regular repositioning"
       },
       {
-        question: "What should be done after washing pressure areas?",
-        options: [
-          "Leave them wet",
-          "Rinse and dry the skin",
-          "Cover them with dirty linen",
-          "Apply alcohol routinely"
-        ],
-        answer: "Rinse and dry the skin"
+        question: "What should vulnerable pressure areas be subjected to?",
+        options: ["Regular inspection", "Constant pressure", "Vigorous rubbing", "No assessment"],
+        answer: "Regular inspection"
       },
       {
-        question: "Why should the skin be kept dry?",
-        options: [
-          "To prevent unnecessary moisture-related skin problems",
-          "To increase body temperature",
-          "To increase sweating",
-          "To change skin colour"
-        ],
-        answer: "To prevent unnecessary moisture-related skin problems"
+        question: "Which factor can contribute to skin breakdown?",
+        options: ["Moisture", "Appropriate repositioning", "Good skin care", "Pressure relief"],
+        answer: "Moisture"
       },
       {
-        question: "What may be applied after the skin has been dried?",
-        options: [
-          "Barrier cream or moisturizing cream",
-          "Bleach",
-          "Boiling water",
-          "Disinfectant directly to intact skin"
-        ],
-        answer: "Barrier cream or moisturizing cream"
+        question: "What should be avoided over damaged skin?",
+        options: ["Massage", "Assessment", "Appropriate care", "Documentation"],
+        answer: "Massage"
       },
       {
-        question: "At what angle are the listed intermittent positions recommended?",
-        options: [
-          "10°",
-          "20°",
-          "30°",
-          "90°"
-        ],
-        answer: "30°"
+        question: "Why is nutrition important in pressure-injury care?",
+        options: ["It supports tissue health and healing", "It increases pressure", "It replaces repositioning", "It prevents all infections"],
+        answer: "It supports tissue health and healing"
       },
       {
-        question: "What should the nurse do if an abnormality is found?",
-        options: [
-          "Ignore it",
-          "Inform the appropriate officer",
-          "Hide it from the team",
-          "Wait until discharge"
-        ],
-        answer: "Inform the appropriate officer"
+        question: "What should the nurse document?",
+        options: ["Skin findings and interventions", "Only the patient's name", "Only meal preferences", "Nothing"],
+        answer: "Skin findings and interventions"
       },
       {
-        question: "What should be done after used items are disposed of?",
-        options: [
-          "Leave the trolley dirty",
-          "Decontaminate the trolley and used linen",
-          "Reuse everything immediately",
-          "Store wet linen"
-        ],
-        answer: "Decontaminate the trolley and used linen"
+        question: "Which technique should be minimized?",
+        options: ["Friction and shear", "Pressure relief", "Skin inspection", "Patient education"],
+        answer: "Friction and shear"
       },
       {
-        question: "What should be documented after pressure-area treatment?",
-        options: [
-          "Only the patient's name",
-          "The procedure and findings",
-          "Only the ward temperature",
-          "Nothing"
-        ],
-        answer: "The procedure and findings"
+        question: "What should happen if a pressure injury deteriorates?",
+        options: ["The change should be reported promptly", "It should be ignored", "The patient should be left alone", "Documentation should stop"],
+        answer: "The change should be reported promptly"
       }
     ]
   },
 
   {
     id: "rgn-004",
-    title: "Orientation of Patient to Ward Environment (Ambulatory)",
+    title: "Making a Patient's Bed",
     category: "General Nursing (RGN)",
-
     overview:
-      "Introduction of an ambulatory patient to the ward environment, staff, facilities, routines and channels for assistance or complaints.",
-
+      "Preparation of a clean, safe and comfortable patient bed according to the patient's condition and mobility.",
     purpose: [
-      "Help the patient become familiar with the ward.",
-      "Promote comfort, confidence and cooperation.",
-      "Explain ward routines and available facilities.",
-      "Help the patient know where to seek assistance."
+      "Provide comfort and cleanliness.",
+      "Promote patient safety.",
+      "Maintain a clean patient environment.",
+      "Reduce risk of infection and skin problems."
     ],
-
     indications: [
-      "New ambulatory patients admitted to a ward.",
-      "Patients unfamiliar with the ward environment."
+      "Routine bed making.",
+      "Changing soiled linen.",
+      "Preparing a bed for a new patient.",
+      "Maintaining patient comfort."
     ],
-
-    equipment: [],
-
+    equipment: [
+      "Clean bed linen",
+      "Pillowcases",
+      "Protective sheet where required",
+      "Laundry bag",
+      "Gloves where indicated"
+    ],
     steps: [
-      "Establish rapport with patient and relatives.",
-      "Mention the name of the ward to patient and relatives.",
-      "Introduce patient to ward staff around.",
-      "Show patient the nurse's station.",
-      "Show patient his/her bed.",
-      "Show patient his/her bedside cabinet/locker and how it operates.",
-      "Introduce him/her to other patients if any.",
-      "Show patient the bathroom, toilet and how the sanitary fittings operate.",
-      "Show patient the kitchen, day room and its uses (if available).",
-      "Inform patient of ward routines and activities.",
-      "Inform patient whom to contact for any information or complaints.",
-      "Encourage patient to ask questions for clarity.",
-      "Thank patient and send him/her to bed.",
-      "Report to appropriate officer."
+      "Explain the procedure to the patient.",
+      "Perform hand hygiene.",
+      "Provide privacy.",
+      "Position the patient safely.",
+      "Remove used linen carefully.",
+      "Place soiled linen in the appropriate receptacle.",
+      "Clean and arrange the bed as required.",
+      "Apply clean linen without unnecessary shaking.",
+      "Ensure the bed is safe and comfortable.",
+      "Perform hand hygiene and document relevant care."
     ],
-
     precautions: [
-      "Maintain patient dignity and privacy.",
-      "Use clear language appropriate to the patient.",
-      "Encourage questions.",
-      "Ensure the patient understands how to obtain assistance."
+      "Avoid shaking used linen.",
+      "Maintain patient privacy.",
+      "Use safe patient-handling techniques.",
+      "Keep clean linen away from contaminated surfaces.",
+      "Ensure the bed is safe before leaving the patient."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=BM4FjWkMgyM",
     quiz: [
       {
-        question: "What should the nurse establish first during orientation?",
-        options: [
-          "Rapport with the patient and relatives",
-          "The patient's discharge date",
-          "The patient's laboratory results",
-          "The patient's medication bill"
-        ],
-        answer: "Rapport with the patient and relatives"
+        question: "What should be done before bed making?",
+        options: ["Explain the procedure to the patient", "Remove the patient's identification", "Leave the patient unattended", "Shake the dirty linen"],
+        answer: "Explain the procedure to the patient"
       },
       {
-        question: "Which location should the patient be shown?",
-        options: [
-          "The hospital morgue only",
-          "The nurse's station",
-          "The operating theatre only",
-          "The staff residence"
-        ],
-        answer: "The nurse's station"
+        question: "Where should soiled linen be placed?",
+        options: ["In the appropriate laundry receptacle", "On the floor", "On a clean bedside table", "Inside a patient's locker"],
+        answer: "In the appropriate laundry receptacle"
       },
       {
-        question: "Why should the patient be shown the bedside cabinet or locker?",
-        options: [
-          "To teach how it operates",
-          "To measure blood pressure",
-          "To administer medication",
-          "To check body temperature"
-        ],
-        answer: "To teach how it operates"
+        question: "Why should used linen not be shaken?",
+        options: ["To reduce dispersal of contaminants", "To make the bed faster", "To increase dust", "To wet the linen"],
+        answer: "To reduce dispersal of contaminants"
       },
       {
-        question: "What ward facility should the patient be shown?",
-        options: [
-          "Bathroom and toilet",
-          "Only the laboratory",
-          "Only the pharmacy",
-          "Only the operating theatre"
-        ],
-        answer: "Bathroom and toilet"
+        question: "What is an important outcome of proper bed making?",
+        options: ["Patient comfort and safety", "Increased contamination", "Reduced privacy", "Increased injury risk"],
+        answer: "Patient comfort and safety"
       },
       {
-        question: "What should the nurse explain about the ward?",
-        options: [
-          "Ward routines and activities",
-          "Only the doctor's salary",
-          "Only the hospital's history",
-          "Nothing"
-        ],
-        answer: "Ward routines and activities"
+        question: "What should be maintained during bed making?",
+        options: ["Patient privacy", "Unnecessary exposure", "Unsafe positioning", "Dirty linen on the bed"],
+        answer: "Patient privacy"
       },
       {
-        question: "Who should the patient be told to contact for information or complaints?",
-        options: [
-          "Only another patient",
-          "The appropriate person identified by the ward",
-          "No one",
-          "Visitors"
-        ],
-        answer: "The appropriate person identified by the ward"
+        question: "What should be done with clean linen?",
+        options: ["Keep it away from contaminated surfaces", "Place it on the floor", "Mix it with used linen", "Use it to clean equipment"],
+        answer: "Keep it away from contaminated surfaces"
       },
       {
-        question: "What should the nurse encourage the patient to do?",
-        options: [
-          "Ask questions for clarity",
-          "Avoid all communication",
-          "Leave the ward",
-          "Ignore ward routines"
-        ],
-        answer: "Ask questions for clarity"
+        question: "What should be checked before leaving the patient?",
+        options: ["Bed safety and comfort", "The patient's television channel", "The patient's shoes", "The room decoration"],
+        answer: "Bed safety and comfort"
       },
       {
-        question: "What is the patient introduced to besides the ward environment?",
-        options: [
-          "Ward staff",
-          "Only cleaners",
-          "Only visitors",
-          "No one"
-        ],
-        answer: "Ward staff"
+        question: "Which practice supports infection prevention?",
+        options: ["Hand hygiene", "Reusing soiled linen", "Shaking linen", "Mixing clean and dirty linen"],
+        answer: "Hand hygiene"
       },
       {
-        question: "What should the nurse do after completing orientation?",
-        options: [
-          "Thank the patient",
-          "Immediately discharge the patient",
-          "Remove the patient's belongings",
-          "Leave without reporting"
-        ],
-        answer: "Thank the patient"
+        question: "Why is correct positioning important during bed making?",
+        options: ["To maintain patient safety", "To increase discomfort", "To prevent communication", "To delay the procedure"],
+        answer: "To maintain patient safety"
       },
       {
-        question: "To whom should the nurse report after orientation?",
-        options: [
-          "No one",
-          "Appropriate officer",
-          "Another patient",
-          "The patient's visitor"
-        ],
-        answer: "Appropriate officer"
+        question: "What should the nurse do after completing the procedure?",
+        options: ["Ensure the patient is comfortable and safe", "Leave equipment on the floor", "Leave soiled linen beside the bed", "Ignore the patient"],
+        answer: "Ensure the patient is comfortable and safe"
       }
     ]
   },
 
   {
     id: "rgn-005",
-    title: "Transfer-In (Trans-In)",
+    title: "Mouth Care",
     category: "General Nursing (RGN)",
-
     overview:
-      "The process of receiving a patient transferred from another unit or facility and ensuring continuity, safety and appropriate assessment of care.",
-
+      "Provision of oral hygiene to maintain oral cleanliness, comfort and health in patients who require assistance.",
     purpose: [
-      "Ensure safe reception of the transferred patient.",
-      "Maintain continuity of care.",
-      "Obtain relevant clinical information.",
-      "Assess the patient's condition and plan care."
+      "Maintain oral hygiene.",
+      "Promote comfort.",
+      "Reduce accumulation of oral debris.",
+      "Support oral health."
     ],
-
     indications: [
-      "Patients transferred into a ward or facility.",
-      "Patients requiring continuation of care from another unit or hospital."
+      "Patients unable to perform oral hygiene independently.",
+      "Unconscious or critically ill patients requiring appropriate oral care.",
+      "Patients with poor oral hygiene.",
+      "Patients requiring assisted mouth care."
     ],
-
     equipment: [
-      "Patient's medical records (Manual or electronic)",
-      "Referral notes (Manual or electronic)"
+      "Toothbrush or appropriate oral-care equipment",
+      "Toothpaste where appropriate",
+      "Water",
+      "Kidney dish or appropriate receptacle",
+      "Towel",
+      "Gloves where indicated"
     ],
-
     steps: [
-      "Confirm transfer of patient/client with the referring unit or hospital.",
-      "Make appropriate bed to receive the patient/client.",
-      "Assemble necessary equipment e.g. oxygen cylinders, suction machine, vital signs tray etc.",
-      "Assemble documentation and investigation forms (Manual or electronic).",
-      "Receive incoming patient/client, relatives and accompanying nurse warmly.",
-      "Confirm identity of patient/client with accompanying nurse.",
-      "Explain the importance of the transfer to the patient to obtain his/her cooperation.",
-      "Take over transfer notes and personal belongings from accompanying nurse.",
-      "Ask for clarification on vital issues pertaining to patient's/client's condition from the accompanying nurse.",
-      "Introduce yourself and other staff to patient/client and relatives.",
-      "Admit patient into bed ensuring patient safety.",
-      "Do a quick assessment of patient's/client's condition and compare with patient's/client's medical records.",
-      "Assess for any drainage or tubings and connect appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
-      "Review patient's notes, treatment plan and act accordingly.",
-      "Orientate patient/client and relatives on environment and routine of the unit if necessary.",
-      "Document all assessments, findings and treatments in nurses' notes (manually or electronically).",
-      "Plan care for the patient/client."
+      "Explain the procedure and provide privacy.",
+      "Perform hand hygiene.",
+      "Position the patient safely.",
+      "Protect clothing and bedding.",
+      "Inspect the oral cavity.",
+      "Clean the teeth, gums and tongue appropriately.",
+      "Allow the patient to rinse where appropriate.",
+      "Clean and dry the patient's mouth and surrounding area.",
+      "Dispose of waste appropriately.",
+      "Document relevant findings and care."
     ],
-
     precautions: [
-      "Confirm patient identity before accepting the transfer.",
-      "Ensure patient safety during transfer.",
-      "Check all tubes, drains and lines.",
-      "Review transfer documentation.",
-      "Clarify important clinical information with the accompanying nurse."
+      "Use appropriate positioning for patients at risk of aspiration.",
+      "Avoid causing trauma to oral tissues.",
+      "Use individual oral-care equipment.",
+      "Report unusual oral findings.",
+      "Follow appropriate infection-prevention practices."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=SQEjgHODEz0",
     quiz: [
       {
-        question: "What should be confirmed before receiving a transferred patient?",
-        options: [
-          "The patient's meal",
-          "The transfer with the referring unit or hospital",
-          "The patient's visitors",
-          "The patient's discharge date"
-        ],
-        answer: "The transfer with the referring unit or hospital"
+        question: "What is a major purpose of mouth care?",
+        options: ["Maintain oral hygiene and comfort", "Increase oral debris", "Prevent communication", "Cause gum trauma"],
+        answer: "Maintain oral hygiene and comfort"
       },
       {
-        question: "What should be prepared before the patient arrives?",
-        options: [
-          "An appropriate bed",
-          "Only a meal",
-          "Only a discharge form",
-          "Nothing"
-        ],
-        answer: "An appropriate bed"
+        question: "What should be assessed during mouth care?",
+        options: ["The oral cavity", "The patient's shoes", "The patient's occupation", "The room number only"],
+        answer: "The oral cavity"
       },
       {
-        question: "Whose identity should be confirmed?",
-        options: [
-          "The patient's identity",
-          "Only the accompanying nurse",
-          "Only the ward cleaner",
-          "Only the visitor"
-        ],
-        answer: "The patient's identity"
+        question: "Why is positioning important during oral care?",
+        options: ["It can help reduce aspiration risk", "It increases aspiration risk", "It prevents assessment", "It eliminates the need for hygiene"],
+        answer: "It can help reduce aspiration risk"
       },
       {
-        question: "What should the receiving nurse take over from the accompanying nurse?",
-        options: [
-          "Transfer notes and personal belongings",
-          "The hospital building",
-          "The patient's room key only",
-          "Nothing"
-        ],
-        answer: "Transfer notes and personal belongings"
+        question: "What should be protected during mouth care?",
+        options: ["The patient's clothing and bedding", "Only the bedside table", "The ward door", "The patient's footwear"],
+        answer: "The patient's clothing and bedding"
       },
       {
-        question: "Why should clarification be sought from the accompanying nurse?",
-        options: [
-          "To obtain vital information about the patient's condition",
-          "To discuss personal matters",
-          "To determine the nurse's salary",
-          "To arrange holidays"
-        ],
-        answer: "To obtain vital information about the patient's condition"
+        question: "What should be avoided?",
+        options: ["Trauma to oral tissues", "Gentle cleaning", "Inspection", "Hand hygiene"],
+        answer: "Trauma to oral tissues"
       },
       {
-        question: "What should be assessed after the patient is admitted into bed?",
-        options: [
-          "The patient's condition",
-          "Only the patient's clothes",
-          "Only the patient's visitor",
-          "Only the ward furniture"
-        ],
-        answer: "The patient's condition"
+        question: "What should be used individually?",
+        options: ["Oral-care equipment", "Ward furniture", "The patient's room", "The bed frame"],
+        answer: "Oral-care equipment"
       },
       {
-        question: "Which devices should be checked after transfer?",
-        options: [
-          "Drainage or tubings",
-          "Only the bedside locker",
-          "Only the curtains",
-          "Only the patient's shoes"
-        ],
-        answer: "Drainage or tubings"
+        question: "What should be reported?",
+        options: ["Unusual oral findings", "Normal oral appearance", "Completion of hygiene", "Patient comfort"],
+        answer: "Unusual oral findings"
       },
       {
-        question: "What should the nurse review after assessing the patient?",
-        options: [
-          "The patient's notes and treatment plan",
-          "Only the menu",
-          "Only the visitors' book",
-          "Only the laundry list"
-        ],
-        answer: "The patient's notes and treatment plan"
+        question: "What should happen after mouth care?",
+        options: ["Dispose of waste appropriately", "Leave contaminated materials at the bedside", "Reuse disposable materials", "Skip hand hygiene"],
+        answer: "Dispose of waste appropriately"
       },
       {
-        question: "What should be documented?",
-        options: [
-          "Assessments, findings and treatments",
-          "Only the patient's name",
-          "Only the patient's age",
-          "Nothing"
-        ],
-        answer: "Assessments, findings and treatments"
+        question: "Which area is included in oral cleaning?",
+        options: ["Teeth, gums and tongue", "Only the forehead", "Only the hands", "Only the ears"],
+        answer: "Teeth, gums and tongue"
       },
       {
-        question: "What should be done after receiving and assessing the patient?",
-        options: [
-          "Plan care for the patient",
-          "Send the patient home",
-          "Remove all treatment",
-          "Ignore the treatment plan"
-        ],
-        answer: "Plan care for the patient"
+        question: "What should be documented when relevant?",
+        options: ["Findings and care provided", "Only the patient's age", "Only the room number", "Nothing"],
+        answer: "Findings and care provided"
       }
     ]
   },
 
   {
     id: "rgn-006",
-    title: "Transfer-Out (Trans-Out)",
+    title: "Washing of a Patient",
     category: "General Nursing (RGN)",
-
     overview:
-      "The safe transfer of a patient from one unit or facility to another while ensuring continuity of care, appropriate documentation and safe handover.",
-
+      "Assistance with personal hygiene and bathing for a patient who requires nursing support.",
     purpose: [
-      "Ensure safe transfer of the patient.",
-      "Maintain continuity of care.",
-      "Provide relevant clinical information to the receiving unit.",
-      "Safeguard the patient's belongings and records."
+      "Maintain personal hygiene.",
+      "Promote comfort and dignity.",
+      "Inspect the skin.",
+      "Reduce accumulation of sweat and contaminants."
     ],
-
     indications: [
-      "Patients ordered for transfer to another unit or facility.",
-      "Patients requiring continued care elsewhere."
+      "Patient unable to bathe independently.",
+      "Patient on bed rest.",
+      "Patient requiring assisted personal hygiene.",
+      "Patients needing regular skin assessment."
     ],
-
     equipment: [
-      "Patient's medical records (Manual or electronic)",
-      "Referral notes (Manual or electronic)"
+      "Basin and appropriate water",
+      "Washcloths",
+      "Towels",
+      "Clean clothing",
+      "Soap or appropriate cleansing product",
+      "Gloves where indicated"
     ],
-
     steps: [
-      "Confirm patient's trans-out order with medical team.",
-      "Assess patient's/client's condition.",
-      "Inform the receiving unit or facility about the intended transfer and the state of patient.",
-      "Explain reason for the trans-out to patient and relatives.",
-      "Arrange for accompanying nurse and appropriate means of transportation.",
-      "Collect all necessary data.",
-      "Pack patient's personal belongings.",
-      "Collect patient's medication, laboratory results and transfer.",
-      "Ensure patient settles bills where applicable.",
-      "Assist patient onto stretcher, wheelchair or ambulance where applicable.",
-      "Hand over patient's notes and belongings to the accompanying nurse.",
-      "Ensure linen are removed.",
-      "Decontaminate beds and its accessories.",
-      "Make new bed for next patient."
+      "Explain the procedure and obtain cooperation.",
+      "Provide privacy and maintain dignity.",
+      "Perform hand hygiene.",
+      "Prepare the equipment.",
+      "Ensure the environment is safe and warm.",
+      "Wash the patient systematically.",
+      "Observe the skin during washing.",
+      "Dry the patient thoroughly, especially skin folds.",
+      "Assist the patient into clean clothing.",
+      "Dispose of used materials and document relevant findings."
     ],
-
     precautions: [
-      "Confirm the transfer order.",
-      "Assess the patient's condition before transfer.",
-      "Ensure the receiving unit is informed.",
-      "Safeguard records, medication and belongings.",
-      "Use appropriate transportation.",
-      "Ensure safe handover."
+      "Maintain privacy and dignity.",
+      "Avoid exposing the patient unnecessarily.",
+      "Check water temperature appropriately.",
+      "Use safe patient-handling techniques.",
+      "Observe for skin abnormalities."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=zAjVep4soNc",
     quiz: [
       {
-        question: "What should be confirmed before transferring a patient out?",
-        options: [
-          "The patient's meal",
-          "The trans-out order with the medical team",
-          "The patient's visitor list",
-          "The ward timetable"
-        ],
-        answer: "The trans-out order with the medical team"
+        question: "What is a major purpose of patient washing?",
+        options: ["Maintain hygiene and comfort", "Increase skin contamination", "Reduce dignity", "Prevent assessment"],
+        answer: "Maintain hygiene and comfort"
       },
       {
-        question: "What should be assessed before transfer?",
-        options: [
-          "The patient's condition",
-          "Only the patient's clothing",
-          "Only the patient's room",
-          "Only the patient's meal"
-        ],
-        answer: "The patient's condition"
+        question: "What should be maintained throughout the procedure?",
+        options: ["Privacy and dignity", "Unnecessary exposure", "Unsafe positioning", "Cold surroundings"],
+        answer: "Privacy and dignity"
       },
       {
-        question: "Who should be informed about the intended transfer?",
-        options: [
-          "The receiving unit or facility",
-          "Only another patient",
-          "Nobody",
-          "Only visitors"
-        ],
-        answer: "The receiving unit or facility"
+        question: "What should the nurse observe during washing?",
+        options: ["The patient's skin", "The ward television", "The patient's shoes", "The room decoration"],
+        answer: "The patient's skin"
       },
       {
-        question: "What should be explained to the patient and relatives?",
-        options: [
-          "The reason for the trans-out",
-          "The nurse's private information",
-          "The ward's financial records",
-          "Nothing"
-        ],
-        answer: "The reason for the trans-out"
+        question: "Why should skin folds be dried thoroughly?",
+        options: ["To reduce retained moisture", "To increase moisture", "To prevent inspection", "To increase contamination"],
+        answer: "To reduce retained moisture"
       },
       {
-        question: "What should be arranged for the transfer?",
-        options: [
-          "An accompanying nurse and appropriate transportation",
-          "Only food",
-          "Only a visitor",
-          "Nothing"
-        ],
-        answer: "An accompanying nurse and appropriate transportation"
+        question: "What should be checked before washing?",
+        options: ["Water temperature", "Patient's favourite music", "The patient's occupation", "The ward timetable"],
+        answer: "Water temperature"
       },
       {
-        question: "Which items should be packed?",
-        options: [
-          "The patient's personal belongings",
-          "The ward's equipment",
-          "Another patient's belongings",
-          "Nothing"
-        ],
-        answer: "The patient's personal belongings"
+        question: "Which practice promotes safety?",
+        options: ["Safe patient handling", "Leaving the patient unsupported", "Using excessive force", "Ignoring mobility limitations"],
+        answer: "Safe patient handling"
       },
       {
-        question: "What should accompany the patient where applicable?",
-        options: [
-          "Medication and laboratory results",
-          "Only bed linen",
-          "Only food",
-          "Only clothing"
-        ],
-        answer: "Medication and laboratory results"
+        question: "What should be done after washing?",
+        options: ["Dry the patient and assist with clean clothing", "Leave the patient wet", "Leave equipment on the bed", "Remove all safety measures"],
+        answer: "Dry the patient and assist with clean clothing"
       },
       {
-        question: "To whom are the patient's notes and belongings handed over?",
-        options: [
-          "The accompanying nurse",
-          "Another patient",
-          "A visitor",
-          "Nobody"
-        ],
-        answer: "The accompanying nurse"
+        question: "What is another benefit of washing?",
+        options: ["Opportunity for skin assessment", "Avoidance of communication", "Increased skin breakdown", "Reduced comfort"],
+        answer: "Opportunity for skin assessment"
       },
       {
-        question: "What should happen to the bed after the patient leaves?",
-        options: [
-          "It should be decontaminated and prepared for the next patient",
-          "It should remain dirty",
-          "It should be removed permanently",
-          "Nothing should be done"
-        ],
-        answer: "It should be decontaminated and prepared for the next patient"
+        question: "What should be done before starting?",
+        options: ["Explain the procedure", "Leave the patient alone", "Remove all linen without explanation", "Begin without preparation"],
+        answer: "Explain the procedure"
       },
       {
-        question: "Why is safe handover important during transfer?",
-        options: [
-          "To support continuity and safety of care",
-          "To delay the transfer",
-          "To avoid documentation",
-          "To prevent communication"
-        ],
-        answer: "To support continuity and safety of care"
+        question: "Which finding should be documented or reported?",
+        options: ["Significant skin abnormality", "Normal clean skin only", "Patient's favourite food", "Room decoration"],
+        answer: "Significant skin abnormality"
       }
     ]
   },
 
   {
     id: "rgn-007",
-    title: "Care of the Hands and Feet",
+    title: "Measurement of Vital Signs",
     category: "General Nursing (RGN)",
-
     overview:
-      "Nursing care involving cleansing, grooming and observation of the patient's hands and feet while promoting comfort and hygiene.",
-
+      "Systematic assessment and documentation of temperature, pulse, respiration and blood pressure to monitor a patient's condition.",
     purpose: [
-      "Maintain cleanliness of hands and feet.",
-      "Promote comfort.",
-      "Maintain nail hygiene.",
-      "Identify abnormalities of the skin, nails and extremities."
+      "Establish baseline observations.",
+      "Monitor changes in patient condition.",
+      "Identify deterioration early.",
+      "Evaluate response to illness and treatment."
     ],
-
     indications: [
-      "Patients requiring assistance with personal hygiene.",
-      "Patients unable to independently care for their hands and feet.",
-      "Routine hygiene care."
+      "Routine nursing assessment.",
+      "Admission assessment.",
+      "Monitoring illness or treatment.",
+      "When a patient's condition changes."
     ],
-
     equipment: [
-      "Two bowls/basins",
-      "Nail clipper and file in a receiver",
-      "Soap in a dish",
-      "Nail brush",
-      "Sponge",
-      "Hand or bath towel",
-      "Mackintosh and dressing towel",
-      "Hand cream or lotion",
-      "Orange stick (toothpick)",
-      "Two jugs containing hot and cold water",
-      "Bucket to receive used water",
-      "Heart table",
-      "Chair"
+      "Thermometer",
+      "Watch or timer",
+      "Blood pressure equipment",
+      "Stethoscope where required",
+      "Documentation chart or electronic record"
     ],
-
     steps: [
-      "Establish rapport.",
-      "Explain procedure to patient.",
+      "Explain the procedure to the patient.",
       "Perform hand hygiene.",
-      "Provide privacy and take trolley to bedside.",
-      "Position patient in a desirable position.",
-      "Inspect the skin of hands and feet for callous, swelling and any sores.",
-      "Protect the bed with a mackintosh and dressing towel.",
-      "Mix and allow patient to check the temperature of the water.",
-      "Place bowl of warm water on the mackintosh and towel.",
-      "Wet fingers in a bowl of warm water.",
-      "Immerse feet in a bowl of water.",
-      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper.",
-      "Cut toe nails across to prevent in-growing toe nails.",
-      "Put all nail clippings into a receiver.",
-      "Put hands into the bowl of warm water and scrub nails gently with nail brush.",
-      "Use orange stick to remove debris.",
-      "Wash hands thoroughly using soap and sponge.",
-      "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush.",
-      "Use orange stick to remove debris.",
-      "Wash feet thoroughly using soap and sponge.",
-      "Change warm water and rinse the hands and feet alternatively.",
-      "Dry hands and feet thoroughly.",
-      "Apply hand cream or lotion to the hands and feet.",
-      "Remove mackintosh and towel.",
-      "Assist patient into a desirable position.",
-      "Dispose off used items and decontaminate instruments.",
-      "Perform hand hygiene.",
-      "Document procedure and report findings (manual or electronic)."
+      "Assess the patient and select appropriate equipment.",
+      "Measure temperature using the appropriate method.",
+      "Measure pulse and assess relevant characteristics.",
+      "Count respirations appropriately.",
+      "Measure blood pressure using appropriate technique and equipment.",
+      "Record the measurements accurately.",
+      "Compare findings with baseline or expected values.",
+      "Report significant abnormalities promptly."
     ],
-
     precautions: [
-      "Inspect hands and feet before care.",
-      "Check water temperature before use.",
-      "Cut toenails across to reduce risk of ingrowing toenails.",
-      "Maintain privacy.",
-      "Dry hands and feet thoroughly.",
-      "Report abnormalities."
+      "Use appropriate equipment and technique.",
+      "Select an appropriate blood-pressure cuff size.",
+      "Allow the patient to rest when required.",
+      "Avoid inaccurate measurement conditions.",
+      "Document and report abnormal findings."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
       {
-        question: "What should the nurse inspect before caring for the hands and feet?",
-        options: [
-          "Skin for callous, swelling and sores",
-          "Only the patient's hair",
-          "Only the patient's eyes",
-          "Only the patient's teeth"
-        ],
-        answer: "Skin for callous, swelling and sores"
+        question: "What is one purpose of measuring vital signs?",
+        options: ["Monitor changes in patient condition", "Determine occupation", "Select meals", "Determine room allocation"],
+        answer: "Monitor changes in patient condition"
       },
       {
-        question: "Who should be allowed to check the temperature of the water?",
-        options: [
-          "The patient",
-          "Only another patient",
-          "The visitor",
-          "Nobody"
-        ],
-        answer: "The patient"
+        question: "Which is a vital sign?",
+        options: ["Blood pressure", "Hair colour", "Shoe size", "Occupation"],
+        answer: "Blood pressure"
       },
       {
-        question: "How should toenails be cut?",
-        options: [
-          "Across",
-          "Into a deep curve",
-          "Randomly",
-          "Not at all"
-        ],
-        answer: "Across"
+        question: "Why is baseline information useful?",
+        options: ["It allows comparison with later findings", "It replaces future observations", "It prevents documentation", "It eliminates assessment"],
+        answer: "It allows comparison with later findings"
       },
       {
-        question: "Why are toenails cut across?",
-        options: [
-          "To prevent ingrowing toenails",
-          "To increase sweating",
-          "To change nail colour",
-          "To increase nail length"
-        ],
-        answer: "To prevent ingrowing toenails"
+        question: "What can affect blood-pressure accuracy?",
+        options: ["Incorrect cuff size", "Correct positioning", "Appropriate rest", "Correct technique"],
+        answer: "Incorrect cuff size"
       },
       {
-        question: "What is used to remove debris from around the nails?",
-        options: [
-          "Orange stick",
-          "Stethoscope",
-          "Thermometer",
-          "Syringe"
-        ],
-        answer: "Orange stick"
+        question: "What should be done with significant abnormal findings?",
+        options: ["Report them promptly", "Ignore them", "Delete them", "Wait indefinitely"],
+        answer: "Report them promptly"
       },
       {
-        question: "What is used to scrub the nails gently?",
-        options: [
-          "Nail brush",
-          "Scalpel",
-          "Catheter",
-          "Bandage"
-        ],
-        answer: "Nail brush"
+        question: "Which observation is assessed by counting breaths?",
+        options: ["Respiratory rate", "Blood pressure", "Temperature", "Oxygen prescription"],
+        answer: "Respiratory rate"
       },
       {
-        question: "What should be done after rinsing the hands and feet?",
-        options: [
-          "Dry them thoroughly",
-          "Leave them wet",
-          "Cover them with dirty linen",
-          "Apply boiling water"
-        ],
-        answer: "Dry them thoroughly"
+        question: "What should be used to measure temperature?",
+        options: ["An appropriate thermometer", "A blood-pressure cuff", "A stethoscope only", "A weighing scale"],
+        answer: "An appropriate thermometer"
       },
       {
-        question: "What may be applied after drying the hands and feet?",
-        options: [
-          "Hand cream or lotion",
-          "Bleach",
-          "Alcohol routinely",
-          "Disinfectant"
-        ],
-        answer: "Hand cream or lotion"
+        question: "What should happen after measurement?",
+        options: ["Record the findings accurately", "Discard all results", "Avoid comparison", "Hide abnormal findings"],
+        answer: "Record the findings accurately"
       },
       {
-        question: "Where should nail clippings be placed?",
-        options: [
-          "In a receiver",
-          "On the patient's bed",
-          "On the floor",
-          "In the water bowl"
-        ],
-        answer: "In a receiver"
+        question: "Why should appropriate technique be used?",
+        options: ["To obtain reliable measurements", "To increase errors", "To avoid documentation", "To delay assessment"],
+        answer: "To obtain reliable measurements"
       },
       {
-        question: "What should be done after disposing of used items?",
-        options: [
-          "Perform hand hygiene",
-          "Leave immediately without cleaning",
-          "Reuse contaminated items",
-          "Ignore documentation"
-        ],
-        answer: "Perform hand hygiene"
+        question: "Which observations are commonly included in a full set of vital signs?",
+        options: ["Temperature, pulse, respiration and blood pressure", "Height, hair colour and shoe size", "Weight and occupation only", "Diet and sleep pattern only"],
+        answer: "Temperature, pulse, respiration and blood pressure"
       }
     ]
   },
 
   {
     id: "rgn-008",
-    title: "Recording of Intake and Output",
+    title: "Urinary Catheterization",
     category: "General Nursing (RGN)",
-
     overview:
-      "Accurate measurement and documentation of fluid intake and output to assess fluid balance and identify abnormalities requiring clinical attention.",
-
+      "Insertion and care of a urinary catheter within the nurse's scope, competence and applicable institutional protocol.",
     purpose: [
-      "Monitor the patient's fluid balance.",
-      "Identify excessive or inadequate fluid output.",
-      "Provide accurate information for clinical management.",
-      "Support evaluation of hydration status."
+      "Provide appropriate urinary drainage when indicated.",
+      "Maintain patient comfort and safety.",
+      "Prevent avoidable catheter-associated complications.",
+      "Monitor urinary output when clinically required."
     ],
-
     indications: [
-      "Patients requiring fluid-balance monitoring.",
-      "Patients with abnormal fluid losses.",
-      "Patients receiving significant oral or parenteral fluids."
+      "Clinical indication for urinary drainage.",
+      "Urinary retention where catheterization is indicated.",
+      "Other approved indications according to clinical protocol."
     ],
-
     equipment: [
-      "Drinking cup (to measure fluid input)",
-      "Urinal or bedpan",
-      "Measuring jug (to measure output)",
-      "Fluid chart (manual/electronic)"
+      "Appropriate catheter",
+      "Sterile or appropriate catheterization equipment",
+      "Lubricant",
+      "Drainage system",
+      "Personal protective equipment",
+      "Waste receptacle"
     ],
-
     steps: [
-      "Establish rapport.",
-      "Explain the importance of keeping the fluid balance chart to patient and relatives.",
-      "Obtain fluid intake and output chart (manually or electronically) and confirm with patient's identity.",
-      "Determine the types of fluid intake or output.",
-      "Observe amount of fluids given to patient.",
-      "Record the amount of oral and intravenous fluids prescribed at the intake column indicating the date and time.",
-      "Add together the values for oral and parenteral fluids.",
-      "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume — OR, if there is urine in a urine bag, empty content into the measuring jug and note the volume.",
-      "Record other forms of output such as watery stools, vomitus at the output column indicating date, time and the amount.",
-      "Record all measurements in milliliters.",
-      "Add together all the values obtained for outputs.",
-      "Total the intake and output at the end of every 24 hours.",
-      "Find out amount of fluid retained by subtracting the values of fluid output from the intake.",
-      "Perform hand hygiene.",
-      "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output.",
-      "Record findings in the appropriate recording software and observation chart.",
-      "Dispose off used items and decontaminate trolley (manual or electronic)."
+      "Verify the indication and relevant order or protocol.",
+      "Explain the procedure and obtain cooperation.",
+      "Provide privacy and appropriate positioning.",
+      "Perform hand hygiene and prepare equipment.",
+      "Use appropriate aseptic technique.",
+      "Prepare the urethral area according to protocol.",
+      "Insert the catheter using appropriate technique.",
+      "Secure and connect the drainage system appropriately.",
+      "Ensure free drainage and patient comfort.",
+      "Dispose of waste, perform hand hygiene and document the procedure."
     ],
-
     precautions: [
-      "Confirm patient identity.",
-      "Measure fluids accurately.",
-      "Record measurements in milliliters.",
-      "Record date and time.",
-      "Report abnormal intake/output promptly."
+      "Follow institutional catheterization protocol.",
+      "Maintain appropriate aseptic technique.",
+      "Do not force catheter insertion.",
+      "Use the correct catheter and equipment.",
+      "Monitor for complications and report abnormalities."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=N-uBKzqVt80",
     quiz: [
       {
-        question: "What is the main purpose of recording intake and output?",
-        options: [
-          "To monitor fluid balance",
-          "To determine height",
-          "To measure hearing",
-          "To identify blood group"
-        ],
-        answer: "To monitor fluid balance"
+        question: "What is an important principle during urinary catheterization?",
+        options: ["Aseptic technique", "Unnecessary contamination", "Forceful insertion", "Ignoring patient privacy"],
+        answer: "Aseptic technique"
       },
       {
-        question: "In what unit should fluid measurements be recorded?",
-        options: [
-          "Centimetres",
-          "Milliliters",
-          "Kilograms",
-          "Degrees Celsius"
-        ],
-        answer: "Milliliters"
+        question: "What should be verified before catheterization?",
+        options: ["The indication and applicable order or protocol", "The patient's favourite food", "The patient's occupation", "The ward television"],
+        answer: "The indication and applicable order or protocol"
       },
       {
-        question: "What should be recorded in the intake column?",
-        options: [
-          "Oral and intravenous fluids",
-          "Only urine",
-          "Only vomitus",
-          "Only stool"
-        ],
-        answer: "Oral and intravenous fluids"
+        question: "Why should catheter insertion never be forced?",
+        options: ["To reduce risk of trauma", "To increase trauma", "To speed up every procedure", "To avoid documentation"],
+        answer: "To reduce risk of trauma"
       },
       {
-        question: "What device may be used to measure urine output?",
-        options: [
-          "Measuring jug",
-          "Thermometer",
-          "Blood pressure cuff",
-          "Stethoscope"
-        ],
-        answer: "Measuring jug"
+        question: "What should be maintained during the procedure?",
+        options: ["Patient privacy", "Unnecessary exposure", "Contamination", "Unsafe positioning"],
+        answer: "Patient privacy"
       },
       {
-        question: "Which is an example of output that should be recorded?",
-        options: [
-          "Vomitus",
-          "Patient's clothing",
-          "Room temperature",
-          "Bed size"
-        ],
-        answer: "Vomitus"
+        question: "What should the drainage system allow?",
+        options: ["Appropriate urine drainage", "Backflow whenever possible", "Disconnection without reason", "Contamination"],
+        answer: "Appropriate urine drainage"
       },
       {
-        question: "When should total intake and output be calculated?",
-        options: [
-          "At the end of every 24 hours",
-          "Only at discharge",
-          "Once a month",
-          "Never"
-        ],
-        answer: "At the end of every 24 hours"
+        question: "What should be monitored after catheterization?",
+        options: ["Patient comfort and complications", "The patient's occupation", "Room decoration", "Meal preference only"],
+        answer: "Patient comfort and complications"
       },
       {
-        question: "How is fluid retained calculated according to the procedure?",
-        options: [
-          "Output minus intake",
-          "Intake minus output",
-          "Intake multiplied by output",
-          "Output divided by temperature"
-        ],
-        answer: "Intake minus output"
+        question: "Which equipment should be appropriate for the procedure?",
+        options: ["The correct catheter and drainage system", "Random equipment", "Used equipment", "Unclean equipment"],
+        answer: "The correct catheter and drainage system"
       },
       {
-        question: "When should the nurse inform the nurse in charge or doctor immediately?",
-        options: [
-          "When output is greater than intake or output is abnormally low",
-          "When the patient asks a question",
-          "When the patient sleeps",
-          "When the chart is complete"
-        ],
-        answer: "When output is greater than intake or output is abnormally low"
+        question: "What should be documented?",
+        options: ["The procedure and relevant findings", "Only the patient's name", "Only the room number", "Nothing"],
+        answer: "The procedure and relevant findings"
       },
       {
-        question: "What should be done before using the fluid chart?",
-        options: [
-          "Confirm the patient's identity",
-          "Remove the chart",
-          "Ignore patient identity",
-          "Discharge the patient"
-        ],
-        answer: "Confirm the patient's identity"
+        question: "What should happen if an abnormality occurs?",
+        options: ["It should be assessed and reported appropriately", "It should be ignored", "The catheter should always be removed immediately", "Documentation should be avoided"],
+        answer: "It should be assessed and reported appropriately"
       },
       {
-        question: "What should happen after recording and completing the procedure?",
-        options: [
-          "Dispose of used items and decontaminate the trolley",
-          "Leave used equipment at the bedside",
-          "Reuse contaminated equipment",
-          "Discard the patient's chart"
-        ],
-        answer: "Dispose of used items and decontaminate the trolley"
+        question: "What is one purpose of catheterization?",
+        options: ["Provide appropriate urinary drainage", "Cause urinary obstruction", "Increase infection risk", "Prevent urine monitoring"],
+        answer: "Provide appropriate urinary drainage"
       }
     ]
   },
 
   {
     id: "rgn-009",
-    title: "Education on Condition and Its Management",
+    title: "Basic Wound Care and Dressing",
     category: "General Nursing (RGN)",
-
     overview:
-      "Patient education about a diagnosed condition, its management, investigations, treatment, prognosis and appropriate use of care devices.",
-
+      "Assessment and nursing care of wounds using appropriate infection-prevention and dressing principles within the nurse's competence and applicable protocol.",
     purpose: [
-      "Improve patient understanding of the condition.",
-      "Promote participation in treatment and management.",
-      "Support informed cooperation with the healthcare team.",
-      "Promote appropriate self-management."
+      "Promote wound healing.",
+      "Protect the wound.",
+      "Reduce contamination and infection risk.",
+      "Assess wound progress."
     ],
-
     indications: [
-      "Patients requiring education about a diagnosed condition.",
-      "Patients beginning or continuing management of a condition.",
-      "Patients and significant others requiring health education."
+      "Patients with wounds requiring nursing care.",
+      "Wounds requiring dressing changes.",
+      "Post-operative wounds according to applicable orders and protocols."
     ],
-
     equipment: [
-      "Patient's folder (Manual or electronic)",
-      "Treatment sheet (Manual or electronic)",
-      "Chair",
-      "Care devices/gadgets (if any)",
-      "Pamphlets/source of readable information"
+      "Appropriate dressing materials",
+      "Gloves",
+      "Sterile supplies where required",
+      "Waste receptacle",
+      "Cleaning solution according to protocol",
+      "Documentation materials"
     ],
-
     steps: [
-      "Confirm patient's diagnoses against the patient's record (manually or electronically).",
-      "Establish rapport with the patient.",
-      "Explain the need for education to patient.",
-      "Involve relatives or significant other if any.",
-      "Ensure enabling and relaxed environment to maintain privacy and individuality of patient.",
-      "Assist patient into a desirable position.",
-      "Sit comfortably by the patient.",
-      "Identify the suitable language for the patient.",
-      "Find patient's level of awareness of condition.",
-      "Build on what the patient knows about the condition with scientific data of condition.",
-      "Find patient's level of awareness on possible management options.",
-      "Explain to patient the rationale for the various investigations and treatment adopted.",
-      "Explain the possible outcome of condition and prognosis.",
-      "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
-      "Ensure patient and significant other understands the teaching and clarify where need be.",
-      "Allow patient and significant other to ask questions for clarity.",
-      "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt.",
-      "Provide patient with clear simple pamphlets or other sources of readable information.",
-      "Thank patient and relatives for the cooperation.",
-      "Document procedure and report to appropriate officer."
+      "Verify the patient's identity and wound-care plan.",
+      "Explain the procedure and provide privacy.",
+      "Perform hand hygiene and prepare equipment.",
+      "Assess the wound and surrounding skin.",
+      "Remove the existing dressing appropriately.",
+      "Dispose of contaminated materials safely.",
+      "Clean the wound according to the prescribed or approved technique.",
+      "Apply the appropriate dressing.",
+      "Ensure the patient is comfortable.",
+      "Document wound findings, dressing applied and patient response."
     ],
-
     precautions: [
-      "Confirm the diagnosis before teaching.",
-      "Use language suitable for the patient.",
-      "Maintain privacy.",
-      "Assess existing knowledge before teaching.",
-      "Encourage questions.",
-      "Confirm understanding.",
-      "Document the education provided."
+      "Use appropriate infection-prevention measures.",
+      "Avoid unnecessary contamination.",
+      "Use prescribed or approved wound-care products.",
+      "Report signs of infection or deterioration.",
+      "Follow institutional wound-care protocols."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=VC0O-7BQSO8",
     quiz: [
       {
-        question: "What should be confirmed before educating the patient?",
-        options: [
-          "The patient's diagnosis",
-          "The patient's favourite food",
-          "The ward's cleaning schedule",
-          "The nurse's shift"
-        ],
-        answer: "The patient's diagnosis"
+        question: "What should be assessed during wound care?",
+        options: ["The wound and surrounding skin", "The patient's shoes", "The patient's occupation", "The room decoration"],
+        answer: "The wound and surrounding skin"
       },
       {
-        question: "Why should the nurse identify a suitable language?",
-        options: [
-          "To promote effective communication",
-          "To shorten the patient's admission",
-          "To avoid assessment",
-          "To determine blood pressure"
-        ],
-        answer: "To promote effective communication"
+        question: "What is one purpose of a wound dressing?",
+        options: ["Protect the wound", "Increase contamination", "Cause trauma", "Prevent assessment"],
+        answer: "Protect the wound"
       },
       {
-        question: "What should the nurse determine before providing detailed teaching?",
-        options: [
-          "The patient's level of awareness",
-          "The patient's shoe size",
-          "The patient's room number only",
-          "The patient's discharge bill"
-        ],
-        answer: "The patient's level of awareness"
+        question: "What should be performed before preparing the wound?",
+        options: ["Hand hygiene", "Eating", "Changing the patient's identity", "Removing all equipment"],
+        answer: "Hand hygiene"
       },
       {
-        question: "What should be explained about investigations and treatment?",
-        options: [
-          "Their rationale",
-          "Only their cost",
-          "Nothing",
-          "Only their colour"
-        ],
-        answer: "Their rationale"
+        question: "What should happen to contaminated dressing materials?",
+        options: ["Dispose of them safely", "Place them on a clean trolley", "Reuse them", "Keep them on the patient's bed"],
+        answer: "Dispose of them safely"
       },
       {
-        question: "What should the nurse explain about the condition's possible outcome?",
-        options: [
-          "Prognosis",
-          "The nurse's personal opinion only",
-          "The patient's meal",
-          "The ward's history"
-        ],
-        answer: "Prognosis"
+        question: "What should be reported?",
+        options: ["Signs of infection or deterioration", "Normal healing only", "The patient's favourite food", "The room number"],
+        answer: "Signs of infection or deterioration"
       },
       {
-        question: "Which device is specifically mentioned as an example?",
-        options: [
-          "Glucometer",
-          "Television",
-          "Telephone",
-          "Wheelbarrow"
-        ],
-        answer: "Glucometer"
+        question: "Why is wound assessment important?",
+        options: ["To monitor healing and identify problems", "To prevent documentation", "To increase contamination", "To delay treatment"],
+        answer: "To monitor healing and identify problems"
       },
       {
-        question: "What should the nurse allow the patient and significant other to do?",
-        options: [
-          "Ask questions for clarity",
-          "Leave without explanation",
-          "Avoid communication",
-          "Ignore treatment"
-        ],
-        answer: "Ask questions for clarity"
+        question: "What should determine the wound-care technique?",
+        options: ["The applicable prescription or approved protocol", "Personal preference only", "The patient's clothing", "The ward television"],
+        answer: "The applicable prescription or approved protocol"
       },
       {
-        question: "What type of educational material may be provided?",
-        options: [
-          "Clear simple pamphlets",
-          "Unrelated advertisements",
-          "Financial records",
-          "Blank paper only"
-        ],
-        answer: "Clear simple pamphlets"
+        question: "What should be documented after dressing?",
+        options: ["Wound findings and dressing applied", "Only the patient's age", "Only the room number", "Nothing"],
+        answer: "Wound findings and dressing applied"
       },
       {
-        question: "What should the nurse ensure after teaching?",
-        options: [
-          "The patient and significant other understand the teaching",
-          "The patient memorizes every medical term",
-          "The patient leaves immediately",
-          "The patient avoids asking questions"
-        ],
-        answer: "The patient and significant other understand the teaching"
+        question: "Which principle reduces contamination?",
+        options: ["Appropriate infection-prevention practice", "Reusing dirty equipment", "Touching sterile materials unnecessarily", "Ignoring hand hygiene"],
+        answer: "Appropriate infection-prevention practice"
       },
       {
-        question: "What should be done after completing patient education?",
-        options: [
-          "Document the procedure and report appropriately",
-          "Forget the teaching",
-          "Remove the patient's records",
-          "Discharge every patient"
-        ],
-        answer: "Document the procedure and report appropriately"
+        question: "What is an important outcome of wound care?",
+        options: ["Support wound healing", "Increase infection risk", "Prevent observation", "Cause additional injury"],
+        answer: "Support wound healing"
       }
     ]
   },
 
   {
     id: "rgn-010",
-    title: "Admission of a Patient",
+    title: "Documentation and Recording of Patient Care",
     category: "General Nursing (RGN)",
-
     overview:
-      "The systematic process of receiving a patient into a healthcare unit, assessing the patient, initiating required care, orientating the patient and documenting findings.",
-
+      "Accurate recording of relevant patient assessment, nursing care, interventions and response in the appropriate clinical record.",
     purpose: [
-      "Receive the patient safely and respectfully.",
-      "Establish baseline assessment findings.",
-      "Initiate prescribed treatment and investigations.",
-      "Orientate the patient and relatives to the ward.",
-      "Develop an appropriate nursing care plan."
+      "Provide an accurate record of patient care.",
+      "Support continuity of care.",
+      "Communicate relevant clinical information.",
+      "Provide evidence of care and patient response."
     ],
-
     indications: [
-      "Patients newly admitted to the ward.",
-      "Patients requiring inpatient nursing care."
+      "After relevant nursing assessments.",
+      "After nursing interventions.",
+      "When significant changes occur.",
+      "As required by clinical documentation policy."
     ],
-
     equipment: [
-      "Admission bed and its accessories (per patient condition)",
-      "Manual or electronic folder",
-      "Vital signs tray",
-      "Oxygen apparatus",
-      "Treatment or emergency tray",
-      "Suction apparatus",
-      "Admission and Discharge documents (Manual or Electronic)"
+      "Approved patient record",
+      "Approved documentation system",
+      "Appropriate writing or electronic documentation tools"
     ],
-
     steps: [
-      "Welcome patient and relatives to the nurses' station.",
-      "Introduce self (nurse) and any staff present.",
-      "Collect necessary documents, admission notes and any other information from the accompanying nurse.",
-      "Assess the patient's condition and note any supportive gadgets/devices.",
-      "Identify and confirm patient's name, particulars and reassure him/her and relatives.",
-      "Send patient to bedside and position him/her as the condition permits.",
-      "Make relative comfortable in the waiting area.",
-      "Take comprehensive history from the patient or relatives.",
-      "Perform general head-to-toe assessment.",
-      "Check vital signs and record.",
-      "Secure intravenous access and extract sample for requested laboratory investigations.",
-      "Send patient to do other requested investigations e.g. X-rays, C.T. scan etc. (if any).",
-      "Inform charge nurse of any urgent prescribed medication and ensure they are available.",
-      "Administer prescribed medications.",
-      "Assist patient to change into appropriate clothing.",
-      "Ask patient to declare valuables if any according to the institution's protocol.",
-      "Keep patient valuables according to the institution's protocol.",
-      "Explain National Health/Mutual Insurance Schemes to patient and relative(s): If client is a scheme holder, go ahead and process; If client is a cash-in client, request for deposit per the institutional protocol.",
-      "Introduce him/her to other patients near him/her in the ward.",
-      "Orientate patient/relative(s) to ward if condition permits.",
-      "Inform patients/relatives about the routine ward activities.",
-      "Enter patient's name into admission, discharges book and daily ward state (manually or electronically).",
-      "Instruct patient/relatives to read and sign consent form if necessary.",
-      "Allow relative(s) to see patient and bid goodbye.",
-      "Document all assessments, findings and treatments in appropriate notes/charts (manually or electronically).",
-      "Plan care for the patient using the nursing process approach."
+      "Confirm the correct patient record.",
+      "Review relevant information before documenting.",
+      "Record assessments and care accurately.",
+      "Use clear and appropriate clinical language.",
+      "Record significant patient responses and changes.",
+      "Document medications and interventions according to policy.",
+      "Complete entries promptly.",
+      "Identify the person making the entry according to policy.",
+      "Maintain confidentiality and security of records.",
+      "Communicate significant findings to the appropriate healthcare professional."
     ],
-
     precautions: [
-      "Confirm patient identity accurately.",
-      "Assess the patient's condition promptly.",
-      "Maintain privacy and dignity.",
-      "Follow institutional protocols for valuables and insurance.",
-      "Administer medication only as prescribed.",
-      "Document all relevant assessments and interventions.",
-      "Escalate urgent findings promptly."
+      "Maintain patient confidentiality.",
+      "Do not falsify or alter records improperly.",
+      "Use the approved documentation system.",
+      "Record objectively and accurately.",
+      "Follow institutional documentation policies."
     ],
-
+    videoUrl: "https://www.youtube.com/watch?v=-taPZmUCbbs",
     quiz: [
       {
-        question: "Where should the patient and relatives initially be welcomed?",
-        options: [
-          "The nurses' station",
-          "The operating theatre",
-          "The pharmacy",
-          "The laboratory"
-        ],
-        answer: "The nurses' station"
+        question: "What is a major purpose of nursing documentation?",
+        options: ["Support continuity of care", "Hide clinical findings", "Replace patient assessment", "Prevent communication"],
+        answer: "Support continuity of care"
       },
       {
-        question: "What should the nurse do after receiving the patient?",
-        options: [
-          "Confirm the patient's identity and reassure the patient and relatives",
-          "Immediately discharge the patient",
-          "Ignore the patient's condition",
-          "Send the patient away"
-        ],
-        answer: "Confirm the patient's identity and reassure the patient and relatives"
+        question: "What should be confirmed before documenting?",
+        options: ["The correct patient record", "The patient's favourite food", "The ward television", "The patient's occupation"],
+        answer: "The correct patient record"
       },
       {
-        question: "What type of history should be taken during admission?",
-        options: [
-          "Comprehensive history",
-          "Only family history",
-          "Only medication history",
-          "No history"
-        ],
-        answer: "Comprehensive history"
+        question: "How should clinical information be recorded?",
+        options: ["Accurately and objectively", "By guessing", "By deleting abnormal findings", "By using misleading statements"],
+        answer: "Accurately and objectively"
       },
       {
-        question: "What physical assessment is specifically included?",
-        options: [
-          "General head-to-toe assessment",
-          "Only eye examination",
-          "Only foot examination",
-          "Only dental examination"
-        ],
-        answer: "General head-to-toe assessment"
+        question: "What should be documented when relevant?",
+        options: ["Patient response and significant changes", "Only the patient's name", "Only the room number", "Nothing"],
+        answer: "Patient response and significant changes"
       },
       {
-        question: "What should be checked and recorded during admission?",
-        options: [
-          "Vital signs",
-          "Only the patient's clothing",
-          "Only the visitor's name",
-          "Only the patient's meal"
-        ],
-        answer: "Vital signs"
+        question: "Why should documentation be completed promptly?",
+        options: ["To maintain an accurate contemporaneous record", "To increase errors", "To avoid communication", "To delay care"],
+        answer: "To maintain an accurate contemporaneous record"
       },
       {
-        question: "What should be done with requested laboratory samples?",
-        options: [
-          "Extract and send the requested samples",
-          "Discard them",
-          "Keep them at the bedside indefinitely",
-          "Ignore the request"
-        ],
-        answer: "Extract and send the requested samples"
+        question: "What must be protected in patient records?",
+        options: ["Confidentiality", "Public access", "Uncontrolled sharing", "Unauthorized editing"],
+        answer: "Confidentiality"
       },
       {
-        question: "What should happen to patient valuables?",
-        options: [
-          "They should be handled according to institutional protocol",
-          "They should be given to another patient",
-          "They should be discarded",
-          "They should be hidden"
-        ],
-        answer: "They should be handled according to institutional protocol"
+        question: "Which practice is unacceptable?",
+        options: ["Falsifying patient records", "Accurate documentation", "Recording patient response", "Using approved systems"],
+        answer: "Falsifying patient records"
       },
       {
-        question: "What should the patient and relatives be informed about?",
-        options: [
-          "Routine ward activities",
-          "Only the nurse's schedule",
-          "Only the hospital cafeteria",
-          "Nothing"
-        ],
-        answer: "Routine ward activities"
+        question: "What should significant findings be accompanied by?",
+        options: ["Appropriate communication to the healthcare team", "Silence", "Deletion", "Delayed reporting"],
+        answer: "Appropriate communication to the healthcare team"
       },
       {
-        question: "What should be entered into the admission/discharge book and daily ward state?",
-        options: [
-          "The patient's name",
-          "The nurse's home address",
-          "The visitor's occupation",
-          "The patient's favourite food"
-        ],
-        answer: "The patient's name"
+        question: "Why is documentation important for nursing care?",
+        options: ["It communicates relevant patient information", "It replaces nursing care", "It prevents teamwork", "It eliminates assessment"],
+        answer: "It communicates relevant patient information"
       },
       {
-        question: "How should care be planned after admission?",
-        options: [
-          "Using the nursing process approach",
-          "Without assessment",
-          "Only according to the patient's request",
-          "Without documentation"
-        ],
-        answer: "Using the nursing process approach"
+        question: "What is an important principle of clinical documentation?",
+        options: ["Accuracy and confidentiality", "Guessing and sharing", "Deleting abnormal findings", "Leaving records incomplete"],
+        answer: "Accuracy and confidentiality"
       }
     ]
   }
 ];
+
+export default rgnBatch01;
