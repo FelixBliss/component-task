@@ -20,15 +20,17 @@ type Category = {
 const RECENTLY_VIEWED_KEY =
   "nursing-component-task-recently-viewed";
 
-const MAX_RECENTLY_VIEWED = 5;
+const RECENTLY_VIEWED_CLEARED_EVENT =
+  "nct-recently-viewed-cleared";
 
-const SAVE_PROGRESS_KEY = "nct-save-progress";
+const MAX_RECENTLY_VIEWED = 5;
 
 const procedureCategories: Category[] = [
   {
     icon: "🩺",
     name: "General Nursing (RGN)",
-    description: "Registered General Nursing procedures",
+    description:
+      "Registered General Nursing procedures",
   },
   {
     icon: "🤰",
@@ -38,7 +40,8 @@ const procedureCategories: Category[] = [
   {
     icon: "🧠",
     name: "Community Mental Health Nursing (RCMN)",
-    description: "Community mental health procedures",
+    description:
+      "Community mental health procedures",
   },
   {
     icon: "🧠",
@@ -61,6 +64,10 @@ const procedureCategories: Category[] = [
     description: "Pain management procedures",
   },
 ];
+
+/* =========================================================
+   RECENTLY VIEWED HELPERS
+   ========================================================= */
 
 function loadRecentlyViewed(): string[] {
   try {
@@ -89,18 +96,27 @@ function loadRecentlyViewed(): string[] {
   }
 }
 
-function saveRecentlyViewed(ids: string[]) {
+function saveRecentlyViewed(
+  ids: string[]
+) {
   try {
     localStorage.setItem(
       RECENTLY_VIEWED_KEY,
       JSON.stringify(
-        ids.slice(0, MAX_RECENTLY_VIEWED)
+        ids.slice(
+          0,
+          MAX_RECENTLY_VIEWED
+        )
       )
     );
   } catch {
-    // Ignore localStorage errors.
+    // Ignore storage errors.
   }
 }
+
+/* =========================================================
+   APP
+   ========================================================= */
 
 export default function App() {
   const [showSplash, setShowSplash] =
@@ -109,30 +125,58 @@ export default function App() {
   const [activeTab, setActiveTab] =
     useState<Tab>("home");
 
-  const [selectedCategory, setSelectedCategory] =
-    useState<Category | null>(null);
+  const [
+    selectedCategory,
+    setSelectedCategory,
+  ] = useState<Category | null>(null);
 
-  const [selectedProcedure, setSelectedProcedure] =
-    useState<Procedure | null>(null);
+  const [
+    selectedProcedure,
+    setSelectedProcedure,
+  ] = useState<Procedure | null>(null);
 
-  const [procedureSearch, setProcedureSearch] =
-    useState("");
+  const [
+    procedureSearch,
+    setProcedureSearch,
+  ] = useState("");
 
-  const [recentlyViewedIds, setRecentlyViewedIds] =
-    useState<string[]>([]);
+  const [
+    recentlyViewedIds,
+    setRecentlyViewedIds,
+  ] = useState<string[]>([]);
 
-  /*
-   * Load Recently Viewed once when the app starts.
-   */
+  /* =======================================================
+     LOAD + SYNCHRONIZE RECENTLY VIEWED
+     ======================================================= */
+
   useEffect(() => {
-    setRecentlyViewedIds(
-      loadRecentlyViewed()
+    const loadRecent = () => {
+      setRecentlyViewedIds(
+        loadRecentlyViewed()
+      );
+    };
+
+    // Load when application starts
+    loadRecent();
+
+    // Listen for the Settings clear action
+    window.addEventListener(
+      RECENTLY_VIEWED_CLEARED_EVENT,
+      loadRecent
     );
+
+    return () => {
+      window.removeEventListener(
+        RECENTLY_VIEWED_CLEARED_EVENT,
+        loadRecent
+      );
+    };
   }, []);
 
-  /*
-   * Splash screen.
-   */
+  /* =======================================================
+     SPLASH SCREEN
+     ======================================================= */
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
@@ -141,10 +185,10 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  /*
-   * Resolve Recently Viewed IDs into actual
-   * procedure objects.
-   */
+  /* =======================================================
+     RESOLVE RECENTLY VIEWED IDS
+     ======================================================= */
+
   const recentlyViewedProcedures =
     recentlyViewedIds
       .map((id) =>
@@ -160,9 +204,10 @@ export default function App() {
           Boolean(procedure)
       );
 
-  /*
-   * Navigation helper.
-   */
+  /* =======================================================
+     NAVIGATION
+     ======================================================= */
+
   const navigate = (tab: Tab) => {
     setActiveTab(tab);
     setSelectedCategory(null);
@@ -175,9 +220,10 @@ export default function App() {
     });
   };
 
-  /*
-   * Open a procedure category.
-   */
+  /* =======================================================
+     OPEN CATEGORY
+     ======================================================= */
+
   const openCategory = (
     category: Category
   ) => {
@@ -192,13 +238,10 @@ export default function App() {
     });
   };
 
-  /*
-   * Open a procedure and update Recently Viewed.
-   *
-   * The selected procedure is moved to the front.
-   * Existing duplicates are removed.
-   * Only the latest five are retained.
-   */
+  /* =======================================================
+     OPEN PROCEDURE
+     ======================================================= */
+
   const openProcedure = (
     procedure: Procedure
   ) => {
@@ -212,9 +255,14 @@ export default function App() {
             (id) =>
               id !== procedure.id
           ),
-        ].slice(0, MAX_RECENTLY_VIEWED);
+        ].slice(
+          0,
+          MAX_RECENTLY_VIEWED
+        );
 
-        saveRecentlyViewed(updatedIds);
+        saveRecentlyViewed(
+          updatedIds
+        );
 
         return updatedIds;
       }
@@ -226,9 +274,10 @@ export default function App() {
     });
   };
 
-  /*
-   * Open a procedure from Recently Viewed.
-   */
+  /* =======================================================
+     OPEN FROM RECENTLY VIEWED
+     ======================================================= */
+
   const openRecentlyViewedProcedure = (
     procedure: Procedure
   ) => {
@@ -246,10 +295,6 @@ export default function App() {
         matchingCategory
       );
     } else {
-      /*
-       * Fallback for any procedure whose
-       * category is not currently listed above.
-       */
       setSelectedCategory({
         icon: "🩺",
         name: procedure.category,
@@ -261,30 +306,42 @@ export default function App() {
     openProcedure(procedure);
   };
 
-  /*
-   * Clear Recently Viewed from both:
-   *
-   * 1. React state
-   * 2. localStorage
-   *
-   * This is also used by Settings.tsx.
-   */
-  const clearRecentlyViewed = () => {
-    setRecentlyViewedIds([]);
+  /* =======================================================
+     CLEAR RECENTLY VIEWED
+     ======================================================= */
 
+  const clearRecentlyViewed = () => {
+    /*
+     * Remove the saved history first.
+     */
     try {
       localStorage.removeItem(
         RECENTLY_VIEWED_KEY
       );
     } catch {
-      // Ignore localStorage errors.
+      // Ignore storage errors.
     }
+
+    /*
+     * Immediately update App's React state.
+     */
+    setRecentlyViewedIds([]);
+
+    /*
+     * Notify any component that needs to know
+     * that Recently Viewed has been cleared.
+     */
+    window.dispatchEvent(
+      new Event(
+        RECENTLY_VIEWED_CLEARED_EVENT
+      )
+    );
   };
 
-  /*
-   * Return from a category to the
-   * procedure-category list.
-   */
+  /* =======================================================
+     BACK TO CATEGORIES
+     ======================================================= */
+
   const backToCategories = () => {
     setSelectedCategory(null);
     setSelectedProcedure(null);
@@ -296,9 +353,10 @@ export default function App() {
     });
   };
 
-  /*
-   * Splash screen.
-   */
+  /* =======================================================
+     SPLASH
+     ======================================================= */
+
   if (showSplash) {
     return (
       <div className="splash-screen">
@@ -364,6 +422,10 @@ export default function App() {
     );
   }
 
+  /* =======================================================
+     MAIN APP
+     ======================================================= */
+
   return (
     <div className="app">
 
@@ -406,7 +468,9 @@ export default function App() {
 
       <main className="content">
 
-        {/* ================= HOME ================= */}
+        {/* =================================================
+           HOME
+           ================================================= */}
 
         {activeTab === "home" && (
           <>
@@ -502,7 +566,9 @@ export default function App() {
                 <button
                   className="quick-card"
                   onClick={() =>
-                    navigate("credits")
+                    navigate(
+                      "credits"
+                    )
                   }
                   type="button"
                 >
@@ -616,7 +682,9 @@ export default function App() {
           </>
         )}
 
-        {/* ================= PROCEDURE CATEGORIES ================= */}
+        {/* =================================================
+           PROCEDURE CATEGORIES
+           ================================================= */}
 
         {activeTab === "procedures" &&
           !selectedCategory && (
@@ -743,7 +811,9 @@ export default function App() {
             </section>
           )}
 
-        {/* ================= PROCEDURES IN CATEGORY ================= */}
+        {/* =================================================
+           PROCEDURES IN CATEGORY
+           ================================================= */}
 
         {activeTab === "procedures" &&
           selectedCategory &&
@@ -811,7 +881,9 @@ export default function App() {
             </section>
           )}
 
-        {/* ================= PROCEDURE DETAILS ================= */}
+        {/* =================================================
+           PROCEDURE DETAILS
+           ================================================= */}
 
         {activeTab === "procedures" &&
           selectedCategory &&
@@ -828,7 +900,9 @@ export default function App() {
             />
           )}
 
-        {/* ================= CREDITS ================= */}
+        {/* =================================================
+           CREDITS
+           ================================================= */}
 
         {activeTab === "credits" && (
           <section>
@@ -876,7 +950,9 @@ export default function App() {
           </section>
         )}
 
-        {/* ================= ABOUT ================= */}
+        {/* =================================================
+           ABOUT
+           ================================================= */}
 
         {activeTab === "about" && (
           <section>
@@ -1001,7 +1077,9 @@ export default function App() {
           </section>
         )}
 
-        {/* ================= SETTINGS ================= */}
+        {/* =================================================
+           SETTINGS
+           ================================================= */}
 
         {activeTab === "settings" && (
           <Settings
@@ -1016,7 +1094,9 @@ export default function App() {
 
       </main>
 
-      {/* ================= BOTTOM NAVIGATION ================= */}
+      {/* ===================================================
+         BOTTOM NAVIGATION
+         =================================================== */}
 
       <nav className="bottom-nav">
         <div className="bottom-nav-inner">
@@ -1033,6 +1113,7 @@ export default function App() {
             type="button"
           >
             <span>🏠</span>
+
             <small>
               Home
             </small>
@@ -1050,6 +1131,7 @@ export default function App() {
             type="button"
           >
             <span>🩺</span>
+
             <small>
               Procedures
             </small>
@@ -1067,6 +1149,7 @@ export default function App() {
             type="button"
           >
             <span>ℹ️</span>
+
             <small>
               About
             </small>
@@ -1084,6 +1167,7 @@ export default function App() {
             type="button"
           >
             <span>⚙️</span>
+
             <small>
               Settings
             </small>
@@ -1094,4 +1178,4 @@ export default function App() {
 
     </div>
   );
-    }
+}
