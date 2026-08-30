@@ -498,4 +498,500 @@ export const rgnBatch01: Procedure[] = [
       }
     ]
   },
+
+  {
+    id: "rgn-006",
+    title: "Washing of a Patient",
+    category: "General Nursing (RGN)",
+    overview:
+      "Assistance with personal hygiene and bathing for a patient who requires nursing support.",
+    purpose: [
+      "Maintain personal hygiene.",
+      "Promote comfort and dignity.",
+      "Inspect the skin.",
+      "Reduce accumulation of sweat and contaminants."
+    ],
+    indications: [
+      "Patient unable to bathe independently.",
+      "Patient on bed rest.",
+      "Patient requiring assisted personal hygiene.",
+      "Patients needing regular skin assessment."
+    ],
+    equipment: [
+      "Basin and appropriate water",
+      "Washcloths",
+      "Towels",
+      "Clean clothing",
+      "Soap or appropriate cleansing product",
+      "Gloves where indicated"
+    ],
+    steps: [
+      "Explain the procedure and obtain cooperation.",
+      "Provide privacy and maintain dignity.",
+      "Perform hand hygiene.",
+      "Prepare the equipment.",
+      "Ensure the environment is safe and warm.",
+      "Wash the patient systematically.",
+      "Observe the skin during washing.",
+      "Dry the patient thoroughly, especially skin folds.",
+      "Assist the patient into clean clothing.",
+      "Dispose of used materials and document relevant findings."
+    ],
+    precautions: [
+      "Maintain privacy and dignity.",
+      "Avoid exposing the patient unnecessarily.",
+      "Check water temperature appropriately.",
+      "Use safe patient-handling techniques.",
+      "Observe for skin abnormalities."
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=zAjVep4soNc",
+    quiz: [
+      {
+        question: "What is a major purpose of patient washing?",
+        options: ["Maintain hygiene and comfort", "Increase skin contamination", "Reduce dignity", "Prevent assessment"],
+        answer: "Maintain hygiene and comfort"
+      },
+      {
+        question: "What should be maintained throughout the procedure?",
+        options: ["Privacy and dignity", "Unnecessary exposure", "Unsafe positioning", "Cold surroundings"],
+        answer: "Privacy and dignity"
+      },
+      {
+        question: "What should the nurse observe during washing?",
+        options: ["The patient's skin", "The ward television", "The patient's shoes", "The room decoration"],
+        answer: "The patient's skin"
+      },
+      {
+        question: "Why should skin folds be dried thoroughly?",
+        options: ["To reduce retained moisture", "To increase moisture", "To prevent inspection", "To increase contamination"],
+        answer: "To reduce retained moisture"
+      },
+      {
+        question: "What should be checked before washing?",
+        options: ["Water temperature", "Patient's favourite music", "The patient's occupation", "The ward timetable"],
+        answer: "Water temperature"
+      },
+      {
+        question: "Which practice promotes safety?",
+        options: ["Safe patient handling", "Leaving the patient unsupported", "Using excessive force", "Ignoring mobility limitations"],
+        answer: "Safe patient handling"
+      },
+      {
+        question: "What should be done after washing?",
+        options: ["Dry the patient and assist with clean clothing", "Leave the patient wet", "Leave equipment on the bed", "Remove all safety measures"],
+        answer: "Dry the patient and assist with clean clothing"
+      },
+      {
+        question: "What is another benefit of washing?",
+        options: ["Opportunity for skin assessment", "Avoidance of communication", "Increased skin breakdown", "Reduced comfort"],
+        answer: "Opportunity for skin assessment"
+      },
+      {
+        question: "What should be done before starting?",
+        options: ["Explain the procedure", "Leave the patient alone", "Remove all linen without explanation", "Begin without preparation"],
+        answer: "Explain the procedure"
+      },
+      {
+        question: "Which finding should be documented or reported?",
+        options: ["Significant skin abnormality", "Normal clean skin only", "Patient's favourite food", "Room decoration"],
+        answer: "Significant skin abnormality"
+      }
+    ]
+  },
+
+  {
+    id: "rgn-007",
+    title: "Measurement of Vital Signs",
+    category: "General Nursing (RGN)",
+    overview:
+      "Systematic assessment and documentation of temperature, pulse, respiration and blood pressure to monitor a patient's condition.",
+    purpose: [
+      "Establish baseline observations.",
+      "Monitor changes in patient condition.",
+      "Identify deterioration early.",
+      "Evaluate response to illness and treatment."
+    ],
+    indications: [
+      "Routine nursing assessment.",
+      "Admission assessment.",
+      "Monitoring illness or treatment.",
+      "When a patient's condition changes."
+    ],
+    equipment: [
+      "Thermometer",
+      "Watch or timer",
+      "Blood pressure equipment",
+      "Stethoscope where required",
+      "Documentation chart or electronic record"
+    ],
+    steps: [
+      "Explain the procedure to the patient.",
+      "Perform hand hygiene.",
+      "Assess the patient and select appropriate equipment.",
+      "Measure temperature using the appropriate method.",
+      "Measure pulse and assess relevant characteristics.",
+      "Count respirations appropriately.",
+      "Measure blood pressure using appropriate technique and equipment.",
+      "Record the measurements accurately.",
+      "Compare findings with baseline or expected values.",
+      "Report significant abnormalities promptly."
+    ],
+    precautions: [
+      "Use appropriate equipment and technique.",
+      "Select an appropriate blood-pressure cuff size.",
+      "Allow the patient to rest when required.",
+      "Avoid inaccurate measurement conditions.",
+      "Document and report abnormal findings."
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
+    quiz: [
+      {
+        question: "What is one purpose of measuring vital signs?",
+        options: ["Monitor changes in patient condition", "Determine occupation", "Select meals", "Determine room allocation"],
+        answer: "Monitor changes in patient condition"
+      },
+      {
+        question: "Which is a vital sign?",
+        options: ["Blood pressure", "Hair colour", "Shoe size", "Occupation"],
+        answer: "Blood pressure"
+      },
+      {
+        question: "Why is baseline information useful?",
+        options: ["It allows comparison with later findings", "It replaces future observations", "It prevents documentation", "It eliminates assessment"],
+        answer: "It allows comparison with later findings"
+      },
+      {
+        question: "What can affect blood-pressure accuracy?",
+        options: ["Incorrect cuff size", "Correct positioning", "Appropriate rest", "Correct technique"],
+        answer: "Incorrect cuff size"
+      },
+      {
+        question: "What should be done with significant abnormal findings?",
+        options: ["Report them promptly", "Ignore them", "Delete them", "Wait indefinitely"],
+        answer: "Report them promptly"
+      },
+      {
+        question: "Which observation is assessed by counting breaths?",
+        options: ["Respiratory rate", "Blood pressure", "Temperature", "Oxygen prescription"],
+        answer: "Respiratory rate"
+      },
+      {
+        question: "What should be used to measure temperature?",
+        options: ["An appropriate thermometer", "A blood-pressure cuff", "A stethoscope only", "A weighing scale"],
+        answer: "An appropriate thermometer"
+      },
+      {
+        question: "What should happen after measurement?",
+        options: ["Record the findings accurately", "Discard all results", "Avoid comparison", "Hide abnormal findings"],
+        answer: "Record the findings accurately"
+      },
+      {
+        question: "Why should appropriate technique be used?",
+        options: ["To obtain reliable measurements", "To increase errors", "To avoid documentation", "To delay assessment"],
+        answer: "To obtain reliable measurements"
+      },
+      {
+        question: "Which observations are commonly included in a full set of vital signs?",
+        options: ["Temperature, pulse, respiration and blood pressure", "Height, hair colour and shoe size", "Weight and occupation only", "Diet and sleep pattern only"],
+        answer: "Temperature, pulse, respiration and blood pressure"
+      }
+    ]
+  },
+
+  {
+    id: "rgn-008",
+    title: "Urinary Catheterization",
+    category: "General Nursing (RGN)",
+    overview:
+      "Insertion and care of a urinary catheter within the nurse's scope, competence and applicable institutional protocol.",
+    purpose: [
+      "Provide appropriate urinary drainage when indicated.",
+      "Maintain patient comfort and safety.",
+      "Prevent avoidable catheter-associated complications.",
+      "Monitor urinary output when clinically required."
+    ],
+    indications: [
+      "Clinical indication for urinary drainage.",
+      "Urinary retention where catheterization is indicated.",
+      "Other approved indications according to clinical protocol."
+    ],
+    equipment: [
+      "Appropriate catheter",
+      "Sterile or appropriate catheterization equipment",
+      "Lubricant",
+      "Drainage system",
+      "Personal protective equipment",
+      "Waste receptacle"
+    ],
+    steps: [
+      "Verify the indication and relevant order or protocol.",
+      "Explain the procedure and obtain cooperation.",
+      "Provide privacy and appropriate positioning.",
+      "Perform hand hygiene and prepare equipment.",
+      "Use appropriate aseptic technique.",
+      "Prepare the urethral area according to protocol.",
+      "Insert the catheter using appropriate technique.",
+      "Secure and connect the drainage system appropriately.",
+      "Ensure free drainage and patient comfort.",
+      "Dispose of waste, perform hand hygiene and document the procedure."
+    ],
+    precautions: [
+      "Follow institutional catheterization protocol.",
+      "Maintain appropriate aseptic technique.",
+      "Do not force catheter insertion.",
+      "Use the correct catheter and equipment.",
+      "Monitor for complications and report abnormalities."
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=N-uBKzqVt80",
+    quiz: [
+      {
+        question: "What is an important principle during urinary catheterization?",
+        options: ["Aseptic technique", "Unnecessary contamination", "Forceful insertion", "Ignoring patient privacy"],
+        answer: "Aseptic technique"
+      },
+      {
+        question: "What should be verified before catheterization?",
+        options: ["The indication and applicable order or protocol", "The patient's favourite food", "The patient's occupation", "The ward television"],
+        answer: "The indication and applicable order or protocol"
+      },
+      {
+        question: "Why should catheter insertion never be forced?",
+        options: ["To reduce risk of trauma", "To increase trauma", "To speed up every procedure", "To avoid documentation"],
+        answer: "To reduce risk of trauma"
+      },
+      {
+        question: "What should be maintained during the procedure?",
+        options: ["Patient privacy", "Unnecessary exposure", "Contamination", "Unsafe positioning"],
+        answer: "Patient privacy"
+      },
+      {
+        question: "What should the drainage system allow?",
+        options: ["Appropriate urine drainage", "Backflow whenever possible", "Disconnection without reason", "Contamination"],
+        answer: "Appropriate urine drainage"
+      },
+      {
+        question: "What should be monitored after catheterization?",
+        options: ["Patient comfort and complications", "The patient's occupation", "Room decoration", "Meal preference only"],
+        answer: "Patient comfort and complications"
+      },
+      {
+        question: "Which equipment should be appropriate for the procedure?",
+        options: ["The correct catheter and drainage system", "Random equipment", "Used equipment", "Unclean equipment"],
+        answer: "The correct catheter and drainage system"
+      },
+      {
+        question: "What should be documented?",
+        options: ["The procedure and relevant findings", "Only the patient's name", "Only the room number", "Nothing"],
+        answer: "The procedure and relevant findings"
+      },
+      {
+        question: "What should happen if an abnormality occurs?",
+        options: ["It should be assessed and reported appropriately", "It should be ignored", "The catheter should always be removed immediately", "Documentation should be avoided"],
+        answer: "It should be assessed and reported appropriately"
+      },
+      {
+        question: "What is one purpose of catheterization?",
+        options: ["Provide appropriate urinary drainage", "Cause urinary obstruction", "Increase infection risk", "Prevent urine monitoring"],
+        answer: "Provide appropriate urinary drainage"
+      }
+    ]
+  },
+
+  {
+    id: "rgn-009",
+    title: "Basic Wound Care and Dressing",
+    category: "General Nursing (RGN)",
+    overview:
+      "Assessment and nursing care of wounds using appropriate infection-prevention and dressing principles within the nurse's competence and applicable protocol.",
+    purpose: [
+      "Promote wound healing.",
+      "Protect the wound.",
+      "Reduce contamination and infection risk.",
+      "Assess wound progress."
+    ],
+    indications: [
+      "Patients with wounds requiring nursing care.",
+      "Wounds requiring dressing changes.",
+      "Post-operative wounds according to applicable orders and protocols."
+    ],
+    equipment: [
+      "Appropriate dressing materials",
+      "Gloves",
+      "Sterile supplies where required",
+      "Waste receptacle",
+      "Cleaning solution according to protocol",
+      "Documentation materials"
+    ],
+    steps: [
+      "Verify the patient's identity and wound-care plan.",
+      "Explain the procedure and provide privacy.",
+      "Perform hand hygiene and prepare equipment.",
+      "Assess the wound and surrounding skin.",
+      "Remove the existing dressing appropriately.",
+      "Dispose of contaminated materials safely.",
+      "Clean the wound according to the prescribed or approved technique.",
+      "Apply the appropriate dressing.",
+      "Ensure the patient is comfortable.",
+      "Document wound findings, dressing applied and patient response."
+    ],
+    precautions: [
+      "Use appropriate infection-prevention measures.",
+      "Avoid unnecessary contamination.",
+      "Use prescribed or approved wound-care products.",
+      "Report signs of infection or deterioration.",
+      "Follow institutional wound-care protocols."
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=VC0O-7BQSO8",
+    quiz: [
+      {
+        question: "What should be assessed during wound care?",
+        options: ["The wound and surrounding skin", "The patient's shoes", "The patient's occupation", "The room decoration"],
+        answer: "The wound and surrounding skin"
+      },
+      {
+        question: "What is one purpose of a wound dressing?",
+        options: ["Protect the wound", "Increase contamination", "Cause trauma", "Prevent assessment"],
+        answer: "Protect the wound"
+      },
+      {
+        question: "What should be performed before preparing the wound?",
+        options: ["Hand hygiene", "Eating", "Changing the patient's identity", "Removing all equipment"],
+        answer: "Hand hygiene"
+      },
+      {
+        question: "What should happen to contaminated dressing materials?",
+        options: ["Dispose of them safely", "Place them on a clean trolley", "Reuse them", "Keep them on the patient's bed"],
+        answer: "Dispose of them safely"
+      },
+      {
+        question: "What should be reported?",
+        options: ["Signs of infection or deterioration", "Normal healing only", "The patient's favourite food", "The room number"],
+        answer: "Signs of infection or deterioration"
+      },
+      {
+        question: "Why is wound assessment important?",
+        options: ["To monitor healing and identify problems", "To prevent documentation", "To increase contamination", "To delay treatment"],
+        answer: "To monitor healing and identify problems"
+      },
+      {
+        question: "What should determine the wound-care technique?",
+        options: ["The applicable prescription or approved protocol", "Personal preference only", "The patient's clothing", "The ward television"],
+        answer: "The applicable prescription or approved protocol"
+      },
+      {
+        question: "What should be documented after dressing?",
+        options: ["Wound findings and dressing applied", "Only the patient's age", "Only the room number", "Nothing"],
+        answer: "Wound findings and dressing applied"
+      },
+      {
+        question: "Which principle reduces contamination?",
+        options: ["Appropriate infection-prevention practice", "Reusing dirty equipment", "Touching sterile materials unnecessarily", "Ignoring hand hygiene"],
+        answer: "Appropriate infection-prevention practice"
+      },
+      {
+        question: "What is an important outcome of wound care?",
+        options: ["Support wound healing", "Increase infection risk", "Prevent observation", "Cause additional injury"],
+        answer: "Support wound healing"
+      }
+    ]
+  },
+
+  {
+    id: "rgn-010",
+    title: "Documentation and Recording of Patient Care",
+    category: "General Nursing (RGN)",
+    overview:
+      "Accurate recording of relevant patient assessment, nursing care, interventions and response in the appropriate clinical record.",
+    purpose: [
+      "Provide an accurate record of patient care.",
+      "Support continuity of care.",
+      "Communicate relevant clinical information.",
+      "Provide evidence of care and patient response."
+    ],
+    indications: [
+      "After relevant nursing assessments.",
+      "After nursing interventions.",
+      "When significant changes occur.",
+      "As required by clinical documentation policy."
+    ],
+    equipment: [
+      "Approved patient record",
+      "Approved documentation system",
+      "Appropriate writing or electronic documentation tools"
+    ],
+    steps: [
+      "Confirm the correct patient record.",
+      "Review relevant information before documenting.",
+      "Record assessments and care accurately.",
+      "Use clear and appropriate clinical language.",
+      "Record significant patient responses and changes.",
+      "Document medications and interventions according to policy.",
+      "Complete entries promptly.",
+      "Identify the person making the entry according to policy.",
+      "Maintain confidentiality and security of records.",
+      "Communicate significant findings to the appropriate healthcare professional."
+    ],
+    precautions: [
+      "Maintain patient confidentiality.",
+      "Do not falsify or alter records improperly.",
+      "Use the approved documentation system.",
+      "Record objectively and accurately.",
+      "Follow institutional documentation policies."
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=-taPZmUCbbs",
+    quiz: [
+      {
+        question: "What is a major purpose of nursing documentation?",
+        options: ["Support continuity of care", "Hide clinical findings", "Replace patient assessment", "Prevent communication"],
+        answer: "Support continuity of care"
+      },
+      {
+        question: "What should be confirmed before documenting?",
+        options: ["The correct patient record", "The patient's favourite food", "The ward television", "The patient's occupation"],
+        answer: "The correct patient record"
+      },
+      {
+        question: "How should clinical information be recorded?",
+        options: ["Accurately and objectively", "By guessing", "By deleting abnormal findings", "By using misleading statements"],
+        answer: "Accurately and objectively"
+      },
+      {
+        question: "What should be documented when relevant?",
+        options: ["Patient response and significant changes", "Only the patient's name", "Only the room number", "Nothing"],
+        answer: "Patient response and significant changes"
+      },
+      {
+        question: "Why should documentation be completed promptly?",
+        options: ["To maintain an accurate contemporaneous record", "To increase errors", "To avoid communication", "To delay care"],
+        answer: "To maintain an accurate contemporaneous record"
+      },
+      {
+        question: "What must be protected in patient records?",
+        options: ["Confidentiality", "Public access", "Uncontrolled sharing", "Unauthorized editing"],
+        answer: "Confidentiality"
+      },
+      {
+        question: "Which practice is unacceptable?",
+        options: ["Falsifying patient records", "Accurate documentation", "Recording patient response", "Using approved systems"],
+        answer: "Falsifying patient records"
+      },
+      {
+        question: "What should significant findings be accompanied by?",
+        options: ["Appropriate communication to the healthcare team", "Silence", "Deletion", "Delayed reporting"],
+        answer: "Appropriate communication to the healthcare team"
+      },
+      {
+        question: "Why is documentation important for nursing care?",
+        options: ["It communicates relevant patient information", "It replaces nursing care", "It prevents teamwork", "It eliminates assessment"],
+        answer: "It communicates relevant patient information"
+      },
+      {
+        question: "What is an important principle of clinical documentation?",
+        options: ["Accuracy and confidentiality", "Guessing and sharing", "Deleting abnormal findings", "Leaving records incomplete"],
+        answer: "Accuracy and confidentiality"
+      }
+    ]
+  }
 ];
+
+export default rgnBatch01;
