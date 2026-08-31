@@ -2751,3 +2751,104 @@ html.dark-mode .empty-state {
     transition-duration: 0.01ms !important;
   }
    }
+
+/* =========================================================
+   PROCEDURE DETAILS TABS
+   ORIGINAL 3-TAB GREEN/WHITE DESIGN
+========================================================= */
+
+.procedure-tabs {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 5px;
+
+  padding: 5px;
+
+  margin: 20px 0;
+
+  background: var(--light-green);
+
+  border-radius: 14px;
+
+  width: 100%;
+}
+
+.procedure-tab {
+  min-width: 0;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  padding: 12px 6px;
+
+  background: transparent;
+
+  color: var(--dark-green);
+
+  font-weight: 800;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.procedure-tab.active {
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ---------------------------------------------------------
+   SMALL PHONES
+--------------------------------------------------------- */
+
+@media (max-width: 360px) {
+
+  .procedure-tabs {
+    gap: 3px;
+
+    padding: 4px;
+  }
+
+  .procedure-tab {
+    padding: 11px 4px;
+
+    font-size: 11px;
+  }
+}
+
+<div class="splash-visual">
+
+  <div class="floating-procedure floating-procedure-one">
+    🩺
+    <span>Assessment</span>
+  </div>
+
+  <div class="nurse-illustration">
+    👩‍⚕️
+  </div>
+
+  <div class="floating-procedure floating-procedure-two">
+    💊
+    <span>Medication</span>
+  </div>
+
+  <div class="floating-procedure floating-procedure-three">
+    📋
+    <span>Procedures</span>
+  </div>
+
+</div>
