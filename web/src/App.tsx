@@ -145,6 +145,35 @@ export default function App() {
     setRecentlyViewedIds,
   ] = useState<string[]>([]);
 
+  const [splashProgress, setSplashProgress] =
+    useState(0);
+
+  const categoryProcedures = selectedCategory
+    ? procedures.filter(
+        (procedure) =>
+          procedure.category ===
+          selectedCategory.name
+      )
+    : [];
+
+  const selectedProcedureIndex =
+    selectedProcedure
+      ? categoryProcedures.findIndex(
+          (procedure) =>
+            procedure.id ===
+            selectedProcedure.id
+        )
+      : -1;
+
+  const nextProcedure =
+    selectedProcedureIndex >= 0 &&
+    selectedProcedureIndex <
+      categoryProcedures.length - 1
+      ? categoryProcedures[
+          selectedProcedureIndex + 1
+        ]
+      : null;
+
   /* =======================================================
      LOAD + SYNCHRONIZE RECENTLY VIEWED
      ======================================================= */
@@ -178,11 +207,36 @@ export default function App() {
      ======================================================= */
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSplash(false);
-    }, 4000);
+    const splashDuration = 2600;
+    const startedAt = performance.now();
+    let finishTimer: number | undefined;
 
-    return () => clearTimeout(timer);
+    const progressTimer = window.setInterval(() => {
+      const elapsed = performance.now() - startedAt;
+      const progress = Math.min(
+        100,
+        Math.round(
+          (elapsed / splashDuration) * 100
+        )
+      );
+
+      setSplashProgress(progress);
+
+      if (progress >= 100) {
+        window.clearInterval(progressTimer);
+        finishTimer = window.setTimeout(() => {
+          setShowSplash(false);
+        }, 420);
+      }
+    }, 32);
+
+    return () => {
+      window.clearInterval(progressTimer);
+
+      if (finishTimer) {
+        window.clearTimeout(finishTimer);
+      }
+    };
   }, []);
 
   /* =======================================================
@@ -381,7 +435,7 @@ export default function App() {
           </p>
 
           <div className="splash-visual">
-            <div className="floating-procedure procedure-one">
+            <div className="floating-procedure floating-procedure-one">
               🩺
               <small>
                 Assessment
@@ -392,14 +446,14 @@ export default function App() {
               👩🏾‍⚕️
             </div>
 
-            <div className="floating-procedure procedure-two">
+            <div className="floating-procedure floating-procedure-two">
               💉
               <small>
                 Medication
               </small>
             </div>
 
-            <div className="floating-procedure procedure-three">
+            <div className="floating-procedure floating-procedure-three">
               🩹
               <small>
                 Wound Care
@@ -407,9 +461,29 @@ export default function App() {
             </div>
           </div>
 
-          <div className="splash-loading">
-            <div className="loading-track">
-              <div className="loading-progress" />
+          <div
+            className="splash-loading"
+            aria-label="Loading application"
+          >
+            <div className="loading-label">
+              <span>Loading clinical library</span>
+              <strong>{splashProgress}%</strong>
+            </div>
+
+            <div
+              className="loading-track"
+              role="progressbar"
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={splashProgress}
+              aria-label="Application loading progress"
+            >
+              <div
+                className="loading-progress"
+                style={{
+                  width: `${splashProgress}%`,
+                }}
+              />
             </div>
 
             <p>
@@ -896,6 +970,17 @@ export default function App() {
                 setSelectedProcedure(
                   null
                 )
+              }
+              onNext={
+                nextProcedure
+                  ? () =>
+                      openProcedure(
+                        nextProcedure
+                      )
+                  : undefined
+              }
+              nextProcedureTitle={
+                nextProcedure?.title
               }
             />
           )}

@@ -9,6 +9,8 @@ import type { Procedure } from "../data/procedures";
 type ProcedureDetailsProps = {
   procedure: Procedure;
   onBack: () => void;
+  onNext?: () => void;
+  nextProcedureTitle?: string;
 };
 
 type QuizQuestion =
@@ -252,6 +254,8 @@ function removeQuizProgress(
 export default function ProcedureDetails({
   procedure,
   onBack,
+  onNext,
+  nextProcedureTitle,
 }: ProcedureDetailsProps) {
   const quizzes =
     procedure.quiz ?? [];
@@ -334,6 +338,14 @@ export default function ProcedureDetails({
     if (!procedure.id) {
       return;
     }
+
+    setActiveTab("details");
+    setQuizStarted(false);
+    setCurrentQuestion(0);
+    setSelectedAnswer(null);
+    setAnswers({});
+    setShowResults(false);
+    setVideoError(false);
 
     const saved =
       loadQuizProgress(
@@ -603,16 +615,22 @@ export default function ProcedureDetails({
         className="back-button"
         onClick={onBack}
       >
-        ← Back
+        <span aria-hidden="true">←</span>
+        Back to procedures
       </button>
 
       {/* ================= HEADER ================= */}
 
       <div className="procedure-detail-header">
 
-        <span className="procedure-card-category">
-          {procedure.category}
-        </span>
+        <div className="procedure-detail-eyebrow">
+          <span className="procedure-card-category">
+            {procedure.category}
+          </span>
+          <span className="procedure-id">
+            Procedure {procedure.id}
+          </span>
+        </div>
 
         <h1>
           {procedure.title}
@@ -621,6 +639,27 @@ export default function ProcedureDetails({
         <p>
           {procedure.overview}
         </p>
+
+        <div className="procedure-detail-summary">
+          <span>
+            <strong>
+              {procedure.steps.length}
+            </strong>
+            steps
+          </span>
+          <span>
+            <strong>
+              {procedure.equipment.length}
+            </strong>
+            requirements
+          </span>
+          <span>
+            <strong>
+              {quizzes.length}
+            </strong>
+            quiz questions
+          </span>
+        </div>
 
       </div>
 
@@ -633,8 +672,10 @@ export default function ProcedureDetails({
       >
 
         <button
+          id="procedure-tab-detail"
           type="button"
           role="tab"
+          aria-controls="procedure-panel-detail"
           aria-selected={
             activeTab ===
             "details"
@@ -651,12 +692,15 @@ export default function ProcedureDetails({
             )
           }
         >
-          Details
+          <span aria-hidden="true">▤</span>
+          Detail
         </button>
 
         <button
+          id="procedure-tab-video"
           type="button"
           role="tab"
+          aria-controls="procedure-panel-video"
           aria-selected={
             activeTab ===
             "video"
@@ -673,12 +717,15 @@ export default function ProcedureDetails({
             )
           }
         >
-          🎥 Video
+          <span aria-hidden="true">▶</span>
+          Video
         </button>
 
         <button
+          id="procedure-tab-quiz"
           type="button"
           role="tab"
+          aria-controls="procedure-panel-quiz"
           aria-selected={
             activeTab ===
             "quiz"
@@ -695,7 +742,8 @@ export default function ProcedureDetails({
             )
           }
         >
-          📝 Quiz
+          <span aria-hidden="true">?</span>
+          Quiz
 
           {quizzes.length >
             0 &&
@@ -708,7 +756,12 @@ export default function ProcedureDetails({
 
       {activeTab ===
         "details" && (
-        <div className="procedure-detail-content">
+        <div
+          id="procedure-panel-detail"
+          role="tabpanel"
+          aria-labelledby="procedure-tab-detail"
+          className="procedure-detail-content"
+        >
 
           <div className="procedure-detail-section">
             <h2>
@@ -841,7 +894,12 @@ export default function ProcedureDetails({
 
       {activeTab ===
         "video" && (
-        <div className="procedure-detail-content">
+        <div
+          id="procedure-panel-video"
+          role="tabpanel"
+          aria-labelledby="procedure-tab-video"
+          className="procedure-detail-content video-panel"
+        >
 
           {!procedure.videoUrl ? (
             <div className="video-empty-state">
@@ -873,6 +931,7 @@ export default function ProcedureDetails({
                   title={`${procedure.title} video demonstration`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  loading="lazy"
                   referrerPolicy="strict-origin-when-cross-origin"
                   onError={() =>
                     setVideoError(
@@ -954,7 +1013,12 @@ export default function ProcedureDetails({
 
       {activeTab ===
         "quiz" && (
-        <div className="procedure-quiz-panel">
+        <div
+          id="procedure-panel-quiz"
+          role="tabpanel"
+          aria-labelledby="procedure-tab-quiz"
+          className="procedure-quiz-panel"
+        >
 
           {/* No questions */}
 
@@ -1221,6 +1285,40 @@ export default function ProcedureDetails({
 
         </div>
       )}
+
+      <div className="procedure-next-navigation">
+        <div>
+          <span className="procedure-next-kicker">
+            CONTINUE LEARNING
+          </span>
+          <strong>
+            {onNext
+              ? "Next procedure"
+              : "End of this category"}
+          </strong>
+          {onNext && nextProcedureTitle && (
+            <small>{nextProcedureTitle}</small>
+          )}
+        </div>
+
+        {onNext ? (
+          <button
+            type="button"
+            className="procedure-next-button"
+            onClick={onNext}
+          >
+            <span>Next Procedure</span>
+            <span aria-hidden="true">→</span>
+          </button>
+        ) : (
+          <span
+            className="procedure-next-complete"
+            aria-label="No more procedures in this category"
+          >
+            ✓ Complete
+          </span>
+        )}
+      </div>
 
     </section>
   );
