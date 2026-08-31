@@ -726,6 +726,58 @@ a {
   padding-left: 43px;
 }
 
+.back-button {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 8px;
+
+  min-height: 42px;
+  max-width: 100%;
+
+  margin-bottom: 15px;
+  padding: 10px 13px;
+
+  border: 1px solid #cfe4d7;
+  border-radius: 12px;
+
+  background: var(--pale-green);
+  color: var(--dark-green);
+
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+
+  box-shadow: var(--soft-shadow);
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.back-button:hover {
+  border-color: #b8d8c7;
+
+  background: var(--light-green);
+}
+
+.back-button:active {
+  transform: scale(0.98);
+}
+
+.back-button > span {
+  flex-shrink: 0;
+
+  font-size: 17px;
+  line-height: 1;
+}
+
+.procedure-details-back {
+  margin-bottom: 0;
+}
+
 .procedure-library {
   width: 100%;
 
@@ -2589,6 +2641,7 @@ html.dark-mode .page-description {
 
 html.dark-mode .quick-card,
 html.dark-mode .category-card,
+html.dark-mode .back-button,
 html.dark-mode .procedure-card,
 html.dark-mode .procedure-list-total,
 html.dark-mode .empty-state,
@@ -2643,6 +2696,7 @@ html.dark-mode .settings-card-icon {
 }
 
 html.dark-mode .category-arrow,
+html.dark-mode .back-button > span,
 html.dark-mode .procedure-card-arrow,
 html.dark-mode .arrow,
 html.dark-mode .settings-action-arrow,
@@ -2949,6 +3003,17 @@ html.dark-mode .empty-state {
   border-color: #4b5563;
 }
 
+html.dark-mode .back-button {
+  border-color: #3f6f56;
+  background: #1f2933;
+  color: #8ee0b5;
+}
+
+html.dark-mode .back-button:hover {
+  border-color: #4b7f65;
+  background: #173d2c;
+}
+
 html.dark-mode .procedure-list-total {
   border-color: #28583f;
 }
@@ -3024,6 +3089,15 @@ html.dark-mode .procedure-card:hover {
     flex-direction: column;
     gap: 12px;
     margin-top: 21px;
+  }
+
+  .back-button {
+    margin-bottom: 13px;
+    padding: 10px 12px;
+  }
+
+  .procedure-details-back {
+    margin-bottom: 0;
   }
 
   .procedure-list-total {
