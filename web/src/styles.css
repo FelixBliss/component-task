@@ -726,6 +726,245 @@ a {
   padding-left: 43px;
 }
 
+.procedure-library {
+  width: 100%;
+
+  animation:
+    procedure-enter 0.25s ease both;
+}
+
+.procedure-list-heading {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 18px;
+  margin: 25px 0 17px;
+}
+
+.procedure-list-kicker {
+  color: var(--green);
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.procedure-list-heading h2 {
+  margin: 5px 0 6px;
+
+  color: var(--dark-green);
+
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.procedure-list-heading p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.procedure-list-total {
+  min-width: 112px;
+  flex-shrink: 0;
+
+  padding: 11px 13px;
+
+  border: 1px solid #d8ece0;
+  border-radius: 15px;
+
+  background: var(--pale-green);
+
+  text-align: center;
+}
+
+.procedure-list-total strong {
+  display: block;
+
+  color: var(--dark-green);
+
+  font-size: 21px;
+  line-height: 1;
+}
+
+.procedure-list-total span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+  line-height: 1.2;
+}
+
+.procedure-list-search {
+  margin-bottom: 15px;
+}
+
+.procedure-count {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+  margin-bottom: 11px;
+}
+
+.procedure-count strong {
+  color: var(--text);
+
+  font-size: 12px;
+}
+
+.procedure-count span {
+  max-width: 55%;
+
+  overflow: hidden;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.procedure-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 11px;
+}
+
+.procedure-card {
+  width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px;
+
+  border: 1px solid var(--border);
+  border-radius: 17px;
+
+  background: var(--card-background);
+  color: var(--text);
+
+  text-align: left;
+
+  box-shadow: var(--soft-shadow);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.procedure-card:hover {
+  border-color: #b8d8c7;
+
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+
+.procedure-card:active {
+  transform: scale(0.99);
+}
+
+.procedure-card-icon {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: var(--light-green);
+
+  font-size: 21px;
+}
+
+.procedure-card-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.procedure-card-category {
+  display: block;
+
+  margin-bottom: 4px;
+
+  overflow: hidden;
+
+  color: var(--green);
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.45px;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.procedure-card-content strong {
+  display: block;
+
+  overflow-wrap: anywhere;
+
+  color: var(--dark-green);
+
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.procedure-card-content small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.procedure-card-id {
+  display: block;
+
+  margin-top: 7px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+}
+
+.procedure-card-arrow {
+  flex-shrink: 0;
+
+  color: var(--green);
+
+  font-size: 24px;
+  line-height: 1;
+}
+
 .category-list {
   display: flex;
 
@@ -2350,6 +2589,8 @@ html.dark-mode .page-description {
 
 html.dark-mode .quick-card,
 html.dark-mode .category-card,
+html.dark-mode .procedure-card,
+html.dark-mode .procedure-list-total,
 html.dark-mode .empty-state,
 html.dark-mode .nmc-info,
 html.dark-mode .info-card,
@@ -2368,6 +2609,10 @@ html.dark-mode .settings-action-card {
 
 html.dark-mode .quick-text strong,
 html.dark-mode .category-content strong,
+html.dark-mode .procedure-list-heading h2,
+html.dark-mode .procedure-list-total strong,
+html.dark-mode .procedure-card-content strong,
+html.dark-mode .procedure-count strong,
 html.dark-mode .empty-state h3,
 html.dark-mode .nmc-info h3,
 html.dark-mode .info-card h3,
@@ -2378,6 +2623,11 @@ html.dark-mode .settings-card-content strong {
 
 html.dark-mode .quick-text small,
 html.dark-mode .category-content small,
+html.dark-mode .procedure-list-heading p,
+html.dark-mode .procedure-list-total span,
+html.dark-mode .procedure-count span,
+html.dark-mode .procedure-card-content small,
+html.dark-mode .procedure-card-id,
 html.dark-mode .empty-state p,
 html.dark-mode .nmc-info p,
 html.dark-mode .info-card p,
@@ -2387,11 +2637,13 @@ html.dark-mode .settings-card-content small {
 }
 
 html.dark-mode .category-icon,
+html.dark-mode .procedure-card-icon,
 html.dark-mode .settings-card-icon {
   background: #173d2c;
 }
 
 html.dark-mode .category-arrow,
+html.dark-mode .procedure-card-arrow,
 html.dark-mode .arrow,
 html.dark-mode .settings-action-arrow,
 html.dark-mode .settings-action-value {
@@ -2697,6 +2949,14 @@ html.dark-mode .empty-state {
   border-color: #4b5563;
 }
 
+html.dark-mode .procedure-list-total {
+  border-color: #28583f;
+}
+
+html.dark-mode .procedure-card:hover {
+  border-color: #3f6f56;
+}
+
 
 /* =========================================================
    MOBILE RESPONSIVE
@@ -2757,6 +3017,35 @@ html.dark-mode .empty-state {
 
   .featured-content h2 {
     font-size: 18px;
+  }
+
+  .procedure-list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 21px;
+  }
+
+  .procedure-list-total {
+    width: 100%;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+
+    padding: 10px 13px;
+
+    text-align: left;
+  }
+
+  .procedure-list-total strong,
+  .procedure-list-total span {
+    margin: 0;
+  }
+
+  .procedure-cards {
+    grid-template-columns: 1fr;
   }
 
   .settings-card,

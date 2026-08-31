@@ -1,0 +1,22 @@
+{
+  "name": "Nursing Component Task",
+  "short_name": "Component Task",
+  "description": "Nursing procedures, clinical skills, videos and learning resources.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#008A4B",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
