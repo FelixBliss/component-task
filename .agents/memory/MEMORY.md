@@ -1,0 +1,1 @@
+- [Nested app dependency installs](nested-app-dependencies.md) — package installation helpers may target the workspace root instead of a nested app directory.
