@@ -120,12 +120,13 @@ export default function Settings({
       getSavedAppearance();
 
     setAppearance(savedAppearance);
+    setPendingAppearance(savedAppearance);
     applyAppearance(savedAppearance);
   }, []);
 
   /*
    * Keep System appearance synchronized
-   * with the device/browser preference.
+   * with device/browser preference.
    */
   useEffect(() => {
     if (appearance !== "system") {
@@ -186,7 +187,6 @@ export default function Settings({
 
   /*
    * Select appearance inside dialog.
-   * Does not save or close the dialog.
    */
   const selectAppearance = (
     value: Appearance
@@ -195,7 +195,7 @@ export default function Settings({
   };
 
   /*
-   * Apply appearance.
+   * Apply selected appearance.
    */
   const applySelectedAppearance = () => {
     try {
@@ -246,7 +246,7 @@ export default function Settings({
   };
 
   /*
-   * Close dialogs when Escape is pressed.
+   * Close dialogs with Escape.
    */
   useEffect(() => {
     const handleKeyDown = (
@@ -334,7 +334,9 @@ export default function Settings({
                   ? "active"
                   : ""
               }`}
-              onClick={toggleSaveProgress}
+              onClick={
+                toggleSaveProgress
+              }
               aria-label={
                 saveProgressEnabled
                   ? "Disable save progress"
@@ -497,6 +499,7 @@ export default function Settings({
             className="confirmation-box"
             role="document"
           >
+
             <div className="confirmation-icon">
               🧹
             </div>
@@ -533,6 +536,7 @@ export default function Settings({
               </button>
 
             </div>
+
           </div>
         </div>
       )}
@@ -560,7 +564,11 @@ export default function Settings({
             className="appearance-dialog"
             role="document"
           >
+
+            {/* ================= DIALOG HEADER ================= */}
+
             <div className="appearance-dialog-header">
+
               <div>
                 <h2 id="appearance-dialog-title">
                   Appearance
@@ -582,13 +590,18 @@ export default function Settings({
               >
                 ×
               </button>
+
             </div>
+
+            {/* ================= APPEARANCE OPTIONS ================= */}
 
             <div
               className="appearance-options"
               role="radiogroup"
               aria-label="Appearance options"
             >
+
+              {/* ================= LIGHT ================= */}
 
               <button
                 type="button"
@@ -609,11 +622,13 @@ export default function Settings({
                   )
                 }
               >
+
                 <span className="appearance-option-icon">
                   ☀️
                 </span>
 
                 <span className="appearance-option-content">
+
                   <strong>
                     Light
                   </strong>
@@ -621,6 +636,7 @@ export default function Settings({
                   <small>
                     Use the light theme
                   </small>
+
                 </span>
 
                 {pendingAppearance ===
@@ -629,7 +645,10 @@ export default function Settings({
                     ✓
                   </span>
                 )}
+
               </button>
+
+              {/* ================= DARK ================= */}
 
               <button
                 type="button"
@@ -650,11 +669,13 @@ export default function Settings({
                   )
                 }
               >
+
                 <span className="appearance-option-icon">
                   🌙
                 </span>
 
                 <span className="appearance-option-content">
+
                   <strong>
                     Dark
                   </strong>
@@ -662,6 +683,7 @@ export default function Settings({
                   <small>
                     Use the dark theme
                   </small>
+
                 </span>
 
                 {pendingAppearance ===
@@ -670,7 +692,10 @@ export default function Settings({
                     ✓
                   </span>
                 )}
+
               </button>
+
+              {/* ================= SYSTEM ================= */}
 
               <button
                 type="button"
@@ -691,11 +716,13 @@ export default function Settings({
                   )
                 }
               >
+
                 <span className="appearance-option-icon">
                   ⚙️
                 </span>
 
                 <span className="appearance-option-content">
+
                   <strong>
                     System
                   </strong>
@@ -703,6 +730,7 @@ export default function Settings({
                   <small>
                     Follow device appearance
                   </small>
+
                 </span>
 
                 {pendingAppearance ===
@@ -711,9 +739,12 @@ export default function Settings({
                     ✓
                   </span>
                 )}
+
               </button>
 
             </div>
+
+            {/* ================= DIALOG ACTIONS ================= */}
 
             <div className="appearance-dialog-actions">
 
@@ -744,237 +775,4 @@ export default function Settings({
       )}
     </>
   );
-}
-
-
-  background: rgba(0, 0, 0, 0.72);
-}
-
-html.dark-mode .confirmation-box {
-  background: #1f2933;
-  color: #f3f4f6;
-
-  border-color: #374151;
-}
-
-html.dark-mode .confirmation-icon {
-  background: #173d2c;
-}
-
-html.dark-mode .confirmation-box h2 {
-  color: #8ee0b5;
-}
-
-html.dark-mode .confirmation-box p {
-  color: #d1d5db;
-}
-
-html.dark-mode .confirmation-cancel {
-  background: #1f2933;
-
-  color: #8ee0b5;
-
-  border-color: #4b7f65;
-}
-
-html.dark-mode .confirmation-cancel:hover {
-  background: #173d2c;
-}
-
-html.dark-mode .confirmation-danger {
-  background: #008a4b;
-  color: #ffffff;
-}
-
-
-/* =========================================================
-   APPEARANCE DIALOG
-   ========================================================= */
-
-.appearance-dialog-overlay {
-  position: fixed;
-  inset: 0;
-
-  z-index: 9998;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 20px;
-
-  background: rgba(0, 0, 0, 0.55);
-
-  overflow-y: auto;
-}
-
-.appearance-dialog {
-  width: min(100%, 440px);
-
-  margin: auto;
-
-  padding: 24px;
-
-  background: #ffffff;
-  color: #1f2937;
-
-  border: 1px solid #e3e9e5;
-  border-radius: 20px;
-
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.25);
-
-  position: relative;
-  z-index: 9999;
-}
-
-.appearance-dialog-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-
-  gap: 16px;
-
-  margin-bottom: 20px;
-}
-
-.appearance-dialog-header h2 {
-  margin: 0 0 5px;
-
-  color: #006b3c;
-
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.appearance-dialog-header p {
-  margin: 0;
-
-  color: #6b7280;
-
-  font-size: 13px;
-}
-
-.appearance-dialog-close {
-  width: 36px;
-  height: 36px;
-
-  flex: 0 0 36px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0;
-
-  background: #f5f7f6;
-
-  color: #374151;
-
-  border: 1px solid #e3e9e5;
-  border-radius: 10px;
-
-  font-size: 24px;
-  line-height: 1;
-
-  cursor: pointer;
-}
-
-.appearance-dialog-close:hover {
-  background: #e8f5ee;
-  color: #006b3c;
-}
-
-.appearance-options {
-  display: flex;
-  flex-direction: column;
-
-  gap: 10px;
-}
-
-.appearance-option {
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-
-  gap: 12px;
-
-  padding: 14px;
-
-  background: #ffffff;
-
-  color: #1f2937;
-
-  border: 1px solid #e3e9e5;
-  border-radius: 14px;
-
-  text-align: left;
-
-  cursor: pointer;
-
-  font-family: inherit;
-
-  transition:
-    background 0.15s ease,
-    border-color 0.15s ease,
-    transform 0.15s ease;
-}
-
-.appearance-option:active {
-  transform: scale(0.985);
-}
-
-.appearance-option:hover {
-  background: #f8faf9;
-}
-
-.appearance-option.active {
-  background: #e8f5ee;
-
-  color: #006b3c;
-
-  border-color: #008a4b;
-}
-
-.appearance-option-icon {
-  width: 38px;
-  height: 38px;
-
-  flex: 0 0 38px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 10px;
-
-  background: #f5f7f6;
-
-  font-size: 19px;
-}
-
-.appearance-option.active
-  .appearance-option-icon {
-  background: #ffffff;
-}
-
-.appearance-option-content {
-  min-width: 0;
-
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 3px;
-}
-
-.appearance-option-content strong {
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.appearance-option-content small {
-  color: #6b7280;
-
+            }
