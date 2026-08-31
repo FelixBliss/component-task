@@ -25,7 +25,7 @@ function getSavedAppearance(): Appearance {
     // Ignore localStorage errors.
   }
 
-  return "system";
+  return "light";
 }
 
 function applyAppearance(appearance: Appearance) {
