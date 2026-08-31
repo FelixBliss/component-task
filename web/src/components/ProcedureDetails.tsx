@@ -612,8 +612,9 @@ export default function ProcedureDetails({
 
       <button
         type="button"
-        className="back-button"
+        className="back-button procedure-details-back"
         onClick={onBack}
+        aria-label="Return to the procedure list"
       >
         <span aria-hidden="true">←</span>
         Back to procedures

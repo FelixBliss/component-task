@@ -31,7 +31,34 @@ export default function ProcedureList({
 
   return (
     <div className="procedure-library">
-      <div className="procedure-search">
+      <div className="procedure-list-heading">
+        <div>
+          <span className="procedure-list-kicker">
+            PROCEDURE LIBRARY
+          </span>
+
+          <h2>Find a procedure</h2>
+
+          <p>
+            Search by name or clinical topic to
+            start reviewing.
+          </p>
+        </div>
+
+        <div
+          className="procedure-list-total"
+          aria-label={`${filteredProcedures.length} procedures available`}
+        >
+          <strong>{filteredProcedures.length}</strong>
+          <span>
+            {filteredProcedures.length === 1
+              ? "available procedure"
+              : "available procedures"}
+          </span>
+        </div>
+      </div>
+
+      <div className="procedure-search procedure-list-search">
         <span>🔍</span>
 
         <input
@@ -55,7 +82,7 @@ export default function ProcedureList({
       </div>
 
       {filteredProcedures.length > 0 ? (
-        <div>
+        <div className="procedure-cards">
           {filteredProcedures.map((procedure) => (
             <ProcedureCard
               key={procedure.id}

@@ -15,6 +15,7 @@ export default function ProcedureCard({
       className="procedure-card"
       onClick={onClick}
       type="button"
+      aria-label={`Open ${procedure.title}`}
     >
       <div className="procedure-card-icon">
         🩺
@@ -30,6 +31,10 @@ export default function ProcedureCard({
         <small>
           View procedure details, steps and learning resources
         </small>
+
+        <span className="procedure-card-id">
+          Procedure {procedure.id}
+        </span>
       </div>
 
       <span className="procedure-card-arrow">

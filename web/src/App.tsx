@@ -407,6 +407,15 @@ export default function App() {
     });
   };
 
+  const backToProcedureList = () => {
+    setSelectedProcedure(null);
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   /* =======================================================
      SPLASH
      ======================================================= */
@@ -966,11 +975,7 @@ export default function App() {
               procedure={
                 selectedProcedure
               }
-              onBack={() =>
-                setSelectedProcedure(
-                  null
-                )
-              }
+              onBack={backToProcedureList}
               onNext={
                 nextProcedure
                   ? () =>
