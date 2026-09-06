@@ -974,7 +974,7 @@ export const rgnBatch03: Procedure[] = [
       "Manage dentures, jewellery and other removable items according to facility and anaesthetic policy",
       "Ensure safe transportation and complete handover with the patient's records",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=2WT8z8KsHJo",
+    videoUrl: "https://www.youtube.com/watch?v=oKFokcxPuwI",
     quiz: rgn_021Quiz,
   },
 
@@ -1243,7 +1243,7 @@ export const rgnBatch03: Procedure[] = [
       "Provide complete clinical handover to the receiving nurse/team",
       "Document the transfer, assessment findings and handover",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=GtrykPRGbao",
+    videoUrl: "https://vimeo.com/691787237",
     quiz: rgn_026Quiz,
   },
 
@@ -1296,7 +1296,7 @@ export const rgnBatch03: Procedure[] = [
       "Give a complete clinical handover to the receiving nurse/team",
       "Document the transfer and condition of the patient",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=GtrykPRGbao",
+    videoUrl: "https://vimeo.com/691787237",
     quiz: rgn_027Quiz,
   },
 
