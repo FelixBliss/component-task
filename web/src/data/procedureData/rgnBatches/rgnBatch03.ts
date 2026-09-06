@@ -23,18 +23,13 @@ const rgn_021Quiz: ProcedureQuizQuestion[] = [
       "The ward cleaning schedule",
     ],
     "The procedure and operative site",
-    "Confirming the procedure and operative site supports safe surgical preparation and helps prevent wrong-patient or wrong-site errors."
+    "Confirming the procedure and operative site helps prevent wrong-patient, wrong-procedure and wrong-site errors."
   ),
   q(
     "Which item helps protect the bed during site preparation?",
-    [
-      "Mackintosh and dressing towel",
-      "Thermometer only",
-      "Prescription pad",
-      "Pill crusher",
-    ],
+    ["Mackintosh and dressing towel", "Thermometer only", "Prescription pad", "Pill crusher"],
     "Mackintosh and dressing towel",
-    "A mackintosh and dressing towel help protect the bed and linen from moisture and contamination during preparation."
+    "A mackintosh and dressing towel protect the bed and linen during preparation."
   ),
   q(
     "Why are patient accessories and dentures removed before theatre when indicated?",
@@ -45,18 +40,13 @@ const rgn_021Quiz: ProcedureQuizQuestion[] = [
       "To increase mobility",
     ],
     "To promote safety during the procedure",
-    "Removing accessories and dentures when indicated reduces risks during anaesthesia and surgery."
+    "Removable items may interfere with anaesthesia, surgery or patient safety and should be managed according to facility policy."
   ),
   q(
     "Which assessment should be recorded before sending the patient to theatre?",
-    [
-      "Vital signs",
-      "Room temperature only",
-      "Visitor count",
-      "Meal intake only",
-    ],
+    ["Vital signs", "Room temperature only", "Visitor count", "Meal intake only"],
     "Vital signs",
-    "Pre-operative vital signs provide a baseline and help identify changes in the patient's condition."
+    "Pre-operative vital signs provide important information about the patient's current condition."
   ),
   q(
     "What should the nurse verify about investigations before theatre?",
@@ -67,7 +57,7 @@ const rgn_021Quiz: ProcedureQuizQuestion[] = [
       "The patient's locker is empty",
     ],
     "Required laboratory results are available",
-    "Required investigations and results should be available and reviewed according to the operative plan."
+    "Required investigations and results should be available and reviewed according to the surgical plan."
   ),
   q(
     "What is an important infection-prevention action after using the preparation trolley?",
@@ -78,7 +68,7 @@ const rgn_021Quiz: ProcedureQuizQuestion[] = [
       "Skip hand hygiene if gloves were worn",
     ],
     "Decontaminate the trolley and perform hand hygiene",
-    "Cleaning reusable equipment and performing hand hygiene help reduce transmission of microorganisms."
+    "Cleaning equipment and performing hand hygiene help reduce infection transmission."
   ),
   q(
     "What should accompany the patient during handover to theatre?",
@@ -89,7 +79,7 @@ const rgn_021Quiz: ProcedureQuizQuestion[] = [
       "Only the visitor's phone",
     ],
     "Medical records and required items",
-    "Relevant records, investigations, medications and required items should accompany the patient according to facility protocol."
+    "Relevant records, investigations, medications and other required items support continuity and safety."
   ),
   q(
     "What should the nurse do if the patient is not clinically ready for theatre?",
@@ -100,7 +90,7 @@ const rgn_021Quiz: ProcedureQuizQuestion[] = [
       "Cancel the operation independently",
     ],
     "Escalate the concern and follow the authorized clinical plan",
-    "Abnormal findings should be escalated to the appropriate clinician rather than ignored."
+    "Abnormal findings should be reported and managed through the appropriate clinical chain."
   ),
   q(
     "Why is documentation part of pre-operative preparation?",
@@ -111,7 +101,7 @@ const rgn_021Quiz: ProcedureQuizQuestion[] = [
       "It prevents all surgical complications",
     ],
     "It provides a record of care, findings and handover",
-    "Accurate documentation supports continuity, accountability and safe communication."
+    "Accurate documentation supports continuity, accountability and patient safety."
   ),
   q(
     "What is the final safety principle when transferring a patient to theatre?",
@@ -122,7 +112,7 @@ const rgn_021Quiz: ProcedureQuizQuestion[] = [
       "Remove all monitoring regardless of condition",
     ],
     "Maintain correct identification and safe handover",
-    "Correct identification, clinical safety and structured handover are essential when transferring a patient to theatre."
+    "Correct identification and effective handover are essential during theatre transfer."
   ),
 ];
 
@@ -131,24 +121,19 @@ const rgn_022Quiz: ProcedureQuizQuestion[] = [
     "What type of water is used for tepid sponging?",
     ["Lukewarm water", "Ice water", "Boiling water", "Very cold water"],
     "Lukewarm water",
-    "Tepid sponging uses lukewarm water to assist controlled heat loss."
+    "Tepid sponging uses lukewarm or tepid water."
   ),
   q(
     "What is the stated water temperature range in this procedure?",
     ["27–37°C", "10–15°C", "40–45°C", "50–60°C"],
     "27–37°C",
-    "The procedure specifies tepid water between 27–37°C."
+    "The procedure specifies tepid water within this range."
   ),
   q(
     "What should be checked before beginning tepid sponging?",
-    [
-      "The patient's temperature",
-      "The visitor's temperature",
-      "The ward clock only",
-      "The patient's meal order",
-    ],
+    ["The patient's temperature", "The visitor's temperature", "The ward clock only", "The patient's meal order"],
     "The patient's temperature",
-    "The patient's temperature should be assessed before beginning and monitored during the procedure."
+    "The patient's baseline temperature should be assessed before the procedure."
   ),
   q(
     "Why are wet towels placed in the axillae and groin?",
@@ -159,7 +144,7 @@ const rgn_022Quiz: ProcedureQuizQuestion[] = [
       "To prevent all sweating",
     ],
     "To support heat loss from areas used during the procedure",
-    "These areas can assist heat exchange during tepid sponging."
+    "These areas can assist heat exchange during cooling."
   ),
   q(
     "What should be done with wet towels during the procedure?",
@@ -170,24 +155,19 @@ const rgn_022Quiz: ProcedureQuizQuestion[] = [
       "Freeze them before reuse",
     ],
     "Change them frequently to keep them tepid",
-    "Towels should remain appropriately tepid rather than becoming excessively cold or warm."
+    "Towels should remain appropriately tepid during the procedure."
   ),
   q(
     "How much should the temperature be reduced at a time according to the procedure?",
     ["Not more than 1°C", "Exactly 5°C", "At least 4°C", "10°C"],
     "Not more than 1°C",
-    "The procedure states that the temperature should be reduced gradually by not more than 1°C at a time."
+    "The procedure specifies gradual reduction rather than rapid cooling."
   ),
   q(
     "What should be done after the sponging period?",
-    [
-      "Recheck and record the temperature",
-      "Ignore the temperature",
-      "Immediately discharge the patient",
-      "Remove all documentation",
-    ],
+    ["Recheck and record the temperature", "Ignore the temperature", "Immediately discharge the patient", "Remove all documentation"],
     "Recheck and record the temperature",
-    "Reassessment determines the response to the procedure."
+    "Temperature should be reassessed and documented after the procedure."
   ),
   q(
     "Which action helps prevent chilling during tepid sponging?",
@@ -198,7 +178,7 @@ const rgn_022Quiz: ProcedureQuizQuestion[] = [
       "Open all windows",
     ],
     "Keep the patient appropriately covered and expose only areas being sponged",
-    "Maintaining privacy and covering unexposed areas helps prevent unnecessary chilling."
+    "Limiting exposure helps maintain comfort and prevent chilling."
   ),
   q(
     "What should be done if the patient cannot tolerate the procedure?",
@@ -209,7 +189,7 @@ const rgn_022Quiz: ProcedureQuizQuestion[] = [
       "Ignore the patient",
     ],
     "Stop or modify the procedure and report the concern appropriately",
-    "Patient tolerance and clinical condition should guide continuation of the procedure."
+    "Patient tolerance and clinical response must be monitored throughout the procedure."
   ),
   q(
     "What should be documented after tepid sponging?",
@@ -220,7 +200,7 @@ const rgn_022Quiz: ProcedureQuizQuestion[] = [
       "Nothing unless the patient asks",
     ],
     "The procedure, temperature readings and findings",
-    "Documentation should include the procedure, temperature observations and relevant findings."
+    "Documentation provides a record of the intervention and patient response."
   ),
 ];
 
@@ -234,7 +214,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "To count visitors",
     ],
     "To review patients and coordinate management",
-    "Ward rounds facilitate multidisciplinary review, decision-making and care planning."
+    "Ward rounds facilitate clinical review, decision-making and coordination of patient care."
   ),
   q(
     "What should be done with patient records before the round?",
@@ -245,7 +225,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "Leave them unfiled",
     ],
     "Ensure they are up to date and arranged appropriately",
-    "Accurate and accessible records support effective ward rounds."
+    "Complete and accessible records support accurate clinical review."
   ),
   q(
     "What should the nurse present during the ward round?",
@@ -256,7 +236,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "Only the room number",
     ],
     "Patient problems, concerns and progress",
-    "The nurse provides relevant information about the patient's condition, concerns and progress."
+    "The nurse provides relevant nursing observations, concerns and patient progress."
   ),
   q(
     "Why should the ward environment be prepared before rounds?",
@@ -267,7 +247,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "To keep patients asleep",
     ],
     "To support safe and efficient review of patients",
-    "A prepared environment promotes an organized and safe ward round."
+    "A prepared environment allows the team to conduct the round safely and efficiently."
   ),
   q(
     "What opportunity should patients be given during rounds?",
@@ -278,7 +258,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "An opportunity to discharge themselves",
     ],
     "An opportunity to ask questions",
-    "Patients should be given appropriate opportunities to ask questions and participate in their care."
+    "Patient participation and clarification promote effective communication."
   ),
   q(
     "What should the nurse record during rounds?",
@@ -289,7 +269,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "Nothing until the next shift",
     ],
     "Changes, directives and assigned tasks",
-    "Important changes, instructions and assigned responsibilities should be documented."
+    "Accurate recording ensures continuity and accountability."
   ),
   q(
     "Why are investigative request forms kept available?",
@@ -300,7 +280,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "They are used to clean equipment",
     ],
     "They may be needed for investigations ordered during care",
-    "Investigations may be requested during a ward round and appropriate forms may therefore be required."
+    "Investigations may be requested as part of the patient's management."
   ),
   q(
     "Who benefits from effective ward rounds?",
@@ -311,7 +291,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "Only administrative staff",
     ],
     "Patients and the multidisciplinary healthcare team",
-    "Effective ward rounds improve communication, planning and continuity of care."
+    "Effective rounds support coordinated patient-centred care."
   ),
   q(
     "What should happen to patient notes after the round?",
@@ -322,7 +302,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "Discard them",
     ],
     "Return them to the proper place securely",
-    "Patient records must be kept secure and accessible to authorized healthcare workers."
+    "Patient records must be secured after use."
   ),
   q(
     "What is a key nursing responsibility during ward rounds?",
@@ -333,7 +313,7 @@ const rgn_023Quiz: ProcedureQuizQuestion[] = [
       "Ignoring patient concerns",
     ],
     "Accurate communication and documentation",
-    "The nurse contributes accurate clinical information and records relevant decisions and instructions."
+    "The nurse contributes accurate clinical information and documents relevant decisions."
   ),
 ];
 
@@ -347,7 +327,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "To replace clinical assessment",
     ],
     "To build a therapeutic relationship and trust",
-    "Rapport supports therapeutic communication and trust between the nurse and patient."
+    "Rapport supports trust and therapeutic communication."
   ),
   q(
     "How should the nurse address the patient?",
@@ -358,7 +338,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "By diagnosis only",
     ],
     "Using the patient's preferred name or appropriate title",
-    "Respectful forms of address promote dignity and therapeutic communication."
+    "Respectful forms of address promote dignity."
   ),
   q(
     "What type of language should be used?",
@@ -369,7 +349,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "Ambiguous language",
     ],
     "Simple and clear language",
-    "Clear language improves understanding and communication."
+    "Clear language promotes understanding."
   ),
   q(
     "Why is confidentiality important when establishing rapport?",
@@ -380,7 +360,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "It allows information to be shared freely",
     ],
     "It helps protect privacy and supports trust",
-    "Confidentiality protects patient privacy and strengthens trust."
+    "Confidentiality is an essential component of professional nursing practice."
   ),
   q(
     "What communication behavior supports rapport?",
@@ -391,7 +371,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "Avoiding all communication",
     ],
     "Active listening and appropriate eye contact",
-    "Active listening and appropriate non-verbal communication support therapeutic relationships."
+    "Active listening demonstrates attention and respect."
   ),
   q(
     "What should the nurse encourage the patient to do?",
@@ -402,7 +382,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "Speak only to other patients",
     ],
     "Express needs and concerns",
-    "Patients should be encouraged to communicate their needs and concerns."
+    "Encouraging expression helps identify patient needs."
   ),
   q(
     "How should inappropriate requests be managed?",
@@ -413,7 +393,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "By ending all care",
     ],
     "Firmly and professionally within nursing boundaries",
-    "Professional boundaries should be maintained while continuing therapeutic care."
+    "Professional boundaries protect both the patient and nurse."
   ),
   q(
     "Why should the nurse explain what the patient can expect from nurses?",
@@ -424,7 +404,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "To prevent questions",
     ],
     "To clarify the care relationship and reduce uncertainty",
-    "Clear explanations help establish expectations and reduce anxiety."
+    "Clear expectations support therapeutic relationships."
   ),
   q(
     "What should the nurse do after the interaction?",
@@ -435,7 +415,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "Discuss the patient publicly",
     ],
     "Express appreciation for the patient's cooperation",
-    "Appreciating cooperation helps maintain a respectful therapeutic interaction."
+    "Professional courtesy helps maintain a respectful relationship."
   ),
   q(
     "What is a professional boundary in rapport building?",
@@ -446,7 +426,7 @@ const rgn_024Quiz: ProcedureQuizQuestion[] = [
       "Accepting inappropriate requests",
     ],
     "Maintaining a respectful therapeutic relationship",
-    "Professional boundaries protect both the patient and nurse."
+    "The nurse should maintain professional therapeutic boundaries."
   ),
 ];
 
@@ -460,7 +440,7 @@ const rgn_025Quiz: ProcedureQuizQuestion[] = [
       "To avoid introducing staff",
     ],
     "To help the patient adapt safely to the ward environment",
-    "Orientation helps patients understand their environment, routines and available support."
+    "Orientation helps patients understand their environment and ward routines."
   ),
   q(
     "What should the nurse identify first about the ward?",
@@ -471,18 +451,13 @@ const rgn_025Quiz: ProcedureQuizQuestion[] = [
       "The hospital's payroll",
     ],
     "The ward name and relevant environment",
-    "Patients should be introduced to their ward environment and relevant routines."
+    "Knowing the ward environment helps patients navigate safely."
   ),
   q(
     "Which area should the patient be shown?",
-    [
-      "The nurse's station",
-      "Only the staff changing room",
-      "The pharmacy store only",
-      "The operating theatre only",
-    ],
+    ["The nurse's station", "Only the staff changing room", "The pharmacy store only", "The operating theatre only"],
     "The nurse's station",
-    "Knowing the nurse's station helps the patient know where to seek assistance."
+    "The nurse's station is an important point of contact for patient assistance."
   ),
   q(
     "Why should the patient be shown the bathroom and toilet?",
@@ -493,7 +468,7 @@ const rgn_025Quiz: ProcedureQuizQuestion[] = [
       "To restrict mobility",
     ],
     "To support safe and independent use of the facilities",
-    "Orientation to sanitary facilities promotes safe use of the ward environment."
+    "Patients should know where essential facilities are located."
   ),
   q(
     "What should the patient be told about ward routines?",
@@ -504,7 +479,7 @@ const rgn_025Quiz: ProcedureQuizQuestion[] = [
       "Nothing about the ward",
     ],
     "Relevant routines and activities",
-    "Knowing ward routines helps patients adapt to their new environment."
+    "Understanding routines helps the patient adapt to the ward."
   ),
   q(
     "Who should the patient be told to contact for concerns?",
@@ -515,7 +490,7 @@ const rgn_025Quiz: ProcedureQuizQuestion[] = [
       "A random person outside the ward",
     ],
     "The appropriate ward staff member",
-    "Patients should know who to approach when they need assistance."
+    "Patients should know who to approach when assistance is needed."
   ),
   q(
     "What should the nurse do if the patient has questions?",
@@ -526,7 +501,7 @@ const rgn_025Quiz: ProcedureQuizQuestion[] = [
       "Refer every question to another patient",
     ],
     "Encourage questions and clarify them",
-    "Questions provide an opportunity to identify and address patient concerns."
+    "Questions help confirm understanding."
   ),
   q(
     "Why is introducing the patient to staff useful?",
@@ -537,7 +512,7 @@ const rgn_025Quiz: ProcedureQuizQuestion[] = [
       "It is only for visitors",
     ],
     "It helps the patient know who can provide assistance",
-    "Introducing relevant staff supports communication and orientation."
+    "Familiarity with staff promotes communication and safety."
   ),
   q(
     "What should be done after orientation?",
@@ -559,7 +534,7 @@ const rgn_025Quiz: ProcedureQuizQuestion[] = [
       "Only visitor complaints",
     ],
     "Relevant concerns or findings to the appropriate officer",
-    "Relevant concerns identified during orientation should be communicated appropriately."
+    "Relevant concerns should be communicated through the appropriate reporting structure."
   ),
 ];
 
@@ -595,7 +570,7 @@ const rgn_026Quiz: ProcedureQuizQuestion[] = [
       "Only a blanket",
     ],
     "Oxygen and suction equipment when indicated",
-    "Equipment should be prepared according to the patient's condition and anticipated needs."
+    "Equipment should be prepared according to the patient's condition and needs."
   ),
   q(
     "What is important when confirming patient identity?",
@@ -606,7 +581,7 @@ const rgn_026Quiz: ProcedureQuizQuestion[] = [
       "Skip identification",
     ],
     "Use reliable identifiers and the accompanying handover",
-    "Reliable patient identification is essential during transfers."
+    "Reliable patient identification is essential during transfer."
   ),
   q(
     "What should be done with the transfer notes?",
@@ -617,7 +592,7 @@ const rgn_026Quiz: ProcedureQuizQuestion[] = [
       "Leave them unread",
     ],
     "Receive and review them as part of handover",
-    "Transfer documentation contains important information for continuity of care."
+    "Transfer documentation contains important clinical information."
   ),
   q(
     "What should the nurse assess immediately after admission to the receiving unit?",
@@ -628,7 +603,7 @@ const rgn_026Quiz: ProcedureQuizQuestion[] = [
       "Only the room temperature",
     ],
     "The patient's current condition and safety",
-    "The receiving nurse should assess the patient's condition and immediate safety."
+    "A receiving assessment helps identify immediate clinical and safety needs."
   ),
   q(
     "What should be checked about tubes and drains?",
@@ -639,7 +614,7 @@ const rgn_026Quiz: ProcedureQuizQuestion[] = [
       "That they are disconnected without assessment",
     ],
     "That they are present, secure and appropriately connected",
-    "Lines, tubes and drains should be assessed for security and appropriate connection."
+    "Lines, drains and tubes should be assessed and maintained safely."
   ),
   q(
     "Why is orientation sometimes repeated after transfer-in?",
@@ -672,7 +647,7 @@ const rgn_026Quiz: ProcedureQuizQuestion[] = [
       "Delaying treatment",
     ],
     "Safe continuity of care in the receiving unit",
-    "The primary goal is safe continuation of patient care."
+    "The overall aim is safe continuation of care."
   ),
 ];
 
@@ -686,16 +661,11 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "Changing a patient's meal",
     ],
     "Moving a patient from the current unit to another authorized destination",
-    "Transfer-out involves moving a patient to another authorized unit, department or facility."
+    "Transfer-out involves moving the patient to another authorized destination."
   ),
   q(
     "What should be confirmed before transfer-out?",
-    [
-      "The authorized transfer order",
-      "The visitor's permission",
-      "The patient's meal",
-      "The ward television schedule",
-    ],
+    ["The authorized transfer order", "The visitor's permission", "The patient's meal", "The ward television schedule"],
     "The authorized transfer order",
     "The transfer should be authorized before the patient is moved."
   ),
@@ -708,7 +678,7 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "To avoid handover",
     ],
     "To ensure it is prepared to receive the patient",
-    "Prior communication allows the receiving unit to prepare for the patient's needs."
+    "Advance communication supports safe continuity of care."
   ),
   q(
     "What should be assessed before moving the patient?",
@@ -719,7 +689,7 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "Only the visitor list",
     ],
     "The patient's current clinical condition",
-    "The patient's condition determines the safest means and timing of transfer."
+    "The patient's condition determines the safest transfer method and support required."
   ),
   q(
     "What should accompany the patient when required?",
@@ -730,7 +700,7 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "Only a blanket",
     ],
     "Relevant records, medications and investigation results",
-    "Relevant clinical information should accompany the patient according to facility policy."
+    "Relevant information and items support continuity of care."
   ),
   q(
     "What is important when selecting transport?",
@@ -741,7 +711,7 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "Use any available method regardless of condition",
     ],
     "Use a safe means appropriate to the patient's condition",
-    "Transport should match the patient's clinical condition and mobility needs."
+    "Transport should match the patient's clinical needs."
   ),
   q(
     "What should be done during handover?",
@@ -752,7 +722,7 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "Leave without notifying the receiving nurse",
     ],
     "Transfer responsibility with relevant clinical information",
-    "Effective handover communicates the patient's condition, treatment and ongoing needs."
+    "Effective handover ensures continuity and safe transfer of responsibility."
   ),
   q(
     "What should happen to the vacated bed?",
@@ -763,7 +733,7 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "Store contaminated linen on the bed",
     ],
     "Remove used linen and decontaminate it according to policy",
-    "The bed and reusable equipment should be appropriately cleaned and decontaminated before reuse."
+    "The bed should be cleaned and prepared according to infection-prevention policy."
   ),
   q(
     "Why is documentation important during transfer-out?",
@@ -774,7 +744,7 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "It is only administrative decoration",
     ],
     "It supports continuity, accountability and communication",
-    "Accurate documentation supports safe continuity of care."
+    "Accurate documentation provides a clear record of the transfer."
   ),
   q(
     "What is the safest principle when transferring a patient?",
@@ -785,98 +755,58 @@ const rgn_027Quiz: ProcedureQuizQuestion[] = [
       "Send the patient without records",
     ],
     "Maintain patient identification, clinical safety and clear handover",
-    "Safe transfer requires identification, clinical assessment and effective handover."
+    "Safe transfer requires correct identification, appropriate transport and effective handover."
   ),
 ];
 
 const rgn_028Quiz: ProcedureQuizQuestion[] = [
   q(
     "When is hand and foot care commonly performed?",
-    [
-      "After the patient's bath when appropriate",
-      "Only before admission",
-      "Only during surgery",
-      "Only after discharge",
-    ],
+    ["After the patient's bath when appropriate", "Only before admission", "Only during surgery", "Only after discharge"],
     "After the patient's bath when appropriate",
-    "Hand and foot care is commonly incorporated into routine personal hygiene."
+    "Hand and foot care may appropriately be performed after bathing."
   ),
   q(
     "Why may hands or feet be soaked before nail care?",
-    [
-      "To soften the nails",
-      "To increase swelling",
-      "To sterilize the patient",
-      "To cause numbness",
-    ],
+    ["To soften the nails", "To increase swelling", "To sterilize the patient", "To cause numbness"],
     "To soften the nails",
-    "Soaking can soften nails and make nail care easier."
+    "Warm water helps soften nails before trimming."
   ),
   q(
     "What should be assessed before nail care?",
-    [
-      "Skin condition and abnormalities",
-      "Only the patient's height",
-      "Only the patient's appetite",
-      "Only the visitor list",
-    ],
+    ["Skin condition and abnormalities", "Only the patient's height", "Only the patient's appetite", "Only the visitor list"],
     "Skin condition and abnormalities",
-    "Inspection can identify sores, swelling or other abnormalities requiring attention."
+    "Assessment can identify sores, swelling, infection or other abnormalities."
   ),
   q(
     "How should toenails generally be cut to reduce the risk of ingrowing?",
-    [
-      "Across the nail",
-      "Deep into both corners",
-      "As short as possible into the skin",
-      "By tearing them",
-    ],
+    ["Across the nail", "Deep into both corners", "As short as possible into the skin", "By tearing them"],
     "Across the nail",
-    "Cutting toenails across rather than deeply into the corners helps reduce the risk of ingrowing nails."
+    "Toenails are generally trimmed across rather than deeply into the corners."
   ),
   q(
     "Where should nail clippings be placed?",
-    [
-      "In a receiver or appropriate waste container",
-      "On the patient's bed",
-      "On the floor",
-      "In the wash basin",
-    ],
+    ["In a receiver or appropriate waste container", "On the patient's bed", "On the floor", "In the wash basin"],
     "In a receiver or appropriate waste container",
     "Nail clippings should be collected and disposed of appropriately."
   ),
   q(
     "Why is warm water used?",
-    [
-      "To support cleansing and soften nails",
-      "To burn the skin",
-      "To freeze the nails",
-      "To replace hand hygiene",
-    ],
+    ["To support cleansing and soften nails", "To burn the skin", "To freeze the nails", "To replace hand hygiene"],
     "To support cleansing and soften nails",
-    "Warm water supports cleansing and helps soften nails."
+    "Warm water supports cleansing and softening of nails."
   ),
   q(
     "What should be done after washing the hands and feet?",
-    [
-      "Rinse and dry them thoroughly",
-      "Leave them wet",
-      "Cover them with contaminated linen",
-      "Apply antiseptic without drying",
-    ],
+    ["Rinse and dry them thoroughly", "Leave them wet", "Cover them with contaminated linen", "Apply antiseptic without drying"],
     "Rinse and dry them thoroughly",
-    "Thorough drying helps maintain skin integrity and comfort."
+    "Thorough drying helps maintain skin integrity."
   ),
   q(
     "Why should the skin be inspected during the procedure?",
-    [
-      "To identify sores, swelling or other abnormalities",
-      "To diagnose every disease",
-      "To avoid speaking to the patient",
-      "To replace vital signs",
-    ],
+    ["To identify sores, swelling or other abnormalities", "To diagnose every disease", "To avoid speaking to the patient", "To replace vital signs"],
     "To identify sores, swelling or other abnormalities",
-    "Inspection helps identify abnormalities that may require further assessment."
+    "Inspection helps identify abnormalities that may require reporting."
   ),
   q(
     "What should be done with used equipment?",
@@ -887,16 +817,11 @@ const rgn_028Quiz: ProcedureQuizQuestion[] = [
       "Leave instruments at the bedside",
     ],
     "Dispose of waste appropriately and decontaminate reusable equipment",
-    "Reusable equipment should be appropriately cleaned and decontaminated."
+    "Proper disposal and decontamination reduce infection risks."
   ),
   q(
     "What should be documented after hand and foot care?",
-    [
-      "The procedure and relevant findings",
-      "Only the patient's name",
-      "Nothing",
-      "Only the visitor's name",
-    ],
+    ["The procedure and relevant findings", "Only the patient's name", "Nothing", "Only the visitor's name"],
     "The procedure and relevant findings",
     "Relevant care and findings should be documented."
   ),
@@ -905,31 +830,21 @@ const rgn_028Quiz: ProcedureQuizQuestion[] = [
 const rgn_029Quiz: ProcedureQuizQuestion[] = [
   q(
     "What does intake and output monitoring measure?",
-    [
-      "Fluids entering and leaving the body",
-      "Only oral food",
-      "Only urine color",
-      "Only body temperature",
-    ],
+    ["Fluids entering and leaving the body", "Only oral food", "Only urine color", "Only body temperature"],
     "Fluids entering and leaving the body",
-    "Intake and output monitoring records fluid entering and leaving the body."
+    "Fluid balance monitoring measures fluid entering and leaving the body."
   ),
   q(
     "Over what period is the fluid balance commonly totaled in this procedure?",
     ["24 hours", "1 hour", "5 minutes", "7 days"],
     "24 hours",
-    "The procedure describes a 24-hour fluid balance."
+    "The procedure describes monitoring over a 24-hour period."
   ),
   q(
     "Which is an example of fluid intake?",
-    [
-      "Oral or intravenous fluid",
-      "Urine",
-      "Vomitus",
-      "Diarrhoeal stool",
-    ],
+    ["Oral or intravenous fluid", "Urine", "Vomitus", "Diarrhoeal stool"],
     "Oral or intravenous fluid",
-    "Oral and intravenous fluids are examples of intake."
+    "Oral and parenteral fluids are examples of intake."
   ),
   q(
     "Which is an example of fluid output?",
@@ -945,14 +860,9 @@ const rgn_029Quiz: ProcedureQuizQuestion[] = [
   ),
   q(
     "How is fluid retained determined in the procedure?",
-    [
-      "Intake minus output",
-      "Output minus temperature",
-      "Weight minus height",
-      "Pulse minus respiration",
-    ],
+    ["Intake minus output", "Output minus temperature", "Weight minus height", "Pulse minus respiration"],
     "Intake minus output",
-    "The procedure calculates fluid retained as intake minus output."
+    "Fluid balance is calculated by subtracting output from intake."
   ),
   q(
     "What should be done when urine output is abnormally low?",
@@ -963,7 +873,7 @@ const rgn_029Quiz: ProcedureQuizQuestion[] = [
       "Delete the observation",
     ],
     "Inform the nurse in charge or doctor promptly",
-    "Abnormally low output may indicate a clinically important problem and should be escalated."
+    "Abnormally low output may indicate a clinically important problem and should be reported."
   ),
   q(
     "Why should intake and output be recorded with date and time?",
@@ -974,18 +884,13 @@ const rgn_029Quiz: ProcedureQuizQuestion[] = [
       "To avoid measuring fluids",
     ],
     "To maintain an accurate chronological fluid record",
-    "Time-stamped measurements allow accurate monitoring of fluid balance."
+    "Date and time allow accurate tracking of fluid changes."
   ),
   q(
     "Which equipment can measure urine output?",
-    [
-      "A measuring jug",
-      "A thermometer",
-      "A stethoscope",
-      "A pulse oximeter",
-    ],
+    ["A measuring jug", "A thermometer", "A stethoscope", "A pulse oximeter"],
     "A measuring jug",
-    "A measuring jug can be used to measure urine volume."
+    "A graduated measuring jug can be used to measure urine output."
   ),
   q(
     "Why is accurate fluid balance important?",
@@ -996,7 +901,7 @@ const rgn_029Quiz: ProcedureQuizQuestion[] = [
       "It eliminates the need for vital signs",
     ],
     "It helps monitor hydration and fluid overload",
-    "Fluid balance monitoring assists assessment of hydration status and possible fluid excess or deficit."
+    "Accurate fluid balance assists in monitoring hydration and fluid status."
   ),
 ];
 
@@ -1008,14 +913,15 @@ export const rgnBatch03: Procedure[] = [
     overview:
       "This is the care given to patients before a surgical procedure. The nurse/midwife has a role to ensure that the patient is physically, psychologically and physiologically fit for the intended procedure.",
     purpose: [
-      "Relieve patient’s anxiety",
+      "Relieve patient's anxiety",
       "Ensure successful operation",
       "Prevent complications after surgery",
     ],
     indications: [
-      "Patient scheduled for an operative or surgical procedure",
-      "Preparation required before transfer to theatre",
-      "Pre-operative investigations, identification and safety checks are required",
+      "Scheduled/elective surgical procedure",
+      "Emergency surgical procedure requiring pre-operative preparation",
+      "Surgical procedures requiring preparation of an operative site",
+      "Procedures requiring transfer to theatre",
     ],
     equipment: [
       "A trolley containing the following:",
@@ -1032,7 +938,7 @@ export const rgnBatch03: Procedure[] = [
       "Urinal/bedpan",
     ],
     steps: [
-      "Confirm the type of surgical procedure and site against physician/doctor’s order",
+      "Confirm the type of surgical procedure and site against physician/doctor's order",
       "Establish rapport with patient (Refer to steps)",
       "Prepare and send trolley to bedside",
       "Provide privacy",
@@ -1045,10 +951,10 @@ export const rgnBatch03: Procedure[] = [
       "Dry and clean area with antiseptic lotion",
       "Cover area with sterile drape and secure it in position with adhesive strapping",
       "Dress patient with a clean theatre gown",
-      "Label and apply the name tag as per facility’s protocol",
+      "Label and apply the name tag as per facility's protocol",
       "Remove accessories and dentures if any",
       "Check and record vital signs",
-      "Assist patient to sign the consent form as per facility’s protocol",
+      "Assist patient to sign the consent form as per facility's protocol",
       "Confirm if all laboratory results, items for surgery and medications are ready for the procedure",
       "Dispose off used items and decontaminate trolley",
       "Perform hand hygiene",
@@ -1059,13 +965,14 @@ export const rgnBatch03: Procedure[] = [
       "Prepare an operation bed to receive the patient",
     ],
     precautions: [
-      "Confirm patient identity, procedure and operative site according to facility protocol",
-      "Verify required consent and pre-operative orders before proceeding",
-      "Check allergies and relevant clinical information before applying preparations or administering prescribed medication",
-      "Maintain privacy and dignity throughout the procedure",
-      "Use appropriate infection-prevention measures and hand hygiene",
-      "Do not proceed with unresolved abnormal findings; escalate concerns to the appropriate clinician",
-      "Ensure safe transfer and complete handover to theatre staff",
+      "Verify patient identity, procedure and operative site before preparation",
+      "Confirm that informed consent requirements have been completed according to facility policy",
+      "Check allergies, fasting status, required investigations and other pre-operative requirements",
+      "Verify prescribed medications and pre-medications before administration",
+      "Maintain privacy, dignity and standard infection-prevention precautions",
+      "Check and record vital signs and report abnormal findings before theatre transfer",
+      "Manage dentures, jewellery and other removable items according to facility and anaesthetic policy",
+      "Ensure safe transportation and complete handover with the patient's records",
     ],
     videoUrl: "https://www.youtube.com/watch?v=2WT8z8KsHJo",
     quiz: rgn_021Quiz,
@@ -1078,13 +985,13 @@ export const rgnBatch03: Procedure[] = [
     overview:
       "Tepid sponging is the application of lukewarm water on the skin surface when the body temperature is above 39℃. The temperature of the water used should be between 27-37℃. The procedure is based on the principle of conduction and evaporation of heat.",
     purpose: [
-      "Gradually reduce a patient’s body temperature by not more than 1℃ at a time",
-      "Ultimately reduce the body’s temperature to a value between the normal range (36.5 – 37.2℃)",
+      "Gradually reduce a patient's body temperature by not more than 1℃ at a time",
+      "Ultimately reduce the body's temperature to a value between the normal range (36.5 – 37.2℃)",
     ],
     indications: [
-      "Patient with elevated body temperature requiring tepid sponging",
-      "Pyrexia where tepid sponging is indicated as part of the patient's care plan",
-      "When prescribed or authorized according to facility protocol",
+      "Fever or elevated body temperature when tepid sponging is clinically appropriate",
+      "Patient discomfort associated with elevated temperature",
+      "Adjunctive cooling when prescribed or included in the patient's plan of care",
     ],
     equipment: [
       "A trolley containing the following:",
@@ -1100,11 +1007,11 @@ export const rgnBatch03: Procedure[] = [
       "Provide privacy",
       "Perform hand hygiene",
       "Prepare trolley and send to the bedside",
-      "Check and record patient’s temperature",
+      "Check and record patient's temperature",
       "Arrange top bed/counterpane clothes leaving top sheet",
       "Protect bottom sheet with a long mackintosh and bath blanket",
       "Undress the patient leaving him/her covered with the top sheet",
-      "Prepare the tepid water in the bowel/basin, test the water with the bath thermometer or elbow",
+      "Prepare the tepid water in the bowl/basin, test the water with the bath thermometer or elbow",
       "Place the pieces of towels into the basin with tepid water",
       "Squeeze out excess water, place a wet towel in each axilla and groin",
       "Change the wet towel frequently to keep them tepid",
@@ -1116,22 +1023,22 @@ export const rgnBatch03: Procedure[] = [
       "Leave patient for 15-20 minutes",
       "Cover the patient with the top bedclothing",
       "Recheck temperature and record",
-      "Repeat procedure till temperatures falls by 1℃",
+      "Repeat procedure till temperature falls by 1℃",
       "Remove long mackintosh and bath blanket",
       "Assist patient to dress up and put him/her into a desirable position",
       "Perform hand hygiene",
       "Serve cold drink if patient can tolerate",
       "Serve prescribed antipyretic",
-      "Document procedures, charts temperature and report findings to appropriate officer",
+      "Document procedures, chart temperature and report findings to appropriate officer",
     ],
     precautions: [
-      "Assess the patient's temperature and clinical condition before and during the procedure",
-      "Use tepid rather than excessively cold or hot water",
-      "Avoid excessive exposure of the patient and maintain privacy",
-      "Observe for shivering, discomfort, deterioration or intolerance",
-      "Stop or modify the procedure and escalate if the patient's condition worsens",
-      "Administer antipyretics only when prescribed or otherwise authorized according to applicable protocol",
-      "Perform hand hygiene and maintain appropriate infection-prevention measures",
+      "Use tepid/lukewarm water and avoid ice-cold water",
+      "Monitor the patient's temperature and response throughout the procedure",
+      "Avoid excessive exposure of the patient and prevent chilling",
+      "Stop the procedure if the patient develops shivering, marked discomfort, cyanosis or deterioration",
+      "Use additional caution in vulnerable patients and follow facility protocol",
+      "Maintain standard infection-prevention precautions",
+      "Administer antipyretics only when prescribed or otherwise authorized",
     ],
     videoUrl: "https://www.youtube.com/watch?v=qZN4_9gRecc",
     quiz: rgn_022Quiz,
@@ -1151,46 +1058,45 @@ export const rgnBatch03: Procedure[] = [
     ],
     indications: [
       "Planned or routine ward round",
+      "Multidisciplinary review of admitted patients",
+      "Review of patients with changing or complex clinical needs",
       "Ad hoc or emergency clinical review",
-      "Multidisciplinary review of patient progress and management",
-      "Review requiring new clinical decisions or allocation of responsibilities",
     ],
     equipment: [
       "A trolley containing the following:",
       "Top shelf",
       "Adequate supply of tablet for documentation or the following stationery:",
-      "Patient’s Medical Records",
-      "Nurse’s changes book",
+      "Patient's Medical Records",
+      "Nurse's changes book",
       "Continuation sheet",
       "Treatment sheet",
-      "Investigative request forms e.g. X’ray, laboratory",
+      "Investigative request forms e.g. X'ray, laboratory",
       "Prescription form",
       "Stapler with pins",
     ],
     steps: [
       "Ensure the ward and its annexes are clean",
       "Ensure all patients and visitors are in bed and out of the ward respectively",
-      "Conduct charge nurse’s round, note down concerns and complaints of patients",
+      "Conduct charge nurse's round, note down concerns and complaints of patients",
       "Classify patients according to their needs or depending on the protocol of the unit",
-      "Ensure all reports are dully filed and records are up to date",
-      "Arrange patient’s medical records in the correct sequence for the rounds",
-      "Facilitate rounds, present patients’ problems, concerns and progress",
+      "Ensure all reports are duly filed and records are up to date",
+      "Arrange patient's medical records in the correct sequence for the rounds",
+      "Facilitate rounds, present patients' problems, concerns and progress",
       "Assist when doctor is examining the patients",
-      "Give patients’ opportunity to ask questions",
-      "Provide appropriate answers to patients’ questions",
+      "Give patients opportunity to ask questions",
+      "Provide appropriate answers to patients' questions",
       "Record all changes, directives and tasks assigned in appropriate documents",
-      "Ensure patient’s notes are returned to their proper place on the rack after the procedure",
+      "Ensure patient's notes are returned to their proper place on the rack after the procedure",
     ],
     precautions: [
-      "Maintain patient confidentiality during discussions and documentation",
-      "Use patient information only for legitimate clinical purposes",
-      "Ensure records are available only to authorized healthcare personnel",
-      "Confirm patient identity before discussing individual clinical information",
-      "Maintain patient dignity and privacy during examination",
-      "Record clinical decisions and directives accurately",
-      "Do not independently alter medical orders or treatment plans outside the nurse's scope of practice",
+      "Maintain patient privacy, dignity and confidentiality during the ward round",
+      "Use appropriate standard precautions and personal protective equipment where indicated",
+      "Avoid discussing confidential patient information where unauthorized persons can hear",
+      "Ensure patient records are complete and available before the round",
+      "Record clinical decisions, directives and assigned responsibilities accurately",
+      "Clarify unclear instructions before implementing them according to facility policy",
+      "Do not leave patient records unattended or accessible to unauthorized persons",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=GL1JG9U6RGk",
     quiz: rgn_023Quiz,
   },
 
@@ -1207,18 +1113,16 @@ export const rgnBatch03: Procedure[] = [
       "Promote effective communication",
     ],
     indications: [
-      "At the initial contact with a patient/client",
-      "During admission and orientation",
-      "Before nursing procedures or clinical assessment",
-      "Whenever therapeutic communication is required",
+      "At the beginning of the nurse-patient relationship",
+      "On admission or first contact with a patient/client",
+      "When establishing therapeutic communication with a patient/client and family",
+      "When the patient/client requires emotional support or clarification",
     ],
-    equipment: [
-      "N/A",
-    ],
+    equipment: ["N/A"],
     steps: [
       "Introduce yourself to the patient/client",
       "Maintain a relaxed attitude when interacting with patient/client",
-      "Identify patient/client’s name, title and address him/her as such",
+      "Identify patient/client's name, title and address him/her as such",
       "Speak to patient/client using simple and clear language",
       "Assure patient/client of total confidentiality",
       "Establish eye contact with the patient/client during the interaction",
@@ -1230,13 +1134,13 @@ export const rgnBatch03: Procedure[] = [
       "Express appreciation to patient/client for his/her cooperation",
     ],
     precautions: [
-      "Maintain professional boundaries throughout the interaction",
-      "Protect patient confidentiality and privacy",
-      "Use respectful, culturally appropriate communication",
-      "Avoid judgmental, threatening or discriminatory language",
-      "Do not make promises that cannot be fulfilled",
-      "Use an interpreter or appropriate communication support when required",
-      "Escalate safeguarding or communication concerns according to facility policy",
+      "Maintain professional therapeutic boundaries",
+      "Protect patient/client confidentiality and privacy",
+      "Use respectful, culturally appropriate and non-judgmental communication",
+      "Avoid making promises that cannot be fulfilled",
+      "Do not disclose confidential information to unauthorized persons",
+      "Recognize and respect the patient's right to refuse communication or participation",
+      "Seek assistance when communication barriers affect safe care",
     ],
     videoUrl: "https://www.youtube.com/watch?v=t_59thyrje8",
     quiz: rgn_024Quiz,
@@ -1254,19 +1158,17 @@ export const rgnBatch03: Procedure[] = [
       "Know the ward environment",
     ],
     indications: [
-      "New ambulant patient admitted to the ward",
-      "Patient transferred to a new ward or unit",
-      "Patient requiring orientation to ward routines and facilities",
-      "Patient or relatives requiring clarification about ward services",
+      "New admission to the ward",
+      "Transfer of an ambulant patient to a new ward",
+      "When a patient requires orientation to a new ward environment",
+      "When ward routines or facilities need to be explained to the patient",
     ],
-    equipment: [
-      "N/A",
-    ],
+    equipment: ["N/A"],
     steps: [
       "Establish rapport with patient and relatives (Refer to steps)",
       "Mention the name of the ward to patient and relatives",
       "Introduce patient to ward staff around",
-      "Show patient the nurse’s station",
+      "Show patient the nurse's station",
       "Show patient his/her bed",
       "Show patient his/her bed side cabinet/locker and how it operates",
       "Introduce him/her to other patients if any",
@@ -1279,15 +1181,13 @@ export const rgnBatch03: Procedure[] = [
       "Report to appropriate officer",
     ],
     precautions: [
-      "Protect patient confidentiality when introducing the patient to staff or other patients",
-      "Do not disclose another patient's diagnosis or private information",
-      "Assess mobility and fall risk before directing the patient around the ward",
-      "Explain emergency procedures and relevant safety arrangements",
-      "Ensure the patient understands how to call for assistance",
-      "Respect cultural, communication and accessibility needs",
-      "Report safety concerns or abnormal findings appropriately",
+      "Maintain patient privacy and dignity during orientation",
+      "Provide information appropriate to the patient's level of understanding",
+      "Do not disclose other patients' diagnoses or confidential information",
+      "Identify potential environmental hazards and explain relevant safety measures",
+      "Ensure the patient knows whom to contact for assistance",
+      "Consider mobility, sensory and cognitive limitations when providing orientation",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=GL1JG9U6RGk",
     quiz: rgn_025Quiz,
   },
 
@@ -1300,17 +1200,17 @@ export const rgnBatch03: Procedure[] = [
     purpose: [
       "Mostly for specialty treatment",
       "Investigations e.g. C.T. scan, MRI etc.",
-      "Ensure continuity of care in the receiving unit",
+      "To ensure continuity of care between units",
     ],
     indications: [
-      "Unit to unit transfer",
+      "Unit to unit",
       "Unit to a center",
       "Unit to department",
-      "Transfer for specialist treatment",
-      "Transfer for investigations such as CT scan or MRI",
+      "Transfer between healthcare facilities",
+      "Transfer for specialty treatment or investigation",
     ],
     equipment: [
-      "Patient’s medical records (Manual or electronic)",
+      "Patient's medical records (Manual or electronic)",
       "Referral notes (Manual or electronic)",
     ],
     steps: [
@@ -1326,23 +1226,24 @@ export const rgnBatch03: Procedure[] = [
       "Introduce yourself and other staff to patient/client and relatives",
       "Admit patient into bed ensuring patient safety",
       "Do quick assessment of patients/clients condition and compare with patient/clients medical records",
-      "Assess for any drainage or tubings and connects appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
+      "Assess for any drainage or tubings and connect appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
       "Review patients notes, treatment plan and act accordingly",
       "Orientate patient/client and relatives on environment and routine of the unit if necessary",
-      "Document all assessments, findings and treatments in nurses’ notes (manually or electronically)",
+      "Document all assessments, findings and treatments in nurses' notes (manually or electronically)",
       "Plan care for the patient/client",
     ],
     precautions: [
-      "Confirm patient identity using appropriate identifiers",
-      "Receive and verify the clinical handover and transfer documentation",
-      "Assess the patient's condition immediately on arrival",
-      "Ensure oxygen, IV lines, urinary catheters, drains and other devices are secure",
-      "Use appropriate infection-prevention precautions",
-      "Maintain confidentiality of medical records",
-      "Escalate deterioration or discrepancies in treatment or documentation",
-      "Ensure the receiving bed and necessary emergency equipment are ready",
+      "Confirm the transfer with the referring and receiving units",
+      "Verify patient identity using appropriate identifiers",
+      "Assess the patient's clinical condition before and immediately after transfer",
+      "Ensure oxygen, suction, intravenous lines, drains and other devices are secure",
+      "Use appropriate transportation according to the patient's condition",
+      "Ensure relevant medical records, medications, investigation results and belongings accompany the patient as required",
+      "Maintain patient privacy, dignity and confidentiality during transfer",
+      "Provide complete clinical handover to the receiving nurse/team",
+      "Document the transfer, assessment findings and handover",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=GL1JG9U6RGk",
+    videoUrl: "https://www.youtube.com/watch?v=GtrykPRGbao",
     quiz: rgn_026Quiz,
   },
 
@@ -1351,53 +1252,51 @@ export const rgnBatch03: Procedure[] = [
     title: "TRANSFER-OUT (TRANS-OUT)",
     category: "General Nursing (RGN)",
     overview:
-      "This is when a patient is moved out from one unit of admission within the same hospital for update treatment. It is done at the discretion of the medical team or at the request of the patient. A good knowledge of patients/clients condition is very important.",
+      "This is when a patient is moved out from one unit of admission within the same hospital for updated treatment. It is done at the discretion of the medical team or at the request of the patient. A good knowledge of patient's/client's condition is very important.",
     purpose: [
       "Mostly for specialty treatment",
       "Investigations e.g. C.T. scan, MRI etc.",
-      "On patient’s request",
-      "Ensure continuity and safe handover of care",
+      "On patient's request",
     ],
     indications: [
-      "Unit to unit transfer",
-      "Unit to a center",
-      "Unit to department",
-      "Transfer for specialty treatment",
-      "Transfer for investigations",
-      "Transfer requested or clinically required according to authorized plan",
+      "Transfer to another unit for specialist treatment",
+      "Transfer to another department for investigation",
+      "Transfer to another healthcare facility",
+      "Transfer authorized by the medical team",
+      "Transfer requested by the patient when clinically and administratively appropriate",
     ],
     equipment: [
-      "Patient’s medical records (Manual or electronic)",
+      "Patient's medical records (Manual or electronic)",
       "Referral notes (Manual or electronic)",
     ],
     steps: [
-      "Confirm patients trans-out order with medical team",
-      "Assess patients/clients condition",
+      "Confirm patient's trans-out order with medical team",
+      "Assess patient's/clients condition",
       "Inform the receiving unit or facility about the intended transfer and the state of patient",
       "Explain reason for the trans out to patient and relatives",
       "Arrange for accompanying nurse and appropriate means of transportation",
       "Collect all necessary data",
-      "Pack patient’s personal belongings",
-      "Collect patient’s medication, laboratory results and transfer",
-      "Ensure patient settle bills where applicable",
+      "Pack patient's personal belongings",
+      "Collect patient's medication, laboratory results and transfer documents",
+      "Ensure patient settles bills where applicable",
       "Assist patient onto stretcher, wheel chair or ambulance where applicable",
-      "Hand over patient’s notes and belongings to the accompanying nurse",
+      "Hand over patient's notes and belongings to the accompanying nurse",
       "Ensure linen are removed",
       "Decontaminate beds and its accessories",
       "Make new bed for next patient",
     ],
     precautions: [
-      "Confirm the authorized transfer order",
-      "Assess the patient's clinical stability before transfer",
-      "Notify and confirm readiness of the receiving unit",
-      "Use transport appropriate to the patient's condition",
-      "Ensure required medications, records and investigation results accompany the patient",
-      "Maintain patient identification throughout the transfer",
-      "Provide complete clinical handover to the receiving nurse or team",
-      "Maintain confidentiality of records and personal information",
-      "Clean and decontaminate the vacated bed and reusable equipment according to policy",
+      "Confirm the authorized transfer order before moving the patient",
+      "Assess the patient's clinical condition and stability before transfer",
+      "Inform and confirm acceptance with the receiving unit or facility",
+      "Use transportation appropriate to the patient's clinical condition",
+      "Ensure oxygen, intravenous lines, drains, catheters and other devices are secure",
+      "Ensure relevant records, medications, investigation results and belongings accompany the patient",
+      "Maintain patient privacy, dignity and confidentiality",
+      "Give a complete clinical handover to the receiving nurse/team",
+      "Document the transfer and condition of the patient",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=GL1JG9U6RGk",
+    videoUrl: "https://www.youtube.com/watch?v=GtrykPRGbao",
     quiz: rgn_027Quiz,
   },
 
@@ -1415,10 +1314,11 @@ export const rgnBatch03: Procedure[] = [
       "Promote self esteem",
     ],
     indications: [
-      "Routine personal hygiene for an admitted patient",
-      "Patient unable to independently perform hand and foot care",
-      "Need for nail care and grooming",
-      "Need to inspect hands and feet for skin abnormalities",
+      "Routine personal hygiene and grooming",
+      "Patient unable to independently maintain hand and foot hygiene",
+      "Need for nail care",
+      "Assessment of the skin of the hands and feet",
+      "Prevention of skin problems associated with poor hygiene",
     ],
     equipment: [
       "A trolley containing the following:",
@@ -1464,15 +1364,14 @@ export const rgnBatch03: Procedure[] = [
       "Document procedure and report findings (manual or electronic)",
     ],
     precautions: [
-      "Assess the skin for wounds, infection, swelling or other abnormalities before nail care",
-      "Use clean equipment and appropriate infection-prevention measures",
-      "Check water temperature before use to prevent burns",
-      "Use extra caution in patients with impaired sensation or poor circulation",
-      "Do not cut into surrounding skin",
-      "Avoid aggressive cleaning beneath nails that could injure tissue",
-      "Report significant abnormalities such as ulcers, infection or severe swelling",
-      "Dispose of nail clippings and waste appropriately",
-      "Decontaminate reusable equipment after use",
+      "Assess the skin for wounds, infection, swelling, poor circulation or other abnormalities before nail care",
+      "Use appropriate infection-prevention precautions",
+      "Avoid causing cuts or injury while trimming nails",
+      "Cut toenails across rather than deeply into the corners",
+      "Use extra caution in patients with diabetes, poor circulation or reduced sensation",
+      "Do not perform nail cutting when there is significant infection or tissue injury without appropriate clinical direction",
+      "Ensure the water temperature is safe and acceptable to the patient",
+      "Dispose of nail clippings and contaminated materials appropriately",
     ],
     videoUrl: "https://www.youtube.com/watch?v=QUGwjC1ZxIA",
     quiz: rgn_028Quiz,
@@ -1483,17 +1382,19 @@ export const rgnBatch03: Procedure[] = [
     title: "RECORDING OF INTAKE AND OUTPUT",
     category: "General Nursing (RGN)",
     overview:
-      "It is the process of measuring and noting the amount and type of fluids introduced into the body and excreted from the body over a 24-hour period. This procedure assists the nurse to maintain an accurate record of a patient’s fluid balance.",
+      "It is the process of measuring and noting the amount and type of fluids introduced into the body and excreted from the body over a 24-hour period. This procedure assists the nurse to maintain an accurate record of a patient's fluid balance.\n\nFluid intake includes:\n1. Oral fluids\n2. Intravenous fluids\n3. Nasopharyngeal fluids\n4. Intragastric fluids\n\nFluid output includes:\nUrine\nVomitus\nAspirates\nDiarrhoeal stool\nSweat",
     purpose: [
       "Assess the therapeutic effects of medication",
       "Monitor fluid overload and dehydration",
     ],
     indications: [
-      "Patients requiring strict fluid balance monitoring",
-      "Patients at risk of fluid overload or dehydration",
-      "Patients receiving significant intravenous or enteral fluids",
-      "Patients with conditions requiring close monitoring of urine output",
-      "Patients with significant fluid losses such as vomiting or diarrhoea",
+      "Patients requiring monitoring of fluid balance",
+      "Patients at risk of dehydration",
+      "Patients at risk of fluid overload",
+      "Patients receiving intravenous or other significant fluid therapy",
+      "Patients with conditions affecting fluid balance",
+      "Patients with significant fluid losses such as vomiting, diarrhoea or excessive drainage",
+      "Patients requiring accurate urine output monitoring",
     ],
     equipment: [
       "A trolley containing the following:",
@@ -1505,13 +1406,13 @@ export const rgnBatch03: Procedure[] = [
     steps: [
       "Establish rapport (Refer to steps)",
       "Explain the importance of keeping the fluid balance chart to patient and relatives",
-      "Obtain fluid intake and output chart (manually or electronically) and confirm with patient’s identity",
+      "Obtain fluid intake and output chart (manually or electronically) and confirm with patient's identity",
       "Determine the types of fluid intake or output",
       "Observe amount of fluids given to patient",
       "Record the amount of oral and intravenous fluids prescribed at the intake column indicating the date and time",
       "Add together the values for oral and parenteral fluids",
       "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume OR if there is urine in a urine bag, empty content into the measuring jug and note the volume",
-      "Record other forms of output such as watery stools, vomitus at the output column indicating date, time and the amount",
+      "Record other forms of output such as watery stools and vomitus at the output column indicating date, time and the amount",
       "Record all measurements in milliliters",
       "Add together all the values obtained for outputs",
       "Total the intake and output at the end of every 24 hours",
@@ -1519,21 +1420,21 @@ export const rgnBatch03: Procedure[] = [
       "Perform hand hygiene",
       "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output",
       "Record findings in the appropriate recording software and observation chart",
-      "Dispose off used items and decontaminate trolley (manual or electronic)",
+      "Dispose off used items and decontaminate trolley",
     ],
     precautions: [
-      "Confirm patient identity before recording measurements",
-      "Use accurate measuring equipment and record measurements in milliliters",
-      "Record each intake and output with the correct date and time",
-      "Include relevant oral, intravenous, enteral and other prescribed fluid intake",
-      "Include relevant urine, vomitus, stool and other measurable output",
-      "Do not estimate fluid volumes when accurate measurement is possible",
-      "Check unusual or unexpected measurements before recording where appropriate",
-      "Escalate significant abnormalities or deterioration promptly",
-      "Maintain confidentiality of fluid balance records",
-      "Clean and decontaminate reusable equipment after use",
+      "Confirm the patient's identity before recording intake or output",
+      "Use appropriately calibrated or graduated measuring equipment",
+      "Record all measurements accurately in milliliters",
+      "Record the date and time of each measurement",
+      "Measure urine, vomitus, drainage and other measurable fluid losses accurately",
+      "Use standard precautions when handling body fluids",
+      "Avoid contamination and spills during measurement",
+      "Report abnormally low output, excessive losses or significant changes in fluid balance promptly",
+      "Follow the prescribed monitoring frequency and facility fluid-balance policy",
+      "Document totals accurately at the required interval and at the end of the 24-hour period",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=QUGwjC1ZxIA",
+    videoUrl: "https://www.youtube.com/watch?v=k3QNri_QCV8",
     quiz: rgn_029Quiz,
   },
 ];
