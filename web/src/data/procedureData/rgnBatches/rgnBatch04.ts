@@ -68,6 +68,61 @@ const rgn_030Quiz: ProcedureQuizQuestion[] = [
     "The education provided and the patient's response",
     "Documentation should include the education provided, the patient's response and relevant further teaching needs."
   ),
+  q(
+    "Which communication approach is most appropriate when teaching a patient with a language barrier?",
+    [
+      "Use a qualified interpreter and an appropriate communication method",
+      "Ask another patient to translate confidential information",
+      "Speak louder in the same language",
+      "Skip the education until discharge",
+    ],
+    "Use a qualified interpreter and an appropriate communication method",
+    "A qualified interpreter and suitable communication method help the patient receive accurate information while protecting confidentiality."
+  ),
+  q(
+    "When may a relative be included in condition-management education?",
+    [
+      "When appropriate and with the patient's permission",
+      "Whenever the relative arrives, without asking the patient",
+      "Only after the nurse has discussed confidential details publicly",
+      "Never, even when the patient requests support",
+    ],
+    "When appropriate and with the patient's permission",
+    "Relatives or significant others may support learning when the patient agrees and it is appropriate to the care situation."
+  ),
+  q(
+    "Which information should be included when explaining warning signs?",
+    [
+      "What to watch for and when to report it",
+      "A promise that complications cannot occur",
+      "Only the name of the condition",
+      "Instructions to wait until the next routine visit for every concern",
+    ],
+    "What to watch for and when to report it",
+    "Specific warning signs and clear reporting instructions help the patient recognize deterioration early."
+  ),
+  q(
+    "How should the nurse confirm that a patient can use a care device safely?",
+    [
+      "Demonstrate its use and ask the patient to show the technique back",
+      "Leave the device at the bedside without explanation",
+      "Ask a relative to use it without teaching the patient",
+      "Provide only the device manufacturer's name",
+    ],
+    "Demonstrate its use and ask the patient to show the technique back",
+    "Demonstration followed by return demonstration checks practical skill and identifies teaching needs."
+  ),
+  q(
+    "Why should the rationale for an investigation or treatment be explained?",
+    [
+      "It helps the patient understand the management plan and cooperate with care",
+      "It replaces the need to verify the patient's diagnosis",
+      "It allows the nurse to promise a specific outcome",
+      "It prevents the patient from asking questions",
+    ],
+    "It helps the patient understand the management plan and cooperate with care",
+    "Explaining why an investigation or treatment is needed supports informed participation and cooperation."
+  ),
 ];
 
 const rgn_031Quiz: ProcedureQuizQuestion[] = [
@@ -125,6 +180,61 @@ const rgn_031Quiz: ProcedureQuizQuestion[] = [
     ],
     "Report and escalate them promptly",
     "Abnormal or urgent findings should be communicated promptly to the appropriate healthcare professional."
+  ),
+  q(
+    "Why should the patient's identity be confirmed using appropriate identifiers during admission?",
+    [
+      "To ensure records, investigations and treatment belong to the correct patient",
+      "To decide which visitor may enter the ward",
+      "To replace the admission assessment",
+      "To avoid recording vital signs",
+    ],
+    "To ensure records, investigations and treatment belong to the correct patient",
+    "Correct identification prevents errors involving documentation, specimens, investigations and treatment."
+  ),
+  q(
+    "Why are vital signs recorded during admission?",
+    [
+      "To establish a baseline and identify immediate changes in condition",
+      "To determine the patient's insurance payment",
+      "To replace the patient's history",
+      "To decide where relatives should sit",
+    ],
+    "To establish a baseline and identify immediate changes in condition",
+    "Admission vital signs provide baseline information and may reveal a condition requiring prompt attention."
+  ),
+  q(
+    "What technique should be used for intravenous access or specimen collection during admission?",
+    [
+      "Aseptic technique",
+      "The same gloves for every patient",
+      "A dry cloth without hand hygiene",
+      "Unlabelled containers until the end of the shift",
+    ],
+    "Aseptic technique",
+    "Aseptic technique reduces contamination and infection risk during invasive procedures and specimen collection."
+  ),
+  q(
+    "Which orientation should be included after a patient is settled on the ward?",
+    [
+      "Ward routines, the call bell and relevant safety information",
+      "Only the location of the visitors' lounge",
+      "Instructions to walk around without assistance",
+      "A promise that the patient will not need monitoring",
+    ],
+    "Ward routines, the call bell and relevant safety information",
+    "Orientation helps the patient use the ward safely and know how to request assistance."
+  ),
+  q(
+    "What is essential when sending a specimen collected during admission?",
+    [
+      "Correct patient identification, labelling and prompt transport",
+      "Leaving the container open at the nurses' station",
+      "Sending it without a request form",
+      "Asking a visitor to choose the test",
+    ],
+    "Correct patient identification, labelling and prompt transport",
+    "Accurate identification, labelling and transport preserve specimen integrity and prevent patient-result errors."
   ),
 ];
 
@@ -184,6 +294,61 @@ const rgn_032Quiz: ProcedureQuizQuestion[] = [
     "Hand hygiene",
     "Hand hygiene should be performed after completing the procedure."
   ),
+  q(
+    "What should be done before bringing linen to the bedside for an unoccupied bed?",
+    [
+      "Perform hand hygiene and arrange the items in order of use",
+      "Shake all sheets over the bed",
+      "Place clean linen on the floor",
+      "Mix clean and soiled linen on the trolley",
+    ],
+    "Perform hand hygiene and arrange the items in order of use",
+    "Hand hygiene and orderly preparation reduce contamination and make the bed-making procedure safer."
+  ),
+  q(
+    "Why is the bottom sheet pulled tight and secured with mitered or envelope corners?",
+    [
+      "To keep the sheet secure and reduce creases during use",
+      "To make the mattress difficult to access",
+      "To prevent the patient from using the bed",
+      "To replace the need for a draw sheet",
+    ],
+    "To keep the sheet secure and reduce creases during use",
+    "A secure, smooth bottom sheet improves comfort and reduces movement and pressure from loose linen."
+  ),
+  q(
+    "How should pillows be placed on a simple unoccupied bed?",
+    [
+      "With the open ends of the pillowcases away from the entrance",
+      "With the open ends facing the entrance",
+      "Under the mattress without pillowcases",
+      "On the floor beside the bed",
+    ],
+    "With the open ends of the pillowcases away from the entrance",
+    "Positioning the open ends away from the entrance gives a neater and more protected bed arrangement."
+  ),
+  q(
+    "What should be checked before making an unoccupied bed?",
+    [
+      "That the bed is stable and its brakes are applied where applicable",
+      "That the wheels are free to roll",
+      "That the mattress is removed",
+      "That the trolley is left across the entrance",
+    ],
+    "That the bed is stable and its brakes are applied where applicable",
+    "A stable bed with brakes applied reduces movement and injury risk during bed making."
+  ),
+  q(
+    "How should used linen be handled after making the unoccupied bed?",
+    [
+      "Place it directly into the appropriate receptacle without shaking it",
+      "Shake it over the clean bed before disposal",
+      "Put it back on the clean-linen shelf",
+      "Leave it on the floor until the end of the shift",
+    ],
+    "Place it directly into the appropriate receptacle without shaking it",
+    "Used linen should be handled according to policy and without shaking, which can disperse microorganisms."
+  ),
 ];
 
 const rgn_033Quiz: ProcedureQuizQuestion[] = [
@@ -241,6 +406,61 @@ const rgn_033Quiz: ProcedureQuizQuestion[] = [
     ],
     "Stop the procedure and seek appropriate assistance",
     "Patient safety takes priority, and deterioration should be assessed and escalated."
+  ),
+  q(
+    "What should the nurse do before starting an occupied bed procedure?",
+    [
+      "Explain the procedure, obtain cooperation and provide privacy",
+      "Remove the patient's cover without explanation",
+      "Unlock the bed wheels",
+      "Place soiled linen on the bedside table",
+    ],
+    "Explain the procedure, obtain cooperation and provide privacy",
+    "Explanation, cooperation and privacy protect dignity and help the patient participate safely."
+  ),
+  q(
+    "Why should the bed brakes remain locked during occupied bed making?",
+    [
+      "To prevent the bed from moving while the patient is repositioned",
+      "To make turning the patient more difficult",
+      "To keep the trolley attached to the bed",
+      "To prevent linen from being changed",
+    ],
+    "To prevent the bed from moving while the patient is repositioned",
+    "Locked brakes provide a stable surface and reduce the risk of falls or staff injury."
+  ),
+  q(
+    "How should the patient be protected while the dirty bottom sheet is changed?",
+    [
+      "Keep the patient covered with the top sheet and expose only the working area",
+      "Leave the patient fully uncovered",
+      "Remove all pillows and covers before explaining the procedure",
+      "Ask the patient to stand on the bed",
+    ],
+    "Keep the patient covered with the top sheet and expose only the working area",
+    "Maintaining coverage protects warmth, privacy and dignity during an occupied bed change."
+  ),
+  q(
+    "What should be checked before and after turning the patient during occupied bed making?",
+    [
+      "Intravenous lines, drains, catheters and other attached devices",
+      "The ward meal schedule only",
+      "The visitor's identity only",
+      "The colour of the bed frame",
+    ],
+    "Intravenous lines, drains, catheters and other attached devices",
+    "Checking attached devices before and after movement helps prevent displacement, kinking or injury."
+  ),
+  q(
+    "How should soiled linen be handled during an occupied bed change?",
+    [
+      "Roll it inward, avoid shaking it and place it in the appropriate receptacle",
+      "Shake it beside the patient to remove dust",
+      "Place it on top of the clean linen",
+      "Carry it through the ward uncovered",
+    ],
+    "Roll it inward, avoid shaking it and place it in the appropriate receptacle",
+    "Rolling contaminated linen inward and using the correct receptacle limits environmental contamination."
   ),
 ];
 
@@ -300,6 +520,61 @@ const rgn_034Quiz: ProcedureQuizQuestion[] = [
     "That the bed is stable and ready for safe patient admission",
     "The bed should be safe, clean, stable and appropriately prepared before receiving the patient."
   ),
+  q(
+    "Why are the bedclothes folded on the side nearest the entrance of an admission bed?",
+    [
+      "To create an open pathway for easy and safe admission",
+      "To expose the mattress to dust",
+      "To prevent the patient from entering the bed",
+      "To store the trolley on the mattress",
+    ],
+    "To create an open pathway for easy and safe admission",
+    "Folding the bedclothes toward the entrance makes it easier to transfer or settle the patient safely."
+  ),
+  q(
+    "What is the purpose of the long mackintosh and bath blankets in an admission bed?",
+    [
+      "To protect the bed and provide warmth and comfort during admission",
+      "To replace the need for clean sheets",
+      "To restrain the patient in the bed",
+      "To cover the oxygen outlet",
+    ],
+    "To protect the bed and provide warmth and comfort during admission",
+    "The protective layer helps protect linen while the blankets provide warmth for the newly admitted patient."
+  ),
+  q(
+    "What should be done with oxygen and suction equipment prepared for an admission bed?",
+    [
+      "Check that it is accessible and ready when the patient's condition requires it",
+      "Hide it under the mattress",
+      "Connect it to the patient before assessment",
+      "Leave it in the storeroom",
+    ],
+    "Check that it is accessible and ready when the patient's condition requires it",
+    "Required emergency-support equipment should be accessible and functional without being used unnecessarily."
+  ),
+  q(
+    "Why must a hot water bottle be removed or checked carefully before admission?",
+    [
+      "To prevent burns and other heat-related injury",
+      "To keep the bedclothes folded",
+      "To make the mattress less firm",
+      "To prevent the patient from using the call bell",
+    ],
+    "To prevent burns and other heat-related injury",
+    "Hot water bottles can cause burns, so they require an indication, safety precautions and removal when appropriate."
+  ),
+  q(
+    "What should be kept clear when preparing an admission bed?",
+    [
+      "The pathway for transferring and settling the patient",
+      "The patient's access to the call bell",
+      "The area around the bed brakes",
+      "The surface used for clean equipment",
+    ],
+    "The pathway for transferring and settling the patient",
+    "A clear pathway supports safe transfer and reduces the risk of trips, collisions and delays."
+  ),
 ];
 
 const rgn_035Quiz: ProcedureQuizQuestion[] = [
@@ -357,6 +632,61 @@ const rgn_035Quiz: ProcedureQuizQuestion[] = [
     ],
     "To avoid restricting the patient's comfort and movement",
     "The cardiac bed should provide support without unnecessarily restricting the patient."
+  ),
+  q(
+    "What should the nurse assess while positioning a patient in a cardiac bed?",
+    [
+      "Breathing, comfort and tolerance of the upright position",
+      "The patient's preferred visiting hours",
+      "The colour of the counterpane",
+      "The number of chairs in the room",
+    ],
+    "Breathing, comfort and tolerance of the upright position",
+    "The upright position is intended to improve comfort, so the patient's response and respiratory status must be observed."
+  ),
+  q(
+    "Why must the elevated back rest and pillows be stable in a cardiac bed?",
+    [
+      "To support the patient safely and prevent slipping or collapse",
+      "To prevent the patient from breathing deeply",
+      "To keep the heart table away from the patient",
+      "To replace the need for a call bell",
+    ],
+    "To support the patient safely and prevent slipping or collapse",
+    "Stable support reduces falls and helps the patient maintain the therapeutic position comfortably."
+  ),
+  q(
+    "What is the purpose of the heart table with covered pillows in a cardiac bed?",
+    [
+      "To support the patient in the forward-leaning position when needed",
+      "To store soiled linen",
+      "To replace the back rest",
+      "To block access to the patient",
+    ],
+    "To support the patient in the forward-leaning position when needed",
+    "A supported forward-leaning position may help a patient with breathing difficulty feel more comfortable."
+  ),
+  q(
+    "Which items should be kept within reach in a cardiac bed?",
+    [
+      "The bell, sputum mug and writing materials",
+      "Cleaning chemicals and used linen",
+      "A hot water bottle and sharp instruments",
+      "The soiled-linen receptacle and trolley",
+    ],
+    "The bell, sputum mug and writing materials",
+    "These items support communication, comfort and safe management of secretions without unnecessary movement."
+  ),
+  q(
+    "What should the nurse do if the patient's dyspnoea worsens in the cardiac bed?",
+    [
+      "Reassess promptly and report or escalate the deterioration",
+      "Lower the back rest without checking the patient",
+      "Leave the patient alone to recover",
+      "Remove the call bell to reduce stimulation",
+    ],
+    "Reassess promptly and report or escalate the deterioration",
+    "Worsening dyspnoea may indicate deterioration and requires prompt assessment and appropriate escalation."
   ),
 ];
 
@@ -416,6 +746,61 @@ const rgn_036Quiz: ProcedureQuizQuestion[] = [
     "To identify bleeding or other abnormalities requiring attention",
     "Observation of the operative site helps identify bleeding and other post-operative concerns."
   ),
+  q(
+    "Why is the pillow left on the chair beside an operation bed before the patient arrives?",
+    [
+      "It allows the patient's airway and post-anaesthetic positioning to be assessed before support is added",
+      "It keeps the pillowcase away from clean linen",
+      "It prevents the bed from being made",
+      "It is used to store the post-anaesthetic tray",
+    ],
+    "It allows the patient's airway and post-anaesthetic positioning to be assessed before support is added",
+    "A patient returning from anaesthesia should be assessed and positioned safely before a pillow is placed as appropriate."
+  ),
+  q(
+    "What is the purpose of the protective dressing towel at the top of an operation bed?",
+    [
+      "To protect the bed from body discharges during immediate post-operative care",
+      "To cover the oxygen apparatus",
+      "To replace the observation chart",
+      "To keep the patient from seeing the bed",
+    ],
+    "To protect the bed from body discharges during immediate post-operative care",
+    "The protective towel helps protect the linen while the post-operative patient is being received and assessed."
+  ),
+  q(
+    "Why are the top bedclothes folded in three parts on the open side of an operation bed?",
+    [
+      "To allow the patient to be transferred into the bed quickly and safely",
+      "To expose the patient throughout recovery",
+      "To prevent access to the operative site",
+      "To store used linen beside the patient",
+    ],
+    "To allow the patient to be transferred into the bed quickly and safely",
+    "The folded arrangement makes transfer from theatre easier while keeping the bed ready for immediate care."
+  ),
+  q(
+    "Which bedside equipment should be accessible for a patient returning from theatre?",
+    [
+      "Drip stand, bed rails, vital-signs equipment, oxygen and suction as indicated",
+      "Only a meal tray and visitor chair",
+      "Only a wardrobe and writing desk",
+      "Only a clean pillow and counterpane",
+    ],
+    "Drip stand, bed rails, vital-signs equipment, oxygen and suction as indicated",
+    "Accessible equipment supports safe transfer, monitoring and immediate response to post-operative needs."
+  ),
+  q(
+    "What should be monitored and documented when the patient arrives on an operation bed?",
+    [
+      "Airway, breathing, vital signs, consciousness and operative-site observations",
+      "Only the patient's meal preference",
+      "Only the number of visitors",
+      "Only whether the counterpane is straight",
+    ],
+    "Airway, breathing, vital signs, consciousness and operative-site observations",
+    "Immediate post-operative observations help identify complications early and provide a clear baseline for ongoing care."
+  ),
 ];
 
 const rgn_037Quiz: ProcedureQuizQuestion[] = [
@@ -474,6 +859,61 @@ const rgn_037Quiz: ProcedureQuizQuestion[] = [
     "The prescribed setup and safe positioning of the patient",
     "Traction-related equipment must be applied and maintained according to the prescribed clinical plan and safety requirements."
   ),
+  q(
+    "Why are fracture boards placed under the mattress in a fracture bed?",
+    [
+      "To provide a firm base and prevent the mattress from sagging",
+      "To make the mattress softer and less stable",
+      "To allow the bed to roll during repositioning",
+      "To replace all prescribed traction equipment",
+    ],
+    "To provide a firm base and prevent the mattress from sagging",
+    "A firm base supports alignment and reduces sagging that could increase discomfort or strain."
+  ),
+  q(
+    "What is the purpose of a foot board or sand bags at the foot of a fracture bed?",
+    [
+      "To provide support and help maintain the prescribed position",
+      "To lift the patient's head above the mattress",
+      "To store the patient's valuables",
+      "To loosen the fracture bed linen",
+    ],
+    "To provide support and help maintain the prescribed position",
+    "Foot support can help maintain safe positioning when included in the patient's prescribed plan."
+  ),
+  q(
+    "Why may a small mackintosh and dressing towel be placed at the fracture site?",
+    [
+      "To protect the bed from drainage while keeping the area clean and observable",
+      "To apply traction without a prescription",
+      "To cover the patient's entire body",
+      "To replace the fracture board",
+    ],
+    "To protect the bed from drainage while keeping the area clean and observable",
+    "A local protective layer helps manage drainage and supports observation without replacing clinical treatment."
+  ),
+  q(
+    "Which findings should be monitored in a limb affected by a fracture?",
+    [
+      "Circulation, sensation, movement, pain, swelling and colour",
+      "Only the patient's meal intake",
+      "Only the room temperature",
+      "Only the number of visitors",
+    ],
+    "Circulation, sensation, movement, pain, swelling and colour",
+    "Neurovascular observations help identify compromised circulation or nerve function requiring prompt attention."
+  ),
+  q(
+    "What should the nurse do if a patient with a fracture bed develops increasing pain, swelling or numbness?",
+    [
+      "Report the findings promptly and follow the clinical escalation plan",
+      "Change the traction weights independently",
+      "Massage the injured area without an order",
+      "Ignore the findings until the next routine bed change",
+    ],
+    "Report the findings promptly and follow the clinical escalation plan",
+    "Increasing pain, swelling or numbness may indicate a complication and should be escalated without independently altering treatment."
+  ),
 ];
 
 const rgn_038Quiz: ProcedureQuizQuestion[] = [
@@ -531,6 +971,61 @@ const rgn_038Quiz: ProcedureQuizQuestion[] = [
     ],
     "Ensure the patient area is safe and perform hand hygiene",
     "The bed should be left safe and ready for use, followed by appropriate infection-prevention measures."
+  ),
+  q(
+    "Why is an extra mackintosh and dressing towel placed at the injured area of a divided bed?",
+    [
+      "To protect the bed from drainage while allowing the area to be observed",
+      "To cover the bed cradle completely",
+      "To prevent all inspection of the injury",
+      "To replace the clean bottom sheet",
+    ],
+    "To protect the bed from drainage while allowing the area to be observed",
+    "The extra protective layer helps manage drainage and keeps the observation area clean."
+  ),
+  q(
+    "Where should the bed cradle be positioned in a divided bed?",
+    [
+      "Over the middle portion so the bedclothes are lifted from the affected area",
+      "Under the mattress at the foot end",
+      "Beside the bed on the floor",
+      "Across the entrance to the room",
+    ],
+    "Over the middle portion so the bedclothes are lifted from the affected area",
+    "Correct positioning of the cradle creates the space needed to protect and observe the affected body part."
+  ),
+  q(
+    "Why should the two top-sheet sections overlap appropriately in a divided bed?",
+    [
+      "To maintain warmth and coverage while preserving the observation opening",
+      "To place the bedclothes directly on the wound",
+      "To prevent the nurse from seeing the affected area",
+      "To remove the need for a bed cradle",
+    ],
+    "To maintain warmth and coverage while preserving the observation opening",
+    "The overlap balances privacy and warmth with access to the area that requires regular observation."
+  ),
+  q(
+    "How large should the observation opening in a divided bed be?",
+    [
+      "Only as large as needed to observe the affected body part",
+      "Large enough to expose the entire patient",
+      "Too small to see the affected area",
+      "The same size for every patient",
+    ],
+    "Only as large as needed to observe the affected body part",
+    "A focused opening protects privacy and warmth while giving adequate access for assessment."
+  ),
+  q(
+    "What should the nurse do when a change is noted in the body part exposed by a divided bed?",
+    [
+      "Document and report the change promptly according to the care plan",
+      "Cover it permanently and make no record",
+      "Ask a visitor to assess it",
+      "Remove the bed cradle without assessment",
+    ],
+    "Document and report the change promptly according to the care plan",
+    "Prompt documentation and reporting support timely management of changes in the affected area."
   ),
 ];
 
