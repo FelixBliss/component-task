@@ -1319,7 +1319,7 @@ export const rgnBatch05: Procedure[] = [
       "Use aseptic non-touch technique and follow the facility's IV therapy, fluid balance and escalation policies.",
       "Monitor patients at increased risk of fluid overload more frequently as prescribed.",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=jtXvhgaV08M",
+    videoUrl: "https://www.youtube.com/watch?v=W8-WlfOtSo0",
     quiz: rgn_042Quiz,
   },
   {
@@ -1464,7 +1464,7 @@ export const rgnBatch05: Procedure[] = [
       "Follow local policy for flushing, line access, compatibility, infusion rates and disposal.",
       "Use an infusion pump when required for accurate delivery and monitor it according to policy.",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=b7WIr_JkgLQ",
+    videoUrl: "https://www.youtube.com/watch?v=n7mVbMRTi_E",
     quiz: rgn_044Quiz,
   },
   {
