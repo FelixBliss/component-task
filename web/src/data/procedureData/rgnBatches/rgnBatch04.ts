@@ -1,4 +1,538 @@
-import type { Procedure } from "../../procedureTypes";
+import type { Procedure, ProcedureQuizQuestion } from "../../procedureTypes";
+
+const q = (
+  question: string,
+  options: string[],
+  answer: string,
+  explanation: string
+): ProcedureQuizQuestion => ({
+  question,
+  options,
+  answer,
+  explanation,
+});
+
+const rgn_030Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What should the nurse confirm before educating a patient about a condition?",
+    [
+      "The patient's diagnosis and management plan",
+      "The patient's preferred visiting hours",
+      "The ward cleaning schedule",
+      "The patient's meal preference",
+    ],
+    "The patient's diagnosis and management plan",
+    "The diagnosis and current management plan should be confirmed before providing condition-specific education."
+  ),
+  q(
+    "Why should the nurse assess the patient's existing knowledge first?",
+    [
+      "To build teaching on what the patient already understands",
+      "To avoid answering patient questions",
+      "To determine the patient's insurance status",
+      "To reduce the need for documentation",
+    ],
+    "To build teaching on what the patient already understands",
+    "Assessing existing knowledge allows teaching to be individualized and appropriate to the patient's level of understanding."
+  ),
+  q(
+    "Which method can help the nurse confirm that the patient understood the education?",
+    [
+      "Teach-back or appropriate questioning",
+      "Asking the patient to remain silent",
+      "Giving information without discussion",
+      "Allowing relatives to answer every question",
+    ],
+    "Teach-back or appropriate questioning",
+    "Teach-back and appropriate questioning allow the nurse to assess whether the patient understands the information provided."
+  ),
+  q(
+    "What should the nurse do when a patient's question is outside the nurse's scope of practice?",
+    [
+      "Refer the question to the appropriate healthcare professional",
+      "Provide an unsupported answer",
+      "Ignore the question",
+      "Ask another patient for the answer",
+    ],
+    "Refer the question to the appropriate healthcare professional",
+    "Questions outside the nurse's scope should be referred to the appropriate healthcare professional."
+  ),
+  q(
+    "What should be documented after patient education?",
+    [
+      "The education provided and the patient's response",
+      "Only the nurse's name",
+      "Only the patient's meal",
+      "Only the visiting time",
+    ],
+    "The education provided and the patient's response",
+    "Documentation should include the education provided, the patient's response and relevant further teaching needs."
+  ),
+];
+
+const rgn_031Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What should be prioritized when receiving a patient for admission?",
+    [
+      "Assessment and management of urgent clinical conditions",
+      "Completing financial documentation first",
+      "Introducing the patient to every visitor",
+      "Changing the patient's clothing immediately",
+    ],
+    "Assessment and management of urgent clinical conditions",
+    "Emergency or deteriorating conditions must be assessed and managed before routine admission activities."
+  ),
+  q(
+    "Which assessment is included during admission?",
+    [
+      "General head-to-toe assessment",
+      "Visitor assessment only",
+      "Meal assessment only",
+      "Ward furniture assessment only",
+    ],
+    "General head-to-toe assessment",
+    "A general head-to-toe assessment helps establish the patient's condition and baseline findings."
+  ),
+  q(
+    "What should be checked before administering prescribed medication?",
+    [
+      "The patient's allergies and medication order",
+      "The visitor's occupation",
+      "The patient's locker contents",
+      "The ward cleaning schedule",
+    ],
+    "The patient's allergies and medication order",
+    "Medication administration requires appropriate verification, including the prescribed order and allergy status."
+  ),
+  q(
+    "Why should patient valuables be handled according to institutional protocol?",
+    [
+      "To protect the patient's property and provide proper documentation",
+      "To allow relatives to keep all valuables",
+      "To avoid documenting the admission",
+      "To reduce the need for patient identification",
+    ],
+    "To protect the patient's property and provide proper documentation",
+    "Institutional procedures help safeguard patient valuables and ensure appropriate documentation."
+  ),
+  q(
+    "What should the nurse do when abnormal findings are identified during admission?",
+    [
+      "Report and escalate them promptly",
+      "Ignore them until discharge",
+      "Document them only after one week",
+      "Ask another patient to monitor them",
+    ],
+    "Report and escalate them promptly",
+    "Abnormal or urgent findings should be communicated promptly to the appropriate healthcare professional."
+  ),
+];
+
+const rgn_032Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What is a simple unoccupied bed?",
+    [
+      "An empty bed prepared with clean linen for use by a patient",
+      "A bed occupied by a patient during linen change",
+      "A bed used only during surgery",
+      "A bed reserved only for fracture patients",
+    ],
+    "An empty bed prepared with clean linen for use by a patient",
+    "A simple unoccupied bed is prepared while the patient is not in the bed."
+  ),
+  q(
+    "Why should linen not be shaken during bed making?",
+    [
+      "It may disperse microorganisms into the environment",
+      "It makes the mattress heavier",
+      "It prevents the pillowcase from fitting",
+      "It changes the patient's diagnosis",
+    ],
+    "It may disperse microorganisms into the environment",
+    "Shaking linen can disperse microorganisms and should therefore be avoided."
+  ),
+  q(
+    "What should be done with clean and soiled linen?",
+    [
+      "Keep them separate",
+      "Place them together on the bed",
+      "Shake them together before disposal",
+      "Store them together on the trolley",
+    ],
+    "Keep them separate",
+    "Clean and soiled linen should be kept separate to reduce contamination."
+  ),
+  q(
+    "Why should wrinkles in bed linen be minimized?",
+    [
+      "To promote comfort and reduce pressure-related skin problems",
+      "To increase the weight of the bed",
+      "To make the bed difficult to enter",
+      "To prevent the nurse from documenting care",
+    ],
+    "To promote comfort and reduce pressure-related skin problems",
+    "Smooth linen promotes comfort and helps reduce unnecessary pressure and friction."
+  ),
+  q(
+    "What should be performed after completing bed making?",
+    [
+      "Hand hygiene",
+      "Medication administration to the patient",
+      "Removal of the mattress",
+      "Changing the patient's diagnosis",
+    ],
+    "Hand hygiene",
+    "Hand hygiene should be performed after completing the procedure."
+  ),
+];
+
+const rgn_033Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What distinguishes a simple occupied bed from an unoccupied bed?",
+    [
+      "The patient remains in bed during the procedure",
+      "The bed contains no linen",
+      "The procedure is performed only in theatre",
+      "The patient must leave the ward",
+    ],
+    "The patient remains in bed during the procedure",
+    "An occupied bed is made while the patient remains in bed."
+  ),
+  q(
+    "What should the nurse assess before turning a patient during occupied bed making?",
+    [
+      "The patient's mobility and clinical condition",
+      "The patient's favourite food",
+      "The visitor's occupation",
+      "The ward cleaning schedule",
+    ],
+    "The patient's mobility and clinical condition",
+    "The patient's condition and ability to move should be assessed before repositioning."
+  ),
+  q(
+    "Why should intravenous lines, drains and catheters be checked during repositioning?",
+    [
+      "To prevent displacement or injury",
+      "To increase the patient's appetite",
+      "To change the medication prescription",
+      "To determine the patient's insurance category",
+    ],
+    "To prevent displacement or injury",
+    "Attached devices can become displaced or damaged during repositioning if not monitored."
+  ),
+  q(
+    "What should be maintained throughout the procedure?",
+    [
+      "Patient privacy and dignity",
+      "Continuous exposure of the patient",
+      "Removal of all monitoring equipment",
+      "Silence without explanation",
+    ],
+    "Patient privacy and dignity",
+    "The patient should remain appropriately covered and treated with dignity throughout the procedure."
+  ),
+  q(
+    "What should the nurse do if the patient becomes unstable during bed making?",
+    [
+      "Stop the procedure and seek appropriate assistance",
+      "Continue quickly without reassessment",
+      "Leave the patient alone",
+      "Remove all equipment immediately",
+    ],
+    "Stop the procedure and seek appropriate assistance",
+    "Patient safety takes priority, and deterioration should be assessed and escalated."
+  ),
+];
+
+const rgn_034Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What is the main purpose of an admission bed?",
+    [
+      "To facilitate quick and safe admission of a patient",
+      "To provide traction for fractures",
+      "To support only cardiac patients",
+      "To prepare a patient for discharge",
+    ],
+    "To facilitate quick and safe admission of a patient",
+    "An admission bed is an open bed prepared to receive a patient promptly."
+  ),
+  q(
+    "Why is the side nearest the entrance left open?",
+    [
+      "To facilitate easy admission of the patient",
+      "To prevent the patient from entering",
+      "To remove all bed linen",
+      "To expose the mattress",
+    ],
+    "To facilitate easy admission of the patient",
+    "The open arrangement allows the patient to be received into the bed more easily."
+  ),
+  q(
+    "When should a hot water bottle be used?",
+    [
+      "Only when indicated and according to safety policy",
+      "For every patient without assessment",
+      "Only after the patient has been discharged",
+      "Whenever the nurse wants to warm the mattress",
+    ],
+    "Only when indicated and according to safety policy",
+    "Hot water bottles can cause burns and should only be used when indicated with appropriate precautions."
+  ),
+  q(
+    "Which equipment may be prepared with an admission bed according to patient needs?",
+    [
+      "Oxygen and suction equipment",
+      "Only a meal tray",
+      "Only a writing desk",
+      "Only a visitor chair",
+    ],
+    "Oxygen and suction equipment",
+    "Oxygen and suction equipment may be prepared according to the patient's anticipated clinical needs."
+  ),
+  q(
+    "What should be checked before an admission bed is used?",
+    [
+      "That the bed is stable and ready for safe patient admission",
+      "That all linen has been removed",
+      "That the mattress is wet",
+      "That the trolley remains on the bed",
+    ],
+    "That the bed is stable and ready for safe patient admission",
+    "The bed should be safe, clean, stable and appropriately prepared before receiving the patient."
+  ),
+];
+
+const rgn_035Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What is the main purpose of a cardiac bed?",
+    [
+      "To provide an upright position that can relieve breathing difficulty",
+      "To immobilize a fractured limb",
+      "To prepare a patient for discharge",
+      "To provide traction for the spine",
+    ],
+    "To provide an upright position that can relieve breathing difficulty",
+    "The cardiac bed is arranged to support an upright position and improve patient comfort during breathing difficulty."
+  ),
+  q(
+    "How should the back rest be positioned for a cardiac bed?",
+    [
+      "Elevated at the top end of the bed",
+      "Removed completely",
+      "Placed under the mattress",
+      "Placed at the foot of the bed",
+    ],
+    "Elevated at the top end of the bed",
+    "The back rest is elevated to help create the supportive upright position."
+  ),
+  q(
+    "Why is a heart table positioned within reach?",
+    [
+      "It provides support for the patient and allows essential items to be accessible",
+      "It replaces the mattress",
+      "It is used to store soiled linen",
+      "It prevents the patient from sitting upright",
+    ],
+    "It provides support for the patient and allows essential items to be accessible",
+    "The heart table can provide support and keep essential items within the patient's reach."
+  ),
+  q(
+    "Which item should be placed within reach of the patient?",
+    [
+      "Bell",
+      "Used linen",
+      "Cleaning chemicals",
+      "Dirty instruments",
+    ],
+    "Bell",
+    "The bell should be within reach so the patient can call for assistance."
+  ),
+  q(
+    "Why should the sides of the top clothing be tucked loosely?",
+    [
+      "To avoid restricting the patient's comfort and movement",
+      "To immobilize the patient completely",
+      "To make the bed impossible to enter",
+      "To remove the need for pillows",
+    ],
+    "To avoid restricting the patient's comfort and movement",
+    "The cardiac bed should provide support without unnecessarily restricting the patient."
+  ),
+];
+
+const rgn_036Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What is an operation bed prepared to receive?",
+    [
+      "A patient returning from theatre after surgery",
+      "Only a patient attending clinic",
+      "A patient coming for routine breakfast",
+      "A patient waiting for discharge",
+    ],
+    "A patient returning from theatre after surgery",
+    "An operation bed is prepared for a patient returning from theatre after an operation."
+  ),
+  q(
+    "Why is a post-anaesthetic tray prepared beside the operation bed?",
+    [
+      "To provide equipment needed for immediate post-operative care",
+      "To store clean bed linen",
+      "To prepare the patient's meals",
+      "To hold personal valuables",
+    ],
+    "To provide equipment needed for immediate post-operative care",
+    "A post-anaesthetic tray contains items that may be needed when receiving and caring for the post-operative patient."
+  ),
+  q(
+    "What should be done with hot water bottles before receiving the post-operative patient?",
+    [
+      "Remove them from the bed",
+      "Place them under the patient's head",
+      "Cover the patient with them",
+      "Leave them directly beneath the operative site",
+    ],
+    "Remove them from the bed",
+    "Hot water bottles should be removed before receiving the patient to prevent burns and other injury."
+  ),
+  q(
+    "Which equipment may be arranged at the bedside according to patient needs?",
+    [
+      "Oxygen and suction apparatus",
+      "Only a meal tray",
+      "Only a visitor chair",
+      "Only a wardrobe",
+    ],
+    "Oxygen and suction apparatus",
+    "Oxygen and suction equipment may be required for immediate post-operative care."
+  ),
+  q(
+    "Why should the patient's operative site be observed after arrival?",
+    [
+      "To identify bleeding or other abnormalities requiring attention",
+      "To determine the patient's insurance status",
+      "To decide the patient's meal preference",
+      "To remove all documentation",
+    ],
+    "To identify bleeding or other abnormalities requiring attention",
+    "Observation of the operative site helps identify bleeding and other post-operative concerns."
+  ),
+];
+
+const rgn_037Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What is the main feature of a fracture bed?",
+    [
+      "A firm support that helps maintain alignment and prevents sagging",
+      "A soft mattress designed to increase movement",
+      "A bed without any linen",
+      "A bed used only for ambulatory patients",
+    ],
+    "A firm support that helps maintain alignment and prevents sagging",
+    "A fracture bed provides firm support, including support under the mattress where required."
+  ),
+  q(
+    "Why are fracture boards placed under the mattress?",
+    [
+      "To provide firm support and prevent sagging",
+      "To make the mattress softer",
+      "To increase the patient's mobility",
+      "To remove the need for a draw sheet",
+    ],
+    "To provide firm support and prevent sagging",
+    "Fracture boards provide a firm base and reduce mattress sagging."
+  ),
+  q(
+    "What may be used at the foot end of a fracture bed?",
+    [
+      "A foot board or sand bags",
+      "A suction catheter",
+      "A meal tray",
+      "A medication cupboard",
+    ],
+    "A foot board or sand bags",
+    "A foot board or sand bags may be positioned at the foot end to provide appropriate support."
+  ),
+  q(
+    "Why should linen be kept free from unnecessary wrinkles?",
+    [
+      "To promote comfort and reduce pressure on vulnerable areas",
+      "To make the bed more difficult to use",
+      "To prevent documentation",
+      "To increase the patient's pain",
+    ],
+    "To promote comfort and reduce pressure on vulnerable areas",
+    "Smooth linen promotes comfort and helps reduce unnecessary pressure and friction."
+  ),
+  q(
+    "What should the nurse consider when attaching traction-related accessories?",
+    [
+      "The prescribed setup and safe positioning of the patient",
+      "The patient's meal preference",
+      "The visitor's schedule",
+      "The colour of the ward walls",
+    ],
+    "The prescribed setup and safe positioning of the patient",
+    "Traction-related equipment must be applied and maintained according to the prescribed clinical plan and safety requirements."
+  ),
+];
+
+const rgn_038Quiz: ProcedureQuizQuestion[] = [
+  q(
+    "What is the purpose of a divided bed?",
+    [
+      "To allow observation of a body part without disturbing the patient",
+      "To prevent all patient movement",
+      "To prepare a patient for discharge",
+      "To replace the patient's mattress",
+    ],
+    "To allow observation of a body part without disturbing the patient",
+    "The divided bed creates an opening that allows observation of a selected body part."
+  ),
+  q(
+    "What device is used to create the visual window in a divided bed?",
+    [
+      "Bed cradle",
+      "Drip stand",
+      "Suction machine",
+      "Foot board",
+    ],
+    "Bed cradle",
+    "The bed cradle supports the divided top linen and creates the opening over the affected area."
+  ),
+  q(
+    "Which patients may particularly benefit from a divided bed?",
+    [
+      "Patients with burns or amputations requiring regular observation",
+      "Only patients preparing for discharge",
+      "Only ambulatory patients",
+      "Patients requiring routine meal service",
+    ],
+    "Patients with burns or amputations requiring regular observation",
+    "The divided bed can help protect injured areas from the weight of bedclothes while allowing observation."
+  ),
+  q(
+    "Why should the two sections of the top bed clothing overlap?",
+    [
+      "To maintain appropriate coverage while allowing the required opening",
+      "To expose the entire patient",
+      "To remove the need for a bed cradle",
+      "To prevent all observation",
+    ],
+    "To maintain appropriate coverage while allowing the required opening",
+    "The sections are arranged to maintain coverage while creating the intended observation window."
+  ),
+  q(
+    "What should be done after completing the divided bed?",
+    [
+      "Ensure the patient area is safe and perform hand hygiene",
+      "Leave the trolley beside the patient",
+      "Remove all bed linen",
+      "Leave used equipment on the bed",
+    ],
+    "Ensure the patient area is safe and perform hand hygiene",
+    "The bed should be left safe and ready for use, followed by appropriate infection-prevention measures."
+  ),
+];
 
 export const rgnBatch04: Procedure[] = [
   {
@@ -6,14 +540,14 @@ export const rgnBatch04: Procedure[] = [
     title: "EDUCATION ON CONDITION AND ITS MANAGEMENT",
     category: "General Nursing (RGN)",
     overview:
-      "This is an ongoing interaction between the patient and the nurse, through which the patient’s condition and its management are discussed in detail using clear and simple language. This procedure is essential in the healthcare process because it provides the patient with an opportunity to understand the condition, treatment, self-care and expected outcomes.",
+      "This is an ongoing interaction between the patient and the nurse through which the patient's condition and its management are discussed in detail using clear and simple language. It provides the patient with the opportunity to understand the condition, treatment, self-care and expected outcomes.",
     purpose: [
       "Provide the patient with adequate information about his/her condition",
       "Enhance the patient's knowledge of the condition",
       "Promote appropriate attitudinal or behavioural change",
       "Equip the patient with skills for caring for his/her condition",
       "Promote adherence to the agreed treatment and follow-up plan",
-      "Promote early recognition and reporting of warning signs"
+      "Promote early recognition and reporting of warning signs",
     ],
     indications: [
       "New diagnosis or newly identified health condition",
@@ -21,17 +555,17 @@ export const rgnBatch04: Procedure[] = [
       "Change in the patient's condition or management plan",
       "Before discharge when the patient requires self-care education",
       "When the patient or caregiver requires clarification about the condition or its management",
-      "When the patient requires teaching on the use of a care device or treatment technique"
+      "When the patient requires teaching on the use of a care device or treatment technique",
     ],
     equipment: [
-      "Patient’s folder (Manual or electronic)",
+      "Patient's folder (Manual or electronic)",
       "Treatment sheet (Manual or electronic)",
       "Chair",
       "Care devices/gadgets (if any)",
-      "Pamphlets/source of readable information"
+      "Pamphlets/source of readable information",
     ],
     steps: [
-      "Confirm patient's diagnosis and relevant management plan against the patient’s record",
+      "Confirm patient's diagnosis and relevant management plan against the patient's record",
       "Establish rapport with the patient",
       "Explain the purpose and need for the education",
       "Involve relatives or significant others when appropriate and with the patient's permission",
@@ -51,7 +585,7 @@ export const rgnBatch04: Procedure[] = [
       "Provide clear and simple written information where appropriate",
       "Thank the patient and relatives for their cooperation",
       "Document the education provided, patient's response and any further teaching required",
-      "Report relevant concerns to the appropriate officer"
+      "Report relevant concerns to the appropriate officer",
     ],
     precautions: [
       "Verify the diagnosis and current management plan before providing education",
@@ -63,9 +597,10 @@ export const rgnBatch04: Procedure[] = [
       "Use a qualified interpreter when required",
       "Confirm patient understanding before concluding the teaching session",
       "Do not disclose confidential information to relatives or significant others without appropriate permission or legal basis",
-      "Refer questions outside the nurse's scope to the appropriate healthcare professional"
+      "Refer questions outside the nurse's scope to the appropriate healthcare professional",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=Lh0vnRTA6OI"
+    videoUrl: "https://www.youtube.com/watch?v=Lh0vnRTA6OI",
+    quiz: rgn_030Quiz,
   },
 
   {
@@ -73,20 +608,20 @@ export const rgnBatch04: Procedure[] = [
     title: "ADMISSION OF A PATIENT",
     category: "General Nursing (RGN)",
     overview:
-      "Admission is the process of receiving and settling a patient/client into a health facility for observation, investigation, treatment, nursing care or bed rest. Admission may be planned or unplanned and may occur through the outpatient department, emergency unit, theatre or another clinical unit.",
+      "Admission is the process of receiving and settling a patient/client into a health facility for observation, investigation, treatment, nursing care or bed rest. Admission may be planned or unplanned.",
     purpose: [
       "Allow the patient to stay in the hospital for observation, investigation and treatment",
       "Provide appropriate nursing care and monitoring",
       "Establish baseline assessment findings",
       "Ensure continuity and coordination of care",
-      "Provide orientation and promote patient safety"
+      "Provide orientation and promote patient safety",
     ],
     indications: [
       "Planned admission for investigation or treatment",
       "Unplanned or emergency admission requiring immediate care",
       "Admission following transfer from another clinical area",
       "Admission for observation and monitoring",
-      "Admission for surgical or other specialized treatment"
+      "Admission for surgical or other specialized treatment",
     ],
     equipment: [
       "Admission bed and its accessories according to patient condition",
@@ -95,7 +630,7 @@ export const rgnBatch04: Procedure[] = [
       "Oxygen apparatus",
       "Treatment or emergency tray",
       "Suction apparatus",
-      "Admission and Discharge documents (Manual or Electronic)"
+      "Admission and Discharge documents (Manual or Electronic)",
     ],
     steps: [
       "Welcome patient and relatives to the nurses' station",
@@ -120,23 +655,24 @@ export const rgnBatch04: Procedure[] = [
       "Process insurance requirements where applicable",
       "For cash-paying patients, follow the institution's approved payment/deposit process",
       "Orient the patient to the ward environment and routines",
-      "Document the admission assessment, care provided and relevant findings"
+      "Document the admission assessment, care provided and relevant findings",
     ],
     precautions: [
-      "Confirm patient identity using appropriate identifiers before treatment or documentation",
+      "Confirm patient identity using appropriate identifiers",
       "Assess and prioritize emergency conditions before routine admission procedures",
       "Maintain patient privacy, dignity and confidentiality",
       "Perform hand hygiene and use appropriate infection-prevention precautions",
       "Check vital signs and report abnormal findings promptly",
-      "Ensure oxygen, suction and emergency equipment are available for patients who may require them",
+      "Ensure oxygen, suction and emergency equipment are available when required",
       "Check allergies before administering medications",
       "Administer medications only as prescribed and according to facility policy",
       "Use aseptic technique for intravenous access and specimen collection",
-      "Handle patient valuables according to institutional policy and document appropriately",
-      "Ensure specimens are correctly identified and transported according to policy",
-      "Escalate deterioration or urgent clinical findings immediately"
+      "Handle patient valuables according to institutional policy",
+      "Ensure specimens are correctly identified and transported",
+      "Escalate deterioration or urgent clinical findings immediately",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=s-LBEmMBUvU"
+    videoUrl: "https://www.youtube.com/watch?v=s-LBEmMBUvU",
+    quiz: rgn_031Quiz,
   },
 
   {
@@ -149,13 +685,13 @@ export const rgnBatch04: Procedure[] = [
       "Facilitate quick admission",
       "Provide a clean and comfortable sleeping surface",
       "Maintain cleanliness and readiness of the patient unit",
-      "Promote patient safety and comfort"
+      "Promote patient safety and comfort",
     ],
     indications: [
       "Preparation of a bed before admission of a patient",
       "Preparation of an empty bed after discharge",
       "Routine replacement of bed linen when the bed is unoccupied",
-      "Preparation of a bed for an ambulant patient who is not currently in bed"
+      "Preparation of a bed for an ambulant patient who is not currently in bed",
     ],
     equipment: [
       "A trolley with the following items:",
@@ -164,7 +700,7 @@ export const rgnBatch04: Procedure[] = [
       "One draw sheet",
       "Pillow slips",
       "One top sheet",
-      "Counterpane if necessary"
+      "Counterpane if necessary",
     ],
     steps: [
       "Perform hand hygiene",
@@ -186,7 +722,7 @@ export const rgnBatch04: Procedure[] = [
       "Tuck in the sides under the mattress to prevent creases",
       "Ensure the bed is safe, clean and ready for use",
       "Remove the trolley and chair/heart table",
-      "Perform hand hygiene"
+      "Perform hand hygiene",
     ],
     precautions: [
       "Perform hand hygiene before and after bed making",
@@ -197,9 +733,10 @@ export const rgnBatch04: Procedure[] = [
       "Ensure the bed is stable and brakes are applied where applicable",
       "Keep the working area free from hazards",
       "Ensure there are no unnecessary wrinkles that may cause discomfort or pressure injury",
-      "Follow facility policy for handling and disposal of soiled linen"
+      "Follow facility policy for handling and disposal of soiled linen",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=K0c9fSd46JA"
+    videoUrl: "https://www.youtube.com/watch?v=K0c9fSd46JA",
+    quiz: rgn_032Quiz,
   },
 
   {
@@ -212,13 +749,13 @@ export const rgnBatch04: Procedure[] = [
       "Conserve the patient's energy",
       "Ensure patient comfort and safety",
       "Maintain cleanliness of the patient's bed",
-      "Reduce risk associated with prolonged exposure to soiled or wrinkled linen"
+      "Reduce risk associated with prolonged exposure to soiled or wrinkled linen",
     ],
     indications: [
       "Changing the bottom sheet while the patient remains in bed",
       "Changing bed linen for a patient who cannot safely get out of bed",
       "Changing the bottom sheet from side to side",
-      "Changing bed linen from top to bottom when clinically appropriate"
+      "Changing bed linen from top to bottom when clinically appropriate",
     ],
     equipment: [
       "A trolley with the following items:",
@@ -227,7 +764,7 @@ export const rgnBatch04: Procedure[] = [
       "One draw sheet",
       "Pillow slips",
       "One top sheet",
-      "Counterpane if necessary"
+      "Counterpane if necessary",
     ],
     steps: [
       "Establish rapport",
@@ -254,23 +791,24 @@ export const rgnBatch04: Procedure[] = [
       "Make the patient comfortable and ensure required items are within reach",
       "Clear equipment and remove the screen",
       "Perform hand hygiene",
-      "Document relevant findings and report abnormalities"
+      "Document relevant findings and report abnormalities",
     ],
     precautions: [
-      "Maintain patient privacy and dignity throughout the procedure",
+      "Maintain patient privacy and dignity",
       "Assess the patient's mobility and condition before repositioning",
-      "Use adequate assistance when turning or repositioning the patient",
-      "Use safe body mechanics to prevent injury to the patient and nurse",
+      "Use adequate assistance when turning or repositioning",
+      "Use safe body mechanics",
       "Maintain patient coverage to prevent unnecessary exposure",
       "Keep bed brakes locked during the procedure",
       "Use gloves when contact with body fluids or contaminated linen is anticipated",
       "Do not shake dirty linen",
       "Keep clean linen separate from soiled linen",
       "Check intravenous lines, drains, catheters and other devices before and after repositioning",
-      "Avoid wrinkles in the linen that could contribute to discomfort or pressure injury",
-      "Stop and seek assistance if the patient becomes unstable or distressed"
+      "Avoid wrinkles in linen",
+      "Stop and seek assistance if the patient becomes unstable or distressed",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=AN9pvC499P4"
+    videoUrl: "https://www.youtube.com/watch?v=AN9pvC499P4",
+    quiz: rgn_033Quiz,
   },
 
   {
@@ -283,13 +821,13 @@ export const rgnBatch04: Procedure[] = [
       "Ensure quick and immediate admission",
       "Provide warmth and comfort",
       "Facilitate safe positioning of the newly admitted patient",
-      "Prepare the bed for patients arriving from another clinical area"
+      "Prepare the bed for patients arriving from another clinical area",
     ],
     indications: [
       "New patient admission",
       "Patient returning from another clinical area when an admission bed is required",
       "Emergency admission requiring immediate placement in bed",
-      "Preparation of a bed before an expected admission"
+      "Preparation of a bed before an expected admission",
     ],
     equipment: [
       "General bed-making requirements",
@@ -300,7 +838,7 @@ export const rgnBatch04: Procedure[] = [
       "Oxygen apparatus",
       "Suction machine",
       "Medication tray",
-      "Hot water bottle if necessary"
+      "Hot water bottle if necessary",
     ],
     steps: [
       "Perform hand hygiene",
@@ -324,20 +862,20 @@ export const rgnBatch04: Procedure[] = [
       "Place required bed accessories appropriately",
       "Ensure oxygen and suction equipment are ready when indicated",
       "Perform hand hygiene",
-      "Remove the trolley and chairs"
+      "Remove the trolley and chairs",
     ],
     precautions: [
       "Ensure the bed is stable and brakes are applied",
-      "Maintain clean technique and appropriate infection-prevention precautions",
+      "Maintain clean technique and infection-prevention precautions",
       "Avoid wrinkles in the linen",
-      "Do not use a hot water bottle if contraindicated or where it may cause burns",
-      "Check hot water bottle integrity and temperature before use",
-      "Ensure oxygen and suction equipment are functioning when required",
-      "Keep the admission side of the bed clear",
-      "Avoid unnecessary clutter around the bed",
-      "Ensure emergency equipment is accessible for emergency admissions"
+      "Avoid unnecessary exposure of the patient",
+      "Use hot water bottles only when indicated and monitor for burn risk",
+      "Ensure oxygen and suction equipment are safe and functional when required",
+      "Keep the admission pathway clear",
+      "Ensure required emergency equipment is accessible",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=A-gC3C7uf_s"
+    videoUrl: "https://www.youtube.com/watch?v=A-gC3C7uf_s",
+    quiz: rgn_034Quiz,
   },
 
   {
@@ -345,19 +883,18 @@ export const rgnBatch04: Procedure[] = [
     title: "CARDIAC BED",
     category: "General Nursing (RGN)",
     overview:
-      "A cardiac bed is a specially arranged bed that positions the patient in an upright or semi-upright posture to promote comfort and facilitate breathing, particularly in patients with cardiac or respiratory problems.",
+      "A cardiac bed is a specialized bed arranged in an upright position to provide comfort and relief for a patient experiencing breathing difficulty.",
     purpose: [
-      "Promote comfort in patients with breathing difficulty",
-      "Facilitate a semi-Fowler's or Fowler's position",
-      "Reduce discomfort associated with lying flat",
-      "Provide support for patients with cardiac or respiratory conditions"
+      "Prevent unnecessary pressure on the heart and abdominal organs",
+      "Relieve dyspnoea",
+      "Promote comfort",
+      "Provide support in an upright position",
     ],
     indications: [
-      "Dyspnoea or difficulty breathing",
-      "Heart failure or other cardiac conditions requiring an upright position",
-      "Respiratory conditions requiring head and chest elevation",
-      "Patients who are more comfortable in a supported upright position",
-      "Post-procedure or post-operative patients requiring an elevated position when prescribed"
+      "Patients experiencing dyspnoea",
+      "Patients requiring an upright or semi-upright position",
+      "Patients with cardiac conditions requiring supportive positioning",
+      "Patients who obtain improved comfort when sitting upright",
     ],
     equipment: [
       "A trolley with the following items:",
@@ -367,47 +904,41 @@ export const rgnBatch04: Procedure[] = [
       "Pillow slips",
       "One top sheet",
       "Counterpane if necessary",
-      "Back rest or adjustable bed",
-      "Heart table",
-      "Sputum mug where required",
-      "Call bell",
-      "Foot support or sandbags where appropriate"
     ],
     steps: [
       "Perform hand hygiene",
       "Collect and arrange items on the trolley and send them to the bedside",
-      "Arrange items in order of use",
+      "Arrange items in order of use on a chair or heart table",
       "Place the bottom sheet evenly on the bed",
-      "Pull the sheet tight and remove creases",
-      "Tuck the sheet evenly using mitered or envelope corners",
-      "Place bed mat or draw mackintosh at the appropriate portion of the bed",
-      "Cover the mackintosh with the draw sheet and tuck in",
-      "Place covered air rings or pressure-relieving devices where indicated",
-      "Put clean pillowcases on pillows",
-      "Elevate or position the back rest appropriately",
-      "Arrange pillows to provide support in an armchair-like position",
-      "Place the top sheet over the patient area appropriately",
-      "Place foot rest or sandbags where indicated",
-      "Tuck side clothing loosely to allow comfortable movement",
-      "Place the heart table within comfortable reach",
-      "Place sputum mug and call bell within reach where required",
-      "Place writing materials or other necessary items within reach",
-      "Ensure the patient is positioned comfortably and safely",
-      "Clear the trolley and other equipment",
-      "Perform hand hygiene"
+      "Pull the sheet tight so that there are no creases",
+      "Tuck the sheet evenly under the mattress at the top and bottom using envelope or mitered corners",
+      "Place bed mat or draw mackintosh at the middle portion of the bed",
+      "Cover mackintosh with draw sheet and tuck in at the sides",
+      "Place covered air rings between the mackintosh and draw sheet where indicated",
+      "Put clean pillowcases on the pillows",
+      "Place or elevate the back rest at the top end of the bed",
+      "Arrange pillows in an armchair-like fashion",
+      "Place top sheet on bed with the wrong side uppermost and fold the sheet over at the bottom",
+      "Place foot rest or sand bags in position",
+      "Tuck the sides of the top clothing loosely",
+      "Place the heart table with covered pillows in position",
+      "Place sputum mug and bell within reach of the patient",
+      "Place writing materials within reach of the patient",
+      "Clear chairs and trolley",
+      "Perform hand hygiene",
     ],
     precautions: [
-      "Assess the patient's respiratory and cardiovascular status before and after positioning",
-      "Avoid positioning that worsens breathing or causes cardiovascular compromise",
-      "Use adequate support to prevent sliding or falls",
-      "Ensure the bed is stable and brakes are applied",
-      "Keep the call bell and essential items within reach",
-      "Monitor patients who are acutely breathless or unstable closely",
-      "Use pressure-relieving measures where indicated",
-      "Avoid excessive flexion of hips or knees when it compromises breathing or circulation",
-      "Escalate worsening dyspnoea, cyanosis, chest pain or deterioration immediately"
+      "Assess the patient's breathing and tolerance of the position",
+      "Avoid positioning that worsens respiratory distress",
+      "Ensure the patient is adequately supported with pillows",
+      "Keep the bell and essential items within reach",
+      "Ensure the bed and back rest are stable",
+      "Avoid excessive pressure from pillows or support devices",
+      "Maintain patient privacy and comfort",
+      "Report worsening dyspnoea or deterioration promptly",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=AdkoFiFrz7o"
+    videoUrl: "https://www.youtube.com/watch?v=AdkoFiFrz7o",
+    quiz: rgn_035Quiz,
   },
 
   {
@@ -415,17 +946,18 @@ export const rgnBatch04: Procedure[] = [
     title: "OPERATION BED",
     category: "General Nursing (RGN)",
     overview:
-      "An operation bed is a special bed prepared to receive a patient returning from theatre after a surgical procedure. It is arranged to facilitate safe transfer, monitoring and immediate postoperative care.",
+      "It is a special bed prepared to receive a patient returning from theatre after a surgical procedure has been performed.",
     purpose: [
-      "Facilitate safe transfer of a patient from theatre",
+      "Facilitate quick and safe reception of the patient from theatre",
+      "Protect linen from body discharges",
       "Provide warmth and comfort",
-      "Protect bed linen from body fluids",
-      "Ensure essential equipment is available for immediate postoperative care"
+      "Ensure equipment required for immediate post-operative care is available",
     ],
     indications: [
       "Patient returning from theatre after surgery",
-      "Patient returning after a procedure requiring anaesthesia",
-      "Patient requiring immediate postoperative monitoring and nursing care"
+      "Patient requiring immediate post-operative nursing care",
+      "Patient returning after general or regional anaesthesia",
+      "Patients requiring close observation after an operative procedure",
     ],
     equipment: [
       "A trolley with the following items:",
@@ -435,48 +967,47 @@ export const rgnBatch04: Procedure[] = [
       "Pillow slips",
       "One top sheet",
       "Counterpane if necessary",
-      "Post-anaesthetic tray",
-      "Drip stand",
-      "Bed rails",
+      "Hot water bottles",
       "Vital signs tray",
       "Medication tray",
+      "Post-anaesthetic tray",
+      "Observation chart",
+      "Drip stand",
+      "Oxygen apparatus",
       "Suction machine",
-      "Oxygen apparatus"
     ],
     steps: [
       "Perform hand hygiene",
-      "Collect and arrange required items",
-      "Arrange items in order of use",
+      "Collect and arrange items on the trolley and send them to the bedside",
+      "Arrange items in order of use on a chair or heart table",
       "Place the bottom sheet evenly on the bed",
-      "Pull the sheet tight and remove creases",
-      "Tuck the sheet using mitered or envelope corners",
-      "Place the bed mat or draw mackintosh at the appropriate portion of the bed",
-      "Cover the mackintosh with the draw sheet",
-      "Place a protective dressing towel at the head area where appropriate",
-      "Keep the pillow safely aside until the patient is assessed and positioned",
-      "Prepare warming measures according to the patient's condition",
-      "Spread the blanket appropriately",
-      "Place the top sheet with the wrong side uppermost",
-      "Fold the top bedclothes at the open side to facilitate safe transfer",
-      "Place the post-anaesthetic tray at the bedside",
-      "Arrange drip stand, bed rails, vital signs tray, medication tray, suction and oxygen equipment",
-      "Ensure the bed is at an appropriate height for safe transfer",
-      "Ensure suction and oxygen are functional when required",
-      "Perform hand hygiene"
+      "Pull the sheet tight so that there are no creases",
+      "Tuck the sheet evenly under the mattress at the top and bottom using envelope or mitered corners",
+      "Place bed mat or draw mackintosh at the middle portion of the bed",
+      "Cover the mackintosh with the draw sheet and tuck in at the sides",
+      "Place protective dressing towel at the top of the bed towards the sides",
+      "Leave pillow on the chair by the bed",
+      "Place hot water bottles on the bed before the patient's arrival when required",
+      "Spread blanket on the bed",
+      "Place top sheet with the wrong side uppermost and turn back the bottom end",
+      "Fold the top bed clothes at the open side in three parts over the bed for easy admission",
+      "Place a post-anaesthetic tray by the bedside",
+      "Arrange other bed accessories by the bedside including drip stand, bed rails, vital signs tray, medication tray, suction machine and oxygen apparatus",
+      "Remove hot water bottles before receiving the patient",
+      "Perform hand hygiene",
     ],
     precautions: [
+      "Remove hot water bottles before receiving the patient",
+      "Ensure oxygen and suction equipment are available when indicated",
+      "Ensure bed rails are available and used according to patient condition",
+      "Maintain warmth without causing overheating",
+      "Keep emergency and post-anaesthetic equipment accessible",
       "Ensure the bed is stable and brakes are applied",
-      "Ensure oxygen and suction are functional before receiving the patient when indicated",
-      "Maintain adequate warmth without causing overheating",
-      "Use bed rails according to the patient's condition and facility policy",
-      "Ensure safe transfer from trolley to bed using adequate staff assistance",
-      "Assess airway, breathing, circulation and level of consciousness immediately after receiving the patient",
-      "Check intravenous lines, drains, catheters and wound dressings after transfer",
-      "Avoid giving oral fluids until the patient is appropriately assessed and cleared",
-      "Keep emergency equipment accessible",
-      "Report deterioration, excessive bleeding, respiratory compromise or altered consciousness promptly"
+      "Maintain privacy and dignity",
+      "Observe the patient closely on arrival and report abnormalities promptly",
     ],
-    videoUrl: "https://www.youtube.com/watch?v=jtXvhgaV08M"
+    videoUrl: "https://www.youtube.com/watch?v=jtXvhgaV08M",
+    quiz: rgn_036Quiz,
   },
 
   {
@@ -484,18 +1015,19 @@ export const rgnBatch04: Procedure[] = [
     title: "FRACTURE BED",
     category: "General Nursing (RGN)",
     overview:
-      "A fracture bed is a specially prepared bed with a firm base or support for nursing a patient with a fracture. It may incorporate an overhead frame, traction apparatus and trapeze to support positioning, movement and prescribed traction.",
+      "This is a special bed with a firm base or support for nursing patients with fractures. The bed may have an overhead frame for traction apparatus and trapeze to aid lifting, exercise and movement.",
     purpose: [
-      "Provide firm support for the patient and affected body part",
-      "Assist prescribed fracture alignment and healing",
-      "Prevent unnecessary movement and further injury",
-      "Minimize pain and promote comfort"
+      "Help maintain appropriate alignment of the fracture and support healing",
+      "Prevent further injury",
+      "Minimize pain",
+      "Provide firm support for the patient",
+      "Facilitate safe positioning and movement",
     ],
     indications: [
-      "Patients with fractures requiring firm bed support",
-      "Patients receiving prescribed skeletal or skin traction",
-      "Patients requiring immobilization after orthopaedic procedures",
-      "Patients requiring an overhead frame or trapeze for prescribed movement or exercise"
+      "Patients with fractures requiring bed-based nursing care",
+      "Patients requiring firm mattress support",
+      "Patients receiving prescribed traction",
+      "Patients requiring assistance with positioning or movement after fracture",
     ],
     equipment: [
       "A trolley with the following items:",
@@ -506,44 +1038,46 @@ export const rgnBatch04: Procedure[] = [
       "One top sheet",
       "Counterpane if necessary",
       "Fracture boards",
-      "Foot board or sandbags where prescribed",
-      "Traction equipment where prescribed",
-      "Overhead frame and trapeze where required"
+      "Foot board or sand bags",
+      "Traction or trapeze accessories if prescribed",
     ],
     steps: [
       "Perform hand hygiene",
-      "Collect and arrange items on the trolley",
-      "Arrange items in order of use",
+      "Collect and arrange items on the trolley and send them to the bedside",
+      "Arrange items in order of use on chairs or heart table",
       "Place fracture boards under the mattress to provide firm support and prevent sagging",
-      "Place the bottom sheet evenly on the bed",
-      "Pull the sheet tight and remove creases",
-      "Tuck the bottom sheet using mitered or envelope corners",
-      "Place the bed mat or draw mackintosh at the appropriate portion",
-      "Cover the mackintosh with the draw sheet",
-      "Place a small mackintosh and dressing towel at the site of the fracture where required",
+      "Place bottom sheet evenly on the bed",
+      "Pull sheet tight so that there are no creases",
+      "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or envelope corners",
+      "Pull and tuck sheet at the sides to prevent creases",
+      "Place bed mat or draw mackintosh at the middle portion of the bed",
+      "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
+      "Place small mackintosh and dressing towel at the area where the fracture is located",
       "Put clean pillowcases on the pillows",
-      "Place pillows appropriately",
-      "Place the top sheet over the bed",
-      "Place bed cover or counterpane loosely if required",
-      "Place the foot board or sandbags at the foot end when prescribed",
-      "Tuck sheets loosely at the sides where appropriate",
-      "Attach prescribed bed accessories and traction equipment",
-      "Ensure traction equipment is correctly aligned and unobstructed",
+      "Place pillows on the bed with open ends away from the entrance",
+      "Place top sheet on the bed with the wrong side uppermost",
+      "Fold over at the bottom and tuck in loosely",
+      "Place bed cover and counterpane loosely over the bed if necessary",
+      "Fold over top bed clothing at the bottom end",
+      "Place a foot board or sand bags at the foot end of the bed",
+      "Tuck sheets loosely at the sides",
+      "Attach prescribed bed accessories",
       "Remove trolley and chair or heart table",
-      "Perform hand hygiene"
+      "Perform hand hygiene",
     ],
     precautions: [
-      "Follow the prescribed orthopaedic treatment and traction orders",
-      "Do not alter traction weights, ropes or alignment without authorization",
-      "Maintain correct body alignment",
+      "Follow the prescribed fracture and traction management plan",
       "Avoid unnecessary movement of the fractured limb",
-      "Assess neurovascular status before and after positioning when indicated",
-      "Monitor colour, warmth, sensation, movement and circulation of the affected limb",
-      "Ensure traction ropes move freely and weights hang correctly where traction is used",
-      "Avoid wrinkles and pressure points that may cause skin injury",
+      "Maintain alignment of the affected body part",
       "Use adequate assistance when repositioning the patient",
-      "Report increasing pain, numbness, pallor, cyanosis, swelling or loss of movement promptly"
-    ]
+      "Check traction equipment for correct positioning when applicable",
+      "Do not alter prescribed traction weights without authorization",
+      "Monitor circulation, sensation and movement as appropriate",
+      "Avoid wrinkles and pressure points in the linen",
+      "Maintain patient privacy and comfort",
+      "Report increasing pain, swelling, colour change, numbness or other concerning findings promptly",
+    ],
+    quiz: rgn_037Quiz,
   },
 
   {
@@ -551,19 +1085,18 @@ export const rgnBatch04: Procedure[] = [
     title: "DIVIDED BED",
     category: "General Nursing (RGN)",
     overview:
-      "A divided bed is a special bed in which the top linen is separated into two sections with the aid of a bed cradle, creating an opening that allows regular observation of a particular body part without placing the weight of the bedclothes directly on the affected area.",
+      "A divided bed is a special bed in which the top linen is separated into two parts with the aid of a bed cradle to create a visual window. It helps the nurse visualize a particular part of the body requiring regular observation without unnecessarily disturbing the patient.",
     purpose: [
-      "Facilitate easy assessment of an affected body part",
-      "Maintain the affected body part in a stable and comfortable position",
-      "Remove the weight of bedclothes from an injured or sensitive area",
-      "Promote comfort and facilitate wound observation"
+      "Facilitate easy assessment of a body part",
+      "Keep the affected body part in a stable position",
+      "Lift the weight of the bed clothing off the patient",
+      "Protect injured areas from unnecessary pressure",
     ],
     indications: [
-      "Burns requiring frequent observation",
-      "Amputation requiring protection of the affected area",
-      "Wounds requiring frequent inspection",
-      "Injured body parts that should not be covered by normal bedclothes",
-      "Areas requiring reduced pressure from bed linen"
+      "Patients with burns requiring regular observation",
+      "Patients with amputations requiring regular observation",
+      "Patients with wounds requiring frequent inspection",
+      "Patients with an injured body part that should not be covered by the weight of bedclothes",
     ],
     equipment: [
       "A trolley with the following items:",
@@ -574,41 +1107,42 @@ export const rgnBatch04: Procedure[] = [
       "One top sheet",
       "Counterpane if necessary",
       "Bed cradle",
-      "Extra mackintosh and dressing towel or appropriate protective linen"
+      "Extra mackintosh and dressing towel or bed linen",
     ],
     steps: [
       "Perform hand hygiene",
-      "Collect and arrange items on the trolley",
-      "Arrange items in order of use",
-      "Place the bottom sheet evenly on the bed",
-      "Pull the sheet tight and remove creases",
-      "Tuck the bottom sheet using mitered or envelope corners",
-      "Place the bed mat or draw mackintosh at the appropriate portion",
-      "Cover the mackintosh with the draw sheet",
-      "Place extra mackintosh and dressing towel or appropriate protective linen at the site of injury",
-      "Place the bed cradle at the required position",
+      "Collect and arrange items on the trolley and send them to the bedside",
+      "Arrange items in order of use on chairs or heart table",
+      "Place bottom sheet evenly on the bed",
+      "Pull sheet tight so that there are no creases",
+      "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or envelope corners",
+      "Pull and tuck the sheet at the sides to prevent creases",
+      "Place bed mat or draw mackintosh at the middle portion of the bed",
+      "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
+      "Place extra mackintosh and dressing towel or bed linen at the site where the injury is located",
+      "Place the bed cradle at the middle portion of the bed",
       "Put clean pillowcases on the pillows",
-      "Place pillows appropriately",
-      "Place the first top sheet over the upper portion of the cradle",
-      "Place the second top sheet over the lower portion of the cradle",
-      "Place the counterpane in the same divided fashion if required",
-      "Ensure the two sections overlap appropriately without resting on the affected area",
-      "Create an opening that allows observation of the affected body part",
-      "Tuck the sides appropriately without compressing the affected area",
-      "Ensure the bed cradle is stable",
-      "Remove the trolley and chair or heart table",
-      "Perform hand hygiene"
+      "Place pillows on the bed with open ends away from the entrance",
+      "Place the first top sheet at the upper half of the cradle and fold it over",
+      "Place the second top sheet at the lower half of the cradle and fold it over",
+      "Place counterpane if necessary in the same fashion as the top sheets",
+      "Ensure that the two sections of the top bed clothing overlap appropriately",
+      "Create an opening to aid observation of the affected body part",
+      "Tuck in the sides under the mattress loosely",
+      "Remove trolley and chair or heart table",
+      "Perform hand hygiene",
     ],
     precautions: [
-      "Ensure the bed cradle is stable and securely positioned",
-      "Do not allow bedclothes to rest on the injured or affected area",
-      "Maintain adequate space for observation without exposing the patient unnecessarily",
-      "Maintain patient privacy and dignity",
-      "Assess the affected area regularly for changes",
-      "Avoid pressure, friction and unnecessary movement of burns, wounds or amputation sites",
-      "Use appropriate infection-prevention precautions when caring for wounds or burns",
-      "Ensure the patient remains warm while the affected area is exposed",
-      "Report deterioration, bleeding, increased pain, changes in wound appearance or other abnormal findings promptly"
-    ]
-  }
+      "Ensure the bed cradle is stable and correctly positioned",
+      "Avoid allowing bedclothes to rest directly on the injured area",
+      "Maintain patient privacy while providing the required observation window",
+      "Avoid unnecessary movement of the affected body part",
+      "Keep the opening appropriate to the area requiring observation",
+      "Maintain clean linen and infection-prevention measures",
+      "Check the affected area regularly according to the care plan",
+      "Report changes in the affected area promptly",
+      "Ensure the patient remains comfortable and adequately covered",
+    ],
+    quiz: rgn_038Quiz,
+  },
 ];
