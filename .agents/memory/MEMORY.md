@@ -1,1 +1,2 @@
-- [Nested app dependency installs](nested-app-dependencies.md) — package installation helpers may target the workspace root instead of a nested app directory.
+- [GitHub repository imports](github-repository-imports.md) — use authenticated file reads with throttling when archive downloads are unavailable.
+- [Nested web app validation](nested-web-validation.md) — component-task/web is outside the root workspace; validate it with isolated nested package installs.
