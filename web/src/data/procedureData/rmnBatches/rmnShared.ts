@@ -89,7 +89,7 @@ export function makeRmnProcedure(
   const { quizFacts, ...procedure } = input;
   return {
     ...procedure,
-    category: "Registered Mental Health Nursing (RMN)",
+    category: "Mental Health Nursing (RMN)",
     references: [NMC_RMN_REFERENCE, NMC_SCOPE_REFERENCE],
     quiz: makeRmnQuiz(procedure.title, quizFacts),
   };
