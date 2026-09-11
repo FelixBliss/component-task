@@ -6,6 +6,7 @@ import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
   addStars,
+  spendStars,
 } from "./services/creditService";
 
 type Tab =
@@ -1054,6 +1055,62 @@ export default function App() {
                 learning activities as they
                 become available.
               </p>
+            </div>
+
+            <div className="info-card">
+              <h3>
+                Test Spending
+              </h3>
+
+              <p>
+                Use these buttons to test the spending functionality.
+              </p>
+
+              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "12px" }}>
+                <button
+                  className="test-button"
+                  onClick={() => {
+                    const success = spendStars(5);
+                    if (success) {
+                      setStarBalance(getBalance());
+                    }
+                  }}
+                  type="button"
+                  title="Test: spend 5 stars"
+                >
+                  Spend 5 Stars
+                </button>
+
+                <button
+                  className="test-button"
+                  onClick={() => {
+                    const success = spendStars(10);
+                    if (success) {
+                      setStarBalance(getBalance());
+                    }
+                  }}
+                  type="button"
+                  title="Test: spend 10 stars"
+                >
+                  Spend 10 Stars
+                </button>
+
+                <button
+                  className="test-button"
+                  onClick={() => {
+                    const success = spendStars(starBalance + 1);
+                    if (success) {
+                      setStarBalance(getBalance());
+                    } else {
+                      alert("Insufficient stars - this is expected!");
+                    }
+                  }}
+                  type="button"
+                  title="Test: try to spend more than balance"
+                >
+                  Try Overspend
+                </button>
+              </div>
             </div>
 
           </section>
