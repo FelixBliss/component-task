@@ -4,6 +4,7 @@ import { rmProcedures } from "./procedureData/rm";
 import { rcmnProcedures } from "./procedureData/rcmn";
 import { rmnProcedures } from "./procedureData/rmn";
 import { phnProcedures } from "./procedureData/phn";
+import { paedProcedures } from "./procedureData/paed";
 
 export type { Procedure } from "./procedureTypes";
 
@@ -13,4 +14,5 @@ export const procedures: Procedure[] = [
   ...rcmnProcedures,
   ...rmnProcedures,
   ...phnProcedures,
+  ...paedProcedures,
 ];
