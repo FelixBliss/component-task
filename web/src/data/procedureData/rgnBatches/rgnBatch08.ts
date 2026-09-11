@@ -206,7 +206,9 @@ export const rgnBatch08: Procedure[] = [
     preparation: ["Provide analgesia as prescribed and ensure the patient can call for help after the procedure.", "Review imaging, operative instructions, and the expected post-removal dressing and observation plan."],
     afterCare: ["Keep the dressing clean and dry, monitor the site and vital signs, and support mobility safely.", "Teach the patient to report fever, increasing pain, swelling, leakage, bleeding, or breathlessness."],
     documentation: ["Record order, output, site condition, technique, drain integrity, dressing, observations, and patient tolerance.", "Document specimens, clinician notification, complications, and follow-up instructions."],
-    quiz: [
+   videoUrl: "https://www.youtube.com/watch?v=KMi_PB2Ywkg",
+    
+     quiz: [
       q("What must be confirmed before removing a drainage tube?", ["An authorized order or protocol and review of output and patient condition", "That the patient is asleep", "That the drain is full", "That no dressing is available"], "An authorized order or protocol and review of output and patient condition", "Drain removal depends on clinical review, output, drain type, and the responsible clinician’s plan."),
       q("What should the nurse do if resistance is felt during removal?", ["Stop and seek clinical review", "Pull harder", "Cut the drain", "Push it back into the wound"], "Stop and seek clinical review", "Resistance may indicate tissue attachment or retained material and must not be overcome by force."),
       q("Why is the securing suture removed carefully?", ["To release the drain without cutting surrounding skin or the drain", "To sterilize the wound", "To increase drainage", "To avoid checking output"], "To release the drain without cutting surrounding skin or the drain", "Controlled suture removal reduces tissue injury and prevents damage to the device."),
