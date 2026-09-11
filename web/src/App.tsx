@@ -1101,9 +1101,9 @@ export default function App() {
                     const success = spendStars(starBalance + 1);
                     if (success) {
                       setStarBalance(getBalance());
-                    } else {
-                      alert("Insufficient stars - this is expected!");
                     }
+                    // If unsuccessful, do nothing - balance remains unchanged.
+                    // This is expected behavior when attempting to overspend.
                   }}
                   type="button"
                   title="Test: try to spend more than balance"
