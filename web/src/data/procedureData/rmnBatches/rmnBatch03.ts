@@ -15,6 +15,7 @@ export const rmnBatch03 = [
     documentation: ["Record bath given", "Note skin condition", "Document patient's response"],
     patientEducation: ["Encourage independence when possible", "Teach hygiene importance", "Discuss grooming routines"],
     nursingConsiderations: ["Adapt to patient's abilities", "Be sensitive to trauma history", "Maintain professional boundaries"],
+   videoUrl: "https://www.youtube.com/watch?v=9VKox-wy4fU",
     quizFacts: {
       indication: "Bathing assistance is indicated when a patient cannot bathe independently or has poor self-care.",
       preparation: "The nurse prepares the bathing area, gathers supplies, and ensures privacy.",
