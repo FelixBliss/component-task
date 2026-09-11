@@ -1,4 +1,3 @@
-import type { Procedure } from "../../procedureTypes";
 import { makePaedProcedure, type PaedQuizFacts } from "./paedShared";
 
 type PaedProcedureInput = Omit<
@@ -8,26 +7,8 @@ type PaedProcedureInput = Omit<
   quizFacts: PaedQuizFacts;
 };
 
-const makePaedProcedureLocal = (input: PaedProcedureInput): Procedure => {
-  const { quizFacts, ...procedure } = input;
-  return {
-    ...procedure,
-    category: "Paediatric Nursing (PAED)",
-    references: [
-      {
-        title: "Nursing and Midwifery Council of Ghana: Paediatric Nurse Procedures",
-        url: "https://nmc.gov.gh/procedures/view/PAED",
-      },
-      {
-        title: "Nursing and Midwifery Council of Ghana: Scope of Practice",
-        url: "https://nmc.gov.gh/sop/scope-of-practice",
-      },
-    ],
-  };
-};
-
 export const paedBatch03: Procedure[] = [
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-021",
     title: "GAVAGE FEEDING A CHILD",
     overview: "Gavage feeding is the administration of liquid nutrition directly into the stomach through a nasogastric or orogastric tube.",
@@ -41,8 +22,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Tube size and insertion length", "Placement verification method", "Amount and type of feed", "Child's tolerance", "Complications if any"],
     patientEducation: ["Teach signs of tube displacement", "Demonstrate feeding technique", "Explain importance of positioning"],
     nursingConsiderations: ["Use developmental care principles", "Minimize handling during feeds", "Monitor growth parameters"],
+    quizFacts: {
+      indication: "Gavage feeding is indicated for premature infants unable to suck/swallow, neurological impairment, respiratory distress, or post-surgical recovery.",
+      preparation: "The nurse gathers equipment, warms formula to room temperature, calculates required volume, and prepares a clean environment.",
+      equipment: "Required equipment includes appropriate size feeding tube, syringe, stethoscope, pH strips, formula/breast milk, water for flushing, tape, and gloves.",
+      sequence: "The nurse verifies order, performs hand hygiene, explains procedure, positions child, measures and inserts tube, verifies placement, administers feed slowly, flushes, and secures tube.",
+      safety: "The nurse verifies tube placement before each feed, monitors for aspiration signs, uses appropriate formula temperature, and avoids rapid administration.",
+      observation: "The nurse observes tolerance, abdominal distension, intake amounts, and signs of complications.",
+      redFlag: "Signs of aspiration, tube displacement, abdominal distension, or intolerance require immediate attention.",
+      documentation: "Tube size and insertion length, placement verification method, amount and type of feed, child's tolerance, and complications are documented.",
+      education: "Parents receive education on signs of tube displacement, feeding technique demonstration, and importance of positioning.",
+      escalation: "Tube displacement, aspiration, or severe intolerance are escalated immediately with appropriate intervention."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-022",
     title: "NASOGASTRIC TUBE INSERTION IN A CHILD",
     overview: "Insertion of a flexible tube through the nose into the stomach for feeding, medication administration, or gastric decompression.",
@@ -56,8 +49,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Tube size and type", "Insertion length", "Nostril used", "Placement verification", "Child's tolerance"],
     patientEducation: ["Explain purpose of tube", "Teach signs of displacement", "Demonstrate care requirements"],
     nursingConsiderations: ["Use age-appropriate explanation", "Consider sedation if needed", "Minimize trauma during insertion"],
+    quizFacts: {
+      indication: "NG tube insertion is indicated for inability to swallow, gastrointestinal obstruction, need for gastric lavage, or post-operative care.",
+      preparation: "The nurse selects appropriate tube size, measures insertion length, prepares securing materials, and positions suction nearby.",
+      equipment: "Required equipment includes appropriate size NG tube, lubricant, syringe, stethoscope, pH strips, tape, gloves, water-soluble lubricant, and emesis basin.",
+      sequence: "The nurse verifies order, performs hand hygiene, measures tube length, lubricates tip, positions child, inserts through nostril, advances while child swallows, verifies placement, and secures tube.",
+      safety: "The nurse stops if resistance is met, never forces the tube, verifies placement before use, and monitors for respiratory distress.",
+      observation: "The nurse observes placement regularly, nasal skin integrity, and tube patency.",
+      redFlag: "Resistance during insertion, respiratory distress, or tube displacement require immediate attention.",
+      documentation: "Tube size and type, insertion length, nostril used, placement verification, and child's tolerance are documented.",
+      education: "Parents receive education on purpose of tube, signs of displacement, and care requirements.",
+      escalation: "Difficulty inserting, respiratory distress, or suspected misplacement are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-023",
     title: "ADMINISTRATION OF MEDICATION VIA NASOGASTRIC TUBE",
     overview: "Administration of prescribed medications through an established nasogastric tube.",
@@ -71,8 +76,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Medications given", "Doses and times", "Flush volumes", "Tube placement check", "Patient tolerance"],
     patientEducation: ["Explain medication schedule", "Discuss potential side effects", "Teach flushing technique"],
     nursingConsiderations: ["Consider drug-nutrient interactions", "Time medications around feeds", "Monitor therapeutic levels"],
+    quizFacts: {
+      indication: "Medication via NG tube is indicated when patient is unable to swallow, NG tube is in place, and medication is compatible with enteral administration.",
+      preparation: "The nurse reviews medication list, checks enteral compatibility, prepares individual syringes, and calculates flush volumes.",
+      equipment: "Required equipment includes prescribed medications, syringes, water for flushing, medication cup, crusher if needed, and gloves.",
+      sequence: "The nurse verifies order, performs hand hygiene, checks tube placement, prepares medications, flushes tube, administers each medication separately, flushes between and after, then documents.",
+      safety: "The nurse does not mix medications, verifies compatibility, uses liquid form when available, and flushes adequately between drugs.",
+      observation: "The nurse observes for adverse effects, tube patency, and patient response to medications.",
+      redFlag: "Tube occlusion, adverse drug reactions, or incompatibility issues require immediate attention.",
+      documentation: "Medications given, doses and times, flush volumes, tube placement check, and patient tolerance are documented.",
+      education: "Parents receive education on medication schedule, potential side effects, and flushing technique.",
+      escalation: "Adverse reactions, tube occlusion, or medication errors are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-024",
     title: "COLLECTION OF STOOL SPECIMEN FROM A CHILD",
     overview: "Collection of stool sample for laboratory analysis to diagnose gastrointestinal conditions.",
@@ -86,8 +103,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Date and time of collection", "Specimen appearance", "Amount collected", "Tests ordered"],
     patientEducation: ["Explain purpose of test", "Teach proper collection", "Discuss result timeline"],
     nursingConsiderations: ["Consider developmental level", "Use distraction techniques", "Maintain privacy"],
+    quizFacts: {
+      indication: "Stool specimen collection is indicated for suspected GI infection, diarrhea, abdominal pain, parasitic infestation, or GI bleeding.",
+      preparation: "The nurse explains to child and caregiver, prepares collection area, and has supplies ready.",
+      equipment: "Required equipment includes sterile container, tongue depressor, gloves, specimen label, biohazard bag, and bedpan or collection device.",
+      sequence: "The nurse verifies order, performs hand hygiene, prepares container, collects fresh sample avoiding urine contamination, transfers to container, labels, sends to lab, and documents.",
+      safety: "The nurse uses sterile technique, avoids urine contamination, collects adequate amount, and maintains chain of custody.",
+      observation: "The nurse observes specimen appearance, color, consistency, and presence of blood or mucus.",
+      redFlag: "Contamination with urine, inadequate sample, or delayed transport require attention.",
+      documentation: "Date and time of collection, specimen appearance, amount collected, and tests ordered are documented.",
+      education: "Parents receive education on purpose of test, proper collection technique, and result timeline.",
+      escalation: "Suspicious findings suggesting severe infection or bleeding are escalated for prompt evaluation."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-025",
     title: "URINE COLLECTION FROM A CHILD",
     overview: "Collection of urine specimen using appropriate method based on child's age and clinical needs.",
@@ -101,8 +130,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Collection method", "Time collected", "Specimen appearance", "Tests ordered"],
     patientEducation: ["Explain procedure", "Teach clean-catch technique", "Discuss importance of testing"],
     nursingConsiderations: ["Use age-appropriate approach", "Consider catheterization if needed", "Minimize discomfort"],
+    quizFacts: {
+      indication: "Urine collection is indicated for suspected UTI, renal disease, pre-operative screening, or metabolic evaluation.",
+      preparation: "The nurse selects appropriate collection method, prepares child and family, and gathers supplies.",
+      equipment: "Required equipment includes urine collection bag, sterile container, cleansing wipes, gloves, labels, and biohazard bag.",
+      sequence: "The nurse verifies order, performs hand hygiene, cleans genital area, applies collection device, waits for voiding, transfers to container, labels, sends to lab, and documents.",
+      safety: "The nurse uses sterile technique for culture, avoids contamination, collects midstream when possible, and processes promptly.",
+      observation: "The nurse observes specimen appearance, color, clarity, and odor.",
+      redFlag: "Signs of contamination, inability to collect, or skin irritation from collection device require attention.",
+      documentation: "Collection method, time collected, specimen appearance, and tests ordered are documented.",
+      education: "Parents receive education on procedure, clean-catch technique, and importance of testing.",
+      escalation: "Signs of severe UTI, inability to obtain specimen, or complications are escalated appropriately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-026",
     title: "SUCTIONING A CHILD",
     overview: "Removal of secretions from airway using suction catheter to maintain patent airway.",
@@ -116,8 +157,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Indication for suctioning", "Secretions characteristics", "Duration and frequency", "Patient tolerance"],
     patientEducation: ["Explain purpose", "Teach coughing techniques", "Discuss signs of respiratory distress"],
     nursingConsiderations: ["Use developmental approach", "Minimize anxiety", "Coordinate with respiratory therapy"],
+    quizFacts: {
+      indication: "Suctioning is indicated for excessive secretions, ineffective cough, respiratory distress, artificial airway, or decreased consciousness.",
+      preparation: "The nurse sets appropriate suction pressure, selects catheter size, prepares oxygen, and positions child.",
+      equipment: "Required equipment includes suction machine, appropriate catheter size, sterile gloves, sterile saline, oxygen source, bag-valve-mask, and monitoring equipment.",
+      sequence: "The nurse assesses need, explains procedure, performs hand hygiene, pre-oxygenates, inserts catheter without suction, applies suction while withdrawing, limits duration, re-oxygenates, assesses effectiveness, and documents.",
+      safety: "The nurse uses sterile technique, limits suction time, monitors oxygen saturation, and avoids traumatic suctioning.",
+      observation: "The nurse observes breath sounds, vital signs, oxygen saturation, and secretion characteristics.",
+      redFlag: "Desaturation, bradycardia, mucosal trauma, or increased respiratory distress require immediate attention.",
+      documentation: "Indication for suctioning, secretions characteristics, duration and frequency, and patient tolerance are documented.",
+      education: "Parents receive education on purpose, coughing techniques, and signs of respiratory distress.",
+      escalation: "Severe desaturation, bradycardia, or airway compromise are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-027",
     title: "OXYGEN THERAPY FOR A CHILD",
     overview: "Administration of supplemental oxygen to maintain adequate tissue oxygenation.",
@@ -131,8 +184,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Device type", "Flow rate", "FiO2", "SpO2 readings", "Skin assessment"],
     patientEducation: ["Explain oxygen purpose", "Teach safety precautions", "Discuss weaning process"],
     nursingConsiderations: ["Use age-appropriate devices", "Minimize restraint", "Consider developmental needs"],
+    quizFacts: {
+      indication: "Oxygen therapy is indicated for hypoxemia, respiratory distress, shock, carbon monoxide poisoning, or post-resuscitation.",
+      preparation: "The nurse verifies oxygen order, checks equipment, selects appropriate device, and explains to family.",
+      equipment: "Required equipment includes oxygen source, flow meter, delivery device (nasal cannula, mask, hood), humidifier, oxygen analyzer, and pulse oximeter.",
+      sequence: "The nurse assesses oxygenation status, selects device, sets prescribed flow rate, applies delivery device, secures comfortably, monitors saturation, assesses skin, and documents.",
+      safety: "The nurse monitors for oxygen toxicity, ensures fire safety, maintains humidification, and checks equipment function.",
+      observation: "The nurse observes oxygen saturation continuously, skin integrity under device, and respiratory status.",
+      redFlag: "Signs of oxygen toxicity, skin breakdown, or worsening respiratory status require immediate attention.",
+      documentation: "Device type, flow rate, FiO2, SpO2 readings, and skin assessment are documented.",
+      education: "Parents receive education on oxygen purpose, safety precautions, and weaning process.",
+      escalation: "Worsening hypoxemia, respiratory failure, or oxygen toxicity signs are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-028",
     title: "NEBULIZER THERAPY FOR A CHILD",
     overview: "Administration of aerosolized medication directly to the respiratory tract.",
@@ -146,8 +211,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Medication and dose", "Treatment duration", "Patient tolerance", "Respiratory assessment"],
     patientEducation: ["Teach nebulizer use", "Demonstrate cleaning", "Explain medication purpose"],
     nursingConsiderations: ["Use distraction techniques", "Allow parent presence", "Consider timing with feeds"],
+    quizFacts: {
+      indication: "Nebulizer therapy is indicated for asthma, bronchiolitis, croup, cystic fibrosis, or pneumonia.",
+      preparation: "The nurse checks medication order, prepares medication, assembles equipment, and positions child comfortably.",
+      equipment: "Required equipment includes nebulizer machine, medication cup, pediatric mask or mouthpiece, tubing, prescribed medication, normal saline, and timer.",
+      sequence: "The nurse verifies order, explains procedure, performs hand hygiene, prepares medication, assembles nebulizer, positions child, applies mask/mouthpiece, turns on nebulizer, monitors treatment, cleans equipment, and documents.",
+      safety: "The nurse verifies medication and dose, monitors for adverse reactions, ensures proper fit, and cleans between uses.",
+      observation: "The nurse observes respiratory status, patient tolerance, and response to treatment.",
+      redFlag: "Adverse reactions, worsening respiratory status, or improper device function require immediate attention.",
+      documentation: "Medication and dose, treatment duration, patient tolerance, and respiratory assessment are documented.",
+      education: "Parents receive education on nebulizer use, cleaning demonstration, and medication purpose.",
+      escalation: "Severe adverse reactions or respiratory deterioration are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-029",
     title: "CHEST PHYSIOTHERAPY FOR A CHILD",
     overview: "Techniques to help clear secretions from lungs including percussion, vibration, and postural drainage.",
@@ -161,8 +238,20 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Areas treated", "Duration", "Secretions cleared", "Patient tolerance"],
     patientEducation: ["Teach home techniques", "Explain importance", "Demonstrate positioning"],
     nursingConsiderations: ["Modify for age/condition", "Use play therapy", "Coordinate with respiratory therapy"],
+    quizFacts: {
+      indication: "Chest physiotherapy is indicated for cystic fibrosis, bronchiectasis, pneumonia, atelectasis, or neuromuscular weakness.",
+      preparation: "The nurse schedules away from meals, positions equipment, and explains to child/family.",
+      equipment: "Required equipment includes percussion cups or hands, pillows for positioning, suction equipment, oxygen if needed, and stethoscope.",
+      sequence: "The nurse assesses lung sounds, explains procedure, positions for drainage, performs percussion, applies vibration, encourages coughing, suctions if needed, reassesses, and documents.",
+      safety: "The nurse avoids bony prominences, monitors tolerance, times around meals, and uses appropriate force.",
+      observation: "The nurse observes secretions cleared, patient tolerance, breath sounds, and respiratory status.",
+      redFlag: "Respiratory distress, desaturation, pain, or intolerance require immediate attention.",
+      documentation: "Areas treated, duration, secretions cleared, and patient tolerance are documented.",
+      education: "Parents receive education on home techniques, importance, and positioning demonstration.",
+      escalation: "Respiratory compromise or severe intolerance are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-030",
     title: "WOUND CARE FOR A CHILD",
     overview: "Management of wounds including cleaning, dressing, and monitoring for healing.",
@@ -176,5 +265,17 @@ export const paedBatch03: Procedure[] = [
     documentation: ["Wound appearance", "Measurements", "Drainage", "Interventions", "Patient response"],
     patientEducation: ["Teach wound care", "Explain signs of infection", "Discuss activity restrictions"],
     nursingConsiderations: ["Use age-appropriate explanations", "Involve child in care", "Consider distraction techniques"],
+    quizFacts: {
+      indication: "Wound care is indicated for surgical wounds, traumatic injuries, pressure ulcers, burns, or skin breakdown.",
+      preparation: "The nurse gathers supplies, prepares child, ensures adequate lighting, and plans pain management.",
+      equipment: "Required equipment includes sterile gloves, sterile gauze, antiseptic solution, saline, appropriate dressings, adhesive remover, waste bags, and pain medication.",
+      sequence: "The nurse assesses wound, explains procedure, performs hand hygiene, administers analgesia, removes old dressing, cleans wound, applies new dressing, secures appropriately, disposes of waste, and documents.",
+      safety: "The nurse uses aseptic technique, minimizes pain, protects surrounding skin, and monitors for infection.",
+      observation: "The nurse observes wound appearance, measurements, drainage characteristics, and healing progress.",
+      redFlag: "Signs of infection, increased pain, excessive drainage, or wound dehiscence require immediate attention.",
+      documentation: "Wound appearance, measurements, drainage, interventions, and patient response are documented.",
+      education: "Parents receive education on wound care, signs of infection, and activity restrictions.",
+      escalation: "Signs of severe infection, wound dehiscence, or uncontrolled pain are escalated immediately."
+    }
   }),
 ];

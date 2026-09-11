@@ -1,30 +1,14 @@
-import type { Procedure } from "../../procedureTypes";
+import { makePaedProcedure, type PaedQuizFacts } from "./paedShared";
 
 type PaedProcedureInput = Omit<
   Procedure,
   "category" | "quiz" | "references"
->;
-
-const makePaedProcedureLocal = (input: PaedProcedureInput): Procedure => {
-  const { ...procedure } = input;
-  return {
-    ...procedure,
-    category: "Paediatric Nursing (PAED)",
-    references: [
-      {
-        title: "Nursing and Midwifery Council of Ghana: Paediatric Nurse Procedures",
-        url: "https://nmc.gov.gh/procedures/view/PAED",
-      },
-      {
-        title: "Nursing and Midwifery Council of Ghana: Scope of Practice",
-        url: "https://nmc.gov.gh/sop/scope-of-practice",
-      },
-    ],
-  };
+> & {
+  quizFacts: PaedQuizFacts;
 };
 
 export const paedBatch04: Procedure[] = [
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-031",
     title: "INTRAVENOUS CANNULATION IN A CHILD",
     overview: "Insertion of a cannula into a vein for administration of fluids, medications, or blood products.",
@@ -38,8 +22,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Cannula size", "Insertion site", "Number of attempts", "Condition of site", "Patient tolerance"],
     patientEducation: ["Explain purpose of IV", "Teach signs of complications", "Discuss activity restrictions"],
     nursingConsiderations: ["Use age-appropriate explanation", "Consider distraction techniques", "Involve parents in comfort measures"],
+    quizFacts: {
+      indication: "IV cannulation is indicated for dehydration, need for IV medications, surgical procedures, blood transfusion, or emergency care.",
+      preparation: "The nurse gathers all equipment, selects appropriate cannula size, prepares child and family, and considers topical anesthetic.",
+      equipment: "Required equipment includes appropriate size IV cannula, tourniquet, antiseptic swabs, sterile gauze, transparent dressing, tape, gloves, saline flush, and IV tubing.",
+      sequence: "The nurse verifies order, performs hand hygiene, selects vein, applies tourniquet, cleans site, inserts cannula, advances catheter, removes stylet, connects tubing, secures with dressing, labels site, and documents.",
+      safety: "The nurse uses aseptic technique, selects appropriate size, avoids areas of flexion, and monitors for complications.",
+      observation: "The nurse observes insertion site regularly, assesses for complications, maintains patency, and monitors dressing condition.",
+      redFlag: "Signs of infiltration, phlebitis, infection, or occlusion require immediate attention.",
+      documentation: "Cannula size, insertion site, number of attempts, condition of site, and patient tolerance are documented.",
+      education: "Parents receive education on purpose of IV, signs of complications, and activity restrictions.",
+      escalation: "Severe infiltration, infection, or occlusion are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-032",
     title: "ADMINISTRATION OF INTRAVENOUS FLUIDS TO A CHILD",
     overview: "Administration of prescribed IV fluids to maintain hydration and electrolyte balance.",
@@ -53,8 +49,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Fluid type and volume", "Rate of infusion", "Site condition", "Patient tolerance"],
     patientEducation: ["Explain purpose of fluids", "Discuss duration", "Teach signs of problems"],
     nursingConsiderations: ["Calculate based on weight", "Monitor closely in infants", "Adjust for clinical condition"],
+    quizFacts: {
+      indication: "IV fluid administration is indicated for dehydration, inability to tolerate oral fluids, post-operative care, shock, or electrolyte imbalances.",
+      preparation: "The nurse calculates flow rate, verifies order, prepares equipment, and explains to family.",
+      equipment: "Required equipment includes prescribed IV fluids, IV pump, IV tubing, alcohol swabs, gloves, and infusion checklist.",
+      sequence: "The nurse verifies fluid order, checks IV site, primes tubing, connects to IV line, sets infusion rate, monitors infusion, assesses patient response, and documents.",
+      safety: "The nurse verifies calculations, monitors for overload, checks compatibility, and uses infusion pump.",
+      observation: "The nurse observes intake/output, hydration status, electrolyte levels, and patient response.",
+      redFlag: "Signs of fluid overload, infiltration, or electrolyte imbalance require immediate attention.",
+      documentation: "Fluid type and volume, rate of infusion, site condition, and patient tolerance are documented.",
+      education: "Parents receive education on purpose of fluids, duration, and signs of problems.",
+      escalation: "Fluid overload, severe electrolyte imbalance, or adverse reactions are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-033",
     title: "BLOOD TRANSFUSION IN A CHILD",
     overview: "Administration of blood or blood products to restore blood volume or correct deficiencies.",
@@ -68,8 +76,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Blood product details", "Start/stop times", "Vital signs", "Any reactions", "Patient response"],
     patientEducation: ["Explain purpose", "Discuss risks/benefits", "Teach signs of reactions"],
     nursingConsiderations: ["Calculate volume carefully", "Monitor closely in infants", "Be prepared for reactions"],
+    quizFacts: {
+      indication: "Blood transfusion is indicated for severe anemia, blood loss, coagulopathy, thrombocytopenia, or sickle cell crisis.",
+      preparation: "The nurse obtains consent, verifies order, prepares equipment, and educates family.",
+      equipment: "Required equipment includes prescribed blood product, blood transfusion set, normal saline, IV pump, vital signs monitor, emergency equipment, and gloves.",
+      sequence: "The nurse verifies order and consent, confirms patient identity, checks blood product, obtains baseline vitals, primes tubing with saline, starts transfusion slowly, monitors closely, completes within timeframe, and documents.",
+      safety: "The nurse verifies compatibility, monitors for reactions, uses appropriate filter, and completes within 4 hours.",
+      observation: "The nurse observes vital signs, signs of reactions, patient response, and completion time.",
+      redFlag: "Signs of transfusion reaction including fever, chills, rash, difficulty breathing, or chest pain require immediate attention.",
+      documentation: "Blood product details, start/stop times, vital signs, any reactions, and patient response are documented.",
+      education: "Parents receive education on purpose, risks/benefits, and signs of reactions.",
+      escalation: "Any suspected transfusion reaction is escalated immediately with cessation of transfusion."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-034",
     title: "LUMBAR PUNCTURE ASSISTANCE IN A CHILD",
     overview: "Assistance with collection of cerebrospinal fluid for diagnostic or therapeutic purposes.",
@@ -83,8 +103,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Procedure time", "CSF appearance", "Number of attempts", "Complications", "Patient tolerance"],
     patientEducation: ["Explain purpose", "Discuss post-procedure care", "Teach signs of complications"],
     nursingConsiderations: ["Use age-appropriate positioning", "Provide emotional support", "Consider sedation needs"],
+    quizFacts: {
+      indication: "Lumbar puncture is indicated for suspected meningitis, subarachnoid hemorrhage, increased ICP evaluation, or chemotherapy administration.",
+      preparation: "The nurse obtains consent, prepares child/family, gathers equipment, and plans positioning.",
+      equipment: "Required equipment includes lumbar puncture tray, sterile drapes, local anesthetic, manometer, collection tubes, sterile gloves, and positioning aids.",
+      sequence: "The nurse explains procedure, positions child appropriately, performs hand hygiene, assists with sterile setup, helps maintain position, monitors child during procedure, applies dressing, and monitors post-procedure.",
+      safety: "The nurse maintains sterility, monitors positioning, watches for complications, and ensures adequate immobilization.",
+      observation: "The nurse observes vital signs, puncture site, CSF appearance, and signs of complications.",
+      redFlag: "Signs of herniation, severe headache, bleeding, or infection require immediate attention.",
+      documentation: "Procedure time, CSF appearance, number of attempts, complications, and patient tolerance are documented.",
+      education: "Parents receive education on purpose, post-procedure care, and signs of complications.",
+      escalation: "Signs of herniation, severe complications, or neurological changes are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-035",
     title: "EXCHANGE BLOOD TRANSFUSION IN A NEWBORN",
     overview: "Replacement of infant's blood with donor blood to treat severe hyperbilirubinemia or other conditions.",
@@ -98,8 +130,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Volumes exchanged", "Vital signs", "Complications", "Pre/post bilirubin levels"],
     patientEducation: ["Explain procedure to parents", "Discuss rationale", "Provide emotional support"],
     nursingConsiderations: ["Maintain thermoregulation", "Monitor glucose", "Watch for citrate toxicity"],
+    quizFacts: {
+      indication: "Exchange blood transfusion is indicated for severe hyperbilirubinemia, hemolytic disease of newborn, severe anemia, or polycythemia.",
+      preparation: "The nurse obtains consent, prepares NICU environment, assembles team, and calculates exchange volume.",
+      equipment: "Required equipment includes fresh compatible blood, umbilical venous catheter, syringes, three-way stopcock, monitoring equipment, calcium gluconate, and emergency equipment.",
+      sequence: "The nurse verifies order and consent, prepares blood products, establishes UVC access, withdraws blood slowly, infuses donor blood, monitors continuously, calculates volumes, and documents.",
+      safety: "The nurse monitors calcium levels, watches for arrhythmias, maintains temperature, and uses strict asepsis.",
+      observation: "The nurse observes vital signs, bilirubin levels, signs of complications, and glucose levels.",
+      redFlag: "Arrhythmias, hypocalcemia, hypothermia, or bleeding require immediate attention.",
+      documentation: "Volumes exchanged, vital signs, complications, and pre/post bilirubin levels are documented.",
+      education: "Parents receive education on procedure explanation, rationale, and emotional support.",
+      escalation: "Life-threatening complications including severe arrhythmias or bleeding are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-036",
     title: "PERITONEAL DIALYSIS IN A CHILD",
     overview: "Removal of waste products and excess fluid through the peritoneal membrane using dialysate.",
@@ -113,8 +157,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Volumes in/out", "Dwell times", "Effluent characteristics", "Complications"],
     patientEducation: ["Teach home PD if applicable", "Explain infection prevention", "Discuss diet/fluid restrictions"],
     nursingConsiderations: ["Calculate based on weight", "Monitor growth", "Support family education"],
+    quizFacts: {
+      indication: "Peritoneal dialysis is indicated for acute kidney injury, chronic kidney disease, fluid overload, or electrolyte disturbances.",
+      preparation: "The nurse explains procedure, prepares environment, warms solutions, and calculates volumes.",
+      equipment: "Required equipment includes peritoneal dialysis catheter, dialysate solution, transfer set, scale, BP monitor, sterile supplies, and warming device.",
+      sequence: "The nurse verifies order, warms dialysate, positions child, connects transfer set, infuses dialysate, allows dwell time, drains effluent, measures output, and documents.",
+      safety: "The nurse maintains sterility, monitors for infection, checks effluent clarity, and prevents air entry.",
+      observation: "The nurse observes exit site, fluid balance, electrolytes, effluent characteristics, and complications.",
+      redFlag: "Signs of peritonitis, cloudy effluent, catheter malfunction, or fluid imbalance require immediate attention.",
+      documentation: "Volumes in/out, dwell times, effluent characteristics, and complications are documented.",
+      education: "Parents receive education on home PD if applicable, infection prevention, and diet/fluid restrictions.",
+      escalation: "Signs of peritonitis or severe complications are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-037",
     title: "HEMODIALYSIS IN A CHILD",
     overview: "Extracorporeal removal of waste products and excess fluid using a dialysis machine.",
@@ -128,8 +184,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Treatment duration", "Volumes removed", "Complications", "Patient tolerance"],
     patientEducation: ["Explain dialysis process", "Discuss vascular access care", "Teach diet/fluid management"],
     nursingConsiderations: ["Adapt for pediatric sizes", "Monitor growth/nutrition", "Support psychosocial needs"],
+    quizFacts: {
+      indication: "Hemodialysis is indicated for end-stage renal disease, acute kidney injury, poisoning, or severe fluid overload.",
+      preparation: "The nurse explains procedure, assesses access, calculates dry weight, and prepares medications.",
+      equipment: "Required equipment includes hemodialysis machine, dialyzer, vascular access, dialysate, anticoagulant, monitoring equipment, and emergency supplies.",
+      sequence: "The nurse verifies order, assesses vascular access, primes circuit, connects patient, sets parameters, monitors during treatment, disconnects safely, and documents.",
+      safety: "The nurse monitors anticoagulation, watches for hypotension, prevents air embolism, and maintains sterility.",
+      observation: "The nurse observes vital signs, access site, lab values, complications, and patient tolerance.",
+      redFlag: "Hypotension, bleeding, air embolism, or access complications require immediate attention.",
+      documentation: "Treatment duration, volumes removed, complications, and patient tolerance are documented.",
+      education: "Parents receive education on dialysis process, vascular access care, and diet/fluid management.",
+      escalation: "Severe hypotension, bleeding, or access failure are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-038",
     title: "TOTAL PARENTERAL NUTRITION ADMINISTRATION IN A CHILD",
     overview: "Intravenous administration of complete nutrition including proteins, carbohydrates, fats, vitamins, and minerals.",
@@ -143,8 +211,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["TPN composition", "Infusion rate", "Glucose levels", "Complications"],
     patientEducation: ["Explain purpose of TPN", "Discuss duration", "Teach signs of problems"],
     nursingConsiderations: ["Calculate based on weight/age", "Monitor liver function", "Transition to enteral when possible"],
+    quizFacts: {
+      indication: "TPN is indicated for short bowel syndrome, prolonged ileus, severe malabsorption, prematurity, or post-surgical recovery.",
+      preparation: "The nurse verifies calculations, prepares infusion pump, assesses vascular access, and obtains baseline labs.",
+      equipment: "Required equipment includes TPN solution, infusion pump, central or peripheral line, filter tubing, alcohol swabs, gloves, and glucose monitoring supplies.",
+      sequence: "The nurse verifies TPN order, inspects solution, uses dedicated line, primes tubing with filter, sets infusion rate, monitors glucose, assesses tolerance, and documents.",
+      safety: "The nurse uses strict asepsis, monitors glucose closely, checks electrolytes, and prevents line infections.",
+      observation: "The nurse observes glucose/electrolytes, growth parameters, complications, and patient tolerance.",
+      redFlag: "Hyperglycemia, signs of infection, line occlusion, or metabolic imbalance require immediate attention.",
+      documentation: "TPN composition, infusion rate, glucose levels, and complications are documented.",
+      education: "Parents receive education on purpose of TPN, duration, and signs of problems.",
+      escalation: "Severe metabolic imbalance, line infection, or catheter complications are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-039",
     title: "PHOTOTHERAPY FOR NEONATAL HYPERBILIRUBINEMIA",
     overview: "Use of special light to convert bilirubin into water-soluble form for excretion.",
@@ -158,8 +238,20 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Light intensity", "Duration", "Bilirubin levels", "Complications"],
     patientEducation: ["Explain purpose", "Discuss safety", "Teach about jaundice"],
     nursingConsiderations: ["Maximize skin exposure", "Maintain thermoregulation", "Support breastfeeding"],
+    quizFacts: {
+      indication: "Phototherapy is indicated for neonatal hyperbilirubinemia, jaundice, hemolytic disease, or prematurity with elevated bilirubin.",
+      preparation: "The nurse explains to parents, prepares equipment, obtains baseline bilirubin, and sets up monitoring.",
+      equipment: "Required equipment includes phototherapy lights, eye protection, diaper, temperature monitor, bilirubin meter, and scale.",
+      sequence: "The nurse verifies order, exposes maximum skin surface, protects eyes, monitors temperature, positions under lights, turns infant regularly, monitors bilirubin, and documents.",
+      safety: "The nurse protects eyes, monitors temperature, ensures adequate hydration, and checks skin regularly.",
+      observation: "The nurse observes bilirubin levels, temperature, skin condition, hydration status, and complications.",
+      redFlag: "Overheating, dehydration, skin breakdown, or rising bilirubin despite treatment require immediate attention.",
+      documentation: "Light intensity, duration, bilirubin levels, and complications are documented.",
+      education: "Parents receive education on purpose, safety, and information about jaundice.",
+      escalation: "Rising bilirubin despite treatment or signs of kernicterus are escalated immediately."
+    }
   }),
-  makePaedProcedureLocal({
+  makePaedProcedure({
     id: "paed-040",
     title: "CARDIAC MONITORING IN A CHILD",
     overview: "Continuous observation of heart rate and rhythm using cardiac monitor.",
@@ -173,5 +265,17 @@ export const paedBatch04: Procedure[] = [
     documentation: ["Heart rate/rhythm", "Alarm events", "Interventions", "Patient tolerance"],
     patientEducation: ["Explain monitoring purpose", "Discuss alarm sounds", "Teach activity guidelines"],
     nursingConsiderations: ["Use pediatric electrodes", "Minimize skin irritation", "Consider developmental needs"],
+    quizFacts: {
+      indication: "Cardiac monitoring is indicated for cardiac conditions, post-cardiac surgery, medication effects, respiratory distress, or critical illness.",
+      preparation: "The nurse explains to child/family, prepares skin, selects electrode size, and sets alarm parameters.",
+      equipment: "Required equipment includes cardiac monitor, ECG electrodes, skin prep supplies, razor if needed, tape, and alarm settings.",
+      sequence: "The nurse explains procedure, prepares skin, applies electrodes, connects leads, sets alarms, verifies waveform, monitors continuously, and documents findings.",
+      safety: "The nurse checks skin integrity, sets appropriate alarms, verifies accuracy, and responds to alarms.",
+      observation: "The nurse observes heart rate/rhythm, alarm events, interventions, skin under electrodes, and rhythm trends.",
+      redFlag: "Life-threatening arrhythmias, frequent alarms, or skin breakdown require immediate attention.",
+      documentation: "Heart rate/rhythm, alarm events, interventions, and patient tolerance are documented.",
+      education: "Parents receive education on monitoring purpose, alarm sounds, and activity guidelines.",
+      escalation: "Life-threatening arrhythmias or cardiac arrest are escalated immediately with emergency response."
+    }
   }),
 ];
