@@ -3,6 +3,11 @@ import Settings from "./Settings";
 import ProcedureList from "./components/ProcedureList";
 import ProcedureDetails from "./components/ProcedureDetails";
 import { procedures, type Procedure } from "./data/procedures";
+import {
+  getBalance,
+  addStars,
+  spendStars,
+} from "./services/creditService";
 
 type Tab =
   | "home"
@@ -147,6 +152,9 @@ export default function App() {
 
   const [splashProgress, setSplashProgress] =
     useState(0);
+
+  const [starBalance, setStarBalance] =
+    useState<number>(() => getBalance());
 
   const categoryProcedures = selectedCategory
     ? procedures.filter(
@@ -542,7 +550,7 @@ export default function App() {
             type="button"
           >
             <span>⭐</span>
-            <strong>25</strong>
+            <strong>{starBalance}</strong>
             <small>Credits</small>
           </button>
 
@@ -1017,11 +1025,23 @@ export default function App() {
                 ⭐
               </div>
 
-              <strong>25</strong>
+              <strong>{starBalance}</strong>
 
               <span>
                 Available Credits
               </span>
+
+              <button
+                className="test-button"
+                onClick={() => {
+                  const newBalance = addStars(5);
+                  setStarBalance(newBalance);
+                }}
+                type="button"
+                title="Development test: adds 5 stars"
+              >
+                Add 5 Test Stars
+              </button>
             </div>
 
             <div className="info-card">
@@ -1035,6 +1055,62 @@ export default function App() {
                 learning activities as they
                 become available.
               </p>
+            </div>
+
+            <div className="info-card">
+              <h3>
+                Test Spending
+              </h3>
+
+              <p>
+                Use these buttons to test the spending functionality.
+              </p>
+
+              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "12px" }}>
+                <button
+                  className="test-button"
+                  onClick={() => {
+                    const success = spendStars(5);
+                    if (success) {
+                      setStarBalance(getBalance());
+                    }
+                  }}
+                  type="button"
+                  title="Test: spend 5 stars"
+                >
+                  Spend 5 Stars
+                </button>
+
+                <button
+                  className="test-button"
+                  onClick={() => {
+                    const success = spendStars(10);
+                    if (success) {
+                      setStarBalance(getBalance());
+                    }
+                  }}
+                  type="button"
+                  title="Test: spend 10 stars"
+                >
+                  Spend 10 Stars
+                </button>
+
+                <button
+                  className="test-button"
+                  onClick={() => {
+                    const success = spendStars(starBalance + 1);
+                    if (success) {
+                      setStarBalance(getBalance());
+                    }
+                    // If unsuccessful, do nothing - balance remains unchanged.
+                    // This is expected behavior when attempting to overspend.
+                  }}
+                  type="button"
+                  title="Test: try to spend more than balance"
+                >
+                  Try Overspend
+                </button>
+              </div>
             </div>
 
           </section>

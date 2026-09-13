@@ -1157,6 +1157,32 @@ a {
   font-size: 12px;
 }
 
+.test-button {
+  margin-top: 16px;
+
+  padding: 10px 16px;
+
+  background-color: #f0f0f0;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  color: #555;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.test-button:hover {
+  background-color: #e8e8e8;
+
+  border-color: #ccc;
+}
+
 .info-card {
   margin-top: 15px;
 
