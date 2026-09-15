@@ -8,6 +8,12 @@ import {
   addStars,
   spendStars,
 } from "./services/creditService";
+import {
+  adService,
+  getRewardedAdsToday,
+  STAR_ECONOMY,
+  type AdResult,
+} from "./services/adService";
 
 type Tab =
   | "home"
@@ -1109,6 +1115,84 @@ export default function App() {
                   title="Test: try to spend more than balance"
                 >
                   Try Overspend
+                </button>
+              </div>
+            </div>
+
+            <div className="info-card">
+              <h3>
+                Test Ad Services (Mock)
+              </h3>
+
+              <p>
+                Use these buttons to test the mock ad service functionality.
+              </p>
+
+              <div style={{ marginBottom: "8px", marginTop: "12px" }}>
+                <strong>Rewarded ads today: {getRewardedAdsToday()}/{STAR_ECONOMY.limits.maxRewardedAdsPerDay}</strong>
+              </div>
+
+              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "12px" }}>
+                <button
+                  className="test-button"
+                  onClick={async () => {
+                    const result: AdResult = await adService.showRewardedAd();
+                    if (result.success) {
+                      alert("Rewarded ad completed successfully! (No stars added yet - this is a mock test)");
+                    } else {
+                      if (result.error === 'NO_CONNECTION') {
+                        alert("No internet connection - ad cannot be shown.");
+                      } else if (result.error === 'DAILY_LIMIT_REACHED') {
+                        alert("Daily limit reached - you have watched 5 rewarded ads today.");
+                      } else {
+                        alert(`Ad failed: ${result.error}`);
+                      }
+                    }
+                  }}
+                  type="button"
+                  title="Test: watch a mock rewarded ad"
+                >
+                  Watch Test Rewarded Ad
+                </button>
+
+                <button
+                  className="test-button"
+                  onClick={async () => {
+                    const result: AdResult = await adService.showInterstitialAd();
+                    if (result.success) {
+                      alert("Interstitial ad displayed successfully! (Mock)");
+                    } else {
+                      if (result.error === 'NO_CONNECTION') {
+                        alert("No internet connection - ad cannot be shown.");
+                      } else {
+                        alert(`Ad failed: ${result.error}`);
+                      }
+                    }
+                  }}
+                  type="button"
+                  title="Test: show a mock interstitial ad"
+                >
+                  Test Interstitial Ad
+                </button>
+
+                <button
+                  className="test-button"
+                  onClick={async () => {
+                    const result: AdResult = await adService.showBannerAd();
+                    if (result.success) {
+                      alert("Banner ad available! (Mock)");
+                    } else {
+                      if (result.error === 'NO_CONNECTION') {
+                        alert("No internet connection - ad cannot be shown.");
+                      } else {
+                        alert(`Ad failed: ${result.error}`);
+                      }
+                    }
+                  }}
+                  type="button"
+                  title="Test: show a mock banner ad"
+                >
+                  Test Banner Ad
                 </button>
               </div>
             </div>
