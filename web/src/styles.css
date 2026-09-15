@@ -4182,3 +4182,59 @@ html.dark-mode .procedure-next-navigation {
     height: 18px;
   }
 }
+
+/* Video lock card for premium videos */
+.video-lock-card {
+  padding: 34px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.video-lock-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.video-lock-card h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.video-lock-card p {
+  margin: 0 0 20px;
+  opacity: 0.9;
+}
+
+.video-insufficient-stars {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.video-unlock-button {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-unlock-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video-unlock-button:active {
+  transform: translateY(0);
+}
