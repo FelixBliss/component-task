@@ -162,6 +162,18 @@ export default function App() {
   const [starBalance, setStarBalance] =
     useState<number>(() => getBalance());
 
+  /* Listen for stars-updated events from child components */
+  useEffect(() => {
+    const handleStarsUpdated = () => {
+      setStarBalance(getBalance());
+    };
+
+    window.addEventListener('stars-updated', handleStarsUpdated);
+    return () => {
+      window.removeEventListener('stars-updated', handleStarsUpdated);
+    };
+  }, []);
+
   const categoryProcedures = selectedCategory
     ? procedures.filter(
         (procedure) =>

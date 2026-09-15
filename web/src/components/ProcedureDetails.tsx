@@ -288,6 +288,12 @@ export default function ProcedureDetails({
   const [videoError, setVideoError] =
     useState(false);
 
+  const [videoUnlocked, setVideoUnlocked] =
+    useState(false);
+
+  const [insufficientStars, setInsufficientStars] =
+    useState(false);
+
   /*
    * Prepare randomized options.
    */
@@ -346,6 +352,8 @@ export default function ProcedureDetails({
     setAnswers({});
     setShowResults(false);
     setVideoError(false);
+    setVideoUnlocked(false);
+    setInsufficientStars(false);
 
     const saved =
       loadQuizProgress(
@@ -917,6 +925,54 @@ export default function ProcedureDetails({
                 No video demonstration is
                 available for this procedure.
               </p>
+
+            </div>
+          ) : !videoUnlocked ? (
+            <div className="video-lock-card">
+
+              <div className="video-lock-icon">
+                🔒
+              </div>
+
+              <h2>
+                Premium Video
+              </h2>
+
+              <p>
+                This procedure includes a premium
+                video demonstration.
+              </p>
+
+              {insufficientStars && (
+                <p className="video-insufficient-stars">
+                  You need 3 Stars to watch this video.
+                </p>
+              )}
+
+              <button
+                type="button"
+                className="video-unlock-button"
+                onClick={() => {
+                  import('../services/creditService').then(({ canSpend, spendStars }) => {
+                    if (!canSpend(3)) {
+                      setInsufficientStars(true);
+                      return;
+                    }
+                    
+                    const success = spendStars(3);
+                    if (success) {
+                      setVideoUnlocked(true);
+                      setInsufficientStars(false);
+                      // Dispatch custom event for App.tsx to update balance
+                      window.dispatchEvent(new CustomEvent('stars-updated'));
+                    } else {
+                      setInsufficientStars(true);
+                    }
+                  });
+                }}
+              >
+                Unlock Video for 3 Stars
+              </button>
 
             </div>
           ) : !videoError &&
