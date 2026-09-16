@@ -11,6 +11,7 @@ type ProcedureDetailsProps = {
   onBack: () => void;
   onNext?: () => void;
   nextProcedureTitle?: string;
+  isOnline?: boolean;
 };
 
 type QuizQuestion =
@@ -256,6 +257,7 @@ export default function ProcedureDetails({
   onBack,
   onNext,
   nextProcedureTitle,
+  isOnline = true,
 }: ProcedureDetailsProps) {
   const quizzes =
     procedure.quiz ?? [];
@@ -943,16 +945,26 @@ export default function ProcedureDetails({
                 video demonstration.
               </p>
 
-              {insufficientStars && (
-                <p className="video-insufficient-stars">
-                  You need 3 Stars to watch this video.
+              {!isOnline ? (
+                <p className="video-offline-message">
+                  Internet connection required to watch this video.
                 </p>
+              ) : (
+                insufficientStars && (
+                  <p className="video-insufficient-stars">
+                    You need 3 Stars to watch this video.
+                  </p>
+                )
               )}
 
               <button
                 type="button"
                 className="video-unlock-button"
+                disabled={!isOnline}
                 onClick={() => {
+                  if (!isOnline) {
+                    return;
+                  }
                   import('../services/creditService').then(({ canSpend, spendStars }) => {
                     if (!canSpend(3)) {
                       setInsufficientStars(true);
@@ -1003,13 +1015,17 @@ export default function ProcedureDetails({
                 <button
                   type="button"
                   className="video-youtube-button"
-                  onClick={() =>
+                  disabled={!isOnline}
+                  onClick={() => {
+                    if (!isOnline) {
+                      return;
+                    }
                     window.open(
                       videoWatchUrl,
                       "_blank",
                       "noopener,noreferrer"
-                    )
-                  }
+                    );
+                  }}
                 >
                   ▶ Watch on YouTube
                 </button>
