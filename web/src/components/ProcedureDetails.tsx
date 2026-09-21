@@ -1444,14 +1444,21 @@ export default function ProcedureDetails({
               </div>
 
               {/* Extra time button */}
-              <button
-                type="button"
-                className="quiz-extra-time-button"
-                disabled={!isOnline || adLoading}
-                onClick={requestExtraTime}
-              >
-                {adLoading ? 'Loading...' : 'Watch Ad + Get 3 More Minutes'}
-              </button>
+              {!extraTimeRequested && (
+                <button
+                  type="button"
+                  className="quiz-extra-time-button"
+                  disabled={!isOnline || adLoading}
+                  onClick={requestExtraTime}
+                >
+                  {adLoading ? 'Loading...' : 'Watch Ad + Get 3 More Minutes'}
+                </button>
+              )}
+              {extraTimeRequested && (
+                <div className="quiz-extra-time-used">
+                  Extra Time Used
+                </div>
+              )}
 
               <div
                 className="quiz-progress"
