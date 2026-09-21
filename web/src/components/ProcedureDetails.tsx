@@ -302,6 +302,19 @@ export default function ProcedureDetails({
   const [quizUnlockError, setQuizUnlockError] =
     useState<string | null>(null);
 
+  // Timer state for timed quiz
+  const [timeRemaining, setTimeRemaining] =
+    useState<number>(120); // 2 minutes in seconds
+
+  const [timerActive, setTimerActive] =
+    useState(false);
+
+  const [extraTimeRequested, setExtraTimeRequested] =
+    useState(false);
+
+  const [adLoading, setAdLoading] =
+    useState(false);
+
   /*
    * Prepare randomized options.
    */
@@ -490,6 +503,11 @@ export default function ProcedureDetails({
     setSelectedAnswer(null);
     setShowResults(false);
 
+    // Reset timer to 2 minutes (120 seconds)
+    setTimeRemaining(120);
+    setTimerActive(true);
+    setExtraTimeRequested(false);
+
     setAttempt(
       (value) => value + 1
     );
@@ -510,6 +528,92 @@ export default function ProcedureDetails({
         procedure.id
       );
     }
+  };
+
+  // Timer effect for countdown
+  useEffect(() => {
+    let interval: ReturnType<typeof setInterval> | null = null;
+
+    if (timerActive && timeRemaining > 0) {
+      interval = setInterval(() => {
+        setTimeRemaining((prev) => {
+          if (prev <= 1) {
+            // Time expired - end quiz
+            setTimerActive(false);
+            setShowResults(true);
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
+  }, [timerActive]);
+
+  // Format time as MM:SS
+  const formatTime = (seconds: number): string => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  };
+
+  // Handle extra time from rewarded ad
+  const requestExtraTime = async () => {
+    if (!isOnline) {
+      return;
+    }
+
+    setAdLoading(true);
+
+    try {
+      const { adService, canWatchRewardedAd } = await import('../services/adService');
+
+      if (!canWatchRewardedAd()) {
+        setAdLoading(false);
+        return;
+      }
+
+      const result = await adService.showRewardedAd();
+
+      if (result.success) {
+        // Add 3 minutes (180 seconds) to current timer
+        setTimeRemaining((prev) => prev + 180);
+        setExtraTimeRequested(true);
+      }
+    } catch {
+      // Ignore errors silently
+    } finally {
+      setAdLoading(false);
+    }
+  };
+
+  // Handle retry quiz with payment
+  const retryQuiz = () => {
+    if (!isOnline) {
+      return;
+    }
+
+    import('../services/creditService').then(({ canSpend, spendStars }) => {
+      if (!canSpend(2)) {
+        setQuizUnlockError('INSUFFICIENT_STARS');
+        return;
+      }
+      
+      const success = spendStars(2);
+      if (success) {
+        setQuizUnlockError(null);
+        // Dispatch custom event for App.tsx to update balance
+        window.dispatchEvent(new CustomEvent('stars-updated'));
+        startQuiz();
+      } else {
+        setQuizUnlockError('INSUFFICIENT_STARS');
+      }
+    });
   };
 
   const nextQuestion = () => {
@@ -1264,15 +1368,23 @@ export default function ProcedureDetails({
 
               <div className="quiz-result-actions">
 
+                {!isOnline ? (
+                  <p className="quiz-offline-message">
+                    Internet connection required to retry this quiz.
+                  </p>
+                ) : quizUnlockError === 'INSUFFICIENT_STARS' ? (
+                  <p className="quiz-insufficient-stars">
+                    You need 2 Stars to retry this quiz.
+                  </p>
+                ) : null}
+
                 <button
                   type="button"
                   className="quiz-primary-button"
-                  onClick={() => {
-                    setQuizUnlocked(false);
-                    startQuiz();
-                  }}
+                  disabled={!isOnline}
+                  onClick={retryQuiz}
                 >
-                  Retry Quiz
+                  Retry Quiz — 2 ⭐
                 </button>
 
                 <button
@@ -1325,6 +1437,21 @@ export default function ProcedureDetails({
                 </strong>
 
               </div>
+
+              {/* Timer display */}
+              <div className={`quiz-timer ${timeRemaining <= 30 ? 'quiz-timer-warning' : ''}`}>
+                <span>Time remaining: {formatTime(timeRemaining)}</span>
+              </div>
+
+              {/* Extra time button */}
+              <button
+                type="button"
+                className="quiz-extra-time-button"
+                disabled={!isOnline || adLoading}
+                onClick={requestExtraTime}
+              >
+                {adLoading ? 'Loading...' : 'Watch Ad + Get 3 More Minutes'}
+              </button>
 
               <div
                 className="quiz-progress"
