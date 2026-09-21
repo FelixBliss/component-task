@@ -11,6 +11,7 @@ import {
 import {
   adService,
   getRewardedAdsToday,
+  canWatchRewardedAd,
   STAR_ECONOMY,
   type AdResult,
 } from "./services/adService";
