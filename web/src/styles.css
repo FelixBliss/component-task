@@ -4370,3 +4370,60 @@ html.dark-mode .procedure-next-navigation {
   border-radius: 8px;
   border: 1px solid #f5c6cb;
 }
+
+/* ========================================================
+   BANNER ADS (Phase 3F)
+   ======================================================== */
+
+.banner-ad-container {
+  width: 100%;
+  max-width: 728px;
+  margin: 24px auto 0;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.banner-ad {
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px dashed #dee2e6;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-ad-label {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  font-size: 10px;
+  color: #adb5bd;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.banner-ad-content {
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 500;
+  text-align: center;
+}
+
+html.dark-mode .banner-ad {
+  background: linear-gradient(135deg, #2d3436 0%, #1e272e 100%);
+  border-color: #4a5568;
+}
+
+html.dark-mode .banner-ad-content {
+  color: #a0aec0;
+}
+
+html.dark-mode .banner-ad-label {
+  color: #718096;
+}

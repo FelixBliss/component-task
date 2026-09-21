@@ -825,6 +825,19 @@ export default function App() {
                 </p>
               </div>
             </section>
+
+            {/* ================= BANNER AD ================= */}
+
+            {isOnlineState && (
+              <div className="banner-ad-container">
+                <div className="banner-ad">
+                  <span className="banner-ad-label">Advertisement</span>
+                  <div className="banner-ad-content">
+                    Mock Banner Ad Space
+                  </div>
+                </div>
+              </div>
+            )}
           </>
         )}
 
@@ -1034,6 +1047,7 @@ export default function App() {
         {activeTab === "procedures" &&
           selectedCategory &&
           selectedProcedure && (
+          <>
             <ProcedureDetails
               procedure={
                 selectedProcedure
@@ -1052,7 +1066,21 @@ export default function App() {
               }
               isOnline={isOnlineState}
             />
-          )}
+
+            {/* ================= BANNER AD ================= */}
+
+            {isOnlineState && (
+              <div className="banner-ad-container">
+                <div className="banner-ad">
+                  <span className="banner-ad-label">Advertisement</span>
+                  <div className="banner-ad-content">
+                    Mock Banner Ad Space
+                  </div>
+                </div>
+              </div>
+            )}
+          </>
+        )}
 
         {/* =================================================
            CREDITS
@@ -1267,6 +1295,19 @@ export default function App() {
                 </button>
               </div>
             </div>
+
+            {/* ================= BANNER AD ================= */}
+
+            {isOnlineState && (
+              <div className="banner-ad-container">
+                <div className="banner-ad">
+                  <span className="banner-ad-label">Advertisement</span>
+                  <div className="banner-ad-content">
+                    Mock Banner Ad Space
+                  </div>
+                </div>
+              </div>
+            )}
 
           </section>
         )}
