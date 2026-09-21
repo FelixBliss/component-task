@@ -3769,6 +3769,21 @@ html.dark-mode .procedure-card:hover {
   letter-spacing: 1.1px;
 }
 
+.quiz-premium-indicator {
+  display: inline-block;
+
+  margin: 8px 0 6px;
+  padding: 4px 10px;
+
+  border-radius: 999px;
+
+  background: var(--light-green);
+  color: var(--dark-green);
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .procedure-quiz-panel {
   min-width: 0;
 }
@@ -4100,6 +4115,11 @@ html.dark-mode .quiz-result-card p,
 html.dark-mode .quiz-card-top strong,
 html.dark-mode .procedure-next-navigation small {
   color: #cbd5e1;
+}
+
+html.dark-mode .quiz-premium-indicator {
+  background: #274638;
+  color: #a7f3d0;
 }
 
 html.dark-mode .procedure-detail-summary {

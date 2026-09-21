@@ -929,7 +929,7 @@ export default function ProcedureDetails({
                 startQuiz();
               }}
             >
-              🧠 Test Yourself →
+              🧠 Test Yourself — 2 ⭐ →
             </button>
           )}
 
@@ -1176,6 +1176,10 @@ export default function ProcedureDetails({
                 procedure.
               </p>
 
+              <div className="quiz-premium-indicator">
+                Premium • 2 ⭐
+              </div>
+
               {!isOnline ? (
                 <p className="quiz-offline-message">
                   Internet connection required to take this quiz.
@@ -1213,7 +1217,7 @@ export default function ProcedureDetails({
                   });
                 }}
               >
-                Start Quiz for 2 Stars
+                Start Quiz — 2 ⭐
               </button>
 
             </div>
