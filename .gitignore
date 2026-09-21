@@ -3,16 +3,17 @@
 web/dist/
 # Dependencies
 node_modules/
-# Editor/IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-# Logs
+# Compiled files
+*.pyc
+__pycache__/
+# Logs and temp files
 *.log
+*.tmp
 # Environment
 .env
 .env.local
 .env.*
+# Editors
+.vscode/
+.idea/
 ```

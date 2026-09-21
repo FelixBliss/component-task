@@ -13,7 +13,10 @@ import {
   getRewardedAdsToday,
   canWatchRewardedAd,
   STAR_ECONOMY,
+  INTERSTITIAL_CONFIG,
   type AdResult,
+  canShowInterstitialAd,
+  getInterstitialAdsToday,
 } from "./services/adService";
 import {
   initConnectivityListeners,
@@ -457,6 +460,18 @@ export default function App() {
 
   const backToProcedureList = () => {
     setSelectedProcedure(null);
+
+    // Attempt to show interstitial ad on natural navigation point
+    if (canShowInterstitialAd()) {
+      adService.showInterstitialAd().then((result) => {
+        if (result.success) {
+          // Ad shown successfully - no action needed, just let navigation complete
+          console.log('Interstitial ad shown');
+        }
+      }).catch(() => {
+        // Silently ignore errors - navigation should not be blocked
+      });
+    }
 
     window.scrollTo({
       top: 0,
@@ -1167,6 +1182,10 @@ export default function App() {
                 <strong>Rewarded ads today: {getRewardedAdsToday()}/{STAR_ECONOMY.limits.maxRewardedAdsPerDay}</strong>
               </div>
 
+              <div style={{ marginBottom: "8px" }}>
+                <strong>Interstitial ads today: {getInterstitialAdsToday()}/{INTERSTITIAL_CONFIG.maxPerDay} (cooldown: {INTERSTITIAL_CONFIG.cooldownMinutes} min)</strong>
+              </div>
+
               {!isOnlineState && (
                 <p className="video-offline-message" style={{ marginTop: "8px" }}>
                   Internet connection required to earn Stars.
@@ -1207,19 +1226,22 @@ export default function App() {
                 <button
                   className="test-button"
                   onClick={async () => {
+                    // Test button bypasses cooldown/limit for development testing
                     const result: AdResult = await adService.showInterstitialAd();
                     if (result.success) {
                       alert("Interstitial ad displayed successfully! (Mock)");
                     } else {
                       if (result.error === 'NO_CONNECTION') {
                         alert("No internet connection - ad cannot be shown.");
+                      } else if (result.error === 'DAILY_LIMIT_REACHED') {
+                        alert("Daily interstitial limit reached (3/day).");
                       } else {
                         alert(`Ad failed: ${result.error}`);
                       }
                     }
                   }}
                   type="button"
-                  title="Test: show a mock interstitial ad"
+                  title="Test: show a mock interstitial ad (bypasses cooldown for testing)"
                 >
                   Test Interstitial Ad
                 </button>
