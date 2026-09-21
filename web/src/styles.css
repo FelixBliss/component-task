@@ -3955,6 +3955,74 @@ html.dark-mode .procedure-card:hover {
   opacity: 0.45;
 }
 
+/* Timer display */
+.quiz-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 12px;
+  margin-bottom: 8px;
+
+  border-radius: 9px;
+  background: var(--pale-green);
+  color: var(--green);
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.quiz-timer-warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+html.dark-mode .quiz-timer-warning {
+  background: #4a3c0e;
+  color: #ffc107;
+}
+
+/* Extra time button */
+.quiz-extra-time-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 14px;
+  margin-bottom: 12px;
+
+  border: 1px dashed var(--green);
+  border-radius: 9px;
+
+  background: transparent;
+  color: var(--green);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.quiz-extra-time-button:hover:not(:disabled) {
+  background: var(--light-green);
+}
+
+.quiz-extra-time-button:active:not(:disabled) {
+  transform: scale(0.985);
+}
+
+.quiz-extra-time-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
 .quiz-result-card {
   gap: 2px;
 }
