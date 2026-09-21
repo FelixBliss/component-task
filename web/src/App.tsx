@@ -11,9 +11,15 @@ import {
 import {
   adService,
   getRewardedAdsToday,
+  canWatchRewardedAd,
   STAR_ECONOMY,
   type AdResult,
 } from "./services/adService";
+import {
+  initConnectivityListeners,
+  subscribeConnectivity,
+  isOnline as checkOnline,
+} from "./services/connectivityService";
 
 type Tab =
   | "home"
@@ -161,6 +167,22 @@ export default function App() {
 
   const [starBalance, setStarBalance] =
     useState<number>(() => getBalance());
+
+  const [isOnlineState, setIsOnlineState] =
+    useState<boolean>(() => checkOnline());
+
+  /* Initialize connectivity listeners on mount */
+  useEffect(() => {
+    initConnectivityListeners();
+    
+    const unsubscribe = subscribeConnectivity((state) => {
+      setIsOnlineState(state.isOnline);
+    });
+    
+    return () => {
+      unsubscribe();
+    };
+  }, []);
 
   /* Listen for stars-updated events from child components */
   useEffect(() => {
@@ -1013,6 +1035,7 @@ export default function App() {
               nextProcedureTitle={
                 nextProcedure?.title
               }
+              isOnline={isOnlineState}
             />
           )}
 
@@ -1144,13 +1167,27 @@ export default function App() {
                 <strong>Rewarded ads today: {getRewardedAdsToday()}/{STAR_ECONOMY.limits.maxRewardedAdsPerDay}</strong>
               </div>
 
+              {!isOnlineState && (
+                <p className="video-offline-message" style={{ marginTop: "8px" }}>
+                  Internet connection required to earn Stars.
+                </p>
+              )}
+
               <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "12px" }}>
                 <button
                   className="test-button"
+                  disabled={!isOnlineState || !canWatchRewardedAd()}
                   onClick={async () => {
+                    if (!isOnlineState) {
+                      return;
+                    }
                     const result: AdResult = await adService.showRewardedAd();
                     if (result.success) {
-                      alert("Rewarded ad completed successfully! (No stars added yet - this is a mock test)");
+                      // Award +5 stars after successful rewarded ad
+                      const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd);
+                      setStarBalance(newBalance);
+                      window.dispatchEvent(new CustomEvent('stars-updated'));
+                      alert(`Rewarded ad completed successfully! +${STAR_ECONOMY.rewards.rewardedAd} Stars awarded.`);
                     } else {
                       if (result.error === 'NO_CONNECTION') {
                         alert("No internet connection - ad cannot be shown.");
@@ -1162,7 +1199,7 @@ export default function App() {
                     }
                   }}
                   type="button"
-                  title="Test: watch a mock rewarded ad"
+                  title={!isOnlineState ? "Internet connection required" : canWatchRewardedAd() ? "Test: watch a mock rewarded ad" : "Daily limit reached"}
                 >
                   Watch Test Rewarded Ad
                 </button>

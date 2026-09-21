@@ -4238,3 +4238,25 @@ html.dark-mode .procedure-next-navigation {
 .video-unlock-button:active {
   transform: translateY(0);
 }
+.video-unlock-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.video-youtube-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.video-offline-message {
+  color: #e74c3c;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 8px 0 16px;
+  padding: 8px 12px;
+  background-color: #fdeaea;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+}

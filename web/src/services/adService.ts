@@ -27,9 +27,11 @@ export interface AdService {
   showBannerAd(): Promise<AdResult>;
 }
 
-// Check if device is online
+// Re-export isOnline from connectivityService for backward compatibility
+import { isOnline as checkOnline } from './connectivityService';
+
 export function isOnline(): boolean {
-  return typeof navigator !== 'undefined' && navigator.onLine;
+  return checkOnline();
 }
 
 // Track rewarded ads watched per day
