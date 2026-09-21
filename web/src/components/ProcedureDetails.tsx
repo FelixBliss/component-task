@@ -296,6 +296,12 @@ export default function ProcedureDetails({
   const [insufficientStars, setInsufficientStars] =
     useState(false);
 
+  const [quizUnlocked, setQuizUnlocked] =
+    useState(false);
+
+  const [quizUnlockError, setQuizUnlockError] =
+    useState<string | null>(null);
+
   /*
    * Prepare randomized options.
    */
@@ -356,6 +362,8 @@ export default function ProcedureDetails({
     setVideoError(false);
     setVideoUnlocked(false);
     setInsufficientStars(false);
+    setQuizUnlocked(false);
+    setQuizUnlockError(null);
 
     const saved =
       loadQuizProgress(
@@ -410,6 +418,7 @@ export default function ProcedureDetails({
       ).length > 0
     ) {
       setQuizStarted(true);
+      setQuizUnlocked(true);
       setActiveTab("quiz");
     }
   }, [procedure.id, quizzes.length]);
@@ -486,6 +495,7 @@ export default function ProcedureDetails({
     );
 
     setQuizStarted(true);
+    setQuizUnlocked(true);
     setActiveTab("quiz");
 
     /*
@@ -601,6 +611,8 @@ export default function ProcedureDetails({
     setSelectedAnswer(null);
     setShowResults(false);
     setQuizStarted(false);
+    setQuizUnlocked(false);
+    setQuizUnlockError(null);
 
     setActiveTab("quiz");
   };
@@ -890,9 +902,32 @@ export default function ProcedureDetails({
             <button
               type="button"
               className="inline-quiz-button"
-              onClick={
-                startQuiz
-              }
+              disabled={!isOnline || !quizUnlocked}
+              onClick={() => {
+                if (!isOnline) {
+                  return;
+                }
+                if (!quizUnlocked) {
+                  import('../services/creditService').then(({ canSpend, spendStars }) => {
+                    if (!canSpend(2)) {
+                      setQuizUnlockError('INSUFFICIENT_STARS');
+                      return;
+                    }
+                    
+                    const success = spendStars(2);
+                    if (success) {
+                      setQuizUnlocked(true);
+                      setQuizUnlockError(null);
+                      window.dispatchEvent(new CustomEvent('stars-updated'));
+                      startQuiz();
+                    } else {
+                      setQuizUnlockError('INSUFFICIENT_STARS');
+                    }
+                  });
+                  return;
+                }
+                startQuiz();
+              }}
             >
               🧠 Test Yourself →
             </button>
@@ -1141,14 +1176,44 @@ export default function ProcedureDetails({
                 procedure.
               </p>
 
+              {!isOnline ? (
+                <p className="quiz-offline-message">
+                  Internet connection required to take this quiz.
+                </p>
+              ) : quizUnlockError === 'INSUFFICIENT_STARS' ? (
+                <p className="quiz-insufficient-stars">
+                  You need 2 Stars to take this quiz.
+                </p>
+              ) : null}
+
               <button
                 type="button"
                 className="quiz-primary-button"
-                onClick={
-                  startQuiz
-                }
+                disabled={!isOnline}
+                onClick={() => {
+                  if (!isOnline) {
+                    return;
+                  }
+                  import('../services/creditService').then(({ canSpend, spendStars }) => {
+                    if (!canSpend(2)) {
+                      setQuizUnlockError('INSUFFICIENT_STARS');
+                      return;
+                    }
+                    
+                    const success = spendStars(2);
+                    if (success) {
+                      setQuizUnlocked(true);
+                      setQuizUnlockError(null);
+                      // Dispatch custom event for App.tsx to update balance
+                      window.dispatchEvent(new CustomEvent('stars-updated'));
+                      startQuiz();
+                    } else {
+                      setQuizUnlockError('INSUFFICIENT_STARS');
+                    }
+                  });
+                }}
               >
-                Start Quiz
+                Start Quiz for 2 Stars
               </button>
 
             </div>
@@ -1198,9 +1263,10 @@ export default function ProcedureDetails({
                 <button
                   type="button"
                   className="quiz-primary-button"
-                  onClick={
-                    startQuiz
-                  }
+                  onClick={() => {
+                    setQuizUnlocked(false);
+                    startQuiz();
+                  }}
                 >
                   Retry Quiz
                 </button>
