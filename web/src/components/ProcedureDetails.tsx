@@ -605,7 +605,7 @@ export default function ProcedureDetails({
         return;
       }
       
-      const success = spendStars(2);
+      const success = spendStars(2, "Quiz retry");
       if (success) {
         setQuizUnlockError(null);
         // Dispatch custom event for App.tsx to update balance
@@ -1019,7 +1019,7 @@ export default function ProcedureDetails({
                       return;
                     }
                     
-                    const success = spendStars(2);
+                    const success = spendStars(2, "Premium quiz");
                     if (success) {
                       setQuizUnlocked(true);
                       setQuizUnlockError(null);
@@ -1111,7 +1111,7 @@ export default function ProcedureDetails({
                       return;
                     }
                     
-                    const success = spendStars(3);
+                    const success = spendStars(3, "Premium video");
                     if (success) {
                       setVideoUnlocked(true);
                       setInsufficientStars(false);
