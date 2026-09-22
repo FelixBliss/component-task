@@ -23,35 +23,55 @@ export class LevelPlayAdProvider implements AdProvider {
       return { success: true };
     }
 
-    const result = await LevelPlayAds.initialize();
-    if (result.success) {
-      this.initialized = true;
+    try {
+      const result = await LevelPlayAds.initialize();
+      if (result.success) {
+        this.initialized = true;
+      }
+      return result;
+    } catch {
+      return { success: false, error: 'UNKNOWN_ERROR' };
     }
-    return result;
   }
 
   async showRewardedAd(): Promise<AdResult> {
     const init = await this.initialize();
     if (!init.success) return init;
-    return LevelPlayAds.showRewarded();
+    try {
+      return await LevelPlayAds.showRewarded();
+    } catch {
+      return { success: false, error: 'UNKNOWN_ERROR' };
+    }
   }
 
   async showInterstitialAd(): Promise<AdResult> {
     const init = await this.initialize();
     if (!init.success) return init;
-    return LevelPlayAds.showInterstitial();
+    try {
+      return await LevelPlayAds.showInterstitial();
+    } catch {
+      return { success: false, error: 'UNKNOWN_ERROR' };
+    }
   }
 
   async showBannerAd(): Promise<AdResult> {
     const init = await this.initialize();
     if (!init.success) return init;
-    return LevelPlayAds.showBanner();
+    try {
+      return await LevelPlayAds.showBanner();
+    } catch {
+      return { success: false, error: 'UNKNOWN_ERROR' };
+    }
   }
 
   async hideBannerAd(): Promise<AdResult> {
     const init = await this.initialize();
     if (!init.success) return init;
-    return LevelPlayAds.hideBanner();
+    try {
+      return await LevelPlayAds.hideBanner();
+    } catch {
+      return { success: false, error: 'UNKNOWN_ERROR' };
+    }
   }
 }
 
