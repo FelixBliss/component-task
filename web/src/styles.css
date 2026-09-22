@@ -4472,3 +4472,74 @@ html.dark-mode .banner-ad-content {
 html.dark-mode .banner-ad-label {
   color: #718096;
 }
+
+
+/* ================= STAR TRANSACTION HISTORY ================= */
+.star-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.star-history-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+
+.star-history-item:first-child {
+  border-top: 0;
+  padding-top: 2px;
+}
+
+.star-history-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.star-history-icon.reward { background: var(--light-green); }
+.star-history-icon.spend { background: #fff4e8; }
+
+.star-history-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.star-history-details strong,
+.star-history-details small {
+  display: block;
+}
+
+.star-history-details strong {
+  color: var(--text);
+  font-size: 13px;
+}
+
+.star-history-details small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.star-history-amount {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.star-history-amount.reward { color: var(--dark-green); }
+.star-history-amount.spend { color: #b65c00; }
+
+.star-history-empty {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
