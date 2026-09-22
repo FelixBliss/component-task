@@ -11,17 +11,14 @@ export default function BannerAd() {
     window.addEventListener("online", onOnline);
     window.addEventListener("offline", onOffline);
 
-    let cancelled = false;
-
     if (navigator.onLine) {
       void adService.showBannerAd().catch(() => undefined);
     }
 
     return () => {
-      cancelled = true;
       window.removeEventListener("online", onOnline);
       window.removeEventListener("offline", onOffline);
-      if (Capacitor.isNativePlatform() && !cancelled) {
+      if (Capacitor.isNativePlatform()) {
         void adService.hideBannerAd().catch(() => undefined);
       }
     };
