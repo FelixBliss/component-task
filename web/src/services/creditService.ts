@@ -71,28 +71,36 @@ function sanitizeTransactions(parsed: unknown): StarTransaction[] {
   return valid.slice(0, MAX_TRANSACTIONS);
 }
 
-function saveTransaction(transaction: StarTransaction): boolean {
+function readTransactionHistory(): StarTransaction[] {
   try {
     const saved = localStorage.getItem(TRANSACTION_STORAGE_KEY);
     const parsed: unknown = saved ? JSON.parse(saved) : [];
-    const history = sanitizeTransactions(parsed);
-    const nextHistory = [transaction, ...history].slice(0, MAX_TRANSACTIONS);
+    return sanitizeTransactions(parsed);
+  } catch {
+    return [];
+  }
+}
 
-    localStorage.setItem(TRANSACTION_STORAGE_KEY, JSON.stringify(nextHistory));
-
-    const stored = JSON.parse(localStorage.getItem(TRANSACTION_STORAGE_KEY) || "[]");
-    const sanitizedStored = sanitizeTransactions(stored);
-
-    return (
-      sanitizedStored.length > 0 &&
-      sanitizedStored[0].id === transaction.id &&
-      sanitizedStored[0].amount === transaction.amount &&
-      sanitizedStored[0].balanceAfter === transaction.balanceAfter &&
-      sanitizedStored[0].type === transaction.type
+function writeTransactionHistory(history: StarTransaction[]): boolean {
+  try {
+    localStorage.setItem(
+      TRANSACTION_STORAGE_KEY,
+      JSON.stringify(sanitizeTransactions(history))
     );
+
+    const stored = JSON.parse(
+      localStorage.getItem(TRANSACTION_STORAGE_KEY) || "[]"
+    );
+    return JSON.stringify(sanitizeTransactions(stored)) ===
+      JSON.stringify(sanitizeTransactions(history));
   } catch {
     return false;
   }
+}
+
+function saveTransaction(transaction: StarTransaction): boolean {
+  const history = readTransactionHistory();
+  return writeTransactionHistory([transaction, ...history].slice(0, MAX_TRANSACTIONS));
 }
 
 export function getStarTransactions(): StarTransaction[] {
@@ -116,20 +124,20 @@ export function getStarTransactions(): StarTransaction[] {
   }
 }
 
-function recordTransaction(
+function createTransaction(
   amount: number,
   type: StarTransactionType,
   reason: string,
   balanceAfter: number
-): boolean {
-  return saveTransaction({
+): StarTransaction {
+  return {
     id: String(Date.now()) + "-" + Math.random().toString(36).slice(2, 8),
     amount,
     type,
     reason,
     balanceAfter,
     createdAt: new Date().toISOString(),
-  });
+  };
 }
 
 export function getBalance(): number {
@@ -154,17 +162,49 @@ export function addStars(amount: number, reason = "Stars added"): number {
 
   const current = getBalance();
   const newBalance = current + safeAmount;
+  const transaction = createTransaction(
+    safeAmount,
+    "reward",
+    reason,
+    newBalance
+  );
+  const previousHistory = readTransactionHistory();
+  const nextHistory = [transaction, ...previousHistory].slice(0, MAX_TRANSACTIONS);
+
+  // Commit the history first. If it cannot be persisted, the balance is untouched.
+  if (!writeTransactionHistory(nextHistory)) {
+    return current;
+  }
 
   try {
     localStorage.setItem(STORAGE_KEY, String(newBalance));
   } catch {
+    // Roll the history back if the balance commit fails.
+    writeTransactionHistory(previousHistory);
     return current;
   }
 
-  if (!recordTransaction(safeAmount, "reward", reason, newBalance)) {
+  // Verify the complete committed state. If verification fails, restore both parts.
+  if (getBalance() !== newBalance) {
     try {
       localStorage.setItem(STORAGE_KEY, String(current));
     } catch {}
+    writeTransactionHistory(previousHistory);
+    return current;
+  }
+
+  const latest = getStarTransactions()[0];
+  if (
+    !latest ||
+    latest.id !== transaction.id ||
+    latest.amount !== safeAmount ||
+    latest.balanceAfter !== newBalance ||
+    latest.type !== "reward"
+  ) {
+    try {
+      localStorage.setItem(STORAGE_KEY, String(current));
+    } catch {}
+    writeTransactionHistory(previousHistory);
     return current;
   }
 
@@ -185,17 +225,49 @@ export function spendStars(amount: number, reason = "Stars spent"): boolean {
   if (current < safeAmount) return false;
 
   const newBalance = current - safeAmount;
+  const transaction = createTransaction(
+    -safeAmount,
+    "spend",
+    reason,
+    newBalance
+  );
+  const previousHistory = readTransactionHistory();
+  const nextHistory = [transaction, ...previousHistory].slice(0, MAX_TRANSACTIONS);
+
+  // Commit the history first. If it cannot be persisted, the balance is untouched.
+  if (!writeTransactionHistory(nextHistory)) {
+    return false;
+  }
 
   try {
     localStorage.setItem(STORAGE_KEY, String(newBalance));
   } catch {
+    // Roll the history back if the balance commit fails.
+    writeTransactionHistory(previousHistory);
     return false;
   }
 
-  if (!recordTransaction(-safeAmount, "spend", reason, newBalance)) {
+  // Verify the complete committed state. If verification fails, restore both parts.
+  if (getBalance() !== newBalance) {
     try {
       localStorage.setItem(STORAGE_KEY, String(current));
     } catch {}
+    writeTransactionHistory(previousHistory);
+    return false;
+  }
+
+  const latest = getStarTransactions()[0];
+  if (
+    !latest ||
+    latest.id !== transaction.id ||
+    latest.amount !== -safeAmount ||
+    latest.balanceAfter !== newBalance ||
+    latest.type !== "spend"
+  ) {
+    try {
+      localStorage.setItem(STORAGE_KEY, String(current));
+    } catch {}
+    writeTransactionHistory(previousHistory);
     return false;
   }
 
