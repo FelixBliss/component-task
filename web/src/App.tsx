@@ -1136,6 +1136,32 @@ export default function App() {
 
             <div className="info-card">
               <h3>
+                Recent Star Activity
+              </h3>
+              {starTransactions.length === 0 ? (
+                <p className="star-history-empty">No Star activity yet.</p>
+              ) : (
+                <div className="star-history-list">
+                  {starTransactions.map((transaction) => (
+                    <div className="star-history-item" key={transaction.id}>
+                      <span className={`star-history-icon ${transaction.type}`}>
+                        <Icon name={transaction.type === "reward" ? "plus" : "star"} size={16} />
+                      </span>
+                      <span className="star-history-details">
+                        <strong>{transaction.reason}</strong>
+                        <small>{new Date(transaction.createdAt).toLocaleString()}</small>
+                      </span>
+                      <span className={`star-history-amount ${transaction.type}`}>
+                        {transaction.amount > 0 ? "+" : ""}{transaction.amount} ⭐
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="info-card">
+              <h3>
                 Earn more credits
               </h3>
 
