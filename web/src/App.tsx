@@ -3,6 +3,7 @@ import Settings from "./Settings";
 import ProcedureList from "./components/ProcedureList";
 import ProcedureDetails from "./components/ProcedureDetails";
 import Icon from "./components/Icon";
+import BannerAd from "./components/BannerAd";
 import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
@@ -870,16 +871,7 @@ export default function App() {
 
             {/* ================= BANNER AD ================= */}
 
-            {isOnlineState && (
-              <div className="banner-ad-container">
-                <div className="banner-ad">
-                  <span className="banner-ad-label">Advertisement</span>
-                  <div className="banner-ad-content">
-                    Mock Banner Ad Space
-                  </div>
-                </div>
-              </div>
-            )}
+            <BannerAd />
           </>
         )}
 
