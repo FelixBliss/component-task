@@ -36,6 +36,7 @@ public class LevelPlayPlugin extends Plugin {
     private FrameLayout bannerContainer;
     private boolean initialized = false;
     private PluginCall pendingRewardedCall;
+    private PluginCall pendingInterstitialCall;
     private boolean rewardedGranted = false;
 
     private static final String APP_KEY = BuildConfig.LEVELPLAY_APP_KEY;
@@ -128,8 +129,8 @@ public class LevelPlayPlugin extends Plugin {
                 reject(call, "AD_NOT_AVAILABLE");
                 return;
             }
+            pendingInterstitialCall = call;
             interstitialAd.showAd(activity);
-            resolveSuccess(call);
         });
     }
 
@@ -194,7 +195,7 @@ public class LevelPlayPlugin extends Plugin {
 
         activity.runOnUiThread(() -> {
             if (bannerContainer != null) {
-                bannerContainer.setVisibility(FrameLayout.GONE);
+                bannerContainer.setVisibility(FrameLayout.VISIBLE);
             }
             resolveSuccess(call);
         });
@@ -234,8 +235,18 @@ public class LevelPlayPlugin extends Plugin {
             interstitialAd.setListener(new LevelPlayInterstitialAdListener() {
                 @Override public void onAdLoaded(LevelPlayAdInfo adInfo) {}
                 @Override public void onAdLoadFailed(LevelPlayAdError error) {}
-                @Override public void onAdDisplayed(LevelPlayAdInfo adInfo) {}
-                @Override public void onAdDisplayFailed(LevelPlayAdError error, LevelPlayAdInfo adInfo) {}
+                @Override public void onAdDisplayed(LevelPlayAdInfo adInfo) {
+                    if (pendingInterstitialCall != null) {
+                        resolveSuccess(pendingInterstitialCall);
+                        pendingInterstitialCall = null;
+                    }
+                }
+                @Override public void onAdDisplayFailed(LevelPlayAdError error, LevelPlayAdInfo adInfo) {
+                    if (pendingInterstitialCall != null) {
+                        reject(pendingInterstitialCall, "AD_NOT_AVAILABLE");
+                        pendingInterstitialCall = null;
+                    }
+                }
                 @Override public void onAdClicked(LevelPlayAdInfo adInfo) {}
                 @Override public void onAdClosed(LevelPlayAdInfo adInfo) {
                     interstitialAd.loadAd();
@@ -303,6 +314,7 @@ public class LevelPlayPlugin extends Plugin {
             if (parent != null) parent.removeView(bannerContainer);
         }
         pendingRewardedCall = null;
+        pendingInterstitialCall = null;
         super.handleOnDestroy();
     }
 }
