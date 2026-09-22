@@ -6,6 +6,7 @@ import { rgnBatch05 } from "./rgnBatches/rgnBatch05";
 import { rgnBatch06 } from "./rgnBatches/rgnBatch06";
 import { rgnBatch07 } from "./rgnBatches/rgnBatch07";
 import { rgnBatch08 } from "./rgnBatches/rgnBatch08";
+import type { Procedure } from "../procedureTypes";
 
 export const rgnProcedures: Procedure[] = [
   ...rgnBatch01,

@@ -1,10 +1,3 @@
-import type { Procedure } from "../procedureTypes";
-
-const NMC_REFERENCE = {
-  title: "Nursing and Midwifery Council of Ghana: Pain Management Procedures",
-  url: "https://nmc.gov.gh/procedures/view/PM",
-};
-
 export const pmProcedureIds: string[] = [
   "pm-001",
   "pm-002",

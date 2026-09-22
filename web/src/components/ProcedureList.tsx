@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Icon from "./Icon";
 import { procedures } from "../data/procedures";
 import ProcedureCard from "./ProcedureCard";
