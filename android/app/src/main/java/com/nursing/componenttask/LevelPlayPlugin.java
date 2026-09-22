@@ -1,4 +1,4 @@
-package com.nursing.componenttask;
+package com.my.componenttask;
 
 import android.app.Activity;
 import android.content.Context;
