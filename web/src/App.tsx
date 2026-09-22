@@ -1133,10 +1133,6 @@ export default function App() {
                 Earn more credits
               </h3>
 
-              <p>
-                Earn up to 5 Stars per day by watching rewarded ads.
-              </p>
-
               {!isOnlineState && (
                 <p className="video-offline-message" style={{ marginTop: "8px" }}>
                   Internet connection required to earn Stars.
@@ -1148,12 +1144,9 @@ export default function App() {
                   className="primary-button"
                   disabled={!isOnlineState || !canWatchRewardedAd()}
                   onClick={async () => {
-                    if (!isOnlineState) {
-                      return;
-                    }
+                    if (!isOnlineState) return;
                     const result: AdResult = await adService.showRewardedAd();
                     if (result.success) {
-                      // Award +5 stars after successful rewarded ad
                       const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd);
                       setStarBalance(newBalance);
                       window.dispatchEvent(new CustomEvent('stars-updated'));
@@ -1162,12 +1155,12 @@ export default function App() {
                   type="button"
                   title={!isOnlineState ? "Internet connection required" : canWatchRewardedAd() ? "Watch a rewarded ad to earn +5 Stars" : "Daily limit reached"}
                 >
-                  Watch Ad for +5 Stars
+                  <Icon name="video" size={18} /> Watch Ad +5 Stars
                 </button>
               </div>
 
               <div style={{ marginTop: "12px", fontSize: "14px", color: "#666" }}>
-                <strong>Rewarded ads today: {getRewardedAdsToday()}/{STAR_ECONOMY.limits.maxRewardedAdsPerDay}</strong>
+                <strong>Ads today: {getRewardedAdsToday()}/{STAR_ECONOMY.limits.maxRewardedAdsPerDay}</strong>
               </div>
             </div>
 
