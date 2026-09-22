@@ -1,9 +1,15 @@
 apply plugin: 'com.android.application'
 
-def levelPlayAppKey = project.findProperty("LEVELPLAY_APP_KEY") ?: System.getenv("LEVELPLAY_APP_KEY") ?: "__LEVELPLAY_APP_KEY__"
-def levelPlayRewardedAdUnitId = project.findProperty("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: "__LEVELPLAY_REWARDED_AD_UNIT_ID__"
-def levelPlayInterstitialAdUnitId = project.findProperty("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: "__LEVELPLAY_INTERSTITIAL_AD_UNIT_ID__"
-def levelPlayBannerAdUnitId = project.findProperty("LEVELPLAY_BANNER_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_BANNER_AD_UNIT_ID") ?: "__LEVELPLAY_BANNER_AD_UNIT_ID__"
+def levelPlayProperties = new Properties()
+def levelPlayPropertiesFile = rootProject.file("levelplay.properties")
+if (levelPlayPropertiesFile.exists()) {
+    levelPlayPropertiesFile.withInputStream { levelPlayProperties.load(it) }
+}
+
+def levelPlayAppKey = project.findProperty("LEVELPLAY_APP_KEY") ?: System.getenv("LEVELPLAY_APP_KEY") ?: levelPlayProperties.getProperty("LEVELPLAY_APP_KEY") ?: "__LEVELPLAY_APP_KEY__"
+def levelPlayRewardedAdUnitId = project.findProperty("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: levelPlayProperties.getProperty("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: "__LEVELPLAY_REWARDED_AD_UNIT_ID__"
+def levelPlayInterstitialAdUnitId = project.findProperty("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: levelPlayProperties.getProperty("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: "__LEVELPLAY_INTERSTITIAL_AD_UNIT_ID__"
+def levelPlayBannerAdUnitId = project.findProperty("LEVELPLAY_BANNER_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_BANNER_AD_UNIT_ID") ?: levelPlayProperties.getProperty("LEVELPLAY_BANNER_AD_UNIT_ID") ?: "__LEVELPLAY_BANNER_AD_UNIT_ID__"
 
 android {
     namespace "com.my.componenttask"
