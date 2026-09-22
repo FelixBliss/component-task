@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.nursing.componenttask"
+    namespace "com.my.componenttask"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.nursing.componenttask"
+        applicationId "com.my.componenttask"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
