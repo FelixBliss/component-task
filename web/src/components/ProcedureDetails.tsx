@@ -5,6 +5,7 @@ import React, {
 } from "react";
 
 import type { Procedure } from "../data/procedures";
+import Icon from "./Icon";
 
 type ProcedureDetailsProps = {
   procedure: Procedure;
@@ -742,7 +743,7 @@ export default function ProcedureDetails({
         onClick={onBack}
         aria-label="Return to the procedure list"
       >
-        <span aria-hidden="true">←</span>
+        <span aria-hidden="true"><Icon name="arrowLeft" size={18} /></span>
         Back to procedures
       </button>
 
@@ -819,7 +820,7 @@ export default function ProcedureDetails({
             )
           }
         >
-          <span aria-hidden="true">▤</span>
+          <span aria-hidden="true"><Icon name="document" size={18} /></span>
           Detail
         </button>
 
@@ -844,7 +845,7 @@ export default function ProcedureDetails({
             )
           }
         >
-          <span aria-hidden="true">▶</span>
+          <span aria-hidden="true"><Icon name="video" size={18} /></span>
           Video
         </button>
 
@@ -869,7 +870,7 @@ export default function ProcedureDetails({
             )
           }
         >
-          <span aria-hidden="true">?</span>
+          <span aria-hidden="true"><Icon name="question" size={18} /></span>
           Quiz
 
           {quizzes.length >
@@ -1033,7 +1034,7 @@ export default function ProcedureDetails({
                 startQuiz();
               }}
             >
-              🧠 Test Yourself — 2 ⭐ →
+              <><Icon name="brain" size={18} /> Test Yourself — 2 <Icon name="star" size={16} /> <Icon name="arrowRight" size={16} /></>
             </button>
           )}
 
@@ -1055,7 +1056,7 @@ export default function ProcedureDetails({
             <div className="video-empty-state">
 
               <div className="video-empty-icon">
-                🎥
+                <Icon name="video" size={42} />
               </div>
 
               <h2>
@@ -1072,7 +1073,7 @@ export default function ProcedureDetails({
             <div className="video-lock-card">
 
               <div className="video-lock-icon">
-                🔒
+                <Icon name="lock" size={42} />
               </div>
 
               <h2>
@@ -1166,7 +1167,7 @@ export default function ProcedureDetails({
                     );
                   }}
                 >
-                  ▶ Watch on YouTube
+                  <><Icon name="video" size={18} /> Watch on YouTube</>
                 </button>
               )}
 
@@ -1209,7 +1210,7 @@ export default function ProcedureDetails({
                       )
                     }
                   >
-                    ▶ Watch on YouTube
+                    <><Icon name="video" size={18} /> Watch on YouTube</>
                   </button>
                 )}
 
@@ -1239,7 +1240,7 @@ export default function ProcedureDetails({
             <div className="quiz-empty">
 
               <div className="quiz-empty-icon">
-                📝
+                <Icon name="quiz" size={42} />
               </div>
 
               <h2>
@@ -1262,7 +1263,7 @@ export default function ProcedureDetails({
             <div className="quiz-intro-card">
 
               <div className="quiz-intro-icon">
-                🧠
+                <Icon name="brain" size={42} />
               </div>
 
               <span className="quiz-kicker">
@@ -1281,7 +1282,7 @@ export default function ProcedureDetails({
               </p>
 
               <div className="quiz-premium-indicator">
-                Premium • 2 ⭐
+                <>Premium • 2 <Icon name="star" size={16} /></>
               </div>
 
               {!isOnline ? (
@@ -1321,7 +1322,7 @@ export default function ProcedureDetails({
                   });
                 }}
               >
-                Start Quiz — 2 ⭐
+                <>Start Quiz — 2 <Icon name="star" size={16} /></>
               </button>
 
             </div>
@@ -1384,7 +1385,7 @@ export default function ProcedureDetails({
                   disabled={!isOnline}
                   onClick={retryQuiz}
                 >
-                  Retry Quiz — 2 ⭐
+                  <>Retry Quiz — 2 <Icon name="star" size={16} /></>
                 </button>
 
                 <button
@@ -1440,7 +1441,7 @@ export default function ProcedureDetails({
 
               {/* Timer display */}
               <div className={`quiz-timer ${timeRemaining <= 30 ? 'quiz-timer-warning' : ''}`}>
-                <span>Time remaining: {formatTime(timeRemaining)}</span>
+                <span><><Icon name="timer" size={16} /> Time remaining: {formatTime(timeRemaining)}</></span>
               </div>
 
               {/* Extra time button */}
@@ -1451,12 +1452,12 @@ export default function ProcedureDetails({
                   disabled={!isOnline || adLoading}
                   onClick={requestExtraTime}
                 >
-                  {adLoading ? 'Loading...' : 'Watch Ad + Get 3 More Minutes'}
+                  {adLoading ? 'Loading...' : '<><Icon name="megaphone" size={18} /> Watch Ad + Get 3 More Minutes</>'}
                 </button>
               )}
               {extraTimeRequested && (
                 <div className="quiz-extra-time-used">
-                  Extra Time Used
+                  <><Icon name="clock" size={18} /> Extra Time Used</>
                 </div>
               )}
 
@@ -1585,14 +1586,14 @@ export default function ProcedureDetails({
             onClick={onNext}
           >
             <span>Next Procedure</span>
-            <span aria-hidden="true">→</span>
+            <span aria-hidden="true"><Icon name="arrowRight" size={18} /></span>
           </button>
         ) : (
           <span
             className="procedure-next-complete"
             aria-label="No more procedures in this category"
           >
-            ✓ Complete
+            <><Icon name="check" size={18} /> Complete</>
           </span>
         )}
       </div>
