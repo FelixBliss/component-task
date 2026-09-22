@@ -305,4 +305,11 @@ export const adService = {
 
     return await adProvider.showBannerAd();
   },
+
+  async hideBannerAd(): Promise<AdResult> {
+    if (adProvider.hideBannerAd) {
+      return await adProvider.hideBannerAd();
+    }
+    return { success: true };
+  },
 };
