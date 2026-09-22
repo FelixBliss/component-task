@@ -514,6 +514,7 @@ export default function App() {
 
             <div className="nurse-illustration">
               <Icon name="nurse" size={72} />
+              <Icon name="medical" size={34} className="splash-nurse-stethoscope" />
             </div>
 
             <div className="floating-procedure floating-procedure-two">
