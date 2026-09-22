@@ -71,7 +71,11 @@ function getDailyAdTrack(): DailyAdTrack {
     date: getTodayDate(),
     count: 0,
   };
-  localStorage.setItem(REWARDED_ADS_KEY, JSON.stringify(track));
+  try {
+    localStorage.setItem(REWARDED_ADS_KEY, JSON.stringify(track));
+  } catch {
+    // Ignore storage errors and use the in-memory reset.
+  }
   return track;
 }
 
@@ -82,7 +86,11 @@ function incrementDailyAdCount(): number {
     date: track.date,
     count: newCount,
   };
-  localStorage.setItem(REWARDED_ADS_KEY, JSON.stringify(updated));
+  try {
+    localStorage.setItem(REWARDED_ADS_KEY, JSON.stringify(updated));
+  } catch {
+    // Ignore storage errors; the current session still receives the result.
+  }
   return newCount;
 }
 
