@@ -16,7 +16,7 @@ export type AppIconName =
 type Props = { name: AppIconName; size?: number; strokeWidth?: number; className?: string };
 
 const icons: Record<AppIconName, LucideIcon> = {
-  medical: Activity,
+  medical: Stethoscope,
   pregnancy: UserRound,
   brain: Brain,
   globe: Globe2,
@@ -29,7 +29,7 @@ const icons: Record<AppIconName, LucideIcon> = {
   clock: Clock3,
   syringe: Syringe,
   bandage: Bandage,
-  nurse: Stethoscope,
+  nurse: UserRound,
   hand: Hand,
   search: Search,
   check: Check,
