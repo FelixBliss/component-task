@@ -6,8 +6,16 @@ export default function BannerAd() {
   const [online, setOnline] = useState(() => navigator.onLine);
 
   useEffect(() => {
-    const onOnline = () => setOnline(true);
-    const onOffline = () => setOnline(false);
+    const onOnline = () => {
+      setOnline(true);
+      void adService.showBannerAd().catch(() => undefined);
+    };
+    const onOffline = () => {
+      setOnline(false);
+      if (Capacitor.isNativePlatform()) {
+        void adService.hideBannerAd().catch(() => undefined);
+      }
+    };
     window.addEventListener("online", onOnline);
     window.addEventListener("offline", onOffline);
 
