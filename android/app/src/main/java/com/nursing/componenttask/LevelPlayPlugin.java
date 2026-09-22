@@ -155,18 +155,13 @@ public class LevelPlayPlugin extends Plugin {
             if (bannerContainer == null) {
                 bannerContainer = new FrameLayout(activity);
                 bannerContainer.setBackgroundColor(android.graphics.Color.TRANSPARENT);
-                activity.addContentView(
-                    bannerContainer,
-                    new ViewGroup.LayoutParams(
-                        ViewGroup.LayoutParams.MATCH_PARENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT
-                    )
+                FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
                 );
-                FrameLayout.LayoutParams params =
-                    (FrameLayout.LayoutParams) bannerContainer.getLayoutParams();
                 params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
                 params.bottomMargin = (int) (72 * activity.getResources().getDisplayMetrics().density);
-                bannerContainer.setLayoutParams(params);
+                activity.addContentView(bannerContainer, params);
                 bannerContainer.setPadding(0, 0, 0, 0);
             }
 
