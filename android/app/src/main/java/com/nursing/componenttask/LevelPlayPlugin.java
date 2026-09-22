@@ -297,9 +297,7 @@ public class LevelPlayPlugin extends Plugin {
 
     @Override
     protected void handleOnDestroy() {
-        if (rewardedAd != null) rewardedAd.destroy();
-        if (interstitialAd != null) interstitialAd.destroy();
-        if (bannerAd != null) bannerAd.destroy();
+                if (bannerAd != null) bannerAd.destroy();
         if (bannerContainer != null) {
             ViewGroup parent = (ViewGroup) bannerContainer.getParent();
             if (parent != null) parent.removeView(bannerContainer);
