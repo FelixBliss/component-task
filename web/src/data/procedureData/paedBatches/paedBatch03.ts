@@ -1,12 +1,5 @@
-import { makePaedProcedure, type PaedQuizFacts } from "./paedShared";
+import { makePaedProcedure } from "./paedShared";
 import type { Procedure } from "../../procedureTypes";
-
-type PaedProcedureInput = Omit<
-  Procedure,
-  "category" | "quiz" | "references"
-> & {
-  quizFacts: PaedQuizFacts;
-};
 
 export const paedBatch03: Procedure[] = [
   makePaedProcedure({

@@ -1,5 +1,3 @@
-import React from "react";
-
 export type AppIconName =
   | "medical" | "pregnancy" | "brain" | "globe" | "baby" | "heart" | "star" | "gift"
   | "video" | "clipboard" | "clock" | "syringe" | "bandage" | "nurse" | "hand"

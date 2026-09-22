@@ -1,4 +1,3 @@
-import React from "react";
 import type { Procedure } from "../data/procedures";
 
 type ProcedureCardProps = {

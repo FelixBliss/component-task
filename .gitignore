@@ -1,36 +1,4 @@
 ```
 # Build artifacts
-*.apk
-*.aab
-build/
-app/build/
-
-# Gradle
-.gradle/
-!gradle.properties
-!gradlew
-!gradlew.bat
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Android Studio
-.idea/
-*.iml
-*.iws
-*.log
-
-# Keystore
-*.keystore
-*.jks
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Temp files
-*.tmp
-*.swp
-*~
+web/dist/
 ```
