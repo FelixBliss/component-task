@@ -165,6 +165,7 @@ public class LevelPlayPlugin extends Plugin {
                 FrameLayout.LayoutParams params =
                     (FrameLayout.LayoutParams) bannerContainer.getLayoutParams();
                 params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+                params.bottomMargin = (int) (72 * activity.getResources().getDisplayMetrics().density);
                 bannerContainer.setLayoutParams(params);
                 bannerContainer.setPadding(0, 0, 0, 0);
             }
@@ -180,6 +181,7 @@ public class LevelPlayPlugin extends Plugin {
                 );
             }
 
+            bannerContainer.setVisibility(FrameLayout.VISIBLE);
             bannerAd.loadAd();
             resolveSuccess(call);
         });
@@ -195,7 +197,7 @@ public class LevelPlayPlugin extends Plugin {
 
         activity.runOnUiThread(() -> {
             if (bannerContainer != null) {
-                bannerContainer.setVisibility(FrameLayout.VISIBLE);
+                bannerContainer.setVisibility(FrameLayout.GONE);
             }
             resolveSuccess(call);
         });
