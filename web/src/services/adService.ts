@@ -22,6 +22,8 @@ export type { AdResult };
 // Re-export isOnline from connectivityService for backward compatibility
 import { isOnline as checkOnline } from './connectivityService';
 import { mockAdProvider } from './mockAdProvider';
+import { levelPlayAdProvider } from './levelPlayProvider';
+import { Capacitor } from '@capacitor/core';
 import type { AdProvider } from './adProvider';
 
 export function isOnline(): boolean {
@@ -29,7 +31,7 @@ export function isOnline(): boolean {
 }
 
 // Internal ad provider - can be swapped for real SDK integration
-const adProvider: AdProvider = mockAdProvider;
+const adProvider: AdProvider = Capacitor.isNativePlatform() ? levelPlayAdProvider : mockAdProvider;
 
 // Track rewarded ads watched per day
 const REWARDED_ADS_KEY = 'component-task-rewarded-ads-daily';
