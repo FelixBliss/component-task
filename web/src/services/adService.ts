@@ -49,48 +49,89 @@ interface DailyAdTrack {
   count: number;
 }
 
+let rewardedAdInFlight = false;
+let rewardedMemoryTrack: DailyAdTrack | null = null;
+
 function getTodayDate(): string {
   return new Date().toISOString().split('T')[0];
 }
 
+function isValidDailyTrack(value: unknown): value is DailyAdTrack {
+  if (!value || typeof value !== 'object') return false;
+  const track = value as Partial<DailyAdTrack>;
+  return (
+    typeof track.date === 'string' &&
+    /^\d{4}-\d{2}-\d{2}$/.test(track.date) &&
+    typeof track.count === 'number' &&
+    Number.isInteger(track.count) &&
+    track.count >= 0
+  );
+}
+
+function createTodayTrack(): DailyAdTrack {
+  return { date: getTodayDate(), count: 0 };
+}
+
 function getDailyAdTrack(): DailyAdTrack {
+  const today = getTodayDate();
+
+  if (rewardedMemoryTrack?.date === today) {
+    return rewardedMemoryTrack;
+  }
+
   try {
     const stored = localStorage.getItem(REWARDED_ADS_KEY);
     if (stored) {
-      const track: DailyAdTrack = JSON.parse(stored);
-      const today = getTodayDate();
-      if (track.date === today) {
-        return track;
+      const parsed: unknown = JSON.parse(stored);
+      if (isValidDailyTrack(parsed) && parsed.date === today) {
+        const safeTrack: DailyAdTrack = {
+          date: parsed.date,
+          count: Math.min(parsed.count, STAR_ECONOMY.limits.maxRewardedAdsPerDay),
+        };
+        rewardedMemoryTrack = safeTrack;
+        if (safeTrack.count !== parsed.count) {
+          try {
+            localStorage.setItem(REWARDED_ADS_KEY, JSON.stringify(safeTrack));
+          } catch {}
+        }
+        return safeTrack;
       }
     }
   } catch {
-    // Ignore parse errors
+    // Fall back to the in-memory tracker.
   }
-  // Reset for new day or first time
-  const track: DailyAdTrack = {
-    date: getTodayDate(),
-    count: 0,
-  };
+
+  const track = createTodayTrack();
+  rewardedMemoryTrack = track;
+
   try {
     localStorage.setItem(REWARDED_ADS_KEY, JSON.stringify(track));
   } catch {
-    // Ignore storage errors and use the in-memory reset.
+    // Keep the in-memory tracker when storage is unavailable.
   }
+
   return track;
 }
 
 function incrementDailyAdCount(): number {
   const track = getDailyAdTrack();
-  const newCount = track.count + 1;
+  const newCount = Math.min(
+    track.count + 1,
+    STAR_ECONOMY.limits.maxRewardedAdsPerDay
+  );
+
   const updated: DailyAdTrack = {
     date: track.date,
     count: newCount,
   };
+  rewardedMemoryTrack = updated;
+
   try {
     localStorage.setItem(REWARDED_ADS_KEY, JSON.stringify(updated));
   } catch {
-    // Ignore storage errors; the current session still receives the result.
+    // Keep the in-memory count for this session.
   }
+
   return newCount;
 }
 
@@ -108,10 +149,13 @@ function getInterstitialDailyTrack(): DailyAdTrack {
   try {
     const stored = localStorage.getItem(INTERSTITIAL_ADS_KEY);
     if (stored) {
-      const track: DailyAdTrack = JSON.parse(stored);
+      const parsed: unknown = JSON.parse(stored);
       const today = getTodayDate();
-      if (track.date === today) {
-        return track;
+      if (isValidDailyTrack(parsed) && parsed.date === today) {
+        return {
+          date: parsed.date,
+          count: Math.min(parsed.count, INTERSTITIAL_CONFIG.maxPerDay),
+        };
       }
     }
   } catch {
@@ -122,18 +166,22 @@ function getInterstitialDailyTrack(): DailyAdTrack {
     date: getTodayDate(),
     count: 0,
   };
-  localStorage.setItem(INTERSTITIAL_ADS_KEY, JSON.stringify(track));
+  try {
+    localStorage.setItem(INTERSTITIAL_ADS_KEY, JSON.stringify(track));
+  } catch {}
   return track;
 }
 
 function incrementInterstitialDailyCount(): number {
   const track = getInterstitialDailyTrack();
-  const newCount = track.count + 1;
+  const newCount = Math.min(track.count + 1, INTERSTITIAL_CONFIG.maxPerDay);
   const updated: DailyAdTrack = {
     date: track.date,
     count: newCount,
   };
-  localStorage.setItem(INTERSTITIAL_ADS_KEY, JSON.stringify(updated));
+  try {
+    localStorage.setItem(INTERSTITIAL_ADS_KEY, JSON.stringify(updated));
+  } catch {}
   return newCount;
 }
 
@@ -150,7 +198,8 @@ function getLastInterstitialTime(): number {
   try {
     const stored = localStorage.getItem(INTERSTITIAL_COOLDOWN_KEY);
     if (stored) {
-      return parseInt(stored, 10);
+      const parsed = Number(stored);
+      return Number.isFinite(parsed) && parsed >= 0 ? parsed : 0;
     }
   } catch {
     // Ignore parse errors
@@ -159,7 +208,9 @@ function getLastInterstitialTime(): number {
 }
 
 function setLastInterstitialTime(): void {
-  localStorage.setItem(INTERSTITIAL_COOLDOWN_KEY, Date.now().toString());
+  try {
+    localStorage.setItem(INTERSTITIAL_COOLDOWN_KEY, Date.now().toString());
+  } catch {}
 }
 
 function isInterstitialCooldownActive(): boolean {
@@ -194,47 +245,49 @@ export function canShowInterstitialAd(): boolean {
 
 export const adService = {
   async showRewardedAd(): Promise<AdResult> {
-    // Business rule: Check connectivity first
+    if (rewardedAdInFlight) {
+      return { success: false, error: 'AD_NOT_AVAILABLE' };
+    }
+
     if (!isOnline()) {
       return { success: false, error: 'NO_CONNECTION' };
     }
 
-    // Business rule: Check daily limit
     if (!canWatchRewardedAd()) {
       return { success: false, error: 'DAILY_LIMIT_REACHED' };
     }
 
-    // Delegate to provider for actual ad display
-    const result = await adProvider.showRewardedAd();
+    rewardedAdInFlight = true;
 
-    // Only track as watched if provider succeeded
-    if (result.success) {
-      incrementDailyAdCount();
+    try {
+      const result = await adProvider.showRewardedAd();
+
+      // Only a successful provider result consumes one daily allowance.
+      if (result.success) {
+        incrementDailyAdCount();
+      }
+
+      return result;
+    } finally {
+      rewardedAdInFlight = false;
     }
-
-    return result;
   },
 
   async showInterstitialAd(): Promise<AdResult> {
-    // Business rule: Check connectivity first
     if (!isOnline()) {
       return { success: false, error: 'NO_CONNECTION' };
     }
 
-    // Business rule: Check daily limit
     if (!canShowInterstitialToday()) {
       return { success: false, error: 'DAILY_LIMIT_REACHED' };
     }
 
-    // Business rule: Check cooldown
     if (isInterstitialCooldownActive()) {
       return { success: false, error: 'AD_NOT_AVAILABLE' };
     }
 
-    // Delegate to provider for actual ad display
     const result = await adProvider.showInterstitialAd();
 
-    // Only track if provider succeeded
     if (result.success) {
       incrementInterstitialDailyCount();
       setLastInterstitialTime();
@@ -244,12 +297,10 @@ export const adService = {
   },
 
   async showBannerAd(): Promise<AdResult> {
-    // Business rule: Check connectivity first
     if (!isOnline()) {
       return { success: false, error: 'NO_CONNECTION' };
     }
 
-    // Delegate to provider for banner availability check
     return await adProvider.showBannerAd();
   },
 };
