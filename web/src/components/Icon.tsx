@@ -2,8 +2,8 @@ import React from "react";
 import {
   Activity, Baby, Bandage, Brain, Check, ChevronRight, CircleHelp, ClipboardList,
   Clock3, FileText, Gift, Globe2, Hand, HeartPulse, Home, Info, LockKeyhole,
-  Mail, Megaphone, MessageCircle, Nurse, Play, Plus, Search, Settings, ShieldCheck,
-  Sparkles, Star, Syringe, Timer, UserRound, Video, ArrowLeft, ArrowRight, type LucideIcon
+  Mail, Megaphone, MessageCircle, Plus, Search, Settings, Star, Stethoscope, Syringe,
+  Timer, UserRound, Video, ArrowLeft, ArrowRight, type LucideIcon
 } from "lucide-react";
 
 export type AppIconName =
@@ -29,7 +29,7 @@ const icons: Record<AppIconName, LucideIcon> = {
   clock: Clock3,
   syringe: Syringe,
   bandage: Bandage,
-  nurse: Nurse,
+  nurse: Stethoscope,
   hand: Hand,
   search: Search,
   check: Check,
