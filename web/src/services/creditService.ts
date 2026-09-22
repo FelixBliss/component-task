@@ -83,24 +83,17 @@ function readTransactionHistory(): StarTransaction[] {
 
 function writeTransactionHistory(history: StarTransaction[]): boolean {
   try {
-    localStorage.setItem(
-      TRANSACTION_STORAGE_KEY,
-      JSON.stringify(sanitizeTransactions(history))
-    );
+    const sanitized = sanitizeTransactions(history);
+    localStorage.setItem(TRANSACTION_STORAGE_KEY, JSON.stringify(sanitized));
 
     const stored = JSON.parse(
       localStorage.getItem(TRANSACTION_STORAGE_KEY) || "[]"
     );
-    return JSON.stringify(sanitizeTransactions(stored)) ===
-      JSON.stringify(sanitizeTransactions(history));
+
+    return JSON.stringify(sanitizeTransactions(stored)) === JSON.stringify(sanitized);
   } catch {
     return false;
   }
-}
-
-function saveTransaction(transaction: StarTransaction): boolean {
-  const history = readTransactionHistory();
-  return writeTransactionHistory([transaction, ...history].slice(0, MAX_TRANSACTIONS));
 }
 
 export function getStarTransactions(): StarTransaction[] {
