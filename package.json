@@ -1,0 +1,15 @@
+{
+  "name": "component-task-native",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "web:build": "npm --prefix web run build",
+    "cap:sync": "npm run web:build && npx cap sync",
+    "cap:open:android": "npm run web:build && npx cap sync android && npx cap open android"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.6.9",
+    "typescript": "^5.9.2"
+  }
+}
