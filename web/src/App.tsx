@@ -1173,25 +1173,30 @@ export default function App() {
 
               <button
                 className="rewarded-ad-card"
-                disabled={!isOnlineState || !canWatchRewardedAd()}
+                disabled={!isOnlineState || !canWatchRewardedAd() || isRewardedAdLoading}
                 onClick={async () => {
-                  if (!isOnlineState) return;
-                  const result: AdResult = await adService.showRewardedAd();
-                  if (result.success) {
-                    const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd, "Rewarded ad");
-                    setStarBalance(newBalance);
-                    window.dispatchEvent(new CustomEvent('stars-updated'));
+                  if (!isOnlineState || isRewardedAdLoading || !canWatchRewardedAd()) return;
+                  setIsRewardedAdLoading(true);
+                  try {
+                    const result: AdResult = await adService.showRewardedAd();
+                    if (result.success) {
+                      const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd, "Rewarded ad");
+                      setStarBalance(newBalance);
+                      window.dispatchEvent(new CustomEvent('stars-updated'));
+                    }
+                  } finally {
+                    setIsRewardedAdLoading(false);
                   }
                 }}
                 type="button"
-                title={!isOnlineState ? "Internet connection required" : canWatchRewardedAd() ? "Watch a rewarded ad to earn +5 Stars" : "Daily limit reached"}
+                title={!isOnlineState ? "Internet connection required" : isRewardedAdLoading ? "Rewarded ad is loading" : canWatchRewardedAd() ? "Watch a rewarded ad to earn +5 Stars" : "Daily limit reached"}
               >
                 <span className="rewarded-ad-icon">
                   <Icon name="video" size={25} />
                 </span>
                 <span className="rewarded-ad-content">
-                  <strong>Watch a Rewarded Ad</strong>
-                  <small>Earn +5 Stars</small>
+                  <strong>{isRewardedAdLoading ? "Loading Rewarded Ad…" : "Watch a Rewarded Ad"}</strong>
+                  <small>{isRewardedAdLoading ? "Please wait…" : "Earn +5 Stars"}</small>
                 </span>
                 <span className="rewarded-ad-arrow">
                   <Icon name="chevron" size={22} />
