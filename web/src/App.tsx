@@ -7,6 +7,8 @@ import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
   addStars,
+  getStarTransactions,
+  type StarTransaction,
 } from "./services/creditService";
 import {
   adService,
@@ -169,6 +171,9 @@ export default function App() {
   const [starBalance, setStarBalance] =
     useState<number>(() => getBalance());
 
+  const [starTransactions, setStarTransactions] =
+    useState<StarTransaction[]>(() => getStarTransactions());
+
   const [isOnlineState, setIsOnlineState] =
     useState<boolean>(() => checkOnline());
 
@@ -189,6 +194,7 @@ export default function App() {
   useEffect(() => {
     const handleStarsUpdated = () => {
       setStarBalance(getBalance());
+      setStarTransactions(getStarTransactions());
     };
 
     window.addEventListener('stars-updated', handleStarsUpdated);
@@ -1146,7 +1152,7 @@ export default function App() {
                   if (!isOnlineState) return;
                   const result: AdResult = await adService.showRewardedAd();
                   if (result.success) {
-                    const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd);
+                    const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd, "Rewarded ad");
                     setStarBalance(newBalance);
                     window.dispatchEvent(new CustomEvent('stars-updated'));
                   }
