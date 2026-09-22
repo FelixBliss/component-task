@@ -1139,25 +1139,32 @@ export default function App() {
                 </p>
               )}
 
-              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "12px" }}>
-                <button
-                  className="primary-button"
-                  disabled={!isOnlineState || !canWatchRewardedAd()}
-                  onClick={async () => {
-                    if (!isOnlineState) return;
-                    const result: AdResult = await adService.showRewardedAd();
-                    if (result.success) {
-                      const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd);
-                      setStarBalance(newBalance);
-                      window.dispatchEvent(new CustomEvent('stars-updated'));
-                    }
-                  }}
-                  type="button"
-                  title={!isOnlineState ? "Internet connection required" : canWatchRewardedAd() ? "Watch a rewarded ad to earn +5 Stars" : "Daily limit reached"}
-                >
-                  <Icon name="video" size={18} /> Watch Ad +5 Stars
-                </button>
-              </div>
+              <button
+                className="rewarded-ad-card"
+                disabled={!isOnlineState || !canWatchRewardedAd()}
+                onClick={async () => {
+                  if (!isOnlineState) return;
+                  const result: AdResult = await adService.showRewardedAd();
+                  if (result.success) {
+                    const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd);
+                    setStarBalance(newBalance);
+                    window.dispatchEvent(new CustomEvent('stars-updated'));
+                  }
+                }}
+                type="button"
+                title={!isOnlineState ? "Internet connection required" : canWatchRewardedAd() ? "Watch a rewarded ad to earn +5 Stars" : "Daily limit reached"}
+              >
+                <span className="rewarded-ad-icon">
+                  <Icon name="video" size={25} />
+                </span>
+                <span className="rewarded-ad-content">
+                  <strong>Watch a Rewarded Ad</strong>
+                  <small>Earn +5 Stars</small>
+                </span>
+                <span className="rewarded-ad-arrow">
+                  <Icon name="chevron" size={22} />
+                </span>
+              </button>
 
               <div style={{ marginTop: "12px", fontSize: "14px", color: "#666" }}>
                 <strong>Ads today: {getRewardedAdsToday()}/{STAR_ECONOMY.limits.maxRewardedAdsPerDay}</strong>
