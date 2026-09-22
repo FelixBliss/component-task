@@ -1,4 +1,5 @@
 import { makePaedProcedure, type PaedQuizFacts } from "./paedShared";
+import type { Procedure } from "../../procedureTypes";
 
 type PaedProcedureInput = Omit<
   Procedure,

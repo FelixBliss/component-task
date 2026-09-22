@@ -3,10 +3,8 @@
 // The provider is responsible ONLY for showing ads, not for business logic.
 
 export interface AdResult {
-  success: true;
-} | {
-  success: false;
-  error: 'NO_CONNECTION' | 'DAILY_LIMIT_REACHED' | 'AD_NOT_AVAILABLE' | 'UNKNOWN_ERROR';
+  success: boolean;
+  error?: 'NO_CONNECTION' | 'DAILY_LIMIT_REACHED' | 'AD_NOT_AVAILABLE' | 'UNKNOWN_ERROR';
 }
 
 /**

@@ -16,7 +16,8 @@ export const STAR_ECONOMY = {
 } as const;
 
 // Ad result types - re-export from adProvider for backward compatibility
-export type { AdResult } from './adProvider';
+import type { AdResult } from './adProvider';
+export type { AdResult };
 
 // Re-export isOnline from connectivityService for backward compatibility
 import { isOnline as checkOnline } from './connectivityService';
