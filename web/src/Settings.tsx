@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Icon from "./components/Icon";
 
 type SettingsProps = {
   onAbout?: () => void;
@@ -313,7 +314,7 @@ export default function Settings({
           <div className="settings-card">
 
             <div className="settings-card-icon">
-              💾
+              <Icon name="document" size={20} />
             </div>
 
             <div className="settings-card-content">
@@ -361,7 +362,7 @@ export default function Settings({
             }
           >
             <div className="settings-card-icon">
-              🎨
+              <Icon name="settings" size={20} />
             </div>
 
             <div className="settings-card-content">
@@ -396,7 +397,7 @@ export default function Settings({
             }
           >
             <div className="settings-card-icon">
-              🧹
+              <Icon name="bandage" size={20} />
             </div>
 
             <div className="settings-card-content">
@@ -457,7 +458,7 @@ export default function Settings({
         <div className="settings-footer">
 
           <div className="settings-footer-logo">
-            🩺
+            <Icon name="medical" size={20} />
           </div>
 
           <strong>
@@ -501,7 +502,7 @@ export default function Settings({
           >
 
             <div className="confirmation-icon">
-              🧹
+              <Icon name="bandage" size={20} />
             </div>
 
             <h2 id="clear-history-title">
@@ -624,7 +625,7 @@ export default function Settings({
               >
 
                 <span className="appearance-option-icon">
-                  ☀️
+                  <Icon name="globe" size={20} />️
                 </span>
 
                 <span className="appearance-option-content">
@@ -642,7 +643,7 @@ export default function Settings({
                 {pendingAppearance ===
                   "light" && (
                   <span className="appearance-option-check">
-                    ✓
+                    <Icon name="check" size={18} />
                   </span>
                 )}
 
@@ -671,7 +672,7 @@ export default function Settings({
               >
 
                 <span className="appearance-option-icon">
-                  🌙
+                  <Icon name="globe" size={20} />
                 </span>
 
                 <span className="appearance-option-content">
@@ -689,7 +690,7 @@ export default function Settings({
                 {pendingAppearance ===
                   "dark" && (
                   <span className="appearance-option-check">
-                    ✓
+                    <Icon name="check" size={18} />
                   </span>
                 )}
 
@@ -718,7 +719,7 @@ export default function Settings({
               >
 
                 <span className="appearance-option-icon">
-                  ⚙️
+                  <Icon name="settings" size={20} />️
                 </span>
 
                 <span className="appearance-option-content">
@@ -736,7 +737,7 @@ export default function Settings({
                 {pendingAppearance ===
                   "system" && (
                   <span className="appearance-option-check">
-                    ✓
+                    <Icon name="check" size={18} />
                   </span>
                 )}
 
