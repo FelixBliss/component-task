@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Settings from "./Settings";
 import ProcedureList from "./components/ProcedureList";
 import ProcedureDetails from "./components/ProcedureDetails";
+import Icon from "./components/Icon";
 import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
@@ -29,7 +30,7 @@ type Tab =
   | "credits";
 
 type Category = {
-  icon: string;
+  icon: React.ReactNode;
   name: string;
   description: string;
 };
@@ -44,39 +45,39 @@ const MAX_RECENTLY_VIEWED = 5;
 
 const procedureCategories: Category[] = [
   {
-    icon: "🩺",
+    icon: <Icon name="medical" size={28} />,
     name: "General Nursing (RGN)",
     description:
       "Registered General Nursing procedures",
   },
   {
-    icon: "🤰",
+    icon: <Icon name="pregnancy" size={28} />,
     name: "Midwifery (RM)",
     description: "Midwifery procedures",
   },
   {
-    icon: "🧠",
+    icon: <Icon name="brain" size={28} />,
     name: "Community Mental Health Nursing (RCMN)",
     description:
       "Community mental health procedures",
   },
   {
-    icon: "🧠",
+    icon: <Icon name="brain" size={28} />,
     name: "Mental Health Nursing (RMN)",
     description: "Mental health nursing procedures",
   },
   {
-    icon: "🌍",
+    icon: <Icon name="globe" size={28} />,
     name: "Public Health Nursing (PHN)",
     description: "Public health nursing procedures",
   },
   {
-    icon: "👶",
+    icon: <Icon name="baby" size={28} />,
     name: "Paediatric Nursing (PAED)",
     description: "Paediatric nursing procedures",
   },
   {
-    icon: "❤️",
+    icon: <Icon name="heart" size={28} />,
     name: "Pain Management (PM)",
     description: "Pain management procedures",
   },
@@ -398,7 +399,7 @@ export default function App() {
       );
     } else {
       setSelectedCategory({
-        icon: "🩺",
+        icon: <Icon name="medical" size={28} />,
         name: procedure.category,
         description:
           "Nursing procedures",
@@ -488,7 +489,7 @@ export default function App() {
 
         <div className="splash-content">
           <div className="splash-logo">
-            <span>✚</span>
+            <span><Icon name="plus" size={24} /></span>
           </div>
 
           <h1 className="splash-title">
@@ -505,25 +506,25 @@ export default function App() {
 
           <div className="splash-visual">
             <div className="floating-procedure floating-procedure-one">
-              🩺
+              <Icon name="medical" size={30} />
               <small>
                 Assessment
               </small>
             </div>
 
             <div className="nurse-illustration">
-              👩🏾‍⚕️
+              <Icon name="nurse" size={72} />
             </div>
 
             <div className="floating-procedure floating-procedure-two">
-              💉
+              <Icon name="syringe" size={30} />
               <small>
                 Medication
               </small>
             </div>
 
             <div className="floating-procedure floating-procedure-three">
-              🩹
+              <Icon name="bandage" size={30} />
               <small>
                 Wound Care
               </small>
@@ -579,7 +580,7 @@ export default function App() {
 
           <div className="brand">
             <div className="brand-icon">
-              🩺
+              <Icon name="medical" size={30} />
             </div>
 
             <div>
@@ -601,7 +602,7 @@ export default function App() {
             }
             type="button"
           >
-            <span>⭐</span>
+            <span><Icon name="star" size={18} /></span>
             <strong>{starBalance}</strong>
             <small>Credits</small>
           </button>
@@ -619,7 +620,7 @@ export default function App() {
           <>
             <section className="home-welcome">
               <span className="welcome-label">
-                WELCOME 👋
+                WELCOME <Icon name="hand" size={16} />
               </span>
 
               <h1>
@@ -635,7 +636,7 @@ export default function App() {
 
             <section className="featured-procedure">
               <div className="featured-icon">
-                🩺
+                <Icon name="medical" size={30} />
               </div>
 
               <div className="featured-content">
@@ -663,7 +664,7 @@ export default function App() {
                   type="button"
                 >
                   Browse Procedures
-                  <span>→</span>
+                  <span><Icon name="arrowRight" size={18} /></span>
                 </button>
               </div>
             </section>
@@ -687,7 +688,7 @@ export default function App() {
                   type="button"
                 >
                   <span className="quick-icon">
-                    📋
+                    <Icon name="clipboard" size={24} />
                   </span>
 
                   <span className="quick-text">
@@ -702,7 +703,7 @@ export default function App() {
                   </span>
 
                   <span className="arrow">
-                    ›
+                    <Icon name="chevron" size={18} />
                   </span>
                 </button>
 
@@ -716,7 +717,7 @@ export default function App() {
                   type="button"
                 >
                   <span className="quick-icon">
-                    ⭐
+                    <Icon name="star" size={24} />
                   </span>
 
                   <span className="quick-text">
@@ -731,7 +732,7 @@ export default function App() {
                   </span>
 
                   <span className="arrow">
-                    ›
+                    <Icon name="chevron" size={18} />
                   </span>
                 </button>
 
@@ -749,7 +750,7 @@ export default function App() {
               0 ? (
                 <div className="empty-state">
                   <div className="empty-icon">
-                    🕘
+                    <Icon name="clock" size={30} />
                   </div>
 
                   <h3>
@@ -778,7 +779,7 @@ export default function App() {
                         type="button"
                       >
                         <span className="category-icon">
-                          🩺
+                          <Icon name="medical" size={30} />
                         </span>
 
                         <span className="category-content">
@@ -792,7 +793,7 @@ export default function App() {
                         </span>
 
                         <span className="category-arrow">
-                          ›
+                          <Icon name="chevron" size={18} />
                         </span>
                       </button>
                     )
@@ -806,7 +807,7 @@ export default function App() {
 
             <section className="nmc-info">
               <div className="nmc-icon">
-                ✓
+                <Icon name="check" size={20} />
               </div>
 
               <div>
@@ -863,7 +864,7 @@ export default function App() {
               </div>
 
               <div className="procedure-search">
-                <span>🔍</span>
+                <span><Icon name="search" size={20} /></span>
 
                 <input
                   type="search"
@@ -880,7 +881,7 @@ export default function App() {
               </div>
 
               <div className="procedure-helper">
-                <span>🩺</span>
+                <span><Icon name="medical" size={18} /></span>
 
                 <div>
                   <strong>
@@ -933,7 +934,7 @@ export default function App() {
                       </span>
 
                       <span className="category-arrow">
-                        ›
+                        <Icon name="chevron" size={18} />
                       </span>
                     </button>
                   ))}
@@ -949,7 +950,7 @@ export default function App() {
                 ).length === 0 && (
                   <div className="empty-state">
                     <div className="empty-icon">
-                      🔍
+                      <Icon name="search" size={20} />
                     </div>
 
                     <h3>
@@ -983,7 +984,7 @@ export default function App() {
                 }
                 type="button"
               >
-                ← All Categories
+                <Icon name="arrowLeft" size={18} /> All Categories
               </button>
 
               <div className="category-header">
@@ -1103,7 +1104,7 @@ export default function App() {
 
             <div className="credits-display">
               <div className="large-star">
-                ⭐
+                <Icon name="star" size={24} />
               </div>
 
               <strong>{starBalance}</strong>
@@ -1206,7 +1207,7 @@ export default function App() {
             <div className="about-card">
 
               <div className="about-logo">
-                🩺
+                <Icon name="medical" size={30} />
               </div>
 
               <h2>
@@ -1286,7 +1287,7 @@ export default function App() {
                     href="mailto:felixbliss1@gmail.com"
                     className="contact-button"
                   >
-                    📧 Email Developer
+                    <Icon name="mail" size={18} /> Email Developer
                   </a>
 
                   <a
@@ -1295,7 +1296,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="contact-button whatsapp-button"
                   >
-                    💬 WhatsApp Developer
+                    <Icon name="whatsapp" size={18} /> WhatsApp Developer
                   </a>
 
                 </div>
@@ -1348,7 +1349,7 @@ export default function App() {
             }
             type="button"
           >
-            <span>🏠</span>
+            <span><Icon name="home" size={22} /></span>
 
             <small>
               Home
@@ -1366,7 +1367,7 @@ export default function App() {
             }
             type="button"
           >
-            <span>🩺</span>
+            <span><Icon name="medical" size={18} /></span>
 
             <small>
               Procedures
@@ -1384,7 +1385,7 @@ export default function App() {
             }
             type="button"
           >
-            <span>ℹ️</span>
+            <span><Icon name="info" size={22} /></span>
 
             <small>
               About
@@ -1402,7 +1403,7 @@ export default function App() {
             }
             type="button"
           >
-            <span>⚙️</span>
+            <span><Icon name="settings" size={22} /></span>
 
             <small>
               Settings
