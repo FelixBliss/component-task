@@ -1,14 +1,23 @@
 apply plugin: 'com.android.application'
 
+def levelPlayAppKey = project.findProperty("LEVELPLAY_APP_KEY") ?: System.getenv("LEVELPLAY_APP_KEY") ?: "__LEVELPLAY_APP_KEY__"
+def levelPlayRewardedAdUnitId = project.findProperty("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: "__LEVELPLAY_REWARDED_AD_UNIT_ID__"
+def levelPlayInterstitialAdUnitId = project.findProperty("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: "__LEVELPLAY_INTERSTITIAL_AD_UNIT_ID__"
+def levelPlayBannerAdUnitId = project.findProperty("LEVELPLAY_BANNER_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_BANNER_AD_UNIT_ID") ?: "__LEVELPLAY_BANNER_AD_UNIT_ID__"
+
 android {
     namespace "com.my.componenttask"
+    buildFeatures {
+        buildConfig true
+    }
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.my.componenttask"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"\n        buildConfigField "String", "LEVELPLAY_APP_KEY", "\"" + levelPlayAppKey + "\""\n        buildConfigField "String", "LEVELPLAY_REWARDED_AD_UNIT_ID", "\"" + levelPlayRewardedAdUnitId + "\""\n        buildConfigField "String", "LEVELPLAY_INTERSTITIAL_AD_UNIT_ID", "\"" + levelPlayInterstitialAdUnitId + "\""\n        buildConfigField "String", "LEVELPLAY_BANNER_AD_UNIT_ID", "\"" + levelPlayBannerAdUnitId + "\""
+        versionName "1.0"
+        buildConfigField "String", "LEVELPLAY_APP_KEY", "\"" + levelPlayAppKey + "\""\n        buildConfigField "String", "LEVELPLAY_REWARDED_AD_UNIT_ID", "\"" + levelPlayRewardedAdUnitId + "\""\n        buildConfigField "String", "LEVELPLAY_INTERSTITIAL_AD_UNIT_ID", "\"" + levelPlayInterstitialAdUnitId + "\""\n        buildConfigField "String", "LEVELPLAY_BANNER_AD_UNIT_ID", "\"" + levelPlayBannerAdUnitId + "\""
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -39,7 +48,8 @@ dependencies {
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
-    implementation project(':capacitor-cordova-android-plugins')\n    implementation 'com.unity3d.ads-mediation:mediation-sdk:9.6.0'
+    implementation project(':capacitor-cordova-android-plugins')
+    implementation 'com.unity3d.ads-mediation:mediation-sdk:9.6.0'
 }
 
 apply from: 'capacitor.build.gradle'
