@@ -27,16 +27,69 @@ function parseStoredBalance(saved: string | null): number {
   return normalizeBalance(parsed, INITIAL_BALANCE);
 }
 
+function isValidTransaction(item: unknown): item is StarTransaction {
+  if (!item || typeof item !== "object") return false;
+  const t = item as Partial<StarTransaction>;
+
+  if (
+    typeof t.id !== "string" ||
+    !t.id ||
+    typeof t.amount !== "number" ||
+    !Number.isFinite(t.amount) ||
+    typeof t.balanceAfter !== "number" ||
+    !Number.isFinite(t.balanceAfter) ||
+    t.balanceAfter < 0 ||
+    !Number.isInteger(t.balanceAfter) ||
+    (t.type !== "reward" && t.type !== "spend") ||
+    typeof t.reason !== "string" ||
+    !t.reason ||
+    typeof t.createdAt !== "string"
+  ) {
+    return false;
+  }
+
+  if (t.type === "reward" && t.amount <= 0) return false;
+  if (t.type === "spend" && t.amount >= 0) return false;
+
+  return true;
+}
+
+function sanitizeTransactions(parsed: unknown): StarTransaction[] {
+  if (!Array.isArray(parsed)) return [];
+
+  const seenIds = new Set<string>();
+  const valid: StarTransaction[] = [];
+
+  for (const item of parsed) {
+    if (!isValidTransaction(item)) continue;
+    if (seenIds.has(item.id)) continue;
+
+    seenIds.add(item.id);
+    valid.push(item);
+  }
+
+  return valid.slice(0, MAX_TRANSACTIONS);
+}
+
 function saveTransaction(transaction: StarTransaction): boolean {
   try {
     const saved = localStorage.getItem(TRANSACTION_STORAGE_KEY);
     const parsed: unknown = saved ? JSON.parse(saved) : [];
-    const history = Array.isArray(parsed) ? parsed : [];
+    const history = sanitizeTransactions(parsed);
     const nextHistory = [transaction, ...history].slice(0, MAX_TRANSACTIONS);
+
     localStorage.setItem(TRANSACTION_STORAGE_KEY, JSON.stringify(nextHistory));
 
     const stored = JSON.parse(localStorage.getItem(TRANSACTION_STORAGE_KEY) || "[]");
-    return Array.isArray(stored) && stored[0]?.id === transaction.id;
+    const sanitizedStored = sanitizeTransactions(stored);
+
+    return (
+      sanitizedStored.length > 0 &&
+      sanitizedStored[0].id === transaction.id &&
+      sanitizedStored[0].amount === transaction.amount &&
+      sanitizedStored[0].balanceAfter === transaction.balanceAfter &&
+      sanitizedStored[0].type === transaction.type
+    );
   } catch {
     return false;
   }
@@ -46,26 +99,18 @@ export function getStarTransactions(): StarTransaction[] {
   try {
     const saved = localStorage.getItem(TRANSACTION_STORAGE_KEY);
     if (!saved) return [];
-    const parsed: unknown = JSON.parse(saved);
-    if (!Array.isArray(parsed)) return [];
 
-    return parsed
-      .filter((item): item is StarTransaction => {
-        if (!item || typeof item !== "object") return false;
-        const t = item as Partial<StarTransaction>;
-        return (
-          typeof t.id === "string" &&
-          typeof t.amount === "number" &&
-          Number.isFinite(t.amount) &&
-          typeof t.balanceAfter === "number" &&
-          Number.isFinite(t.balanceAfter) &&
-          t.balanceAfter >= 0 &&
-          (t.type === "reward" || t.type === "spend") &&
-          typeof t.reason === "string" &&
-          typeof t.createdAt === "string"
-        );
-      })
-      .slice(0, MAX_TRANSACTIONS);
+    const parsed: unknown = JSON.parse(saved);
+    const sanitized = sanitizeTransactions(parsed);
+
+    // Repair malformed/duplicate history in place so future reads stay clean.
+    if (JSON.stringify(parsed) !== JSON.stringify(sanitized)) {
+      try {
+        localStorage.setItem(TRANSACTION_STORAGE_KEY, JSON.stringify(sanitized));
+      } catch {}
+    }
+
+    return sanitized;
   } catch {
     return [];
   }
