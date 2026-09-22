@@ -6,17 +6,14 @@ import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
   addStars,
-  spendStars,
 } from "./services/creditService";
 import {
   adService,
   getRewardedAdsToday,
   canWatchRewardedAd,
   STAR_ECONOMY,
-  INTERSTITIAL_CONFIG,
   type AdResult,
   canShowInterstitialAd,
-  getInterstitialAdsToday,
 } from "./services/adService";
 import {
   initConnectivityListeners,
@@ -1114,18 +1111,6 @@ export default function App() {
               <span>
                 Available Credits
               </span>
-
-              <button
-                className="test-button"
-                onClick={() => {
-                  const newBalance = addStars(5);
-                  setStarBalance(newBalance);
-                }}
-                type="button"
-                title="Development test: adds 5 stars"
-              >
-                Add 5 Test Stars
-              </button>
             </div>
 
             <div className="info-card">
@@ -1143,76 +1128,13 @@ export default function App() {
 
             <div className="info-card">
               <h3>
-                Test Spending
+                Earn more credits
               </h3>
 
               <p>
-                Use these buttons to test the spending functionality.
+                Watch rewarded ads to earn up to 5 Stars per day.
+                You can watch an ad to earn +5 Stars.
               </p>
-
-              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "12px" }}>
-                <button
-                  className="test-button"
-                  onClick={() => {
-                    const success = spendStars(5);
-                    if (success) {
-                      setStarBalance(getBalance());
-                    }
-                  }}
-                  type="button"
-                  title="Test: spend 5 stars"
-                >
-                  Spend 5 Stars
-                </button>
-
-                <button
-                  className="test-button"
-                  onClick={() => {
-                    const success = spendStars(10);
-                    if (success) {
-                      setStarBalance(getBalance());
-                    }
-                  }}
-                  type="button"
-                  title="Test: spend 10 stars"
-                >
-                  Spend 10 Stars
-                </button>
-
-                <button
-                  className="test-button"
-                  onClick={() => {
-                    const success = spendStars(starBalance + 1);
-                    if (success) {
-                      setStarBalance(getBalance());
-                    }
-                    // If unsuccessful, do nothing - balance remains unchanged.
-                    // This is expected behavior when attempting to overspend.
-                  }}
-                  type="button"
-                  title="Test: try to spend more than balance"
-                >
-                  Try Overspend
-                </button>
-              </div>
-            </div>
-
-            <div className="info-card">
-              <h3>
-                Test Ad Services (Mock)
-              </h3>
-
-              <p>
-                Use these buttons to test the mock ad service functionality.
-              </p>
-
-              <div style={{ marginBottom: "8px", marginTop: "12px" }}>
-                <strong>Rewarded ads today: {getRewardedAdsToday()}/{STAR_ECONOMY.limits.maxRewardedAdsPerDay}</strong>
-              </div>
-
-              <div style={{ marginBottom: "8px" }}>
-                <strong>Interstitial ads today: {getInterstitialAdsToday()}/{INTERSTITIAL_CONFIG.maxPerDay} (cooldown: {INTERSTITIAL_CONFIG.cooldownMinutes} min)</strong>
-              </div>
 
               {!isOnlineState && (
                 <p className="video-offline-message" style={{ marginTop: "8px" }}>
@@ -1222,7 +1144,7 @@ export default function App() {
 
               <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "12px" }}>
                 <button
-                  className="test-button"
+                  className="primary-button"
                   disabled={!isOnlineState || !canWatchRewardedAd()}
                   onClick={async () => {
                     if (!isOnlineState) {
@@ -1234,65 +1156,17 @@ export default function App() {
                       const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd);
                       setStarBalance(newBalance);
                       window.dispatchEvent(new CustomEvent('stars-updated'));
-                      alert(`Rewarded ad completed successfully! +${STAR_ECONOMY.rewards.rewardedAd} Stars awarded.`);
-                    } else {
-                      if (result.error === 'NO_CONNECTION') {
-                        alert("No internet connection - ad cannot be shown.");
-                      } else if (result.error === 'DAILY_LIMIT_REACHED') {
-                        alert("Daily limit reached - you have watched 5 rewarded ads today.");
-                      } else {
-                        alert(`Ad failed: ${result.error}`);
-                      }
                     }
                   }}
                   type="button"
-                  title={!isOnlineState ? "Internet connection required" : canWatchRewardedAd() ? "Test: watch a mock rewarded ad" : "Daily limit reached"}
+                  title={!isOnlineState ? "Internet connection required" : canWatchRewardedAd() ? "Watch a rewarded ad to earn +5 Stars" : "Daily limit reached"}
                 >
-                  Watch Test Rewarded Ad
+                  Watch Ad for +5 Stars
                 </button>
+              </div>
 
-                <button
-                  className="test-button"
-                  onClick={async () => {
-                    // Test button bypasses cooldown/limit for development testing
-                    const result: AdResult = await adService.showInterstitialAd();
-                    if (result.success) {
-                      alert("Interstitial ad displayed successfully! (Mock)");
-                    } else {
-                      if (result.error === 'NO_CONNECTION') {
-                        alert("No internet connection - ad cannot be shown.");
-                      } else if (result.error === 'DAILY_LIMIT_REACHED') {
-                        alert("Daily interstitial limit reached (3/day).");
-                      } else {
-                        alert(`Ad failed: ${result.error}`);
-                      }
-                    }
-                  }}
-                  type="button"
-                  title="Test: show a mock interstitial ad (bypasses cooldown for testing)"
-                >
-                  Test Interstitial Ad
-                </button>
-
-                <button
-                  className="test-button"
-                  onClick={async () => {
-                    const result: AdResult = await adService.showBannerAd();
-                    if (result.success) {
-                      alert("Banner ad available! (Mock)");
-                    } else {
-                      if (result.error === 'NO_CONNECTION') {
-                        alert("No internet connection - ad cannot be shown.");
-                      } else {
-                        alert(`Ad failed: ${result.error}`);
-                      }
-                    }
-                  }}
-                  type="button"
-                  title="Test: show a mock banner ad"
-                >
-                  Test Banner Ad
-                </button>
+              <div style={{ marginTop: "12px", fontSize: "14px", color: "#666" }}>
+                <strong>Rewarded ads today: {getRewardedAdsToday()}/{STAR_ECONOMY.limits.maxRewardedAdsPerDay}</strong>
               </div>
             </div>
 
