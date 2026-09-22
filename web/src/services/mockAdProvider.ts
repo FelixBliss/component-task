@@ -33,8 +33,10 @@ export class MockAdProvider implements AdProvider {
   }
 
   async showBannerAd(): Promise<AdResult> {
-    // Banner ads are always "available" in mock mode
-    // Real providers would check if banner is loaded/ready
+    return { success: true };
+  }
+
+  async hideBannerAd(): Promise<AdResult> {
     return { success: true };
   }
 }
