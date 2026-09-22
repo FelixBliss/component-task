@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import Icon from "./Icon";
 import { procedures } from "../data/procedures";
 import ProcedureCard from "./ProcedureCard";
 
@@ -59,7 +60,7 @@ export default function ProcedureList({
       </div>
 
       <div className="procedure-search procedure-list-search">
-        <span>🔍</span>
+        <span><Icon name="search" size={20} /></span>
 
         <input
           type="search"
@@ -95,7 +96,7 @@ export default function ProcedureList({
         </div>
       ) : (
         <div className="empty-state">
-          <div className="empty-icon">🔍</div>
+          <div className="empty-icon"><Icon name="search" size={20} /></div>
 
           <h3>
             {search
