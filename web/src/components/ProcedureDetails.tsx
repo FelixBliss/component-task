@@ -1526,7 +1526,7 @@ export default function ProcedureDetails({
 
                         {selected && (
                           <span className="quiz-answer-check">
-                            ✓
+                            <Icon name="check" size={18} />
                           </span>
                         )}
 
