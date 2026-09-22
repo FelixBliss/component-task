@@ -1309,7 +1309,7 @@ export default function ProcedureDetails({
                       return;
                     }
                     
-                    const success = spendStars(2);
+                    const success = spendStars(2, "Premium quiz");
                     if (success) {
                       setQuizUnlocked(true);
                       setQuizUnlockError(null);
