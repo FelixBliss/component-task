@@ -42,4 +42,5 @@ export interface AdProvider {
    * @returns AdResult indicating success or failure reason
    */
   showBannerAd(): Promise<AdResult>;
+  hideBannerAd?(): Promise<AdResult>;
 }
