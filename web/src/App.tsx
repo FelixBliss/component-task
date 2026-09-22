@@ -1134,8 +1134,7 @@ export default function App() {
               </h3>
 
               <p>
-                Watch rewarded ads to earn up to 5 Stars per day.
-                You can watch an ad to earn +5 Stars.
+                Earn up to 5 Stars per day by watching rewarded ads.
               </p>
 
               {!isOnlineState && (
