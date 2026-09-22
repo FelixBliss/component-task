@@ -1467,20 +1467,6 @@ export default function App() {
           </button>
 
           <button
-            className={`nav-button ${activeTab === "credits" ? "active" : ""}`}
-            onClick={() =>
-              navigate("credits")
-            }
-            type="button"
-          >
-            <span><Icon name="star" size={22} /></span>
-
-            <small>
-              Credits
-            </small>
-          </button>
-
-          <button
             className={`nav-button ${
               activeTab === "settings"
                 ? "active"
