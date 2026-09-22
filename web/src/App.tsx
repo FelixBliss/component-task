@@ -193,18 +193,52 @@ export default function App() {
     };
   }, []);
 
-  /* Listen for stars-updated events from child components */
+  /* Keep the displayed Star balance and history synchronized with storage. */
   useEffect(() => {
-    const handleStarsUpdated = () => {
+    const refreshStarState = () => {
       setStarBalance(getBalance());
       setStarTransactions(getStarTransactions());
     };
 
-    window.addEventListener('stars-updated', handleStarsUpdated);
+    const handleStarsUpdated = () => {
+      refreshStarState();
+    };
+
+    const handleStorage = (event: StorageEvent) => {
+      if (
+        event.key === "component-task-stars" ||
+        event.key === "component-task-star-transactions"
+      ) {
+        refreshStarState();
+      }
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        refreshStarState();
+      }
+    };
+
+    // Synchronize once on mount and whenever the Credits page is revisited.
+    refreshStarState();
+
+    window.addEventListener("stars-updated", handleStarsUpdated);
+    window.addEventListener("storage", handleStorage);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
     return () => {
-      window.removeEventListener('stars-updated', handleStarsUpdated);
+      window.removeEventListener("stars-updated", handleStarsUpdated);
+      window.removeEventListener("storage", handleStorage);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
+
+  useEffect(() => {
+    if (activeTab === "credits") {
+      setStarBalance(getBalance());
+      setStarTransactions(getStarTransactions());
+    }
+  }, [activeTab]);
 
   const categoryProcedures = selectedCategory
     ? procedures.filter(
