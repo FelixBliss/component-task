@@ -15,24 +15,20 @@ export const STAR_ECONOMY = {
   },
 } as const;
 
-// Ad result types
-export type AdResult =
-  | { success: true }
-  | { success: false; error: 'NO_CONNECTION' | 'DAILY_LIMIT_REACHED' | 'AD_NOT_AVAILABLE' | 'UNKNOWN_ERROR' };
-
-// Mock ad service interface
-export interface AdService {
-  showRewardedAd(): Promise<AdResult>;
-  showInterstitialAd(): Promise<AdResult>;
-  showBannerAd(): Promise<AdResult>;
-}
+// Ad result types - re-export from adProvider for backward compatibility
+export type { AdResult } from './adProvider';
 
 // Re-export isOnline from connectivityService for backward compatibility
 import { isOnline as checkOnline } from './connectivityService';
+import { mockAdProvider } from './mockAdProvider';
+import type { AdProvider } from './adProvider';
 
 export function isOnline(): boolean {
   return checkOnline();
 }
+
+// Internal ad provider - can be swapped for real SDK integration
+const adProvider: AdProvider = mockAdProvider;
 
 // Track rewarded ads watched per day
 const REWARDED_ADS_KEY = 'component-task-rewarded-ads-daily';
@@ -180,59 +176,71 @@ export function canShowInterstitialAd(): boolean {
   return true;
 }
 
-// Mock ad service implementation
-class MockAdService implements AdService {
+// ============================================================
+// PUBLIC AD SERVICE API
+// ============================================================
+// This is the main entry point for the app to interact with ads.
+// All business logic (limits, cooldowns, connectivity) lives here.
+// The provider only handles actual ad display.
+
+export const adService = {
   async showRewardedAd(): Promise<AdResult> {
+    // Business rule: Check connectivity first
     if (!isOnline()) {
       return { success: false, error: 'NO_CONNECTION' };
     }
 
+    // Business rule: Check daily limit
     if (!canWatchRewardedAd()) {
       return { success: false, error: 'DAILY_LIMIT_REACHED' };
     }
 
-    // Simulate short ad experience
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Delegate to provider for actual ad display
+    const result = await adProvider.showRewardedAd();
 
-    // Increment count after successful completion
-    incrementDailyAdCount();
+    // Only track as watched if provider succeeded
+    if (result.success) {
+      incrementDailyAdCount();
+    }
 
-    return { success: true };
-  }
+    return result;
+  },
 
   async showInterstitialAd(): Promise<AdResult> {
+    // Business rule: Check connectivity first
     if (!isOnline()) {
       return { success: false, error: 'NO_CONNECTION' };
     }
 
-    // Check daily limit and cooldown before showing
+    // Business rule: Check daily limit
     if (!canShowInterstitialToday()) {
       return { success: false, error: 'DAILY_LIMIT_REACHED' };
     }
 
+    // Business rule: Check cooldown
     if (isInterstitialCooldownActive()) {
       return { success: false, error: 'AD_NOT_AVAILABLE' };
     }
 
-    // Simulate successful display
-    await new Promise(resolve => setTimeout(resolve, 500));
+    // Delegate to provider for actual ad display
+    const result = await adProvider.showInterstitialAd();
 
-    // Track the ad after successful display
-    incrementInterstitialDailyCount();
-    setLastInterstitialTime();
+    // Only track if provider succeeded
+    if (result.success) {
+      incrementInterstitialDailyCount();
+      setLastInterstitialTime();
+    }
 
-    return { success: true };
-  }
+    return result;
+  },
 
   async showBannerAd(): Promise<AdResult> {
+    // Business rule: Check connectivity first
     if (!isOnline()) {
       return { success: false, error: 'NO_CONNECTION' };
     }
 
-    // Simulate successful availability
-    return { success: true };
-  }
-}
-
-// Export singleton instance
-export const adService: AdService = new MockAdService();
+    // Delegate to provider for banner availability check
+    return await adProvider.showBannerAd();
+  },
+};
