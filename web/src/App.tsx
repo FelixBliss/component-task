@@ -174,6 +174,9 @@ export default function App() {
   const [starTransactions, setStarTransactions] =
     useState<StarTransaction[]>(() => getStarTransactions());
 
+  const [isRewardedAdLoading, setIsRewardedAdLoading] =
+    useState(false);
+
   const [isOnlineState, setIsOnlineState] =
     useState<boolean>(() => checkOnline());
 
