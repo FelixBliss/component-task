@@ -1,15 +1,9 @@
 apply plugin: 'com.android.application'
 
-def levelPlayProperties = new Properties()
-def levelPlayPropertiesFile = rootProject.file("levelplay.properties")
-if (levelPlayPropertiesFile.exists()) {
-    levelPlayPropertiesFile.withInputStream { levelPlayProperties.load(it) }
-}
-
-def levelPlayAppKey = project.findProperty("LEVELPLAY_APP_KEY") ?: System.getenv("LEVELPLAY_APP_KEY") ?: levelPlayProperties.getProperty("LEVELPLAY_APP_KEY") ?: "__LEVELPLAY_APP_KEY__"
-def levelPlayRewardedAdUnitId = project.findProperty("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: levelPlayProperties.getProperty("LEVELPLAY_REWARDED_AD_UNIT_ID") ?: "__LEVELPLAY_REWARDED_AD_UNIT_ID__"
-def levelPlayInterstitialAdUnitId = project.findProperty("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: levelPlayProperties.getProperty("LEVELPLAY_INTERSTITIAL_AD_UNIT_ID") ?: "__LEVELPLAY_INTERSTITIAL_AD_UNIT_ID__"
-def levelPlayBannerAdUnitId = project.findProperty("LEVELPLAY_BANNER_AD_UNIT_ID") ?: System.getenv("LEVELPLAY_BANNER_AD_UNIT_ID") ?: levelPlayProperties.getProperty("LEVELPLAY_BANNER_AD_UNIT_ID") ?: "__LEVELPLAY_BANNER_AD_UNIT_ID__"
+def unityAdsGameId = project.findProperty("UNITY_ADS_GAME_ID") ?: System.getenv("UNITY_ADS_GAME_ID") ?: "4813715"
+def unityAdsInterstitialId = project.findProperty("UNITY_ADS_INTERSTITIAL_ID") ?: System.getenv("UNITY_ADS_INTERSTITIAL_ID") ?: "Interstitial_Android"
+def unityAdsRewardedId = project.findProperty("UNITY_ADS_REWARDED_ID") ?: System.getenv("UNITY_ADS_REWARDED_ID") ?: "Rewarded_Android"
+def unityAdsBannerId = project.findProperty("UNITY_ADS_BANNER_ID") ?: System.getenv("UNITY_ADS_BANNER_ID") ?: "Banner_Android_"
 
 android {
     namespace "com.my.componenttask"
@@ -23,10 +17,10 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        buildConfigField "String", "LEVELPLAY_APP_KEY", "\"" + levelPlayAppKey + "\""
-        buildConfigField "String", "LEVELPLAY_REWARDED_AD_UNIT_ID", "\"" + levelPlayRewardedAdUnitId + "\""
-        buildConfigField "String", "LEVELPLAY_INTERSTITIAL_AD_UNIT_ID", "\"" + levelPlayInterstitialAdUnitId + "\""
-        buildConfigField "String", "LEVELPLAY_BANNER_AD_UNIT_ID", "\"" + levelPlayBannerAdUnitId + "\""
+        buildConfigField "String", "UNITY_ADS_GAME_ID", "\"" + unityAdsGameId + "\""
+        buildConfigField "String", "UNITY_ADS_INTERSTITIAL_ID", "\"" + unityAdsInterstitialId + "\""
+        buildConfigField "String", "UNITY_ADS_REWARDED_ID", "\"" + unityAdsRewardedId + "\""
+        buildConfigField "String", "UNITY_ADS_BANNER_ID", "\"" + unityAdsBannerId + "\""
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -58,10 +52,7 @@ dependencies {
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
     implementation project(':capacitor-cordova-android-plugins')
-    implementation 'com.unity3d.ads-mediation:mediation-sdk:9.6.0'
-    implementation 'com.google.android.gms:play-services-appset:16.1.0'
-    implementation 'com.google.android.gms:play-services-ads-identifier:18.2.0'
-    implementation 'com.google.android.gms:play-services-basement:18.7.0'
+    implementation 'com.unity3d.ads:unity-ads:4.20.1'
 }
 
 apply from: 'capacitor.build.gradle'
