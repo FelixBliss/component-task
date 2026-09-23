@@ -1282,7 +1282,7 @@ export default function App() {
 
                 <button
                   type="button"
-                  className="contact-button"
+                  className="contact-button whatsapp-button"
                   onClick={async () => {
                     const shareData = {
                       title: "Component Task",
@@ -1303,7 +1303,7 @@ export default function App() {
                     }
                   }}
                 >
-                  <Icon name="megaphone" size={18} /> Share Component Task
+                  Share Component Task
                 </button>
 
                 {shareFeedback && (
