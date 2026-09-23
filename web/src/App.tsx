@@ -528,83 +528,31 @@ export default function App() {
   if (showSplash) {
     return (
       <div className="splash-screen">
-        <div className="splash-decoration splash-decoration-one" />
-        <div className="splash-decoration splash-decoration-two" />
-
-        <div className="splash-content">
-          <div className="splash-logo">
-            <span><Icon name="plus" size={24} /></span>
+        <div className="splash-device">
+          <div className="splash-topbar">
+            <button className="splash-back-button" type="button" aria-label="Back" onClick={() => setShowSplash(false)}>
+              <Icon name="arrowLeft" size={22} />
+            </button>
+            <strong>HOME SCREEN</strong>
           </div>
-
-          <h1 className="splash-title">
-            NURSING
-            <strong>
-              COMPONENT TASK
-            </strong>
-          </h1>
-
-          <p className="splash-subtitle">
-            Nursing procedures & clinical
-            learning
-          </p>
-
-          <div className="splash-visual">
-            <div className="floating-procedure floating-procedure-one">
-              <Icon name="medical" size={30} />
-              <small>
-                Assessment
-              </small>
-            </div>
-
-            <div className="nurse-illustration">
-              <Icon name="nurse" size={72} />
-              <Icon name="medical" size={34} className="splash-nurse-stethoscope" />
-            </div>
-
-            <div className="floating-procedure floating-procedure-two">
-              <Icon name="syringe" size={30} />
-              <small>
-                Medication
-              </small>
-            </div>
-
-            <div className="floating-procedure floating-procedure-three">
-              <Icon name="bandage" size={30} />
-              <small>
-                Wound Care
-              </small>
-            </div>
-          </div>
-
-          <div
-            className="splash-loading"
-            aria-label="Loading application"
-          >
-            <div className="loading-label">
-              <span>Loading clinical library</span>
-              <strong>{splashProgress}%</strong>
-            </div>
-
-            <div
-              className="loading-track"
-              role="progressbar"
-              aria-valuemin={0}
-              aria-valuemax={100}
-              aria-valuenow={splashProgress}
-              aria-label="Application loading progress"
-            >
-              <div
-                className="loading-progress"
-                style={{
-                  width: `${splashProgress}%`,
-                }}
+          <div className="splash-main">
+            <div className="splash-illustration-card">
+              <img
+                src="/component-task-logo.svg"
+                alt="Patient receiving care from a doctor and nurses"
+                className="splash-logo-illustration"
               />
             </div>
-
-            <p>
-              Preparing your clinical
-              learning experience...
-            </p>
+            <h1 className="splash-title">Component Task</h1>
+            <p className="splash-subtitle">Practice everywhere</p>
+            <button className="splash-get-started" type="button" onClick={() => setShowSplash(false)}>
+              GET STARTED
+            </button>
+            <div className="splash-loading" aria-hidden="true">
+              <div className="loading-track">
+                <div className="loading-progress" style={{ width: `${splashProgress}%` }} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
