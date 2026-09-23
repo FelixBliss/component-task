@@ -1237,7 +1237,7 @@ export default function App() {
                   </span>
 
                   <strong>
-                    3.0
+                    2.1
                   </strong>
                 </div>
 
