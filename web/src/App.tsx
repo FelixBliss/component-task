@@ -529,12 +529,6 @@ export default function App() {
     return (
       <div className="splash-screen">
         <div className="splash-device">
-          <div className="splash-topbar">
-            <button className="splash-back-button" type="button" aria-label="Back" onClick={() => setShowSplash(false)}>
-              <Icon name="arrowLeft" size={22} />
-            </button>
-            <strong>HOME SCREEN</strong>
-          </div>
           <div className="splash-main">
             <div className="splash-illustration-card">
               <img
@@ -545,9 +539,6 @@ export default function App() {
             </div>
             <h1 className="splash-title">Component Task</h1>
             <p className="splash-subtitle">Practice everywhere</p>
-            <button className="splash-get-started" type="button" onClick={() => setShowSplash(false)}>
-              GET STARTED
-            </button>
             <div className="splash-loading" aria-hidden="true">
               <div className="loading-track">
                 <div className="loading-progress" style={{ width: `${splashProgress}%` }} />
