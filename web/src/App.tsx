@@ -532,8 +532,8 @@ export default function App() {
           <div className="splash-main">
             <div className="splash-illustration-card">
               <img
-                src="/component-task-logo.svg"
-                alt="Patient receiving care from a doctor and nurses"
+                src="/nurse-icons-set_1284-14375.svg"
+                alt="Nurse icons illustration"
                 className="splash-logo-illustration"
               />
             </div>
