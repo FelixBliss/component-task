@@ -11,7 +11,7 @@ import type { AdProvider, AdResult } from './adProvider';
  * - Returns success/failure results
  * - Does NOT manage business logic (limits, cooldowns, connectivity)
  * 
- * When integrating a real ad network (Unity Ads, LevelPlay, AdMob, etc.),
+ * When integrating a real ad network (Unity Ads, AdMob, etc.),
  * create a new provider implementing the AdProvider interface and replace
  * this one in adService.ts.
  */
