@@ -466,7 +466,7 @@ export default function Settings({
           </strong>
 
           <span>
-            Version 3.0
+            Version 2.1
           </span>
 
           <small>
