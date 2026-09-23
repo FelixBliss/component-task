@@ -1,4 +1,6 @@
-```
+# Dependencies
+node_modules/
+
 # Build artifacts
-web/dist/
-```
+dist/
+build/

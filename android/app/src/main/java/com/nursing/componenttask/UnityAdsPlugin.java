@@ -34,10 +34,15 @@ public class UnityAdsPlugin extends Plugin {
     private PluginCall pendingInterstitialCall;
     private FrameLayout bannerContainer;
     private BannerView bannerView;
+    private volatile boolean rewardedReady = false;
+    private volatile boolean interstitialReady = false;
 
     private final IUnityAdsLoadListener rewardedLoadListener = new IUnityAdsLoadListener() {
         @Override
         public void onUnityAdsAdLoaded(String placementId) {
+            if (REWARDED_ID.equals(placementId)) {
+                rewardedReady = true;
+            }
         }
 
         @Override
@@ -47,6 +52,7 @@ public class UnityAdsPlugin extends Plugin {
                 String message
         ) {
             if (REWARDED_ID.equals(placementId)) {
+                rewardedReady = false;
                 finishCall(pendingRewardedCall, false, "AD_NOT_AVAILABLE");
                 pendingRewardedCall = null;
             }
@@ -56,6 +62,9 @@ public class UnityAdsPlugin extends Plugin {
     private final IUnityAdsLoadListener interstitialLoadListener = new IUnityAdsLoadListener() {
         @Override
         public void onUnityAdsAdLoaded(String placementId) {
+            if (INTERSTITIAL_ID.equals(placementId)) {
+                interstitialReady = true;
+            }
         }
 
         @Override
@@ -65,6 +74,7 @@ public class UnityAdsPlugin extends Plugin {
                 String message
         ) {
             if (INTERSTITIAL_ID.equals(placementId)) {
+                interstitialReady = false;
                 finishCall(pendingInterstitialCall, false, "AD_NOT_AVAILABLE");
                 pendingInterstitialCall = null;
             }
@@ -78,6 +88,7 @@ public class UnityAdsPlugin extends Plugin {
                 UnityAds.UnityAdsShowError error,
                 String message
         ) {
+            rewardedReady = false;
             finishCall(pendingRewardedCall, false, "AD_NOT_AVAILABLE");
             pendingRewardedCall = null;
         }
@@ -96,9 +107,18 @@ public class UnityAdsPlugin extends Plugin {
                 UnityAds.UnityAdsShowCompletionState state
         ) {
             if (REWARDED_ID.equals(placementId)) {
+                rewardedReady = false;
                 boolean completed = state == UnityAds.UnityAdsShowCompletionState.COMPLETED;
                 finishCall(pendingRewardedCall, completed, completed ? null : "AD_NOT_AVAILABLE");
                 pendingRewardedCall = null;
+                Activity activity = getActivity();
+                if (activity != null) {
+                    activity.runOnUiThread(() -> {
+                        if (!rewardedReady) {
+                            UnityAds.load(REWARDED_ID, rewardedLoadListener);
+                        }
+                    });
+                }
             }
         }
     };
@@ -110,6 +130,7 @@ public class UnityAdsPlugin extends Plugin {
                 UnityAds.UnityAdsShowError error,
                 String message
         ) {
+            interstitialReady = false;
             finishCall(pendingInterstitialCall, false, "AD_NOT_AVAILABLE");
             pendingInterstitialCall = null;
         }
@@ -117,6 +138,7 @@ public class UnityAdsPlugin extends Plugin {
         @Override
         public void onUnityAdsShowStart(String placementId) {
             if (INTERSTITIAL_ID.equals(placementId)) {
+                interstitialReady = false;
                 finishCall(pendingInterstitialCall, true, null);
                 pendingInterstitialCall = null;
             }
@@ -131,6 +153,16 @@ public class UnityAdsPlugin extends Plugin {
                 String placementId,
                 UnityAds.UnityAdsShowCompletionState state
         ) {
+            if (INTERSTITIAL_ID.equals(placementId)) {
+                Activity activity = getActivity();
+                if (activity != null) {
+                    activity.runOnUiThread(() -> {
+                        if (!interstitialReady) {
+                            UnityAds.load(INTERSTITIAL_ID, interstitialLoadListener);
+                        }
+                    });
+                }
+            }
         }
     };
 
@@ -148,6 +180,10 @@ public class UnityAdsPlugin extends Plugin {
 
         @Override
         public void onBannerClick(BannerView bannerAdView) {
+        }
+
+        @Override
+        public void onBannerShown(BannerView bannerAdView) {
         }
 
         @Override
@@ -214,7 +250,7 @@ public class UnityAdsPlugin extends Plugin {
         }
 
         activity.runOnUiThread(() -> {
-            if (!UnityAds.isReady(REWARDED_ID)) {
+            if (!rewardedReady) {
                 UnityAds.load(REWARDED_ID, rewardedLoadListener);
                 reject(call, "AD_NOT_AVAILABLE");
                 return;
@@ -240,7 +276,7 @@ public class UnityAdsPlugin extends Plugin {
         }
 
         activity.runOnUiThread(() -> {
-            if (!UnityAds.isReady(INTERSTITIAL_ID)) {
+            if (!interstitialReady) {
                 UnityAds.load(INTERSTITIAL_ID, interstitialLoadListener);
                 reject(call, "AD_NOT_AVAILABLE");
                 return;
@@ -324,11 +360,11 @@ public class UnityAdsPlugin extends Plugin {
     }
 
     private void preloadAds(Activity activity) {
-        if (!isBlank(REWARDED_ID) && !UnityAds.isReady(REWARDED_ID)) {
+        if (!isBlank(REWARDED_ID) && !rewardedReady) {
             UnityAds.load(REWARDED_ID, rewardedLoadListener);
         }
 
-        if (!isBlank(INTERSTITIAL_ID) && !UnityAds.isReady(INTERSTITIAL_ID)) {
+        if (!isBlank(INTERSTITIAL_ID) && !interstitialReady) {
             UnityAds.load(INTERSTITIAL_ID, interstitialLoadListener);
         }
     }
