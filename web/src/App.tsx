@@ -181,6 +181,8 @@ export default function App() {
   const [isOnlineState, setIsOnlineState] =
     useState<boolean>(() => checkOnline());
 
+  const [shareFeedback, setShareFeedback] = useState("");
+
   /* Initialize connectivity listeners on mount */
   useEffect(() => {
     initConnectivityListeners();
@@ -1276,7 +1278,7 @@ export default function App() {
                 </p>
               </div>
 
-              <div className="developer-contact">
+              <div className="developer-contact">\n\n                <button\n                  type="button"\n                  className="contact-button"\n                  onClick={async () => {\n                    const shareData = {\n                      title: "Component Task",\n                      text: "Check out Component Task — a nursing procedure and clinical learning app.",\n                      url: "https://play.google.com/store/apps/details?id=com.my.componenttask",\n                    };\n\n                    try {\n                      if (navigator.share) {\n                        await navigator.share(shareData);\n                        setShareFeedback("");\n                      } else if (navigator.clipboard) {\n                        await navigator.clipboard.writeText(shareData.url);\n                        setShareFeedback("App link copied. You can share it with your friends.");\n                      }\n                    } catch {\n                      // The user may cancel the native share sheet; no error is needed.\n                    }\n                  }}\n                >\n                  <Icon name="megaphone" size={18} /> Share Component Task\n                </button>\n\n                {shareFeedback && (\n                  <p className="share-feedback" role="status">\n                    {shareFeedback}\n                  </p>\n                )}
 
                 <h3>
                   Have feedback or questions?
