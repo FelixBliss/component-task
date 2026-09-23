@@ -1,7 +1,0 @@
-# Copy to android/levelplay.properties for a local Android build.
-# Do not commit real credentials to source control.
-
-LEVELPLAY_APP_KEY=__YOUR_LEVELPLAY_APP_KEY__
-LEVELPLAY_REWARDED_AD_UNIT_ID=__YOUR_REWARDED_AD_UNIT_ID__
-LEVELPLAY_INTERSTITIAL_AD_UNIT_ID=__YOUR_INTERSTITIAL_AD_UNIT_ID__
-LEVELPLAY_BANNER_AD_UNIT_ID=__YOUR_BANNER_AD_UNIT_ID__
