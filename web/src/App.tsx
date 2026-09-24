@@ -1144,14 +1144,14 @@ export default function App() {
                   }
                 }}
                 type="button"
-                title={!isOnlineState ? "Internet connection required" : isRewardedAdLoading ? "Rewarded ad is loading" : canWatchRewardedAd() ? "Watch a rewarded ad to earn +5 Stars" : "Daily limit reached"}
+                title={!isOnlineState ? "Internet connection required" : isRewardedAdLoading ? "Rewarded ad is loading" : canWatchRewardedAd() ? "Watch ads to earn +3 Credits" : "Daily limit reached"}
               >
                 <span className="rewarded-ad-icon">
                   <Icon name="video" size={25} />
                 </span>
                 <span className="rewarded-ad-content">
-                  <strong>{isRewardedAdLoading ? "Loading Rewarded Ad…" : "Watch a Rewarded Ad"}</strong>
-                  <small>{isRewardedAdLoading ? "Please wait…" : "Earn +5 Stars"}</small>
+                  <strong>{isRewardedAdLoading ? "Loading Rewarded Ad…" : "Watch Ads + Get 3 Credits"}</strong>
+                  <small>{isRewardedAdLoading ? "Please wait…" : "Get +3 Credits"}</small>
                 </span>
                 <span className="rewarded-ad-arrow">
                   <Icon name="chevron" size={22} />
