@@ -1452,7 +1452,7 @@ export default function ProcedureDetails({
                   disabled={!isOnline || adLoading}
                   onClick={requestExtraTime}
                 >
-                  {adLoading ? 'Loading...' : '<><Icon name="megaphone" size={18} /> Watch Ad + Get 3 Credits</>'}
+                  {adLoading ? 'Loading...' : <><Icon name="megaphone" size={18} /> Watch Ad + Get 3 Minutes</>}
                 </button>
               )}
               {extraTimeRequested && (
