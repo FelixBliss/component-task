@@ -8,7 +8,7 @@ export const STAR_ECONOMY = {
     futurePremiumResource: 5,
   },
   rewards: {
-    rewardedAd: 5,
+    rewardedAd: 3,
   },
   limits: {
     maxRewardedAdsPerDay: 5,
