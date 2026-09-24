@@ -1272,10 +1272,23 @@ export default function App() {
                     const appUrl = "https://play.google.com/store/apps/details?id=com.my.componenttask";
 
                     try {
+                      if (navigator.share) {
+                        await navigator.share({
+                          title: "Nursing Component Task",
+                          text: "Check out Nursing Component Task.",
+                          url: appUrl,
+                        });
+                        setShareFeedback("");
+                        return;
+                      }
+
                       await navigator.clipboard.writeText(appUrl);
-                      setShareFeedback("App link copied. You can share it with your friends.");
-                    } catch {
-                      setShareFeedback("Unable to copy the app link.");
+                      setShareFeedback("Sharing is not supported on this device, so the app link was copied.");
+                    } catch (error) {
+                      if (error instanceof DOMException && error.name === "AbortError") {
+                        return;
+                      }
+                      setShareFeedback("Unable to open the share menu.");
                     }
                   }}
                 >
