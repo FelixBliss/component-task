@@ -857,20 +857,6 @@ export default function App() {
                 />
               </div>
 
-              <div className="procedure-helper">
-                <span><Icon name="medical" size={18} /></span>
-
-                <div>
-                  <strong>
-                    Choose a category
-                  </strong>
-
-                  <small>
-                    Choose a category
-                  </small>
-                </div>
-              </div>
-
               <div className="category-list">
 
                 {procedureCategories
