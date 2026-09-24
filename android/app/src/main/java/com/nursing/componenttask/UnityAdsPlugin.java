@@ -42,6 +42,15 @@ public class UnityAdsPlugin extends Plugin {
         public void onUnityAdsAdLoaded(String placementId) {
             if (REWARDED_ID.equals(placementId)) {
                 rewardedReady = true;
+                Activity activity = getActivity();
+                if (activity != null && pendingRewardedCall != null) {
+                    PluginCall call = pendingRewardedCall;
+                    activity.runOnUiThread(() -> {
+                        if (pendingRewardedCall == call && rewardedReady) {
+                            UnityAds.show(activity, REWARDED_ID, new UnityAdsShowOptions(), rewardedShowListener);
+                        }
+                    });
+                }
             }
         }
 
@@ -64,6 +73,15 @@ public class UnityAdsPlugin extends Plugin {
         public void onUnityAdsAdLoaded(String placementId) {
             if (INTERSTITIAL_ID.equals(placementId)) {
                 interstitialReady = true;
+                Activity activity = getActivity();
+                if (activity != null && pendingInterstitialCall != null) {
+                    PluginCall call = pendingInterstitialCall;
+                    activity.runOnUiThread(() -> {
+                        if (pendingInterstitialCall == call && interstitialReady) {
+                            UnityAds.show(activity, INTERSTITIAL_ID, new UnityAdsShowOptions(), interstitialShowListener);
+                        }
+                    });
+                }
             }
         }
 
@@ -250,13 +268,18 @@ public class UnityAdsPlugin extends Plugin {
         }
 
         activity.runOnUiThread(() -> {
-            if (!rewardedReady) {
-                UnityAds.load(REWARDED_ID, rewardedLoadListener);
+            if (pendingRewardedCall != null) {
                 reject(call, "AD_NOT_AVAILABLE");
                 return;
             }
 
             pendingRewardedCall = call;
+
+            if (!rewardedReady) {
+                UnityAds.load(REWARDED_ID, rewardedLoadListener);
+                return;
+            }
+
             UnityAds.show(activity, REWARDED_ID, new UnityAdsShowOptions(), rewardedShowListener);
         });
     }
@@ -276,13 +299,18 @@ public class UnityAdsPlugin extends Plugin {
         }
 
         activity.runOnUiThread(() -> {
-            if (!interstitialReady) {
-                UnityAds.load(INTERSTITIAL_ID, interstitialLoadListener);
+            if (pendingInterstitialCall != null) {
                 reject(call, "AD_NOT_AVAILABLE");
                 return;
             }
 
             pendingInterstitialCall = call;
+
+            if (!interstitialReady) {
+                UnityAds.load(INTERSTITIAL_ID, interstitialLoadListener);
+                return;
+            }
+
             UnityAds.show(activity, INTERSTITIAL_ID, new UnityAdsShowOptions(), interstitialShowListener);
         });
     }
