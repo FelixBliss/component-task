@@ -166,6 +166,14 @@ a {
   font-size: 22px;
 }
 
+.brand-logo-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
 .logo {
   font-size: 17px;
   font-weight: 800;
@@ -320,7 +328,7 @@ a {
 .search-wrapper .search {
   margin: 0;
 
-  padding-left: 44px;
+  padding-left: 50px;
 }
 
 .search,
@@ -723,7 +731,7 @@ a {
 }
 
 .procedure-search input {
-  padding-left: 43px;
+  padding-left: 50px;
 }
 
 .back-button {
