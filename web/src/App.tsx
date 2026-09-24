@@ -534,8 +534,8 @@ export default function App() {
           <div className="splash-main">
             <div className="splash-illustration-card">
               <img
-                src="/nurse-icons-set_1284-14375.svg"
-                alt="Nurse icons illustration"
+                src="/unnamed.jpg"
+                alt="Component Task logo"
                 className="splash-logo-illustration"
               />
             </div>
@@ -566,7 +566,7 @@ export default function App() {
 
           <div className="brand">
             <div className="brand-icon">
-              <Icon name="medical" size={30} />
+              <img src="/unnamed.jpg" alt="Component Task logo" className="brand-logo-image" />
             </div>
 
             <div>
@@ -866,8 +866,7 @@ export default function App() {
                   </strong>
 
                   <small>
-                    Select your programme to
-                    view its procedures.
+                    Choose a category
                   </small>
                 </div>
               </div>
@@ -1284,22 +1283,13 @@ export default function App() {
                   type="button"
                   className="contact-button whatsapp-button"
                   onClick={async () => {
-                    const shareData = {
-                      title: "Component Task",
-                      text: "Check out Component Task — a nursing procedure and clinical learning app.",
-                      url: "https://play.google.com/store/apps/details?id=com.my.componenttask",
-                    };
+                    const appUrl = "https://play.google.com/store/apps/details?id=com.my.componenttask";
 
                     try {
-                      if (navigator.share) {
-                        await navigator.share(shareData);
-                        setShareFeedback("");
-                      } else if (navigator.clipboard) {
-                        await navigator.clipboard.writeText(shareData.url);
-                        setShareFeedback("App link copied. You can share it with your friends.");
-                      }
+                      await navigator.clipboard.writeText(appUrl);
+                      setShareFeedback("App link copied. You can share it with your friends.");
                     } catch {
-                      // The user may cancel the native share sheet; no error is needed.
+                      setShareFeedback("Unable to copy the app link.");
                     }
                   }}
                 >
