@@ -202,7 +202,7 @@ public class UnityAdsPlugin extends Plugin {
 
         @Override
         public void onUnityAdsShowComplete(String placementId,
-                                           UnityAds.UnityAdsShowCompletionState state) {
+                                            UnityAds.UnityAdsShowCompletionState state) {
             if (!INTERSTITIAL_ID.equals(placementId)) return;
             Log.i(TAG, "Interstitial ad dismissed: state=" + state);
             preloadInterstitial();
