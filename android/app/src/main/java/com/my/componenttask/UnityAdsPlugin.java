@@ -12,11 +12,19 @@ import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
-import com.unity3d.ads.IUnityAdsInitializationListener;
-import com.unity3d.ads.IUnityAdsLoadListener;
-import com.unity3d.ads.IUnityAdsShowListener;
+import com.unity3d.ads.AdExpiredListener;
+import com.unity3d.ads.InitializationConfiguration;
+import com.unity3d.ads.InitializationListener;
+import com.unity3d.ads.InterstitialAd;
+import com.unity3d.ads.InterstitialShowListener;
+import com.unity3d.ads.LoadConfiguration;
+import com.unity3d.ads.LoadListener;
+import com.unity3d.ads.RewardedAd;
+import com.unity3d.ads.RewardedShowListener;
+import com.unity3d.ads.ShowConfiguration;
+import com.unity3d.ads.ShowFinishState;
 import com.unity3d.ads.UnityAds;
-import com.unity3d.ads.UnityAdsShowOptions;
+import com.unity3d.ads.UnityAdsError;
 import com.unity3d.services.banners.BannerErrorInfo;
 import com.unity3d.services.banners.BannerView;
 import com.unity3d.services.banners.UnityBannerSize;
@@ -24,14 +32,22 @@ import com.unity3d.services.banners.UnityBannerSize;
 /**
  * Native Unity Ads provider for Capacitor (Android only).
  *
- * Flow guarantees:
- *  - initialize() must complete before any ad request is served.
- *  - showRewarded()/showInterstitial() WAIT for the placement to finish
- *    loading (onUnityAdsAdLoaded) before calling UnityAds.show().
- *  - The rewarded call resolves success ONLY when the user completed the ad
- *    (UnityAdsShowCompletionState.COMPLETED).
- *  - showBanner() attaches a REAL Unity BannerView (no placeholder) and
- *    resolves once Unity reports the banner loaded (or fails).
+ * Uses the CURRENT object-based Unity Ads Android API shipped with SDK 4.20.1:
+ *   - RewardedAd / InterstitialAd + LoadConfiguration / ShowConfiguration
+ *   - LoadListener<RewardedAd|InterstitialAd> (onAdLoaded(ad, error))
+ *   - RewardedShowListener (onStarted / onClicked / onRewarded /
+ *     onCompleted(ad, ShowFinishState) / onFailed)
+ *   - InterstitialShowListener
+ *   - UnityAds.initialize(InitializationConfiguration, InitializationListener)
+ *
+ * The legacy/deprecated flow (IUnityAdsLoadListener, IUnityAdsShowListener,
+ * UnityAds.show(...), UnityAdsShowCompletionState) is NOT used anywhere.
+ *
+ * Reward guarantee: Stars are granted ONLY through RewardedShowListener
+ * .onRewarded() (the authoritative reward event). onCompleted(COMPLETED)
+ * finalizes the ad without ever awarding a second time (per-ad reward guard).
+ * Skips, show failures and load failures resolve structured unsuccessful
+ * results so JavaScript never rewards and never increments the daily count.
  */
 @CapacitorPlugin(name = "UnityAds")
 public class UnityAdsPlugin extends Plugin {
@@ -43,268 +59,110 @@ public class UnityAdsPlugin extends Plugin {
     private static final String REWARDED_ID = BuildConfig.UNITY_ADS_REWARDED_ID;
     private static final String BANNER_ID = BuildConfig.UNITY_ADS_BANNER_ID;
 
-    private boolean initialized = false;
+    /** Ad lifecycle states so duplicate load/show requests cannot occur. */
+    private enum AdState { IDLE, LOADING, READY, SHOWING }
 
+    private volatile boolean initialized = false;
+
+    // ------------------------------------------------------------------
+    // Rewarded ad state (cached RewardedAd instance + per-ad guards)
+    // ------------------------------------------------------------------
+    private RewardedAd cachedRewardedAd;
+    private volatile AdState rewardedState = AdState.IDLE;
     private PluginCall pendingRewardedCall;
-    private PluginCall pendingInterstitialCall;
-    private PluginCall pendingBannerCall;
+    /** Authoritative reward flag: true once onRewarded() fired for this ad. */
+    private volatile boolean currentRewardEarned = false;
+    /** Finalization guard: resolves the pending call exactly once per show. */
+    private volatile boolean currentShowFinalized = false;
 
+    // ------------------------------------------------------------------
+    // Interstitial ad state
+    // ------------------------------------------------------------------
+    private InterstitialAd cachedInterstitialAd;
+    private volatile AdState interstitialState = AdState.IDLE;
+    private PluginCall pendingInterstitialCall;
+    private volatile boolean interstitialCounted = false;
+
+    // ------------------------------------------------------------------
+    // Banner state (single real Unity BannerView instance)
+    // ------------------------------------------------------------------
+    private PluginCall pendingBannerCall;
     private FrameLayout bannerContainer;
     private BannerView bannerView;
+    private volatile boolean bannerLoaded = false;
 
-    private volatile boolean rewardedReady = false;
-    private volatile boolean interstitialReady = false;
+    // ==================================================================
+    // Logcat diagnostic tags (Section 15)
+    // ==================================================================
+    private static void logEvent(String event) {
+        Log.i(TAG, event);
+    }
 
-    // ------------------------------------------------------------------
-    // Load listeners: an ad is shown ONLY after Unity reports it loaded.
-    // ------------------------------------------------------------------
+    private static void logEventError(String event, UnityAdsError error) {
+        String code = error != null ? String.valueOf(error.getCode()) : "unknown";
+        String message = error != null ? error.getMessage() : "no error details";
+        Log.e(TAG, event + " unityError=" + code + " message=" + message);
+    }
 
-    private final IUnityAdsLoadListener rewardedLoadListener = new IUnityAdsLoadListener() {
-        @Override
-        public void onUnityAdsAdLoaded(String placementId) {
-            if (!REWARDED_ID.equals(placementId)) return;
-            Log.i(TAG, "Rewarded ad loaded successfully: " + placementId);
-            rewardedReady = true;
+    private static void logEventError(String event, String detail) {
+        Log.e(TAG, event + " " + detail);
+    }
 
-            final PluginCall call = pendingRewardedCall;
-            final Activity activity = getActivity();
-            if (call == null || activity == null) return;
-
-            activity.runOnUiThread(() -> {
-                if (pendingRewardedCall != call) return;
-                Log.i(TAG, "Showing rewarded ad (placement=" + REWARDED_ID + ")");
-                UnityAds.show(activity, REWARDED_ID, new UnityAdsShowOptions(), rewardedShowListener);
-            });
-        }
-
-        @Override
-        public void onUnityAdsFailedToLoad(String placementId,
-                                           UnityAds.UnityAdsLoadError error,
-                                           String message) {
-            if (!REWARDED_ID.equals(placementId)) return;
-            Log.e(TAG, "Rewarded ad FAILED to load: placement=" + placementId
-                    + " error=" + error + " message=" + message);
-            rewardedReady = false;
-            resolveFailure(pendingRewardedCall, "AD_NOT_AVAILABLE");
-            pendingRewardedCall = null;
-        }
-    };
-
-    private final IUnityAdsLoadListener interstitialLoadListener = new IUnityAdsLoadListener() {
-        @Override
-        public void onUnityAdsAdLoaded(String placementId) {
-            if (!INTERSTITIAL_ID.equals(placementId)) return;
-            Log.i(TAG, "Interstitial ad loaded successfully: " + placementId);
-            interstitialReady = true;
-
-            final PluginCall call = pendingInterstitialCall;
-            final Activity activity = getActivity();
-            if (call == null || activity == null) return;
-
-            activity.runOnUiThread(() -> {
-                if (pendingInterstitialCall != call) return;
-                Log.i(TAG, "Showing interstitial ad (placement=" + INTERSTITIAL_ID + ")");
-                UnityAds.show(activity, INTERSTITIAL_ID, new UnityAdsShowOptions(), interstitialShowListener);
-            });
-        }
-
-        @Override
-        public void onUnityAdsFailedToLoad(String placementId,
-                                           UnityAds.UnityAdsLoadError error,
-                                           String message) {
-            if (!INTERSTITIAL_ID.equals(placementId)) return;
-            Log.e(TAG, "Interstitial ad FAILED to load: placement=" + placementId
-                    + " error=" + error + " message=" + message);
-            interstitialReady = false;
-            resolveFailure(pendingInterstitialCall, "AD_NOT_AVAILABLE");
-            pendingInterstitialCall = null;
-        }
-    };
-
-    // ------------------------------------------------------------------
-    // Show listeners
-    // ------------------------------------------------------------------
-
-    private final IUnityAdsShowListener rewardedShowListener = new IUnityAdsShowListener() {
-        @Override
-        public void onUnityAdsShowFailure(String placementId,
-                                          UnityAds.UnityAdsShowError error,
-                                          String message) {
-            if (!REWARDED_ID.equals(placementId)) return;
-            Log.e(TAG, "Rewarded ad SHOW FAILURE: placement=" + placementId
-                    + " error=" + error + " message=" + message);
-            rewardedReady = false;
-            // Failure => no reward.
-            resolveFailure(pendingRewardedCall, "AD_NOT_AVAILABLE");
-            pendingRewardedCall = null;
-            preloadRewarded();
-        }
-
-        @Override
-        public void onUnityAdsShowStart(String placementId) {
-            if (REWARDED_ID.equals(placementId)) {
-                Log.i(TAG, "Rewarded ad started showing.");
-            }
-        }
-
-        @Override
-        public void onUnityAdsShowClick(String placementId) {
-        }
-
-        @Override
-        public void onUnityAdsShowComplete(String placementId,
-                                           UnityAds.UnityAdsShowCompletionState state) {
-            if (!REWARDED_ID.equals(placementId)) return;
-            rewardedReady = false;
-            boolean completed = state == UnityAds.UnityAdsShowCompletionState.COMPLETED;
-            Log.i(TAG, "Rewarded ad show complete: state=" + state
-                    + " (success=" + completed + ")");
-            if (completed) {
-                // User finished the ad -> success (reward granted upstream).
-                resolveSuccess(pendingRewardedCall);
-            } else {
-                // Skipped / unknown / not completed -> NO reward.
-                resolveFailure(pendingRewardedCall, "AD_NOT_AVAILABLE");
-            }
-            pendingRewardedCall = null;
-            preloadRewarded();
-        }
-    };
-
-    private final IUnityAdsShowListener interstitialShowListener = new IUnityAdsShowListener() {
-        @Override
-        public void onUnityAdsShowFailure(String placementId,
-                                          UnityAds.UnityAdsShowError error,
-                                          String message) {
-            if (!INTERSTITIAL_ID.equals(placementId)) return;
-            Log.e(TAG, "Interstitial ad SHOW FAILURE: placement=" + placementId
-                    + " error=" + error + " message=" + message);
-            interstitialReady = false;
-            resolveFailure(pendingInterstitialCall, "AD_NOT_AVAILABLE");
-            pendingInterstitialCall = null;
-            preloadInterstitial();
-        }
-
-        @Override
-        public void onUnityAdsShowStart(String placementId) {
-            if (INTERSTITIAL_ID.equals(placementId)) {
-                Log.i(TAG, "Interstitial ad started showing: SUCCESS");
-                interstitialReady = false;
-                // The ad actually displayed -> report success to JS now.
-                resolveSuccess(pendingInterstitialCall);
-                pendingInterstitialCall = null;
-            }
-        }
-
-        @Override
-        public void onUnityAdsShowClick(String placementId) {
-        }
-
-        @Override
-        public void onUnityAdsShowComplete(String placementId,
-                                            UnityAds.UnityAdsShowCompletionState state) {
-            if (!INTERSTITIAL_ID.equals(placementId)) return;
-            Log.i(TAG, "Interstitial ad dismissed: state=" + state);
-            preloadInterstitial();
-        }
-    };
-
-    // ------------------------------------------------------------------
-    // Banner listener (REAL Unity banner view)
-    // ------------------------------------------------------------------
-
-    private final BannerView.IListener bannerListener = new BannerView.IListener() {
-        @Override
-        public void onBannerLoaded(BannerView bannerAdView) {
-            Log.i(TAG, "Unity banner LOADED successfully (placement=" + BANNER_ID + ")");
-            final PluginCall call = pendingBannerCall;
-            pendingBannerCall = null;
-            if (call != null) {
-                resolveSuccess(call);
-            }
-        }
-
-        @Override
-        public void onBannerFailedToLoad(BannerView bannerAdView, BannerErrorInfo errorInfo) {
-            Log.e(TAG, "Unity banner FAILED to load: error=" + errorInfo.errorMessage);
-            final PluginCall call = pendingBannerCall;
-            pendingBannerCall = null;
-            if (call != null) {
-                resolveFailure(call, "AD_NOT_AVAILABLE");
-            }
-        }
-
-        @Override
-        public void onBannerClick(BannerView bannerAdView) {
-            Log.i(TAG, "Unity banner clicked.");
-        }
-
-        @Override
-        public void onBannerShown(BannerView bannerAdView) {
-            Log.i(TAG, "Unity banner shown.");
-        }
-
-        @Override
-        public void onBannerLeftApplication(BannerView bannerAdView) {
-            Log.i(TAG, "Unity banner left application (user tapped through).");
-        }
-    };
-
-    // ------------------------------------------------------------------
-    // Plugin methods
-    // ------------------------------------------------------------------
+    // ==================================================================
+    // Unity initialization (current API: InitializationConfiguration)
+    // ==================================================================
 
     @PluginMethod
     public void initialize(PluginCall call) {
-        Log.i(TAG, "initialize() requested. gameId=" + GAME_ID
-                + " rewarded=" + REWARDED_ID + " interstitial=" + INTERSTITIAL_ID
-                + " banner=" + BANNER_ID);
+        logEvent("UNITY_INIT_START gameIdConfigured=" + !isBlank(GAME_ID));
 
         if (initialized || UnityAds.isInitialized()) {
             initialized = true;
-            Log.i(TAG, "Unity Ads already initialized.");
-            preloadAds();
-            resolveSuccess(call);
+            logEvent("UNITY_INIT_SUCCESS (already initialized)");
+            preloadRewarded();
+            preloadInterstitial();
+            resolveSuccess(call, "ALREADY_INITIALIZED", null);
             return;
         }
 
         if (isBlank(GAME_ID)) {
-            Log.e(TAG, "Unity Ads GAME_ID is not configured; cannot initialize.");
-            resolveFailure(call, "AD_NOT_AVAILABLE");
+            logEventError("UNITY_INIT_FAILED", "reason=GAME_ID_NOT_CONFIGURED");
+            resolveFailure(call, "AD_NOT_AVAILABLE", "UNITY_INIT_FAILED");
             return;
         }
 
         Activity activity = getActivity();
         if (activity == null) {
-            Log.e(TAG, "No activity available for Unity Ads initialization.");
-            resolveFailure(call, "AD_NOT_AVAILABLE");
+            logEventError("UNITY_INIT_FAILED", "reason=NO_ACTIVITY");
+            resolveFailure(call, "AD_NOT_AVAILABLE", "UNITY_INIT_FAILED");
             return;
         }
 
-        UnityAds.initialize(
-                activity.getApplicationContext(),
-                GAME_ID,
-                false,
-                new IUnityAdsInitializationListener() {
-                    @Override
-                    public void onInitializationComplete() {
-                        Log.i(TAG, "Unity Ads initialized successfully (gameId=" + GAME_ID + ").");
-                        initialized = true;
-                        preloadAds();
-                        resolveSuccess(call);
-                    }
+        InitializationConfiguration config =
+                new InitializationConfiguration.Builder(GAME_ID).build();
 
-                    @Override
-                    public void onInitializationFailed(
-                            UnityAds.UnityAdsInitializationError error,
-                            String message) {
-                        Log.e(TAG, "Unity Ads INITIALIZATION FAILED: error=" + error
-                                + " message=" + message);
-                        resolveFailure(call, "AD_NOT_AVAILABLE");
-                    }
+        UnityAds.initialize(config, new InitializationListener() {
+            @Override
+            public void onInitializationComplete(UnityAdsError error) {
+                if (error == null) {
+                    logEvent("UNITY_INIT_SUCCESS");
+                    initialized = true;
+                    // Preload after successful init so the first tap is fast.
+                    preloadRewarded();
+                    preloadInterstitial();
+                    resolveSuccess(call, "UNITY_INIT_SUCCESS", null);
+                } else {
+                    logEventError("UNITY_INIT_FAILED", error);
+                    // Do not crash, do not use mock ads; JS may retry later.
+                    resolveFailure(call, mapInitError(error), "UNITY_INIT_FAILED");
                 }
-        );
+            }
+        });
     }
+
+    // ==================================================================
+    // Rewarded workflow (current RewardedAd API)
+    // ==================================================================
 
     @PluginMethod
     public void showRewarded(PluginCall call) {
@@ -312,27 +170,206 @@ public class UnityAdsPlugin extends Plugin {
 
         Activity activity = getActivity();
         if (activity == null) {
-            resolveFailure(call, "AD_NOT_AVAILABLE");
+            resolveFailure(call, "AD_SHOW_FAILED", "REWARDED_SHOW_FAILED");
             return;
         }
 
-        activity.runOnUiThread(() -> {
-            if (pendingRewardedCall != null) {
-                Log.w(TAG, "Rewarded ad request ignored: another rewarded ad is already in flight.");
-                resolveFailure(call, "AD_NOT_AVAILABLE");
-                return;
-            }
-            pendingRewardedCall = call;
+        // Keep the JS call alive across all async Unity callbacks so the ad
+        // result can be delivered when the show flow finishes.
+        call.setKeepAlive(true);
 
-            if (rewardedReady) {
-                Log.i(TAG, "Rewarded ad already loaded; showing immediately.");
-                UnityAds.show(activity, REWARDED_ID, new UnityAdsShowOptions(), rewardedShowListener);
+        activity.runOnUiThread(() -> {
+            synchronized (this) {
+                if (pendingRewardedCall != null) {
+                    Log.w(TAG, "Rewarded request ignored: another rewarded ad is already in flight.");
+                    resolveFailure(call, "AD_SHOW_FAILED", "REWARDED_IN_FLIGHT");
+                    return;
+                }
+                pendingRewardedCall = call;
+                currentRewardEarned = false;
+                currentShowFinalized = false;
+            }
+
+            RewardedAd ad = cachedRewardedAd;
+            if (ad != null && rewardedState == AdState.READY) {
+                showRewardedAdNow(activity, ad);
+            } else if (rewardedState == AdState.LOADING) {
+                logEvent("REWARDED_LOAD_START (already loading; show will follow when loaded)");
             } else {
-                Log.i(TAG, "Rewarded ad not cached; waiting for load before show.");
-                UnityAds.load(REWARDED_ID, rewardedLoadListener);
+                startRewardedLoad(true /* showWhenLoaded */);
             }
         });
     }
+
+    private void showRewardedAdNow(Activity activity, RewardedAd ad) {
+        rewardedState = AdState.SHOWING;
+        currentRewardEarned = false;
+        currentShowFinalized = false;
+        logEvent("REWARDED_SHOW_START placement=" + REWARDED_ID);
+
+        ShowConfiguration showConfig = new ShowConfiguration.Builder().build();
+        ad.show(activity, showConfig, new RewardedShowListener() {
+            @Override
+            public void onStarted(RewardedAd rewardedAd) {
+                // The ad is actually playing on screen.
+                logEvent("REWARDED_STARTED");
+            }
+
+            @Override
+            public void onClicked(RewardedAd rewardedAd) {
+                // A click NEVER grants Stars.
+                logEvent("REWARDED_CLICKED");
+            }
+
+            @Override
+            public void onRewarded(RewardedAd rewardedAd) {
+                // AUTHORITATIVE Unity reward event — grant exactly once.
+                if (currentRewardEarned) return;
+                currentRewardEarned = true;
+                logEvent("REWARDED_EARNED");
+            }
+
+            @Override
+            public void onCompleted(RewardedAd rewardedAd, ShowFinishState state) {
+                // Finalize the ad WITHOUT awarding again; reward was already
+                // delivered through onRewarded() if it was earned.
+                boolean rewarded = currentRewardEarned;
+                finalizeRewardedCall(state, rewarded);
+            }
+
+            @Override
+            public void onFailed(RewardedAd rewardedAd, UnityAdsError error) {
+                logEventError("REWARDED_SHOW_FAILED", error);
+                finalizeRewardedFailure();
+            }
+        });
+    }
+
+    private void finalizeRewardedCall(ShowFinishState state, boolean rewardEarned) {
+        PluginCall call;
+        synchronized (this) {
+            if (currentShowFinalized) return;
+            currentShowFinalized = true;
+            call = pendingRewardedCall;
+            pendingRewardedCall = null;
+        }
+
+        rewardedState = AdState.IDLE;
+        cachedRewardedAd = null; // consumed by the show
+
+        if (rewardEarned) {
+            logEvent("REWARDED_COMPLETED state=" + state + " reward=granted");
+            resolveSuccess(call, "REWARDED_EARNED", null);
+        } else if (state == ShowFinishState.COMPLETED) {
+            // Completed but Unity did not fire onRewarded() -> no reward.
+            logEventError("REWARDED_COMPLETED_NO_REWARD", "state=" + state);
+            resolveFailure(call, "AD_SHOW_FAILED", "REWARDED_NO_REWARD");
+        } else {
+            // User skipped/closed before earning the reward -> NO Stars.
+            logEvent("REWARDED_SKIPPED state=" + state);
+            resolveFailure(call, "REWARDED_SKIPPED", "REWARDED_SKIPPED");
+        }
+
+        // Preload the next rewarded ad immediately.
+        preloadRewarded();
+    }
+
+    private void finalizeRewardedFailure() {
+        PluginCall call;
+        synchronized (this) {
+            if (currentShowFinalized) return;
+            currentShowFinalized = true;
+            call = pendingRewardedCall;
+            pendingRewardedCall = null;
+        }
+        rewardedState = AdState.IDLE;
+        cachedRewardedAd = null;
+        resolveFailure(call, "AD_SHOW_FAILED", "REWARDED_SHOW_FAILED");
+        preloadRewarded();
+    }
+
+    private void startRewardedLoad(boolean showWhenLoaded) {
+        rewardedState = AdState.LOADING;
+        logEvent("REWARDED_LOAD_START placement=" + REWARDED_ID);
+
+        LoadConfiguration loadConfig =
+                new LoadConfiguration.Builder(REWARDED_ID).build();
+
+        RewardedAd.load(loadConfig, new LoadListener<RewardedAd>() {
+            @Override
+            public void onAdLoaded(RewardedAd ad, UnityAdsError error) {
+                if (error != null || ad == null) {
+                    rewardedState = AdState.IDLE;
+                    logEventError("REWARDED_LOAD_FAILED", error);
+                    handleRewardedLoadFailure();
+                    return;
+                }
+
+                cachedRewardedAd = ad;
+                rewardedState = AdState.READY;
+                logEvent("REWARDED_LOAD_SUCCESS placement=" + REWARDED_ID);
+
+                // Handle expiration: discard the expired ad and load a new one.
+                ad.setOnAdExpired(new AdExpiredListener<RewardedAd>() {
+                    @Override
+                    public void onAdExpired(RewardedAd expiredAd) {
+                        logEventError("REWARDED_AD_EXPIRED", "discarding and reloading");
+                        synchronized (UnityAdsPlugin.this) {
+                            if (cachedRewardedAd == expiredAd) {
+                                cachedRewardedAd = null;
+                                rewardedState = AdState.IDLE;
+                            }
+                        }
+                        // Never attempt to show an expired ad.
+                        preloadRewarded();
+                    }
+                });
+
+                if (showWhenLoaded) {
+                    Activity activity = getActivity();
+                    PluginCall call;
+                    synchronized (this) {
+                        call = pendingRewardedCall;
+                    }
+                    if (call != null && activity != null && cachedRewardedAd == ad) {
+                        showRewardedAdNow(activity, ad);
+                    }
+                }
+            }
+        });
+    }
+
+    private void handleRewardedLoadFailure() {
+        PluginCall call;
+        synchronized (this) {
+            call = pendingRewardedCall;
+            if (call != null) {
+                pendingRewardedCall = null;
+                currentShowFinalized = true;
+            }
+        }
+        if (call != null) {
+            resolveFailure(call, "AD_LOAD_FAILED", "REWARDED_LOAD_FAILED");
+        }
+    }
+
+    private void preloadRewarded() {
+        Activity activity = getActivity();
+        if (activity == null || isBlank(REWARDED_ID)) return;
+        activity.runOnUiThread(() -> {
+            if (rewardedState == AdState.READY || rewardedState == AdState.LOADING) {
+                return; // already loaded or loading — no duplicate requests
+            }
+            if (rewardedState == AdState.SHOWING) {
+                return; // an ad is currently playing
+            }
+            startRewardedLoad(false /* cache only */);
+        });
+    }
+
+    // ==================================================================
+    // Interstitial workflow (current InterstitialAd API)
+    // ==================================================================
 
     @PluginMethod
     public void showInterstitial(PluginCall call) {
@@ -340,27 +377,169 @@ public class UnityAdsPlugin extends Plugin {
 
         Activity activity = getActivity();
         if (activity == null) {
-            resolveFailure(call, "AD_NOT_AVAILABLE");
+            resolveFailure(call, "AD_SHOW_FAILED", "INTERSTITIAL_SHOW_FAILED");
             return;
         }
 
-        activity.runOnUiThread(() -> {
-            if (pendingInterstitialCall != null) {
-                Log.w(TAG, "Interstitial request ignored: another interstitial is already in flight.");
-                resolveFailure(call, "AD_NOT_AVAILABLE");
-                return;
-            }
-            pendingInterstitialCall = call;
+        // Keep the JS call alive across all async Unity callbacks.
+        call.setKeepAlive(true);
 
-            if (interstitialReady) {
-                Log.i(TAG, "Interstitial already loaded; showing immediately.");
-                UnityAds.show(activity, INTERSTITIAL_ID, new UnityAdsShowOptions(), interstitialShowListener);
+        activity.runOnUiThread(() -> {
+            synchronized (this) {
+                if (pendingInterstitialCall != null) {
+                    Log.w(TAG, "Interstitial request ignored: another interstitial is in flight.");
+                    resolveFailure(call, "AD_SHOW_FAILED", "INTERSTITIAL_IN_FLIGHT");
+                    return;
+                }
+                pendingInterstitialCall = call;
+                interstitialCounted = false;
+            }
+
+            InterstitialAd ad = cachedInterstitialAd;
+            if (ad != null && interstitialState == AdState.READY) {
+                showInterstitialNow(activity, ad);
+            } else if (interstitialState == AdState.LOADING) {
+                logEvent("INTERSTITIAL_LOAD_START (already loading; show will follow when loaded)");
             } else {
-                Log.i(TAG, "Interstitial not cached; waiting for load before show.");
-                UnityAds.load(INTERSTITIAL_ID, interstitialLoadListener);
+                startInterstitialLoad(true /* showWhenLoaded */);
             }
         });
     }
+
+    private void showInterstitialNow(Activity activity, InterstitialAd ad) {
+        interstitialState = AdState.SHOWING;
+        logEvent("INTERSTITIAL_SHOW_START placement=" + INTERSTITIAL_ID);
+
+        ShowConfiguration showConfig = new ShowConfiguration.Builder().build();
+        ad.show(activity, showConfig, new InterstitialShowListener() {
+            @Override
+            public void onStarted(InterstitialAd interstitialAd) {
+                // The ad actually displayed -> count it (success to JS now).
+                logEvent("INTERSTITIAL_STARTED");
+                PluginCall call;
+                synchronized (this) {
+                    call = pendingInterstitialCall;
+                    if (call != null && !interstitialCounted) {
+                        interstitialCounted = true;
+                        pendingInterstitialCall = null;
+                    } else {
+                        call = null;
+                    }
+                }
+                resolveSuccess(call, "INTERSTITIAL_STARTED", null);
+            }
+
+            @Override
+            public void onClicked(InterstitialAd interstitialAd) {
+                logEvent("INTERSTITIAL_CLICKED");
+            }
+
+            @Override
+            public void onCompleted(InterstitialAd interstitialAd, ShowFinishState state) {
+                logEvent("INTERSTITIAL_COMPLETED state=" + state);
+                finishInterstitial(null);
+            }
+
+            @Override
+            public void onFailed(InterstitialAd interstitialAd, UnityAdsError error) {
+                logEventError("INTERSTITIAL_SHOW_FAILED", error);
+                finishInterstitial(error);
+            }
+        });
+    }
+
+    private void finishInterstitial(UnityAdsError error) {
+        interstitialState = AdState.IDLE;
+        cachedInterstitialAd = null; // consumed
+
+        PluginCall call;
+        synchronized (this) {
+            call = pendingInterstitialCall;
+            pendingInterstitialCall = null;
+        }
+        if (call != null) {
+            // Show failed before ever starting -> no success, no counting.
+            resolveFailure(call, "AD_SHOW_FAILED", "INTERSTITIAL_SHOW_FAILED");
+        }
+        preloadInterstitial();
+    }
+
+    private void startInterstitialLoad(boolean showWhenLoaded) {
+        interstitialState = AdState.LOADING;
+        logEvent("INTERSTITIAL_LOAD_START placement=" + INTERSTITIAL_ID);
+
+        LoadConfiguration loadConfig =
+                new LoadConfiguration.Builder(INTERSTITIAL_ID).build();
+
+        InterstitialAd.load(loadConfig, new LoadListener<InterstitialAd>() {
+            @Override
+            public void onAdLoaded(InterstitialAd ad, UnityAdsError error) {
+                if (error != null || ad == null) {
+                    interstitialState = AdState.IDLE;
+                    logEventError("INTERSTITIAL_LOAD_FAILED", error);
+                    handleInterstitialLoadFailure();
+                    return;
+                }
+
+                cachedInterstitialAd = ad;
+                interstitialState = AdState.READY;
+                logEvent("INTERSTITIAL_LOAD_SUCCESS placement=" + INTERSTITIAL_ID);
+
+                ad.setOnAdExpired(new AdExpiredListener<InterstitialAd>() {
+                    @Override
+                    public void onAdExpired(InterstitialAd expiredAd) {
+                        logEventError("INTERSTITIAL_AD_EXPIRED", "discarding and reloading");
+                        synchronized (UnityAdsPlugin.this) {
+                            if (cachedInterstitialAd == expiredAd) {
+                                cachedInterstitialAd = null;
+                                interstitialState = AdState.IDLE;
+                            }
+                        }
+                        preloadInterstitial();
+                    }
+                });
+
+                if (showWhenLoaded) {
+                    Activity activity = getActivity();
+                    PluginCall call;
+                    synchronized (this) {
+                        call = pendingInterstitialCall;
+                    }
+                    if (call != null && activity != null && cachedInterstitialAd == ad) {
+                        showInterstitialNow(activity, ad);
+                    }
+                }
+            }
+        });
+    }
+
+    private void handleInterstitialLoadFailure() {
+        PluginCall call;
+        synchronized (this) {
+            call = pendingInterstitialCall;
+            pendingInterstitialCall = null;
+        }
+        if (call != null) {
+            resolveFailure(call, "AD_LOAD_FAILED", "INTERSTITIAL_LOAD_FAILED");
+        }
+    }
+
+    private void preloadInterstitial() {
+        Activity activity = getActivity();
+        if (activity == null || isBlank(INTERSTITIAL_ID)) return;
+        activity.runOnUiThread(() -> {
+            if (interstitialState == AdState.READY
+                    || interstitialState == AdState.LOADING
+                    || interstitialState == AdState.SHOWING) {
+                return;
+            }
+            startInterstitialLoad(false /* cache only */);
+        });
+    }
+
+    // ==================================================================
+    // Banner workflow (REAL Unity BannerView — single instance)
+    // ==================================================================
 
     @PluginMethod
     public void showBanner(PluginCall call) {
@@ -368,13 +547,13 @@ public class UnityAdsPlugin extends Plugin {
 
         Activity activity = getActivity();
         if (activity == null) {
-            resolveFailure(call, "AD_NOT_AVAILABLE");
+            resolveFailure(call, "AD_SHOW_FAILED", "BANNER_SHOW_FAILED");
             return;
         }
 
         activity.runOnUiThread(() -> {
             if (bannerView == null) {
-                Log.i(TAG, "Creating Unity banner view (placement=" + BANNER_ID + ", size=320x50).");
+                logEvent("BANNER_LOAD_START placement=" + BANNER_ID);
                 bannerView = new BannerView(activity, BANNER_ID, new UnityBannerSize(320, 50));
                 bannerView.setListener(bannerListener);
             }
@@ -407,88 +586,119 @@ public class UnityAdsPlugin extends Plugin {
 
             bannerContainer.setVisibility(FrameLayout.VISIBLE);
 
+            if (bannerLoaded) {
+                // Already loaded — reuse the existing banner, do not reload.
+                resolveSuccess(call, "BANNER_ALREADY_LOADED", null);
+                return;
+            }
+
             // Resolve once Unity reports the banner actually loaded (or fails).
             pendingBannerCall = call;
             bannerView.load();
         });
     }
 
+    private final BannerView.IListener bannerListener = new BannerView.IListener() {
+        @Override
+        public void onBannerLoaded(BannerView bannerAdView) {
+            logEvent("BANNER_LOAD_SUCCESS placement=" + BANNER_ID);
+            bannerLoaded = true;
+            final PluginCall call = pendingBannerCall;
+            pendingBannerCall = null;
+            if (call != null) {
+                resolveSuccess(call, "BANNER_LOADED", null);
+            }
+        }
+
+        @Override
+        public void onBannerFailedToLoad(BannerView bannerAdView, BannerErrorInfo errorInfo) {
+            logEventError("BANNER_LOAD_FAILED",
+                    "code=" + errorInfo.errorCode + " message=" + errorInfo.errorMessage);
+            bannerLoaded = false;
+            final PluginCall call = pendingBannerCall;
+            pendingBannerCall = null;
+            if (call != null) {
+                resolveFailure(call, "AD_LOAD_FAILED", "BANNER_LOAD_FAILED");
+            }
+        }
+
+        @Override
+        public void onBannerClick(BannerView bannerAdView) {
+            logEvent("BANNER_CLICKED");
+        }
+
+        @Override
+        public void onBannerShown(BannerView bannerAdView) {
+            logEvent("BANNER_SHOWN");
+        }
+
+        @Override
+        public void onBannerLeftApplication(BannerView bannerAdView) {
+            logEvent("BANNER_LEFT_APPLICATION");
+        }
+    };
+
     @PluginMethod
     public void hideBanner(PluginCall call) {
         Activity activity = getActivity();
         if (activity == null) {
-            resolveFailure(call, "AD_NOT_AVAILABLE");
+            resolveFailure(call, "AD_SHOW_FAILED", "BANNER_HIDE_FAILED");
             return;
         }
 
         activity.runOnUiThread(() -> {
             if (bannerContainer != null) {
                 bannerContainer.setVisibility(FrameLayout.GONE);
-                Log.i(TAG, "Unity banner hidden.");
+                logEvent("BANNER_HIDDEN");
             }
-            resolveSuccess(call);
+            resolveSuccess(call, "BANNER_HIDDEN", null);
         });
     }
 
-    // ------------------------------------------------------------------
+    // ==================================================================
     // Helpers
-    // ------------------------------------------------------------------
-
-    private void preloadAds() {
-        preloadRewarded();
-        preloadInterstitial();
-    }
-
-    private void preloadRewarded() {
-        Activity activity = getActivity();
-        if (activity == null || isBlank(REWARDED_ID)) return;
-        activity.runOnUiThread(() -> {
-            if (!rewardedReady) {
-                Log.i(TAG, "Preloading rewarded placement: " + REWARDED_ID);
-                UnityAds.load(REWARDED_ID, rewardedLoadListener);
-            }
-        });
-    }
-
-    private void preloadInterstitial() {
-        Activity activity = getActivity();
-        if (activity == null || isBlank(INTERSTITIAL_ID)) return;
-        activity.runOnUiThread(() -> {
-            if (!interstitialReady) {
-                Log.i(TAG, "Preloading interstitial placement: " + INTERSTITIAL_ID);
-                UnityAds.load(INTERSTITIAL_ID, interstitialLoadListener);
-            }
-        });
-    }
+    // ==================================================================
 
     private boolean ensureInitialized(PluginCall call, String method) {
         if (!initialized && !UnityAds.isInitialized()) {
-            Log.e(TAG, method + "() called before Unity Ads was initialized.");
-            resolveFailure(call, "AD_NOT_AVAILABLE");
+            logEventError("UNITY_NOT_INITIALIZED", method + "() called before Unity Ads init completed.");
+            resolveFailure(call, "AD_NOT_AVAILABLE", "UNITY_NOT_INITIALIZED");
             return false;
         }
         initialized = true;
         return true;
     }
 
-    private void resolveSuccess(PluginCall call) {
+    private static String mapInitError(UnityAdsError error) {
+        // Structured, non-sensitive error string for JS consumption.
+        return error != null ? "UNITY_ERROR_" + error.getCode() : "UNITY_INIT_FAILED";
+    }
+
+    private void resolveSuccess(PluginCall call, String event, String extra) {
         if (call == null) return;
         JSObject result = new JSObject();
         result.put("success", true);
+        result.put("event", event);
+        if (extra != null) {
+            result.put("detail", extra);
+        }
         call.resolve(result);
+        call.setKeepAlive(false);
     }
 
     /**
-     * Failures are RESOLVED (not rejected) with { success:false, error } so
-     * the JS provider layer receives a structured AdResult. The detailed
-     * Unity error messages are captured in logcat (see Log.e calls above).
+     * Failures are RESOLVED (not rejected) with a structured AdResult so the
+     * JS provider layer receives { success:false, error, event }. Detailed
+     * Unity error enums/messages stay in logcat (never exposed to JS).
      */
-    private void resolveFailure(PluginCall call, String error) {
+    private void resolveFailure(PluginCall call, String error, String event) {
         if (call == null) return;
         JSObject result = new JSObject();
         result.put("success", false);
         result.put("error", error);
+        result.put("event", event);
         call.resolve(result);
+        call.setKeepAlive(false);
     }
 
     private boolean isBlank(String value) {
@@ -497,9 +707,15 @@ public class UnityAdsPlugin extends Plugin {
 
     @Override
     protected void handleOnDestroy() {
-        pendingRewardedCall = null;
-        pendingInterstitialCall = null;
-        pendingBannerCall = null;
+        synchronized (this) {
+            pendingRewardedCall = null;
+            pendingInterstitialCall = null;
+            pendingBannerCall = null;
+            cachedRewardedAd = null;
+            cachedInterstitialAd = null;
+            rewardedState = AdState.IDLE;
+            interstitialState = AdState.IDLE;
+        }
 
         if (bannerView != null) {
             bannerView.destroy();

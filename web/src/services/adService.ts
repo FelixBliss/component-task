@@ -54,6 +54,34 @@ interface DailyAdTrack {
 let rewardedAdInFlight = false;
 let rewardedMemoryTrack: DailyAdTrack | null = null;
 
+/** Ad lifecycle phase reported to the UI ('' = idle/ready). */
+export type RewardedAdPhase = '' | 'loading' | 'playing';
+let rewardedAdPhase: RewardedAdPhase = '';
+const rewardedPhaseListeners = new Set<(phase: RewardedAdPhase) => void>();
+
+export function getRewardedAdPhase(): RewardedAdPhase {
+  return rewardedAdPhase;
+}
+
+export function subscribeRewardedAdPhase(
+  listener: (phase: RewardedAdPhase) => void
+): () => void {
+  rewardedPhaseListeners.add(listener);
+  return () => rewardedPhaseListeners.delete(listener);
+}
+
+function setRewardedAdPhase(phase: RewardedAdPhase): void {
+  if (rewardedAdPhase === phase) return;
+  rewardedAdPhase = phase;
+  for (const listener of rewardedPhaseListeners) {
+    try {
+      listener(phase);
+    } catch {
+      // Never let a UI listener break the ad flow.
+    }
+  }
+}
+
 function getTodayDate(): string {
   return new Date().toISOString().split('T')[0];
 }
@@ -247,8 +275,9 @@ export function canShowInterstitialAd(): boolean {
 
 export const adService = {
   async showRewardedAd(): Promise<AdResult> {
+    // Pre-flight checks (Section 3): online, daily limit, no ad in flight.
     if (rewardedAdInFlight) {
-      return { success: false, error: 'AD_NOT_AVAILABLE' };
+      return { success: false, error: 'AD_SHOW_FAILED', event: 'REWARDED_IN_FLIGHT' };
     }
 
     if (!isOnline()) {
@@ -260,18 +289,36 @@ export const adService = {
     }
 
     rewardedAdInFlight = true;
+    setRewardedAdPhase('loading');
 
     try {
       const result = await adProvider.showRewardedAd();
 
-      // Only a successful provider result consumes one daily allowance.
+      // Once the native side reports the ad has actually started playing,
+      // surface a "playing" UI state (REWARDED_STARTED on Android).
+      if (result.event === 'REWARDED_STARTED') {
+        setRewardedAdPhase('playing');
+      }
+
+      // Only a successful provider result (REWARDED_EARNED via Unity's
+      // authoritative RewardedShowListener.onRewarded() callback) consumes
+      // one daily allowance and grants Stars upstream. Skips, load failures
+      // and show failures never increment the count.
       if (result.success) {
         incrementDailyAdCount();
+      } else {
+        console.warn(
+          '[adService] Rewarded ad unsuccessful:',
+          result.error ?? 'UNKNOWN_ERROR',
+          result.event ?? ''
+        );
       }
 
       return result;
     } finally {
       rewardedAdInFlight = false;
+      // Reset the loading/playing state so the button is never stuck.
+      setRewardedAdPhase('');
     }
   },
 
