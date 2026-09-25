@@ -16,6 +16,7 @@ export type Procedure = {
   category: string;
   overview: string;
   purpose: string[];
+  types?: string[];
   indications: string[];
   equipment: string[];
   steps: string[];
