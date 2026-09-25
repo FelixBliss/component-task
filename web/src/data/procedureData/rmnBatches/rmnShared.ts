@@ -21,7 +21,7 @@ export type RmnProcedureInput = Omit<
   Procedure,
   "category" | "quiz" | "references"
 > & {
-  quizFacts: RmnQuizFacts;
+  quizFacts?: RmnQuizFacts;
 };
 
 const NMC_RMN_REFERENCE: ProcedureReference = {
@@ -89,8 +89,8 @@ export function makeRmnProcedure(
   const { quizFacts, ...procedure } = input;
   return {
     ...procedure,
-    category: "Mental Health Nursing (RMN)",
+    category: "Registered Mental Health Nursing (RMN)",
     references: [NMC_RMN_REFERENCE, NMC_SCOPE_REFERENCE],
-    quiz: makeRmnQuiz(procedure.title, quizFacts),
+    ...(quizFacts ? { quiz: makeRmnQuiz(procedure.title, quizFacts) } : {}),
   };
 }
