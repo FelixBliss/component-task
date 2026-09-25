@@ -4,7 +4,16 @@
 
 export interface AdResult {
   success: boolean;
-  error?: 'NO_CONNECTION' | 'DAILY_LIMIT_REACHED' | 'AD_NOT_AVAILABLE' | 'UNKNOWN_ERROR';
+  error?:
+    | 'NO_CONNECTION'
+    | 'DAILY_LIMIT_REACHED'
+    | 'AD_NOT_AVAILABLE'
+    | 'AD_LOAD_FAILED'
+    | 'AD_SHOW_FAILED'
+    | 'REWARDED_SKIPPED'
+    | 'UNKNOWN_ERROR';
+  /** Structured event reported by the native Unity provider (e.g. REWARDED_EARNED). */
+  event?: string;
 }
 
 /**
