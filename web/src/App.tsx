@@ -66,7 +66,7 @@ const procedureCategories: Category[] = [
   },
   {
     icon: <Icon name="brain" size={28} />,
-    name: "Mental Health Nursing (RMN)",
+    name: "Registered Mental Health Nursing (RMN)",
     description: "Mental health nursing procedures",
   },
   {
