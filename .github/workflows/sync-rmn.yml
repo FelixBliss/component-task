@@ -1,0 +1,143 @@
+name: Sync RMN data from N&MC
+on:
+  push:
+    paths:
+      - .github/workflows/sync-rmn.yml
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch and generate
+        run: |
+          pip install requests beautifulsoup4
+          python - <<'PYTHON'
+          from pathlib import Path
+          import json, requests
+          from bs4 import BeautifulSoup
+
+          url = "https://nmc.gov.gh/procedures/view/RMN"
+          response = requests.get(url, timeout=60)
+          response.raise_for_status()
+          soup = BeautifulSoup(response.text, "html.parser")
+
+          procedures = []
+          for h2 in soup.find_all("h2"):
+              title = h2.get_text(" ", strip=True)
+              if not title or title.lower().startswith("registered mental"):
+                  continue
+
+              data = {
+                  "title": title,
+                  "description": "",
+                  "aims": [],
+                  "types": [],
+                  "requirements": [],
+                  "steps": [],
+              }
+              section = None
+
+              for node in h2.next_siblings:
+                  if getattr(node, "name", None) == "h2":
+                      break
+                  if not getattr(node, "name", None):
+                      continue
+
+                  txt = node.get_text(" ", strip=True)
+                  upper = txt.upper()
+
+                  if node.name in {"h3", "h4", "h5"}:
+                      if "DESCRIPTION" in upper:
+                          section = "description"
+                      elif upper == "AIMS":
+                          section = "aims"
+                      elif upper == "TYPES":
+                          section = "types"
+                      elif "REQUIREMENTS" in upper:
+                          section = "requirements"
+                      elif "STEPS" in upper:
+                          section = "steps"
+                      else:
+                          section = None
+                      continue
+
+                  if node.name == "p" and section == "description" and txt:
+                      data["description"] = txt
+
+                  if node.name in {"ol", "ul"} and section in {"aims", "types", "requirements", "steps"}:
+                      for li in node.find_all("li", recursive=False):
+                          item = li.get_text(" ", strip=True)
+                          if item:
+                              data[section].append(item)
+
+              procedures.append(data)
+
+          if len(procedures) != 46:
+              raise SystemExit(f"Expected 46 RMN procedures, found {len(procedures)}")
+
+          out = Path("web/src/data/procedureData/rmnBatches")
+          sizes = [8, 8, 8, 8, 7, 7]
+          start = 0
+
+          for batch, size in enumerate(sizes, 1):
+              rows = []
+              for index, procedure in enumerate(procedures[start:start + size], start + 1):
+                  q = lambda value: json.dumps(value, ensure_ascii=False)
+                  rows.append(
+                      "  makeRmnProcedure({\n"
+                      f'    id: "rmn-{index:03d}",\n'
+                      f'    title: {q(procedure["title"])},\n'
+                      f'    overview: {q(procedure["description"])},\n'
+                      f'    purpose: {q(procedure["aims"])},\n'
+                      f'    types: {q(procedure["types"])},\n'
+                      "    indications: [],\n"
+                      f'    equipment: {q(procedure["requirements"])},\n'
+                      f'    steps: {q(procedure["steps"])},\n'
+                      "    precautions: [],\n"
+                      "    preparation: [],\n"
+                      "    afterCare: [],\n"
+                      "    documentation: [],\n"
+                      "    patientEducation: [],\n"
+                      "    nursingConsiderations: [],\n"
+                      "  })"
+                  )
+
+              content = (
+                  'import { makeRmnProcedure } from "./rmnShared";\n\n'
+                  f'export const rmnBatch{batch:02d} = [\n'
+                  + ",\n".join(rows)
+                  + "\n];\n"
+              )
+              (out / f"rmnBatch{batch:02d}.ts").write_text(content, encoding="utf-8")
+              start += size
+
+          print("Generated", len(procedures), "official RMN procedures")
+
+          PYTHON
+      - name: Validate generated data
+        run: |
+          python - <<'PYTHON'
+          import pathlib, re
+
+          files = sorted(pathlib.Path("web/src/data/procedureData/rmnBatches").glob("rmnBatch*.ts"))
+          ids = []
+          for file in files:
+              ids.extend(re.findall(r'id: "([^"]+)"', file.read_text()))
+
+          expected = [f"rmn-{i:03d}" for i in range(1, 47)]
+          assert ids == expected, f"RMN IDs invalid: {ids}"
+          print("RMN validation PASS: 46 sequential IDs")
+          PYTHON
+      - name: Commit generated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/src/data/procedureData/rmnBatches
+          git diff --cached --quiet && exit 0
+          git commit -m "Sync RMN procedures from official N&MC source"
+          git push
