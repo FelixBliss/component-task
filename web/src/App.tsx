@@ -1027,18 +1027,8 @@ export default function App() {
               isOnline={isOnlineState}
             />
 
-            {/* ================= BANNER AD ================= */}
-
-            {isOnlineState && (
-              <div className="banner-ad-container">
-                <div className="banner-ad">
-                  <span className="banner-ad-label">Advertisement</span>
-                  <div className="banner-ad-content">
-                    Mock Banner Ad Space
-                  </div>
-                </div>
-              </div>
-            )}
+            {/* Banner ads are rendered natively on Android via the Unity Ads
+                provider. No mock banner UI is ever shown. */}
           </>
         )}
 
@@ -1163,18 +1153,8 @@ export default function App() {
               </div>
             </div>
 
-            {/* ================= BANNER AD ================= */}
-
-            {isOnlineState && (
-              <div className="banner-ad-container">
-                <div className="banner-ad">
-                  <span className="banner-ad-label">Advertisement</span>
-                  <div className="banner-ad-content">
-                    Mock Banner Ad Space
-                  </div>
-                </div>
-              </div>
-            )}
+            {/* Banner ads are rendered natively on Android via the Unity Ads
+                provider. No mock banner UI is ever shown. */}
 
           </section>
         )}
