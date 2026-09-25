@@ -1,4 +1,2 @@
-# Compiled/Binary files
-*.apk
-# Local Android SDK path (machine-specific)
-android/local.properties
+node_modules/
+web/dist/
