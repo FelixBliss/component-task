@@ -226,10 +226,7 @@ public class UnityAdsPlugin extends Plugin {
 
         @Override
         public void onBannerFailedToLoad(BannerView bannerAdView, BannerErrorInfo errorInfo) {
-            Log.e(TAG, "Unity banner FAILED to load: code=" + errorInfo.responseCode
-                    + " error=" + errorInfo.errorMessage
-                    + (errorInfo.nativeErrorCode != null
-                        ? " nativeErrorCode=" + errorInfo.nativeErrorCode : ""));
+            Log.e(TAG, "Unity banner FAILED to load: error=" + errorInfo.errorMessage);
             final PluginCall call = pendingBannerCall;
             pendingBannerCall = null;
             if (call != null) {
@@ -327,7 +324,7 @@ public class UnityAdsPlugin extends Plugin {
             }
             pendingRewardedCall = call;
 
-            if (rewardedReady && UnityAds.isReady(REWARDED_ID)) {
+            if (rewardedReady) {
                 Log.i(TAG, "Rewarded ad already loaded; showing immediately.");
                 UnityAds.show(activity, REWARDED_ID, new UnityAdsShowOptions(), rewardedShowListener);
             } else {
@@ -355,7 +352,7 @@ public class UnityAdsPlugin extends Plugin {
             }
             pendingInterstitialCall = call;
 
-            if (interstitialReady && UnityAds.isReady(INTERSTITIAL_ID)) {
+            if (interstitialReady) {
                 Log.i(TAG, "Interstitial already loaded; showing immediately.");
                 UnityAds.show(activity, INTERSTITIAL_ID, new UnityAdsShowOptions(), interstitialShowListener);
             } else {
