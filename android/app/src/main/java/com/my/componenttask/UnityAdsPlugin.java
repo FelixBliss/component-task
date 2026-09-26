@@ -25,9 +25,10 @@ import com.unity3d.ads.ShowConfiguration;
 import com.unity3d.ads.ShowFinishState;
 import com.unity3d.ads.UnityAds;
 import com.unity3d.ads.UnityAdsError;
-import com.unity3d.services.banners.BannerErrorInfo;
-import com.unity3d.services.banners.BannerView;
-import com.unity3d.services.banners.UnityBannerSize;
+import com.unity3d.services.banners.BannerAd;
+import com.unity3d.services.banners.BannerLoadConfiguration;
+import com.unity3d.services.banners.BannerSize;
+import com.unity3d.services.banners.BannerShowListener;
 
 /**
  * Native Unity Ads provider for Capacitor (Android only).
@@ -88,7 +89,7 @@ public class UnityAdsPlugin extends Plugin {
     // ------------------------------------------------------------------
     private PluginCall pendingBannerCall;
     private FrameLayout bannerContainer;
-    private BannerView bannerView;
+    private BannerAd bannerView;
     private volatile boolean bannerLoaded = false;
 
     // ==================================================================
@@ -139,7 +140,11 @@ public class UnityAdsPlugin extends Plugin {
         }
 
         InitializationConfiguration config =
-                new InitializationConfiguration.Builder(GAME_ID).build();
+                new InitializationConfiguration.Builder(GAME_ID)
+                        // Debug APKs always use Unity test ads. Release builds use live mode.
+                        .withTestMode(BuildConfig.DEBUG)
+                        .build();
+        logEvent("UNITY_INIT_CONFIG testMode=" + BuildConfig.DEBUG + " sdk=" + UnityAds.getVersion());
 
         UnityAds.initialize(config, new InitializationListener() {
             @Override
@@ -552,12 +557,6 @@ public class UnityAdsPlugin extends Plugin {
         }
 
         activity.runOnUiThread(() -> {
-            if (bannerView == null) {
-                logEvent("BANNER_LOAD_START placement=" + BANNER_ID);
-                bannerView = new BannerView(activity, BANNER_ID, new UnityBannerSize(320, 50));
-                bannerView.setListener(bannerListener);
-            }
-
             if (bannerContainer == null) {
                 bannerContainer = new FrameLayout(activity);
                 bannerContainer.setBackgroundColor(Color.TRANSPARENT);
@@ -573,68 +572,90 @@ public class UnityAdsPlugin extends Plugin {
                 activity.addContentView(bannerContainer, params);
             }
 
-            if (bannerView.getParent() == null) {
+            bannerContainer.setVisibility(FrameLayout.VISIBLE);
+
+            if (bannerLoaded && bannerView != null && bannerView.getView() != null) {
+                if (bannerView.getView().getParent() == null) {
+                    bannerContainer.addView(
+                            bannerView.getView(),
+                            new FrameLayout.LayoutParams(
+                                    ViewGroup.LayoutParams.MATCH_PARENT,
+                                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                                    Gravity.CENTER_HORIZONTAL
+                            )
+                    );
+                }
+                resolveSuccess(call, "BANNER_ALREADY_LOADED", null);
+                return;
+            }
+
+            logEvent("BANNER_LOAD_START placement=" + BANNER_ID);
+
+            BannerSize bannerSize = new BannerSize(320, 50);
+            BannerLoadConfiguration loadConfig =
+                    new BannerLoadConfiguration.Builder(BANNER_ID, bannerSize)
+                            .withListener(bannerShowListener)
+                            .build();
+
+            pendingBannerCall = call;
+            BannerAd.load(loadConfig, (loadedBanner, error) -> {
+                if (loadedBanner == null || error != null) {
+                    bannerLoaded = false;
+                    logEventError(
+                            "BANNER_LOAD_FAILED",
+                            error != null
+                                    ? "code=" + error.getCode() + " message=" + error.getMessage()
+                                    : "unknown error"
+                    );
+                    PluginCall pending = pendingBannerCall;
+                    pendingBannerCall = null;
+                    if (pending != null) {
+                        resolveFailure(pending, "AD_LOAD_FAILED", "BANNER_LOAD_FAILED");
+                    }
+                    return;
+                }
+
+                bannerView = loadedBanner;
+                bannerLoaded = true;
+                logEvent("BANNER_LOAD_SUCCESS placement=" + BANNER_ID);
+
+                ViewGroup bannerParent = (ViewGroup) loadedBanner.getView().getParent();
+                if (bannerParent != null) {
+                    bannerParent.removeView(loadedBanner.getView());
+                }
+
                 bannerContainer.addView(
-                        bannerView,
+                        loadedBanner.getView(),
                         new FrameLayout.LayoutParams(
                                 ViewGroup.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT,
                                 Gravity.CENTER_HORIZONTAL
                         )
                 );
-            }
 
-            bannerContainer.setVisibility(FrameLayout.VISIBLE);
-
-            if (bannerLoaded) {
-                // Already loaded — reuse the existing banner, do not reload.
-                resolveSuccess(call, "BANNER_ALREADY_LOADED", null);
-                return;
-            }
-
-            // Resolve once Unity reports the banner actually loaded (or fails).
-            pendingBannerCall = call;
-            bannerView.load();
+                PluginCall pending = pendingBannerCall;
+                pendingBannerCall = null;
+                if (pending != null) {
+                    resolveSuccess(pending, "BANNER_LOADED", null);
+                }
+            });
         });
     }
 
-    private final BannerView.IListener bannerListener = new BannerView.IListener() {
+    private final BannerShowListener bannerShowListener = new BannerShowListener() {
         @Override
-        public void onBannerLoaded(BannerView bannerAdView) {
-            logEvent("BANNER_LOAD_SUCCESS placement=" + BANNER_ID);
-            bannerLoaded = true;
-            final PluginCall call = pendingBannerCall;
-            pendingBannerCall = null;
-            if (call != null) {
-                resolveSuccess(call, "BANNER_LOADED", null);
-            }
-        }
-
-        @Override
-        public void onBannerFailedToLoad(BannerView bannerAdView, BannerErrorInfo errorInfo) {
-            logEventError("BANNER_LOAD_FAILED",
-                    "code=" + errorInfo.errorCode + " message=" + errorInfo.errorMessage);
-            bannerLoaded = false;
-            final PluginCall call = pendingBannerCall;
-            pendingBannerCall = null;
-            if (call != null) {
-                resolveFailure(call, "AD_LOAD_FAILED", "BANNER_LOAD_FAILED");
-            }
-        }
-
-        @Override
-        public void onBannerClick(BannerView bannerAdView) {
-            logEvent("BANNER_CLICKED");
-        }
-
-        @Override
-        public void onBannerShown(BannerView bannerAdView) {
+        public void onBannerShown(BannerAd bannerAd) {
             logEvent("BANNER_SHOWN");
         }
 
         @Override
-        public void onBannerLeftApplication(BannerView bannerAdView) {
-            logEvent("BANNER_LEFT_APPLICATION");
+        public void onBannerClicked(BannerAd bannerAd) {
+            logEvent("BANNER_CLICKED");
+        }
+
+        @Override
+        public void onBannerFailedToShow(BannerAd bannerAd, UnityAdsError error) {
+            logEventError("BANNER_SHOW_FAILED", error);
         }
     };
 
@@ -718,9 +739,15 @@ public class UnityAdsPlugin extends Plugin {
         }
 
         if (bannerView != null) {
-            bannerView.destroy();
+            ViewGroup bannerParent = bannerView.getView() != null
+                    ? (ViewGroup) bannerView.getView().getParent()
+                    : null;
+            if (bannerParent != null && bannerView.getView() != null) {
+                bannerParent.removeView(bannerView.getView());
+            }
             bannerView = null;
         }
+        bannerLoaded = false;
 
         if (bannerContainer != null) {
             ViewGroup parent = (ViewGroup) bannerContainer.getParent();
