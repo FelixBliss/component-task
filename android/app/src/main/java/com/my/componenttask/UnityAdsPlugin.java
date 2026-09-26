@@ -504,15 +504,17 @@ public class UnityAdsPlugin extends Plugin {
                     }
                 });
 
-                if (showWhenLoaded) {
-                    Activity activity = getActivity();
-                    PluginCall call;
-                    synchronized (UnityAdsPlugin.this) {
-                        call = pendingInterstitialCall;
-                    }
-                    if (call != null && activity != null && cachedInterstitialAd == ad) {
-                        showInterstitialNow(activity, ad);
-                    }
+                // If a user tapped while the preload was still in progress,
+                // pendingInterstitialCall is now non-null. Show the freshly
+                // loaded ad immediately instead of leaving the JS call hanging.
+                Activity activity = getActivity();
+                PluginCall call;
+                synchronized (UnityAdsPlugin.this) {
+                    call = pendingInterstitialCall;
+                }
+                if ((showWhenLoaded || call != null) && call != null
+                        && activity != null && cachedInterstitialAd == ad) {
+                    showInterstitialNow(activity, ad);
                 }
             }
         });
