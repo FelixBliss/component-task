@@ -25,10 +25,10 @@ import com.unity3d.ads.ShowConfiguration;
 import com.unity3d.ads.ShowFinishState;
 import com.unity3d.ads.UnityAds;
 import com.unity3d.ads.UnityAdsError;
-import com.unity3d.services.banners.BannerAd;
-import com.unity3d.services.banners.BannerLoadConfiguration;
-import com.unity3d.services.banners.BannerSize;
-import com.unity3d.services.banners.BannerShowListener;
+import com.unity3d.ads.BannerAd;
+import com.unity3d.ads.BannerConfiguration;
+import com.unity3d.ads.BannerSize;
+import com.unity3d.ads.BannerShowListener;
 
 /**
  * Native Unity Ads provider for Capacitor (Android only).
@@ -422,7 +422,7 @@ public class UnityAdsPlugin extends Plugin {
                 // The ad actually displayed -> count it (success to JS now).
                 logEvent("INTERSTITIAL_STARTED");
                 PluginCall call;
-                synchronized (this) {
+                synchronized (UnityAdsPlugin.this) {
                     call = pendingInterstitialCall;
                     if (call != null && !interstitialCounted) {
                         interstitialCounted = true;
@@ -507,7 +507,7 @@ public class UnityAdsPlugin extends Plugin {
                 if (showWhenLoaded) {
                     Activity activity = getActivity();
                     PluginCall call;
-                    synchronized (this) {
+                    synchronized (UnityAdsPlugin.this) {
                         call = pendingInterstitialCall;
                     }
                     if (call != null && activity != null && cachedInterstitialAd == ad) {
@@ -592,9 +592,8 @@ public class UnityAdsPlugin extends Plugin {
             logEvent("BANNER_LOAD_START placement=" + BANNER_ID);
 
             BannerSize bannerSize = new BannerSize(320, 50);
-            BannerLoadConfiguration loadConfig =
-                    new BannerLoadConfiguration.Builder(BANNER_ID, bannerSize)
-                            .withListener(bannerShowListener)
+            BannerConfiguration loadConfig =
+                    new BannerConfiguration.Builder(BANNER_ID, bannerSize, bannerShowListener)
                             .build();
 
             pendingBannerCall = call;
@@ -644,17 +643,17 @@ public class UnityAdsPlugin extends Plugin {
 
     private final BannerShowListener bannerShowListener = new BannerShowListener() {
         @Override
-        public void onBannerShown(BannerAd bannerAd) {
+        public void onImpression(BannerAd bannerAd) {
             logEvent("BANNER_SHOWN");
         }
 
         @Override
-        public void onBannerClicked(BannerAd bannerAd) {
+        public void onClicked(BannerAd bannerAd) {
             logEvent("BANNER_CLICKED");
         }
 
         @Override
-        public void onBannerFailedToShow(BannerAd bannerAd, UnityAdsError error) {
+        public void onFailedToShow(BannerAd bannerAd, UnityAdsError error) {
             logEventError("BANNER_SHOW_FAILED", error);
         }
     };
