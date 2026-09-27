@@ -643,19 +643,24 @@ public class UnityAdsPlugin extends Plugin {
         });
     }
 
+    // Actual BannerShowListener interface in Unity Ads Android 4.20.1 (verified via javap on
+    // com.unity3d.ads.BannerShowListener from unity-ads-4.20.1 classes.jar):
+    //   void onImpression(BannerAd)
+    //   void onClicked(BannerAd)
+    //   void onFailedToShow(BannerAd, UnityAdsError)
     private final BannerShowListener bannerShowListener = new BannerShowListener() {
         @Override
-        public void onBannerShown(BannerAd bannerAd) {
+        public void onImpression(BannerAd bannerAd) {
             logEvent("BANNER_SHOWN");
         }
 
         @Override
-        public void onBannerClicked(BannerAd bannerAd) {
+        public void onClicked(BannerAd bannerAd) {
             logEvent("BANNER_CLICKED");
         }
 
         @Override
-        public void onBannerFailedToShow(BannerAd bannerAd, UnityAdsError error) {
+        public void onFailedToShow(BannerAd bannerAd, UnityAdsError error) {
             logEventError("BANNER_SHOW_FAILED", error);
         }
     };
