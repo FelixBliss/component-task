@@ -85,7 +85,7 @@ public class UnityAdsPlugin extends Plugin {
     private volatile boolean interstitialCounted = false;
 
     // ------------------------------------------------------------------
-    // Banner state (single real Unity BannerView instance)
+    // Banner state (single real Unity BannerAd instance)
     // ------------------------------------------------------------------
     private PluginCall pendingBannerCall;
     private FrameLayout bannerContainer;
@@ -645,17 +645,17 @@ public class UnityAdsPlugin extends Plugin {
 
     private final BannerShowListener bannerShowListener = new BannerShowListener() {
         @Override
-        public void onImpression(BannerAd bannerAd) {
+        public void onBannerShown(BannerAd bannerAd) {
             logEvent("BANNER_SHOWN");
         }
 
         @Override
-        public void onClicked(BannerAd bannerAd) {
+        public void onBannerClicked(BannerAd bannerAd) {
             logEvent("BANNER_CLICKED");
         }
 
         @Override
-        public void onFailedToShow(BannerAd bannerAd, UnityAdsError error) {
+        public void onBannerFailedToShow(BannerAd bannerAd, UnityAdsError error) {
             logEventError("BANNER_SHOW_FAILED", error);
         }
     };
