@@ -29,6 +29,12 @@ import {
   isOnline as checkOnline,
 } from "./services/connectivityService";
 
+declare global {
+  interface Window {
+    __NCT_HANDLE_BACK__?: () => boolean;
+  }
+}
+
 type Tab =
   | "home"
   | "procedures"
