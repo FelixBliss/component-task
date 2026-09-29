@@ -259,8 +259,6 @@ export default function ProcedureDetails({
   onNext,
   nextProcedureTitle,
   isOnline = true,
-    </>
-
 }: ProcedureDetailsProps) {
   const quizzes =
     procedure.quiz ?? [];
