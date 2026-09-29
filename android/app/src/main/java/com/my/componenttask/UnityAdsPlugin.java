@@ -115,7 +115,13 @@ public class UnityAdsPlugin extends Plugin {
 
     @PluginMethod
     public void initialize(PluginCall call) {
-        logEvent("UNITY_INIT_START gameIdConfigured=" + !isBlank(GAME_ID));
+        // Diagnostic: report the EXACT values compiled into BuildConfig so a bad
+        // placeholder (e.g. trailing '_' in the banner ID) is visible in logcat.
+        logEvent("UNITY_INIT_START gameId=[" + GAME_ID + "]"
+                + " rewarded=[" + REWARDED_ID + "]"
+                + " interstitial=[" + INTERSTITIAL_ID + "]"
+                + " banner=[" + BANNER_ID + "]"
+                + " testMode=" + BuildConfig.DEBUG);
 
         if (initialized || UnityAds.isInitialized()) {
             initialized = true;
@@ -720,6 +726,8 @@ public class UnityAdsPlugin extends Plugin {
      */
     private void resolveFailure(PluginCall call, String error, String event) {
         if (call == null) return;
+        // Diagnostic: every silent failure path becomes visible in logcat.
+        Log.e(TAG, "RESOLVE_FAILURE -> JS: error=" + error + " event=" + event);
         JSObject result = new JSObject();
         result.put("success", false);
         result.put("error", error);
