@@ -87,10 +87,44 @@ export function makeRmnProcedure(
   input: RmnProcedureInput
 ): Procedure {
   const { quizFacts, ...procedure } = input;
+  const generatedFacts: RmnQuizFacts = {
+    indication:
+      procedure.overview ||
+      "Follow the approved clinical indication and care plan for this procedure.",
+    preparation:
+      procedure.preparation[0] ||
+      procedure.steps[0] ||
+      "Prepare the patient, environment and required resources before starting.",
+    equipment:
+      procedure.equipment[0] ||
+      "Use the equipment and resources specified for the procedure.",
+    sequence:
+      procedure.steps[1] ||
+      procedure.steps[0] ||
+      "Follow the documented procedure steps in the correct sequence.",
+    safety:
+      procedure.precautions[0] ||
+      "Maintain privacy, confidentiality, safety and appropriate observation throughout the procedure.",
+    observation:
+      procedure.steps.find((step) => /observe|assess|monitor|check|assure|watch/i.test(step)) ||
+      "Observe the patient’s response and relevant clinical findings throughout the procedure.",
+    redFlag:
+      "Any unexpected deterioration, significant risk or unsafe finding should prompt immediate assessment and appropriate escalation.",
+    documentation:
+      procedure.documentation[0] ||
+      procedure.steps.find((step) => /document|record|report/i.test(step)) ||
+      "Document the procedure, findings, patient response and relevant actions in the appropriate record.",
+    education:
+      procedure.patientEducation[0] ||
+      "Explain relevant information to the patient and family in clear, understandable language.",
+    escalation:
+      "Stop or modify the procedure as appropriate, ensure patient safety and promptly escalate significant concerns to the responsible clinician or senior nurse.",
+  };
+
   return {
     ...procedure,
     category: "Registered Mental Health Nursing (RMN)",
     references: [NMC_RMN_REFERENCE, NMC_SCOPE_REFERENCE],
-    ...(quizFacts ? { quiz: makeRmnQuiz(procedure.title, quizFacts) } : {}),
+    quiz: makeRmnQuiz(procedure.title, quizFacts ?? generatedFacts),
   };
 }
