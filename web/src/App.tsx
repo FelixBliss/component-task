@@ -185,7 +185,6 @@ export default function App() {
   const [isOnlineState, setIsOnlineState] =
     useState<boolean>(() => checkOnline());
 
-  const [shareFeedback, setShareFeedback] = useState("");
   const [notice, setNotice] = useState<{ title: string; message: string } | null>(null);
   const [showCreditWelcome, setShowCreditWelcome] = useState(false);
 
@@ -1291,7 +1290,6 @@ export default function App() {
                       if (Capacitor.isNativePlatform()) {
                         const result = await UnityAds.shareApp();
                         if (result.success) {
-                          setShareFeedback("");
                         } else {
                           setNotice({ title: "Share", message: "Unable to open the Android share menu." });
                         }
