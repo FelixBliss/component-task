@@ -186,10 +186,27 @@ export default function App() {
     useState<boolean>(() => checkOnline());
 
   const [shareFeedback, setShareFeedback] = useState("");
+  const [notice, setNotice] = useState<{ title: string; message: string } | null>(null);
+  const [showCreditWelcome, setShowCreditWelcome] = useState(false);
 
   const [showProcedureCreditPrompt, setShowProcedureCreditPrompt] = useState(false);
   const [pendingProcedure, setPendingProcedure] = useState<Procedure | null>(null);
   const [procedureCreditRewardLoading, setProcedureCreditRewardLoading] = useState(false);
+
+  useEffect(() => {
+    if (showSplash || activeTab !== "home") {
+      return;
+    }
+
+    try {
+      if (localStorage.getItem("nct-credit-welcome-shown") !== "true") {
+        setShowCreditWelcome(true);
+        localStorage.setItem("nct-credit-welcome-shown", "true");
+      }
+    } catch {
+      setShowCreditWelcome(true);
+    }
+  }, [showSplash, activeTab]);
 
   /* Initialize connectivity listeners on mount */
   useEffect(() => {
@@ -1047,8 +1064,7 @@ export default function App() {
               isOnline={isOnlineState}
             />
 
-            {/* Banner ads are rendered natively on Android via the Unity Ads
-                provider. No mock banner UI is ever shown. */}
+            <BannerAd />
           </>
         )}
 
@@ -1277,7 +1293,7 @@ export default function App() {
                         if (result.success) {
                           setShareFeedback("");
                         } else {
-                          setShareFeedback("Unable to open the Android share menu.");
+                          setNotice({ title: "Share", message: "Unable to open the Android share menu." });
                         }
                         return;
                       }
@@ -1292,23 +1308,18 @@ export default function App() {
                         return;
                       }
 
-                      setShareFeedback("Sharing is not supported on this device.");
+                      setNotice({ title: "Share", message: "Sharing is not supported on this device." });
                     } catch (error) {
                       if (error instanceof DOMException && error.name === "AbortError") {
                         return;
                       }
-                      setShareFeedback("Unable to open the share menu.");
+                      setNotice({ title: "Share", message: "Unable to open the share menu." });
                     }
                   }}
                 >
                   Share Component Task
                 </button>
 
-                {shareFeedback && (
-                  <p className="share-feedback" role="status">
-                    {shareFeedback}
-                  </p>
-                )}
 
                 <h3>
                   Have feedback or questions?
@@ -1367,6 +1378,32 @@ export default function App() {
         )}
 
       </main>
+
+      {notice && (
+        <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="notice-title">
+          <div className="confirmation-box" role="document">
+            <div className="confirmation-icon"><Icon name="info" size={22} /></div>
+            <h2 id="notice-title">{notice.title}</h2>
+            <p>{notice.message}</p>
+            <div className="confirmation-actions">
+              <button type="button" className="confirmation-cancel" onClick={() => setNotice(null)}>OK</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showCreditWelcome && (
+        <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="credit-welcome-title">
+          <div className="confirmation-box" role="document">
+            <div className="confirmation-icon"><Icon name="star" size={22} /></div>
+            <h2 id="credit-welcome-title">Welcome to Credits</h2>
+            <p>You start with 25 Credits. Opening a procedure uses 3 Credits. If you run out, you can watch a rewarded ad to earn 3 more.</p>
+            <div className="confirmation-actions">
+              <button type="button" className="confirmation-cancel" onClick={() => setShowCreditWelcome(false)}>Got it</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {showProcedureCreditPrompt && pendingProcedure && (
         <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="procedure-credit-title">
