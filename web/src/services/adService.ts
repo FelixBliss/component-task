@@ -42,7 +42,7 @@ const INTERSTITIAL_COOLDOWN_KEY = 'component-task-interstitial-cooldown';
 
 // Interstitial ad configuration
 export const INTERSTITIAL_CONFIG = {
-  cooldownMinutes: 5,
+  cooldownMinutes: 2,
   maxPerDay: 3,
 } as const;
 
