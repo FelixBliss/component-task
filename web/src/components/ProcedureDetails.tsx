@@ -259,6 +259,8 @@ export default function ProcedureDetails({
   onNext,
   nextProcedureTitle,
   isOnline = true,
+    </>
+
 }: ProcedureDetailsProps) {
   const quizzes =
     procedure.quiz ?? [];
@@ -741,20 +743,21 @@ export default function ProcedureDetails({
     );
 
   return (
-    {notice && (
-      <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="procedure-notice-title">
-        <div className="confirmation-box" role="document">
-          <div className="confirmation-icon"><Icon name="info" size={22} /></div>
-          <h2 id="procedure-notice-title">{notice.title}</h2>
-          <p>{notice.message}</p>
-          <div className="confirmation-actions">
-            <button type="button" className="confirmation-cancel" onClick={() => setNotice(null)}>OK</button>
+    <>
+      {notice && (
+        <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="procedure-notice-title">
+          <div className="confirmation-box" role="document">
+            <div className="confirmation-icon"><Icon name="info" size={22} /></div>
+            <h2 id="procedure-notice-title">{notice.title}</h2>
+            <p>{notice.message}</p>
+            <div className="confirmation-actions">
+              <button type="button" className="confirmation-cancel" onClick={() => setNotice(null)}>OK</button>
+            </div>
           </div>
         </div>
-      </div>
-    )}
+      )}
 
-    <section className="procedure-details">
+      <section className="procedure-details">
 
       {/* ================= BACK ================= */}
 
