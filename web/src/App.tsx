@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Capacitor } from "@capacitor/core";
+import { UnityAds } from "./services/unityAdsProvider";
 import Settings from "./Settings";
 import ProcedureList from "./components/ProcedureList";
 import ProcedureDetails from "./components/ProcedureDetails";
@@ -8,6 +10,8 @@ import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
   addStars,
+  canSpend,
+  spendStars,
   getStarTransactions,
   type StarTransaction,
 } from "./services/creditService";
@@ -182,6 +186,9 @@ export default function App() {
     useState<boolean>(() => checkOnline());
 
   const [shareFeedback, setShareFeedback] = useState("");
+
+  const [showProcedureCreditPrompt, setShowProcedureCreditPrompt] = useState(false);
+  const [procedureCreditRewardLoading, setProcedureCreditRewardLoading] = useState(false);
 
   /* Initialize connectivity listeners on mount */
   useEffect(() => {
@@ -396,6 +403,24 @@ export default function App() {
   ) => {
     setSelectedProcedure(procedure);
 
+    // Opening a procedure costs 3 Credits when the balance can cover it.
+    // If the balance is below 3, the procedure still opens and a rewarded-ad
+    // option is offered so the user can earn +3 Credits.
+    const procedureCost = STAR_ECONOMY.costs.premiumProcedureVideo;
+    if (canSpend(procedureCost)) {
+      const spent = spendStars(procedureCost, "Open procedure");
+      if (spent) {
+        setStarBalance(getBalance());
+        setStarTransactions(getStarTransactions());
+        window.dispatchEvent(new CustomEvent("stars-updated"));
+        setShowProcedureCreditPrompt(false);
+      } else {
+        setShowProcedureCreditPrompt(true);
+      }
+    } else {
+      setShowProcedureCreditPrompt(true);
+    }
+
     setRecentlyViewedIds(
       (currentIds) => {
         const updatedIds = [
@@ -492,6 +517,7 @@ export default function App() {
      ======================================================= */
 
   const backToCategories = () => {
+    setShowProcedureCreditPrompt(false);
     setSelectedCategory(null);
     setSelectedProcedure(null);
     setProcedureSearch("");
@@ -503,6 +529,7 @@ export default function App() {
   };
 
   const backToProcedureList = () => {
+    setShowProcedureCreditPrompt(false);
     setSelectedProcedure(null);
 
     // Attempt to show interstitial ad on natural navigation point
@@ -1252,6 +1279,16 @@ export default function App() {
                     const appUrl = "https://play.google.com/store/apps/details?id=com.my.componenttask";
 
                     try {
+                      if (Capacitor.isNativePlatform()) {
+                        const result = await UnityAds.shareApp();
+                        if (result.success) {
+                          setShareFeedback("");
+                        } else {
+                          setShareFeedback("Unable to open the Android share menu.");
+                        }
+                        return;
+                      }
+
                       if (navigator.share) {
                         await navigator.share({
                           title: "Nursing Component Task",
@@ -1262,8 +1299,7 @@ export default function App() {
                         return;
                       }
 
-                      await navigator.clipboard.writeText(appUrl);
-                      setShareFeedback("Sharing is not supported on this device, so the app link was copied.");
+                      setShareFeedback("Sharing is not supported on this device.");
                     } catch (error) {
                       if (error instanceof DOMException && error.name === "AbortError") {
                         return;
@@ -1338,6 +1374,37 @@ export default function App() {
         )}
 
       </main>
+
+      {showProcedureCreditPrompt && selectedProcedure && (
+        <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="procedure-credit-title">
+          <div className="confirmation-box" role="document">
+            <div className="confirmation-icon"><Icon name="star" size={24} /></div>
+            <h2 id="procedure-credit-title">Earn 3 Credits</h2>
+            <p>You need 3 Credits to open a procedure normally. This procedure is already open. Watch a rewarded ad to add 3 Credits to your balance.</p>
+            {!isOnlineState && <p className="video-offline-message" style={{ marginTop: "10px" }}>Internet connection required to earn Credits.</p>}
+            {isOnlineState && !canWatchRewardedAd() && <p className="video-insufficient-stars" style={{ marginTop: "10px" }}>You have reached today&apos;s rewarded-ad limit.</p>}
+            <div className="confirmation-actions">
+              <button type="button" className="confirmation-cancel" onClick={() => setShowProcedureCreditPrompt(false)}>Later</button>
+              <button type="button" className="confirmation-danger" disabled={!isOnlineState || !canWatchRewardedAd() || procedureCreditRewardLoading} onClick={async () => {
+                if (!isOnlineState || procedureCreditRewardLoading || !canWatchRewardedAd()) return;
+                setProcedureCreditRewardLoading(true);
+                try {
+                  const result: AdResult = await adService.showRewardedAd();
+                  if (result.success) {
+                    const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd, "Rewarded ad");
+                    setStarBalance(newBalance);
+                    setStarTransactions(getStarTransactions());
+                    window.dispatchEvent(new CustomEvent("stars-updated"));
+                    setShowProcedureCreditPrompt(false);
+                  }
+                } finally {
+                  setProcedureCreditRewardLoading(false);
+                }
+              }}>{procedureCreditRewardLoading ? "Loading Ad…" : "Watch Ad +3 Credits"}</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ===================================================
          BOTTOM NAVIGATION
