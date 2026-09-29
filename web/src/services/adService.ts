@@ -243,14 +243,9 @@ function getLastInterstitialTime(): number {
     // Ignore parse errors
   }
 
-  // Do not show an interstitial immediately on first app use.
-  // Start the two-minute cooldown from the first availability check.
-  const now = Date.now();
-  interstitialMemoryLastTime = now;
-  try {
-    localStorage.setItem(INTERSTITIAL_COOLDOWN_KEY, String(now));
-  } catch {}
-  return now;
+  // No cooldown before the first successful interstitial. The cooldown
+  // starts only after an interstitial is actually shown.
+  return 0;
 }
 
 function setLastInterstitialTime(): void {
