@@ -1594,5 +1594,6 @@ export default function ProcedureDetails({
       </div>
 
     </section>
+    </>
   );
-        }
+}
