@@ -1302,7 +1302,6 @@ export default function App() {
                           text: "Check out Nursing Component Task.",
                           url: appUrl,
                         });
-                        setShareFeedback("");
                         return;
                       }
 
