@@ -747,6 +747,7 @@ public class UnityAdsPlugin extends Plugin {
         result.put("gameId", GAME_ID);
         result.put("rewardedPlacement", REWARDED_ID);
         result.put("interstitialPlacement", INTERSTITIAL_ID);
+        result.put("bannerPlacement", BANNER_ID);
         result.put("testMode", BuildConfig.DEBUG);
         com.getcapacitor.JSArray logs = new com.getcapacitor.JSArray();
         synchronized (UnityAdsPlugin.class) {
