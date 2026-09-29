@@ -39,6 +39,7 @@ const REWARDED_ADS_KEY = 'component-task-rewarded-ads-daily';
 // Track interstitial ads shown per day
 const INTERSTITIAL_ADS_KEY = 'component-task-interstitial-ads-daily';
 const INTERSTITIAL_COOLDOWN_KEY = 'component-task-interstitial-cooldown';
+let interstitialMemoryLastTime: number | null = null;
 
 // Interstitial ad configuration
 export const INTERSTITIAL_CONFIG = {
@@ -225,21 +226,38 @@ function canShowInterstitialToday(): boolean {
 }
 
 function getLastInterstitialTime(): number {
+  if (interstitialMemoryLastTime !== null) {
+    return interstitialMemoryLastTime;
+  }
+
   try {
     const stored = localStorage.getItem(INTERSTITIAL_COOLDOWN_KEY);
     if (stored) {
       const parsed = Number(stored);
-      return Number.isFinite(parsed) && parsed >= 0 ? parsed : 0;
+      if (Number.isFinite(parsed) && parsed >= 0) {
+        interstitialMemoryLastTime = parsed;
+        return parsed;
+      }
     }
   } catch {
     // Ignore parse errors
   }
-  return 0;
+
+  // Do not show an interstitial immediately on first app use.
+  // Start the two-minute cooldown from the first availability check.
+  const now = Date.now();
+  interstitialMemoryLastTime = now;
+  try {
+    localStorage.setItem(INTERSTITIAL_COOLDOWN_KEY, String(now));
+  } catch {}
+  return now;
 }
 
 function setLastInterstitialTime(): void {
+  const now = Date.now();
+  interstitialMemoryLastTime = now;
   try {
-    localStorage.setItem(INTERSTITIAL_COOLDOWN_KEY, Date.now().toString());
+    localStorage.setItem(INTERSTITIAL_COOLDOWN_KEY, now.toString());
   } catch {}
 }
 
