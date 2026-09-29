@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 def unityAdsGameId = project.findProperty("UNITY_ADS_GAME_ID") ?: System.getenv("UNITY_ADS_GAME_ID") ?: "4813715"
 def unityAdsInterstitialId = project.findProperty("UNITY_ADS_INTERSTITIAL_ID") ?: System.getenv("UNITY_ADS_INTERSTITIAL_ID") ?: "Interstitial_Android"
 def unityAdsRewardedId = project.findProperty("UNITY_ADS_REWARDED_ID") ?: System.getenv("UNITY_ADS_REWARDED_ID") ?: "Rewarded_Android"
-def unityAdsBannerId = project.findProperty("UNITY_ADS_BANNER_ID") ?: System.getenv("UNITY_ADS_BANNER_ID") ?: "Banner_Android_"
+def unityAdsBannerId = project.findProperty("UNITY_ADS_BANNER_ID") ?: System.getenv("UNITY_ADS_BANNER_ID") ?: "Banner_android"
 
 android {
     namespace "com.my.componenttask"
