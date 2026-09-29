@@ -11,7 +11,7 @@ export const STAR_ECONOMY = {
     rewardedAd: 3,
   },
   limits: {
-    maxRewardedAdsPerDay: 5,
+    maxRewardedAdsPerDay: 10,
   },
 } as const;
 
