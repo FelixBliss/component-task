@@ -1,6 +1,7 @@
 package com.my.componenttask;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.util.Log;
 import android.view.Gravity;
@@ -704,6 +705,39 @@ public class UnityAdsPlugin extends Plugin {
     }
 
       // Temporary phone-only Unity Ads diagnostics.
+    @PluginMethod
+    public void shareApp(PluginCall call) {
+        Activity activity = getActivity();
+        if (activity == null) {
+            resolveFailure(call, "AD_NOT_AVAILABLE", "SHARE_NO_ACTIVITY");
+            return;
+        }
+
+        activity.runOnUiThread(() -> {
+            try {
+                Intent sendIntent = new Intent(Intent.ACTION_SEND);
+                sendIntent.setType("text/plain");
+                sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Nursing Component Task");
+                sendIntent.putExtra(
+                        Intent.EXTRA_TEXT,
+                        "Check out Nursing Component Task: https://play.google.com/store/apps/details?id=com.my.componenttask"
+                );
+
+                Intent chooser = Intent.createChooser(sendIntent, "Share Component Task");
+                if (sendIntent.resolveActivity(activity.getPackageManager()) == null) {
+                    resolveFailure(call, "AD_NOT_AVAILABLE", "SHARE_NO_HANDLER");
+                    return;
+                }
+
+                activity.startActivity(chooser);
+                resolveSuccess(call, "SHARE_INTENT_OPENED", null);
+            } catch (Exception error) {
+                logEventError("SHARE_INTENT_FAILED", "message=" + error.getMessage());
+                resolveFailure(call, "AD_SHOW_FAILED", "SHARE_INTENT_FAILED");
+            }
+        });
+    }
+
     @PluginMethod
     public void getDiagnostics(PluginCall call) {
         JSObject result = new JSObject();
