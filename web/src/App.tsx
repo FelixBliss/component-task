@@ -188,6 +188,7 @@ export default function App() {
   const [shareFeedback, setShareFeedback] = useState("");
 
   const [showProcedureCreditPrompt, setShowProcedureCreditPrompt] = useState(false);
+  const [pendingProcedure, setPendingProcedure] = useState<Procedure | null>(null);
   const [procedureCreditRewardLoading, setProcedureCreditRewardLoading] = useState(false);
 
   /* Initialize connectivity listeners on mount */
@@ -401,45 +402,37 @@ export default function App() {
   const openProcedure = (
     procedure: Procedure
   ) => {
-    setSelectedProcedure(procedure);
-
-    // Opening a procedure costs 3 Credits when the balance can cover it.
-    // If the balance is below 3, the procedure still opens and a rewarded-ad
-    // option is offered so the user can earn +3 Credits.
     const procedureCost = STAR_ECONOMY.costs.premiumProcedureVideo;
-    if (canSpend(procedureCost)) {
-      const spent = spendStars(procedureCost, "Open procedure");
-      if (spent) {
-        setStarBalance(getBalance());
-        setStarTransactions(getStarTransactions());
-        window.dispatchEvent(new CustomEvent("stars-updated"));
-        setShowProcedureCreditPrompt(false);
-      } else {
-        setShowProcedureCreditPrompt(true);
-      }
-    } else {
+
+    if (!canSpend(procedureCost)) {
+      // Do not open the procedure until the user completes the rewarded ad.
+      setPendingProcedure(procedure);
       setShowProcedureCreditPrompt(true);
+      return;
     }
+
+    const spent = spendStars(procedureCost, "Open procedure");
+    if (!spent) return;
+
+    setSelectedProcedure(procedure);
+    setPendingProcedure(null);
+    setShowProcedureCreditPrompt(false);
+    setStarBalance(getBalance());
+    setStarTransactions(getStarTransactions());
+    window.dispatchEvent(new CustomEvent("stars-updated"));
 
     setRecentlyViewedIds(
       (currentIds) => {
         const updatedIds = [
           procedure.id,
           ...currentIds.filter(
-            (id) =>
-              id !== procedure.id
+            (id) => id !== procedure.id,
           ),
-        ].slice(
-          0,
-          MAX_RECENTLY_VIEWED
-        );
+        ].slice(0, MAX_RECENTLY_VIEWED);
 
-        saveRecentlyViewed(
-          updatedIds
-        );
-
+        saveRecentlyViewed(updatedIds);
         return updatedIds;
-      }
+      },
     );
 
     window.scrollTo({
@@ -1375,12 +1368,12 @@ export default function App() {
 
       </main>
 
-      {showProcedureCreditPrompt && selectedProcedure && (
+      {showProcedureCreditPrompt && pendingProcedure && (
         <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="procedure-credit-title">
           <div className="confirmation-box" role="document">
             <div className="confirmation-icon"><Icon name="star" size={24} /></div>
             <h2 id="procedure-credit-title">Earn 3 Credits</h2>
-            <p>You need 3 Credits to open a procedure normally. This procedure is already open. Watch a rewarded ad to add 3 Credits to your balance.</p>
+            <p>You need 3 Credits to open this procedure. Watch a rewarded ad to receive 3 Credits, then the 3 Credits will be used to open it.</p>
             {!isOnlineState && <p className="video-offline-message" style={{ marginTop: "10px" }}>Internet connection required to earn Credits.</p>}
             {isOnlineState && !canWatchRewardedAd() && <p className="video-insufficient-stars" style={{ marginTop: "10px" }}>You have reached today&apos;s rewarded-ad limit.</p>}
             <div className="confirmation-actions">
