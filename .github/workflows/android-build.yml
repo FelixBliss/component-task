@@ -2,6 +2,9 @@ name: Android Release Build
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - android/variables.gradle
 
 jobs:
   build-android:
