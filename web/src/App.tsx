@@ -294,6 +294,35 @@ export default function App() {
       : null;
 
   /* =======================================================
+     ANDROID BACK BUTTON BRIDGE
+     ======================================================= */
+
+  useEffect(() => {
+    window.__NCT_HANDLE_BACK__ = () => {
+      if (selectedProcedure) {
+        backToProcedureList();
+        return true;
+      }
+
+      if (selectedCategory) {
+        backToCategories();
+        return true;
+      }
+
+      if (activeTab !== "home") {
+        navigate("home");
+        return true;
+      }
+
+      return false;
+    };
+
+    return () => {
+      delete window.__NCT_HANDLE_BACK__;
+    };
+  }, [activeTab, selectedCategory, selectedProcedure]);
+
+  /* =======================================================
      LOAD + SYNCHRONIZE RECENTLY VIEWED
      ======================================================= */
 
