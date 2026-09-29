@@ -7,6 +7,8 @@ import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
+import java.util.ArrayDeque;
+
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
@@ -53,6 +55,14 @@ import com.unity3d.ads.BannerShowListener;
 @CapacitorPlugin(name = "UnityAds")
 public class UnityAdsPlugin extends Plugin {
     private static final String TAG = "UnityAdsPlugin";
+    private static final int MAX_DIAGNOSTIC_EVENTS = 100;
+    private static final ArrayDeque<String> DIAGNOSTIC_EVENTS = new ArrayDeque<>();
+
+    private static synchronized void addDiagnostic(String level, String event) {
+        String entry = System.currentTimeMillis() + " | " + level + " | " + event;
+        DIAGNOSTIC_EVENTS.addLast(entry);
+        while (DIAGNOSTIC_EVENTS.size() > MAX_DIAGNOSTIC_EVENTS) DIAGNOSTIC_EVENTS.removeFirst();
+    }
 
     // Production IDs (overridable via gradle properties / env in build.gradle).
     private static final String GAME_ID = BuildConfig.UNITY_ADS_GAME_ID;
@@ -97,16 +107,21 @@ public class UnityAdsPlugin extends Plugin {
     // ==================================================================
     private static void logEvent(String event) {
         Log.i(TAG, event);
+        addDiagnostic("INFO", event);
     }
 
     private static void logEventError(String event, UnityAdsError error) {
         String code = error != null ? String.valueOf(error.getCode()) : "unknown";
         String message = error != null ? error.getMessage() : "no error details";
-        Log.e(TAG, event + " unityError=" + code + " message=" + message);
+        String detail = event + " unityError=" + code + " message=" + message;
+        Log.e(TAG, detail);
+        addDiagnostic("ERROR", detail);
     }
 
     private static void logEventError(String event, String detail) {
-        Log.e(TAG, event + " " + detail);
+        String message = event + " " + detail;
+        Log.e(TAG, message);
+        addDiagnostic("ERROR", message);
     }
 
     // ==================================================================
@@ -688,7 +703,26 @@ public class UnityAdsPlugin extends Plugin {
         });
     }
 
-    // ==================================================================
+      // Temporary phone-only Unity Ads diagnostics.
+    @PluginMethod
+    public void getDiagnostics(PluginCall call) {
+        JSObject result = new JSObject();
+        result.put("success", true);
+        result.put("sdkVersion", UnityAds.getVersion());
+        result.put("initialized", initialized || UnityAds.isInitialized());
+        result.put("gameId", GAME_ID);
+        result.put("rewardedPlacement", REWARDED_ID);
+        result.put("interstitialPlacement", INTERSTITIAL_ID);
+        result.put("testMode", BuildConfig.DEBUG);
+        com.getcapacitor.JSArray logs = new com.getcapacitor.JSArray();
+        synchronized (UnityAdsPlugin.class) {
+            for (String event : DIAGNOSTIC_EVENTS) logs.put(event);
+        }
+        result.put("logs", logs);
+        call.resolve(result);
+    }
+
+  // ==================================================================
     // Helpers
     // ==================================================================
 
@@ -727,7 +761,9 @@ public class UnityAdsPlugin extends Plugin {
     private void resolveFailure(PluginCall call, String error, String event) {
         if (call == null) return;
         // Diagnostic: every silent failure path becomes visible in logcat.
-        Log.e(TAG, "RESOLVE_FAILURE -> JS: error=" + error + " event=" + event);
+        String diagnostic = "RESOLVE_FAILURE -> JS: error=" + error + " event=" + event;
+        Log.e(TAG, diagnostic);
+        addDiagnostic("ERROR", diagnostic);
         JSObject result = new JSObject();
         result.put("success", false);
         result.put("error", error);
