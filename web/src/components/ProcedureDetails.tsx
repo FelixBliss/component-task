@@ -316,6 +316,9 @@ export default function ProcedureDetails({
   const [adLoading, setAdLoading] =
     useState(false);
 
+  const [notice, setNotice] =
+    useState<{ title: string; message: string } | null>(null);
+
   /*
    * Prepare randomized options.
    */
@@ -566,6 +569,7 @@ export default function ProcedureDetails({
   // Handle extra time from rewarded ad
   const requestExtraTime = async () => {
     if (!isOnline) {
+      setNotice({ title: "Internet required", message: "Connect to the internet to watch a rewarded ad and add extra quiz time." });
       return;
     }
 
@@ -575,6 +579,7 @@ export default function ProcedureDetails({
       const { adService, canWatchRewardedAd } = await import('../services/adService');
 
       if (!canWatchRewardedAd()) {
+        setNotice({ title: "Daily ad limit reached", message: "You have reached today's rewarded-ad limit. Please try again tomorrow." });
         setAdLoading(false);
         return;
       }
@@ -582,9 +587,10 @@ export default function ProcedureDetails({
       const result = await adService.showRewardedAd();
 
       if (result.success) {
-        // Add 3 minutes (180 seconds) to current timer
         setTimeRemaining((prev) => prev + 180);
         setExtraTimeRequested(true);
+      } else {
+        setNotice({ title: "Reward unavailable", message: "The rewarded ad could not be completed. Please try again." });
       }
     } catch {
       // Ignore errors silently
@@ -596,12 +602,14 @@ export default function ProcedureDetails({
   // Handle retry quiz with payment
   const retryQuiz = () => {
     if (!isOnline) {
+      setNotice({ title: "Internet required", message: "Connect to the internet to retry this quiz." });
       return;
     }
 
     import('../services/creditService').then(({ canSpend, spendStars }) => {
       if (!canSpend(2)) {
         setQuizUnlockError('INSUFFICIENT_STARS');
+        setNotice({ title: "Not enough Credits", message: "You need 2 Credits to retry this quiz." });
         return;
       }
       
@@ -733,6 +741,19 @@ export default function ProcedureDetails({
     );
 
   return (
+    {notice && (
+      <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="procedure-notice-title">
+        <div className="confirmation-box" role="document">
+          <div className="confirmation-icon"><Icon name="info" size={22} /></div>
+          <h2 id="procedure-notice-title">{notice.title}</h2>
+          <p>{notice.message}</p>
+          <div className="confirmation-actions">
+            <button type="button" className="confirmation-cancel" onClick={() => setNotice(null)}>OK</button>
+          </div>
+        </div>
+      </div>
+    )}
+
     <section className="procedure-details">
 
       {/* ================= BACK ================= */}
@@ -1016,6 +1037,7 @@ export default function ProcedureDetails({
                   import('../services/creditService').then(({ canSpend, spendStars }) => {
                     if (!canSpend(2)) {
                       setQuizUnlockError('INSUFFICIENT_STARS');
+                      setNotice({ title: "Not enough Credits", message: "You need 2 Credits to start this quiz." });
                       return;
                     }
                     
@@ -1085,29 +1107,19 @@ export default function ProcedureDetails({
                 video demonstration.
               </p>
 
-              {!isOnline ? (
-                <p className="video-offline-message">
-                  Internet connection required to watch this video.
-                </p>
-              ) : (
-                insufficientStars && (
-                  <p className="video-insufficient-stars">
-                    You need 3 Stars to watch this video.
-                  </p>
-                )
-              )}
-
               <button
                 type="button"
                 className="video-unlock-button"
                 disabled={!isOnline}
                 onClick={() => {
                   if (!isOnline) {
+                    setNotice({ title: "Internet required", message: "Connect to the internet to unlock this video." });
                     return;
                   }
                   import('../services/creditService').then(({ canSpend, spendStars }) => {
                     if (!canSpend(3)) {
                       setInsufficientStars(true);
+                      setNotice({ title: "Not enough Credits", message: "You need 3 Credits to unlock this video." });
                       return;
                     }
                     
@@ -1285,27 +1297,19 @@ export default function ProcedureDetails({
                 <>Premium • 2 <Icon name="star" size={16} /></>
               </div>
 
-              {!isOnline ? (
-                <p className="quiz-offline-message">
-                  Internet connection required to take this quiz.
-                </p>
-              ) : quizUnlockError === 'INSUFFICIENT_STARS' ? (
-                <p className="quiz-insufficient-stars">
-                  You need 2 Stars to take this quiz.
-                </p>
-              ) : null}
-
               <button
                 type="button"
                 className="quiz-primary-button"
                 disabled={!isOnline}
                 onClick={() => {
                   if (!isOnline) {
+                    setNotice({ title: "Internet required", message: "Connect to the internet to take this quiz." });
                     return;
                   }
                   import('../services/creditService').then(({ canSpend, spendStars }) => {
                     if (!canSpend(2)) {
                       setQuizUnlockError('INSUFFICIENT_STARS');
+                      setNotice({ title: "Not enough Credits", message: "You need 2 Credits to take this quiz." });
                       return;
                     }
                     
@@ -1368,16 +1372,6 @@ export default function ProcedureDetails({
               </p>
 
               <div className="quiz-result-actions">
-
-                {!isOnline ? (
-                  <p className="quiz-offline-message">
-                    Internet connection required to retry this quiz.
-                  </p>
-                ) : quizUnlockError === 'INSUFFICIENT_STARS' ? (
-                  <p className="quiz-insufficient-stars">
-                    You need 2 Stars to retry this quiz.
-                  </p>
-                ) : null}
 
                 <button
                   type="button"
