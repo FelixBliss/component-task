@@ -29,6 +29,7 @@ interface UnityAdsPlugin {
   showBanner(): Promise<AdResult>;
   hideBanner(): Promise<AdResult>;
   getDiagnostics(): Promise<UnityAdsDiagnostics>;
+  shareApp(): Promise<AdResult>;
 }
 
 export const UnityAds = registerPlugin<UnityAdsPlugin>('UnityAds');
@@ -131,6 +132,18 @@ export class UnityAdsProvider implements AdProvider {
       // Native plugin loads a REAL Unity banner view and reports load
       // success/failure through the Unity banner listener.
       return normalizeResult(await UnityAds.showBanner());
+    } catch (err) {
+      return toAdResult(err);
+    }
+  }
+
+  async shareApp(): Promise<AdResult> {
+    if (!Capacitor.isNativePlatform()) {
+      return { success: false, error: 'AD_NOT_AVAILABLE', event: 'NOT_NATIVE_PLATFORM' };
+    }
+
+    try {
+      return normalizeResult(await UnityAds.shareApp());
     } catch (err) {
       return toAdResult(err);
     }
