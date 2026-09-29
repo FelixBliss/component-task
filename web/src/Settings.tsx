@@ -1,9 +1,21 @@
 import { useEffect, useState } from "react";
 import Icon from "./components/Icon";
+import { UnityAds } from "./services/unityAdsProvider";
 
 type SettingsProps = {
   onAbout?: () => void;
   onClearRecentHistory?: () => void;
+};
+
+type UnityAdsDiagnostics = {
+  success: boolean;
+  sdkVersion?: string;
+  initialized?: boolean;
+  gameId?: string;
+  rewardedPlacement?: string;
+  interstitialPlacement?: string;
+  testMode?: boolean;
+  logs?: string[];
 };
 
 const SAVE_PROGRESS_KEY = "nct-save-progress";
@@ -69,6 +81,21 @@ export default function Settings({
   onAbout,
   onClearRecentHistory,
 }: SettingsProps) {
+  const [showAdDiagnostics, setShowAdDiagnostics] = useState(false);
+  const [adDiagnostics, setAdDiagnostics] = useState<UnityAdsDiagnostics | null>(null);
+  const [diagnosticsLoading, setDiagnosticsLoading] = useState(false);
+
+  const loadAdDiagnostics = async () => {
+    setDiagnosticsLoading(true);
+    try {
+      const result = await UnityAds.getDiagnostics();
+      setAdDiagnostics(result);
+    } catch (error) {
+      setAdDiagnostics({ success: false, logs: [error instanceof Error ? error.message : String(error)] });
+    } finally {
+      setDiagnosticsLoading(false);
+    }
+  };
   const [
     saveProgressEnabled,
     setSaveProgressEnabled,
@@ -418,6 +445,16 @@ export default function Settings({
 
         </div>
 
+        {/* ================= UNITY ADS DIAGNOSTICS ================= */}
+        <div className="settings-section">
+          <h2 className="settings-section-title">Developer Diagnostics</h2>
+          <button type="button" className="settings-action-card" onClick={() => { setShowAdDiagnostics(true); void loadAdDiagnostics(); }}>
+            <div className="settings-card-icon"><Icon name="megaphone" size={20} /></div>
+            <div className="settings-card-content"><strong>Unity Ads Diagnostics</strong><small>View native initialization, loading, and show events</small></div>
+            <span className="settings-action-arrow">›</span>
+          </button>
+        </div>
+
         {/* ================= ABOUT ================= */}
 
         <div className="settings-section">
@@ -538,6 +575,38 @@ export default function Settings({
 
             </div>
 
+          </div>
+        </div>
+      )}
+
+      {/* =====================================================
+          UNITY ADS DIAGNOSTICS MODAL
+      ===================================================== */}
+      {showAdDiagnostics && (
+        <div className="confirmation-overlay" role="dialog" aria-modal="true" onMouseDown={(event) => { if (event.target === event.currentTarget) setShowAdDiagnostics(false); }}>
+          <div className="confirmation-box" role="document" style={{ maxWidth: 680, width: "calc(100% - 28px)" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "flex-start" }}>
+              <div><h2>Unity Ads Diagnostics</h2><p>Temporary phone-only troubleshooting information.</p></div>
+              <button type="button" onClick={() => setShowAdDiagnostics(false)} aria-label="Close diagnostics" style={{ border: 0, background: "transparent", fontSize: 24 }}>×</button>
+            </div>
+            <button type="button" className="appearance-apply-button" onClick={() => void loadAdDiagnostics()} disabled={diagnosticsLoading} style={{ width: "100%", marginBottom: 12 }}>
+              {diagnosticsLoading ? "Refreshing..." : "Refresh Diagnostics"}
+            </button>
+            {adDiagnostics && <div style={{ textAlign: "left" }}>
+              <div style={{ fontSize: 13, lineHeight: 1.7, marginBottom: 10 }}>
+                <div><strong>Native:</strong> {adDiagnostics.success ? "Connected" : "Unavailable / error"}</div>
+                {adDiagnostics.sdkVersion && <div><strong>SDK:</strong> {adDiagnostics.sdkVersion}</div>}
+                {adDiagnostics.initialized !== undefined && <div><strong>Initialized:</strong> {String(adDiagnostics.initialized)}</div>}
+                {adDiagnostics.gameId && <div><strong>Game ID:</strong> {adDiagnostics.gameId}</div>}
+                {adDiagnostics.rewardedPlacement && <div><strong>Rewarded:</strong> {adDiagnostics.rewardedPlacement}</div>}
+                {adDiagnostics.interstitialPlacement && <div><strong>Interstitial:</strong> {adDiagnostics.interstitialPlacement}</div>}
+                {adDiagnostics.testMode !== undefined && <div><strong>Test mode:</strong> {String(adDiagnostics.testMode)}</div>}
+              </div>
+              <div style={{ maxHeight: 300, overflow: "auto", background: "#101614", color: "#e8f5ee", borderRadius: 10, padding: 10, fontFamily: "monospace", fontSize: 11, whiteSpace: "pre-wrap", wordBreak: "break-word" }}>
+                {(adDiagnostics.logs?.length ? adDiagnostics.logs : ["No native diagnostic events recorded yet."]).map((log, index) => <div key={index} style={{ marginBottom: 6 }}>{log}</div>)}
+              </div>
+            </div>}
+            <div className="confirmation-actions"><button type="button" className="confirmation-cancel" onClick={() => setShowAdDiagnostics(false)}>Close</button></div>
           </div>
         </div>
       )}
