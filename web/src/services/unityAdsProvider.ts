@@ -11,15 +11,27 @@ import type { AdProvider, AdResult } from './adProvider';
 
 type AdError = NonNullable<AdResult['error']>;
 
+export interface UnityAdsDiagnostics {
+  success: boolean;
+  sdkVersion?: string;
+  initialized?: boolean;
+  gameId?: string;
+  rewardedPlacement?: string;
+  interstitialPlacement?: string;
+  testMode?: boolean;
+  logs?: string[];
+}
+
 interface UnityAdsPlugin {
   initialize(): Promise<AdResult>;
   showRewarded(): Promise<AdResult>;
   showInterstitial(): Promise<AdResult>;
   showBanner(): Promise<AdResult>;
   hideBanner(): Promise<AdResult>;
+  getDiagnostics(): Promise<UnityAdsDiagnostics>;
 }
 
-const UnityAds = registerPlugin<UnityAdsPlugin>('UnityAds');
+export const UnityAds = registerPlugin<UnityAdsPlugin>('UnityAds');
 
 /** Normalize whatever the native side resolves/rejects into an AdResult. */
 function toAdResult(err: unknown): AdResult {
@@ -121,6 +133,16 @@ export class UnityAdsProvider implements AdProvider {
       return normalizeResult(await UnityAds.showBanner());
     } catch (err) {
       return toAdResult(err);
+    }
+  }
+
+  async getDiagnostics(): Promise<UnityAdsDiagnostics> {
+    if (!Capacitor.isNativePlatform()) return { success: false, logs: ["NOT_NATIVE_PLATFORM"] };
+    try {
+      return await UnityAds.getDiagnostics();
+    } catch (err) {
+      const message = err instanceof Error ? err.message : typeof err === "string" ? err : JSON.stringify(err ?? "");
+      return { success: false, logs: [`DIAGNOSTICS_CALL_FAILED: ${message}`] };
     }
   }
 
