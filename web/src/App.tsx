@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Capacitor } from "@capacitor/core";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics, track } from "@vercel/analytics/react";
 import { UnityAds } from "./services/unityAdsProvider";
 import Settings from "./Settings";
 import ProcedureList from "./components/ProcedureList";
@@ -414,10 +414,24 @@ export default function App() {
       );
 
   /* =======================================================
+     WEB ANALYTICS
+     ======================================================= */
+
+  const trackWebEvent = (
+    eventName: string,
+    properties?: Record<string, string | number | boolean>,
+  ) => {
+    if (!Capacitor.isNativePlatform()) {
+      track(eventName, properties);
+    }
+  };
+
+  /* =======================================================
      NAVIGATION
      ======================================================= */
 
   const navigate = (tab: Tab) => {
+    trackWebEvent("tab_view", { tab });
     setActiveTab(tab);
     setSelectedCategory(null);
     setSelectedProcedure(null);
@@ -436,6 +450,7 @@ export default function App() {
   const openCategory = (
     category: Category
   ) => {
+    trackWebEvent("category_open", { category: category.name });
     setActiveTab("procedures");
     setSelectedCategory(category);
     setSelectedProcedure(null);
@@ -466,6 +481,10 @@ export default function App() {
     const spent = spendStars(procedureCost, "Open procedure");
     if (!spent) return;
 
+    trackWebEvent("procedure_open", {
+      procedure_id: procedure.id,
+      category: procedure.category,
+    });
     setSelectedProcedure(procedure);
     setPendingProcedure(null);
     setShowProcedureCreditPrompt(false);
@@ -1551,7 +1570,7 @@ export default function App() {
         </div>
       </nav>
 
-      <Analytics />
+      {!Capacitor.isNativePlatform() && <Analytics />}
     </div>
   );
 }
