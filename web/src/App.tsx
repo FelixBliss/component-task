@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Capacitor } from "@capacitor/core";
+import { Analytics } from "@vercel/analytics/react";
 import { UnityAds } from "./services/unityAdsProvider";
 import Settings from "./Settings";
 import ProcedureList from "./components/ProcedureList";
@@ -1550,6 +1551,7 @@ export default function App() {
         </div>
       </nav>
 
+      <Analytics />
     </div>
   );
 }
