@@ -8,6 +8,7 @@ import ProcedureDetails from "./components/ProcedureDetails";
 import Icon from "./components/Icon";
 import BannerAd from "./components/BannerAd";
 import WebPromoAdHost from "./components/WebPromoAdHost";
+import InstallAppPrompt from "./components/InstallAppPrompt";
 import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
@@ -1467,18 +1468,29 @@ export default function App() {
             {!isOnlineState && <p className="video-offline-message" style={{ marginTop: "10px" }}>Internet connection required to earn Credits.</p>}
             {isOnlineState && !canWatchRewardedAd() && <p className="video-insufficient-stars" style={{ marginTop: "10px" }}>You have reached today&apos;s rewarded-ad limit.</p>}
             <div className="confirmation-actions">
-              <button type="button" className="confirmation-cancel" onClick={() => setShowProcedureCreditPrompt(false)}>Later</button>
+              <button type="button" className="confirmation-cancel" disabled={procedureCreditRewardLoading} onClick={() => setShowProcedureCreditPrompt(false)}>Later</button>
               <button type="button" className="confirmation-danger" disabled={!isOnlineState || !canWatchRewardedAd() || procedureCreditRewardLoading} onClick={async () => {
                 if (!isOnlineState || procedureCreditRewardLoading || !canWatchRewardedAd()) return;
                 setProcedureCreditRewardLoading(true);
                 try {
                   const result: AdResult = await adService.showRewardedAd();
                   if (result.success) {
+                    const procedureToOpen = pendingProcedure;
                     const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd, "Rewarded ad");
                     setStarBalance(newBalance);
                     setStarTransactions(getStarTransactions());
                     window.dispatchEvent(new CustomEvent("stars-updated"));
-                    setShowProcedureCreditPrompt(false);
+
+                    // The earned 3 Credits should immediately pay for and open
+                    // the procedure that triggered this reward prompt.
+                    if (procedureToOpen && canSpend(STAR_ECONOMY.costs.premiumProcedureVideo)) {
+                      openProcedure(procedureToOpen);
+                    } else {
+                      setNotice({
+                        title: "Credits not saved",
+                        message: "The reward finished, but the Credits could not be saved. Please try again.",
+                      });
+                    }
                   }
                 } finally {
                   setProcedureCreditRewardLoading(false);
@@ -1572,6 +1584,10 @@ export default function App() {
       </nav>
 
       <WebPromoAdHost />
+
+      {!Capacitor.isNativePlatform() && (
+        <InstallAppPrompt isHome={activeTab === "home"} />
+      )}
 
       {!Capacitor.isNativePlatform() && <Analytics />}
     </div>
