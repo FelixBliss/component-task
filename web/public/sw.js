@@ -36,15 +36,15 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request)
-        .then((response) => {
-          if (response.ok) {
-            const copy = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put("./", copy));
-          }
-          return response;
-        })
-        .catch(async () => (await caches.match(request)) || (await caches.match("./")))
+      fetch(request).then(async (response) => {
+        if (response.ok) {
+          const cache = await caches.open(CACHE_NAME);
+          await cache.put("./", response.clone());
+        }
+        return response;
+      }).catch(async () => {
+        return (await caches.match(request)) || (await caches.match("./"));
+      })
     );
     return;
   }
@@ -58,8 +58,8 @@ self.addEventListener("fetch", (event) => {
         if (cached) return cached;
         const response = await fetch(request);
         if (response.ok) {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+          const cache = await caches.open(CACHE_NAME);
+          await cache.put(request, response.clone());
         }
         return response;
       })
