@@ -8,7 +8,7 @@ import "./styles.css";
 // application continues to use its existing native lifecycle and Unity Ads.
 if (!Capacitor.isNativePlatform() && "serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch((error) => {
+    navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch((error) => {
       console.warn("[PWA] Service worker registration failed:", error);
     });
   });
