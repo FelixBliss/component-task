@@ -8,6 +8,7 @@ import ProcedureDetails from "./components/ProcedureDetails";
 import Icon from "./components/Icon";
 import BannerAd from "./components/BannerAd";
 import WebPromoAdHost from "./components/WebPromoAdHost";
+import InstallAppPrompt from "./components/InstallAppPrompt";
 import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
@@ -1474,11 +1475,22 @@ export default function App() {
                 try {
                   const result: AdResult = await adService.showRewardedAd();
                   if (result.success) {
+                    const procedureToOpen = pendingProcedure;
                     const newBalance = addStars(STAR_ECONOMY.rewards.rewardedAd, "Rewarded ad");
                     setStarBalance(newBalance);
                     setStarTransactions(getStarTransactions());
                     window.dispatchEvent(new CustomEvent("stars-updated"));
-                    setShowProcedureCreditPrompt(false);
+
+                    // The earned 3 Credits should immediately pay for and open
+                    // the procedure that triggered this reward prompt.
+                    if (procedureToOpen && canSpend(STAR_ECONOMY.costs.premiumProcedureVideo)) {
+                      openProcedure(procedureToOpen);
+                    } else {
+                      setNotice({
+                        title: "Credits not saved",
+                        message: "The reward finished, but the Credits could not be saved. Please try again.",
+                      });
+                    }
                   }
                 } finally {
                   setProcedureCreditRewardLoading(false);
@@ -1572,6 +1584,10 @@ export default function App() {
       </nav>
 
       <WebPromoAdHost />
+
+      {!Capacitor.isNativePlatform() && (
+        <InstallAppPrompt isHome={activeTab === "home"} />
+      )}
 
       {!Capacitor.isNativePlatform() && <Analytics />}
     </div>
