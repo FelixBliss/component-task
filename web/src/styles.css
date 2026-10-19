@@ -4859,3 +4859,100 @@ html.dark-mode .procedure-next-navigation {
     padding: 24px 18px 20px;
   }
 }
+
+
+/* Progressive Web App install hint (web only; native Android UI is unchanged). */
+.pwa-install-prompt {
+  position: fixed;
+  z-index: 1200;
+  left: 12px;
+  right: 12px;
+  bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+  width: min(560px, calc(100% - 24px));
+  margin-inline: auto;
+  padding: 12px 14px;
+  border: 1px solid rgba(0, 138, 75, 0.24);
+  border-radius: 14px;
+  background: #ffffff;
+  color: #18332a;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.16);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pwa-install-copy {
+  display: flex;
+  flex: 1 1 190px;
+  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pwa-install-copy strong {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.pwa-install-copy span {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.pwa-install-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pwa-install-action {
+  border: 0;
+  border-radius: 9px;
+  background: #008a4b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  min-height: 36px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.pwa-install-dismiss {
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  font-size: 24px;
+  line-height: 1;
+  min-width: 28px;
+  min-height: 32px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.pwa-install-instructions {
+  flex-basis: 100%;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 10px;
+  color: #334155;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+@media (max-width: 420px) {
+  .pwa-install-prompt {
+    align-items: flex-start;
+    padding: 11px 12px;
+  }
+
+  .pwa-install-copy {
+    flex-basis: calc(100% - 6px);
+  }
+
+  .pwa-install-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
