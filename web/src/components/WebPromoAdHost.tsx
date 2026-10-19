@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Capacitor } from "@capacitor/core";
-import { track } from "@vercel/analytics";
+import { track } from "@vercel/analytics/react";
 import type { AdResult } from "../services/adProvider";
 import {
   registerWebPromoAdHandler,
