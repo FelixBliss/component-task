@@ -4658,9 +4658,9 @@ html.dark-mode .procedure-next-navigation {
 
 .bliss-banner-ad {
   width: min(100% - 28px, 728px);
-  min-height: 76px;
+  min-height: 58px;
   margin: 16px auto 20px;
-  padding: 10px 14px;
+  padding: 7px 12px;
   display: flex;
   align-items: center;
   gap: 12px;
