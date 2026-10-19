@@ -38,7 +38,7 @@ function listSection(title: string, values?: string[]): string {
     .join("")}</ul></section>`;
 }
 
-function staticProcedurePage(procedure: (typeof procedures)[number], slug: string): string {
+function staticProcedurePage(procedure: (typeof procedures)[number], slug: string, appScript: string, appCss: string[]): string {
   const canonical = `${SITE_URL}/procedures/${slug}/`;
   const description = (procedure.overview || `Learn about ${procedure.title} in this nursing procedure guide.`)
     .replace(/\s+/g, " ")
@@ -93,26 +93,52 @@ function staticProcedurePage(procedure: (typeof procedures)[number], slug: strin
   <meta property="og:image" content="${SITE_URL}/unnamed.jpg">
   <script type="application/ld+json">${structuredData}</script>
   <style>
-    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17212b;background:#f8fafc}
-    body{margin:0;line-height:1.65}header,main,footer{max-width:850px;margin:auto;padding:20px}
-    header{border-bottom:1px solid #dbe3ea;background:#fff}main{background:#fff;margin-top:20px;margin-bottom:20px;border:1px solid #e2e8f0;border-radius:14px}
-    a{color:#087f8c}nav{display:flex;gap:16px;flex-wrap:wrap}h1{line-height:1.2;font-size:clamp(1.8rem,5vw,2.6rem)}h2{margin-top:1.8rem;font-size:1.25rem}
-    li{margin:.45rem 0}.eyebrow{color:#087f8c;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem}
-    .notice{background:#f1f5f9;padding:12px 14px;border-radius:8px;font-size:.92rem}footer{font-size:.9rem;color:#526170}
+    :root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#17221c;background:#f8faf9;--green:#008a4b;--dark:#006b3c;--light:#e8f5ee;--muted:#66736c;--border:#e3e9e5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;line-height:1.6;background:#f8faf9;color:#17221c;padding-bottom:78px}
+    .app-header{position:sticky;top:0;z-index:10;background:var(--green);color:#fff;box-shadow:0 3px 14px rgba(0,0,0,.08)}
+    .header-inner{width:min(100%,900px);min-height:76px;margin:auto;padding:13px 18px;display:flex;align-items:center;gap:11px}
+    .brand-logo{width:42px;height:42px;object-fit:cover;border-radius:12px;border:2px solid rgba(255,255,255,.25)}
+    .brand-title{font-size:16px;font-weight:800;line-height:1.2}.brand-tagline{margin-top:4px;font-size:10px;opacity:.82}
+    .content{width:min(100%,900px);margin:0 auto;padding:22px 17px 30px}
+    .page-card{background:#fff;border:1px solid var(--border);border-radius:21px;padding:22px 20px;box-shadow:0 3px 12px rgba(0,0,0,.035)}
+    .eyebrow{display:inline-block;margin:0 0 8px;padding:5px 9px;border-radius:999px;background:var(--light);color:var(--dark);font-size:10px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+    h1{margin:5px 0 12px;color:var(--dark);font-size:clamp(25px,6vw,32px);line-height:1.16;letter-spacing:-.4px}
+    .intro{margin:0 0 22px;color:var(--muted);font-size:14px;line-height:1.65}
+    .section-card{margin-top:13px;padding:16px;border:1px solid var(--border);border-radius:16px;background:#fff}
+    h2{margin:0 0 11px;color:var(--dark);font-size:16px;line-height:1.3}
+    ul{margin:0;padding-left:22px}li{margin:8px 0;font-size:13px;line-height:1.55}p{overflow-wrap:anywhere}
+    a{color:var(--dark)}.app-link{display:inline-flex;align-items:center;justify-content:center;min-height:43px;margin-top:18px;padding:11px 15px;border-radius:11px;background:var(--green);color:#fff;text-decoration:none;font-size:12px;font-weight:800}
+    .notice{margin-top:18px;padding:13px 14px;border:1px solid #dceee3;border-radius:13px;background:#f4faf7;color:#52635a;font-size:12px;line-height:1.55}
+    .bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:#fff;border-top:1px solid var(--border);box-shadow:0 -4px 18px rgba(0,0,0,.05)}
+    .bottom-nav-inner{width:min(100%,560px);min-height:65px;margin:auto;display:flex;align-items:center;justify-content:space-around;gap:8px;padding:7px 12px}
+    .bottom-nav a{display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#66736c;text-decoration:none;font-size:10px;font-weight:700}
+    .bottom-nav a span{font-size:19px;line-height:1.1}.bottom-nav a.active{color:var(--green)}
+    .directory-intro{margin:0 0 18px;color:var(--muted);font-size:13px}.category-section{margin-top:20px}
+    .procedure-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .procedure-list li{margin:0}.procedure-list a{display:block;height:100%;padding:13px;border:1px solid var(--border);border-radius:14px;background:#fff;color:var(--dark);font-size:12px;font-weight:750;line-height:1.4;text-decoration:none;box-shadow:0 3px 12px rgba(0,0,0,.035)}
+    .procedure-list a:focus-visible,.procedure-list a:hover{outline:2px solid #b8d8c7;background:#f4faf7}
+    .total-pill{display:inline-block;margin:0 0 18px;padding:7px 11px;border:1px solid #d8ece0;border-radius:12px;background:#f4faf7;color:var(--dark);font-size:11px;font-weight:800}
+    .site-footer{width:min(100%,900px);margin:auto;padding:10px 20px 20px;text-align:center;color:var(--muted);font-size:10px}
+    @media(max-width:520px){.content{padding:16px 12px 24px}.page-card{padding:18px 15px;border-radius:17px}.procedure-list{grid-template-columns:1fr}.header-inner{min-height:70px}.brand-title{font-size:15px}}
   </style>
+  ${appCss.map((href) => `<link rel="stylesheet" href="/${href}">`).join("\n  ")}
 </head>
 <body>
-<header><nav><a href="/">Component Task home</a><a href="/procedures/">Browse all procedures</a></nav></header>
-<main>
+<div id="root">
+<header class="app-header"><div class="header-inner"><img class="brand-logo" src="/unnamed.jpg" alt="Component Task logo"><div><div class="brand-title">Nursing Component Task</div><div class="brand-tagline">Nursing procedures &amp; clinical learning</div></div></div></header>
+<main class="content"><article class="page-card">
   <p class="eyebrow">${escapeHtml(procedure.category)}</p>
   <h1>${escapeHtml(procedure.title)}</h1>
-  ${paragraph(procedure.overview || `This guide introduces ${procedure.title.toLowerCase()} for nursing education.`)}
-  ${sections}
-  ${references}
+  <p class="intro">${escapeHtml(procedure.overview || `This guide introduces ${procedure.title.toLowerCase()} for nursing education.`)}</p>
+  ${sections.replace(/<section>/g, '<section class="section-card">')}
+  ${references.replace(/<section>/g, '<section class="section-card">')}
   <p class="notice">Educational resource only. Follow current Nursing and Midwifery Council guidance, local institutional protocols, scope of practice, and clinical supervision.</p>
-  <p><a href="/">Open Component Task</a> for the main learning experience.</p>
-</main>
-<footer><p>Component Task · Bliss Innovation · Nursing education resource</p></footer>
+  <a class="app-link" href="/">Open Component Task app <span aria-hidden="true">&nbsp;→</span></a>
+</article></main>
+<footer class="site-footer">Component Task · Bliss Innovation · Nursing education resource</footer>
+<nav class="bottom-nav" aria-label="Primary navigation"><div class="bottom-nav-inner"><a href="/"><span aria-hidden="true">⌂</span>Home</a><a class="active" href="/procedures/"><span aria-hidden="true">▤</span>Procedures</a><a href="/#about"><span aria-hidden="true">ⓘ</span>About</a></div></nav>
+</div>
+<script type="module" src="/${appScript}"></script>
 </body>
 </html>`;
 }
@@ -121,7 +147,17 @@ function procedureSeoPages(): Plugin {
   return {
     name: "component-task-static-procedure-seo-pages",
     apply: "build",
-    generateBundle() {
+    generateBundle(_options, bundle) {
+      const appEntry = Object.values(bundle).find(
+        (item) => item.type === "chunk" && item.isEntry && item.name === "index",
+      );
+      if (!appEntry || appEntry.type !== "chunk") {
+        throw new Error("Could not find the Component Task app entry chunk for SEO pages.");
+      }
+      const appScript = appEntry.fileName;
+      const appCss = [...(appEntry.viteMetadata?.importedCss ?? [])];
+      const appCssLinks = appCss.map((href) => `<link rel="stylesheet" href="/${href}">`).join("\n");
+
       const seen = new Set<string>();
       const entries = procedures.map((procedure) => {
         const slug = procedureSlug(procedure);
@@ -148,17 +184,17 @@ function procedureSeoPages(): Plugin {
 <link rel="canonical" href="${SITE_URL}/procedures/"><link rel="icon" type="image/jpeg" href="/unnamed.jpg">
 <meta property="og:type" content="website"><meta property="og:title" content="Nursing Procedures Directory | Component Task">
 <meta property="og:description" content="Browse nursing procedure guides and clinical skills learning resources."><meta property="og:url" content="${SITE_URL}/procedures/">
-<style>:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17212b;background:#f8fafc}body{margin:0;line-height:1.65}header,main,footer{max-width:900px;margin:auto;padding:20px}header,main{background:#fff}header{border-bottom:1px solid #dbe3ea}main{margin-top:20px;margin-bottom:20px;border:1px solid #e2e8f0;border-radius:14px}a{color:#087f8c}nav{display:flex;gap:16px;flex-wrap:wrap}h1{line-height:1.2}li{margin:.4rem 0}footer{font-size:.9rem;color:#526170}</style>
-</head><body><header><nav><a href="/">Component Task home</a><a href="/procedures/">All procedures</a></nav></header>
-<main><h1>Nursing Procedures Directory</h1><p>Browse step-by-step nursing procedure and clinical skills learning resources. These guides support education and do not replace current local protocols or supervised clinical practice.</p>
-<p>Total procedure guides: ${entries.length}</p>${directoryGroups}</main><footer>Component Task · Bliss Innovation</footer></body></html>`;
+<style>:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#17221c;background:#f8faf9;--green:#008a4b;--dark:#006b3c;--light:#e8f5ee;--muted:#66736c;--border:#e3e9e5}*{box-sizing:border-box}body{margin:0;line-height:1.6;background:#f8faf9;padding-bottom:78px}.app-header{position:sticky;top:0;z-index:10;background:var(--green);color:#fff;box-shadow:0 3px 14px rgba(0,0,0,.08)}.header-inner{width:min(100%,900px);min-height:76px;margin:auto;padding:13px 18px;display:flex;align-items:center;gap:11px}.brand-logo{width:42px;height:42px;object-fit:cover;border-radius:12px;border:2px solid rgba(255,255,255,.25)}.brand-title{font-size:16px;font-weight:800;line-height:1.2}.brand-tagline{margin-top:4px;font-size:10px;opacity:.82}.content{width:min(100%,900px);margin:0 auto;padding:22px 17px 30px}.page-card{background:#fff;border:1px solid var(--border);border-radius:21px;padding:22px 20px;box-shadow:0 3px 12px rgba(0,0,0,.035)}h1{margin:0 0 12px;color:var(--dark);font-size:clamp(25px,6vw,32px);line-height:1.16}.directory-intro{color:var(--muted);font-size:13px}.category-section{margin-top:22px}h2{color:var(--dark);font-size:16px;margin:0 0 11px}.procedure-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.procedure-list li{margin:0}.procedure-list a{display:block;height:100%;padding:13px;border:1px solid var(--border);border-radius:14px;background:#fff;color:var(--dark);font-size:12px;font-weight:750;line-height:1.4;text-decoration:none;box-shadow:0 3px 12px rgba(0,0,0,.035)}.procedure-list a:hover{background:#f4faf7}.total-pill{display:inline-block;margin:0 0 18px;padding:7px 11px;border:1px solid #d8ece0;border-radius:12px;background:#f4faf7;color:var(--dark);font-size:11px;font-weight:800}.bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:#fff;border-top:1px solid var(--border);box-shadow:0 -4px 18px rgba(0,0,0,.05)}.bottom-nav-inner{width:min(100%,560px);min-height:65px;margin:auto;display:flex;align-items:center;justify-content:space-around;gap:8px;padding:7px 12px}.bottom-nav a{display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#66736c;text-decoration:none;font-size:10px;font-weight:700}.bottom-nav a span{font-size:19px;line-height:1.1}.bottom-nav a.active{color:var(--green)}.site-footer{width:min(100%,900px);margin:auto;padding:10px 20px 20px;text-align:center;color:var(--muted);font-size:10px}@media(max-width:520px){.content{padding:16px 12px 24px}.page-card{padding:18px 15px;border-radius:17px}.procedure-list{grid-template-columns:1fr}}</style>${appCssLinks}
+</head><body><div id="root"><header class="app-header"><div class="header-inner"><img class="brand-logo" src="/unnamed.jpg" alt="Component Task logo"><div><div class="brand-title">Nursing Component Task</div><div class="brand-tagline">Nursing procedures &amp; clinical learning</div></div></div></header>
+<main class="content"><article class="page-card"><h1>Nursing Procedures Directory</h1><p class="directory-intro">Browse step-by-step nursing procedure and clinical skills learning resources. These guides support education and do not replace current local protocols or supervised clinical practice.</p>
+<p class="total-pill">Total procedure guides: ${entries.length}</p>${directoryGroups.replace(/<section>/g, '<section class="category-section">').replace(/<ul>/g, '<ul class="procedure-list">')}</article></main><footer class="site-footer">Component Task · Bliss Innovation</footer><nav class="bottom-nav" aria-label="Primary navigation"><div class="bottom-nav-inner"><a href="/"><span aria-hidden="true">⌂</span>Home</a><a class="active" href="/procedures/"><span aria-hidden="true">▤</span>Procedures</a><a href="/#about"><span aria-hidden="true">ⓘ</span>About</a></div></nav></div><script type="module" src="/${appScript}"></script></body></html>`;
 
       this.emitFile({ type: "asset", fileName: "procedures/index.html", source: directoryHtml });
       for (const { procedure, slug } of entries) {
         this.emitFile({
           type: "asset",
           fileName: `procedures/${slug}/index.html`,
-          source: staticProcedurePage(procedure, slug),
+          source: staticProcedurePage(procedure, slug, appScript, appCss),
         });
       }
 
