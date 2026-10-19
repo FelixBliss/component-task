@@ -284,6 +284,32 @@ export default function App() {
       )
     : [];
 
+  // Deep links from static SEO pages should open the same interactive app UI.
+  // The Android native app keeps its existing in-app navigation behavior.
+  useEffect(() => {
+    if (Capacitor.isNativePlatform() || !window.location.pathname.startsWith("/procedures/")) {
+      return;
+    }
+
+    const procedure = procedures.find((item) =>
+      window.location.pathname.toLowerCase().endsWith(`-${item.id.toLowerCase()}/`) ||
+      window.location.pathname.toLowerCase().endsWith(`-${item.id.toLowerCase()}`)
+    );
+    if (!procedure) return;
+
+    const matchingCategory = procedureCategories.find(
+      (category) => category.name === procedure.category
+    );
+    setActiveTab("procedures");
+    setSelectedCategory(matchingCategory ?? {
+      icon: <Icon name="medical" size={28} />,
+      name: procedure.category,
+      description: "Nursing procedures",
+    });
+    setSelectedProcedure(procedure);
+    setShowSplash(false);
+  }, []);
+
   const selectedProcedureIndex =
     selectedProcedure
       ? categoryProcedures.findIndex(
