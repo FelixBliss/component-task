@@ -7,6 +7,7 @@ import ProcedureList from "./components/ProcedureList";
 import ProcedureDetails from "./components/ProcedureDetails";
 import Icon from "./components/Icon";
 import BannerAd from "./components/BannerAd";
+import WebPromoAdHost from "./components/WebPromoAdHost";
 import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
@@ -1569,6 +1570,8 @@ export default function App() {
 
         </div>
       </nav>
+
+      <WebPromoAdHost />
 
       {!Capacitor.isNativePlatform() && <Analytics />}
     </div>

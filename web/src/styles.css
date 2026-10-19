@@ -4650,3 +4650,212 @@ html.dark-mode .procedure-next-navigation {
     overflow: hidden;
   }
 }
+
+
+/* ---------------------------------------------------------
+   BLISS INNOVATION WEB AD BANNER + PROMO INTERSTITIAL
+--------------------------------------------------------- */
+
+.bliss-banner-ad {
+  width: min(100% - 28px, 728px);
+  min-height: 58px;
+  margin: 16px auto 20px;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(0, 138, 75, 0.22);
+  border-radius: 10px;
+  background: linear-gradient(110deg, #102b35 0%, #174a42 58%, #087f5b 100%);
+  color: #ffffff;
+  box-shadow: 0 3px 12px rgba(16, 43, 53, 0.12);
+}
+
+.bliss-banner-brand {
+  flex: 0 0 auto;
+  color: #8ce6c4;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+}
+
+.bliss-banner-message {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bliss-banner-message strong {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.bliss-banner-message span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.bliss-banner-cta {
+  flex: 0 0 auto;
+  min-height: 38px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #075c42;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.bliss-banner-cta:focus-visible,
+.bliss-promo-dialog-cta:focus-visible {
+  outline: 3px solid #8ce6c4;
+  outline-offset: 3px;
+}
+
+.bliss-promo-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(7, 18, 20, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.bliss-promo-dialog {
+  width: min(100%, 440px);
+  padding: 28px 24px 22px;
+  border: 1px solid rgba(140, 230, 196, 0.25);
+  border-radius: 20px;
+  background: linear-gradient(145deg, #102b35 0%, #174a42 58%, #087f5b 100%);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+}
+
+.bliss-promo-dialog-kicker {
+  color: #8ce6c4;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.bliss-promo-mark {
+  width: 56px;
+  height: 56px;
+  margin: 18px auto 14px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.bliss-promo-dialog h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: clamp(23px, 5vw, 30px);
+  line-height: 1.15;
+}
+
+.bliss-promo-dialog > p:not(.bliss-promo-footnote) {
+  margin: 0 auto 20px;
+  max-width: 340px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.bliss-promo-dialog-cta {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 11px;
+  background: #ffffff;
+  color: #075c42;
+  font-size: 13px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.bliss-promo-countdown {
+  margin-top: 18px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.bliss-promo-countdown strong {
+  color: #8ce6c4;
+  font-variant-numeric: tabular-nums;
+}
+
+.bliss-promo-progress {
+  height: 4px;
+  margin-top: 9px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.bliss-promo-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #8ce6c4;
+  transition: width 0.25s linear;
+}
+
+.bliss-promo-dialog .bliss-promo-footnote {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+@media (max-width: 380px) {
+  .bliss-banner-ad {
+    gap: 8px;
+    padding: 9px;
+  }
+
+  .bliss-banner-brand {
+    font-size: 8px;
+  }
+
+  .bliss-banner-message strong {
+    font-size: 12px;
+  }
+
+  .bliss-banner-message span {
+    font-size: 11px;
+  }
+
+  .bliss-banner-cta {
+    min-height: 34px;
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  .bliss-promo-dialog {
+    padding: 24px 18px 20px;
+  }
+}
