@@ -339,6 +339,8 @@ export default function App() {
     const syncProcedureFromUrl = () => {
       const pathname = window.location.pathname;
       const procedure = getProcedureFromPath(pathname);
+      const requestedTab = new URLSearchParams(window.location.search).get("tab");
+      const validTabs: Tab[] = ["home", "procedures", "about", "settings", "credits"];
 
       if (procedure) {
         const matchingCategory = procedureCategories.find(
@@ -356,15 +358,17 @@ export default function App() {
       }
 
       setSelectedProcedure(null);
+      setSelectedCategory(null);
       if (pathname === "/procedures" || pathname === "/procedures/") {
         setActiveTab("procedures");
-        setSelectedCategory(null);
+      } else if (requestedTab && validTabs.includes(requestedTab as Tab)) {
+        setActiveTab(requestedTab as Tab);
       } else {
         setActiveTab("home");
-        setSelectedCategory(null);
       }
     };
 
+    syncProcedureFromUrl();
     window.addEventListener("popstate", syncProcedureFromUrl);
     return () => window.removeEventListener("popstate", syncProcedureFromUrl);
   }, []);
@@ -520,9 +524,13 @@ export default function App() {
   const navigate = (tab: Tab) => {
     trackWebEvent("tab_view", { tab });
     if (!Capacitor.isNativePlatform()) {
-      const targetPath = tab === "procedures" ? "/procedures/" : "/";
-      if (window.location.pathname !== targetPath) {
-        window.history.replaceState({ componentTaskTab: tab }, "", targetPath);
+      const targetUrl = tab === "procedures"
+        ? "/procedures/"
+        : tab === "home"
+          ? "/"
+          : `/?tab=${encodeURIComponent(tab)}`;
+      if (`${window.location.pathname}${window.location.search}` !== targetUrl) {
+        window.history.pushState({ componentTaskTab: tab }, "", targetUrl);
       }
     }
     setActiveTab(tab);
