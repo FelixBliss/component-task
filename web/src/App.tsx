@@ -7,6 +7,7 @@ import ProcedureList from "./components/ProcedureList";
 import ProcedureDetails from "./components/ProcedureDetails";
 import Icon from "./components/Icon";
 import BannerAd from "./components/BannerAd";
+import WebPromoAdHost from "./components/WebPromoAdHost";
 import { procedures, type Procedure } from "./data/procedures";
 import {
   getBalance,
@@ -745,29 +746,6 @@ export default function App() {
                 </button>
               </div>
             </section>
-
-            {!Capacitor.isNativePlatform() && (
-              <section className="bliss-promo-banner" aria-label="Bliss Innovation app development">
-                <div className="bliss-promo-copy">
-                  <span className="bliss-promo-eyebrow">BLISS INNOVATION</span>
-                  <h2>Have an App Idea? Let&apos;s Build It.</h2>
-                  <p>
-                    We build practical mobile apps and web applications for businesses,
-                    organisations and entrepreneurs.
-                  </p>
-                </div>
-                <a
-                  className="bliss-promo-cta"
-                  href="https://wa.me/233541743817?text=Hello%20Bliss%20Innovation%2C%20I%27m%20interested%20in%20discussing%20an%20app%20idea."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackWebEvent("bliss_innovation_contact_click", { placement: "home_banner" })}
-                  aria-label="Discuss your app idea with Bliss Innovation on WhatsApp"
-                >
-                  Discuss Your App Idea <span aria-hidden="true">↗</span>
-                </a>
-              </section>
-            )}
 
             {/* ================= QUICK ACCESS ================= */}
 
@@ -1592,6 +1570,8 @@ export default function App() {
 
         </div>
       </nav>
+
+      <WebPromoAdHost />
 
       {!Capacitor.isNativePlatform() && <Analytics />}
     </div>
