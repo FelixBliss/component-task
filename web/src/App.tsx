@@ -1468,7 +1468,7 @@ export default function App() {
             {!isOnlineState && <p className="video-offline-message" style={{ marginTop: "10px" }}>Internet connection required to earn Credits.</p>}
             {isOnlineState && !canWatchRewardedAd() && <p className="video-insufficient-stars" style={{ marginTop: "10px" }}>You have reached today&apos;s rewarded-ad limit.</p>}
             <div className="confirmation-actions">
-              <button type="button" className="confirmation-cancel" onClick={() => setShowProcedureCreditPrompt(false)}>Later</button>
+              <button type="button" className="confirmation-cancel" disabled={procedureCreditRewardLoading} onClick={() => setShowProcedureCreditPrompt(false)}>Later</button>
               <button type="button" className="confirmation-danger" disabled={!isOnlineState || !canWatchRewardedAd() || procedureCreditRewardLoading} onClick={async () => {
                 if (!isOnlineState || procedureCreditRewardLoading || !canWatchRewardedAd()) return;
                 setProcedureCreditRewardLoading(true);
