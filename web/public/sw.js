@@ -1,9 +1,11 @@
-const CACHE_NAME = "component-task-shell-v1";
+const CACHE_NAME = "component-task-shell-v2";
 const APP_SHELL = [
   "./",
   "./manifest.json",
   "./unnamed.jpg",
-  "./icons/component-task.svg"
+  "./icons/component-task.svg",
+  "./icons/component-task-192.svg",
+  "./icons/component-task-512.svg"
 ];
 
 self.addEventListener("install", (event) => {
