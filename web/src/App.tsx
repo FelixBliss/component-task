@@ -750,6 +750,9 @@ export default function App() {
                 src="/nurse-icons-set_1284-14375.svg"
                 alt="Nursing procedure illustration"
                 className="splash-logo-illustration"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
             <h1 className="splash-title">Component Task</h1>
