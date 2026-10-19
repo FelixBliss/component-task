@@ -59,6 +59,27 @@ const RECENTLY_VIEWED_CLEARED_EVENT =
 
 const MAX_RECENTLY_VIEWED = 5;
 
+function slugifyProcedurePart(value: string): string {
+  return value
+    .normalize("NFKD")
+    .replace(/[\\u0300-\\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function getProcedurePath(procedure: Procedure): string {
+  return `/procedures/${slugifyProcedurePart(procedure.title) || "nursing-procedure"}-${slugifyProcedurePart(procedure.id)}/`;
+}
+
+function getProcedureFromPath(pathname: string): Procedure | undefined {
+  const path = pathname.toLowerCase();
+  return procedures.find((procedure) => {
+    const expectedPath = getProcedurePath(procedure).toLowerCase();
+    return path === expectedPath || path === expectedPath.slice(0, -1);
+  });
+}
+
 const procedureCategories: Category[] = [
   {
     icon: <Icon name="medical" size={28} />,
@@ -310,6 +331,44 @@ export default function App() {
     setShowSplash(false);
   }, []);
 
+  // Keep browser Back/Forward synchronized with the procedure shown in the app.
+  // This is web-only; native Android navigation remains unchanged.
+  useEffect(() => {
+    if (Capacitor.isNativePlatform()) return;
+
+    const syncProcedureFromUrl = () => {
+      const pathname = window.location.pathname;
+      const procedure = getProcedureFromPath(pathname);
+
+      if (procedure) {
+        const matchingCategory = procedureCategories.find(
+          (category) => category.name === procedure.category
+        );
+        setActiveTab("procedures");
+        setSelectedCategory(matchingCategory ?? {
+          icon: <Icon name="medical" size={28} />,
+          name: procedure.category,
+          description: "Nursing procedures",
+        });
+        setSelectedProcedure(procedure);
+        setShowSplash(false);
+        return;
+      }
+
+      setSelectedProcedure(null);
+      if (pathname === "/procedures" || pathname === "/procedures/") {
+        setActiveTab("procedures");
+        setSelectedCategory(null);
+      } else {
+        setActiveTab("home");
+        setSelectedCategory(null);
+      }
+    };
+
+    window.addEventListener("popstate", syncProcedureFromUrl);
+    return () => window.removeEventListener("popstate", syncProcedureFromUrl);
+  }, []);
+
   const selectedProcedureIndex =
     selectedProcedure
       ? categoryProcedures.findIndex(
@@ -460,6 +519,12 @@ export default function App() {
 
   const navigate = (tab: Tab) => {
     trackWebEvent("tab_view", { tab });
+    if (!Capacitor.isNativePlatform()) {
+      const targetPath = tab === "procedures" ? "/procedures/" : "/";
+      if (window.location.pathname !== targetPath) {
+        window.history.replaceState({ componentTaskTab: tab }, "", targetPath);
+      }
+    }
     setActiveTab(tab);
     setSelectedCategory(null);
     setSelectedProcedure(null);
@@ -479,6 +544,9 @@ export default function App() {
     category: Category
   ) => {
     trackWebEvent("category_open", { category: category.name });
+    if (!Capacitor.isNativePlatform() && window.location.pathname !== "/procedures/") {
+      window.history.replaceState({ componentTaskTab: "procedures" }, "", "/procedures/");
+    }
     setActiveTab("procedures");
     setSelectedCategory(category);
     setSelectedProcedure(null);
@@ -508,6 +576,18 @@ export default function App() {
 
     const spent = spendStars(procedureCost, "Open procedure");
     if (!spent) return;
+
+    // Each opened procedure gets a stable, shareable URL and browser-history entry.
+    if (!Capacitor.isNativePlatform()) {
+      const procedurePath = getProcedurePath(procedure);
+      if (window.location.pathname !== procedurePath) {
+        window.history.pushState(
+          { componentTaskProcedure: procedure.id },
+          "",
+          procedurePath,
+        );
+      }
+    }
 
     trackWebEvent("procedure_open", {
       procedure_id: procedure.id,
@@ -610,6 +690,9 @@ export default function App() {
 
   const backToCategories = () => {
     setShowProcedureCreditPrompt(false);
+    if (!Capacitor.isNativePlatform() && window.location.pathname.startsWith("/procedures/")) {
+      window.history.replaceState({ componentTaskTab: "procedures" }, "", "/procedures/");
+    }
     setSelectedCategory(null);
     setSelectedProcedure(null);
     setProcedureSearch("");
@@ -622,6 +705,9 @@ export default function App() {
 
   const backToProcedureList = () => {
     setShowProcedureCreditPrompt(false);
+    if (!Capacitor.isNativePlatform() && window.location.pathname.startsWith("/procedures/")) {
+      window.history.replaceState({ componentTaskTab: "procedures" }, "", "/procedures/");
+    }
     setSelectedProcedure(null);
 
     // Attempt to show interstitial ad on natural navigation point
