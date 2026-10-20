@@ -5316,3 +5316,148 @@ html.dark-mode .app.web-app .quick-card:hover {
     overscroll-behavior-y: none;
   }
 }
+
+
+/* Desktop procedure reading improvements (web only; Android styles remain unchanged). */
+@media (min-width: 900px) {
+  .app.web-app .procedure-details {
+    width: 100%;
+    max-width: 1120px;
+    margin-inline: auto;
+  }
+
+  .app.web-app .procedure-detail-header {
+    margin-top: 22px;
+    padding: 32px 34px 28px;
+    border-radius: 24px;
+  }
+
+  .app.web-app .procedure-detail-header h1 {
+    max-width: 900px;
+    font-size: clamp(32px, 2.5vw, 44px);
+    line-height: 1.14;
+    letter-spacing: -0.8px;
+  }
+
+  .app.web-app .procedure-detail-header > p {
+    max-width: 820px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .app.web-app .procedure-detail-summary {
+    gap: 12px 24px;
+    margin-top: 22px;
+    padding-top: 18px;
+  }
+
+  .app.web-app .procedure-detail-summary span {
+    font-size: 12px;
+  }
+
+  .app.web-app .procedure-detail-summary strong {
+    font-size: 16px;
+  }
+
+  .app.web-app .procedure-tabs {
+    top: 82px;
+    gap: 7px;
+    margin: 20px 0 22px;
+    padding: 6px;
+    border-radius: 15px;
+  }
+
+  .app.web-app .procedure-tab {
+    min-height: 52px;
+    gap: 9px;
+    font-size: 14px;
+  }
+
+  .app.web-app .procedure-detail-content {
+    gap: 16px;
+  }
+
+  .app.web-app .procedure-detail-section {
+    padding: 26px 28px;
+    border-radius: 20px;
+  }
+
+  .app.web-app .procedure-detail-section h2 {
+    margin-bottom: 18px;
+    font-size: 19px;
+    line-height: 1.35;
+  }
+
+  .app.web-app .procedure-detail-section ul {
+    gap: 13px;
+  }
+
+  .app.web-app .procedure-detail-section ul li,
+  .app.web-app .procedure-steps li p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .app.web-app .procedure-steps li {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding-bottom: 22px;
+  }
+
+  .app.web-app .procedure-steps li > span {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .app.web-app .procedure-steps li:not(:last-child)::after {
+    top: 36px;
+    left: 17px;
+  }
+
+  .app.web-app .procedure-steps li p {
+    margin-top: 4px;
+  }
+
+  .app.web-app .quiz-card,
+  .app.web-app .quiz-intro-card,
+  .app.web-app .quiz-result-card {
+    padding: 30px;
+  }
+
+  .app.web-app .quiz-question-title {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  .app.web-app .quiz-answer {
+    min-height: 58px;
+    padding: 13px 16px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .app.web-app .video-panel .procedure-detail-section {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .app.web-app .procedure-detail-header {
+    padding: 38px 42px 32px;
+  }
+
+  .app.web-app .procedure-detail-section {
+    padding: 30px 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app.web-app .procedure-details {
+    animation: none;
+  }
+
+  .app.web-app .procedure-tab {
+    transition: none;
+  }
+}
