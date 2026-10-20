@@ -4967,12 +4967,12 @@ html.dark-mode .procedure-next-navigation {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .app.web-app {
     padding-bottom: 24px;
   }
 
-  .header-inner {
+  .app.web-app .header-inner {
     width: auto;
     margin-left: 276px;
     margin-right: 0;
@@ -5072,7 +5072,7 @@ html.dark-mode .procedure-next-navigation {
     font-size: 12px;
   }
 
-  .content {
+  .app.web-app .content {
     width: min(calc(100% - 276px), 1260px);
     max-width: 1260px;
     margin-left: 276px;
@@ -5092,11 +5092,11 @@ html.dark-mode .procedure-next-navigation {
     font-size: clamp(28px, 2.3vw, 36px);
   }
 
-  .home-welcome {
+  .app.web-app .home-welcome {
     padding: 38px 36px;
   }
 
-  .home-welcome h1 {
+  .app.web-app .home-welcome h1 {
     max-width: 760px;
     font-size: clamp(30px, 2.8vw, 42px);
   }
@@ -5107,7 +5107,7 @@ html.dark-mode .procedure-next-navigation {
     line-height: 1.7;
   }
 
-  .quick-grid {
+  .app.web-app .quick-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
   }
@@ -5144,23 +5144,23 @@ html.dark-mode .procedure-next-navigation {
   }
 }
 
-html.dark-mode .desktop-sidebar {
+html.dark-mode .app.web-app .desktop-sidebar {
   background: var(--card-background);
   border-right-color: var(--border);
 }
 
-html.dark-mode .desktop-nav-button:hover {
+html.dark-mode .app.web-app .desktop-nav-button:hover {
   background: #173d2c;
   color: #8ee0b5;
 }
 
-html.dark-mode .desktop-nav-button.active {
+html.dark-mode .app.web-app .desktop-nav-button.active {
   background: #173d2c;
   border-color: #285a43;
   color: #8ee0b5;
 }
 
-html.dark-mode .desktop-nav-button small {
+html.dark-mode .app.web-app .desktop-nav-button small {
   background: #173d2c;
   color: #8ee0b5;
 }
