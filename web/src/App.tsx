@@ -305,6 +305,28 @@ export default function App() {
       )
     : [];
 
+  const filteredProcedureCategories = procedureCategories.filter((category) => {
+    const term = procedureSearch.trim().toLowerCase();
+    return (
+      !term ||
+      category.name.toLowerCase().includes(term) ||
+      category.description.toLowerCase().includes(term)
+    );
+  });
+
+  const filteredGlobalProcedures = procedureSearch.trim()
+    ? procedures
+        .filter((procedure) => {
+          const term = procedureSearch.trim().toLowerCase();
+          return (
+            procedure.title.toLowerCase().includes(term) ||
+            procedure.overview.toLowerCase().includes(term) ||
+            procedure.category.toLowerCase().includes(term)
+          );
+        })
+        .slice(0, 8)
+    : [];
+
   // Deep links from static SEO pages should open the same interactive app UI.
   // The Android native app keeps its existing in-app navigation behavior.
   useEffect(() => {
@@ -773,7 +795,7 @@ export default function App() {
      ======================================================= */
 
   return (
-    <div className="app">
+    <div className={`app ${!Capacitor.isNativePlatform() ? "web-app" : "native-app"}`}>
 
       {/* ================= HEADER ================= */}
 
@@ -811,6 +833,32 @@ export default function App() {
 
         </div>
       </header>
+
+      {/* Desktop navigation; mobile keeps the existing bottom navigation. */}
+      <aside className="desktop-sidebar" aria-label="Main navigation">
+        <div className="desktop-sidebar-label">WORKSPACE</div>
+        <button className={`desktop-nav-button ${activeTab === "home" ? "active" : ""}`} onClick={() => navigate("home")} type="button" aria-current={activeTab === "home" ? "page" : undefined}>
+          <Icon name="home" size={20} /><span>Home</span>
+        </button>
+        <button className={`desktop-nav-button ${activeTab === "procedures" ? "active" : ""}`} onClick={() => navigate("procedures")} type="button" aria-current={activeTab === "procedures" ? "page" : undefined}>
+          <Icon name="medical" size={20} /><span>Procedures</span>
+        </button>
+        <button className={`desktop-nav-button ${activeTab === "credits" ? "active" : ""}`} onClick={() => navigate("credits")} type="button" aria-current={activeTab === "credits" ? "page" : undefined}>
+          <Icon name="star" size={20} /><span>My Credits</span><small>{starBalance}</small>
+        </button>
+        <div className="desktop-sidebar-divider" />
+        <div className="desktop-sidebar-label">APP</div>
+        <button className={`desktop-nav-button ${activeTab === "about" ? "active" : ""}`} onClick={() => navigate("about")} type="button" aria-current={activeTab === "about" ? "page" : undefined}>
+          <Icon name="info" size={20} /><span>About</span>
+        </button>
+        <button className={`desktop-nav-button ${activeTab === "settings" ? "active" : ""}`} onClick={() => navigate("settings")} type="button" aria-current={activeTab === "settings" ? "page" : undefined}>
+          <Icon name="settings" size={20} /><span>Settings</span>
+        </button>
+        <div className="desktop-sidebar-footer">
+          <strong>Bliss Innovation</strong>
+          <span>Nursing learning resources</span>
+        </div>
+      </aside>
 
       <main className="content">
 
@@ -1056,34 +1104,79 @@ export default function App() {
                 </p>
               </div>
 
-              <div className="procedure-search">
+              <div className="procedure-search category-search">
                 <span><Icon name="search" size={20} /></span>
 
                 <input
                   type="search"
-                  placeholder="Search categories..."
-                  value={
-                    procedureSearch
-                  }
-                  onChange={(event) =>
-                    setProcedureSearch(
-                      event.target.value
-                    )
-                  }
+                  placeholder="Search nursing programmes..."
+                  value={procedureSearch}
+                  onChange={(event) => setProcedureSearch(event.target.value)}
+                  aria-label="Search nursing programmes"
                 />
+
+                {procedureSearch && (
+                  <button
+                    className="search-clear-button"
+                    type="button"
+                    onClick={() => setProcedureSearch("")}
+                    aria-label="Clear programme search"
+                  >
+                    Clear
+                  </button>
+                )}
               </div>
+
+              <p className="category-search-count" aria-live="polite">
+                {filteredProcedureCategories.length}{" "}
+                {filteredProcedureCategories.length === 1 ? "programme" : "programmes"} found
+                {procedureSearch.trim() && filteredGlobalProcedures.length > 0
+                  ? ` · Showing ${filteredGlobalProcedures.length} matching procedures`
+                  : ""}
+              </p>
+
+              {procedureSearch.trim() && (
+                <div className="global-procedure-results">
+                  <h2 className="global-procedure-results-title">Matching procedures</h2>
+                  {filteredGlobalProcedures.length > 0 ? (
+                    <div className="global-procedure-result-list">
+                      {filteredGlobalProcedures.map((procedure) => (
+                        <button
+                          className="global-procedure-result"
+                          key={procedure.id}
+                          type="button"
+                          onClick={() => {
+                            const matchingCategory = procedureCategories.find(
+                              (category) => category.name === procedure.category
+                            ) ?? {
+                              icon: <Icon name="medical" size={28} />,
+                              name: procedure.category,
+                              description: "Nursing procedures",
+                            };
+                            setActiveTab("procedures");
+                            setSelectedCategory(matchingCategory);
+                            openProcedure(procedure);
+                          }}
+                        >
+                          <span className="global-procedure-result-copy">
+                            <strong>{procedure.title}</strong>
+                            <small>{procedure.category}</small>
+                          </span>
+                          <Icon name="chevron" size={18} />
+                        </button>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="global-procedure-no-results">
+                      No procedures match this search. Try another procedure name.
+                    </p>
+                  )}
+                </div>
+              )}
 
               <div className="category-list">
 
-                {procedureCategories
-                  .filter((category) =>
-                    category.name
-                      .toLowerCase()
-                      .includes(
-                        procedureSearch
-                          .toLowerCase()
-                      )
-                  )
+                {filteredProcedureCategories
                   .map((category) => (
                     <button
                       className="category-card"
@@ -1117,15 +1210,7 @@ export default function App() {
                     </button>
                   ))}
 
-                {procedureCategories.filter(
-                  (category) =>
-                    category.name
-                      .toLowerCase()
-                      .includes(
-                        procedureSearch
-                          .toLowerCase()
-                      )
-                ).length === 0 && (
+                {filteredProcedureCategories.length === 0 && filteredGlobalProcedures.length === 0 && (
                   <div className="empty-state">
                     <div className="empty-icon">
                       <Icon name="search" size={20} />
