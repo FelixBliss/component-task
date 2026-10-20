@@ -305,6 +305,15 @@ export default function App() {
       )
     : [];
 
+  const filteredProcedureCategories = procedureCategories.filter((category) => {
+    const term = procedureSearch.trim().toLowerCase();
+    return (
+      !term ||
+      category.name.toLowerCase().includes(term) ||
+      category.description.toLowerCase().includes(term)
+    );
+  });
+
   // Deep links from static SEO pages should open the same interactive app UI.
   // The Android native app keeps its existing in-app navigation behavior.
   useEffect(() => {
@@ -1082,34 +1091,37 @@ export default function App() {
                 </p>
               </div>
 
-              <div className="procedure-search">
+              <div className="procedure-search category-search">
                 <span><Icon name="search" size={20} /></span>
 
                 <input
                   type="search"
-                  placeholder="Search categories..."
-                  value={
-                    procedureSearch
-                  }
-                  onChange={(event) =>
-                    setProcedureSearch(
-                      event.target.value
-                    )
-                  }
+                  placeholder="Search nursing programmes..."
+                  value={procedureSearch}
+                  onChange={(event) => setProcedureSearch(event.target.value)}
+                  aria-label="Search nursing programmes"
                 />
+
+                {procedureSearch && (
+                  <button
+                    className="search-clear-button"
+                    type="button"
+                    onClick={() => setProcedureSearch("")}
+                    aria-label="Clear programme search"
+                  >
+                    Clear
+                  </button>
+                )}
               </div>
+
+              <p className="category-search-count" aria-live="polite">
+                {filteredProcedureCategories.length}{" "}
+                {filteredProcedureCategories.length === 1 ? "programme" : "programmes"} found
+              </p>
 
               <div className="category-list">
 
-                {procedureCategories
-                  .filter((category) =>
-                    category.name
-                      .toLowerCase()
-                      .includes(
-                        procedureSearch
-                          .toLowerCase()
-                      )
-                  )
+                {filteredProcedureCategories
                   .map((category) => (
                     <button
                       className="category-card"
@@ -1143,15 +1155,7 @@ export default function App() {
                     </button>
                   ))}
 
-                {procedureCategories.filter(
-                  (category) =>
-                    category.name
-                      .toLowerCase()
-                      .includes(
-                        procedureSearch
-                          .toLowerCase()
-                      )
-                ).length === 0 && (
+                {filteredProcedureCategories.length === 0 && (
                   <div className="empty-state">
                     <div className="empty-icon">
                       <Icon name="search" size={20} />
