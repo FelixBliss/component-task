@@ -773,7 +773,7 @@ export default function App() {
      ======================================================= */
 
   return (
-    <div className="app">
+    <div className={`app ${!Capacitor.isNativePlatform() ? "web-app" : "native-app"}`}>
 
       {/* ================= HEADER ================= */}
 
