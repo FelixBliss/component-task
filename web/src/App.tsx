@@ -1210,7 +1210,7 @@ export default function App() {
                     </button>
                   ))}
 
-                {filteredProcedureCategories.length === 0 && (
+                {filteredProcedureCategories.length === 0 && filteredGlobalProcedures.length === 0 && (
                   <div className="empty-state">
                     <div className="empty-icon">
                       <Icon name="search" size={20} />
