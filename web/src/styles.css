@@ -5302,3 +5302,17 @@ html.dark-mode .app.web-app .quick-card:hover {
   border-color: #367552;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
 }
+
+
+/* Prevent browser overscroll bounce from making the desktop workspace
+   appear to shake at the top or bottom of the page. Web-only. */
+@media (min-width: 900px) {
+  html:has(.app.web-app),
+  body:has(.app.web-app) {
+    overscroll-behavior-y: none;
+  }
+
+  .app.web-app .desktop-sidebar {
+    overscroll-behavior-y: none;
+  }
+}
