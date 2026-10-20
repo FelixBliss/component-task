@@ -314,6 +314,19 @@ export default function App() {
     );
   });
 
+  const filteredGlobalProcedures = procedureSearch.trim()
+    ? procedures
+        .filter((procedure) => {
+          const term = procedureSearch.trim().toLowerCase();
+          return (
+            procedure.title.toLowerCase().includes(term) ||
+            procedure.overview.toLowerCase().includes(term) ||
+            procedure.category.toLowerCase().includes(term)
+          );
+        })
+        .slice(0, 8)
+    : [];
+
   // Deep links from static SEO pages should open the same interactive app UI.
   // The Android native app keeps its existing in-app navigation behavior.
   useEffect(() => {
@@ -1117,7 +1130,49 @@ export default function App() {
               <p className="category-search-count" aria-live="polite">
                 {filteredProcedureCategories.length}{" "}
                 {filteredProcedureCategories.length === 1 ? "programme" : "programmes"} found
+                {procedureSearch.trim() && filteredGlobalProcedures.length > 0
+                  ? ` · Showing ${filteredGlobalProcedures.length} matching procedures`
+                  : ""}
               </p>
+
+              {procedureSearch.trim() && (
+                <div className="global-procedure-results">
+                  <h2 className="global-procedure-results-title">Matching procedures</h2>
+                  {filteredGlobalProcedures.length > 0 ? (
+                    <div className="global-procedure-result-list">
+                      {filteredGlobalProcedures.map((procedure) => (
+                        <button
+                          className="global-procedure-result"
+                          key={procedure.id}
+                          type="button"
+                          onClick={() => {
+                            const matchingCategory = procedureCategories.find(
+                              (category) => category.name === procedure.category
+                            ) ?? {
+                              icon: <Icon name="medical" size={28} />,
+                              name: procedure.category,
+                              description: "Nursing procedures",
+                            };
+                            setActiveTab("procedures");
+                            setSelectedCategory(matchingCategory);
+                            openProcedure(procedure);
+                          }}
+                        >
+                          <span className="global-procedure-result-copy">
+                            <strong>{procedure.title}</strong>
+                            <small>{procedure.category}</small>
+                          </span>
+                          <Icon name="chevron" size={18} />
+                        </button>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="global-procedure-no-results">
+                      No procedures match this search. Try another procedure name.
+                    </p>
+                  )}
+                </div>
+              )}
 
               <div className="category-list">
 
