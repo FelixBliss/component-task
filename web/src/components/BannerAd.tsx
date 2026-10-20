@@ -1,66 +1,40 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Capacitor } from "@capacitor/core";
 import { adService } from "../services/adService";
 
-const WHATSAPP_URL =
-  "https://wa.me/233541743817?text=Hello%20Bliss%20Innovation%2C%20I%27m%20interested%20in%20discussing%20an%20app%20idea.";
-
 /**
- * Uses the native Unity Ads banner unchanged on Android. On web, the same
- * banner slot displays a compact Bliss Innovation self-promotion.
+ * Keeps the native Unity Ads banner unchanged on Android.
+ * Monetag In-Page Push is loaded once from web/index.html and positions its
+ * own web ad; do not render a second web banner or duplicate the Monetag tag.
  */
 export default function BannerAd() {
-  const [online, setOnline] = useState(() => navigator.onLine);
-
   useEffect(() => {
     const isNative = Capacitor.isNativePlatform();
+    if (!isNative) return;
+
     const syncBanner = () => {
-      if (isNative && navigator.onLine) {
+      if (navigator.onLine) {
         void adService.showBannerAd().catch(() => undefined);
       }
     };
-    const onOnline = () => {
-      setOnline(true);
-      syncBanner();
-    };
+
+    const onOnline = () => syncBanner();
     const onOffline = () => {
-      setOnline(false);
-      if (isNative) void adService.hideBannerAd().catch(() => undefined);
+      void adService.hideBannerAd().catch(() => undefined);
     };
 
     window.addEventListener("online", onOnline);
     window.addEventListener("offline", onOffline);
     syncBanner();
+
     return () => {
       window.removeEventListener("online", onOnline);
       window.removeEventListener("offline", onOffline);
-      if (isNative) void adService.hideBannerAd().catch(() => undefined);
+      void adService.hideBannerAd().catch(() => undefined);
     };
   }, []);
 
-  if (Capacitor.isNativePlatform() || !online) return null;
-
-  return (
-    <aside className="bliss-banner-ad" aria-label="Bliss Innovation advertisement">
-      <div className="bliss-banner-brand">BLISS<br />INNOVATION</div>
-      <div className="bliss-banner-message">
-        <strong>Have an app idea?</strong>
-        <span>Let&apos;s build it.</span>
-      </div>
-      <a
-        className="bliss-banner-cta"
-        href={WHATSAPP_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => {
-          window.dispatchEvent(new CustomEvent("bliss-promo-contact-click", {
-            detail: { placement: "web_banner" },
-          }));
-        }}
-        aria-label="Discuss your app idea with Bliss Innovation on WhatsApp"
-      >
-        WhatsApp <span aria-hidden="true">↗</span>
-      </a>
-    </aside>
-  );
+  // The Monetag web zone is global and self-positioning, not an inline slot.
+  // Android continues using the native Unity banner above.
+  return null;
 }
