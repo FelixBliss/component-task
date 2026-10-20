@@ -812,6 +812,32 @@ export default function App() {
         </div>
       </header>
 
+      {/* Desktop navigation; mobile keeps the existing bottom navigation. */}
+      <aside className="desktop-sidebar" aria-label="Main navigation">
+        <div className="desktop-sidebar-label">WORKSPACE</div>
+        <button className={`desktop-nav-button ${activeTab === "home" ? "active" : ""}`} onClick={() => navigate("home")} type="button" aria-current={activeTab === "home" ? "page" : undefined}>
+          <Icon name="home" size={20} /><span>Home</span>
+        </button>
+        <button className={`desktop-nav-button ${activeTab === "procedures" ? "active" : ""}`} onClick={() => navigate("procedures")} type="button" aria-current={activeTab === "procedures" ? "page" : undefined}>
+          <Icon name="medical" size={20} /><span>Procedures</span>
+        </button>
+        <button className={`desktop-nav-button ${activeTab === "credits" ? "active" : ""}`} onClick={() => navigate("credits")} type="button" aria-current={activeTab === "credits" ? "page" : undefined}>
+          <Icon name="star" size={20} /><span>My Credits</span><small>{starBalance}</small>
+        </button>
+        <div className="desktop-sidebar-divider" />
+        <div className="desktop-sidebar-label">APP</div>
+        <button className={`desktop-nav-button ${activeTab === "about" ? "active" : ""}`} onClick={() => navigate("about")} type="button" aria-current={activeTab === "about" ? "page" : undefined}>
+          <Icon name="info" size={20} /><span>About</span>
+        </button>
+        <button className={`desktop-nav-button ${activeTab === "settings" ? "active" : ""}`} onClick={() => navigate("settings")} type="button" aria-current={activeTab === "settings" ? "page" : undefined}>
+          <Icon name="settings" size={20} /><span>Settings</span>
+        </button>
+        <div className="desktop-sidebar-footer">
+          <strong>Bliss Innovation</strong>
+          <span>Nursing learning resources</span>
+        </div>
+      </aside>
+
       <main className="content">
 
         {/* =================================================
