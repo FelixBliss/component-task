@@ -4956,3 +4956,211 @@ html.dark-mode .procedure-next-navigation {
     justify-content: flex-end;
   }
 }
+
+
+/* =========================================================
+   RESPONSIVE DESKTOP WORKSPACE
+   Desktop sidebar is web-only; native Android and small screens
+   retain the existing navigation and layout.
+========================================================= */
+.desktop-sidebar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .app {
+    padding-bottom: 24px;
+  }
+
+  .header-inner {
+    width: auto;
+    margin-left: 276px;
+    margin-right: 0;
+    max-width: 1180px;
+    min-height: 82px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .desktop-sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 7px;
+    left: 0;
+    top: 82px;
+    bottom: 0;
+    width: 248px;
+    padding: 26px 16px 18px;
+    overflow-y: auto;
+    z-index: 25;
+    background: var(--card-background);
+    border-right: 1px solid var(--border);
+  }
+
+  .desktop-sidebar-label {
+    padding: 5px 12px 8px;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+  }
+
+  .desktop-nav-button {
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 13px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--muted);
+    text-align: left;
+    font-size: 14px;
+    font-weight: 650;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .desktop-nav-button:hover {
+    background: var(--pale-green);
+    color: var(--dark-green);
+  }
+
+  .desktop-nav-button.active {
+    color: var(--dark-green);
+    background: var(--light-green);
+    border-color: #d5ecdf;
+  }
+
+  .desktop-nav-button > span {
+    flex: 1;
+  }
+
+  .desktop-nav-button small {
+    min-width: 25px;
+    padding: 3px 6px;
+    border-radius: 8px;
+    background: rgba(0, 138, 75, 0.1);
+    color: var(--dark-green);
+    font-size: 11px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .desktop-sidebar-divider {
+    height: 1px;
+    margin: 13px 4px 8px;
+    background: var(--border);
+  }
+
+  .desktop-sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: auto;
+    padding: 18px 12px 4px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 11px;
+  }
+
+  .desktop-sidebar-footer strong {
+    color: var(--text);
+    font-size: 12px;
+  }
+
+  .content {
+    width: min(calc(100% - 276px), 1260px);
+    max-width: 1260px;
+    margin-left: 276px;
+    margin-right: auto;
+    padding: 30px 34px 46px;
+  }
+
+  .bottom-nav {
+    display: none;
+  }
+
+  .page-heading {
+    margin-bottom: 26px;
+  }
+
+  .page-title {
+    font-size: clamp(28px, 2.3vw, 36px);
+  }
+
+  .home-welcome {
+    padding: 38px 36px;
+  }
+
+  .home-welcome h1 {
+    max-width: 760px;
+    font-size: clamp(30px, 2.8vw, 42px);
+  }
+
+  .home-welcome p {
+    max-width: 680px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .quick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .category-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .category-card {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .desktop-sidebar {
+    width: 264px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  .header-inner {
+    margin-left: 292px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .content {
+    width: min(calc(100% - 292px), 1380px);
+    margin-left: 292px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+
+html.dark-mode .desktop-sidebar {
+  background: var(--card-background);
+  border-right-color: var(--border);
+}
+
+html.dark-mode .desktop-nav-button:hover {
+  background: #173d2c;
+  color: #8ee0b5;
+}
+
+html.dark-mode .desktop-nav-button.active {
+  background: #173d2c;
+  border-color: #285a43;
+  color: #8ee0b5;
+}
+
+html.dark-mode .desktop-nav-button small {
+  background: #173d2c;
+  color: #8ee0b5;
+}
