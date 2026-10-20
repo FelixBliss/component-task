@@ -3122,7 +3122,7 @@ html.dark-mode .procedure-card:hover {
 
 @media (max-width: 520px) {
 
-  .header-inner {
+  .app.web-app .header-inner {
     min-height: 70px;
 
     padding:
@@ -3146,17 +3146,17 @@ html.dark-mode .procedure-card:hover {
     font-size: 9px;
   }
 
-  .content {
+  .app.web-app .content {
     padding:
       19px 14px 28px;
   }
 
-  .home-welcome {
+  .app.web-app .home-welcome {
     padding:
       23px 18px;
   }
 
-  .home-welcome h1 {
+  .app.web-app .home-welcome h1 {
     font-size: 27px;
   }
 
@@ -3252,7 +3252,7 @@ html.dark-mode .procedure-card:hover {
     padding-right: 11px;
   }
 
-  .quick-grid {
+  .app.web-app .quick-grid {
     grid-template-columns: 1fr;
   }
 
@@ -4968,7 +4968,7 @@ html.dark-mode .procedure-next-navigation {
 }
 
 @media (min-width: 1024px) {
-  .app {
+  .app.web-app {
     padding-bottom: 24px;
   }
 
@@ -4982,7 +4982,7 @@ html.dark-mode .procedure-next-navigation {
     padding-right: 34px;
   }
 
-  .desktop-sidebar {
+  .app.web-app .desktop-sidebar {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -4999,7 +4999,7 @@ html.dark-mode .procedure-next-navigation {
     border-right: 1px solid var(--border);
   }
 
-  .desktop-sidebar-label {
+  .app.web-app .desktop-sidebar-label {
     padding: 5px 12px 8px;
     color: var(--muted);
     font-size: 10px;
@@ -5007,7 +5007,7 @@ html.dark-mode .procedure-next-navigation {
     letter-spacing: 0.12em;
   }
 
-  .desktop-nav-button {
+  .app.web-app .desktop-nav-button {
     width: 100%;
     min-height: 46px;
     display: flex;
@@ -5024,22 +5024,22 @@ html.dark-mode .procedure-next-navigation {
     transition: background-color 0.15s ease, color 0.15s ease;
   }
 
-  .desktop-nav-button:hover {
+  .app.web-app .desktop-nav-button:hover {
     background: var(--pale-green);
     color: var(--dark-green);
   }
 
-  .desktop-nav-button.active {
+  .app.web-app .desktop-nav-button.active {
     color: var(--dark-green);
     background: var(--light-green);
     border-color: #d5ecdf;
   }
 
-  .desktop-nav-button > span {
+  .app.web-app .desktop-nav-button > span {
     flex: 1;
   }
 
-  .desktop-nav-button small {
+  .app.web-app .desktop-nav-button small {
     min-width: 25px;
     padding: 3px 6px;
     border-radius: 8px;
@@ -5050,13 +5050,13 @@ html.dark-mode .procedure-next-navigation {
     text-align: center;
   }
 
-  .desktop-sidebar-divider {
+  .app.web-app .desktop-sidebar-divider {
     height: 1px;
     margin: 13px 4px 8px;
     background: var(--border);
   }
 
-  .desktop-sidebar-footer {
+  .app.web-app .desktop-sidebar-footer {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -5067,7 +5067,7 @@ html.dark-mode .procedure-next-navigation {
     font-size: 11px;
   }
 
-  .desktop-sidebar-footer strong {
+  .app.web-app .desktop-sidebar-footer strong {
     color: var(--text);
     font-size: 12px;
   }
@@ -5080,15 +5080,15 @@ html.dark-mode .procedure-next-navigation {
     padding: 30px 34px 46px;
   }
 
-  .bottom-nav {
+  .app.web-app .bottom-nav {
     display: none;
   }
 
-  .page-heading {
+  .app.web-app .page-heading {
     margin-bottom: 26px;
   }
 
-  .page-title {
+  .app.web-app .page-title {
     font-size: clamp(28px, 2.3vw, 36px);
   }
 
@@ -5101,7 +5101,7 @@ html.dark-mode .procedure-next-navigation {
     font-size: clamp(30px, 2.8vw, 42px);
   }
 
-  .home-welcome p {
+  .app.web-app .home-welcome p {
     max-width: 680px;
     font-size: 16px;
     line-height: 1.7;
@@ -5112,31 +5112,31 @@ html.dark-mode .procedure-next-navigation {
     gap: 18px;
   }
 
-  .category-list {
+  .app.web-app .category-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
   }
 
-  .category-card {
+  .app.web-app .category-card {
     height: 100%;
   }
 }
 
 @media (min-width: 1440px) {
-  .desktop-sidebar {
+  .app.web-app .desktop-sidebar {
     width: 264px;
     padding-left: 19px;
     padding-right: 19px;
   }
 
-  .header-inner {
+  .app.web-app .header-inner {
     margin-left: 292px;
     padding-left: 42px;
     padding-right: 42px;
   }
 
-  .content {
+  .app.web-app .content {
     width: min(calc(100% - 292px), 1380px);
     margin-left: 292px;
     padding-left: 42px;
