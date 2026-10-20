@@ -5511,3 +5511,78 @@ html.dark-mode .app.web-app .quick-card:hover {
     padding-inline: 13px;
   }
 }
+
+
+/* Global procedure search results; web-only so Android layout is unchanged. */
+.app.web-app .global-procedure-results {
+  margin: 0 0 22px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--white);
+}
+
+.app.web-app .global-procedure-results-title {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.app.web-app .global-procedure-result-list {
+  display: grid;
+  gap: 8px;
+}
+
+.app.web-app .global-procedure-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 54px;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--background);
+  color: var(--text);
+  text-align: left;
+}
+
+.app.web-app .global-procedure-result:hover {
+  border-color: var(--green);
+  background: var(--light-green);
+}
+
+.app.web-app .global-procedure-result-copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.app.web-app .global-procedure-result-copy strong {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.app.web-app .global-procedure-result-copy small,
+.app.web-app .global-procedure-no-results {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.app.web-app .global-procedure-no-results {
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  .app.web-app .global-procedure-results {
+    margin-bottom: 26px;
+    padding: 20px;
+  }
+
+  .app.web-app .global-procedure-result-copy strong {
+    font-size: 14px;
+  }
+}
