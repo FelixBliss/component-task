@@ -98,13 +98,12 @@ function loadOpenedProcedureIds(): string[] {
 
 function rememberOpenedProcedure(procedureId: string): void {
   try {
-    const ids = loadOpenedProcedureIds();
-    if (!ids.includes(procedureId)) {
-      localStorage.setItem(
-        OPENED_PROCEDURES_KEY,
-        JSON.stringify([...ids, procedureId]),
-      );
-    }
+    const ids = new Set(loadOpenedProcedureIds());
+    ids.add(procedureId);
+    localStorage.setItem(
+      OPENED_PROCEDURES_KEY,
+      JSON.stringify([...ids]),
+    );
   } catch {
     // The procedure remains usable even if browser storage is unavailable.
   }
@@ -672,8 +671,9 @@ export default function App() {
     if (!alreadyOpened) {
       const spent = spendStars(procedureCost, "First-time procedure access");
       if (!spent) return;
-      rememberOpenedProcedure(procedure.id);
     }
+    // Persist both new opens and migrated legacy recently viewed procedures.
+    rememberOpenedProcedure(procedure.id);
 
     // Each opened procedure gets a stable, shareable URL and browser-history entry.
     if (!Capacitor.isNativePlatform()) {
