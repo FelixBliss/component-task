@@ -780,10 +780,6 @@ export default function ProcedureDetails({
           {procedure.title}
         </h1>
 
-        <p>
-          {procedure.overview}
-        </p>
-
         <div className="procedure-detail-summary">
           <span>
             <strong>
@@ -907,6 +903,26 @@ export default function ProcedureDetails({
           className="procedure-detail-content"
         >
 
+          {/* Supporting information is available only on the Detail tab, before the procedure steps. */}
+          <div className="procedure-quick-sections">
+            <details className="procedure-detail-section procedure-collapsible-section">
+              <summary className="procedure-section-summary"><h2>Description</h2></summary>
+              <p>{procedure.overview}</p>
+            </details>
+            <details className="procedure-detail-section procedure-collapsible-section">
+              <summary className="procedure-section-summary"><h2>Indications</h2></summary>
+              <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
+            </details>
+            <details className="procedure-detail-section procedure-collapsible-section">
+              <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
+              <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
+            </details>
+            <details className="procedure-detail-section procedure-collapsible-section">
+              <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
+              <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
+            </details>
+          </div>
+
           <div className="procedure-detail-section procedure-steps-card">
             <h2>Procedure Steps</h2>
             <ol className="procedure-steps">
@@ -919,9 +935,7 @@ export default function ProcedureDetails({
             </ol>
           </div>
 
-          {/* Keep the procedure steps first so learners can begin immediately. Supporting cards remain available below. */}
-          {quizzes.length >
-            0 && (
+          {quizzes.length > 0 && (
             <button
               type="button"
               className="inline-quiz-button"
@@ -934,27 +948,6 @@ export default function ProcedureDetails({
               <><Icon name="brain" size={18} /> Test Yourself — 3 <Icon name="star" size={16} /> <Icon name="arrowRight" size={16} /></>
             </button>
           )}
-
-      {/* ================= COLLAPSIBLE PURPOSE AND REFERENCE CARDS ================= */}
-
-      <div className="procedure-quick-sections">
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Purpose</h2></summary>
-          <ul>{procedure.purpose.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Indications</h2></summary>
-          <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
-          <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
-          <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-      </div>
 
         </div>
       )}
