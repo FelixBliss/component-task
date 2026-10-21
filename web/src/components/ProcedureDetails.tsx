@@ -913,116 +913,52 @@ export default function ProcedureDetails({
           className="procedure-detail-content"
         >
 
-          <div className="procedure-detail-section">
-            <h2>
-              Purpose
-            </h2>
-
-            <ul>
-              {procedure.purpose.map(
-                (
-                  item,
-                  index
-                ) => (
-                  <li
-                    key={index}
-                  >
-                    {item}
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-
-          <div className="procedure-detail-section">
-            <h2>
-              Indications
-            </h2>
-
-            <ul>
-              {procedure.indications.map(
-                (
-                  item,
-                  index
-                ) => (
-                  <li
-                    key={index}
-                  >
-                    {item}
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-
-          <div className="procedure-detail-section">
-            <h2>
-              Requirements
-            </h2>
-
-            <ul>
-              {procedure.equipment.map(
-                (
-                  item,
-                  index
-                ) => (
-                  <li
-                    key={index}
-                  >
-                    {item}
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-
-          <div className="procedure-detail-section">
-            <h2>
-              Procedure Steps
-            </h2>
-
+          <details className="procedure-detail-section procedure-collapsible-section">
+            <summary className="procedure-section-summary">
+              <h2>Procedure Steps</h2>
+            </summary>
             <ol className="procedure-steps">
-              {procedure.steps.map(
-                (
-                  step,
-                  index
-                ) => (
-                  <li
-                    key={index}
-                  >
-                    <span>
-                      {index + 1}
-                    </span>
-
-                    <p>
-                      {step}
-                    </p>
-                  </li>
-                )
-              )}
+              {procedure.steps.map((step, index) => (
+                <li key={index}>
+                  <span>{index + 1}</span>
+                  <p>{step}</p>
+                </li>
+              ))}
             </ol>
-          </div>
+          </details>
 
-          <div className="procedure-detail-section">
-            <h2>
-              Precautions
-            </h2>
-
+          <details className="procedure-detail-section procedure-collapsible-section">
+            <summary className="procedure-section-summary">
+              <h2>Indications</h2>
+            </summary>
             <ul>
-              {procedure.precautions.map(
-                (
-                  item,
-                  index
-                ) => (
-                  <li
-                    key={index}
-                  >
-                    {item}
-                  </li>
-                )
-              )}
+              {procedure.indications.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
-          </div>
+          </details>
+
+          <details className="procedure-detail-section procedure-collapsible-section">
+            <summary className="procedure-section-summary">
+              <h2>Precautions</h2>
+            </summary>
+            <ul>
+              {procedure.precautions.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </details>
+
+          <details className="procedure-detail-section procedure-collapsible-section">
+            <summary className="procedure-section-summary">
+              <h2>Requirements</h2>
+            </summary>
+            <ul>
+              {procedure.equipment.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </details>
 
           {quizzes.length >
             0 && (

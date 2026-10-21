@@ -8,11 +8,9 @@ export const rgnBatch01: Procedure[] = [
     overview:
       "Immediate nursing care provided after surgery to maintain airway, circulation, safety, comfort and early recognition of complications.",
     purpose: [
-      "Promote safe recovery following surgery and anaesthesia.",
-      "Maintain airway, breathing and circulation.",
-      "Detect post-operative complications early.",
-      "Promote comfort and patient safety.",
-      "Monitor and document the patient's response to surgery."
+      "Monitor the progress of patient’s recovery from anaesthesia after surgical procedure",
+      "Note and report any abnormalities to the surgical team",
+      "Relieve patient of pain",
     ],
     indications: [
       "Patient returning from an operation.",
@@ -28,16 +26,25 @@ export const rgnBatch01: Procedure[] = [
       "Documentation materials"
     ],
     steps: [
-      "Receive the patient using appropriate handover information.",
-      "Confirm the patient's identity and operative procedure.",
-      "Assess airway, breathing and circulation.",
-      "Assess level of consciousness and response to stimuli.",
-      "Check vital signs and compare with baseline findings.",
-      "Assess the operative site, dressing, drains and tubes.",
-      "Check prescribed intravenous fluids and infusions.",
-      "Assess pain, nausea and other immediate post-operative symptoms.",
-      "Maintain appropriate positioning and safety precautions.",
-      "Document assessment findings and report significant abnormalities promptly."
+      "Assess patient level of consciousness by calling the patient by name and using an appropriate recognised clinical stimulus when indicated; do not use a pointed object.",
+      "Remove hot water bottles and receive patient gently into bed.",
+      "Position the patient to protect the airway and support breathing, taking account of level of consciousness, the operation performed, anaesthetic considerations, and the surgical team's instructions; do not automatically place every patient flat.",
+      "Reassure patient if conscious.",
+      "Provide side rails for safety if necessary.",
+      "Read through the patient’s case notes for post-operative instructions.",
+      "Observe operational site for bleeding and report for possible reinforcement.",
+      "Monitor vital signs according to the applicable post-anaesthesia recovery protocol and the patient’s condition; increase observation frequency and escalate promptly if abnormalities or deterioration occur.",
+      "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered.",
+      "Check and ensure that all drainage tubes e.g. naso-gastric tube and catheter are in situ and are draining well.",
+      "Record intake and output accurately.",
+      "Assess for pain, administer prescribed analgesics and record.",
+      "Check and administer all prescribed medication per the appropriate route.",
+      "Maintain personal and oral hygiene.",
+      "Observe any abnormality in the patient’s condition.",
+      "Put patient in a desirable position or as ordered by surgeon when he/she is fully conscious.",
+      "Follow nutritional orders as prescribed by the surgeon.",
+      "Educate patient and relatives on post-operative restrictions if any.",
+      "Document findings and nursing interventions in appropriate notes (manual or electronic).",
     ],
     precautions: [
       "Maintain appropriate infection-prevention measures.",
