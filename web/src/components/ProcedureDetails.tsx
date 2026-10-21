@@ -896,27 +896,6 @@ export default function ProcedureDetails({
 
       </div>
 
-      {/* ================= COLLAPSIBLE PURPOSE AND REFERENCE CARDS ================= */}
-
-      <div className="procedure-quick-sections">
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Purpose</h2></summary>
-          <ul>{procedure.purpose.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Indications</h2></summary>
-          <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
-          <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
-          <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-      </div>
-
       {/* ================= DETAILS ================= */}
 
       {activeTab ===
@@ -939,6 +918,28 @@ export default function ProcedureDetails({
               ))}
             </ol>
           </div>
+
+          {/* Keep the procedure steps first so learners can begin immediately. Supporting cards remain available below. */}
+      {/* ================= COLLAPSIBLE PURPOSE AND REFERENCE CARDS ================= */}
+
+      <div className="procedure-quick-sections">
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Purpose</h2></summary>
+          <ul>{procedure.purpose.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Indications</h2></summary>
+          <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
+          <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
+          <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+      </div>
 
           {quizzes.length >
             0 && (
