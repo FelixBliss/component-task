@@ -55,7 +55,7 @@ const monetagWebScripts = `
     script.src = 'https://n6wxm.com/vignette.min.js';
     script.async = true;
     document.head.appendChild(script);
-  }, 20000);
+  }, 300000);
 </script>`;
 
 function staticProcedurePage(procedure: (typeof procedures)[number], slug: string, appScript: string, appCss: string[]): string {

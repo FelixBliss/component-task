@@ -807,23 +807,6 @@ export default function ProcedureDetails({
 
       </div>
 
-      {/* ================= COLLAPSIBLE REFERENCE CARDS ================= */}
-
-      <div className="procedure-quick-sections">
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Indications</h2></summary>
-          <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
-          <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
-          <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-      </div>
-
       {/* ================= TABS ================= */}
 
       <div
@@ -911,6 +894,27 @@ export default function ProcedureDetails({
             ` · ${quizzes.length}`}
         </button>
 
+      </div>
+
+      {/* ================= COLLAPSIBLE PURPOSE AND REFERENCE CARDS ================= */}
+
+      <div className="procedure-quick-sections">
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Purpose</h2></summary>
+          <ul>{procedure.purpose.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Indications</h2></summary>
+          <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
+          <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
+          <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
       </div>
 
       {/* ================= DETAILS ================= */}
