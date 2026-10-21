@@ -913,7 +913,7 @@ export const rgnBatch03: Procedure[] = [
     overview:
       "This is the care given to patients before a surgical procedure. The nurse/midwife has a role to ensure that the patient is physically, psychologically and physiologically fit for the intended procedure.",
     purpose: [
-      "Relieve patient's anxiety",
+      "Relieve patient’s anxiety",
       "Ensure successful operation",
       "Prevent complications after surgery",
     ],
@@ -938,7 +938,7 @@ export const rgnBatch03: Procedure[] = [
       "Urinal/bedpan",
     ],
     steps: [
-      "Confirm the type of surgical procedure and site against physician/doctor's order",
+      "Confirm the type of surgical procedure and site against physician/doctor’s order",
       "Establish rapport with patient (Refer to steps)",
       "Prepare and send trolley to bedside",
       "Provide privacy",
@@ -951,10 +951,10 @@ export const rgnBatch03: Procedure[] = [
       "Dry and clean area with antiseptic lotion",
       "Cover area with sterile drape and secure it in position with adhesive strapping",
       "Dress patient with a clean theatre gown",
-      "Label and apply the name tag as per facility's protocol",
+      "Label and apply the name tag as per facility’s protocol",
       "Remove accessories and dentures if any",
       "Check and record vital signs",
-      "Assist patient to sign the consent form as per facility's protocol",
+      "Assist patient to sign the consent form as per facility’s protocol",
       "Confirm if all laboratory results, items for surgery and medications are ready for the procedure",
       "Dispose off used items and decontaminate trolley",
       "Perform hand hygiene",
