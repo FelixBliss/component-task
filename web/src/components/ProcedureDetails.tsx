@@ -1026,7 +1026,7 @@ export default function ProcedureDetails({
                   });
                 }}
               >
-                Unlock Video for 3 Stars
+                Unlock Video for 5 Stars
               </button>
 
             </div>
