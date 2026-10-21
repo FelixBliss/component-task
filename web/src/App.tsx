@@ -256,6 +256,15 @@ export default function App() {
   const [procedureCreditRewardLoading, setProcedureCreditRewardLoading] = useState(false);
 
   useEffect(() => {
+    if (starBalance < 10) {
+      setNotice((current) => current ?? {
+        title: "Low Star Balance",
+        message: `You have ${starBalance} Stars left. Top up using an available in-app reward option to keep accessing paid learning features.`,
+      });
+    }
+  }, [starBalance]);
+
+  useEffect(() => {
     if (showSplash || activeTab !== "home") {
       return;
     }
