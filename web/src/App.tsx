@@ -62,16 +62,38 @@ const MAX_RECENTLY_VIEWED = 5;
 const OPENED_PROCEDURES_KEY = "component-task-opened-procedures";
 
 function loadOpenedProcedureIds(): string[] {
+  const ids = new Set<string>();
+
   try {
     const saved = localStorage.getItem(OPENED_PROCEDURES_KEY);
-    if (!saved) return [];
-    const parsed: unknown = JSON.parse(saved);
-    return Array.isArray(parsed)
-      ? parsed.filter((id): id is string => typeof id === "string")
-      : [];
+    if (saved) {
+      const parsed: unknown = JSON.parse(saved);
+      if (Array.isArray(parsed)) {
+        parsed.forEach((id) => {
+          if (typeof id === "string") ids.add(id);
+        });
+      }
+    }
   } catch {
-    return [];
+    // Continue with legacy recently viewed history if available.
   }
+
+  // Migrate existing users' recent procedure history so those procedures stay free.
+  try {
+    const recent = localStorage.getItem(RECENTLY_VIEWED_KEY);
+    if (recent) {
+      const parsed: unknown = JSON.parse(recent);
+      if (Array.isArray(parsed)) {
+        parsed.forEach((id) => {
+          if (typeof id === "string") ids.add(id);
+        });
+      }
+    }
+  } catch {
+    // Keep any valid IDs already recovered.
+  }
+
+  return [...ids];
 }
 
 function rememberOpenedProcedure(procedureId: string): void {
