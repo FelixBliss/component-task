@@ -59,6 +59,73 @@ const RECENTLY_VIEWED_CLEARED_EVENT =
 
 const MAX_RECENTLY_VIEWED = 5;
 
+const OPENED_PROCEDURES_KEY = "component-task-opened-procedures";
+
+function loadOpenedProcedureIds(): string[] {
+  const ids = new Set<string>();
+
+  try {
+    const saved = localStorage.getItem(OPENED_PROCEDURES_KEY);
+    if (saved) {
+      const parsed: unknown = JSON.parse(saved);
+      if (Array.isArray(parsed)) {
+        parsed.forEach((id) => {
+          if (typeof id === "string") ids.add(id);
+        });
+      }
+    }
+  } catch {
+    // Continue with legacy recently viewed history if available.
+  }
+
+  // Migrate existing users' recent procedure history so those procedures stay free.
+  try {
+    const recent = localStorage.getItem(RECENTLY_VIEWED_KEY);
+    if (recent) {
+      const parsed: unknown = JSON.parse(recent);
+      if (Array.isArray(parsed)) {
+        parsed.forEach((id) => {
+          if (typeof id === "string") ids.add(id);
+        });
+      }
+    }
+  } catch {
+    // Keep any valid IDs already recovered.
+  }
+
+  return [...ids];
+}
+
+function rememberOpenedProcedure(procedureId: string): void {
+  try {
+    const ids = new Set(loadOpenedProcedureIds());
+    ids.add(procedureId);
+    localStorage.setItem(
+      OPENED_PROCEDURES_KEY,
+      JSON.stringify([...ids]),
+    );
+  } catch {
+    // The procedure remains usable even if browser storage is unavailable.
+  }
+}
+
+function hasOpenedProcedure(procedureId: string): boolean {
+  return loadOpenedProcedureIds().includes(procedureId);
+}
+
+function ensureProcedureAccess(procedureId: string): boolean {
+  if (!hasOpenedProcedure(procedureId)) {
+    if (!canSpend(STAR_ECONOMY.costs.procedureOpen)) return false;
+    if (!spendStars(STAR_ECONOMY.costs.procedureOpen, "First-time procedure access")) {
+      return false;
+    }
+  }
+
+  // Persist new opens and migrate existing users' recently viewed procedures.
+  rememberOpenedProcedure(procedureId);
+  return true;
+}
+
 function slugifyProcedurePart(value: string): string {
   return value
     .normalize("NFKD")
@@ -223,6 +290,22 @@ export default function App() {
   const [procedureCreditRewardLoading, setProcedureCreditRewardLoading] = useState(false);
 
   useEffect(() => {
+    if (starBalance >= 10 || showCreditWelcome || showProcedureCreditPrompt) return;
+
+    // Let the first-time Star guide appear before showing a low-balance alert.
+    try {
+      if (localStorage.getItem("nct-credit-welcome-shown") !== "true") return;
+    } catch {
+      if (showCreditWelcome) return;
+    }
+
+    setNotice((current) => current ?? {
+      title: "Low Star Balance",
+      message: `You have ${starBalance} Stars left. Top up using an available in-app reward option to keep accessing paid learning features.`,
+    });
+  }, [starBalance, showCreditWelcome, showProcedureCreditPrompt]);
+
+  useEffect(() => {
     if (showSplash || activeTab !== "home") {
       return;
     }
@@ -276,7 +359,7 @@ export default function App() {
       }
     };
 
-    // Synchronize once on mount and whenever the Credits page is revisited.
+    // Synchronize once on mount and whenever the Stars page is revisited.
     refreshStarState();
 
     window.addEventListener("stars-updated", handleStarsUpdated);
@@ -349,7 +432,16 @@ export default function App() {
       name: procedure.category,
       description: "Nursing procedures",
     });
+    if (!ensureProcedureAccess(procedure.id)) {
+      setPendingProcedure(procedure);
+      setShowProcedureCreditPrompt(true);
+      setShowSplash(false);
+      return;
+    }
     setSelectedProcedure(procedure);
+    setStarBalance(getBalance());
+    setStarTransactions(getStarTransactions());
+    window.dispatchEvent(new CustomEvent("stars-updated"));
     setShowSplash(false);
   }, []);
 
@@ -374,7 +466,16 @@ export default function App() {
           name: procedure.category,
           description: "Nursing procedures",
         });
+        if (!ensureProcedureAccess(procedure.id)) {
+          setPendingProcedure(procedure);
+          setShowProcedureCreditPrompt(true);
+          setShowSplash(false);
+          return;
+        }
         setSelectedProcedure(procedure);
+        setStarBalance(getBalance());
+        setStarTransactions(getStarTransactions());
+        window.dispatchEvent(new CustomEvent("stars-updated"));
         setShowSplash(false);
         return;
       }
@@ -595,17 +696,12 @@ export default function App() {
   const openProcedure = (
     procedure: Procedure
   ) => {
-    const procedureCost = STAR_ECONOMY.costs.premiumProcedureVideo;
-
-    if (!canSpend(procedureCost)) {
-      // Do not open the procedure until the user completes the rewarded ad.
+    if (!ensureProcedureAccess(procedure.id)) {
+      // First-time access requires one Star; a rewarded ad can replenish the balance.
       setPendingProcedure(procedure);
       setShowProcedureCreditPrompt(true);
       return;
     }
-
-    const spent = spendStars(procedureCost, "Open procedure");
-    if (!spent) return;
 
     // Each opened procedure gets a stable, shareable URL and browser-history entry.
     if (!Capacitor.isNativePlatform()) {
@@ -828,7 +924,7 @@ export default function App() {
           >
             <span><Icon name="star" size={18} /></span>
             <strong>{starBalance}</strong>
-            <small>Credits</small>
+            <small>Stars</small>
           </button>
 
         </div>
@@ -844,7 +940,7 @@ export default function App() {
           <Icon name="medical" size={20} /><span>Procedures</span>
         </button>
         <button className={`desktop-nav-button ${activeTab === "credits" ? "active" : ""}`} onClick={() => navigate("credits")} type="button" aria-current={activeTab === "credits" ? "page" : undefined}>
-          <Icon name="star" size={20} /><span>My Credits</span><small>{starBalance}</small>
+          <Icon name="star" size={20} /><span>My Stars</span><small>{starBalance}</small>
         </button>
         <div className="desktop-sidebar-divider" />
         <div className="desktop-sidebar-label">APP</div>
@@ -972,7 +1068,7 @@ export default function App() {
 
                   <span className="quick-text">
                     <strong>
-                      My Credits
+                      My Stars
                     </strong>
 
                     <small>
@@ -1345,7 +1441,7 @@ export default function App() {
               </span>
 
               <h1 className="page-title">
-                Credits
+                Stars
               </h1>
 
               <p className="page-description">
@@ -1362,7 +1458,7 @@ export default function App() {
               <strong>{starBalance}</strong>
 
               <span>
-                Available Credits
+                Available Stars
               </span>
             </div>
 
@@ -1372,7 +1468,7 @@ export default function App() {
               </h3>
 
               <p>
-                Credits will be used for
+                Stars will be used for
                 selected premium features and
                 learning activities as they
                 become available.
@@ -1434,14 +1530,14 @@ export default function App() {
                   }
                 }}
                 type="button"
-                title={!isOnlineState ? "Internet connection required" : isRewardedAdLoading ? "Rewarded ad is loading" : canWatchRewardedAd() ? "Watch ads to earn +3 Credits" : "Daily limit reached"}
+                title={!isOnlineState ? "Internet connection required" : isRewardedAdLoading ? "Rewarded ad is loading" : canWatchRewardedAd() ? "Watch ads to earn +3 Stars" : "Daily limit reached"}
               >
                 <span className="rewarded-ad-icon">
                   <Icon name="video" size={25} />
                 </span>
                 <span className="rewarded-ad-content">
-                  <strong>{isRewardedAdLoading ? "Loading Rewarded Ad…" : "Watch Ads + Get 3 Credits"}</strong>
-                  <small>{isRewardedAdLoading ? "Please wait…" : "Get +3 Credits"}</small>
+                  <strong>{isRewardedAdLoading ? "Loading Rewarded Ad…" : "Watch Ads + Get 3 Stars"}</strong>
+                  <small>{isRewardedAdLoading ? "Please wait…" : "Get +3 Stars"}</small>
                 </span>
                 <span className="rewarded-ad-arrow">
                   <Icon name="chevron" size={22} />
@@ -1658,8 +1754,9 @@ export default function App() {
         <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="credit-welcome-title">
           <div className="confirmation-box" role="document">
             <div className="confirmation-icon"><Icon name="star" size={22} /></div>
-            <h2 id="credit-welcome-title">Welcome to Credits</h2>
-            <p>You start with 25 Credits. Opening a procedure uses 3 Credits. If you run out, you can watch a rewarded ad to earn 3 more.</p>
+            <h2 id="credit-welcome-title">Welcome to Stars</h2>
+            <p>You start with 30 Stars. Opening a procedure costs 1 Star the first time only; reopening it is free. Videos cost 5 Stars and quizzes cost 3 Stars.</p>
+            <p>On the web version, Monetag ads help support free access. Viewing or clicking a Monetag ad does not itself award Stars. Only use an in-app reward prompt when it clearly states a Star reward, and never click ads just to support the app. Android may show its own in-app ads instead.</p>
             <div className="confirmation-actions">
               <button type="button" className="confirmation-cancel" onClick={() => setShowCreditWelcome(false)}>Got it</button>
             </div>
@@ -1671,9 +1768,9 @@ export default function App() {
         <div className="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="procedure-credit-title">
           <div className="confirmation-box" role="document">
             <div className="confirmation-icon"><Icon name="star" size={24} /></div>
-            <h2 id="procedure-credit-title">Earn 3 Credits</h2>
-            <p>You need 3 Credits to open this procedure. Watch a rewarded ad to receive 3 Credits, then the 3 Credits will be used to open it.</p>
-            {!isOnlineState && <p className="video-offline-message" style={{ marginTop: "10px" }}>Internet connection required to earn Credits.</p>}
+            <h2 id="procedure-credit-title">Top up your Stars</h2>
+            <p>You need 1 Star to open this procedure for the first time. Complete the available rewarded ad to receive 3 Stars, then the procedure will open. Reopening a procedure you have already opened is free.</p>
+            {!isOnlineState && <p className="video-offline-message" style={{ marginTop: "10px" }}>Internet connection required to earn Stars.</p>}
             {isOnlineState && !canWatchRewardedAd() && <p className="video-insufficient-stars" style={{ marginTop: "10px" }}>You have reached today&apos;s rewarded-ad limit.</p>}
             <div className="confirmation-actions">
               <button type="button" className="confirmation-cancel" disabled={procedureCreditRewardLoading} onClick={() => setShowProcedureCreditPrompt(false)}>Later</button>
@@ -1689,21 +1786,21 @@ export default function App() {
                     setStarTransactions(getStarTransactions());
                     window.dispatchEvent(new CustomEvent("stars-updated"));
 
-                    // The earned 3 Credits should immediately pay for and open
+                    // The earned 3 Stars should immediately pay for and open
                     // the procedure that triggered this reward prompt.
-                    if (procedureToOpen && canSpend(STAR_ECONOMY.costs.premiumProcedureVideo)) {
+                    if (procedureToOpen && canSpend(STAR_ECONOMY.costs.procedureOpen)) {
                       openProcedure(procedureToOpen);
                     } else {
                       setNotice({
-                        title: "Credits not saved",
-                        message: "The reward finished, but the Credits could not be saved. Please try again.",
+                        title: "Stars not saved",
+                        message: "The reward finished, but the Stars could not be saved. Please try again.",
                       });
                     }
                   }
                 } finally {
                   setProcedureCreditRewardLoading(false);
                 }
-              }}>{procedureCreditRewardLoading ? "Loading Ad…" : "Watch Ad +3 Credits"}</button>
+              }}>{procedureCreditRewardLoading ? "Loading Ad…" : "Watch Ad +3 Stars"}</button>
             </div>
           </div>
         </div>

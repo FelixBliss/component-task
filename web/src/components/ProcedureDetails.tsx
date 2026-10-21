@@ -6,6 +6,7 @@ import {
 
 import type { Procedure } from "../data/procedures";
 import Icon from "./Icon";
+import { STAR_ECONOMY } from "../services/adService";
 
 type ProcedureDetailsProps = {
   procedure: Procedure;
@@ -297,9 +298,6 @@ export default function ProcedureDetails({
   const [insufficientStars, setInsufficientStars] =
     useState(false);
 
-  const [quizUnlocked, setQuizUnlocked] =
-    useState(false);
-
   const [quizUnlockError, setQuizUnlockError] =
     useState<string | null>(null);
 
@@ -379,7 +377,6 @@ export default function ProcedureDetails({
     setVideoError(false);
     setVideoUnlocked(false);
     setInsufficientStars(false);
-    setQuizUnlocked(false);
     setQuizUnlockError(null);
 
     const saved =
@@ -435,7 +432,6 @@ export default function ProcedureDetails({
       ).length > 0
     ) {
       setQuizStarted(true);
-      setQuizUnlocked(true);
       setActiveTab("quiz");
     }
   }, [procedure.id, quizzes.length]);
@@ -517,7 +513,6 @@ export default function ProcedureDetails({
     );
 
     setQuizStarted(true);
-    setQuizUnlocked(true);
     setActiveTab("quiz");
 
     /*
@@ -607,13 +602,13 @@ export default function ProcedureDetails({
     }
 
     import('../services/creditService').then(({ canSpend, spendStars }) => {
-      if (!canSpend(2)) {
+      if (!canSpend(STAR_ECONOMY.costs.premiumQuiz)) {
         setQuizUnlockError('INSUFFICIENT_STARS');
-        setNotice({ title: "Not enough Credits", message: "You need 2 Credits to retry this quiz." });
+        setNotice({ title: "Not enough Stars", message: `You need ${STAR_ECONOMY.costs.premiumQuiz} stars to retry this quiz.` });
         return;
       }
       
-      const success = spendStars(2, "Quiz retry");
+      const success = spendStars(STAR_ECONOMY.costs.premiumQuiz, "Quiz retry");
       if (success) {
         setQuizUnlockError(null);
         // Dispatch custom event for App.tsx to update balance
@@ -724,7 +719,6 @@ export default function ProcedureDetails({
     setSelectedAnswer(null);
     setShowResults(false);
     setQuizStarted(false);
-    setQuizUnlocked(false);
     setQuizUnlockError(null);
 
     setActiveTab("quiz");
@@ -811,6 +805,23 @@ export default function ProcedureDetails({
           </span>
         </div>
 
+      </div>
+
+      {/* ================= COLLAPSIBLE REFERENCE CARDS ================= */}
+
+      <div className="procedure-quick-sections">
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Indications</h2></summary>
+          <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
+          <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
+        <details className="procedure-detail-section procedure-collapsible-section">
+          <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
+          <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
+        </details>
       </div>
 
       {/* ================= TABS ================= */}
@@ -913,10 +924,8 @@ export default function ProcedureDetails({
           className="procedure-detail-content"
         >
 
-          <details className="procedure-detail-section procedure-collapsible-section">
-            <summary className="procedure-section-summary">
-              <h2>Procedure Steps</h2>
-            </summary>
+          <div className="procedure-detail-section procedure-steps-card">
+            <h2>Procedure Steps</h2>
             <ol className="procedure-steps">
               {procedure.steps.map((step, index) => (
                 <li key={index}>
@@ -925,75 +934,20 @@ export default function ProcedureDetails({
                 </li>
               ))}
             </ol>
-          </details>
-
-          <details className="procedure-detail-section procedure-collapsible-section">
-            <summary className="procedure-section-summary">
-              <h2>Indications</h2>
-            </summary>
-            <ul>
-              {procedure.indications.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </details>
-
-          <details className="procedure-detail-section procedure-collapsible-section">
-            <summary className="procedure-section-summary">
-              <h2>Precautions</h2>
-            </summary>
-            <ul>
-              {procedure.precautions.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </details>
-
-          <details className="procedure-detail-section procedure-collapsible-section">
-            <summary className="procedure-section-summary">
-              <h2>Requirements</h2>
-            </summary>
-            <ul>
-              {procedure.equipment.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </details>
+          </div>
 
           {quizzes.length >
             0 && (
             <button
               type="button"
               className="inline-quiz-button"
-              disabled={!isOnline || !quizUnlocked}
+              disabled={!isOnline}
               onClick={() => {
-                if (!isOnline) {
-                  return;
-                }
-                if (!quizUnlocked) {
-                  import('../services/creditService').then(({ canSpend, spendStars }) => {
-                    if (!canSpend(2)) {
-                      setQuizUnlockError('INSUFFICIENT_STARS');
-                      setNotice({ title: "Not enough Credits", message: "You need 2 Credits to start this quiz." });
-                      return;
-                    }
-                    
-                    const success = spendStars(2, "Premium quiz");
-                    if (success) {
-                      setQuizUnlocked(true);
-                      setQuizUnlockError(null);
-                      window.dispatchEvent(new CustomEvent('stars-updated'));
-                      startQuiz();
-                    } else {
-                      setQuizUnlockError('INSUFFICIENT_STARS');
-                    }
-                  });
-                  return;
-                }
-                startQuiz();
+                if (!isOnline) return;
+                setActiveTab("quiz");
               }}
             >
-              <><Icon name="brain" size={18} /> Test Yourself — 2 <Icon name="star" size={16} /> <Icon name="arrowRight" size={16} /></>
+              <><Icon name="brain" size={18} /> Test Yourself — 3 <Icon name="star" size={16} /> <Icon name="arrowRight" size={16} /></>
             </button>
           )}
 
@@ -1054,13 +1008,13 @@ export default function ProcedureDetails({
                     return;
                   }
                   import('../services/creditService').then(({ canSpend, spendStars }) => {
-                    if (!canSpend(3)) {
+                    if (!canSpend(STAR_ECONOMY.costs.premiumProcedureVideo)) {
                       setInsufficientStars(true);
-                      setNotice({ title: "Not enough Credits", message: "You need 3 Credits to unlock this video." });
+                      setNotice({ title: "Not enough Stars", message: `You need ${STAR_ECONOMY.costs.premiumProcedureVideo} stars to unlock this video.` });
                       return;
                     }
                     
-                    const success = spendStars(3, "Premium video");
+                    const success = spendStars(STAR_ECONOMY.costs.premiumProcedureVideo, "Premium video");
                     if (success) {
                       setVideoUnlocked(true);
                       setInsufficientStars(false);
@@ -1072,7 +1026,7 @@ export default function ProcedureDetails({
                   });
                 }}
               >
-                Unlock Video for 3 Stars
+                Unlock Video for 5 Stars
               </button>
 
             </div>
@@ -1231,7 +1185,7 @@ export default function ProcedureDetails({
               </p>
 
               <div className="quiz-premium-indicator">
-                <>Premium • 2 <Icon name="star" size={16} /></>
+                <>Premium • 3 <Icon name="star" size={16} /></>
               </div>
 
               <button
@@ -1244,15 +1198,14 @@ export default function ProcedureDetails({
                     return;
                   }
                   import('../services/creditService').then(({ canSpend, spendStars }) => {
-                    if (!canSpend(2)) {
+                    if (!canSpend(STAR_ECONOMY.costs.premiumQuiz)) {
                       setQuizUnlockError('INSUFFICIENT_STARS');
-                      setNotice({ title: "Not enough Credits", message: "You need 2 Credits to take this quiz." });
+                      setNotice({ title: "Not enough Stars", message: `You need ${STAR_ECONOMY.costs.premiumQuiz} stars to take this quiz.` });
                       return;
                     }
                     
-                    const success = spendStars(2, "Premium quiz");
+                    const success = spendStars(STAR_ECONOMY.costs.premiumQuiz, "Premium quiz");
                     if (success) {
-                      setQuizUnlocked(true);
                       setQuizUnlockError(null);
                       // Dispatch custom event for App.tsx to update balance
                       window.dispatchEvent(new CustomEvent('stars-updated'));
@@ -1263,7 +1216,7 @@ export default function ProcedureDetails({
                   });
                 }}
               >
-                <>Start Quiz — 2 <Icon name="star" size={16} /></>
+                <>Start Quiz — 3 <Icon name="star" size={16} /></>
               </button>
 
             </div>

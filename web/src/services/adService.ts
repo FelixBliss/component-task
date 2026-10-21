@@ -1,9 +1,10 @@
 // Star economy configuration
 export const STAR_ECONOMY = {
-  startingBalance: 25,
+  startingBalance: 30,
   costs: {
-    premiumProcedureVideo: 3,
-    premiumQuiz: 2,
+    procedureOpen: 1,
+    premiumProcedureVideo: 5,
+    premiumQuiz: 3,
     futureAIFeature: 3,
     futurePremiumResource: 5,
   },

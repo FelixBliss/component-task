@@ -1,7 +1,7 @@
 /** Credit/Star management service for Component Task. */
 const STORAGE_KEY = "component-task-stars";
 const TRANSACTION_STORAGE_KEY = "component-task-star-transactions";
-const INITIAL_BALANCE = 25;
+const INITIAL_BALANCE = 30;
 const MAX_TRANSACTIONS = 20;
 
 export type StarTransactionType = "reward" | "spend";

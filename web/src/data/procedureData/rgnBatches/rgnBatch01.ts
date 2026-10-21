@@ -55,57 +55,198 @@ export const rgnBatch01: Procedure[] = [
     ],
     videoUrl: "https://www.youtube.com/watch?v=2WT8z8KsHJo",
     quiz: [
-      {
-        question: "What should be assessed first when receiving a patient immediately after surgery?",
-        options: ["Airway", "Diet preference", "Family history", "Discharge destination"],
-        answer: "Airway"
-      },
-      {
-        question: "Which finding requires urgent attention in the immediate post-operative period?",
-        options: ["Mild thirst", "Respiratory difficulty", "Request for a blanket", "Desire to sleep"],
-        answer: "Respiratory difficulty"
-      },
-      {
-        question: "Why are vital signs monitored closely after surgery?",
-        options: ["To complete paperwork", "To identify changes in the patient's condition", "To determine occupation", "To decide the patient's meal"],
-        answer: "To identify changes in the patient's condition"
-      },
-      {
-        question: "Which area should be assessed for possible post-operative bleeding?",
-        options: ["Operative site and drainage", "Hair and scalp only", "Hands only", "Feet only"],
-        answer: "Operative site and drainage"
-      },
-      {
-        question: "Which observation is particularly important after anaesthesia?",
-        options: ["Level of consciousness", "Favourite food", "Usual bedtime", "Educational history"],
-        answer: "Level of consciousness"
-      },
-      {
-        question: "What should the nurse do when significant deterioration is detected?",
-        options: ["Wait until the next shift", "Report promptly according to protocol", "Ignore it if sleeping", "Remove monitoring equipment"],
-        answer: "Report promptly according to protocol"
-      },
-      {
-        question: "Which symptom should be assessed as part of immediate post-operative care?",
-        options: ["Pain", "Favourite sport", "Occupation", "Birthplace"],
-        answer: "Pain"
-      },
-      {
-        question: "What is an important purpose of post-operative documentation?",
-        options: ["Record patient care and clinical findings", "Replace patient assessment", "Avoid communication", "Delay treatment"],
-        answer: "Record patient care and clinical findings"
-      },
-      {
-        question: "Why should drains and tubes be assessed after surgery?",
-        options: ["To assess their condition and function", "To remove them routinely", "To hide them", "To prevent documentation"],
-        answer: "To assess their condition and function"
-      },
-      {
-        question: "Which principle is most important during immediate post-operative care?",
-        options: ["Patient safety", "Speed of discharge", "Avoiding communication", "Reducing observations"],
-        answer: "Patient safety"
-      }
-    ]
+        {
+          "question": "How should the nurse assess the patient's level of consciousness on arrival?",
+          "options": [
+            "Call the patient by name and use an appropriate recognised clinical stimulus when indicated",
+            "Use a pointed object on the patient",
+            "Assume the patient is asleep",
+            "Wait until the next routine observation"
+          ],
+          "answer": "Call the patient by name and use an appropriate recognised clinical stimulus when indicated"
+        },
+        {
+          "question": "What should be done with hot water bottles when receiving the post-operative patient?",
+          "options": [
+            "Remove them and receive the patient gently into bed",
+            "Leave them against the patient",
+            "Place them under the patient",
+            "Use them to assess consciousness"
+          ],
+          "answer": "Remove them and receive the patient gently into bed"
+        },
+        {
+          "question": "What guides the patient's position immediately after surgery?",
+          "options": [
+            "Airway protection, breathing, consciousness, operation and clinical instructions",
+            "A rule that every patient must lie flat",
+            "The patient's preferred sleeping position only",
+            "The time of day"
+          ],
+          "answer": "Airway protection, breathing, consciousness, operation and clinical instructions"
+        },
+        {
+          "question": "When should the nurse reassure the patient?",
+          "options": [
+            "If the patient is conscious",
+            "Only after discharge",
+            "Only when relatives arrive",
+            "Never during recovery"
+          ],
+          "answer": "If the patient is conscious"
+        },
+        {
+          "question": "Why might side rails be provided?",
+          "options": [
+            "For patient safety when indicated by assessment and policy",
+            "To restrain every patient routinely",
+            "To replace observation",
+            "To prevent the patient from communicating"
+          ],
+          "answer": "For patient safety when indicated by assessment and policy"
+        },
+        {
+          "question": "Why should the nurse review the patient's case notes?",
+          "options": [
+            "To check post-operative instructions",
+            "To decide the patient's occupation",
+            "To avoid speaking to the surgical team",
+            "To replace vital-sign monitoring"
+          ],
+          "answer": "To check post-operative instructions"
+        },
+        {
+          "question": "What should the nurse do if bleeding is observed at the operative site?",
+          "options": [
+            "Assess and promptly report it according to protocol",
+            "Ignore it unless the patient complains",
+            "Wait until the next shift",
+            "Remove all dressings without assessment"
+          ],
+          "answer": "Assess and promptly report it according to protocol"
+        },
+        {
+          "question": "How should post-operative vital-sign monitoring frequency be determined?",
+          "options": [
+            "By the recovery protocol and patient's condition, with escalation for deterioration",
+            "Always every four hours from arrival",
+            "Only when the patient reports pain",
+            "Only once after surgery"
+          ],
+          "answer": "By the recovery protocol and patient's condition, with escalation for deterioration"
+        },
+        {
+          "question": "What should be checked regarding the intravenous cannula and fluids?",
+          "options": [
+            "Cannula status and prescribed infusion rate",
+            "Only the colour of the fluid bag",
+            "Whether the patient can remove the cannula",
+            "The infusion rate without checking the order"
+          ],
+          "answer": "Cannula status and prescribed infusion rate"
+        },
+        {
+          "question": "What should the nurse check about drainage tubes and catheters?",
+          "options": [
+            "That they are appropriately positioned and draining as expected",
+            "That they are removed immediately",
+            "That drainage is never measured",
+            "Only their colour"
+          ],
+          "answer": "That they are appropriately positioned and draining as expected"
+        },
+        {
+          "question": "Why must intake and output be recorded accurately?",
+          "options": [
+            "To monitor fluid balance and support clinical assessment",
+            "To replace all other observations",
+            "Only to complete paperwork",
+            "To determine the patient's meal preference"
+          ],
+          "answer": "To monitor fluid balance and support clinical assessment"
+        },
+        {
+          "question": "What is appropriate when the patient reports post-operative pain?",
+          "options": [
+            "Assess pain, administer prescribed analgesia and document the response",
+            "Ignore it if vital signs are normal",
+            "Give any available analgesic without an order",
+            "Delay assessment until discharge"
+          ],
+          "answer": "Assess pain, administer prescribed analgesia and document the response"
+        },
+        {
+          "question": "What must be checked before administering prescribed medication?",
+          "options": [
+            "The order and appropriate route, following medication-safety policy",
+            "Only the packaging colour",
+            "Whether another patient takes the same medicine",
+            "Nothing if the patient requests it"
+          ],
+          "answer": "The order and appropriate route, following medication-safety policy"
+        },
+        {
+          "question": "Which care should be maintained as the patient recovers?",
+          "options": [
+            "Personal and oral hygiene as clinically appropriate",
+            "Avoid all hygiene until discharge",
+            "Only change the bed linen",
+            "Stop assessing the patient"
+          ],
+          "answer": "Personal and oral hygiene as clinically appropriate"
+        },
+        {
+          "question": "What should the nurse do when noticing an abnormal change in the patient's condition?",
+          "options": [
+            "Assess, document and promptly report or escalate it",
+            "Ignore it if it was not present at handover",
+            "Wait for the family to report it",
+            "Record it only at the end of the week"
+          ],
+          "answer": "Assess, document and promptly report or escalate it"
+        },
+        {
+          "question": "When should further positioning changes be made as the patient becomes conscious?",
+          "options": [
+            "According to the patient's condition and surgical instructions",
+            "Automatically place every patient flat",
+            "Only after food is served",
+            "Without checking airway or comfort"
+          ],
+          "answer": "According to the patient's condition and surgical instructions"
+        },
+        {
+          "question": "How should post-operative nutrition be managed?",
+          "options": [
+            "Follow the prescribed nutritional orders",
+            "Offer any food immediately to every patient",
+            "Withhold all nutrition indefinitely",
+            "Allow relatives to decide without checking orders"
+          ],
+          "answer": "Follow the prescribed nutritional orders"
+        },
+        {
+          "question": "What should patient and relatives be taught about after surgery?",
+          "options": [
+            "Relevant post-operative restrictions and instructions",
+            "Only the hospital visiting hours",
+            "How to adjust prescribed medication independently",
+            "To ignore symptoms after discharge"
+          ],
+          "answer": "Relevant post-operative restrictions and instructions"
+        },
+        {
+          "question": "What should be included in post-operative documentation?",
+          "options": [
+            "Assessment findings and nursing interventions in the appropriate record",
+            "Only the patient's name",
+            "Only normal findings",
+            "No record if the patient is stable"
+          ],
+          "answer": "Assessment findings and nursing interventions in the appropriate record"
+        }
+      ]
+
   },
 
   {
