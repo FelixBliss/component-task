@@ -113,6 +113,19 @@ function hasOpenedProcedure(procedureId: string): boolean {
   return loadOpenedProcedureIds().includes(procedureId);
 }
 
+function ensureProcedureAccess(procedureId: string): boolean {
+  if (!hasOpenedProcedure(procedureId)) {
+    if (!canSpend(STAR_ECONOMY.costs.procedureOpen)) return false;
+    if (!spendStars(STAR_ECONOMY.costs.procedureOpen, "First-time procedure access")) {
+      return false;
+    }
+  }
+
+  // Persist new opens and migrate existing users' recently viewed procedures.
+  rememberOpenedProcedure(procedureId);
+  return true;
+}
+
 function slugifyProcedurePart(value: string): string {
   return value
     .normalize("NFKD")
@@ -277,13 +290,20 @@ export default function App() {
   const [procedureCreditRewardLoading, setProcedureCreditRewardLoading] = useState(false);
 
   useEffect(() => {
-    if (starBalance < 10) {
-      setNotice((current) => current ?? {
-        title: "Low Star Balance",
-        message: `You have ${starBalance} Stars left. Top up using an available in-app reward option to keep accessing paid learning features.`,
-      });
+    if (starBalance >= 10 || showCreditWelcome || showProcedureCreditPrompt) return;
+
+    // Let the first-time Star guide appear before showing a low-balance alert.
+    try {
+      if (localStorage.getItem("nct-credit-welcome-shown") !== "true") return;
+    } catch {
+      if (showCreditWelcome) return;
     }
-  }, [starBalance]);
+
+    setNotice((current) => current ?? {
+      title: "Low Star Balance",
+      message: `You have ${starBalance} Stars left. Top up using an available in-app reward option to keep accessing paid learning features.`,
+    });
+  }, [starBalance, showCreditWelcome, showProcedureCreditPrompt]);
 
   useEffect(() => {
     if (showSplash || activeTab !== "home") {
@@ -412,7 +432,16 @@ export default function App() {
       name: procedure.category,
       description: "Nursing procedures",
     });
+    if (!ensureProcedureAccess(procedure.id)) {
+      setPendingProcedure(procedure);
+      setShowProcedureCreditPrompt(true);
+      setShowSplash(false);
+      return;
+    }
     setSelectedProcedure(procedure);
+    setStarBalance(getBalance());
+    setStarTransactions(getStarTransactions());
+    window.dispatchEvent(new CustomEvent("stars-updated"));
     setShowSplash(false);
   }, []);
 
@@ -437,7 +466,16 @@ export default function App() {
           name: procedure.category,
           description: "Nursing procedures",
         });
+        if (!ensureProcedureAccess(procedure.id)) {
+          setPendingProcedure(procedure);
+          setShowProcedureCreditPrompt(true);
+          setShowSplash(false);
+          return;
+        }
         setSelectedProcedure(procedure);
+        setStarBalance(getBalance());
+        setStarTransactions(getStarTransactions());
+        window.dispatchEvent(new CustomEvent("stars-updated"));
         setShowSplash(false);
         return;
       }
@@ -658,22 +696,12 @@ export default function App() {
   const openProcedure = (
     procedure: Procedure
   ) => {
-    const alreadyOpened = hasOpenedProcedure(procedure.id);
-    const procedureCost = STAR_ECONOMY.costs.procedureOpen;
-
-    if (!alreadyOpened && !canSpend(procedureCost)) {
+    if (!ensureProcedureAccess(procedure.id)) {
       // First-time access requires one Star; a rewarded ad can replenish the balance.
       setPendingProcedure(procedure);
       setShowProcedureCreditPrompt(true);
       return;
     }
-
-    if (!alreadyOpened) {
-      const spent = spendStars(procedureCost, "First-time procedure access");
-      if (!spent) return;
-    }
-    // Persist both new opens and migrated legacy recently viewed procedures.
-    rememberOpenedProcedure(procedure.id);
 
     // Each opened procedure gets a stable, shareable URL and browser-history entry.
     if (!Capacitor.isNativePlatform()) {
