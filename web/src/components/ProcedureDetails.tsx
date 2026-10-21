@@ -920,6 +920,21 @@ export default function ProcedureDetails({
           </div>
 
           {/* Keep the procedure steps first so learners can begin immediately. Supporting cards remain available below. */}
+          {quizzes.length >
+            0 && (
+            <button
+              type="button"
+              className="inline-quiz-button"
+              disabled={!isOnline}
+              onClick={() => {
+                if (!isOnline) return;
+                setActiveTab("quiz");
+              }}
+            >
+              <><Icon name="brain" size={18} /> Test Yourself — 3 <Icon name="star" size={16} /> <Icon name="arrowRight" size={16} /></>
+            </button>
+          )}
+
       {/* ================= COLLAPSIBLE PURPOSE AND REFERENCE CARDS ================= */}
 
       <div className="procedure-quick-sections">
@@ -940,21 +955,6 @@ export default function ProcedureDetails({
           <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
         </details>
       </div>
-
-          {quizzes.length >
-            0 && (
-            <button
-              type="button"
-              className="inline-quiz-button"
-              disabled={!isOnline}
-              onClick={() => {
-                if (!isOnline) return;
-                setActiveTab("quiz");
-              }}
-            >
-              <><Icon name="brain" size={18} /> Test Yourself — 3 <Icon name="star" size={16} /> <Icon name="arrowRight" size={16} /></>
-            </button>
-          )}
 
         </div>
       )}
