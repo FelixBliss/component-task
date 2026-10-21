@@ -38,6 +38,26 @@ function listSection(title: string, values?: string[]): string {
     .join("")}</ul></section>`;
 }
 
+const monetagWebScripts = `
+<script>
+  window.setTimeout(function () {
+    var script = document.createElement('script');
+    script.dataset.zone = '12083896';
+    script.src = 'https://nap5k.com/tag.min.js';
+    script.async = true;
+    document.head.appendChild(script);
+  }, 8000);
+</script>
+<script>
+  window.setTimeout(function () {
+    var script = document.createElement('script');
+    script.dataset.zone = '12087969';
+    script.src = 'https://n6wxm.com/vignette.min.js';
+    script.async = true;
+    document.head.appendChild(script);
+  }, 20000);
+</script>`;
+
 function staticProcedurePage(procedure: (typeof procedures)[number], slug: string, appScript: string, appCss: string[]): string {
   const canonical = `${SITE_URL}/procedures/${slug}/`;
   const description = (procedure.overview || `Learn about ${procedure.title} in this nursing procedure guide.`)
@@ -84,6 +104,7 @@ function staticProcedurePage(procedure: (typeof procedures)[number], slug: strin
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="${canonical}">
+  ${monetagWebScripts}
   <link rel="icon" type="image/jpeg" href="/unnamed.jpg">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Component Task">
@@ -181,7 +202,7 @@ function procedureSeoPages(): Plugin {
 <title>Nursing Procedures Directory | Component Task</title>
 <meta name="description" content="Browse nursing procedure guides and clinical skills learning resources from Component Task.">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="${SITE_URL}/procedures/"><link rel="icon" type="image/jpeg" href="/unnamed.jpg">
+<link rel="canonical" href="${SITE_URL}/procedures/">${monetagWebScripts}<link rel="icon" type="image/jpeg" href="/unnamed.jpg">
 <meta property="og:type" content="website"><meta property="og:title" content="Nursing Procedures Directory | Component Task">
 <meta property="og:description" content="Browse nursing procedure guides and clinical skills learning resources."><meta property="og:url" content="${SITE_URL}/procedures/">
 <style>:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#17221c;background:#f8faf9;--green:#008a4b;--dark:#006b3c;--light:#e8f5ee;--muted:#66736c;--border:#e3e9e5}*{box-sizing:border-box}body{margin:0;line-height:1.6;background:#f8faf9;padding-bottom:78px}.app-header{position:sticky;top:0;z-index:10;background:var(--green);color:#fff;box-shadow:0 3px 14px rgba(0,0,0,.08)}.header-inner{width:min(100%,900px);min-height:76px;margin:auto;padding:13px 18px;display:flex;align-items:center;gap:11px}.brand-logo{width:42px;height:42px;object-fit:cover;border-radius:12px;border:2px solid rgba(255,255,255,.25)}.brand-title{font-size:16px;font-weight:800;line-height:1.2}.brand-tagline{margin-top:4px;font-size:10px;opacity:.82}.content{width:min(100%,900px);margin:0 auto;padding:22px 17px 30px}.page-card{background:#fff;border:1px solid var(--border);border-radius:21px;padding:22px 20px;box-shadow:0 3px 12px rgba(0,0,0,.035)}h1{margin:0 0 12px;color:var(--dark);font-size:clamp(25px,6vw,32px);line-height:1.16}.directory-intro{color:var(--muted);font-size:13px}.category-section{margin-top:22px}h2{color:var(--dark);font-size:16px;margin:0 0 11px}.procedure-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.procedure-list li{margin:0}.procedure-list a{display:block;height:100%;padding:13px;border:1px solid var(--border);border-radius:14px;background:#fff;color:var(--dark);font-size:12px;font-weight:750;line-height:1.4;text-decoration:none;box-shadow:0 3px 12px rgba(0,0,0,.035)}.procedure-list a:hover{background:#f4faf7}.total-pill{display:inline-block;margin:0 0 18px;padding:7px 11px;border:1px solid #d8ece0;border-radius:12px;background:#f4faf7;color:var(--dark);font-size:11px;font-weight:800}.bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:#fff;border-top:1px solid var(--border);box-shadow:0 -4px 18px rgba(0,0,0,.05)}.bottom-nav-inner{width:min(100%,560px);min-height:65px;margin:auto;display:flex;align-items:center;justify-content:space-around;gap:8px;padding:7px 12px}.bottom-nav a{display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#66736c;text-decoration:none;font-size:10px;font-weight:700}.bottom-nav a span{font-size:19px;line-height:1.1}.bottom-nav a.active{color:var(--green)}.site-footer{width:min(100%,900px);margin:auto;padding:10px 20px 20px;text-align:center;color:var(--muted);font-size:10px}@media(max-width:520px){.content{padding:16px 12px 24px}.page-card{padding:18px 15px;border-radius:17px}.procedure-list{grid-template-columns:1fr}}</style>${appCssLinks}
