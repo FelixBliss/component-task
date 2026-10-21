@@ -298,9 +298,6 @@ export default function ProcedureDetails({
   const [insufficientStars, setInsufficientStars] =
     useState(false);
 
-  const [quizUnlocked, setQuizUnlocked] =
-    useState(false);
-
   const [quizUnlockError, setQuizUnlockError] =
     useState<string | null>(null);
 
@@ -380,7 +377,6 @@ export default function ProcedureDetails({
     setVideoError(false);
     setVideoUnlocked(false);
     setInsufficientStars(false);
-    setQuizUnlocked(false);
     setQuizUnlockError(null);
 
     const saved =
@@ -436,7 +432,6 @@ export default function ProcedureDetails({
       ).length > 0
     ) {
       setQuizStarted(true);
-      setQuizUnlocked(true);
       setActiveTab("quiz");
     }
   }, [procedure.id, quizzes.length]);
@@ -518,7 +513,6 @@ export default function ProcedureDetails({
     );
 
     setQuizStarted(true);
-    setQuizUnlocked(true);
     setActiveTab("quiz");
 
     /*
@@ -725,7 +719,6 @@ export default function ProcedureDetails({
     setSelectedAnswer(null);
     setShowResults(false);
     setQuizStarted(false);
-    setQuizUnlocked(false);
     setQuizUnlockError(null);
 
     setActiveTab("quiz");
@@ -1213,7 +1206,6 @@ export default function ProcedureDetails({
                     
                     const success = spendStars(STAR_ECONOMY.costs.premiumQuiz, "Premium quiz");
                     if (success) {
-                      setQuizUnlocked(true);
                       setQuizUnlockError(null);
                       // Dispatch custom event for App.tsx to update balance
                       window.dispatchEvent(new CustomEvent('stars-updated'));
