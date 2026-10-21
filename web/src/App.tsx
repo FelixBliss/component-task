@@ -359,7 +359,7 @@ export default function App() {
       }
     };
 
-    // Synchronize once on mount and whenever the Credits page is revisited.
+    // Synchronize once on mount and whenever the Stars page is revisited.
     refreshStarState();
 
     window.addEventListener("stars-updated", handleStarsUpdated);
@@ -924,7 +924,7 @@ export default function App() {
           >
             <span><Icon name="star" size={18} /></span>
             <strong>{starBalance}</strong>
-            <small>Credits</small>
+            <small>Stars</small>
           </button>
 
         </div>
@@ -940,7 +940,7 @@ export default function App() {
           <Icon name="medical" size={20} /><span>Procedures</span>
         </button>
         <button className={`desktop-nav-button ${activeTab === "credits" ? "active" : ""}`} onClick={() => navigate("credits")} type="button" aria-current={activeTab === "credits" ? "page" : undefined}>
-          <Icon name="star" size={20} /><span>My Credits</span><small>{starBalance}</small>
+          <Icon name="star" size={20} /><span>My Stars</span><small>{starBalance}</small>
         </button>
         <div className="desktop-sidebar-divider" />
         <div className="desktop-sidebar-label">APP</div>
@@ -1068,7 +1068,7 @@ export default function App() {
 
                   <span className="quick-text">
                     <strong>
-                      My Credits
+                      My Stars
                     </strong>
 
                     <small>
@@ -1441,7 +1441,7 @@ export default function App() {
               </span>
 
               <h1 className="page-title">
-                Credits
+                Stars
               </h1>
 
               <p className="page-description">
@@ -1458,7 +1458,7 @@ export default function App() {
               <strong>{starBalance}</strong>
 
               <span>
-                Available Credits
+                Available Stars
               </span>
             </div>
 
@@ -1468,7 +1468,7 @@ export default function App() {
               </h3>
 
               <p>
-                Credits will be used for
+                Stars will be used for
                 selected premium features and
                 learning activities as they
                 become available.
@@ -1530,14 +1530,14 @@ export default function App() {
                   }
                 }}
                 type="button"
-                title={!isOnlineState ? "Internet connection required" : isRewardedAdLoading ? "Rewarded ad is loading" : canWatchRewardedAd() ? "Watch ads to earn +3 Credits" : "Daily limit reached"}
+                title={!isOnlineState ? "Internet connection required" : isRewardedAdLoading ? "Rewarded ad is loading" : canWatchRewardedAd() ? "Watch ads to earn +3 Stars" : "Daily limit reached"}
               >
                 <span className="rewarded-ad-icon">
                   <Icon name="video" size={25} />
                 </span>
                 <span className="rewarded-ad-content">
-                  <strong>{isRewardedAdLoading ? "Loading Rewarded Ad…" : "Watch Ads + Get 3 Credits"}</strong>
-                  <small>{isRewardedAdLoading ? "Please wait…" : "Get +3 Credits"}</small>
+                  <strong>{isRewardedAdLoading ? "Loading Rewarded Ad…" : "Watch Ads + Get 3 Stars"}</strong>
+                  <small>{isRewardedAdLoading ? "Please wait…" : "Get +3 Stars"}</small>
                 </span>
                 <span className="rewarded-ad-arrow">
                   <Icon name="chevron" size={22} />
@@ -1770,7 +1770,7 @@ export default function App() {
             <div className="confirmation-icon"><Icon name="star" size={24} /></div>
             <h2 id="procedure-credit-title">Top up your Stars</h2>
             <p>You need 1 Star to open this procedure for the first time. Complete the available rewarded ad to receive 3 Stars, then the procedure will open. Reopening a procedure you have already opened is free.</p>
-            {!isOnlineState && <p className="video-offline-message" style={{ marginTop: "10px" }}>Internet connection required to earn Credits.</p>}
+            {!isOnlineState && <p className="video-offline-message" style={{ marginTop: "10px" }}>Internet connection required to earn Stars.</p>}
             {isOnlineState && !canWatchRewardedAd() && <p className="video-insufficient-stars" style={{ marginTop: "10px" }}>You have reached today&apos;s rewarded-ad limit.</p>}
             <div className="confirmation-actions">
               <button type="button" className="confirmation-cancel" disabled={procedureCreditRewardLoading} onClick={() => setShowProcedureCreditPrompt(false)}>Later</button>
@@ -1786,14 +1786,14 @@ export default function App() {
                     setStarTransactions(getStarTransactions());
                     window.dispatchEvent(new CustomEvent("stars-updated"));
 
-                    // The earned 3 Credits should immediately pay for and open
+                    // The earned 3 Stars should immediately pay for and open
                     // the procedure that triggered this reward prompt.
                     if (procedureToOpen && canSpend(STAR_ECONOMY.costs.procedureOpen)) {
                       openProcedure(procedureToOpen);
                     } else {
                       setNotice({
-                        title: "Credits not saved",
-                        message: "The reward finished, but the Credits could not be saved. Please try again.",
+                        title: "Stars not saved",
+                        message: "The reward finished, but the Stars could not be saved. Please try again.",
                       });
                     }
                   }
