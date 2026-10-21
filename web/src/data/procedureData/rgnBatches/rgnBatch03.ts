@@ -15,104 +15,154 @@ const q = (
 
 const rgn_021Quiz: ProcedureQuizQuestion[] = [
   q(
-    "What should be confirmed before pre-operative preparation begins?",
-    [
-      "The procedure and operative site",
-      "The patient's meal preference",
-      "The visitor list",
-      "The ward cleaning schedule",
-    ],
-    "The procedure and operative site",
-    "Confirming the procedure and operative site helps prevent wrong-patient, wrong-procedure and wrong-site errors."
+    "What must be confirmed before beginning pre-operative preparation?",
+    ["The type of surgery and operative site against the doctor's order", "The patient's preferred meal", "The visiting hours", "The ward cleaning schedule"],
+    "The type of surgery and operative site against the doctor's order",
+    "Step 1 requires confirming the planned procedure and site against the physician/doctor's order."
   ),
   q(
-    "Which item helps protect the bed during site preparation?",
-    ["Mackintosh and dressing towel", "Thermometer only", "Prescription pad", "Pill crusher"],
-    "Mackintosh and dressing towel",
-    "A mackintosh and dressing towel protect the bed and linen during preparation."
+    "Which action supports communication before the procedure?",
+    ["Establish rapport with the patient", "Begin site preparation without speaking", "Ask a visitor to explain the procedure", "Complete documentation without patient interaction"],
+    "Establish rapport with the patient",
+    "Step 2 calls for establishing rapport with the patient."
   ),
   q(
-    "Why are patient accessories and dentures removed before theatre when indicated?",
-    [
-      "To promote safety during the procedure",
-      "To improve appetite",
-      "To reduce documentation",
-      "To increase mobility",
-    ],
-    "To promote safety during the procedure",
-    "Removable items may interfere with anaesthesia, surgery or patient safety and should be managed according to facility policy."
+    "What should the nurse do with the preparation trolley?",
+    ["Prepare it and send it to the bedside", "Leave it in the store", "Send it to the theatre without preparation", "Ask the patient to collect it"],
+    "Prepare it and send it to the bedside",
+    "Step 3 specifies preparing the trolley and sending it to the bedside."
   ),
   q(
-    "Which assessment should be recorded before sending the patient to theatre?",
-    ["Vital signs", "Room temperature only", "Visitor count", "Meal intake only"],
+    "What should be provided before exposing the patient?",
+    ["Privacy", "A visitor's approval", "A meal", "A discharge form"],
+    "Privacy",
+    "Step 4 requires providing privacy to protect the patient's dignity."
+  ),
+  q(
+    "What should the patient be asked to do before positioning for preparation?",
+    ["Empty the bladder/bowel", "Remove all hospital identification", "Eat a full meal", "Walk to the theatre independently"],
+    "Empty the bladder/bowel",
+    "Step 5 states that the patient should be asked to empty the bladder/bowel."
+  ),
+  q(
+    "How should the patient be placed for the procedure?",
+    ["In a desirable position for the preparation", "In any position regardless of access", "Standing throughout the procedure", "In a position chosen by a visitor"],
+    "In a desirable position for the preparation",
+    "Step 6 requires positioning the patient desirably for the task."
+  ),
+  q(
+    "Which area should be exposed during site preparation?",
+    ["The site to be prepared", "The entire body unnecessarily", "Only the patient's feet", "The area selected by a visitor"],
+    "The site to be prepared",
+    "Step 7 specifies exposing the site that requires preparation."
+  ),
+  q(
+    "What protects the bed clothes during site preparation?",
+    ["A mackintosh and dressing towel", "A theatre gown only", "A name tag", "A consent form"],
+    "A mackintosh and dressing towel",
+    "Step 8 names a mackintosh and dressing towel as protection for the bed clothes."
+  ),
+  q(
+    "What should the nurse wear at the step specified before washing the area?",
+    ["Gloves", "A name tag instead of gloves", "Sterile footwear only", "No protective equipment"],
+    "Gloves",
+    "Step 9 instructs the nurse to wear gloves before washing the area."
+  ),
+  q(
+    "What should be used to wash the operative area at this stage?",
+    ["Mild soap and water", "Dry gauze only", "Perfume and tissue", "Alcohol gel alone"],
+    "Mild soap and water",
+    "Step 10 specifies washing the area with mild soap and water."
+  ),
+  q(
+    "After washing the area, what does the supplied procedure specify?",
+    ["Dry and clean the area with antiseptic lotion", "Cover it immediately without drying", "Apply body powder", "Leave the area wet"],
+    "Dry and clean the area with antiseptic lotion",
+    "Step 11 specifies drying and cleaning the area with antiseptic lotion."
+  ),
+  q(
+    "How should the prepared area be covered according to the supplied steps?",
+    ["With a sterile drape secured using adhesive strapping", "With an ordinary blanket only", "With used gauze", "With the patient's personal clothing"],
+    "With a sterile drape secured using adhesive strapping",
+    "Step 12 specifies a sterile drape secured in position with adhesive strapping."
+  ),
+  q(
+    "What should the patient be dressed in after the site is covered?",
+    ["A clean theatre gown", "The used preparation towel", "A wet dressing towel", "The nurse's uniform"],
+    "A clean theatre gown",
+    "Step 13 instructs dressing the patient in a clean theatre gown."
+  ),
+  q(
+    "What should be done with the patient's name tag?",
+    ["Label and apply it according to facility protocol", "Leave identification until after surgery", "Give it to a visitor", "Attach another patient's tag"],
+    "Label and apply it according to facility protocol",
+    "Step 14 requires labelling and applying the name tag according to facility protocol."
+  ),
+  q(
+    "Which items should be removed if present, as directed by the supplied steps?",
+    ["Accessories and dentures", "The patient's name tag", "All clinical records", "The sterile drape"],
+    "Accessories and dentures",
+    "Step 15 specifies removing accessories and dentures if any."
+  ),
+  q(
+    "Which observations must be checked and recorded?",
+    ["Vital signs", "Only the visitor count", "Only the room temperature", "Only the patient's meal choice"],
     "Vital signs",
-    "Pre-operative vital signs provide important information about the patient's current condition."
+    "Step 16 requires checking and recording vital signs."
   ),
   q(
-    "What should the nurse verify about investigations before theatre?",
-    [
-      "Required laboratory results are available",
-      "Only the patient's blood group is written on the wall",
-      "All visitors have arrived",
-      "The patient's locker is empty",
-    ],
-    "Required laboratory results are available",
-    "Required investigations and results should be available and reviewed according to the surgical plan."
+    "What should the nurse assist the patient to do regarding consent?",
+    ["Sign the consent form according to facility protocol", "Sign another patient's form", "Skip the consent process", "Ask a visitor to sign without authorization"],
+    "Sign the consent form according to facility protocol",
+    "Step 17 says to assist the patient to sign the consent form according to facility protocol; consent must be handled through the facility's authorized process."
   ),
   q(
-    "What is an important infection-prevention action after using the preparation trolley?",
-    [
-      "Decontaminate the trolley and perform hand hygiene",
-      "Leave used items on the trolley",
-      "Reuse contaminated gauze",
-      "Skip hand hygiene if gloves were worn",
-    ],
-    "Decontaminate the trolley and perform hand hygiene",
-    "Cleaning equipment and performing hand hygiene help reduce infection transmission."
+    "What should be confirmed about investigations and preparation before surgery?",
+    ["Required laboratory results, surgical items and medications are ready", "Only the patient's meal is ready", "Only visitors have arrived", "The ward television is switched off"],
+    "Required laboratory results, surgical items and medications are ready",
+    "Step 18 requires checking readiness of laboratory results, items for surgery and medications."
   ),
   q(
-    "What should accompany the patient during handover to theatre?",
-    [
-      "Medical records and required items",
-      "Only the patient's clothing",
-      "Only the bed linen",
-      "Only the visitor's phone",
-    ],
-    "Medical records and required items",
-    "Relevant records, investigations, medications and other required items support continuity and safety."
+    "What should be done with used items and the trolley?",
+    ["Dispose of used items and decontaminate the trolley", "Leave used items for the next patient", "Return contaminated items to clean storage", "Skip trolley cleaning if gloves were worn"],
+    "Dispose of used items and decontaminate the trolley",
+    "Step 19 requires safe disposal of used items and trolley decontamination."
   ),
   q(
-    "What should the nurse do if the patient is not clinically ready for theatre?",
-    [
-      "Escalate the concern and follow the authorized clinical plan",
-      "Send the patient immediately without review",
-      "Ignore abnormal findings",
-      "Cancel the operation independently",
-    ],
-    "Escalate the concern and follow the authorized clinical plan",
-    "Abnormal findings should be reported and managed through the appropriate clinical chain."
+    "Which infection-prevention action follows trolley decontamination in the supplied sequence?",
+    ["Perform hand hygiene", "Put on the same used gloves", "Touch clean supplies with contaminated hands", "Skip hand hygiene after removing gloves"],
+    "Perform hand hygiene",
+    "Step 20 specifies hand hygiene."
   ),
   q(
-    "Why is documentation part of pre-operative preparation?",
-    [
-      "It provides a record of care, findings and handover",
-      "It replaces patient identification",
-      "It removes the need for consent",
-      "It prevents all surgical complications",
-    ],
-    "It provides a record of care, findings and handover",
-    "Accurate documentation supports continuity, accountability and patient safety."
+    "When should the prescribed pre-medication be given according to the supplied procedure?",
+    ["When the patient is ready for the theatre", "Whenever the nurse chooses, regardless of the prescription", "Only after discharge", "Before checking the prescription"],
+    "When the patient is ready for the theatre",
+    "Step 21 states to give prescribed pre-medication when the patient is ready for theatre, following the valid prescription and facility checks."
   ),
   q(
-    "What is the final safety principle when transferring a patient to theatre?",
-    [
-      "Maintain correct identification and safe handover",
-      "Transfer without checking records",
-      "Send the patient alone",
-      "Remove all monitoring regardless of condition",
-    ],
-    "Maintain correct identification and safe handover",
-    "Correct identification and effective handover are essential during theatre transfer."
+    "Which transport options are named for sending the patient to theatre?",
+    ["A stretcher or wheelchair", "A visitor's private chair only", "Walking in every case", "A trolley used for dirty equipment"],
+    "A stretcher or wheelchair",
+    "Step 22 names a stretcher or wheelchair for transfer to theatre."
+  ),
+  q(
+    "To whom should the patient, medical records and items be handed over?",
+    ["The theatre staff", "Visitors in the waiting area", "Uninvolved patients", "The cleaning staff only"],
+    "The theatre staff",
+    "Step 23 requires handover of the patient, records and items to theatre staff."
+  ),
+  q(
+    "Where should the nurse record the procedure?",
+    ["In the appropriate manual or electronic notes", "Only in a personal notebook", "Only in a message to a visitor", "Nowhere if the patient has been transferred"],
+    "In the appropriate manual or electronic notes",
+    "Step 24 requires documentation in the appropriate manual or electronic notes."
+  ),
+  q(
+    "What should be prepared to receive the patient after the procedure?",
+    ["An operation bed", "A visitor's chair", "A meal trolley", "A storage cupboard"],
+    "An operation bed",
+    "Step 25 ends by directing the nurse to prepare an operation bed to receive the patient."
   ),
 ];
 
