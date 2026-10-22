@@ -780,10 +780,6 @@ export default function ProcedureDetails({
           {procedure.title}
         </h1>
 
-        <p>
-          {procedure.overview}
-        </p>
-
         <div className="procedure-detail-summary">
           <span>
             <strong>
@@ -896,27 +892,6 @@ export default function ProcedureDetails({
 
       </div>
 
-      {/* ================= COLLAPSIBLE PURPOSE AND REFERENCE CARDS ================= */}
-
-      <div className="procedure-quick-sections">
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Purpose</h2></summary>
-          <ul>{procedure.purpose.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Indications</h2></summary>
-          <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
-          <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-        <details className="procedure-detail-section procedure-collapsible-section">
-          <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
-          <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
-        </details>
-      </div>
-
       {/* ================= DETAILS ================= */}
 
       {activeTab ===
@@ -927,6 +902,26 @@ export default function ProcedureDetails({
           aria-labelledby="procedure-tab-detail"
           className="procedure-detail-content"
         >
+
+          {/* Supporting information is available only on the Detail tab, before the procedure steps. */}
+          <div className="procedure-quick-sections">
+            <details className="procedure-detail-section procedure-collapsible-section">
+              <summary className="procedure-section-summary"><h2>Description</h2></summary>
+              <p>{procedure.overview}</p>
+            </details>
+            <details className="procedure-detail-section procedure-collapsible-section">
+              <summary className="procedure-section-summary"><h2>Indications</h2></summary>
+              <ul>{procedure.indications.map((item, index) => <li key={index}>{item}</li>)}</ul>
+            </details>
+            <details className="procedure-detail-section procedure-collapsible-section">
+              <summary className="procedure-section-summary"><h2>Precautions</h2></summary>
+              <ul>{procedure.precautions.map((item, index) => <li key={index}>{item}</li>)}</ul>
+            </details>
+            <details className="procedure-detail-section procedure-collapsible-section">
+              <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
+              <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
+            </details>
+          </div>
 
           <div className="procedure-detail-section procedure-steps-card">
             <h2>Procedure Steps</h2>
@@ -940,8 +935,7 @@ export default function ProcedureDetails({
             </ol>
           </div>
 
-          {quizzes.length >
-            0 && (
+          {quizzes.length > 0 && (
             <button
               type="button"
               className="inline-quiz-button"

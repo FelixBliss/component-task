@@ -46,7 +46,7 @@ const monetagWebScripts = `
     script.src = 'https://nap5k.com/tag.min.js';
     script.async = true;
     document.head.appendChild(script);
-  }, 8000);
+  }, 180000);
 </script>
 <script>
   window.setTimeout(function () {

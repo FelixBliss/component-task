@@ -5639,3 +5639,125 @@ html.dark-mode .app.web-app .quick-card:hover {
     font-size: 14px;
   }
 }
+
+
+/* Mobile-first procedure reading: keep the actual steps visible sooner.
+   Web-only; existing cards, content and actions remain intact. */
+@media (max-width: 600px) {
+  .app.web-app .procedure-details-back {
+    min-height: 38px;
+    margin-bottom: 8px;
+  }
+
+  .app.web-app .procedure-detail-header {
+    margin-top: 8px;
+    padding: 16px 15px 14px;
+    border-radius: 17px;
+  }
+
+  .app.web-app .procedure-detail-header h1 {
+    margin: 9px 0 7px;
+    font-size: clamp(23px, 6vw, 29px);
+    line-height: 1.16;
+    letter-spacing: -0.45px;
+  }
+
+  .app.web-app .procedure-detail-header > p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .app.web-app .procedure-detail-summary {
+    gap: 7px 13px;
+    margin-top: 11px;
+    padding-top: 10px;
+  }
+
+  .app.web-app .procedure-detail-summary span {
+    font-size: 10px;
+  }
+
+  .app.web-app .procedure-detail-summary strong {
+    font-size: 13px;
+  }
+
+  .app.web-app .procedure-tabs {
+    top: 70px;
+    margin: 10px 0 12px;
+    padding: 4px;
+    gap: 3px;
+    border-radius: 12px;
+  }
+
+  .app.web-app .procedure-tab {
+    min-height: 44px;
+    gap: 4px;
+    border-radius: 8px;
+    font-size: 11px;
+  }
+
+  .app.web-app .procedure-tab > span {
+    width: 18px;
+    height: 18px;
+  }
+
+  .app.web-app .procedure-detail-content {
+    gap: 10px;
+  }
+
+  .app.web-app .procedure-steps-card {
+    padding: 17px 14px;
+    border-radius: 15px;
+    scroll-margin-top: 126px;
+  }
+
+  .app.web-app .procedure-steps-card > h2 {
+    margin-bottom: 14px;
+    font-size: 17px;
+  }
+
+  .app.web-app .procedure-steps li {
+    grid-template-columns: 29px minmax(0, 1fr);
+    gap: 9px;
+    padding-bottom: 15px;
+  }
+
+  .app.web-app .procedure-steps li > span {
+    width: 29px;
+    height: 29px;
+    border-radius: 9px;
+    font-size: 11px;
+  }
+
+  .app.web-app .procedure-steps li:not(:last-child)::after {
+    top: 29px;
+    left: 14px;
+  }
+
+  .app.web-app .procedure-steps li p {
+    margin-top: 3px;
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .app.web-app .procedure-quick-sections {
+    gap: 9px;
+    margin-top: 2px;
+  }
+
+  .app.web-app .procedure-quick-sections .procedure-detail-section {
+    padding: 15px 14px;
+    border-radius: 14px;
+  }
+
+  .app.web-app .inline-quiz-button {
+    margin: 2px 0 4px;
+  }
+}
+
+.app.web-app .procedure-tab:focus-visible,
+.app.web-app .inline-quiz-button:focus-visible,
+.app.web-app .procedure-details-back:focus-visible {
+  outline: 3px solid rgba(0, 138, 75, 0.45);
+  outline-offset: 3px;
+}
