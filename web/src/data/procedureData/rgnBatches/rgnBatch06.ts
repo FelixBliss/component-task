@@ -1121,7 +1121,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=oNCObzqSMa0",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Reassure him/her to gain co-operation",
@@ -1129,10 +1129,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "To complete administration of intrathecal medication safely, which action should the nurse take at this point?",
     "options": [
       "Wear sterile gloves and applies sterile dressing when needle is withdrawn",
       "Establish rapport (Refer to steps)",
@@ -1140,10 +1140,10 @@ export const rgnBatch06: Procedure[] = [
       "Obtain verbal or formal consent from patient and relatives"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "Before carrying out administration of intrathecal medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Provide adequate lightening at the puncture site",
       "Establish rapport (Refer to steps)",
@@ -1151,10 +1151,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Explain the procedure to the patient",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "Before carrying out administration of intrathecal medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Instruct patient to void before the procedure",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -1162,10 +1162,10 @@ export const rgnBatch06: Procedure[] = [
       "Obtain verbal or formal consent from patient and relatives"
     ],
     "answer": "Obtain verbal or formal consent from patient and relatives",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "The nurse is carrying out administration of intrathecal medication. Which action best matches this part of the procedure?",
     "options": [
       "Reassure him/her to gain co-operation",
       "Continue to support, observe and reassure patient throughout the procedure",
@@ -1173,10 +1173,10 @@ export const rgnBatch06: Procedure[] = [
       "Allow patient to lie flat on the back and make him/her comfortable"
     ],
     "answer": "Reassure him/her to gain co-operation",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "A patient is about to undergo administration of intrathecal medication. Which action protects their dignity during preparation?",
     "options": [
       "Obtain verbal or formal consent from patient and relatives",
       "Provide privacy",
@@ -1184,10 +1184,10 @@ export const rgnBatch06: Procedure[] = [
       "Open the equipment tray taking care not to contaminate"
     ],
     "answer": "Provide privacy",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "Which step should be performed now during administration of intrathecal medication?",
     "options": [
       "Observe patient continuously for therapeutic and adverse effects",
       "Assist patient into a required position i.e. lying or sitting and supports him/her",
@@ -1195,10 +1195,10 @@ export const rgnBatch06: Procedure[] = [
       "Prepare sterile trolley and send to the bedside"
     ],
     "answer": "Instruct patient to void before the procedure",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "Before proceeding with administration of intrathecal medication, what infection-prevention action is required at this point?",
     "options": [
       "Secure punctured site firmly with a sterile dry swab and an adhesive tape",
       "Instruct patient to void before the procedure",
@@ -1206,10 +1206,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "The nurse is carrying out administration of intrathecal medication. Which action best matches this part of the procedure?",
     "options": [
       "Prepare sterile trolley and send to the bedside",
       "Explain the procedure to the patient",
@@ -1217,10 +1217,10 @@ export const rgnBatch06: Procedure[] = [
       "Provide privacy"
     ],
     "answer": "Prepare sterile trolley and send to the bedside",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "While providing administration of intrathecal medication, why must the nurse complete the prescribed observations at the specified intervals?",
     "options": [
       "Continue to support, observe and reassure patient throughout the procedure",
       "Check patient’s vital signs",
@@ -1228,10 +1228,10 @@ export const rgnBatch06: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Check patient’s vital signs",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Trended observations help detect deterioration early. Record the measurements, compare them with previous findings and escalate abnormal values or clinical concern according to local policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "Which step should be performed now during administration of intrathecal medication?",
     "options": [
       "Prepare sterile trolley and send to the bedside",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -1239,10 +1239,10 @@ export const rgnBatch06: Procedure[] = [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
     ],
     "answer": "Provide adequate lightening at the puncture site",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "When positioning the patient for administration of intrathecal medication, what should guide the nurse's choice of position?",
     "options": [
       "Reassure him/her to gain co-operation",
       "Allow patient to lie flat on the back and make him/her comfortable",
@@ -1250,10 +1250,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist patient into a required position i.e. lying or sitting and supports him/her"
     ],
     "answer": "Assist patient into a required position i.e. lying or sitting and supports him/her",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "The nurse is carrying out administration of intrathecal medication. Which action best matches this part of the procedure?",
     "options": [
       "Open the equipment tray taking care not to contaminate",
       "Assist patient into a required position i.e. lying or sitting and supports him/her",
@@ -1261,10 +1261,10 @@ export const rgnBatch06: Procedure[] = [
       "Secure punctured site firmly with a sterile dry swab and an adhesive tape"
     ],
     "answer": "Open the equipment tray taking care not to contaminate",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "To complete administration of intrathecal medication safely, which action should the nurse take at this point?",
     "options": [
       "Explain the procedure to the patient",
       "Continue to support, observe and reassure patient throughout the procedure",
@@ -1272,10 +1272,10 @@ export const rgnBatch06: Procedure[] = [
       "Provide adequate lightening at the puncture site"
     ],
     "answer": "Continue to support, observe and reassure patient throughout the procedure",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "Which step should be performed now during administration of intrathecal medication?",
     "options": [
       "Dispose off used items and decontaminate trolley",
       "Check patient’s vital signs",
@@ -1283,10 +1283,10 @@ export const rgnBatch06: Procedure[] = [
       "Instruct patient to void before the procedure"
     ],
     "answer": "Wear sterile gloves and applies sterile dressing when needle is withdrawn",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "When collecting a specimen as part of administration of intrathecal medication, which principle protects the reliability of the result?",
     "options": [
       "Continue to support, observe and reassure patient throughout the procedure",
       "Provide privacy",
@@ -1294,10 +1294,10 @@ export const rgnBatch06: Procedure[] = [
       "Secure punctured site firmly with a sterile dry swab and an adhesive tape"
     ],
     "answer": "Secure punctured site firmly with a sterile dry swab and an adhesive tape",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "The nurse is carrying out administration of intrathecal medication. Which action best matches this part of the procedure?",
     "options": [
       "Allow patient to lie flat on the back and make him/her comfortable",
       "Establish rapport (Refer to steps)",
@@ -1305,10 +1305,10 @@ export const rgnBatch06: Procedure[] = [
       "Reassure him/her to gain co-operation"
     ],
     "answer": "Allow patient to lie flat on the back and make him/her comfortable",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "After completing this part of administration of intrathecal medication, what makes the clinical record useful for continuity of care?",
     "options": [
       "Assist patient into a required position i.e. lying or sitting and supports him/her",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -1316,10 +1316,10 @@ export const rgnBatch06: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "After the hands-on part of administration of intrathecal medication, how should used equipment and waste be managed?",
     "options": [
       "Perform hand hygiene",
       "Observe patient continuously for therapeutic and adverse effects",
@@ -1327,10 +1327,10 @@ export const rgnBatch06: Procedure[] = [
       "Secure punctured site firmly with a sterile dry swab and an adhesive tape"
     ],
     "answer": "Dispose off used items and decontaminate trolley",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "Before proceeding with administration of intrathecal medication, what infection-prevention action is required at this point?",
     "options": [
       "Obtain verbal or formal consent from patient and relatives",
       "Secure punctured site firmly with a sterile dry swab and an adhesive tape",
@@ -1338,10 +1338,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "question": "The nurse is carrying out administration of intrathecal medication. Which action best matches this part of the procedure?",
     "options": [
       "Observe patient continuously for therapeutic and adverse effects",
       "Provide adequate lightening at the puncture site",
@@ -1349,7 +1349,7 @@ export const rgnBatch06: Procedure[] = [
       "Continue to support, observe and reassure patient throughout the procedure"
     ],
     "answer": "Observe patient continuously for therapeutic and adverse effects",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -1427,7 +1427,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=ZJGNFg6ccYM",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -1435,10 +1435,10 @@ export const rgnBatch06: Procedure[] = [
       "Apply topical agents evenly on the skin and rub if necessary"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "To complete administration of topical medication safely, which action should the nurse take at this point?",
     "options": [
       "Ensure patient’s right to know/consent and to refuse medication",
       "Establish rapport (Refer to steps)",
@@ -1446,10 +1446,10 @@ export const rgnBatch06: Procedure[] = [
       "Assess the site for application of medication"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "Before carrying out administration of topical medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Dispose off used items and decontaminate tray",
       "Dab skin area with a dry swab to dry and remove flicking skin",
@@ -1457,10 +1457,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Explain procedure",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "Before carrying out administration of topical medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Dab skin area with a dry swab to dry and remove flicking skin",
       "Provide privacy and expose the area",
@@ -1468,10 +1468,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Ensure patient’s right to know/consent and to refuse medication",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "Before proceeding with administration of topical medication, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Establish rapport (Refer to steps)",
@@ -1479,10 +1479,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene and wear gloves"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "To complete administration of topical medication safely, which action should the nurse take at this point?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Prepare tray and send to bedside",
@@ -1490,10 +1490,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Prepare tray and send to bedside",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "A patient is about to undergo administration of topical medication. Which action protects their dignity during preparation?",
     "options": [
       "Remove glove and perform hand hygiene",
       "Cover the bed with mackintosh and dressing towel",
@@ -1501,10 +1501,10 @@ export const rgnBatch06: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Provide privacy and expose the area",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Cover the bed with mackintosh and dressing towel",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -1512,10 +1512,10 @@ export const rgnBatch06: Procedure[] = [
       "Assess the site for application of medication"
     ],
     "answer": "Assess the site for application of medication",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "The nurse is carrying out administration of topical medication. Which action best matches this part of the procedure?",
     "options": [
       "Cover the bed with mackintosh and dressing towel",
       "Report to appropriate officer",
@@ -1523,10 +1523,10 @@ export const rgnBatch06: Procedure[] = [
       "Provide privacy and expose the area"
     ],
     "answer": "Cover the bed with mackintosh and dressing towel",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "Before proceeding with administration of topical medication, what infection-prevention action is required at this point?",
     "options": [
       "Dispose off used items and decontaminate tray",
       "Perform hand hygiene and wear gloves",
@@ -1534,10 +1534,10 @@ export const rgnBatch06: Procedure[] = [
       "Explain procedure"
     ],
     "answer": "Perform hand hygiene and wear gloves",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "When collecting a specimen as part of administration of topical medication, which principle protects the reliability of the result?",
     "options": [
       "Perform hand hygiene and wear gloves",
       "Prepare tray and send to bedside",
@@ -1545,10 +1545,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Dab skin area with a dry swab to dry and remove flicking skin",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of topical medication?",
     "options": [
       "Prepare tray and send to bedside",
       "Establish rapport (Refer to steps)",
@@ -1556,10 +1556,10 @@ export const rgnBatch06: Procedure[] = [
       "Apply topical agents evenly on the skin and rub if necessary"
     ],
     "answer": "Apply topical agents evenly on the skin and rub if necessary",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "Before proceeding with administration of topical medication, what infection-prevention action is required at this point?",
     "options": [
       "Remove glove and perform hand hygiene",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -1567,10 +1567,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Remove glove and perform hand hygiene",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "After completing this part of administration of topical medication, what makes the clinical record useful for continuity of care?",
     "options": [
       "Apply topical agents evenly on the skin and rub if necessary",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -1578,10 +1578,10 @@ export const rgnBatch06: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "After the hands-on part of administration of topical medication, how should used equipment and waste be managed?",
     "options": [
       "Assess the site for application of medication",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -1589,10 +1589,10 @@ export const rgnBatch06: Procedure[] = [
       "Apply topical agents evenly on the skin and rub if necessary"
     ],
     "answer": "Dispose off used items and decontaminate tray",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "Before proceeding with administration of topical medication, what infection-prevention action is required at this point?",
     "options": [
       "Ensure patient’s right to know/consent and to refuse medication",
       "Report to appropriate officer",
@@ -1600,10 +1600,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "question": "The nurse is carrying out administration of topical medication. Which action best matches this part of the procedure?",
     "options": [
       "Report to appropriate officer",
       "Dab skin area with a dry swab to dry and remove flicking skin",
@@ -1611,7 +1611,7 @@ export const rgnBatch06: Procedure[] = [
       "Explain procedure"
     ],
     "answer": "Report to appropriate officer",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -1693,7 +1693,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=mVY3dKcvID4",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of INSTILLATION OF EYE DROPS?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -1701,10 +1701,10 @@ export const rgnBatch06: Procedure[] = [
       "Check medication against the treatment chart (manual or electronic) for the right dosage"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of INSTILLATION OF EYE DROPS?",
+    "question": "To complete instillation of eye drops safely, which action should the nurse take at this point?",
     "options": [
       "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
       "Establish rapport (Refer to steps)",
@@ -1712,10 +1712,10 @@ export const rgnBatch06: Procedure[] = [
       "Explain procedure (Refer to steps)"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of INSTILLATION OF EYE DROPS?",
+    "question": "Before carrying out instillation of eye drops, what should the nurse do to support informed cooperation?",
     "options": [
       "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment",
       "Report to appropriate officer",
@@ -1723,10 +1723,10 @@ export const rgnBatch06: Procedure[] = [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
     ],
     "answer": "Explain procedure (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of INSTILLATION OF EYE DROPS?",
+    "question": "Before carrying out instillation of eye drops, what should the nurse do to support informed cooperation?",
     "options": [
       "Set tray and send to the bedside",
       "Encourage patient to report any irritation or blurriness of vision",
@@ -1734,10 +1734,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Ensure patient’s right to know/consent and to refuse medication",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of INSTILLATION OF EYE DROPS?",
+    "question": "Before proceeding with instillation of eye drops, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Draw up eye drops",
@@ -1745,10 +1745,10 @@ export const rgnBatch06: Procedure[] = [
       "Wipe off excess medication with cotton wool, moving from inner to outer canthus"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of INSTILLATION OF EYE DROPS?",
+    "question": "To complete instillation of eye drops safely, which action should the nurse take at this point?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Set tray and send to the bedside",
@@ -1756,10 +1756,10 @@ export const rgnBatch06: Procedure[] = [
       "Ask patient to look at the ceiling and retract lower eye lid with your dominant hand"
     ],
     "answer": "Set tray and send to the bedside",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of INSTILLATION OF EYE DROPS?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Remove the gloves and perform hand hygiene",
       "Perform hand hygiene and wear gloves",
@@ -1767,10 +1767,10 @@ export const rgnBatch06: Procedure[] = [
       "Set tray and send to the bedside"
     ],
     "answer": "Check medication against the treatment chart (manual or electronic) for the right dosage",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 8 of INSTILLATION OF EYE DROPS?",
+    "question": "When positioning the patient for instillation of eye drops, what should guide the nurse's choice of position?",
     "options": [
       "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -1778,10 +1778,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended"
     ],
     "answer": "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 9 of INSTILLATION OF EYE DROPS?",
+    "question": "Before proceeding with instillation of eye drops, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene and wear gloves",
       "Report to appropriate officer",
@@ -1789,10 +1789,10 @@ export const rgnBatch06: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Perform hand hygiene and wear gloves",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 10 of INSTILLATION OF EYE DROPS?",
+    "question": "When collecting a specimen as part of instillation of eye drops, which principle protects the reliability of the result?",
     "options": [
       "Perform hand hygiene and wear gloves",
       "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment",
@@ -1800,10 +1800,10 @@ export const rgnBatch06: Procedure[] = [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
     ],
     "answer": "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 11 of INSTILLATION OF EYE DROPS?",
+    "question": "Which step should be performed now during instillation of eye drops?",
     "options": [
       "Perform hand hygiene",
       "Encourage patient to report any irritation or blurriness of vision",
@@ -1811,10 +1811,10 @@ export const rgnBatch06: Procedure[] = [
       "Wipe off excess medication with cotton wool, moving from inner to outer canthus"
     ],
     "answer": "Ask patient to look at the ceiling and retract lower eye lid with your dominant hand",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of INSTILLATION OF EYE DROPS?",
+    "question": "When collecting a specimen as part of instillation of eye drops, which principle protects the reliability of the result?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Draw up eye drops",
@@ -1822,10 +1822,10 @@ export const rgnBatch06: Procedure[] = [
       "Place a wool swab on the lower lid against the lid margin"
     ],
     "answer": "Place a wool swab on the lower lid against the lid margin",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 13 of INSTILLATION OF EYE DROPS?",
+    "question": "The nurse is carrying out instillation of eye drops. Which action best matches this part of the procedure?",
     "options": [
       "Draw up eye drops",
       "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended",
@@ -1833,10 +1833,10 @@ export const rgnBatch06: Procedure[] = [
       "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment"
     ],
     "answer": "Draw up eye drops",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of INSTILLATION OF EYE DROPS?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Remove the gloves and perform hand hygiene",
       "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
@@ -1844,10 +1844,10 @@ export const rgnBatch06: Procedure[] = [
       "Set tray and send to the bedside"
     ],
     "answer": "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 15 of INSTILLATION OF EYE DROPS?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Draw up eye drops",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -1855,10 +1855,10 @@ export const rgnBatch06: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Wipe off excess medication with cotton wool, moving from inner to outer canthus",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 16 of INSTILLATION OF EYE DROPS?",
+    "question": "Which nursing action is required at this stage of instillation of eye drops?",
     "options": [
       "Perform hand hygiene and wear gloves",
       "Report to appropriate officer",
@@ -1866,10 +1866,10 @@ export const rgnBatch06: Procedure[] = [
       "Ask patient to keep the eye closed for one (1) to two (2) minutes"
     ],
     "answer": "Ask patient to keep the eye closed for one (1) to two (2) minutes",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of INSTILLATION OF EYE DROPS?",
+    "question": "The nurse is carrying out instillation of eye drops. Which action best matches this part of the procedure?",
     "options": [
       "Encourage patient to report any irritation or blurriness of vision",
       "Ask patient to keep the eye closed for one (1) to two (2) minutes",
@@ -1877,10 +1877,10 @@ export const rgnBatch06: Procedure[] = [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
     ],
     "answer": "Encourage patient to report any irritation or blurriness of vision",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of INSTILLATION OF EYE DROPS?",
+    "question": "Before proceeding with instillation of eye drops, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Remove the gloves and perform hand hygiene",
@@ -1888,10 +1888,10 @@ export const rgnBatch06: Procedure[] = [
       "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid"
     ],
     "answer": "Remove the gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 19 of INSTILLATION OF EYE DROPS?",
+    "question": "After completing this part of instillation of eye drops, what makes the clinical record useful for continuity of care?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Place a wool swab on the lower lid against the lid margin",
@@ -1899,10 +1899,10 @@ export const rgnBatch06: Procedure[] = [
       "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 20 of INSTILLATION OF EYE DROPS?",
+    "question": "After the hands-on part of instillation of eye drops, how should used equipment and waste be managed?",
     "options": [
       "Encourage patient to report any irritation or blurriness of vision",
       "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended",
@@ -1910,10 +1910,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Dispose off used items and decontaminate tray",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 21 of INSTILLATION OF EYE DROPS?",
+    "question": "Before proceeding with instillation of eye drops, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -1921,10 +1921,10 @@ export const rgnBatch06: Procedure[] = [
       "Check medication against the treatment chart (manual or electronic) for the right dosage"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 22 of INSTILLATION OF EYE DROPS?",
+    "question": "To complete instillation of eye drops safely, which action should the nurse take at this point?",
     "options": [
       "Draw up eye drops",
       "Report to appropriate officer",
@@ -1932,7 +1932,7 @@ export const rgnBatch06: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Report to appropriate officer",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -2022,7 +2022,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=hLDyZ4QW9Fo",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -2030,10 +2030,10 @@ export const rgnBatch06: Procedure[] = [
       "Send tray to bedside"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "To complete administration of rectal medication safely, which action should the nurse take at this point?",
     "options": [
       "Remove gloves and perform hand hygiene",
       "Establish rapport (Refer to steps)",
@@ -2041,10 +2041,10 @@ export const rgnBatch06: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Before carrying out administration of rectal medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Protect bed with mackintosh and dressing towel at the buttocks",
       "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
@@ -2052,10 +2052,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Explain procedure",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Before carrying out administration of rectal medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Perform hand hygiene",
       "Encourage the patient to relax by breathing through the mouth",
@@ -2063,10 +2063,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Ensure patient’s right to know/consent and to refuse medication",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Before proceeding with administration of rectal medication, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Clean anal area with wipes/soap, water and dry",
@@ -2074,10 +2074,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove gloves and perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "To complete administration of rectal medication safely, which action should the nurse take at this point?",
     "options": [
       "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
       "Send tray to bedside",
@@ -2085,10 +2085,10 @@ export const rgnBatch06: Procedure[] = [
       "Protect bed with mackintosh and dressing towel at the buttocks"
     ],
     "answer": "Send tray to bedside",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "A patient is about to undergo administration of rectal medication. Which action protects their dignity during preparation?",
     "options": [
       "Encourage the patient to relax by breathing through the mouth",
       "Perform hand hygiene",
@@ -2096,10 +2096,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Provide privacy",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "When positioning the patient for administration of rectal medication, what should guide the nurse's choice of position?",
     "options": [
       "Clean anal area with wipes/soap, water and dry",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -2107,10 +2107,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed"
     ],
     "answer": "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "The nurse is carrying out administration of rectal medication. Which action best matches this part of the procedure?",
     "options": [
       "Protect bed with mackintosh and dressing towel at the buttocks",
       "Dispose off used items and decontaminate tray",
@@ -2118,10 +2118,10 @@ export const rgnBatch06: Procedure[] = [
       "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)"
     ],
     "answer": "Protect bed with mackintosh and dressing towel at the buttocks",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "To complete administration of rectal medication safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Fold back the top bedclothes to expose the buttocks",
@@ -2129,10 +2129,10 @@ export const rgnBatch06: Procedure[] = [
       "Encourage the patient to relax by breathing through the mouth"
     ],
     "answer": "Fold back the top bedclothes to expose the buttocks",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Before proceeding with administration of rectal medication, what infection-prevention action is required at this point?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Remove gloves and perform hand hygiene",
@@ -2140,10 +2140,10 @@ export const rgnBatch06: Procedure[] = [
       "Clean anal area with wipes/soap, water and dry"
     ],
     "answer": "Perform hand hygiene and wear gloves",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of rectal medication?",
     "options": [
       "Dispose off used items and decontaminate tray",
       "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
@@ -2151,10 +2151,10 @@ export const rgnBatch06: Procedure[] = [
       "Clean anal area with wipes/soap, water and dry"
     ],
     "answer": "Clean anal area with wipes/soap, water and dry",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Before proceeding with administration of rectal medication, what infection-prevention action is required at this point?",
     "options": [
       "Remove gloves and perform hand hygiene",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -2162,10 +2162,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Remove gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Clean anal area with wipes/soap, water and dry",
       "Remove medication, checks label and compares with patient’s treatment chart (manual or electronic)",
@@ -2173,10 +2173,10 @@ export const rgnBatch06: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Remove medication, checks label and compares with patient’s treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Which step should be performed now during administration of rectal medication?",
     "options": [
       "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
       "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
@@ -2184,10 +2184,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Wear gloves, unwraps the suppository",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of rectal medication?",
     "options": [
       "Ensure patient’s right to know/consent and to refuse medication",
       "Wear gloves, unwraps the suppository",
@@ -2195,10 +2195,10 @@ export const rgnBatch06: Procedure[] = [
       "Encourage the patient to relax by breathing through the mouth"
     ],
     "answer": "Encourage the patient to relax by breathing through the mouth",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "The nurse is carrying out administration of rectal medication. Which action best matches this part of the procedure?",
     "options": [
       "Insert the suppository gently into the rectum using the gloved index finger and press the patient’s buttocks together for few minutes",
       "Perform hand hygiene and wear gloves",
@@ -2206,10 +2206,10 @@ export const rgnBatch06: Procedure[] = [
       "Clean anal area with wipes/soap, water and dry"
     ],
     "answer": "Insert the suppository gently into the rectum using the gloved index finger and press the patient’s buttocks together for few minutes",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "When positioning the patient for administration of rectal medication, what should guide the nurse's choice of position?",
     "options": [
       "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
       "Ask the patient to squeeze the buttock together and remain in the left lateral or supine position for at least ten (10) – fifteen (15) minutes",
@@ -2217,10 +2217,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed"
     ],
     "answer": "Ask the patient to squeeze the buttock together and remain in the left lateral or supine position for at least ten (10) – fifteen (15) minutes",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "Before proceeding with administration of rectal medication, what infection-prevention action is required at this point?",
     "options": [
       "Encourage the patient to relax by breathing through the mouth",
       "Perform hand hygiene",
@@ -2228,10 +2228,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Remove gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "After the hands-on part of administration of rectal medication, how should used equipment and waste be managed?",
     "options": [
       "Perform hand hygiene and wear gloves",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -2239,10 +2239,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Dispose off used items and decontaminate tray",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "After completing this part of administration of rectal medication, what makes the clinical record useful for continuity of care?",
     "options": [
       "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
       "Ask the patient to squeeze the buttock together and remain in the left lateral or supine position for at least ten (10) – fifteen (15) minutes",
@@ -2250,10 +2250,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "To complete administration of rectal medication safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Assess patient after thirty (30) minutes for therapeutic effects",
@@ -2261,10 +2261,10 @@ export const rgnBatch06: Procedure[] = [
       "Wear gloves, unwraps the suppository"
     ],
     "answer": "Assess patient after thirty (30) minutes for therapeutic effects",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 23 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "question": "When positioning the patient for administration of rectal medication, what should guide the nurse's choice of position?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Clean anal area with wipes/soap, water and dry",
@@ -2272,7 +2272,7 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene and wear gloves"
     ],
     "answer": "Assist patient into a desirable position",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   }
 ],
   },
@@ -2353,7 +2353,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=3fxgxiJQIa0",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of INSTILLATION OF EAR DROPS?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -2361,10 +2361,10 @@ export const rgnBatch06: Procedure[] = [
       "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of INSTILLATION OF EAR DROPS?",
+    "question": "To complete instillation of ear drops safely, which action should the nurse take at this point?",
     "options": [
       "Dispose off used items and decontaminate tray",
       "Establish rapport (Refer to steps)",
@@ -2372,10 +2372,10 @@ export const rgnBatch06: Procedure[] = [
       "Set tray and send to the bedside"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of INSTILLATION OF EAR DROPS?",
+    "question": "Before carrying out instillation of ear drops, what should the nurse do to support informed cooperation?",
     "options": [
       "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops",
       "Check medication against the treatment chart (manual or electronic) for the right dosage",
@@ -2383,10 +2383,10 @@ export const rgnBatch06: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of INSTILLATION OF EAR DROPS?",
+    "question": "Before carrying out instillation of ear drops, what should the nurse do to support informed cooperation?",
     "options": [
       "Position patient in sitting up or lying down with the affected ear up",
       "Establish rapport (Refer to steps)",
@@ -2394,10 +2394,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Ensure patient’s right to know/consent and to refuse medication",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of INSTILLATION OF EAR DROPS?",
+    "question": "Before proceeding with instillation of ear drops, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Remain with patient for five (5) minutes if a child",
@@ -2405,10 +2405,10 @@ export const rgnBatch06: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of INSTILLATION OF EAR DROPS?",
+    "question": "To complete instillation of ear drops safely, which action should the nurse take at this point?",
     "options": [
       "Clean external auditory canal with sterile swab stick if there is a discharge",
       "Set tray and send to the bedside",
@@ -2416,10 +2416,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Set tray and send to the bedside",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of INSTILLATION OF EAR DROPS?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Set tray and send to the bedside",
       "Report to appropriate officer",
@@ -2427,10 +2427,10 @@ export const rgnBatch06: Procedure[] = [
       "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops"
     ],
     "answer": "Check medication against the treatment chart (manual or electronic) for the right dosage",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 8 of INSTILLATION OF EAR DROPS?",
+    "question": "Which nursing action is required at this stage of instillation of ear drops?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -2438,10 +2438,10 @@ export const rgnBatch06: Procedure[] = [
       "Confirm the ear for their instillation by first inspecting unaffected ear then the affected ear"
     ],
     "answer": "Confirm the ear for their instillation by first inspecting unaffected ear then the affected ear",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of INSTILLATION OF EAR DROPS?",
+    "question": "When positioning the patient for instillation of ear drops, what should guide the nurse's choice of position?",
     "options": [
       "Position patient in sitting up or lying down with the affected ear up",
       "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
@@ -2449,10 +2449,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist patient into a desirable position"
     ],
     "answer": "Position patient in sitting up or lying down with the affected ear up",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 10 of INSTILLATION OF EAR DROPS?",
+    "question": "To complete instillation of ear drops safely, which action should the nurse take at this point?",
     "options": [
       "Ensure patient’s right to know/consent and to refuse medication",
       "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
@@ -2460,10 +2460,10 @@ export const rgnBatch06: Procedure[] = [
       "Clean external auditory canal with sterile swab stick if there is a discharge"
     ],
     "answer": "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of INSTILLATION OF EAR DROPS?",
+    "question": "When collecting a specimen as part of instillation of ear drops, which principle protects the reliability of the result?",
     "options": [
       "Report to appropriate officer",
       "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary",
@@ -2471,10 +2471,10 @@ export const rgnBatch06: Procedure[] = [
       "Set tray and send to the bedside"
     ],
     "answer": "Clean external auditory canal with sterile swab stick if there is a discharge",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 12 of INSTILLATION OF EAR DROPS?",
+    "question": "Which nursing action is required at this stage of instillation of ear drops?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Check medication against the treatment chart (manual or electronic) for the right dosage",
@@ -2482,10 +2482,10 @@ export const rgnBatch06: Procedure[] = [
       "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary"
     ],
     "answer": "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of INSTILLATION OF EAR DROPS?",
+    "question": "The nurse is carrying out instillation of ear drops. Which action best matches this part of the procedure?",
     "options": [
       "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops",
       "Explain procedure to patient (Refer to steps)",
@@ -2493,10 +2493,10 @@ export const rgnBatch06: Procedure[] = [
       "Confirm the ear for their instillation by first inspecting unaffected ear then the affected ear"
     ],
     "answer": "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of INSTILLATION OF EAR DROPS?",
+    "question": "After completing this part of instillation of ear drops, what makes the clinical record useful for continuity of care?",
     "options": [
       "Remain with patient for five (5) minutes if a child",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -2504,10 +2504,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 15 of INSTILLATION OF EAR DROPS?",
+    "question": "When positioning the patient for instillation of ear drops, what should guide the nurse's choice of position?",
     "options": [
       "Clean external auditory canal with sterile swab stick if there is a discharge",
       "Perform hand hygiene",
@@ -2515,10 +2515,10 @@ export const rgnBatch06: Procedure[] = [
       "Report to appropriate officer"
     ],
     "answer": "Assist patient into a desirable position",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 16 of INSTILLATION OF EAR DROPS?",
+    "question": "Which nursing action is required at this stage of instillation of ear drops?",
     "options": [
       "Check medication against the treatment chart (manual or electronic) for the right dosage",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -2526,10 +2526,10 @@ export const rgnBatch06: Procedure[] = [
       "Remain with patient for five (5) minutes if a child"
     ],
     "answer": "Remain with patient for five (5) minutes if a child",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of INSTILLATION OF EAR DROPS?",
+    "question": "After the hands-on part of instillation of ear drops, how should used equipment and waste be managed?",
     "options": [
       "Dispose off used items and decontaminate tray",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -2537,10 +2537,10 @@ export const rgnBatch06: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Dispose off used items and decontaminate tray",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 18 of INSTILLATION OF EAR DROPS?",
+    "question": "Before proceeding with instillation of ear drops, what infection-prevention action is required at this point?",
     "options": [
       "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
       "Perform hand hygiene",
@@ -2548,10 +2548,10 @@ export const rgnBatch06: Procedure[] = [
       "Remain with patient for five (5) minutes if a child"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 19 of INSTILLATION OF EAR DROPS?",
+    "question": "Which step should be performed now during instillation of ear drops?",
     "options": [
       "Perform hand hygiene",
       "Remain with patient for five (5) minutes if a child",
@@ -2559,7 +2559,7 @@ export const rgnBatch06: Procedure[] = [
       "Clean external auditory canal with sterile swab stick if there is a discharge"
     ],
     "answer": "Report to appropriate officer",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -2650,7 +2650,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=8Ci0rv5dLR4",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -2658,10 +2658,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "To complete administration of vaginal medication safely, which action should the nurse take at this point?",
     "options": [
       "Fold back the top bedclothes to expose the perineal area",
       "Establish rapport (Refer to steps)",
@@ -2669,10 +2669,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate applicator and tray"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Before carrying out administration of vaginal medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Encourage patient to void",
       "Expose the vaginal orifice with your non-dominant hand",
@@ -2680,10 +2680,10 @@ export const rgnBatch06: Procedure[] = [
       "Insert the applicator gently into the posterior wall of the vagina"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Before carrying out administration of vaginal medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Remove gloves and perform hand hygiene",
@@ -2691,10 +2691,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Ensure patient’s right to know/consent and to refuse medication",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Before proceeding with administration of vaginal medication, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Protect bed with mackintosh and dressing towel at the buttocks",
@@ -2702,10 +2702,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist patient into lithotomy position with the upper leg flexed"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "To complete administration of vaginal medication safely, which action should the nurse take at this point?",
     "options": [
       "Remove the medication and attach to the applicator as per manufacturer’s instructions",
       "Send tray to bedside",
@@ -2713,10 +2713,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Send tray to bedside",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Which step should be performed now during administration of vaginal medication?",
     "options": [
       "Perform hand hygiene and wear gloves",
       "Dispose off used items and decontaminate applicator and tray",
@@ -2724,10 +2724,10 @@ export const rgnBatch06: Procedure[] = [
       "Document procedure on treatment chart (manual or electronic) and nurses notes"
     ],
     "answer": "Encourage patient to void",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "A patient is about to undergo administration of vaginal medication. Which action protects their dignity during preparation?",
     "options": [
       "Encourage patient to void",
       "Insert the applicator gently into the posterior wall of the vagina",
@@ -2735,10 +2735,10 @@ export const rgnBatch06: Procedure[] = [
       "Provide privacy"
     ],
     "answer": "Provide privacy",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "When positioning the patient for administration of vaginal medication, what should guide the nurse's choice of position?",
     "options": [
       "Assist patient into lithotomy position with the upper leg flexed",
       "Wear gloves and unwrap the medication",
@@ -2746,10 +2746,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove gloves and perform hand hygiene"
     ],
     "answer": "Assist patient into lithotomy position with the upper leg flexed",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "To complete administration of vaginal medication safely, which action should the nurse take at this point?",
     "options": [
       "Remove the applicator and place in a receiver",
       "Protect bed with mackintosh and dressing towel at the buttocks",
@@ -2757,10 +2757,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist patient into lithotomy position with the upper leg flexed"
     ],
     "answer": "Protect bed with mackintosh and dressing towel at the buttocks",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Which step should be performed now during administration of vaginal medication?",
     "options": [
       "Encourage the patient to relax by breathing through the mouth",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -2768,10 +2768,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Fold back the top bedclothes to expose the perineal area",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Before proceeding with administration of vaginal medication, what infection-prevention action is required at this point?",
     "options": [
       "Assess and clean the perineal area with wipes",
       "Document procedure on treatment chart (manual or electronic) and nurses notes",
@@ -2779,10 +2779,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene and wear gloves"
     ],
     "answer": "Perform hand hygiene and wear gloves",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "The nurse is carrying out administration of vaginal medication. Which action best matches this part of the procedure?",
     "options": [
       "Assess and clean the perineal area with wipes",
       "Slowly push the plunger until the applicator is empty",
@@ -2790,10 +2790,10 @@ export const rgnBatch06: Procedure[] = [
       "Insert the applicator gently into the posterior wall of the vagina"
     ],
     "answer": "Assess and clean the perineal area with wipes",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Before proceeding with administration of vaginal medication, what infection-prevention action is required at this point?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Remove gloves and perform hand hygiene",
@@ -2801,10 +2801,10 @@ export const rgnBatch06: Procedure[] = [
       "Wear gloves and unwrap the medication"
     ],
     "answer": "Remove gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
       "Assist patient into lithotomy position with the upper leg flexed",
@@ -2812,10 +2812,10 @@ export const rgnBatch06: Procedure[] = [
       "Protect bed with mackintosh and dressing towel at the buttocks"
     ],
     "answer": "Wear gloves and unwrap the medication",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Expose the vaginal orifice with your non-dominant hand",
       "Perform hand hygiene",
@@ -2823,10 +2823,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove the medication and attach to the applicator as per manufacturer’s instructions"
     ],
     "answer": "Remove the medication and attach to the applicator as per manufacturer’s instructions",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "The nurse is carrying out administration of vaginal medication. Which action best matches this part of the procedure?",
     "options": [
       "Encourage the patient to relax by breathing through the mouth",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -2834,10 +2834,10 @@ export const rgnBatch06: Procedure[] = [
       "Document procedure on treatment chart (manual or electronic) and nurses notes"
     ],
     "answer": "Encourage the patient to relax by breathing through the mouth",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "To complete administration of vaginal medication safely, which action should the nurse take at this point?",
     "options": [
       "Encourage patient to void",
       "Expose the vaginal orifice with your non-dominant hand",
@@ -2845,10 +2845,10 @@ export const rgnBatch06: Procedure[] = [
       "Slowly push the plunger until the applicator is empty"
     ],
     "answer": "Expose the vaginal orifice with your non-dominant hand",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Which step should be performed now during administration of vaginal medication?",
     "options": [
       "Explain procedure to patient (Refer to steps)",
       "Remove gloves and perform hand hygiene",
@@ -2856,10 +2856,10 @@ export const rgnBatch06: Procedure[] = [
       "Wear gloves and unwrap the medication"
     ],
     "answer": "Insert the applicator gently into the posterior wall of the vagina",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of vaginal medication?",
     "options": [
       "Dispose off used items and decontaminate applicator and tray",
       "Protect bed with mackintosh and dressing towel at the buttocks",
@@ -2867,10 +2867,10 @@ export const rgnBatch06: Procedure[] = [
       "Slowly push the plunger until the applicator is empty"
     ],
     "answer": "Slowly push the plunger until the applicator is empty",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "The nurse is carrying out administration of vaginal medication. Which action best matches this part of the procedure?",
     "options": [
       "Remove the applicator and place in a receiver",
       "Send tray to bedside",
@@ -2878,10 +2878,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Remove the applicator and place in a receiver",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "When positioning the patient for administration of vaginal medication, what should guide the nurse's choice of position?",
     "options": [
       "Perform hand hygiene and wear gloves",
       "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
@@ -2889,10 +2889,10 @@ export const rgnBatch06: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 23 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "Before proceeding with administration of vaginal medication, what infection-prevention action is required at this point?",
     "options": [
       "Provide privacy",
       "Slowly push the plunger until the applicator is empty",
@@ -2900,10 +2900,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove the applicator and place in a receiver"
     ],
     "answer": "Remove gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 24 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "After the hands-on part of administration of vaginal medication, how should used equipment and waste be managed?",
     "options": [
       "Ensure patient’s right to know/consent and to refuse medication",
       "Wear gloves and unwrap the medication",
@@ -2911,10 +2911,10 @@ export const rgnBatch06: Procedure[] = [
       "Dispose off used items and decontaminate applicator and tray"
     ],
     "answer": "Dispose off used items and decontaminate applicator and tray",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 25 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "question": "After completing this part of administration of vaginal medication, what makes the clinical record useful for continuity of care?",
     "options": [
       "Document procedure on treatment chart (manual or electronic) and nurses notes",
       "Fold back the top bedclothes to expose the perineal area",
@@ -2922,7 +2922,7 @@ export const rgnBatch06: Procedure[] = [
       "Protect bed with mackintosh and dressing towel at the buttocks"
     ],
     "answer": "Document procedure on treatment chart (manual or electronic) and nurses notes",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
   },
@@ -3015,7 +3015,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=CLVyxRY8lZU",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "The nurse is carrying out collection of blood specimens. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Provide privacy",
@@ -3023,10 +3023,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist patient into a desirable position"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "Before carrying out collection of blood specimens, what should the nurse do to support informed cooperation?",
     "options": [
       "Apply tourniquet to locate a prominent vein",
       "Explain procedure to the patient (Refer to steps)",
@@ -3034,10 +3034,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Explain procedure to the patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "Before proceeding with collection of blood specimens, what infection-prevention action is required at this point?",
     "options": [
       "Ensure all needles are disposed off in the sharps container",
       "Ensure specimen container is well labelled",
@@ -3045,10 +3045,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 4 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "Which nursing action is required at this stage of collection of blood specimens?",
     "options": [
       "Protect the bed with a mackintosh and a dressing towel",
       "Withdraw the required amount of blood",
@@ -3056,10 +3056,10 @@ export const rgnBatch06: Procedure[] = [
       "Take tray and send to the bedside"
     ],
     "answer": "Take tray and send to the bedside",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "A patient is about to undergo collection of blood specimens. Which action protects their dignity during preparation?",
     "options": [
       "Provide privacy",
       "Choose a site preferably on the forearm",
@@ -3067,10 +3067,10 @@ export const rgnBatch06: Procedure[] = [
       "Clean the site with antimicrobial solution"
     ],
     "answer": "Provide privacy",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 6 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "To complete collection of blood specimens safely, which action should the nurse take at this point?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Protect the bed with a mackintosh and a dressing towel",
@@ -3078,10 +3078,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure labelled specimen with signed laboratory forms are sent to the laboratory"
     ],
     "answer": "Protect the bed with a mackintosh and a dressing towel",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "When positioning the patient for collection of blood specimens, what should guide the nurse's choice of position?",
     "options": [
       "Release the tourniquet",
       "Dispose off used items and decontaminate the tray",
@@ -3089,10 +3089,10 @@ export const rgnBatch06: Procedure[] = [
       "Protect the bed with a mackintosh and a dressing towel"
     ],
     "answer": "Assist patient into a desirable position",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 8 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "When collecting a specimen as part of collection of blood specimens, which principle protects the reliability of the result?",
     "options": [
       "Apply tourniquet to locate a prominent vein",
       "Take tray and send to the bedside",
@@ -3100,10 +3100,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist the doctor or laboratory technician to take the sample"
     ],
     "answer": "Assist the doctor or laboratory technician to take the sample",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 9 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "After the hands-on part of collection of blood specimens, how should used equipment and waste be managed?",
     "options": [
       "Dispose off used items and decontaminate the tray",
       "Ensure specimen container is well labelled",
@@ -3111,10 +3111,10 @@ export const rgnBatch06: Procedure[] = [
       "Explain procedure to the patient (Refer to steps)"
     ],
     "answer": "Dispose off used items and decontaminate the tray",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 10 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "After the hands-on part of collection of blood specimens, how should used equipment and waste be managed?",
     "options": [
       "Dispose off used items and decontaminate the tray",
       "Ensure all needles are disposed off in the sharps container",
@@ -3122,10 +3122,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip"
     ],
     "answer": "Ensure all needles are disposed off in the sharps container",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 11 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "When collecting a specimen as part of collection of blood specimens, which principle protects the reliability of the result?",
     "options": [
       "Provide privacy",
       "Withdraw the required amount of blood",
@@ -3133,21 +3133,21 @@ export const rgnBatch06: Procedure[] = [
       "Clean the site with antimicrobial solution"
     ],
     "answer": "Ensure labelled specimen with signed laboratory forms are sent to the laboratory",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 12 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "When collecting a specimen as part of collection of blood specimens, which principle protects the reliability of the result?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Choose a site preferably on the forearm",
       "Perform hand hygiene",
       "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7"
     ],
-    "answer": "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "answer": "\\\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 13 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "The nurse is carrying out collection of blood specimens. Which action best matches this part of the procedure?",
     "options": [
       "Choose a site preferably on the forearm",
       "Assist the doctor or laboratory technician to take the sample",
@@ -3155,10 +3155,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure all needles are disposed off in the sharps container"
     ],
     "answer": "Choose a site preferably on the forearm",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "To complete collection of blood specimens safely, which action should the nurse take at this point?",
     "options": [
       "Release the tourniquet",
       "Apply tourniquet to locate a prominent vein",
@@ -3166,10 +3166,10 @@ export const rgnBatch06: Procedure[] = [
       "Protect the bed with a mackintosh and a dressing towel"
     ],
     "answer": "Apply tourniquet to locate a prominent vein",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "Which step should be performed now during collection of blood specimens?",
     "options": [
       "Choose a site preferably on the forearm",
       "Take tray and send to the bedside",
@@ -3177,10 +3177,10 @@ export const rgnBatch06: Procedure[] = [
       "Explain procedure to the patient (Refer to steps)"
     ],
     "answer": "Clean the site with antimicrobial solution",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "Which nursing action is required at this stage of collection of blood specimens?",
     "options": [
       "Dispose off used items and decontaminate the tray",
       "Ensure specimen container is well labelled",
@@ -3188,10 +3188,10 @@ export const rgnBatch06: Procedure[] = [
       "Insert the needle gently with syringe attached into the vein at an angle of 45"
     ],
     "answer": "Insert the needle gently with syringe attached into the vein at an angle of 45",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "The nurse is carrying out collection of blood specimens. Which action best matches this part of the procedure?",
     "options": [
       "Withdraw the required amount of blood",
       "Insert the needle gently with syringe attached into the vein at an angle of 45",
@@ -3199,10 +3199,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip"
     ],
     "answer": "Withdraw the required amount of blood",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "To complete collection of blood specimens safely, which action should the nurse take at this point?",
     "options": [
       "Provide privacy",
       "Release the tourniquet",
@@ -3210,10 +3210,10 @@ export const rgnBatch06: Procedure[] = [
       "Apply tourniquet to locate a prominent vein"
     ],
     "answer": "Release the tourniquet",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "When collecting a specimen as part of collection of blood specimens, which principle protects the reliability of the result?",
     "options": [
       "Establish rapport (Refer to steps)",
       "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
@@ -3221,10 +3221,10 @@ export const rgnBatch06: Procedure[] = [
       "Ensure all needles are disposed off in the sharps container"
     ],
     "answer": "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 20 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "When collecting a specimen as part of collection of blood specimens, which principle protects the reliability of the result?",
     "options": [
       "Withdraw the required amount of blood",
       "Assist the doctor or laboratory technician to take the sample",
@@ -3232,10 +3232,10 @@ export const rgnBatch06: Procedure[] = [
       "Disconnect needle from syringe, poor blood into specimen bottle"
     ],
     "answer": "Disconnect needle from syringe, poor blood into specimen bottle",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 21 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "When collecting a specimen as part of collection of blood specimens, which principle protects the reliability of the result?",
     "options": [
       "Ensure specimen container is well labelled",
       "Take tray and send to the bedside",
@@ -3243,10 +3243,10 @@ export const rgnBatch06: Procedure[] = [
       "Protect the bed with a mackintosh and a dressing towel"
     ],
     "answer": "Ensure specimen container is well labelled",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 22 of COLLECTION OF BLOOD SPECIMENS?",
+    "question": "Before proceeding with collection of blood specimens, what infection-prevention action is required at this point?",
     "options": [
       "Apply tourniquet to locate a prominent vein",
       "Perform hand hygiene",
@@ -3254,7 +3254,7 @@ export const rgnBatch06: Procedure[] = [
       "Explain procedure to the patient (Refer to steps)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   }
 ],
   },
@@ -3334,7 +3334,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=oFChXnQqZek",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "When collecting a specimen as part of collecting a single voided specimen, which principle protects the reliability of the result?",
     "options": [
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
@@ -3342,10 +3342,10 @@ export const rgnBatch06: Procedure[] = [
       "Document the procedure in the designated place"
     ],
     "answer": "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 2 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "To complete collecting a single voided specimen safely, which action should the nurse take at this point?",
     "options": [
       "Assist the patient/client to void into a clean bedpan/urinal",
       "Establish rapport with patient (Refer to steps)",
@@ -3353,10 +3353,10 @@ export const rgnBatch06: Procedure[] = [
       "Discard the excess urine"
     ],
     "answer": "Establish rapport with patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "Before carrying out collecting a single voided specimen, what should the nurse do to support informed cooperation?",
     "options": [
       "Assemble requirements",
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
@@ -3364,10 +3364,10 @@ export const rgnBatch06: Procedure[] = [
       "Protect the bed with mackintosh and a dressing towel"
     ],
     "answer": "Explain the procedure (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "Which nursing action is required at this stage of collecting a single voided specimen?",
     "options": [
       "Send the specimen bottle or container to the laboratory immediately with the specimen form",
       "Dispose off used items",
@@ -3375,10 +3375,10 @@ export const rgnBatch06: Procedure[] = [
       "Assemble requirements"
     ],
     "answer": "Assemble requirements",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "The nurse is carrying out collecting a single voided specimen. Which action best matches this part of the procedure?",
     "options": [
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
       "Perform hand hygiene and put on gloves",
@@ -3386,10 +3386,10 @@ export const rgnBatch06: Procedure[] = [
       "Establish rapport with patient (Refer to steps)"
     ],
     "answer": "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "To complete collecting a single voided specimen safely, which action should the nurse take at this point?",
     "options": [
       "Discard the excess urine",
       "Protect the bed with mackintosh and a dressing towel",
@@ -3397,10 +3397,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove gloves and perform hand hygiene."
     ],
     "answer": "Protect the bed with mackintosh and a dressing towel",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "Before proceeding with collecting a single voided specimen, what infection-prevention action is required at this point?",
     "options": [
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
       "Explain the procedure (Refer to steps)",
@@ -3408,10 +3408,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist the patient/client to void into a clean bedpan/urinal"
     ],
     "answer": "Perform hand hygiene and put on gloves",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 8 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "Which nursing action is required at this stage of collecting a single voided specimen?",
     "options": [
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
       "Send the specimen bottle or container to the laboratory immediately with the specimen form",
@@ -3419,10 +3419,10 @@ export const rgnBatch06: Procedure[] = [
       "Assist the patient/client to void into a clean bedpan/urinal"
     ],
     "answer": "Assist the patient/client to void into a clean bedpan/urinal",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "When collecting a specimen as part of collecting a single voided specimen, which principle protects the reliability of the result?",
     "options": [
       "Pour about 10-20 mL of urine into the labeled specimen bottle or container and cover the bottle or container",
       "Assist the patient/client to void into a clean bedpan/urinal",
@@ -3430,10 +3430,10 @@ export const rgnBatch06: Procedure[] = [
       "Assemble requirements"
     ],
     "answer": "Pour about 10-20 mL of urine into the labeled specimen bottle or container and cover the bottle or container",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 10 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "When collecting a specimen as part of collecting a single voided specimen, which principle protects the reliability of the result?",
     "options": [
       "Remove gloves and perform hand hygiene.",
       "Discard the excess urine",
@@ -3441,10 +3441,10 @@ export const rgnBatch06: Procedure[] = [
       "Document the procedure in the designated place"
     ],
     "answer": "Discard the excess urine",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 11 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "After the hands-on part of collecting a single voided specimen, how should used equipment and waste be managed?",
     "options": [
       "Perform hand hygiene and put on gloves",
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
@@ -3452,10 +3452,10 @@ export const rgnBatch06: Procedure[] = [
       "Pour about 10-20 mL of urine into the labeled specimen bottle or container and cover the bottle or container"
     ],
     "answer": "Dispose off used items",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 12 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "Before proceeding with collecting a single voided specimen, what infection-prevention action is required at this point?",
     "options": [
       "Explain the procedure (Refer to steps)",
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
@@ -3463,10 +3463,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove gloves and perform hand hygiene."
     ],
     "answer": "Remove gloves and perform hand hygiene.",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 13 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "When collecting a specimen as part of collecting a single voided specimen, which principle protects the reliability of the result?",
     "options": [
       "Send the specimen bottle or container to the laboratory immediately with the specimen form",
       "Discard the excess urine",
@@ -3474,10 +3474,10 @@ export const rgnBatch06: Procedure[] = [
       "Protect the bed with mackintosh and a dressing towel"
     ],
     "answer": "Send the specimen bottle or container to the laboratory immediately with the specimen form",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 14 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "question": "After completing this part of collecting a single voided specimen, what makes the clinical record useful for continuity of care?",
     "options": [
       "Send the specimen bottle or container to the laboratory immediately with the specimen form",
       "Document the procedure in the designated place",
@@ -3485,7 +3485,7 @@ export const rgnBatch06: Procedure[] = [
       "Establish rapport with patient (Refer to steps)"
     ],
     "answer": "Document the procedure in the designated place",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
   },
@@ -3582,7 +3582,7 @@ export const rgnBatch06: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=48M_CwJE7Z0",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When collecting a specimen as part of collecting a urine specimen from a retention catheter, which principle protects the reliability of the result?",
     "options": [
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
@@ -3590,10 +3590,10 @@ export const rgnBatch06: Procedure[] = [
       "Assemble requirements"
     ],
     "answer": "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 2 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "To complete collecting a urine specimen from a retention catheter safely, which action should the nurse take at this point?",
     "options": [
       "Clamp the drainage tubing or bend the tubing",
       "Establish rapport with patient (Refer to steps)",
@@ -3601,10 +3601,10 @@ export const rgnBatch06: Procedure[] = [
       "Send the specimen bottle or container to the laboratory immediately with the specimen form"
     ],
     "answer": "Establish rapport with patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "Before carrying out collecting a urine specimen from a retention catheter, what should the nurse do to support informed cooperation?",
     "options": [
       "Assist patient into a supine position and expose the perineal area",
       "Unclamp the catheter and attach urine bag if necessary",
@@ -3612,10 +3612,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove mackintosh and dressing towel"
     ],
     "answer": "Explain the procedure (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "Which nursing action is required at this stage of collecting a urine specimen from a retention catheter?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Withdraw the urine by:",
@@ -3623,10 +3623,10 @@ export const rgnBatch06: Procedure[] = [
       "Assemble requirements"
     ],
     "answer": "Assemble requirements",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "The nurse is carrying out collecting a urine specimen from a retention catheter. Which action best matches this part of the procedure?",
     "options": [
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
       "Clamp the tubing:",
@@ -3634,10 +3634,10 @@ export const rgnBatch06: Procedure[] = [
       "Disconnect the urine bag if attached"
     ],
     "answer": "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "To complete collecting a urine specimen from a retention catheter safely, which action should the nurse take at this point?",
     "options": [
       "Allowing the urine to flow from the catheter into a clean container",
       "Protect the bed with mackintosh and a dressing towel",
@@ -3645,10 +3645,10 @@ export const rgnBatch06: Procedure[] = [
       "Assemble requirements"
     ],
     "answer": "Protect the bed with mackintosh and a dressing towel",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When positioning the patient for collecting a urine specimen from a retention catheter, what should guide the nurse's choice of position?",
     "options": [
       "Allow adequate time for urine collection",
       "Send the specimen bottle or container to the laboratory immediately with the specimen form",
@@ -3656,10 +3656,10 @@ export const rgnBatch06: Procedure[] = [
       "Document the procedure in the designated place"
     ],
     "answer": "Assist patient into a supine position and expose the perineal area",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 8 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "Before proceeding with collecting a urine specimen from a retention catheter, what infection-prevention action is required at this point?",
     "options": [
       "Assist patient into a supine position and expose the perineal area",
       "Remove mackintosh and dressing towel",
@@ -3667,10 +3667,10 @@ export const rgnBatch06: Procedure[] = [
       "Perform hand hygiene and put on gloves"
     ],
     "answer": "Perform hand hygiene and put on gloves",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 9 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When collecting a specimen as part of collecting a urine specimen from a retention catheter, which principle protects the reliability of the result?",
     "options": [
       "Disconnect the urine bag if attached",
       "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe",
@@ -3678,10 +3678,10 @@ export const rgnBatch06: Procedure[] = [
       "Withdraw the urine by:"
     ],
     "answer": "Disconnect the urine bag if attached",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 10 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "During collecting a urine specimen from a retention catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Reposition patient",
       "Clamp the tubing:",
@@ -3689,10 +3689,10 @@ export const rgnBatch06: Procedure[] = [
       "Disconnect the urine bag if attached"
     ],
     "answer": "Clamp the tubing:",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 11 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "During collecting a urine specimen from a retention catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Transfer the urine to the labeled specimen container",
       "Assemble requirements",
@@ -3700,10 +3700,10 @@ export const rgnBatch06: Procedure[] = [
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name"
     ],
     "answer": "Clamp the drainage tubing or bend the tubing",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 12 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When collecting a specimen as part of collecting a urine specimen from a retention catheter, which principle protects the reliability of the result?",
     "options": [
       "Clean the aspiration port with an antimicrobial solution",
       "Document the procedure in the designated place",
@@ -3711,10 +3711,10 @@ export const rgnBatch06: Procedure[] = [
       "Allow adequate time for urine collection"
     ],
     "answer": "Allow adequate time for urine collection",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 13 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "The nurse is carrying out collecting a urine specimen from a retention catheter. Which action best matches this part of the procedure?",
     "options": [
       "Clean the aspiration port with an antimicrobial solution",
       "Remove gloves and perform hand hygiene",
@@ -3722,10 +3722,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove mackintosh and dressing towel"
     ],
     "answer": "Clean the aspiration port with an antimicrobial solution",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When collecting a specimen as part of collecting a urine specimen from a retention catheter, which principle protects the reliability of the result?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Withdraw the urine by:",
@@ -3733,10 +3733,10 @@ export const rgnBatch06: Procedure[] = [
       "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe"
     ],
     "answer": "Withdraw the urine by:",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 15 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When collecting a specimen as part of collecting a urine specimen from a retention catheter, which principle protects the reliability of the result?",
     "options": [
       "Discard the excess urine, dispose of used items and decontaminate tray",
       "Disconnect the urine bag if attached",
@@ -3744,10 +3744,10 @@ export const rgnBatch06: Procedure[] = [
       "Clamp the tubing:"
     ],
     "answer": "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 16 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "During collecting a urine specimen from a retention catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Unclamp the catheter and attach urine bag if necessary",
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
@@ -3755,10 +3755,10 @@ export const rgnBatch06: Procedure[] = [
       "Allowing the urine to flow from the catheter into a clean container"
     ],
     "answer": "Allowing the urine to flow from the catheter into a clean container",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 17 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When collecting a specimen as part of collecting a urine specimen from a retention catheter, which principle protects the reliability of the result?",
     "options": [
       "Transfer the urine to the labeled specimen container",
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
@@ -3766,10 +3766,10 @@ export const rgnBatch06: Procedure[] = [
       "Document the procedure in the designated place"
     ],
     "answer": "Transfer the urine to the labeled specimen container",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 18 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "During collecting a urine specimen from a retention catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Assist patient into a supine position and expose the perineal area",
       "Unclamp the catheter and attach urine bag if necessary",
@@ -3777,10 +3777,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove gloves and perform hand hygiene"
     ],
     "answer": "Unclamp the catheter and attach urine bag if necessary",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 19 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "Which step should be performed now during collecting a urine specimen from a retention catheter?",
     "options": [
       "Explain the procedure (Refer to steps)",
       "Withdraw the urine by:",
@@ -3788,10 +3788,10 @@ export const rgnBatch06: Procedure[] = [
       "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe"
     ],
     "answer": "Remove mackintosh and dressing towel",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "Before proceeding with collecting a urine specimen from a retention catheter, what infection-prevention action is required at this point?",
     "options": [
       "Send the specimen bottle or container to the laboratory immediately with the specimen form",
       "Clamp the tubing:",
@@ -3799,10 +3799,10 @@ export const rgnBatch06: Procedure[] = [
       "Remove gloves and perform hand hygiene"
     ],
     "answer": "Remove gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 21 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When positioning the patient for collecting a urine specimen from a retention catheter, what should guide the nurse's choice of position?",
     "options": [
       "Reposition patient",
       "Protect the bed with mackintosh and a dressing towel",
@@ -3810,10 +3810,10 @@ export const rgnBatch06: Procedure[] = [
       "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name"
     ],
     "answer": "Reposition patient",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 22 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "After the hands-on part of collecting a urine specimen from a retention catheter, how should used equipment and waste be managed?",
     "options": [
       "Allow adequate time for urine collection",
       "Discard the excess urine, dispose of used items and decontaminate tray",
@@ -3821,10 +3821,10 @@ export const rgnBatch06: Procedure[] = [
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)"
     ],
     "answer": "Discard the excess urine, dispose of used items and decontaminate tray",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 23 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "Before proceeding with collecting a urine specimen from a retention catheter, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene and put on gloves",
       "Remove mackintosh and dressing towel",
@@ -3832,10 +3832,10 @@ export const rgnBatch06: Procedure[] = [
       "Reposition patient"
     ],
     "answer": "Remove gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 24 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "When collecting a specimen as part of collecting a urine specimen from a retention catheter, which principle protects the reliability of the result?",
     "options": [
       "Assemble requirements",
       "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe",
@@ -3843,10 +3843,10 @@ export const rgnBatch06: Procedure[] = [
       "Send the specimen bottle or container to the laboratory immediately with the specimen form"
     ],
     "answer": "Send the specimen bottle or container to the laboratory immediately with the specimen form",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 25 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "question": "After completing this part of collecting a urine specimen from a retention catheter, what makes the clinical record useful for continuity of care?",
     "options": [
       "Document the procedure in the designated place",
       "Clamp the drainage tubing or bend the tubing",
@@ -3854,7 +3854,7 @@ export const rgnBatch06: Procedure[] = [
       "Clamp the tubing:"
     ],
     "answer": "Document the procedure in the designated place",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
   },

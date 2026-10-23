@@ -55,7 +55,7 @@ export const rgnBatch07: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=HjF-9n0FOrw",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "When collecting a specimen as part of collection of 24-hours of urine, which principle protects the reliability of the result?",
     "options": [
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
       "Label the containers or bottles with the following information:",
@@ -63,10 +63,10 @@ export const rgnBatch07: Procedure[] = [
       "Examination required"
     ],
     "answer": "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 2 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "To complete collection of 24-hours of urine safely, which action should the nurse take at this point?",
     "options": [
       "Ask patient to pass urine at time the test ends and add this to collected urine",
       "Establish rapport with patient (Refer to steps)",
@@ -74,10 +74,10 @@ export const rgnBatch07: Procedure[] = [
       "Label the containers or bottles with the following information:"
     ],
     "answer": "Establish rapport with patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "Before carrying out collection of 24-hours of urine, what should the nurse do to support informed cooperation?",
     "options": [
       "Review instructions with patient in the morning of commencement of collection",
       "Label the containers or bottles with the following information:",
@@ -85,10 +85,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispatch specimen with appropriate laboratory form to laboratory"
     ],
     "answer": "Explain the procedure (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "Which nursing action is required at this stage of collection of 24-hours of urine?",
     "options": [
       "Specimen",
       "Dispatch specimen with appropriate laboratory form to laboratory",
@@ -96,10 +96,10 @@ export const rgnBatch07: Procedure[] = [
       "Assemble requirements"
     ],
     "answer": "Assemble requirements",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "The nurse is carrying out collection of 24-hours of urine. Which action best matches this part of the procedure?",
     "options": [
       "Label the containers or bottles with the following information:",
       "Instruct patient to pass all subsequent urine into bedpan/urinal for the next 24 hours. This is poured into the labelled container",
@@ -107,10 +107,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispatch specimen with appropriate laboratory form to laboratory"
     ],
     "answer": "Label the containers or bottles with the following information:",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "To complete collection of 24-hours of urine safely, which action should the nurse take at this point?",
     "options": [
       "Specimen",
       "Name of patient",
@@ -118,10 +118,10 @@ export const rgnBatch07: Procedure[] = [
       "Instruct patient to pass all subsequent urine into bedpan/urinal for the next 24 hours. This is poured into the labelled container"
     ],
     "answer": "Name of patient",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "Which step should be performed now during collection of 24-hours of urine?",
     "options": [
       "Explain the procedure (Refer to steps)",
       "Instruct patient to pass all subsequent urine into bedpan/urinal for the next 24 hours. This is poured into the labelled container",
@@ -129,10 +129,10 @@ export const rgnBatch07: Procedure[] = [
       "Choose a suitable time e.g. 9am to 9am the following day"
     ],
     "answer": "Ward",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "When collecting a specimen as part of collection of 24-hours of urine, which principle protects the reliability of the result?",
     "options": [
       "Perform hand hygiene",
       "Choose a suitable time e.g. 9am to 9am the following day",
@@ -140,10 +140,10 @@ export const rgnBatch07: Procedure[] = [
       "Specimen"
     ],
     "answer": "Specimen",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 9 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "The nurse is carrying out collection of 24-hours of urine. Which action best matches this part of the procedure?",
     "options": [
       "Examination required",
       "Name of patient",
@@ -151,10 +151,10 @@ export const rgnBatch07: Procedure[] = [
       "Choose a suitable time e.g. 9am to 9am the following day"
     ],
     "answer": "Examination required",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "When collecting a specimen as part of collection of 24-hours of urine, which principle protects the reliability of the result?",
     "options": [
       "Perform hand hygiene",
       "Time, date of commencement and completion of collection of specimen",
@@ -162,10 +162,10 @@ export const rgnBatch07: Procedure[] = [
       "Name of patient"
     ],
     "answer": "Time, date of commencement and completion of collection of specimen",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 11 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "Which step should be performed now during collection of 24-hours of urine?",
     "options": [
       "Ask patient to pass urine at the time collection begins and discard it",
       "Name of patient",
@@ -173,10 +173,10 @@ export const rgnBatch07: Procedure[] = [
       "Establish rapport with patient (Refer to steps)"
     ],
     "answer": "Choose a suitable time e.g. 9am to 9am the following day",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "Which nursing action is required at this stage of collection of 24-hours of urine?",
     "options": [
       "Examination required",
       "Establish rapport with patient (Refer to steps)",
@@ -184,10 +184,10 @@ export const rgnBatch07: Procedure[] = [
       "Review instructions with patient in the morning of commencement of collection"
     ],
     "answer": "Review instructions with patient in the morning of commencement of collection",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "The nurse is carrying out collection of 24-hours of urine. Which action best matches this part of the procedure?",
     "options": [
       "Put labelled container in a suitable place near patient’s bed",
       "Record total amount of urine collected on fluid chart and document in nurses’ notes (manual or electronic)",
@@ -195,10 +195,10 @@ export const rgnBatch07: Procedure[] = [
       "Establish rapport with patient (Refer to steps)"
     ],
     "answer": "Put labelled container in a suitable place near patient’s bed",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "When collecting a specimen as part of collection of 24-hours of urine, which principle protects the reliability of the result?",
     "options": [
       "Examination required",
       "Ask patient to pass urine at the time collection begins and discard it",
@@ -206,10 +206,10 @@ export const rgnBatch07: Procedure[] = [
       "Record total amount of urine collected on fluid chart and document in nurses’ notes (manual or electronic)"
     ],
     "answer": "Ask patient to pass urine at the time collection begins and discard it",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 15 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "When collecting a specimen as part of collection of 24-hours of urine, which principle protects the reliability of the result?",
     "options": [
       "Label the containers or bottles with the following information:",
       "Record total amount of urine collected on fluid chart and document in nurses’ notes (manual or electronic)",
@@ -217,10 +217,10 @@ export const rgnBatch07: Procedure[] = [
       "Review instructions with patient in the morning of commencement of collection"
     ],
     "answer": "Instruct patient to pass all subsequent urine into bedpan/urinal for the next 24 hours. This is poured into the labelled container",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 16 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "When collecting a specimen as part of collection of 24-hours of urine, which principle protects the reliability of the result?",
     "options": [
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
       "Review instructions with patient in the morning of commencement of collection",
@@ -228,10 +228,10 @@ export const rgnBatch07: Procedure[] = [
       "Ask patient to pass urine at time the test ends and add this to collected urine"
     ],
     "answer": "Ask patient to pass urine at time the test ends and add this to collected urine",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 17 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "After completing this part of collection of 24-hours of urine, what makes the clinical record useful for continuity of care?",
     "options": [
       "Record total amount of urine collected on fluid chart and document in nurses’ notes (manual or electronic)",
       "Specimen",
@@ -239,10 +239,10 @@ export const rgnBatch07: Procedure[] = [
       "Review instructions with patient in the morning of commencement of collection"
     ],
     "answer": "Record total amount of urine collected on fluid chart and document in nurses’ notes (manual or electronic)",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 18 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "Before proceeding with collection of 24-hours of urine, what infection-prevention action is required at this point?",
     "options": [
       "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
       "Perform hand hygiene",
@@ -250,10 +250,10 @@ export const rgnBatch07: Procedure[] = [
       "Specimen"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 19 of COLLECTION OF 24-HOURS OF URINE?",
+    "question": "When collecting a specimen as part of collection of 24-hours of urine, which principle protects the reliability of the result?",
     "options": [
       "Instruct patient to pass all subsequent urine into bedpan/urinal for the next 24 hours. This is poured into the labelled container",
       "Specimen",
@@ -261,7 +261,7 @@ export const rgnBatch07: Procedure[] = [
       "Assemble requirements"
     ],
     "answer": "Dispatch specimen with appropriate laboratory form to laboratory",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   }
 ],
   },
@@ -320,7 +320,7 @@ export const rgnBatch07: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=efIdLoYdxps",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "When collecting a specimen as part of collection of stool specimen, which principle protects the reliability of the result?",
     "options": [
       "Confirm physician/doctor’s request against the specimen form with patient’s name and date (manual or electronic)",
       "Perform hand hygiene",
@@ -328,10 +328,10 @@ export const rgnBatch07: Procedure[] = [
       "Protect the bed with mackintosh and a dressing towel"
     ],
     "answer": "Confirm physician/doctor’s request against the specimen form with patient’s name and date (manual or electronic)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 2 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "To complete collection of stool specimen safely, which action should the nurse take at this point?",
     "options": [
       "Use the spatula to transfer a portion of the feces into the specimen container and dispose off spatula",
       "Establish rapport with patient (Refer to steps)",
@@ -339,10 +339,10 @@ export const rgnBatch07: Procedure[] = [
       "Ask the patient to tell you when he/she feels the urge to have a bowel movement"
     ],
     "answer": "Establish rapport with patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Before carrying out collection of stool specimen, what should the nurse do to support informed cooperation?",
     "options": [
       "Wear disposable gloves",
       "Establish rapport with patient (Refer to steps)",
@@ -350,10 +350,10 @@ export const rgnBatch07: Procedure[] = [
       "Send specimen to the laboratory immediately"
     ],
     "answer": "Explain the procedure (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Which nursing action is required at this stage of collection of stool specimen?",
     "options": [
       "Label the container with the date, patient’s name, department identification and physician/doctor’s name",
       "Dispose off used items, decontaminate trolley and bedpan",
@@ -361,10 +361,10 @@ export const rgnBatch07: Procedure[] = [
       "Ask the patient to tell you when he/she feels the urge to have a bowel movement"
     ],
     "answer": "Ask the patient to tell you when he/she feels the urge to have a bowel movement",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Before proceeding with collection of stool specimen, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Examine the faeces noting the colour, odour and consistency",
@@ -372,10 +372,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove and discard gloves"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "To complete collection of stool specimen safely, which action should the nurse take at this point?",
     "options": [
       "Ask the patient to tell you when he/she feels the urge to have a bowel movement",
       "Prepare and take trolley to bedside",
@@ -383,10 +383,10 @@ export const rgnBatch07: Procedure[] = [
       "Assist the patient to clean and dispose tissue into a receptacle"
     ],
     "answer": "Prepare and take trolley to bedside",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Which step should be performed now during collection of stool specimen?",
     "options": [
       "Document the procedure in the nurses’ notes (manual or electronic)",
       "Remove the bedpan",
@@ -394,10 +394,10 @@ export const rgnBatch07: Procedure[] = [
       "Offer bedpan to patient"
     ],
     "answer": "Label the container with the date, patient’s name, department identification and physician/doctor’s name",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Which nursing action is required at this stage of collection of stool specimen?",
     "options": [
       "Cover the container",
       "Label the container with the date, patient’s name, department identification and physician/doctor’s name",
@@ -405,10 +405,10 @@ export const rgnBatch07: Procedure[] = [
       "Protect the bed with mackintosh and a dressing towel"
     ],
     "answer": "Protect the bed with mackintosh and a dressing towel",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "The nurse is carrying out collection of stool specimen. Which action best matches this part of the procedure?",
     "options": [
       "Offer bedpan to patient",
       "Explain the procedure (Refer to steps)",
@@ -416,10 +416,10 @@ export const rgnBatch07: Procedure[] = [
       "Prepare and take trolley to bedside"
     ],
     "answer": "Offer bedpan to patient",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "To complete collection of stool specimen safely, which action should the nurse take at this point?",
     "options": [
       "Examine the faeces noting the colour, odour and consistency",
       "Allow the patient to pass feces",
@@ -427,10 +427,10 @@ export const rgnBatch07: Procedure[] = [
       "Establish rapport with patient (Refer to steps)"
     ],
     "answer": "Allow the patient to pass feces",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Which step should be performed now during collection of stool specimen?",
     "options": [
       "Offer bedpan to patient",
       "Confirm physician/doctor’s request against the specimen form with patient’s name and date (manual or electronic)",
@@ -438,10 +438,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispose off used items, decontaminate trolley and bedpan"
     ],
     "answer": "Wear disposable gloves",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Which nursing action is required at this stage of collection of stool specimen?",
     "options": [
       "Perform hand hygiene",
       "Remove and discard gloves",
@@ -449,10 +449,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove the bedpan"
     ],
     "answer": "Remove the bedpan",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "After the hands-on part of collection of stool specimen, how should used equipment and waste be managed?",
     "options": [
       "Assist the patient to clean and dispose tissue into a receptacle",
       "Remove the bedpan",
@@ -460,10 +460,10 @@ export const rgnBatch07: Procedure[] = [
       "Cover the container"
     ],
     "answer": "Assist the patient to clean and dispose tissue into a receptacle",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 14 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "To complete collection of stool specimen safely, which action should the nurse take at this point?",
     "options": [
       "Explain the procedure (Refer to steps)",
       "Examine the faeces noting the colour, odour and consistency",
@@ -471,10 +471,10 @@ export const rgnBatch07: Procedure[] = [
       "Wear disposable gloves"
     ],
     "answer": "Examine the faeces noting the colour, odour and consistency",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "After the hands-on part of collection of stool specimen, how should used equipment and waste be managed?",
     "options": [
       "Send specimen to the laboratory immediately",
       "Allow the patient to pass feces",
@@ -482,10 +482,10 @@ export const rgnBatch07: Procedure[] = [
       "Label the container with the date, patient’s name, department identification and physician/doctor’s name"
     ],
     "answer": "Use the spatula to transfer a portion of the feces into the specimen container and dispose off spatula",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 16 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Which nursing action is required at this stage of collection of stool specimen?",
     "options": [
       "Examine the faeces noting the colour, odour and consistency",
       "Prepare and take trolley to bedside",
@@ -493,10 +493,10 @@ export const rgnBatch07: Procedure[] = [
       "Cover the container"
     ],
     "answer": "Cover the container",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "The nurse is carrying out collection of stool specimen. Which action best matches this part of the procedure?",
     "options": [
       "Remove and discard gloves",
       "Establish rapport with patient (Refer to steps)",
@@ -504,10 +504,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Remove and discard gloves",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "Before proceeding with collection of stool specimen, what infection-prevention action is required at this point?",
     "options": [
       "Assist the patient to clean and dispose tissue into a receptacle",
       "Perform hand hygiene",
@@ -515,10 +515,10 @@ export const rgnBatch07: Procedure[] = [
       "Confirm physician/doctor’s request against the specimen form with patient’s name and date (manual or electronic)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 19 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "After the hands-on part of collection of stool specimen, how should used equipment and waste be managed?",
     "options": [
       "Protect the bed with mackintosh and a dressing towel",
       "Document the procedure in the nurses’ notes (manual or electronic)",
@@ -526,10 +526,10 @@ export const rgnBatch07: Procedure[] = [
       "Cover the container"
     ],
     "answer": "Dispose off used items, decontaminate trolley and bedpan",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 20 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "When collecting a specimen as part of collection of stool specimen, which principle protects the reliability of the result?",
     "options": [
       "Ask the patient to tell you when he/she feels the urge to have a bowel movement",
       "Use the spatula to transfer a portion of the feces into the specimen container and dispose off spatula",
@@ -537,10 +537,10 @@ export const rgnBatch07: Procedure[] = [
       "Send specimen to the laboratory immediately"
     ],
     "answer": "Send specimen to the laboratory immediately",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 21 of COLLECTION OF STOOL SPECIMEN?",
+    "question": "After completing this part of collection of stool specimen, what makes the clinical record useful for continuity of care?",
     "options": [
       "Document the procedure in the nurses’ notes (manual or electronic)",
       "Wear disposable gloves",
@@ -548,7 +548,7 @@ export const rgnBatch07: Procedure[] = [
       "Examine the faeces noting the colour, odour and consistency"
     ],
     "answer": "Document the procedure in the nurses’ notes (manual or electronic)",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
   },
@@ -621,7 +621,7 @@ export const rgnBatch07: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=yfcti9Rjtfg",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "The nurse is carrying out dressing of complicated wound (with assistant). Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Prepare and send trolley aseptically to the patient’s bedside",
@@ -629,10 +629,10 @@ export const rgnBatch07: Procedure[] = [
       "Report findings to the appropriate officer"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Before carrying out dressing of complicated wound (with assistant), what should the nurse do to support informed cooperation?",
     "options": [
       "Put patient into desired position",
       "Explain procedure to patient (Refer to steps)",
@@ -640,10 +640,10 @@ export const rgnBatch07: Procedure[] = [
       "Reposition patient in bed with the help of the assistants"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "A patient is about to undergo dressing of complicated wound (with assistant). Which action protects their dignity during preparation?",
     "options": [
       "Put on mask and perform hand hygiene",
       "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
@@ -651,10 +651,10 @@ export const rgnBatch07: Procedure[] = [
       "Apply sterile dressing using prescribed dressing lotion"
     ],
     "answer": "Ensure privacy",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 4 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Before proceeding with dressing of complicated wound (with assistant), what infection-prevention action is required at this point?",
     "options": [
       "Document and report state of the wound in the nurse notes (manually or electronically)",
       "Wear gloves and remove plaster or bandage and discard",
@@ -662,10 +662,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on mask and perform hand hygiene"
     ],
     "answer": "Put on mask and perform hand hygiene",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 5 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "The nurse is carrying out dressing of complicated wound (with assistant). Which action best matches this part of the procedure?",
     "options": [
       "Prepare and send trolley aseptically to the patient’s bedside",
       "Ask assistant to:",
@@ -673,10 +673,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Prepare and send trolley aseptically to the patient’s bedside",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "To complete dressing of complicated wound (with assistant) safely, which action should the nurse take at this point?",
     "options": [
       "Pour out lotions into gallipots",
       "Protect the bed with mackintosh and dressing towel",
@@ -684,10 +684,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispose off used items, decontaminate used instruments and trolley"
     ],
     "answer": "Protect the bed with mackintosh and dressing towel",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Which step should be performed now during dressing of complicated wound (with assistant)?",
     "options": [
       "Prepare and send trolley aseptically to the patient’s bedside",
       "Clean or dab wound with series of swabs until wound is clean",
@@ -695,10 +695,10 @@ export const rgnBatch07: Procedure[] = [
       "Ask assistant to help apply the adhesive tape or bandage to the site where necessary"
     ],
     "answer": "Ask assistant to:",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "When positioning the patient for dressing of complicated wound (with assistant), what should guide the nurse's choice of position?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Assess the state of the wound for exudates, granulation and depth",
@@ -706,10 +706,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient into desired position"
     ],
     "answer": "Put patient into desired position",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 9 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "The nurse is carrying out dressing of complicated wound (with assistant). Which action best matches this part of the procedure?",
     "options": [
       "Protect bed clothes and exposes wound",
       "Put patient into desired position",
@@ -717,10 +717,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on mask and perform hand hygiene"
     ],
     "answer": "Protect bed clothes and exposes wound",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "To complete dressing of complicated wound (with assistant) safely, which action should the nurse take at this point?",
     "options": [
       "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
       "Ask assistant to:",
@@ -728,10 +728,10 @@ export const rgnBatch07: Procedure[] = [
       "Report findings to the appropriate officer"
     ],
     "answer": "Ask assistant to:",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Which step should be performed now during dressing of complicated wound (with assistant)?",
     "options": [
       "Ask assistant to:",
       "Apply sterile dressing using prescribed dressing lotion",
@@ -739,10 +739,10 @@ export const rgnBatch07: Procedure[] = [
       "Reposition patient in bed with the help of the assistants"
     ],
     "answer": "Pour out lotions into gallipots",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Which nursing action is required at this stage of dressing of complicated wound (with assistant)?",
     "options": [
       "Ensure privacy",
       "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
@@ -750,10 +750,10 @@ export const rgnBatch07: Procedure[] = [
       "Wear gloves and remove plaster or bandage and discard"
     ],
     "answer": "Wear gloves and remove plaster or bandage and discard",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "The nurse is carrying out dressing of complicated wound (with assistant). Which action best matches this part of the procedure?",
     "options": [
       "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
       "Pour out lotions into gallipots",
@@ -761,10 +761,10 @@ export const rgnBatch07: Procedure[] = [
       "Protect the bed with mackintosh and dressing towel"
     ],
     "answer": "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "To complete dressing of complicated wound (with assistant) safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Assess the state of the wound for exudates, granulation and depth",
@@ -772,10 +772,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Assess the state of the wound for exudates, granulation and depth",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Before proceeding with dressing of complicated wound (with assistant), what infection-prevention action is required at this point?",
     "options": [
       "Protect bed clothes and exposes wound",
       "Ask assistant to help apply the adhesive tape or bandage to the site where necessary",
@@ -783,10 +783,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispose off used items, decontaminate used instruments and trolley"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 16 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Prepare and send trolley aseptically to the patient’s bedside",
       "Clean or dab wound with series of swabs until wound is clean",
@@ -794,10 +794,10 @@ export const rgnBatch07: Procedure[] = [
       "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards"
     ],
     "answer": "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 17 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "The nurse is carrying out dressing of complicated wound (with assistant). Which action best matches this part of the procedure?",
     "options": [
       "Where necessary gently irrigates wound with syringe and saline",
       "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
@@ -805,10 +805,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient into desired position"
     ],
     "answer": "Where necessary gently irrigates wound with syringe and saline",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "When collecting a specimen as part of dressing of complicated wound (with assistant), which principle protects the reliability of the result?",
     "options": [
       "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
       "Clean or dab wound with series of swabs until wound is clean",
@@ -816,10 +816,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on mask and perform hand hygiene"
     ],
     "answer": "Clean or dab wound with series of swabs until wound is clean",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 19 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Which step should be performed now during dressing of complicated wound (with assistant)?",
     "options": [
       "Wear gloves and remove plaster or bandage and discard",
       "Reposition patient in bed with the help of the assistants",
@@ -827,10 +827,10 @@ export const rgnBatch07: Procedure[] = [
       "Report findings to the appropriate officer"
     ],
     "answer": "Clean the surrounding skin",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Ask assistant to:",
       "Clean the surrounding skin",
@@ -838,10 +838,10 @@ export const rgnBatch07: Procedure[] = [
       "Apply sterile dressing using prescribed dressing lotion"
     ],
     "answer": "Apply sterile dressing using prescribed dressing lotion",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 21 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "When positioning the patient for dressing of complicated wound (with assistant), what should guide the nurse's choice of position?",
     "options": [
       "Add enough sterile dressing and secures into position or leaves exposed where necessary",
       "Perform hand hygiene",
@@ -849,10 +849,10 @@ export const rgnBatch07: Procedure[] = [
       "Pour out lotions into gallipots"
     ],
     "answer": "Add enough sterile dressing and secures into position or leaves exposed where necessary",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 22 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "To complete dressing of complicated wound (with assistant) safely, which action should the nurse take at this point?",
     "options": [
       "Clean or dab wound with series of swabs until wound is clean",
       "Ask assistant to help apply the adhesive tape or bandage to the site where necessary",
@@ -860,10 +860,10 @@ export const rgnBatch07: Procedure[] = [
       "Protect the bed with mackintosh and dressing towel"
     ],
     "answer": "Ask assistant to help apply the adhesive tape or bandage to the site where necessary",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 23 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Which step should be performed now during dressing of complicated wound (with assistant)?",
     "options": [
       "Assess the state of the wound for exudates, granulation and depth",
       "Dispose off used items, decontaminate used instruments and trolley",
@@ -871,10 +871,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Remove mackintosh and dressing towel",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 24 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "When positioning the patient for dressing of complicated wound (with assistant), what should guide the nurse's choice of position?",
     "options": [
       "Protect bed clothes and exposes wound",
       "Add enough sterile dressing and secures into position or leaves exposed where necessary",
@@ -882,10 +882,10 @@ export const rgnBatch07: Procedure[] = [
       "Reposition patient in bed with the help of the assistants"
     ],
     "answer": "Reposition patient in bed with the help of the assistants",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 25 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Before carrying out dressing of complicated wound (with assistant), what should the nurse do to support informed cooperation?",
     "options": [
       "Inform patient about the state of the wound",
       "Where necessary gently irrigates wound with syringe and saline",
@@ -893,10 +893,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard"
     ],
     "answer": "Inform patient about the state of the wound",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 26 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "After the hands-on part of dressing of complicated wound (with assistant), how should used equipment and waste be managed?",
     "options": [
       "Apply sterile dressing using prescribed dressing lotion",
       "Dispose off used items, decontaminate used instruments and trolley",
@@ -904,10 +904,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient into desired position"
     ],
     "answer": "Dispose off used items, decontaminate used instruments and trolley",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 27 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "Before proceeding with dressing of complicated wound (with assistant), what infection-prevention action is required at this point?",
     "options": [
       "Where necessary gently irrigates wound with syringe and saline",
       "Report findings to the appropriate officer",
@@ -915,10 +915,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on mask and perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 27 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 28 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "After completing this part of dressing of complicated wound (with assistant), what makes the clinical record useful for continuity of care?",
     "options": [
       "Wear gloves and remove plaster or bandage and discard",
       "Remove mackintosh and dressing towel",
@@ -926,10 +926,10 @@ export const rgnBatch07: Procedure[] = [
       "Document and report state of the wound in the nurse notes (manually or electronically)"
     ],
     "answer": "Document and report state of the wound in the nurse notes (manually or electronically)",
-    "explanation": "This checks recall of step 28 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 29 of DRESSING OF COMPLICATED WOUND (WITH ASSISTANT)?",
+    "question": "The nurse is carrying out dressing of complicated wound (with assistant). Which action best matches this part of the procedure?",
     "options": [
       "Report findings to the appropriate officer",
       "Clean the surrounding skin",
@@ -937,7 +937,7 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Report findings to the appropriate officer",
-    "explanation": "This checks recall of step 29 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -1010,7 +1010,7 @@ export const rgnBatch07: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=yfcti9Rjtfg",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of TAKING A WOUND SWAB?",
+    "question": "The nurse is carrying out taking a wound swab. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Perform hand hygiene",
@@ -1018,10 +1018,10 @@ export const rgnBatch07: Procedure[] = [
       "Provide privacy"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of TAKING A WOUND SWAB?",
+    "question": "Before carrying out taking a wound swab, what should the nurse do to support informed cooperation?",
     "options": [
       "Remove dressings from wound",
       "Explain procedure (Refer to steps)",
@@ -1029,10 +1029,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispose used items, decontaminate trolley and instruments"
     ],
     "answer": "Explain procedure (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of TAKING A WOUND SWAB?",
+    "question": "A patient is about to undergo taking a wound swab. Which action protects their dignity during preparation?",
     "options": [
       "Wear mask, prepare trolley and send to patient’s bed side",
       "Remove gloves and perform hand hygiene.",
@@ -1040,10 +1040,10 @@ export const rgnBatch07: Procedure[] = [
       "Assess the patient and ensure that any wound pain has been managed"
     ],
     "answer": "Provide privacy",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 4 of TAKING A WOUND SWAB?",
+    "question": "A patient reports discomfort during taking a wound swab. Which care action addresses pain safely?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Use sterile gauze to remove excess saline or water from the wound surface",
@@ -1051,10 +1051,10 @@ export const rgnBatch07: Procedure[] = [
       "Assess for the presence of pain and manage accordingly"
     ],
     "answer": "Assess for the presence of pain and manage accordingly",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Assess pain and relevant contraindications, administer only prescribed analgesia within scope, then reassess the response and document both the intervention and effect."
   },
   {
-    "question": "Which action is listed as step 5 of TAKING A WOUND SWAB?",
+    "question": "Before proceeding with taking a wound swab, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Put patient in a desirable position for wound dressing (depending on the location of the wound)",
@@ -1062,10 +1062,10 @@ export const rgnBatch07: Procedure[] = [
       "Protect bed with mackintosh and dressing towel"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of TAKING A WOUND SWAB?",
+    "question": "To complete taking a wound swab safely, which action should the nurse take at this point?",
     "options": [
       "Use the swab to take the specimen from identified small area (1 cm) of clean viable tissue by rotating it for 5 seconds; while applying enough pressure to produce exudate",
       "Wear mask, prepare trolley and send to patient’s bed side",
@@ -1073,10 +1073,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure (Refer to steps)"
     ],
     "answer": "Wear mask, prepare trolley and send to patient’s bed side",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of TAKING A WOUND SWAB?",
+    "question": "Which step should be performed now during taking a wound swab?",
     "options": [
       "Remove dressings from wound",
       "Remove gloves and personal protective equipment",
@@ -1084,10 +1084,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispose used items, decontaminate trolley and instruments"
     ],
     "answer": "Protect bed with mackintosh and dressing towel",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of TAKING A WOUND SWAB?",
+    "question": "Which nursing action is required at this stage of taking a wound swab?",
     "options": [
       "Perform hand hygiene",
       "Remove gloves and perform hand hygiene.",
@@ -1095,10 +1095,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on disposable gloves"
     ],
     "answer": "Put on disposable gloves",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of TAKING A WOUND SWAB?",
+    "question": "When positioning the patient for taking a wound swab, what should guide the nurse's choice of position?",
     "options": [
       "Put patient in a desirable position for wound dressing (depending on the location of the wound)",
       "Use sterile gauze to remove excess saline or water from the wound surface",
@@ -1106,10 +1106,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on sterile gloves"
     ],
     "answer": "Put patient in a desirable position for wound dressing (depending on the location of the wound)",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 10 of TAKING A WOUND SWAB?",
+    "question": "To complete taking a wound swab safely, which action should the nurse take at this point?",
     "options": [
       "Put on clean or sterile gloves that are appropriate for the technique required to complete the dressing change (see procedure on wound dressing)",
       "Remove dressings from wound",
@@ -1117,10 +1117,10 @@ export const rgnBatch07: Procedure[] = [
       "Wear mask, prepare trolley and send to patient’s bed side"
     ],
     "answer": "Remove dressings from wound",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of TAKING A WOUND SWAB?",
+    "question": "Before proceeding with taking a wound swab, what infection-prevention action is required at this point?",
     "options": [
       "Use the swab to take the specimen from identified small area (1 cm) of clean viable tissue by rotating it for 5 seconds; while applying enough pressure to produce exudate",
       "Record procedure in patient’s chart manually/electronically",
@@ -1128,10 +1128,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure (Refer to steps)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 12 of TAKING A WOUND SWAB?",
+    "question": "Which nursing action is required at this stage of taking a wound swab?",
     "options": [
       "Put patient in a desirable position for wound dressing (depending on the location of the wound)",
       "Remove gloves and personal protective equipment",
@@ -1139,10 +1139,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on sterile gloves"
     ],
     "answer": "Put on sterile gloves",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of TAKING A WOUND SWAB?",
+    "question": "The nurse is carrying out taking a wound swab. Which action best matches this part of the procedure?",
     "options": [
       "Cleanse the wound thoroughly with sterile normal saline or sterile water and ensure that the peri-wound skin is cleansed",
       "Remove gloves and perform hand hygiene.",
@@ -1150,10 +1150,10 @@ export const rgnBatch07: Procedure[] = [
       "Avoid touching the wound edge or peri-wound skin with the swab"
     ],
     "answer": "Cleanse the wound thoroughly with sterile normal saline or sterile water and ensure that the peri-wound skin is cleansed",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of TAKING A WOUND SWAB?",
+    "question": "To complete taking a wound swab safely, which action should the nurse take at this point?",
     "options": [
       "Put patient in a desirable position",
       "Use sterile gauze to remove excess saline or water from the wound surface",
@@ -1161,10 +1161,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove dressings from wound"
     ],
     "answer": "Use sterile gauze to remove excess saline or water from the wound surface",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of TAKING A WOUND SWAB?",
+    "question": "When collecting a specimen as part of taking a wound swab, which principle protects the reliability of the result?",
     "options": [
       "Put on clean or sterile gloves that are appropriate for the technique required to complete the dressing change (see procedure on wound dressing)",
       "Assess for the presence of pain and manage accordingly",
@@ -1172,10 +1172,10 @@ export const rgnBatch07: Procedure[] = [
       "Wear mask, prepare trolley and send to patient’s bed side"
     ],
     "answer": "Use the swab to take the specimen from identified small area (1 cm) of clean viable tissue by rotating it for 5 seconds; while applying enough pressure to produce exudate",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 16 of TAKING A WOUND SWAB?",
+    "question": "When collecting a specimen as part of taking a wound swab, which principle protects the reliability of the result?",
     "options": [
       "Use sterile gauze to remove excess saline or water from the wound surface",
       "Record procedure in patient’s chart manually/electronically",
@@ -1183,10 +1183,10 @@ export const rgnBatch07: Procedure[] = [
       "Avoid touching the wound edge or peri-wound skin with the swab"
     ],
     "answer": "Avoid touching the wound edge or peri-wound skin with the swab",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 17 of TAKING A WOUND SWAB?",
+    "question": "When collecting a specimen as part of taking a wound swab, which principle protects the reliability of the result?",
     "options": [
       "Immediately place the swab into the specimen tube and twist the lid closed.",
       "Remove gloves and personal protective equipment",
@@ -1194,10 +1194,10 @@ export const rgnBatch07: Procedure[] = [
       "Assess the patient and ensure that any wound pain has been managed"
     ],
     "answer": "Immediately place the swab into the specimen tube and twist the lid closed.",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 18 of TAKING A WOUND SWAB?",
+    "question": "Before proceeding with taking a wound swab, what infection-prevention action is required at this point?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Remove gloves and perform hand hygiene.",
@@ -1205,10 +1205,10 @@ export const rgnBatch07: Procedure[] = [
       "Use the swab to take the specimen from identified small area (1 cm) of clean viable tissue by rotating it for 5 seconds; while applying enough pressure to produce exudate"
     ],
     "answer": "Remove gloves and perform hand hygiene.",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 19 of TAKING A WOUND SWAB?",
+    "question": "Which step should be performed now during taking a wound swab?",
     "options": [
       "Put patient in a desirable position",
       "Put on disposable gloves",
@@ -1216,10 +1216,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove dressings from wound"
     ],
     "answer": "Put on clean or sterile gloves that are appropriate for the technique required to complete the dressing change (see procedure on wound dressing)",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of TAKING A WOUND SWAB?",
+    "question": "A patient reports discomfort during taking a wound swab. Which care action addresses pain safely?",
     "options": [
       "Remove gloves and perform hand hygiene.",
       "Assess for the presence of pain and manage accordingly",
@@ -1227,10 +1227,10 @@ export const rgnBatch07: Procedure[] = [
       "Assess the patient and ensure that any wound pain has been managed"
     ],
     "answer": "Assess the patient and ensure that any wound pain has been managed",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Assess pain and relevant contraindications, administer only prescribed analgesia within scope, then reassess the response and document both the intervention and effect."
   },
   {
-    "question": "Which action is listed as step 21 of TAKING A WOUND SWAB?",
+    "question": "The nurse is carrying out taking a wound swab. Which action best matches this part of the procedure?",
     "options": [
       "Clean the work surface",
       "Record procedure in patient’s chart manually/electronically",
@@ -1238,10 +1238,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispose used items, decontaminate trolley and instruments"
     ],
     "answer": "Clean the work surface",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 22 of TAKING A WOUND SWAB?",
+    "question": "To complete taking a wound swab safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Remove gloves and personal protective equipment",
@@ -1249,10 +1249,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on clean or sterile gloves that are appropriate for the technique required to complete the dressing change (see procedure on wound dressing)"
     ],
     "answer": "Remove gloves and personal protective equipment",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 23 of TAKING A WOUND SWAB?",
+    "question": "Before proceeding with taking a wound swab, what infection-prevention action is required at this point?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Use sterile gauze to remove excess saline or water from the wound surface",
@@ -1260,10 +1260,10 @@ export const rgnBatch07: Procedure[] = [
       "Avoid touching the wound edge or peri-wound skin with the swab"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 24 of TAKING A WOUND SWAB?",
+    "question": "When positioning the patient for taking a wound swab, what should guide the nurse's choice of position?",
     "options": [
       "Remove gloves and personal protective equipment",
       "Put on disposable gloves",
@@ -1271,10 +1271,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient in a desirable position"
     ],
     "answer": "Put patient in a desirable position",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 25 of TAKING A WOUND SWAB?",
+    "question": "After the hands-on part of taking a wound swab, how should used equipment and waste be managed?",
     "options": [
       "Dispose used items, decontaminate trolley and instruments",
       "Assess for the presence of pain and manage accordingly",
@@ -1282,10 +1282,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure (Refer to steps)"
     ],
     "answer": "Dispose used items, decontaminate trolley and instruments",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 26 of TAKING A WOUND SWAB?",
+    "question": "Before proceeding with taking a wound swab, what infection-prevention action is required at this point?",
     "options": [
       "Remove dressings from wound",
       "Perform hand hygiene",
@@ -1293,10 +1293,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispose used items, decontaminate trolley and instruments"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 27 of TAKING A WOUND SWAB?",
+    "question": "When collecting a specimen as part of taking a wound swab, which principle protects the reliability of the result?",
     "options": [
       "Perform hand hygiene",
       "Immediately place the swab into the specimen tube and twist the lid closed.",
@@ -1304,10 +1304,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on clean or sterile gloves that are appropriate for the technique required to complete the dressing change (see procedure on wound dressing)"
     ],
     "answer": "Label the specimen tube and ensure swab is sent to the laboratory with signed request form as soon as possible",
-    "explanation": "This checks recall of step 27 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 28 of TAKING A WOUND SWAB?",
+    "question": "Which nursing action is required at this stage of taking a wound swab?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Cleanse the wound thoroughly with sterile normal saline or sterile water and ensure that the peri-wound skin is cleansed",
@@ -1315,7 +1315,7 @@ export const rgnBatch07: Procedure[] = [
       "Record procedure in patient’s chart manually/electronically"
     ],
     "answer": "Record procedure in patient’s chart manually/electronically",
-    "explanation": "This checks recall of step 28 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -1396,7 +1396,7 @@ export const rgnBatch07: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=W2cwr16zS2w",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of REMOVAL OF STITCHES?",
+    "question": "The nurse is carrying out removal of stitches. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Prepare and send trolley aseptically to the patient’s bedside",
@@ -1404,10 +1404,10 @@ export const rgnBatch07: Procedure[] = [
       "Add enough sterile dressing and secures into position or leaves exposed where necessary"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of REMOVAL OF STITCHES?",
+    "question": "Before carrying out removal of stitches, what should the nurse do to support informed cooperation?",
     "options": [
       "Report findings to the appropriate officer",
       "Explain procedure to patient (Refer to steps)",
@@ -1415,10 +1415,10 @@ export const rgnBatch07: Procedure[] = [
       "Place all removed stitches on the swab, count and examine"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of REMOVAL OF STITCHES?",
+    "question": "A patient is about to undergo removal of stitches. Which action protects their dignity during preparation?",
     "options": [
       "Reposition patient in bed with the help of the assistants",
       "Put patient into desired position",
@@ -1426,10 +1426,10 @@ export const rgnBatch07: Procedure[] = [
       "Hold the dissecting forceps in the left hand and stitch scissors in the right"
     ],
     "answer": "Ensure privacy",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 4 of REMOVAL OF STITCHES?",
+    "question": "Before proceeding with removal of stitches, what infection-prevention action is required at this point?",
     "options": [
       "Apply sterile dressing using prescribed dressing lotion",
       "Ensure privacy",
@@ -1437,10 +1437,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on mask and perform hand hygiene"
     ],
     "answer": "Put on mask and perform hand hygiene",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 5 of REMOVAL OF STITCHES?",
+    "question": "The nurse is carrying out removal of stitches. Which action best matches this part of the procedure?",
     "options": [
       "Prepare and send trolley aseptically to the patient’s bedside",
       "Document and report state of the wound in the nurse notes (manually or electronically)",
@@ -1448,10 +1448,10 @@ export const rgnBatch07: Procedure[] = [
       "Cut it in such a way that no piece of stitch is left in the tissue and remove the stitch without dragging the exposed area through the tissue"
     ],
     "answer": "Prepare and send trolley aseptically to the patient’s bedside",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of REMOVAL OF STITCHES?",
+    "question": "To complete removal of stitches safely, which action should the nurse take at this point?",
     "options": [
       "Remove mackintosh and dressing towel",
       "Protect the bed with mackintosh and dressing towel",
@@ -1459,10 +1459,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain to the patient that it will be a bit uncomfortable/painful and reassure"
     ],
     "answer": "Protect the bed with mackintosh and dressing towel",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of REMOVAL OF STITCHES?",
+    "question": "Which step should be performed now during removal of stitches?",
     "options": [
       "Clean the surrounding skin",
       "Explain procedure to patient (Refer to steps)",
@@ -1470,10 +1470,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Ask assistant to:",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of REMOVAL OF STITCHES?",
+    "question": "When positioning the patient for removal of stitches, what should guide the nurse's choice of position?",
     "options": [
       "Insert one blade of the stitch scissors under the stitches, cut between the knot and the skin",
       "Dispose off used items, decontaminate used instruments and trolley",
@@ -1481,10 +1481,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient into desired position"
     ],
     "answer": "Put patient into desired position",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 9 of REMOVAL OF STITCHES?",
+    "question": "The nurse is carrying out removal of stitches. Which action best matches this part of the procedure?",
     "options": [
       "Protect bed clothes and exposes wound",
       "Ask assistant to help apply the adhesive tape or bandage to the site where necessary",
@@ -1492,10 +1492,10 @@ export const rgnBatch07: Procedure[] = [
       "Count the number of stitches in place if it is an alternate stitch"
     ],
     "answer": "Protect bed clothes and exposes wound",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of REMOVAL OF STITCHES?",
+    "question": "To complete removal of stitches safely, which action should the nurse take at this point?",
     "options": [
       "Clean or dab wound with series of swabs until wound is clean",
       "Ask assistant to:",
@@ -1503,10 +1503,10 @@ export const rgnBatch07: Procedure[] = [
       "Assess the state of the wound and the type of suturing"
     ],
     "answer": "Ask assistant to:",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of REMOVAL OF STITCHES?",
+    "question": "Which step should be performed now during removal of stitches?",
     "options": [
       "Grasp the ends of the stitches with the dissecting forceps, pull it a bit to expose and area between the knot and the skin",
       "Inform patient about the state of the wound",
@@ -1514,10 +1514,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient into desired position"
     ],
     "answer": "Pour out lotions into gallipots",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of REMOVAL OF STITCHES?",
+    "question": "Which nursing action is required at this stage of removal of stitches?",
     "options": [
       "Place a sterile gauze swab near the wound to receive the sutures",
       "Add enough sterile dressing and secures into position or leaves exposed where necessary",
@@ -1525,10 +1525,10 @@ export const rgnBatch07: Procedure[] = [
       "Wear gloves and remove plaster or bandage and discard"
     ],
     "answer": "Wear gloves and remove plaster or bandage and discard",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of REMOVAL OF STITCHES?",
+    "question": "The nurse is carrying out removal of stitches. Which action best matches this part of the procedure?",
     "options": [
       "Remove soiled dressing using disserting forceps or disposable gloves, assess the soiled dressing and discard",
       "Place all removed stitches on the swab, count and examine",
@@ -1536,10 +1536,10 @@ export const rgnBatch07: Procedure[] = [
       "Wear gloves and remove plaster or bandage and discard"
     ],
     "answer": "Remove soiled dressing using disserting forceps or disposable gloves, assess the soiled dressing and discard",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of REMOVAL OF STITCHES?",
+    "question": "To complete removal of stitches safely, which action should the nurse take at this point?",
     "options": [
       "Hold the dissecting forceps in the left hand and stitch scissors in the right",
       "Assess the state of the wound and the type of suturing",
@@ -1547,10 +1547,10 @@ export const rgnBatch07: Procedure[] = [
       "Ask assistant to:"
     ],
     "answer": "Assess the state of the wound and the type of suturing",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of REMOVAL OF STITCHES?",
+    "question": "Before proceeding with removal of stitches, what infection-prevention action is required at this point?",
     "options": [
       "Dab or clean wound with sterile forceps/gloves using antimicrobial solution and swab",
       "Apply sterile dressing using prescribed dressing lotion",
@@ -1558,10 +1558,10 @@ export const rgnBatch07: Procedure[] = [
       "Ensure privacy"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 16 of REMOVAL OF STITCHES?",
+    "question": "When collecting a specimen as part of removal of stitches, which principle protects the reliability of the result?",
     "options": [
       "Pour out lotions into gallipots",
       "Cut it in such a way that no piece of stitch is left in the tissue and remove the stitch without dragging the exposed area through the tissue",
@@ -1569,10 +1569,10 @@ export const rgnBatch07: Procedure[] = [
       "Dab or clean wound with sterile forceps/gloves using antimicrobial solution and swab"
     ],
     "answer": "Dab or clean wound with sterile forceps/gloves using antimicrobial solution and swab",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 17 of REMOVAL OF STITCHES?",
+    "question": "When collecting a specimen as part of removal of stitches, which principle protects the reliability of the result?",
     "options": [
       "Place a sterile gauze swab near the wound to receive the sutures",
       "Explain to the patient that it will be a bit uncomfortable/painful and reassure",
@@ -1580,10 +1580,10 @@ export const rgnBatch07: Procedure[] = [
       "Protect the bed with mackintosh and dressing towel"
     ],
     "answer": "Place a sterile gauze swab near the wound to receive the sutures",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 18 of REMOVAL OF STITCHES?",
+    "question": "To complete removal of stitches safely, which action should the nurse take at this point?",
     "options": [
       "Assess the state of the wound and the type of suturing",
       "Count the number of stitches in place if it is an alternate stitch",
@@ -1591,10 +1591,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Count the number of stitches in place if it is an alternate stitch",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of REMOVAL OF STITCHES?",
+    "question": "Before carrying out removal of stitches, what should the nurse do to support informed cooperation?",
     "options": [
       "Protect bed clothes and exposes wound",
       "Insert one blade of the stitch scissors under the stitches, cut between the knot and the skin",
@@ -1602,10 +1602,10 @@ export const rgnBatch07: Procedure[] = [
       "Dispose off used items, decontaminate used instruments and trolley"
     ],
     "answer": "Explain to the patient that it will be a bit uncomfortable/painful and reassure",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 20 of REMOVAL OF STITCHES?",
+    "question": "Which nursing action is required at this stage of removal of stitches?",
     "options": [
       "Prepare and send trolley aseptically to the patient’s bedside",
       "Place a sterile gauze swab near the wound to receive the sutures",
@@ -1613,10 +1613,10 @@ export const rgnBatch07: Procedure[] = [
       "Hold the dissecting forceps in the left hand and stitch scissors in the right"
     ],
     "answer": "Hold the dissecting forceps in the left hand and stitch scissors in the right",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of REMOVAL OF STITCHES?",
+    "question": "The nurse is carrying out removal of stitches. Which action best matches this part of the procedure?",
     "options": [
       "Grasp the ends of the stitches with the dissecting forceps, pull it a bit to expose and area between the knot and the skin",
       "Remove soiled dressing using disserting forceps or disposable gloves, assess the soiled dressing and discard",
@@ -1624,10 +1624,10 @@ export const rgnBatch07: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Grasp the ends of the stitches with the dissecting forceps, pull it a bit to expose and area between the knot and the skin",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 22 of REMOVAL OF STITCHES?",
+    "question": "To complete removal of stitches safely, which action should the nurse take at this point?",
     "options": [
       "Put patient into desired position",
       "Insert one blade of the stitch scissors under the stitches, cut between the knot and the skin",
@@ -1635,10 +1635,10 @@ export const rgnBatch07: Procedure[] = [
       "Inform patient about the state of the wound"
     ],
     "answer": "Insert one blade of the stitch scissors under the stitches, cut between the knot and the skin",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 23 of REMOVAL OF STITCHES?",
+    "question": "Which step should be performed now during removal of stitches?",
     "options": [
       "Put on mask and perform hand hygiene",
       "Dab or clean wound with sterile forceps/gloves using antimicrobial solution and swab",
@@ -1646,10 +1646,10 @@ export const rgnBatch07: Procedure[] = [
       "Add enough sterile dressing and secures into position or leaves exposed where necessary"
     ],
     "answer": "Cut it in such a way that no piece of stitch is left in the tissue and remove the stitch without dragging the exposed area through the tissue",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 24 of REMOVAL OF STITCHES?",
+    "question": "When collecting a specimen as part of removal of stitches, which principle protects the reliability of the result?",
     "options": [
       "Report findings to the appropriate officer",
       "Wear gloves and remove plaster or bandage and discard",
@@ -1657,10 +1657,10 @@ export const rgnBatch07: Procedure[] = [
       "Place all removed stitches on the swab, count and examine"
     ],
     "answer": "Place all removed stitches on the swab, count and examine",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 25 of REMOVAL OF STITCHES?",
+    "question": "When collecting a specimen as part of removal of stitches, which principle protects the reliability of the result?",
     "options": [
       "Clean or dab wound with series of swabs until wound is clean",
       "Ask assistant to:",
@@ -1668,10 +1668,10 @@ export const rgnBatch07: Procedure[] = [
       "Reposition patient in bed with the help of the assistants"
     ],
     "answer": "Clean or dab wound with series of swabs until wound is clean",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 26 of REMOVAL OF STITCHES?",
+    "question": "To complete removal of stitches safely, which action should the nurse take at this point?",
     "options": [
       "Ensure privacy",
       "Clean the surrounding skin",
@@ -1679,10 +1679,10 @@ export const rgnBatch07: Procedure[] = [
       "Apply sterile dressing using prescribed dressing lotion"
     ],
     "answer": "Clean the surrounding skin",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 27 of REMOVAL OF STITCHES?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Document and report state of the wound in the nurse notes (manually or electronically)",
       "Pour out lotions into gallipots",
@@ -1690,10 +1690,10 @@ export const rgnBatch07: Procedure[] = [
       "Insert one blade of the stitch scissors under the stitches, cut between the knot and the skin"
     ],
     "answer": "Apply sterile dressing using prescribed dressing lotion",
-    "explanation": "This checks recall of step 27 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 28 of REMOVAL OF STITCHES?",
+    "question": "When positioning the patient for removal of stitches, what should guide the nurse's choice of position?",
     "options": [
       "Remove mackintosh and dressing towel",
       "Protect the bed with mackintosh and dressing towel",
@@ -1701,10 +1701,10 @@ export const rgnBatch07: Procedure[] = [
       "Add enough sterile dressing and secures into position or leaves exposed where necessary"
     ],
     "answer": "Add enough sterile dressing and secures into position or leaves exposed where necessary",
-    "explanation": "This checks recall of step 28 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 29 of REMOVAL OF STITCHES?",
+    "question": "The nurse is carrying out removal of stitches. Which action best matches this part of the procedure?",
     "options": [
       "Ask assistant to help apply the adhesive tape or bandage to the site where necessary",
       "Explain procedure to patient (Refer to steps)",
@@ -1712,10 +1712,10 @@ export const rgnBatch07: Procedure[] = [
       "Clean or dab wound with series of swabs until wound is clean"
     ],
     "answer": "Ask assistant to help apply the adhesive tape or bandage to the site where necessary",
-    "explanation": "This checks recall of step 29 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 30 of REMOVAL OF STITCHES?",
+    "question": "To complete removal of stitches safely, which action should the nurse take at this point?",
     "options": [
       "Dispose off used items, decontaminate used instruments and trolley",
       "Remove mackintosh and dressing towel",
@@ -1723,10 +1723,10 @@ export const rgnBatch07: Procedure[] = [
       "Grasp the ends of the stitches with the dissecting forceps, pull it a bit to expose and area between the knot and the skin"
     ],
     "answer": "Remove mackintosh and dressing towel",
-    "explanation": "This checks recall of step 30 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 31 of REMOVAL OF STITCHES?",
+    "question": "When positioning the patient for removal of stitches, what should guide the nurse's choice of position?",
     "options": [
       "Add enough sterile dressing and secures into position or leaves exposed where necessary",
       "Prepare and send trolley aseptically to the patient’s bedside",
@@ -1734,10 +1734,10 @@ export const rgnBatch07: Procedure[] = [
       "Place a sterile gauze swab near the wound to receive the sutures"
     ],
     "answer": "Reposition patient in bed with the help of the assistants",
-    "explanation": "This checks recall of step 31 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 32 of REMOVAL OF STITCHES?",
+    "question": "Before carrying out removal of stitches, what should the nurse do to support informed cooperation?",
     "options": [
       "Place all removed stitches on the swab, count and examine",
       "Establish rapport (Refer to steps)",
@@ -1745,10 +1745,10 @@ export const rgnBatch07: Procedure[] = [
       "Inform patient about the state of the wound"
     ],
     "answer": "Inform patient about the state of the wound",
-    "explanation": "This checks recall of step 32 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 33 of REMOVAL OF STITCHES?",
+    "question": "After the hands-on part of removal of stitches, how should used equipment and waste be managed?",
     "options": [
       "Dispose off used items, decontaminate used instruments and trolley",
       "Reposition patient in bed with the help of the assistants",
@@ -1756,10 +1756,10 @@ export const rgnBatch07: Procedure[] = [
       "Hold the dissecting forceps in the left hand and stitch scissors in the right"
     ],
     "answer": "Dispose off used items, decontaminate used instruments and trolley",
-    "explanation": "This checks recall of step 33 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 34 of REMOVAL OF STITCHES?",
+    "question": "Before proceeding with removal of stitches, what infection-prevention action is required at this point?",
     "options": [
       "Add enough sterile dressing and secures into position or leaves exposed where necessary",
       "Perform hand hygiene",
@@ -1767,10 +1767,10 @@ export const rgnBatch07: Procedure[] = [
       "Place a sterile gauze swab near the wound to receive the sutures"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 34 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 35 of REMOVAL OF STITCHES?",
+    "question": "After completing this part of removal of stitches, what makes the clinical record useful for continuity of care?",
     "options": [
       "Cut it in such a way that no piece of stitch is left in the tissue and remove the stitch without dragging the exposed area through the tissue",
       "Report findings to the appropriate officer",
@@ -1778,10 +1778,10 @@ export const rgnBatch07: Procedure[] = [
       "Wear gloves and remove plaster or bandage and discard"
     ],
     "answer": "Document and report state of the wound in the nurse notes (manually or electronically)",
-    "explanation": "This checks recall of step 35 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 36 of REMOVAL OF STITCHES?",
+    "question": "Which nursing action is required at this stage of removal of stitches?",
     "options": [
       "Explain to the patient that it will be a bit uncomfortable/painful and reassure",
       "Remove mackintosh and dressing towel",
@@ -1789,7 +1789,7 @@ export const rgnBatch07: Procedure[] = [
       "Report findings to the appropriate officer"
     ],
     "answer": "Report findings to the appropriate officer",
-    "explanation": "This checks recall of step 36 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -1831,7 +1831,7 @@ export const rgnBatch07: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=kaFyqMJUtks",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "The nurse is carrying out processing instruments after use. Which action best matches this part of the procedure?",
     "options": [
       "Prepare a fresh 0.5% parazone solution in a bucket or bowl",
       "Scrub instruments using a soft brush with a soap/liquid detergent, paying attention to the crevices/serrated ends under water in a bowl",
@@ -1839,10 +1839,10 @@ export const rgnBatch07: Procedure[] = [
       "Put on utility gloves and remove instruments from the parazone solution after 10 minutes"
     ],
     "answer": "Prepare a fresh 0.5% parazone solution in a bucket or bowl",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "To complete processing instruments after use safely, which action should the nurse take at this point?",
     "options": [
       "Prepare a fresh 0.5% parazone solution in a bucket or bowl",
       "Immerse all used instruments in the solution for at least 10 minutes",
@@ -1850,10 +1850,10 @@ export const rgnBatch07: Procedure[] = [
       "Boil for 20 minutes in a boiler covered with a well-fitting lid OR"
     ],
     "answer": "Immerse all used instruments in the solution for at least 10 minutes",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "Which step should be performed now during processing instruments after use?",
     "options": [
       "Rinse instruments thoroughly with clean water to remove all detergent",
       "Document instruments and send them to CSSD",
@@ -1861,10 +1861,10 @@ export const rgnBatch07: Procedure[] = [
       "Immerse all used instruments in the solution for at least 10 minutes"
     ],
     "answer": "Put on utility gloves and remove instruments from the parazone solution after 10 minutes",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "Which nursing action is required at this stage of processing instruments after use?",
     "options": [
       "Prepare a fresh 0.5% parazone solution in a bucket or bowl",
       "Scrub instruments using a soft brush with a soap/liquid detergent, paying attention to the crevices/serrated ends under water in a bowl",
@@ -1872,10 +1872,10 @@ export const rgnBatch07: Procedure[] = [
       "Rinse the instruments in warm or cool water"
     ],
     "answer": "Rinse the instruments in warm or cool water",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "The nurse is carrying out processing instruments after use. Which action best matches this part of the procedure?",
     "options": [
       "Scrub instruments using a soft brush with a soap/liquid detergent, paying attention to the crevices/serrated ends under water in a bowl",
       "Document instruments and send them to CSSD",
@@ -1883,10 +1883,10 @@ export const rgnBatch07: Procedure[] = [
       "Boil for 20 minutes in a boiler covered with a well-fitting lid OR"
     ],
     "answer": "Scrub instruments using a soft brush with a soap/liquid detergent, paying attention to the crevices/serrated ends under water in a bowl",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "To complete processing instruments after use safely, which action should the nurse take at this point?",
     "options": [
       "Scrub instruments using a soft brush with a soap/liquid detergent, paying attention to the crevices/serrated ends under water in a bowl",
       "Rinse instruments thoroughly with clean water to remove all detergent",
@@ -1894,10 +1894,10 @@ export const rgnBatch07: Procedure[] = [
       "Immerse all used instruments in the solution for at least 10 minutes"
     ],
     "answer": "Rinse instruments thoroughly with clean water to remove all detergent",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "Which step should be performed now during processing instruments after use?",
     "options": [
       "Prepare a fresh 0.5% parazone solution in a bucket or bowl",
       "Rinse the instruments in warm or cool water",
@@ -1905,10 +1905,10 @@ export const rgnBatch07: Procedure[] = [
       "Rinse instruments thoroughly with clean water to remove all detergent"
     ],
     "answer": "Boil for 20 minutes in a boiler covered with a well-fitting lid OR",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "Which nursing action is required at this stage of processing instruments after use?",
     "options": [
       "Scrub instruments using a soft brush with a soap/liquid detergent, paying attention to the crevices/serrated ends under water in a bowl",
       "Document instruments and send them to CSSD",
@@ -1916,10 +1916,10 @@ export const rgnBatch07: Procedure[] = [
       "Dry by air or with a clean towel if to be sterilized in CSSD"
     ],
     "answer": "Dry by air or with a clean towel if to be sterilized in CSSD",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of PROCESSING INSTRUMENTS AFTER USE?",
+    "question": "After completing this part of processing instruments after use, what makes the clinical record useful for continuity of care?",
     "options": [
       "Document instruments and send them to CSSD",
       "Rinse the instruments in warm or cool water",
@@ -1927,7 +1927,7 @@ export const rgnBatch07: Procedure[] = [
       "Immerse all used instruments in the solution for at least 10 minutes"
     ],
     "answer": "Document instruments and send them to CSSD",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
   },
@@ -1993,7 +1993,7 @@ export const rgnBatch07: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=--gKQCFWs9Q",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "The nurse is carrying out care of an indwelling urinary catheter. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Perform hand hygiene, prepare trolley and send to bedside",
@@ -2001,10 +2001,10 @@ export const rgnBatch07: Procedure[] = [
       "Assemble necessary items"
     ],
     "answer": "Establish rapport with patient (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before carrying out care of an indwelling urinary catheter, what should the nurse do to support informed cooperation?",
     "options": [
       "Perform hand hygiene and wear sterile gloves",
       "Explain procedure to patient (Refer to steps)",
@@ -2012,10 +2012,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Which step should be performed now during care of an indwelling urinary catheter?",
     "options": [
       "Put patient in the supine position",
       "Empty the urine and change the bag if necessary",
@@ -2023,10 +2023,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove drape, mackintosh and dressing towel"
     ],
     "answer": "Assemble necessary items",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "A patient is about to undergo care of an indwelling urinary catheter. Which action protects their dignity during preparation?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Inspect urethral meatus for discharge",
@@ -2034,10 +2034,10 @@ export const rgnBatch07: Procedure[] = [
       "Ensure privacy"
     ],
     "answer": "Ensure privacy",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 5 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before proceeding with care of an indwelling urinary catheter, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene, prepare trolley and send to bedside",
       "Remove anchor device to free catheter tubing",
@@ -2045,10 +2045,10 @@ export const rgnBatch07: Procedure[] = [
       "Place mackintosh and dressing towel under patient"
     ],
     "answer": "Perform hand hygiene, prepare trolley and send to bedside",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "When positioning the patient for care of an indwelling urinary catheter, what should guide the nurse's choice of position?",
     "options": [
       "Use sterile cotton swab soaked in antiseptic lotion, wipe in a circular motion along the length of catheter",
       "Put patient in the supine position",
@@ -2056,10 +2056,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Put patient in the supine position",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 7 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Which step should be performed now during care of an indwelling urinary catheter?",
     "options": [
       "Perform hand hygiene and wear sterile gloves",
       "Put patient into a desirable position",
@@ -2067,10 +2067,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Place mackintosh and dressing towel under patient",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Which nursing action is required at this stage of care of an indwelling urinary catheter?",
     "options": [
       "Perform hand hygiene, prepare trolley and send to bedside",
       "Empty the urine and change the bag if necessary",
@@ -2078,10 +2078,10 @@ export const rgnBatch07: Procedure[] = [
       "Cover patient up so that only genital area is exposed"
     ],
     "answer": "Cover patient up so that only genital area is exposed",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "During care of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Remove anchor device to free catheter tubing",
       "Inspect urethral meatus for discharge",
@@ -2089,10 +2089,10 @@ export const rgnBatch07: Procedure[] = [
       "If it is a male, retract foreskin if present to expose urethral meatus, clean around catheter first, and then wipe in a circular motion around meatus and glans"
     ],
     "answer": "Remove anchor device to free catheter tubing",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 10 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before proceeding with care of an indwelling urinary catheter, what infection-prevention action is required at this point?",
     "options": [
       "Record urine output",
       "Perform hand hygiene and wear sterile gloves",
@@ -2100,10 +2100,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient in the supine position"
     ],
     "answer": "Perform hand hygiene and wear sterile gloves",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 11 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "During care of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Use sterile cotton swab soaked in antiseptic lotion, wipe in a circular motion along the length of catheter",
       "Report findings to appropriate officer",
@@ -2111,10 +2111,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "If it is a male, retract foreskin if present to expose urethral meatus, clean around catheter first, and then wipe in a circular motion around meatus and glans",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 12 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "During care of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Remove anchor device to free catheter tubing",
       "Put patient into a desirable position",
@@ -2122,10 +2122,10 @@ export const rgnBatch07: Procedure[] = [
       "If it is a female, clean vulva using cotton wool swab and antiseptic solution towards anus, clean urethral meatus, moving down the catheter"
     ],
     "answer": "If it is a female, clean vulva using cotton wool swab and antiseptic solution towards anus, clean urethral meatus, moving down the catheter",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 13 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "The nurse is carrying out care of an indwelling urinary catheter. Which action best matches this part of the procedure?",
     "options": [
       "Inspect urethral meatus for discharge",
       "Empty the urine and change the bag if necessary",
@@ -2133,10 +2133,10 @@ export const rgnBatch07: Procedure[] = [
       "Anchor catheter back"
     ],
     "answer": "Inspect urethral meatus for discharge",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "During care of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Dispose off used items and decontaminate instruments and trolley",
       "Use sterile cotton swab soaked in antiseptic lotion, wipe in a circular motion along the length of catheter",
@@ -2144,10 +2144,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene and wear sterile gloves"
     ],
     "answer": "Use sterile cotton swab soaked in antiseptic lotion, wipe in a circular motion along the length of catheter",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 15 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "During care of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Record urine output",
       "Ensure privacy",
@@ -2155,10 +2155,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient in the supine position"
     ],
     "answer": "Anchor catheter back",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 16 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "During care of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Inspect urethral meatus for discharge",
       "Report findings to appropriate officer",
@@ -2166,10 +2166,10 @@ export const rgnBatch07: Procedure[] = [
       "Apply antibiotic ointment at urethral meatus and along 2.5cm of catheter"
     ],
     "answer": "Apply antibiotic ointment at urethral meatus and along 2.5cm of catheter",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 17 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "When collecting a specimen as part of care of an indwelling urinary catheter, which principle protects the reliability of the result?",
     "options": [
       "Empty the urine and change the bag if necessary",
       "Put patient into a desirable position",
@@ -2177,10 +2177,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove drape, mackintosh and dressing towel"
     ],
     "answer": "Empty the urine and change the bag if necessary",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 18 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "When collecting a specimen as part of care of an indwelling urinary catheter, which principle protects the reliability of the result?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Record urine output",
@@ -2188,10 +2188,10 @@ export const rgnBatch07: Procedure[] = [
       "Use sterile cotton swab soaked in antiseptic lotion, wipe in a circular motion along the length of catheter"
     ],
     "answer": "Record urine output",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 19 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Which step should be performed now during care of an indwelling urinary catheter?",
     "options": [
       "Dispose off used items and decontaminate instruments and trolley",
       "Cover patient up so that only genital area is exposed",
@@ -2199,10 +2199,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene and wear sterile gloves"
     ],
     "answer": "Remove drape, mackintosh and dressing towel",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before proceeding with care of an indwelling urinary catheter, what infection-prevention action is required at this point?",
     "options": [
       "Empty the urine and change the bag if necessary",
       "Ensure privacy",
@@ -2210,10 +2210,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove gloves and perform hand hygiene"
     ],
     "answer": "Remove gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 21 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "When positioning the patient for care of an indwelling urinary catheter, what should guide the nurse's choice of position?",
     "options": [
       "Put patient into a desirable position",
       "Report findings to appropriate officer",
@@ -2221,10 +2221,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Put patient into a desirable position",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 22 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "After the hands-on part of care of an indwelling urinary catheter, how should used equipment and waste be managed?",
     "options": [
       "Perform hand hygiene, prepare trolley and send to bedside",
       "Dispose off used items and decontaminate instruments and trolley",
@@ -2232,10 +2232,10 @@ export const rgnBatch07: Procedure[] = [
       "Record urine output"
     ],
     "answer": "Dispose off used items and decontaminate instruments and trolley",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 23 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before proceeding with care of an indwelling urinary catheter, what infection-prevention action is required at this point?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "If it is a female, clean vulva using cotton wool swab and antiseptic solution towards anus, clean urethral meatus, moving down the catheter",
@@ -2243,10 +2243,10 @@ export const rgnBatch07: Procedure[] = [
       "Use sterile cotton swab soaked in antiseptic lotion, wipe in a circular motion along the length of catheter"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 24 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "After completing this part of care of an indwelling urinary catheter, what makes the clinical record useful for continuity of care?",
     "options": [
       "Put patient into a desirable position",
       "Cover patient up so that only genital area is exposed",
@@ -2254,10 +2254,10 @@ export const rgnBatch07: Procedure[] = [
       "Document in nurses’ notes, intake and output chart (manual or electronic)"
     ],
     "answer": "Document in nurses’ notes, intake and output chart (manual or electronic)",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 25 of CARE OF AN INDWELLING URINARY CATHETER?",
+    "question": "The nurse is carrying out care of an indwelling urinary catheter. Which action best matches this part of the procedure?",
     "options": [
       "Report findings to appropriate officer",
       "Ensure privacy",
@@ -2265,7 +2265,7 @@ export const rgnBatch07: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Report findings to appropriate officer",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -2325,7 +2325,7 @@ export const rgnBatch07: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=5ggWWmVADJY",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "During removal of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Review doctor/physician’s order for catheter removal",
       "Put patient into a supine position with the legs opened and flexed",
@@ -2333,10 +2333,10 @@ export const rgnBatch07: Procedure[] = [
       "Wear gloves and place a towel between legs of the female patient/on the thighs of the male patient"
     ],
     "answer": "Review doctor/physician’s order for catheter removal",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 2 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before carrying out removal of an indwelling urinary catheter, what should the nurse do to support informed cooperation?",
     "options": [
       "Remove gloves",
       "Explain the procedure to patient",
@@ -2344,10 +2344,10 @@ export const rgnBatch07: Procedure[] = [
       "Put patient into a supine position with the legs opened and flexed"
     ],
     "answer": "Explain the procedure to patient",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "A patient is about to undergo removal of an indwelling urinary catheter. Which action protects their dignity during preparation?",
     "options": [
       "Withdraw the catheter gently and place into a receiver",
       "Put patient into a supine position with the legs opened and flexed",
@@ -2355,10 +2355,10 @@ export const rgnBatch07: Procedure[] = [
       "Document findings and record urine output in nurses’ notes, intake and output chart"
     ],
     "answer": "Provide privacy",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 4 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "Which nursing action is required at this stage of removal of an indwelling urinary catheter?",
     "options": [
       "Perform hand hygiene",
       "Document findings and record urine output in nurses’ notes, intake and output chart",
@@ -2366,10 +2366,10 @@ export const rgnBatch07: Procedure[] = [
       "Prepare and take trolley to the bedside"
     ],
     "answer": "Prepare and take trolley to the bedside",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "When positioning the patient for removal of an indwelling urinary catheter, what should guide the nurse's choice of position?",
     "options": [
       "Put patient into a supine position with the legs opened and flexed",
       "Remove mackintosh and dressing towel",
@@ -2377,10 +2377,10 @@ export const rgnBatch07: Procedure[] = [
       "Document findings and record urine output in nurses’ notes, intake and output chart"
     ],
     "answer": "Put patient into a supine position with the legs opened and flexed",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 6 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "To complete removal of an indwelling urinary catheter safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Place mackintosh and dressing towel beneath the patient",
@@ -2388,10 +2388,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove mackintosh and dressing towel"
     ],
     "answer": "Place mackintosh and dressing towel beneath the patient",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "Which step should be performed now during removal of an indwelling urinary catheter?",
     "options": [
       "Provide privacy",
       "Remove mackintosh and dressing towel",
@@ -2399,10 +2399,10 @@ export const rgnBatch07: Procedure[] = [
       "Instruct patient to take in breath whiles you withdraw the catheter"
     ],
     "answer": "Fold top bed clothings over and exposed the perineal area",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before proceeding with removal of an indwelling urinary catheter, what infection-prevention action is required at this point?",
     "options": [
       "Dispose off used items and decontaminate trolley",
       "Instruct patient to take in breath whiles you withdraw the catheter",
@@ -2410,10 +2410,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 9 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "The nurse is carrying out removal of an indwelling urinary catheter. Which action best matches this part of the procedure?",
     "options": [
       "Wear gloves and place a towel between legs of the female patient/on the thighs of the male patient",
       "Place mackintosh and dressing towel beneath the patient",
@@ -2421,10 +2421,10 @@ export const rgnBatch07: Procedure[] = [
       "Instruct patient to take in breath whiles you withdraw the catheter"
     ],
     "answer": "Wear gloves and place a towel between legs of the female patient/on the thighs of the male patient",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "During removal of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Dispose off used items and decontaminate trolley",
       "Insert the syringe into the injection port of catheter and withdraw water from the balloon",
@@ -2432,10 +2432,10 @@ export const rgnBatch07: Procedure[] = [
       "Place mackintosh and dressing towel beneath the patient"
     ],
     "answer": "Insert the syringe into the injection port of catheter and withdraw water from the balloon",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 11 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "During removal of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Measure urine in the measuring jug",
       "Place mackintosh and dressing towel beneath the patient",
@@ -2443,10 +2443,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain the procedure to patient"
     ],
     "answer": "Instruct patient to take in breath whiles you withdraw the catheter",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 12 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "During removal of an indwelling urinary catheter, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Wear gloves and place a towel between legs of the female patient/on the thighs of the male patient",
       "Explain the procedure to patient",
@@ -2454,10 +2454,10 @@ export const rgnBatch07: Procedure[] = [
       "Withdraw the catheter gently and place into a receiver"
     ],
     "answer": "Withdraw the catheter gently and place into a receiver",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 13 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "The nurse is carrying out removal of an indwelling urinary catheter. Which action best matches this part of the procedure?",
     "options": [
       "Dry the perineal area with a towel",
       "Reposition patient",
@@ -2465,10 +2465,10 @@ export const rgnBatch07: Procedure[] = [
       "Explain the procedure to patient"
     ],
     "answer": "Dry the perineal area with a towel",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "When collecting a specimen as part of removal of an indwelling urinary catheter, which principle protects the reliability of the result?",
     "options": [
       "Wear gloves and place a towel between legs of the female patient/on the thighs of the male patient",
       "Measure urine in the measuring jug",
@@ -2476,10 +2476,10 @@ export const rgnBatch07: Procedure[] = [
       "Reposition patient"
     ],
     "answer": "Measure urine in the measuring jug",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 15 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "Which step should be performed now during removal of an indwelling urinary catheter?",
     "options": [
       "Put patient into a supine position with the legs opened and flexed",
       "Reposition patient",
@@ -2487,10 +2487,10 @@ export const rgnBatch07: Procedure[] = [
       "Withdraw the catheter gently and place into a receiver"
     ],
     "answer": "Remove mackintosh and dressing towel",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "Which nursing action is required at this stage of removal of an indwelling urinary catheter?",
     "options": [
       "Review doctor/physician’s order for catheter removal",
       "Withdraw the catheter gently and place into a receiver",
@@ -2498,10 +2498,10 @@ export const rgnBatch07: Procedure[] = [
       "Remove gloves"
     ],
     "answer": "Remove gloves",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before proceeding with removal of an indwelling urinary catheter, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Wear gloves and place a towel between legs of the female patient/on the thighs of the male patient",
@@ -2509,10 +2509,10 @@ export const rgnBatch07: Procedure[] = [
       "Dry the perineal area with a towel"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 18 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "When positioning the patient for removal of an indwelling urinary catheter, what should guide the nurse's choice of position?",
     "options": [
       "Review doctor/physician’s order for catheter removal",
       "Reposition patient",
@@ -2520,10 +2520,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Reposition patient",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 19 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "After the hands-on part of removal of an indwelling urinary catheter, how should used equipment and waste be managed?",
     "options": [
       "Remove mackintosh and dressing towel",
       "Perform hand hygiene",
@@ -2531,10 +2531,10 @@ export const rgnBatch07: Procedure[] = [
       "Prepare and take trolley to the bedside"
     ],
     "answer": "Dispose off used items and decontaminate trolley",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 20 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "Before proceeding with removal of an indwelling urinary catheter, what infection-prevention action is required at this point?",
     "options": [
       "Withdraw the catheter gently and place into a receiver",
       "Prepare and take trolley to the bedside",
@@ -2542,10 +2542,10 @@ export const rgnBatch07: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 21 of REMOVAL OF AN INDWELLING URINARY CATHETER?",
+    "question": "After completing this part of removal of an indwelling urinary catheter, what makes the clinical record useful for continuity of care?",
     "options": [
       "Document findings and record urine output in nurses’ notes, intake and output chart",
       "Dispose off used items and decontaminate trolley",
@@ -2553,7 +2553,7 @@ export const rgnBatch07: Procedure[] = [
       "Prepare and take trolley to the bedside"
     ],
     "answer": "Document findings and record urine output in nurses’ notes, intake and output chart",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
   },
@@ -2597,7 +2597,7 @@ export const rgnBatch07: Procedure[] = [
     documentation: ["Record the handover time, staff involved, significant changes, outstanding tasks, controlled-drug count, and escalations.", "Document any refusal, unresolved defect, or transfer of responsibility according to policy."],
     quiz: [
   {
-    "question": "Which action is listed as step 1 of HANDING OVER A WARD?",
+    "question": "The nurse is carrying out handing over a ward. Which action best matches this part of the procedure?",
     "options": [
       "Welcome the in-coming nurse",
       "Move to the bedside of the patient",
@@ -2605,10 +2605,10 @@ export const rgnBatch07: Procedure[] = [
       "Hand over ward annexes to in-coming nurse"
     ],
     "answer": "Welcome the in-coming nurse",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of HANDING OVER A WARD?",
+    "question": "To complete handing over a ward safely, which action should the nurse take at this point?",
     "options": [
       "Together with incoming nurse, interact with patient while handing over",
       "Give ward reports on patients to in-coming nurse to read",
@@ -2616,10 +2616,10 @@ export const rgnBatch07: Procedure[] = [
       "Check with incoming nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc."
     ],
     "answer": "Give ward reports on patients to in-coming nurse to read",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of HANDING OVER A WARD?",
+    "question": "Which step should be performed now during handing over a ward?",
     "options": [
       "Welcome the in-coming nurse",
       "Hand over ward annexes to in-coming nurse",
@@ -2627,10 +2627,10 @@ export const rgnBatch07: Procedure[] = [
       "Move to the bedside of the patient"
     ],
     "answer": "Enquire from in-coming nurse if she needs further explanation on occurrences on the ward",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of HANDING OVER A WARD?",
+    "question": "Before carrying out handing over a ward, what should the nurse do to support informed cooperation?",
     "options": [
       "Inspect the ward annexes and ensure they are clean and tidy",
       "Check with incoming nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
@@ -2638,10 +2638,10 @@ export const rgnBatch07: Procedure[] = [
       "Hand over sensitive information about patients at the nurses’ station"
     ],
     "answer": "Hand over sensitive information about patients at the nurses’ station",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of HANDING OVER A WARD?",
+    "question": "The nurse is carrying out handing over a ward. Which action best matches this part of the procedure?",
     "options": [
       "Move to the bedside of the patient",
       "Hand over sensitive information about patients at the nurses’ station",
@@ -2649,10 +2649,10 @@ export const rgnBatch07: Procedure[] = [
       "Hand over ward annexes to in-coming nurse"
     ],
     "answer": "Move to the bedside of the patient",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of HANDING OVER A WARD?",
+    "question": "To complete handing over a ward safely, which action should the nurse take at this point?",
     "options": [
       "Move to the bedside of the patient",
       "Together with incoming nurse, interact with patient while handing over",
@@ -2660,10 +2660,10 @@ export const rgnBatch07: Procedure[] = [
       "Check with incoming nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc."
     ],
     "answer": "Together with incoming nurse, interact with patient while handing over",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of HANDING OVER A WARD?",
+    "question": "Before carrying out handing over a ward, what should the nurse do to support informed cooperation?",
     "options": [
       "Welcome the in-coming nurse",
       "Hand over ward annexes to in-coming nurse",
@@ -2671,10 +2671,10 @@ export const rgnBatch07: Procedure[] = [
       "Hand over sensitive information about patients at the nurses’ station"
     ],
     "answer": "Check and confirm information about patients’ on the charts and notes",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 8 of HANDING OVER A WARD?",
+    "question": "Which nursing action is required at this stage of handing over a ward?",
     "options": [
       "Inspect the ward annexes and ensure they are clean and tidy",
       "Check with incoming nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
@@ -2682,10 +2682,10 @@ export const rgnBatch07: Procedure[] = [
       "Check condition of patient whether stable improving or deteriorating"
     ],
     "answer": "Check condition of patient whether stable improving or deteriorating",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of HANDING OVER A WARD?",
+    "question": "The nurse is carrying out handing over a ward. Which action best matches this part of the procedure?",
     "options": [
       "Check with incoming nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
       "Hand over sensitive information about patients at the nurses’ station",
@@ -2693,10 +2693,10 @@ export const rgnBatch07: Procedure[] = [
       "Hand over ward annexes to in-coming nurse"
     ],
     "answer": "Check with incoming nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of HANDING OVER A WARD?",
+    "question": "During handing over a ward, what should the nurse verify about any relevant tube or drainage system?",
     "options": [
       "Move to the bedside of the patient",
       "Check on any drainage tubes if they are draining well and record the amount if necessary e.g. intravenous line, catheter, NG tubes etc.",
@@ -2704,10 +2704,10 @@ export const rgnBatch07: Procedure[] = [
       "Check condition of patient whether stable improving or deteriorating"
     ],
     "answer": "Check on any drainage tubes if they are draining well and record the amount if necessary e.g. intravenous line, catheter, NG tubes etc.",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Check that the system is secure, patent and functioning as intended, without kinks or avoidable contamination. Assess output and report unexpected changes."
   },
   {
-    "question": "Which action is listed as step 11 of HANDING OVER A WARD?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Welcome the in-coming nurse",
       "Hand over ward annexes to in-coming nurse",
@@ -2715,10 +2715,10 @@ export const rgnBatch07: Procedure[] = [
       "Hand over sensitive information about patients at the nurses’ station"
     ],
     "answer": "Check and hand over controlled medication and other relevant consumables available",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 12 of HANDING OVER A WARD?",
+    "question": "Which nursing action is required at this stage of handing over a ward?",
     "options": [
       "Check and hand over controlled medication and other relevant consumables available",
       "Check condition of patient whether stable improving or deteriorating",
@@ -2726,10 +2726,10 @@ export const rgnBatch07: Procedure[] = [
       "Inspect the ward annexes and ensure they are clean and tidy"
     ],
     "answer": "Inspect the ward annexes and ensure they are clean and tidy",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of HANDING OVER A WARD?",
+    "question": "The nurse is carrying out handing over a ward. Which action best matches this part of the procedure?",
     "options": [
       "Hand over ward annexes to in-coming nurse",
       "Hand over sensitive information about patients at the nurses’ station",
@@ -2737,10 +2737,10 @@ export const rgnBatch07: Procedure[] = [
       "Inspect the ward annexes and ensure they are clean and tidy"
     ],
     "answer": "Hand over ward annexes to in-coming nurse",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of HANDING OVER A WARD?",
+    "question": "To complete handing over a ward safely, which action should the nurse take at this point?",
     "options": [
       "Move to the bedside of the patient",
       "Report on any defects on equipment and request made for urgent repairs",
@@ -2748,10 +2748,10 @@ export const rgnBatch07: Procedure[] = [
       "Check condition of patient whether stable improving or deteriorating"
     ],
     "answer": "Report on any defects on equipment and request made for urgent repairs",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of HANDING OVER A WARD?",
+    "question": "Which step should be performed now during handing over a ward?",
     "options": [
       "Welcome the in-coming nurse",
       "Inspect the ward annexes and ensure they are clean and tidy",
@@ -2759,7 +2759,7 @@ export const rgnBatch07: Procedure[] = [
       "Hand over sensitive information about patients at the nurses’ station"
     ],
     "answer": "Report on departmental instructions and other important information",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },

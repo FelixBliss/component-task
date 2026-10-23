@@ -1108,7 +1108,7 @@ export const rgnBatch05: Procedure[] = [
     ],
     quiz: [
   {
-    "question": "Which action is listed as step 1 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "A patient is about to undergo serving of bedpan to a patient. Which action protects their dignity during preparation?",
     "options": [
       "Explain procedure and provide privacy",
       "Place the mackintosh and dressing towel at the midsection of the bed",
@@ -1116,10 +1116,10 @@ export const rgnBatch05: Procedure[] = [
       "Arrange bed clothes and leave patient comfortable in bed"
     ],
     "answer": "Explain procedure and provide privacy",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 2 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "To complete serving of bedpan to a patient safely, which action should the nurse take at this point?",
     "options": [
       "Loosen to bed clothings",
       "Prepare and send trolley to the bedside",
@@ -1127,10 +1127,10 @@ export const rgnBatch05: Procedure[] = [
       "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately"
     ],
     "answer": "Prepare and send trolley to the bedside",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "Which step should be performed now during serving of bedpan to a patient?",
     "options": [
       "Empty bedpan, decontaminate, wash, sterilize and remove screen",
       "Allow patient to wash hands with soap and water and dry hands",
@@ -1138,10 +1138,10 @@ export const rgnBatch05: Procedure[] = [
       "Loosen to bed clothings"
     ],
     "answer": "Stand at the right side of the bed with assistant on the other side",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "Which nursing action is required at this stage of serving of bedpan to a patient?",
     "options": [
       "Allow patient to wash hands with soap and water and dry hands",
       "Leave patient for sometime and inform him/her to call your attention when he/she is done",
@@ -1149,10 +1149,10 @@ export const rgnBatch05: Procedure[] = [
       "Loosen to bed clothings"
     ],
     "answer": "Loosen to bed clothings",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "The nurse is carrying out serving of bedpan to a patient. Which action best matches this part of the procedure?",
     "options": [
       "Place the mackintosh and dressing towel at the midsection of the bed",
       "Prepare and send trolley to the bedside",
@@ -1160,10 +1160,10 @@ export const rgnBatch05: Procedure[] = [
       "Remove gloves and perform hand hygiene"
     ],
     "answer": "Place the mackintosh and dressing towel at the midsection of the bed",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "To complete serving of bedpan to a patient safely, which action should the nurse take at this point?",
     "options": [
       "Explain procedure and provide privacy",
       "Gently lift patient with the assistant onto bedpan",
@@ -1171,10 +1171,10 @@ export const rgnBatch05: Procedure[] = [
       "Place the mackintosh and dressing towel at the midsection of the bed"
     ],
     "answer": "Gently lift patient with the assistant onto bedpan",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "Which step should be performed now during serving of bedpan to a patient?",
     "options": [
       "Take bedpan to the sluice room and inspect content before emptying",
       "Don gloves, cleans patient with wipes/tissue and discard",
@@ -1182,10 +1182,10 @@ export const rgnBatch05: Procedure[] = [
       "Explain procedure and provide privacy"
     ],
     "answer": "Leave patient for sometime and inform him/her to call your attention when he/she is done",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "Which nursing action is required at this stage of serving of bedpan to a patient?",
     "options": [
       "Don gloves, cleans patient with wipes/tissue and discard",
       "Loosen to bed clothings",
@@ -1193,10 +1193,10 @@ export const rgnBatch05: Procedure[] = [
       "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately"
     ],
     "answer": "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "The nurse is carrying out serving of bedpan to a patient. Which action best matches this part of the procedure?",
     "options": [
       "Don gloves, cleans patient with wipes/tissue and discard",
       "Perform hand hygiene, document procedures and report any abnormalities",
@@ -1204,10 +1204,10 @@ export const rgnBatch05: Procedure[] = [
       "Leave patient for sometime and inform him/her to call your attention when he/she is done"
     ],
     "answer": "Don gloves, cleans patient with wipes/tissue and discard",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "Before proceeding with serving of bedpan to a patient, what infection-prevention action is required at this point?",
     "options": [
       "Empty bedpan, decontaminate, wash, sterilize and remove screen",
       "Remove gloves and perform hand hygiene",
@@ -1215,10 +1215,10 @@ export const rgnBatch05: Procedure[] = [
       "Stand at the right side of the bed with assistant on the other side"
     ],
     "answer": "Remove gloves and perform hand hygiene",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 11 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "Before proceeding with serving of bedpan to a patient, what infection-prevention action is required at this point?",
     "options": [
       "Remove gloves and perform hand hygiene",
       "Gently lift patient with the assistant onto bedpan",
@@ -1226,10 +1226,10 @@ export const rgnBatch05: Procedure[] = [
       "Empty bedpan, decontaminate, wash, sterilize and remove screen"
     ],
     "answer": "Allow patient to wash hands with soap and water and dry hands",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 12 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "Which nursing action is required at this stage of serving of bedpan to a patient?",
     "options": [
       "Gently lift patient with the assistant onto bedpan",
       "Prepare and send trolley to the bedside",
@@ -1237,10 +1237,10 @@ export const rgnBatch05: Procedure[] = [
       "Arrange bed clothes and leave patient comfortable in bed"
     ],
     "answer": "Arrange bed clothes and leave patient comfortable in bed",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "The nurse is carrying out serving of bedpan to a patient. Which action best matches this part of the procedure?",
     "options": [
       "Take bedpan to the sluice room and inspect content before emptying",
       "Measure urine if any, when necessary and record",
@@ -1248,10 +1248,10 @@ export const rgnBatch05: Procedure[] = [
       "Place the mackintosh and dressing towel at the midsection of the bed"
     ],
     "answer": "Take bedpan to the sluice room and inspect content before emptying",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "When collecting a specimen as part of serving of bedpan to a patient, which principle protects the reliability of the result?",
     "options": [
       "Arrange bed clothes and leave patient comfortable in bed",
       "Measure urine if any, when necessary and record",
@@ -1259,10 +1259,10 @@ export const rgnBatch05: Procedure[] = [
       "Explain procedure and provide privacy"
     ],
     "answer": "Measure urine if any, when necessary and record",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 15 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "A patient is about to undergo serving of bedpan to a patient. Which action protects their dignity during preparation?",
     "options": [
       "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately",
       "Loosen to bed clothings",
@@ -1270,10 +1270,10 @@ export const rgnBatch05: Procedure[] = [
       "Arrange bed clothes and leave patient comfortable in bed"
     ],
     "answer": "Empty bedpan, decontaminate, wash, sterilize and remove screen",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 16 of SERVING OF BEDPAN TO A PATIENT?",
+    "question": "Before proceeding with serving of bedpan to a patient, what infection-prevention action is required at this point?",
     "options": [
       "Loosen to bed clothings",
       "Empty bedpan, decontaminate, wash, sterilize and remove screen",
@@ -1281,7 +1281,7 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene, document procedures and report any abnormalities"
     ],
     "answer": "Perform hand hygiene, document procedures and report any abnormalities",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   }
 ],
   },
@@ -1369,7 +1369,7 @@ export const rgnBatch05: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=JH413AIgZ3k",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Prepare and send tray to the bedside",
@@ -1377,10 +1377,10 @@ export const rgnBatch05: Procedure[] = [
       "Take out the medication and compare with the patient treatment chart (manual or electronic) for the dosage"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "To complete administration of oral medications (tablets, capsules, caplets etc.) safely, which action should the nurse take at this point?",
     "options": [
       "Stay with patient until all medications are taken",
       "Establish rapport (Refer to steps)",
@@ -1388,10 +1388,10 @@ export const rgnBatch05: Procedure[] = [
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "Before carrying out administration of oral medications (tablets, capsules, caplets etc.), what should the nurse do to support informed cooperation?",
     "options": [
       "Give the tablet to the patient and ensure patient:",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -1399,10 +1399,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items"
     ],
     "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "Before proceeding with administration of oral medications (tablets, capsules, caplets etc.), what infection-prevention action is required at this point?",
     "options": [
       "Read the label on the package and compare with patient’s treatment chart (manual or electronic)",
       "Observe patient for any adverse reaction",
@@ -1410,10 +1410,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "The nurse is carrying out administration of oral medications (tablets, capsules, caplets etc.). Which action best matches this part of the procedure?",
     "options": [
       "Prepare and send tray to the bedside",
       "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
@@ -1421,10 +1421,10 @@ export const rgnBatch05: Procedure[] = [
       "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth"
     ],
     "answer": "Prepare and send tray to the bedside",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "To complete administration of oral medications (tablets, capsules, caplets etc.) safely, which action should the nurse take at this point?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Read the label on the package and compare with patient’s treatment chart (manual or electronic)",
@@ -1432,10 +1432,10 @@ export const rgnBatch05: Procedure[] = [
       "Swallow with the aid of water if it is to be administered orally"
     ],
     "answer": "Read the label on the package and compare with patient’s treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Encourage patient to report any adverse reaction",
       "Take the tablet with a spoon",
@@ -1443,10 +1443,10 @@ export const rgnBatch05: Procedure[] = [
       "Read the label on the package and compare with patient’s treatment chart (manual or electronic)"
     ],
     "answer": "Take out the medication and compare with the patient treatment chart (manual or electronic) for the dosage",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "Which nursing action is required at this stage of administration of oral medications (tablets, capsules, caplets etc.)?",
     "options": [
       "Stay with patient until all medications are taken",
       "Perform hand hygiene",
@@ -1454,10 +1454,10 @@ export const rgnBatch05: Procedure[] = [
       "Pour out water into a drinking cup if it is to be administered orally"
     ],
     "answer": "Pour out water into a drinking cup if it is to be administered orally",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "The nurse is carrying out administration of oral medications (tablets, capsules, caplets etc.). Which action best matches this part of the procedure?",
     "options": [
       "Take the tablet with a spoon",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -1465,10 +1465,10 @@ export const rgnBatch05: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Take the tablet with a spoon",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "To complete administration of oral medications (tablets, capsules, caplets etc.) safely, which action should the nurse take at this point?",
     "options": [
       "Take the tablet with a spoon",
       "Give the tablet to the patient and ensure patient:",
@@ -1476,10 +1476,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items"
     ],
     "answer": "Give the tablet to the patient and ensure patient:",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "Which step should be performed now during administration of oral medications (tablets, capsules, caplets etc.)?",
     "options": [
       "Prepare and send tray to the bedside",
       "Observe patient for any adverse reaction",
@@ -1487,10 +1487,10 @@ export const rgnBatch05: Procedure[] = [
       "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth"
     ],
     "answer": "Swallow with the aid of water if it is to be administered orally",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
@@ -1498,10 +1498,10 @@ export const rgnBatch05: Procedure[] = [
       "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually"
     ],
     "answer": "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
       "Pour out water into a drinking cup if it is to be administered orally",
@@ -1509,10 +1509,10 @@ export const rgnBatch05: Procedure[] = [
       "Give the tablet to the patient and ensure patient:"
     ],
     "answer": "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Encourage patient to report any adverse reaction",
       "Stay with patient until all medications are taken",
@@ -1520,10 +1520,10 @@ export const rgnBatch05: Procedure[] = [
       "Read the label on the package and compare with patient’s treatment chart (manual or electronic)"
     ],
     "answer": "Stay with patient until all medications are taken",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
       "Perform hand hygiene",
@@ -1531,10 +1531,10 @@ export const rgnBatch05: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "When positioning the patient for administration of oral medications (tablets, capsules, caplets etc.), what should guide the nurse's choice of position?",
     "options": [
       "Take the tablet with a spoon",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -1542,10 +1542,10 @@ export const rgnBatch05: Procedure[] = [
       "Congratulate patient and make him/her assume a desirable position"
     ],
     "answer": "Congratulate patient and make him/her assume a desirable position",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "The nurse is carrying out administration of oral medications (tablets, capsules, caplets etc.). Which action best matches this part of the procedure?",
     "options": [
       "Observe patient for any adverse reaction",
       "Congratulate patient and make him/her assume a desirable position",
@@ -1553,10 +1553,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items"
     ],
     "answer": "Observe patient for any adverse reaction",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "To complete administration of oral medications (tablets, capsules, caplets etc.) safely, which action should the nurse take at this point?",
     "options": [
       "Prepare and send tray to the bedside",
       "Encourage patient to report any adverse reaction",
@@ -1564,10 +1564,10 @@ export const rgnBatch05: Procedure[] = [
       "Stay with patient until all medications are taken"
     ],
     "answer": "Encourage patient to report any adverse reaction",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "After the hands-on part of administration of oral medications (tablets, capsules, caplets etc.), how should used equipment and waste be managed?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually",
@@ -1575,10 +1575,10 @@ export const rgnBatch05: Procedure[] = [
       "Give the tablet to the patient and ensure patient:"
     ],
     "answer": "Dispose off used items",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "Before proceeding with administration of oral medications (tablets, capsules, caplets etc.), what infection-prevention action is required at this point?",
     "options": [
       "Encourage patient to report any adverse reaction",
       "Take the tablet with a spoon",
@@ -1586,10 +1586,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "After completing this part of administration of oral medications (tablets, capsules, caplets etc.), what makes the clinical record useful for continuity of care?",
     "options": [
       "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
       "Perform hand hygiene",
@@ -1597,10 +1597,10 @@ export const rgnBatch05: Procedure[] = [
       "Read the label on the package and compare with patient’s treatment chart (manual or electronic)"
     ],
     "answer": "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "question": "To complete administration of oral medications (tablets, capsules, caplets etc.) safely, which action should the nurse take at this point?",
     "options": [
       "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -1608,7 +1608,7 @@ export const rgnBatch05: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -1696,7 +1696,7 @@ export const rgnBatch05: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=dAR5pxDqOcs",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Prepare and send tray to the bedside",
@@ -1704,10 +1704,10 @@ export const rgnBatch05: Procedure[] = [
       "Shake the bottle gently"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "To complete administration of oral medications (mixtures) safely, which action should the nurse take at this point?",
     "options": [
       "Congratulate patient and make him/her assume a desirable position",
       "Establish rapport (Refer to steps)",
@@ -1715,10 +1715,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "Before carrying out administration of oral medications (mixtures), what should the nurse do to support informed cooperation?",
     "options": [
       "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
       "Establish rapport (Refer to steps)",
@@ -1726,10 +1726,10 @@ export const rgnBatch05: Procedure[] = [
       "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)"
     ],
     "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "Before proceeding with administration of oral medications (mixtures), what infection-prevention action is required at this point?",
     "options": [
       "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
       "Dispose off used items",
@@ -1737,10 +1737,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "The nurse is carrying out administration of oral medications (mixtures). Which action best matches this part of the procedure?",
     "options": [
       "Prepare and send tray to the bedside",
       "Encourage patient to drink the medicine and serve water if necessary",
@@ -1748,10 +1748,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse"
     ],
     "answer": "Prepare and send tray to the bedside",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "To complete administration of oral medications (mixtures) safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)",
@@ -1759,10 +1759,10 @@ export const rgnBatch05: Procedure[] = [
       "Carry medicine to the patient on a saucer, a teaspoon may be added for stirring if it is a suspension"
     ],
     "answer": "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "Which step should be performed now during administration of oral medications (mixtures)?",
     "options": [
       "Check on patient after thirty (30) minutes for therapeutic effect",
       "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
@@ -1770,10 +1770,10 @@ export const rgnBatch05: Procedure[] = [
       "Remove the cork and holds it with the little or ring finger"
     ],
     "answer": "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "Which nursing action is required at this stage of administration of oral medications (mixtures)?",
     "options": [
       "Observe patient for any adverse reaction",
       "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
@@ -1781,10 +1781,10 @@ export const rgnBatch05: Procedure[] = [
       "Shake the bottle gently"
     ],
     "answer": "Shake the bottle gently",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "The nurse is carrying out administration of oral medications (mixtures). Which action best matches this part of the procedure?",
     "options": [
       "Remove the cork and holds it with the little or ring finger",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -1792,10 +1792,10 @@ export const rgnBatch05: Procedure[] = [
       "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)"
     ],
     "answer": "Remove the cork and holds it with the little or ring finger",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "To complete administration of oral medications (mixtures) safely, which action should the nurse take at this point?",
     "options": [
       "Encourage patient to drink the medicine and serve water if necessary",
       "Pick the medicine glass and with the thumb nail marks the level of the measure to be taken",
@@ -1803,10 +1803,10 @@ export const rgnBatch05: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Pick the medicine glass and with the thumb nail marks the level of the measure to be taken",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Remove the cork and holds it with the little or ring finger",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -1814,10 +1814,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items"
     ],
     "answer": "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "Which nursing action is required at this stage of administration of oral medications (mixtures)?",
     "options": [
       "Prepare and send tray to the bedside",
       "Encourage patient to report any adverse",
@@ -1825,10 +1825,10 @@ export const rgnBatch05: Procedure[] = [
       "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)"
     ],
     "answer": "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "The nurse is carrying out administration of oral medications (mixtures). Which action best matches this part of the procedure?",
     "options": [
       "Carry medicine to the patient on a saucer, a teaspoon may be added for stirring if it is a suspension",
       "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
@@ -1836,10 +1836,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe patient for any adverse reaction"
     ],
     "answer": "Carry medicine to the patient on a saucer, a teaspoon may be added for stirring if it is a suspension",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "To complete administration of oral medications (mixtures) safely, which action should the nurse take at this point?",
     "options": [
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
       "Encourage patient to drink the medicine and serve water if necessary",
@@ -1847,10 +1847,10 @@ export const rgnBatch05: Procedure[] = [
       "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most"
     ],
     "answer": "Encourage patient to drink the medicine and serve water if necessary",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "When positioning the patient for administration of oral medications (mixtures), what should guide the nurse's choice of position?",
     "options": [
       "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
       "Pick the medicine glass and with the thumb nail marks the level of the measure to be taken",
@@ -1858,10 +1858,10 @@ export const rgnBatch05: Procedure[] = [
       "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage"
     ],
     "answer": "Congratulate patient and make him/her assume a desirable position",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "Which nursing action is required at this stage of administration of oral medications (mixtures)?",
     "options": [
       "Encourage patient to drink the medicine and serve water if necessary",
       "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)",
@@ -1869,10 +1869,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe patient for any adverse reaction"
     ],
     "answer": "Observe patient for any adverse reaction",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "The nurse is carrying out administration of oral medications (mixtures). Which action best matches this part of the procedure?",
     "options": [
       "Encourage patient to report any adverse",
       "Establish rapport (Refer to steps)",
@@ -1880,10 +1880,10 @@ export const rgnBatch05: Procedure[] = [
       "Prepare and send tray to the bedside"
     ],
     "answer": "Encourage patient to report any adverse",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "After the hands-on part of administration of oral medications (mixtures), how should used equipment and waste be managed?",
     "options": [
       "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
       "Dispose off used items",
@@ -1891,10 +1891,10 @@ export const rgnBatch05: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Dispose off used items",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "Before proceeding with administration of oral medications (mixtures), what infection-prevention action is required at this point?",
     "options": [
       "Remove the cork and holds it with the little or ring finger",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -1902,10 +1902,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "After completing this part of administration of oral medications (mixtures), what makes the clinical record useful for continuity of care?",
     "options": [
       "Perform hand hygiene",
       "Congratulate patient and make him/her assume a desirable position",
@@ -1913,10 +1913,10 @@ export const rgnBatch05: Procedure[] = [
       "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)"
     ],
     "answer": "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "question": "The nurse is carrying out administration of oral medications (mixtures). Which action best matches this part of the procedure?",
     "options": [
       "Check on patient after thirty (30) minutes for therapeutic effect",
       "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
@@ -1924,7 +1924,7 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to drink the medicine and serve water if necessary"
     ],
     "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -2038,7 +2038,7 @@ export const rgnBatch05: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=W8-WlfOtSo0",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
@@ -2046,10 +2046,10 @@ export const rgnBatch05: Procedure[] = [
       "Regulate the flow rate as ordered with the aid of a timer"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "To complete administration of intravenous medication (infusion) safely, which action should the nurse take at this point?",
     "options": [
       "Dispose off used items and decontaminate trolley",
       "Establish rapport (Refer to steps)",
@@ -2057,10 +2057,10 @@ export const rgnBatch05: Procedure[] = [
       "Remove the metallic stylet and put it in the sharps container"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Before carrying out administration of intravenous medication (infusion), what should the nurse do to support informed cooperation?",
     "options": [
       "Encourage patient to report any adverse reaction",
       "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
@@ -2068,10 +2068,10 @@ export const rgnBatch05: Procedure[] = [
       "Wears sterile gloves"
     ],
     "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Before proceeding with administration of intravenous medication (infusion), what infection-prevention action is required at this point?",
     "options": [
       "Remove glove and perform hand hygiene",
       "Establish rapport (Refer to steps)",
@@ -2079,10 +2079,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "The nurse is carrying out administration of intravenous medication (infusion). Which action best matches this part of the procedure?",
     "options": [
       "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
       "Document procedure on nurses’ notes (manually or electronically)",
@@ -2090,10 +2090,10 @@ export const rgnBatch05: Procedure[] = [
       "Ask assistant to apply tourniquet to locate the vein"
     ],
     "answer": "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "To complete administration of intravenous medication (infusion) safely, which action should the nurse take at this point?",
     "options": [
       "Reposition patient appropriately in bed",
       "Prepare and send trolley and other equipment to the patient’s bedside",
@@ -2101,10 +2101,10 @@ export const rgnBatch05: Procedure[] = [
       "Fill the chamber half way and expel air from the giving set"
     ],
     "answer": "Prepare and send trolley and other equipment to the patient’s bedside",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (infusion)?",
     "options": [
       "Release the tourniquet and connect the giving set",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -2112,10 +2112,10 @@ export const rgnBatch05: Procedure[] = [
       "Hang the infusion bag/bottle on the drip stand"
     ],
     "answer": "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (infusion)?",
     "options": [
       "Clean the site with antimicrobial solution (methylated spirit) with cotton swab",
       "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
@@ -2123,10 +2123,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to use the washroom or serve a bedpan/urinal"
     ],
     "answer": "Encourage patient to use the washroom or serve a bedpan/urinal",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "While providing administration of intravenous medication (infusion), why must the nurse complete the prescribed observations at the specified intervals?",
     "options": [
       "Check vital signs and records",
       "Regulate the flow rate as ordered with the aid of a timer",
@@ -2134,10 +2134,10 @@ export const rgnBatch05: Procedure[] = [
       "Assist patient to assume a desirable position"
     ],
     "answer": "Check vital signs and records",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Trended observations help detect deterioration early. Record the measurements, compare them with previous findings and escalate abnormal values or clinical concern according to local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "To complete administration of intravenous medication (infusion) safely, which action should the nurse take at this point?",
     "options": [
       "Introduce the cannula into the vein",
       "Select and inspect sites for administration",
@@ -2145,10 +2145,10 @@ export const rgnBatch05: Procedure[] = [
       "Place infusion stand at the side of the bed and prepare adhesive strips/tape"
     ],
     "answer": "Select and inspect sites for administration",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (infusion)?",
     "options": [
       "Perform hand hygiene using alcohol rub",
       "Observe patient for any adverse reaction",
@@ -2156,10 +2156,10 @@ export const rgnBatch05: Procedure[] = [
       "Prepare and send trolley and other equipment to the patient’s bedside"
     ],
     "answer": "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (infusion)?",
     "options": [
       "Remove the cap from the other end of the giving set and attach needle to it",
       "Secure cannula into position and check for infiltration or haematoma",
@@ -2167,10 +2167,10 @@ export const rgnBatch05: Procedure[] = [
       "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle"
     ],
     "answer": "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "The nurse is carrying out administration of intravenous medication (infusion). Which action best matches this part of the procedure?",
     "options": [
       "Hang the infusion bag/bottle on the drip stand",
       "Ask assistant to apply tourniquet to locate the vein",
@@ -2178,10 +2178,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to use the washroom or serve a bedpan/urinal"
     ],
     "answer": "Hang the infusion bag/bottle on the drip stand",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "To complete administration of intravenous medication (infusion) safely, which action should the nurse take at this point?",
     "options": [
       "Protect the bed with a mackintosh and dressing towel",
       "Remove the cap from the other end of the giving set and attach needle to it",
@@ -2189,10 +2189,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Remove the cap from the other end of the giving set and attach needle to it",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "When positioning the patient for administration of intravenous medication (infusion), what should guide the nurse's choice of position?",
     "options": [
       "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
       "Remove the metallic stylet and put it in the sharps container",
@@ -2200,10 +2200,10 @@ export const rgnBatch05: Procedure[] = [
       "Check on patient after thirty (30) minutes for therapeutic effect"
     ],
     "answer": "Assist patient to assume a desirable position",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (infusion)?",
     "options": [
       "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
       "Wears sterile gloves",
@@ -2211,10 +2211,10 @@ export const rgnBatch05: Procedure[] = [
       "Protect the bed with a mackintosh and dressing towel"
     ],
     "answer": "Protect the bed with a mackintosh and dressing towel",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "The nurse is carrying out administration of intravenous medication (infusion). Which action best matches this part of the procedure?",
     "options": [
       "Fill the chamber half way and expel air from the giving set",
       "Remove the cap from the other end of the giving set and attach needle to it",
@@ -2222,10 +2222,10 @@ export const rgnBatch05: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Fill the chamber half way and expel air from the giving set",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Before proceeding with administration of intravenous medication (infusion), what infection-prevention action is required at this point?",
     "options": [
       "Check vital signs and records",
       "Perform hand hygiene using alcohol rub",
@@ -2233,10 +2233,10 @@ export const rgnBatch05: Procedure[] = [
       "Document procedure on nurses’ notes (manually or electronically)"
     ],
     "answer": "Perform hand hygiene using alcohol rub",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (infusion)?",
     "options": [
       "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
       "Protect the bed with a mackintosh and dressing towel",
@@ -2244,10 +2244,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe patient for any adverse reaction"
     ],
     "answer": "Wears sterile gloves",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "When collecting a specimen as part of administration of intravenous medication (infusion), which principle protects the reliability of the result?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle",
@@ -2255,10 +2255,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean the site with antimicrobial solution (methylated spirit) with cotton swab"
     ],
     "answer": "Clean the site with antimicrobial solution (methylated spirit) with cotton swab",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "The nurse is carrying out administration of intravenous medication (infusion). Which action best matches this part of the procedure?",
     "options": [
       "Ask assistant to apply tourniquet to locate the vein",
       "Encourage patient to use the washroom or serve a bedpan/urinal",
@@ -2266,10 +2266,10 @@ export const rgnBatch05: Procedure[] = [
       "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling"
     ],
     "answer": "Ask assistant to apply tourniquet to locate the vein",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "To complete administration of intravenous medication (infusion) safely, which action should the nurse take at this point?",
     "options": [
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
       "Introduce the cannula into the vein",
@@ -2277,10 +2277,10 @@ export const rgnBatch05: Procedure[] = [
       "Regulate the flow rate as ordered with the aid of a timer"
     ],
     "answer": "Introduce the cannula into the vein",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (infusion)?",
     "options": [
       "Dispose off used items and decontaminate trolley",
       "Select and inspect sites for administration",
@@ -2288,10 +2288,10 @@ export const rgnBatch05: Procedure[] = [
       "Introduce the cannula into the vein"
     ],
     "answer": "Remove the metallic stylet and put it in the sharps container",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 24 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (infusion)?",
     "options": [
       "Encourage patient to report any adverse reaction",
       "Prepare and send trolley and other equipment to the patient’s bedside",
@@ -2299,10 +2299,10 @@ export const rgnBatch05: Procedure[] = [
       "Release the tourniquet and connect the giving set"
     ],
     "answer": "Release the tourniquet and connect the giving set",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 25 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "When positioning the patient for administration of intravenous medication (infusion), what should guide the nurse's choice of position?",
     "options": [
       "Secure cannula into position and check for infiltration or haematoma",
       "Establish rapport (Refer to steps)",
@@ -2310,10 +2310,10 @@ export const rgnBatch05: Procedure[] = [
       "Release the tourniquet and connect the giving set"
     ],
     "answer": "Secure cannula into position and check for infiltration or haematoma",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 26 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Before proceeding with administration of intravenous medication (infusion), what infection-prevention action is required at this point?",
     "options": [
       "Record time of setting up, type and amount of fluid on the treatment, intake and output chart",
       "Remove glove and perform hand hygiene",
@@ -2321,10 +2321,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean the site with antimicrobial solution (methylated spirit) with cotton swab"
     ],
     "answer": "Remove glove and perform hand hygiene",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 27 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (infusion)?",
     "options": [
       "Reposition patient appropriately in bed",
       "Perform hand hygiene",
@@ -2332,10 +2332,10 @@ export const rgnBatch05: Procedure[] = [
       "Protect the bed with a mackintosh and dressing towel"
     ],
     "answer": "Regulate the flow rate as ordered with the aid of a timer",
-    "explanation": "This checks recall of step 27 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 28 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "When positioning the patient for administration of intravenous medication (infusion), what should guide the nurse's choice of position?",
     "options": [
       "Remove the metallic stylet and put it in the sharps container",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -2343,10 +2343,10 @@ export const rgnBatch05: Procedure[] = [
       "Reposition patient appropriately in bed"
     ],
     "answer": "Reposition patient appropriately in bed",
-    "explanation": "This checks recall of step 28 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 29 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "The nurse is carrying out administration of intravenous medication (infusion). Which action best matches this part of the procedure?",
     "options": [
       "Observe patient for any adverse reaction",
       "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
@@ -2354,10 +2354,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene using alcohol rub"
     ],
     "answer": "Observe patient for any adverse reaction",
-    "explanation": "This checks recall of step 29 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 30 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "To complete administration of intravenous medication (infusion) safely, which action should the nurse take at this point?",
     "options": [
       "Secure cannula into position and check for infiltration or haematoma",
       "Encourage patient to report any adverse reaction",
@@ -2365,10 +2365,10 @@ export const rgnBatch05: Procedure[] = [
       "Remove the cap from the other end of the giving set and attach needle to it"
     ],
     "answer": "Encourage patient to report any adverse reaction",
-    "explanation": "This checks recall of step 30 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 31 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (infusion)?",
     "options": [
       "Ask assistant to apply tourniquet to locate the vein",
       "Document procedure on nurses’ notes (manually or electronically)",
@@ -2376,10 +2376,10 @@ export const rgnBatch05: Procedure[] = [
       "Select and inspect sites for administration"
     ],
     "answer": "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
-    "explanation": "This checks recall of step 31 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 32 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (infusion)?",
     "options": [
       "Fill the chamber half way and expel air from the giving set",
       "Reposition patient appropriately in bed",
@@ -2387,10 +2387,10 @@ export const rgnBatch05: Procedure[] = [
       "Record time of setting up, type and amount of fluid on the treatment, intake and output chart"
     ],
     "answer": "Record time of setting up, type and amount of fluid on the treatment, intake and output chart",
-    "explanation": "This checks recall of step 32 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 33 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "After completing this part of administration of intravenous medication (infusion), what makes the clinical record useful for continuity of care?",
     "options": [
       "Document procedure on nurses’ notes (manually or electronically)",
       "Release the tourniquet and connect the giving set",
@@ -2398,10 +2398,10 @@ export const rgnBatch05: Procedure[] = [
       "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle"
     ],
     "answer": "Document procedure on nurses’ notes (manually or electronically)",
-    "explanation": "This checks recall of step 33 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 34 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "After the hands-on part of administration of intravenous medication (infusion), how should used equipment and waste be managed?",
     "options": [
       "Wears sterile gloves",
       "Dispose off used items and decontaminate trolley",
@@ -2409,10 +2409,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to use the washroom or serve a bedpan/urinal"
     ],
     "answer": "Dispose off used items and decontaminate trolley",
-    "explanation": "This checks recall of step 34 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 35 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Before proceeding with administration of intravenous medication (infusion), what infection-prevention action is required at this point?",
     "options": [
       "Protect the bed with a mackintosh and dressing towel",
       "Regulate the flow rate as ordered with the aid of a timer",
@@ -2420,10 +2420,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure quality of the infusion (check for cloudiness, sediments and other particles)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 35 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 36 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (infusion)?",
     "options": [
       "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
       "Introduce the cannula into the vein",
@@ -2431,7 +2431,7 @@ export const rgnBatch05: Procedure[] = [
       "Check on patient after thirty (30) minutes for therapeutic effect"
     ],
     "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
-    "explanation": "This checks recall of step 36 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -2535,7 +2535,7 @@ export const rgnBatch05: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=JIYagnD_kk8",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -2543,10 +2543,10 @@ export const rgnBatch05: Procedure[] = [
       "Check medication label and method of reconstitution as per manufacturer’s instructions"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Reconstitute as per manufacturers instruction where necessary/prescribers order",
       "Check medication label and method of reconstitution as per manufacturer’s instructions",
@@ -2554,10 +2554,10 @@ export const rgnBatch05: Procedure[] = [
       "Remove mackintosh and dressing towel"
     ],
     "answer": "Check medication label and method of reconstitution as per manufacturer’s instructions",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Perform hand hygiene",
       "Fix syringe with the medication into the entry port of cannula",
@@ -2565,10 +2565,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe patient throughout the administration for any reaction and swelling"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Before carrying out administration of intravenous medication (ampoule/vial reconstitution), what should the nurse do to support informed cooperation?",
     "options": [
       "Check on patient after thirty (30) minutes for therapeutic effect",
       "Protect bed linen with a mackintosh and dressing towel",
@@ -2576,10 +2576,10 @@ export const rgnBatch05: Procedure[] = [
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse"
     ],
     "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Before proceeding with administration of intravenous medication (ampoule/vial reconstitution), what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
@@ -2587,10 +2587,10 @@ export const rgnBatch05: Procedure[] = [
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "To complete administration of intravenous medication (ampoule/vial reconstitution) safely, which action should the nurse take at this point?",
     "options": [
       "Protect bed linen with a mackintosh and dressing towel",
       "Prepare and sent trolley to the bed side",
@@ -2598,10 +2598,10 @@ export const rgnBatch05: Procedure[] = [
       "Check on patient after thirty (30) minutes for therapeutic effect"
     ],
     "answer": "Prepare and sent trolley to the bed side",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
       "Observe patient throughout the administration for any reaction and swelling",
@@ -2609,10 +2609,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse reaction"
     ],
     "answer": "Ensure a cannula is in situ",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
@@ -2620,10 +2620,10 @@ export const rgnBatch05: Procedure[] = [
       "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage"
     ],
     "answer": "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "The nurse is carrying out administration of intravenous medication (ampoule/vial reconstitution). Which action best matches this part of the procedure?",
     "options": [
       "Reconstitute as per manufacturers instruction where necessary/prescribers order",
       "Draw medication with syringe, expel air from the barrel and place the syringe into a receiver",
@@ -2631,10 +2631,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure a cannula is in situ"
     ],
     "answer": "Reconstitute as per manufacturers instruction where necessary/prescribers order",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
       "Examine reconstituted medication for cloudiness and sediments",
@@ -2642,10 +2642,10 @@ export const rgnBatch05: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Examine reconstituted medication for cloudiness and sediments",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Examine reconstituted medication for cloudiness and sediments",
       "Encourage patient to report any adverse reaction",
@@ -2653,10 +2653,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Draw medication with syringe, expel air from the barrel and place the syringe into a receiver",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Prepare and sent trolley to the bed side",
       "Push medication slowly using the push-stop-push-stop technique till administration is completed",
@@ -2664,10 +2664,10 @@ export const rgnBatch05: Procedure[] = [
       "Protect bed linen with a mackintosh and dressing towel"
     ],
     "answer": "Protect bed linen with a mackintosh and dressing towel",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "When positioning the patient for administration of intravenous medication (ampoule/vial reconstitution), what should guide the nurse's choice of position?",
     "options": [
       "Put patient in a desirable position",
       "Wear sterile glove",
@@ -2675,10 +2675,10 @@ export const rgnBatch05: Procedure[] = [
       "Examine reconstituted medication for cloudiness and sediments"
     ],
     "answer": "Put patient in a desirable position",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Before proceeding with administration of intravenous medication (ampoule/vial reconstitution), what infection-prevention action is required at this point?",
     "options": [
       "Push medication slowly using the push-stop-push-stop technique till administration is completed",
       "Perform hand hygiene",
@@ -2686,10 +2686,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure a cannula is in situ"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Put patient in a desirable position",
       "Dispose off used items and decontaminate trolley",
@@ -2697,10 +2697,10 @@ export const rgnBatch05: Procedure[] = [
       "Check medication label and method of reconstitution as per manufacturer’s instructions"
     ],
     "answer": "Wear sterile glove",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "When collecting a specimen as part of administration of intravenous medication (ampoule/vial reconstitution), which principle protects the reliability of the result?",
     "options": [
       "Reconstitute as per manufacturers instruction where necessary/prescribers order",
       "Reposition patient appropriately in bed",
@@ -2708,10 +2708,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean entry port of cannula with antimicrobial solution and cotton wool swab"
     ],
     "answer": "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Fix syringe with the medication into the entry port of cannula",
       "Pull gently on the plunger to check for blood return",
@@ -2719,10 +2719,10 @@ export const rgnBatch05: Procedure[] = [
       "Put patient in a desirable position"
     ],
     "answer": "Fix syringe with the medication into the entry port of cannula",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "To complete administration of intravenous medication (ampoule/vial reconstitution) safely, which action should the nurse take at this point?",
     "options": [
       "Reposition patient appropriately in bed",
       "Pull gently on the plunger to check for blood return",
@@ -2730,10 +2730,10 @@ export const rgnBatch05: Procedure[] = [
       "Reconstitute as per manufacturers instruction where necessary/prescribers order"
     ],
     "answer": "Pull gently on the plunger to check for blood return",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Fix syringe with the medication into the entry port of cannula",
       "Check medication label and method of reconstitution as per manufacturer’s instructions",
@@ -2741,10 +2741,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Push medication slowly using the push-stop-push-stop technique till administration is completed",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Protect bed linen with a mackintosh and dressing towel",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -2752,10 +2752,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe patient throughout the administration for any reaction and swelling"
     ],
     "answer": "Observe patient throughout the administration for any reaction and swelling",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Continue observing patient five (5) to ten (10) minutes later after injecting medication",
       "Observe patient throughout the administration for any reaction and swelling",
@@ -2763,10 +2763,10 @@ export const rgnBatch05: Procedure[] = [
       "Fix syringe with the medication into the entry port of cannula"
     ],
     "answer": "Continue observing patient five (5) to ten (10) minutes later after injecting medication",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "When positioning the patient for administration of intravenous medication (ampoule/vial reconstitution), what should guide the nurse's choice of position?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Reposition patient appropriately in bed",
@@ -2774,10 +2774,10 @@ export const rgnBatch05: Procedure[] = [
       "Protect bed linen with a mackintosh and dressing towel"
     ],
     "answer": "Reposition patient appropriately in bed",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which step should be performed now during administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Observe patient throughout the administration for any reaction and swelling",
       "Perform hand hygiene",
@@ -2785,10 +2785,10 @@ export const rgnBatch05: Procedure[] = [
       "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage"
     ],
     "answer": "Encourage patient to report any adverse reaction",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 24 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -2796,10 +2796,10 @@ export const rgnBatch05: Procedure[] = [
       "Remove mackintosh and dressing towel"
     ],
     "answer": "Remove mackintosh and dressing towel",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 25 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "After completing this part of administration of intravenous medication (ampoule/vial reconstitution), what makes the clinical record useful for continuity of care?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Encourage patient to report any adverse reaction",
@@ -2807,10 +2807,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe patient throughout the administration for any reaction and swelling"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 26 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "After the hands-on part of administration of intravenous medication (ampoule/vial reconstitution), how should used equipment and waste be managed?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Dispose off used items and decontaminate trolley",
@@ -2818,10 +2818,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean entry port of cannula with antimicrobial solution and cotton wool swab"
     ],
     "answer": "Dispose off used items and decontaminate trolley",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 27 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Before proceeding with administration of intravenous medication (ampoule/vial reconstitution), what infection-prevention action is required at this point?",
     "options": [
       "Remove mackintosh and dressing towel",
       "Reconstitute as per manufacturers instruction where necessary/prescribers order",
@@ -2829,10 +2829,10 @@ export const rgnBatch05: Procedure[] = [
       "Protect bed linen with a mackintosh and dressing towel"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 27 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 28 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (ampoule/vial reconstitution)?",
     "options": [
       "Push medication slowly using the push-stop-push-stop technique till administration is completed",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -2840,7 +2840,7 @@ export const rgnBatch05: Procedure[] = [
       "Check on patient after thirty (30) minutes for therapeutic effect"
     ],
     "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
-    "explanation": "This checks recall of step 28 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -2949,7 +2949,7 @@ export const rgnBatch05: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=n7mVbMRTi_E",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -2957,10 +2957,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Prepare and sent trolley to the bed side",
       "Check medication label and method of reconstitution as per manufacturer’s instructions",
@@ -2968,10 +2968,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse reaction"
     ],
     "answer": "Check medication label and method of reconstitution as per manufacturer’s instructions",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which step should be performed now during administration of intravenous medication (vial)?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Draw the medication into a syringe",
@@ -2979,10 +2979,10 @@ export const rgnBatch05: Procedure[] = [
       "Connect giving set to the cannula via entry port"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Before carrying out administration of intravenous medication (vial), what should the nurse do to support informed cooperation?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Reconstitute as per manufacturers instruction/prescribers order",
@@ -2990,10 +2990,10 @@ export const rgnBatch05: Procedure[] = [
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse"
     ],
     "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Before proceeding with administration of intravenous medication (vial), what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -3001,10 +3001,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "To complete administration of intravenous medication (vial) safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Prepare and sent trolley to the bed side",
@@ -3012,10 +3012,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse reaction"
     ],
     "answer": "Prepare and sent trolley to the bed side",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which step should be performed now during administration of intravenous medication (vial)?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Draw the medication into a syringe",
@@ -3023,10 +3023,10 @@ export const rgnBatch05: Procedure[] = [
       "Connect giving set to the cannula via entry port"
     ],
     "answer": "Ensure a cannula is in situ",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (vial)?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Reconstitute as per manufacturers instruction/prescribers order",
@@ -3034,10 +3034,10 @@ export const rgnBatch05: Procedure[] = [
       "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage"
     ],
     "answer": "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "The nurse is carrying out administration of intravenous medication (vial). Which action best matches this part of the procedure?",
     "options": [
       "Reconstitute as per manufacturers instruction/prescribers order",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -3045,10 +3045,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Reconstitute as per manufacturers instruction/prescribers order",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Perform hand hygiene",
       "Ensure quality of the medication (check for cloudiness, sediments and particles)",
@@ -3056,10 +3056,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse reaction"
     ],
     "answer": "Ensure quality of the medication (check for cloudiness, sediments and particles)",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which step should be performed now during administration of intravenous medication (vial)?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Draw the medication into a syringe",
@@ -3067,10 +3067,10 @@ export const rgnBatch05: Procedure[] = [
       "Connect giving set to the cannula via entry port"
     ],
     "answer": "Place infusion stand at the side of the bed",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (vial)?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
@@ -3078,10 +3078,10 @@ export const rgnBatch05: Procedure[] = [
       "Hang vial on the drip stand"
     ],
     "answer": "Hang vial on the drip stand",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Draw the medication into a syringe",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -3089,10 +3089,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Draw the medication into a syringe",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "To complete administration of intravenous medication (vial) safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Protect bed with a mackintosh and dressing towel",
@@ -3100,10 +3100,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse reaction"
     ],
     "answer": "Protect bed with a mackintosh and dressing towel",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which step should be performed now during administration of intravenous medication (vial)?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Hang vial on the drip stand",
@@ -3111,10 +3111,10 @@ export const rgnBatch05: Procedure[] = [
       "Connect giving set to the cannula via entry port"
     ],
     "answer": "Remove the cap from the other end of the giving set",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (vial)?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
@@ -3122,10 +3122,10 @@ export const rgnBatch05: Procedure[] = [
       "Connect giving set, fill the chamber half way and expel air"
     ],
     "answer": "Connect giving set, fill the chamber half way and expel air",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Before proceeding with administration of intravenous medication (vial), what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -3133,10 +3133,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "To complete administration of intravenous medication (vial) safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Wear sterile gloves",
@@ -3144,10 +3144,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse reaction"
     ],
     "answer": "Wear sterile gloves",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which step should be performed now during administration of intravenous medication (vial)?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Hang vial on the drip stand",
@@ -3155,10 +3155,10 @@ export const rgnBatch05: Procedure[] = [
       "Connect giving set to the cannula via entry port"
     ],
     "answer": "Clean the entry port of cannula with antimicrobial solution (methylated spirit)",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (vial)?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
@@ -3166,10 +3166,10 @@ export const rgnBatch05: Procedure[] = [
       "Connect giving set to the cannula via entry port"
     ],
     "answer": "Connect giving set to the cannula via entry port",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "The nurse is carrying out administration of intravenous medication (vial). Which action best matches this part of the procedure?",
     "options": [
       "Regulate the flow rate as ordered with a timer",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -3177,10 +3177,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Regulate the flow rate as ordered with a timer",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "When positioning the patient for administration of intravenous medication (vial), what should guide the nurse's choice of position?",
     "options": [
       "Perform hand hygiene",
       "Reposition patient appropriately in bed",
@@ -3188,10 +3188,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse reaction"
     ],
     "answer": "Reposition patient appropriately in bed",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which step should be performed now during administration of intravenous medication (vial)?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Hang vial on the drip stand",
@@ -3199,10 +3199,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean the entry port of cannula with antimicrobial solution (methylated spirit)"
     ],
     "answer": "Observe patient for adverse reaction",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 24 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Which nursing action is required at this stage of administration of intravenous medication (vial)?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
@@ -3210,10 +3210,10 @@ export const rgnBatch05: Procedure[] = [
       "Encourage patient to report any adverse reaction"
     ],
     "answer": "Encourage patient to report any adverse reaction",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 25 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "The nurse is carrying out administration of intravenous medication (vial). Which action best matches this part of the procedure?",
     "options": [
       "Remove mackintosh and dressing towel",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -3221,10 +3221,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Remove mackintosh and dressing towel",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 26 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Perform hand hygiene",
       "Record time of setting up medication, name of medication and amount on the intake and output chart and Treatment Chart (Manual or Electronic)",
@@ -3232,10 +3232,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe patient for adverse reaction"
     ],
     "answer": "Record time of setting up medication, name of medication and amount on the intake and output chart and Treatment Chart (Manual or Electronic)",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 27 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "After completing this part of administration of intravenous medication (vial), what makes the clinical record useful for continuity of care?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Hang vial on the drip stand",
@@ -3243,10 +3243,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean the entry port of cannula with antimicrobial solution (methylated spirit)"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 27 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 28 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "After the hands-on part of administration of intravenous medication (vial), how should used equipment and waste be managed?",
     "options": [
       "Record time of setting up medication, name of medication and amount on the intake and output chart and Treatment Chart (Manual or Electronic)",
       "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
@@ -3254,10 +3254,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Dispose off used items and decontaminate trolley",
-    "explanation": "This checks recall of step 28 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 29 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "Before proceeding with administration of intravenous medication (vial), what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
@@ -3265,10 +3265,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate trolley"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 29 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 30 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "To complete administration of intravenous medication (vial) safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -3276,10 +3276,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe patient for adverse reaction"
     ],
     "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
-    "explanation": "This checks recall of step 30 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 31 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Hang vial on the drip stand",
@@ -3287,7 +3287,7 @@ export const rgnBatch05: Procedure[] = [
       "Clean the entry port of cannula with antimicrobial solution (methylated spirit)"
     ],
     "answer": "Remove giving set from cannula after administration of medication and cover the entry port cannula",
-    "explanation": "This checks recall of step 31 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   }
 ],
   },
@@ -3378,7 +3378,7 @@ export const rgnBatch05: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=jmIwY6zwdMo",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -3386,10 +3386,10 @@ export const rgnBatch05: Procedure[] = [
       "Prepare and sent tray to the bed side"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "To complete administration of intramuscular medication safely, which action should the nurse take at this point?",
     "options": [
       "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
       "Establish rapport (Refer to steps)",
@@ -3397,10 +3397,10 @@ export const rgnBatch05: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "Before carrying out administration of intramuscular medication, what should the nurse do to support informed cooperation?",
     "options": [
       "File/break ampoule or remove metal cap of vial with a clean swab",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -3408,10 +3408,10 @@ export const rgnBatch05: Procedure[] = [
       "Put patient into a desirable position"
     ],
     "answer": "Explain procedure and reassure patient",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "Before carrying out administration of intramuscular medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Perform hand hygiene",
       "Push to release medication into the tissue",
@@ -3419,10 +3419,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Ensure patient’s right to know/consent and to refuse medication",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "Before proceeding with administration of intramuscular medication, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Assist patient into a required position and exposes site for injection",
@@ -3430,10 +3430,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "To complete administration of intramuscular medication safely, which action should the nurse take at this point?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Prepare and sent tray to the bed side",
@@ -3441,10 +3441,10 @@ export const rgnBatch05: Procedure[] = [
       "File/break ampoule or remove metal cap of vial with a clean swab"
     ],
     "answer": "Prepare and sent tray to the bed side",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Push to release medication into the tissue",
       "Perform hand hygiene",
@@ -3452,10 +3452,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Check patient details and medication dosage against the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of intramuscular medication?",
     "options": [
       "Assist patient into a required position and exposes site for injection",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -3463,10 +3463,10 @@ export const rgnBatch05: Procedure[] = [
       "Assemble syringe and needle using sterile technique"
     ],
     "answer": "Assemble syringe and needle using sterile technique",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "When collecting a specimen as part of administration of intramuscular medication, which principle protects the reliability of the result?",
     "options": [
       "File/break ampoule or remove metal cap of vial with a clean swab",
       "Put patient into a desirable position",
@@ -3474,10 +3474,10 @@ export const rgnBatch05: Procedure[] = [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
     ],
     "answer": "File/break ampoule or remove metal cap of vial with a clean swab",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Perform hand hygiene",
       "Draw medication with a syringe and discard the needle into the sharp container",
@@ -3485,10 +3485,10 @@ export const rgnBatch05: Procedure[] = [
       "Push to release medication into the tissue"
     ],
     "answer": "Draw medication with a syringe and discard the needle into the sharp container",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "Which step should be performed now during administration of intramuscular medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
@@ -3496,10 +3496,10 @@ export const rgnBatch05: Procedure[] = [
       "Assist patient into a required position and exposes site for injection"
     ],
     "answer": "Replace needle with a new one and expel air",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "When positioning the patient for administration of intramuscular medication, what should guide the nurse's choice of position?",
     "options": [
       "Put patient into a desirable position",
       "Assemble syringe and needle using sterile technique",
@@ -3507,10 +3507,10 @@ export const rgnBatch05: Procedure[] = [
       "Assist patient into a required position and exposes site for injection"
     ],
     "answer": "Assist patient into a required position and exposes site for injection",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "When collecting a specimen as part of administration of intramuscular medication, which principle protects the reliability of the result?",
     "options": [
       "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -3518,10 +3518,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "To complete administration of intramuscular medication safely, which action should the nurse take at this point?",
     "options": [
       "Assist patient into a required position and exposes site for injection",
       "Insert the needle quickly and firmly deep into the muscle at right angle",
@@ -3529,10 +3529,10 @@ export const rgnBatch05: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Insert the needle quickly and firmly deep into the muscle at right angle",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "Which step should be performed now during administration of intramuscular medication?",
     "options": [
       "Assemble syringe and needle using sterile technique",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -3540,10 +3540,10 @@ export const rgnBatch05: Procedure[] = [
       "Put patient into a desirable position"
     ],
     "answer": "Withdraw plunger a little to ensure needle is not in the blood vessel (if blood appears withdraws needle)",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Ensure patient’s right to know/consent and to refuse medication",
       "Withdraw plunger a little to ensure needle is not in the blood vessel (if blood appears withdraws needle)",
@@ -3551,10 +3551,10 @@ export const rgnBatch05: Procedure[] = [
       "Push to release medication into the tissue"
     ],
     "answer": "Push to release medication into the tissue",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "When collecting a specimen as part of administration of intramuscular medication, which principle protects the reliability of the result?",
     "options": [
       "Withdraw the syringe and needle quickly and with a swab gently applies pressure to the site of injection",
       "Replace needle with a new one and expel air",
@@ -3562,10 +3562,10 @@ export const rgnBatch05: Procedure[] = [
       "Assist patient into a required position and exposes site for injection"
     ],
     "answer": "Withdraw the syringe and needle quickly and with a swab gently applies pressure to the site of injection",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "To complete administration of intramuscular medication safely, which action should the nurse take at this point?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Discard syringe and needle into a sharps container",
@@ -3573,10 +3573,10 @@ export const rgnBatch05: Procedure[] = [
       "Assemble syringe and needle using sterile technique"
     ],
     "answer": "Discard syringe and needle into a sharps container",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "When positioning the patient for administration of intramuscular medication, what should guide the nurse's choice of position?",
     "options": [
       "Withdraw plunger a little to ensure needle is not in the blood vessel (if blood appears withdraws needle)",
       "Perform hand hygiene",
@@ -3584,10 +3584,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Put patient into a desirable position",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "After completing this part of administration of intramuscular medication, what makes the clinical record useful for continuity of care?",
     "options": [
       "Replace needle with a new one and expel air",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -3595,10 +3595,10 @@ export const rgnBatch05: Procedure[] = [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "After the hands-on part of administration of intramuscular medication, how should used equipment and waste be managed?",
     "options": [
       "Dispose off used items and decontaminate tray",
       "Discard syringe and needle into a sharps container",
@@ -3606,10 +3606,10 @@ export const rgnBatch05: Procedure[] = [
       "Put patient into a desirable position"
     ],
     "answer": "Dispose off used items and decontaminate tray",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "Before proceeding with administration of intramuscular medication, what infection-prevention action is required at this point?",
     "options": [
       "Prepare and sent tray to the bed side",
       "Perform hand hygiene",
@@ -3617,10 +3617,10 @@ export const rgnBatch05: Procedure[] = [
       "Push to release medication into the tissue"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "question": "Which step should be performed now during administration of intramuscular medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Assist patient into a required position and exposes site for injection",
@@ -3628,7 +3628,7 @@ export const rgnBatch05: Procedure[] = [
       "Replace needle with a new one and expel air"
     ],
     "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -3720,7 +3720,7 @@ export const rgnBatch05: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=H0EtSorwGnU",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -3728,10 +3728,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "To complete administration of subcutaneous medication safely, which action should the nurse take at this point?",
     "options": [
       "Draw medication with a syringe and discard the needle into the sharps container",
       "Establish rapport (Refer to steps)",
@@ -3739,10 +3739,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Before carrying out administration of subcutaneous medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Prepare and sent tray to the bed side",
       "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
@@ -3750,10 +3750,10 @@ export const rgnBatch05: Procedure[] = [
       "Withdraw the needle rapidly, apply pressure to any bleeding point"
     ],
     "answer": "Explain procedure and reassure patient",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Before carrying out administration of subcutaneous medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Clean the chosen site with a swab dipped in antimicrobial solution",
@@ -3761,10 +3761,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Ensure patient’s right to know/consent and to refuse medication",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Before proceeding with administration of subcutaneous medication, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "File/break ampoule with a clean swab",
@@ -3772,10 +3772,10 @@ export const rgnBatch05: Procedure[] = [
       "Assemble syringe and needle using sterile technique"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "To complete administration of subcutaneous medication safely, which action should the nurse take at this point?",
     "options": [
       "Insert the needle into the skin at an angle of 45° and release the grasped skin",
       "Choose the correct needle size",
@@ -3783,10 +3783,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Choose the correct needle size",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Which step should be performed now during administration of subcutaneous medication?",
     "options": [
       "If it is a prefilled syringe with medication remove the cover of the syringe",
       "Dispose off used items and decontaminate tray",
@@ -3794,10 +3794,10 @@ export const rgnBatch05: Procedure[] = [
       "Check on patient after thirty (30) minutes for therapeutic effect"
     ],
     "answer": "Prepare and sent tray to the bed side",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Prepare and sent tray to the bed side",
       "Withdraw the needle rapidly, apply pressure to any bleeding point",
@@ -3805,10 +3805,10 @@ export const rgnBatch05: Procedure[] = [
       "Check patient details and medication dosage against the treatment chart (manual or electronic)"
     ],
     "answer": "Check patient details and medication dosage against the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "The nurse is carrying out administration of subcutaneous medication. Which action best matches this part of the procedure?",
     "options": [
       "Assemble syringe and needle using sterile technique",
       "Grasp/spread the skin firmly",
@@ -3816,10 +3816,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean the chosen site with a swab dipped in antimicrobial solution"
     ],
     "answer": "Assemble syringe and needle using sterile technique",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "When collecting a specimen as part of administration of subcutaneous medication, which principle protects the reliability of the result?",
     "options": [
       "Put patient into a desirable position",
       "File/break ampoule with a clean swab",
@@ -3827,10 +3827,10 @@ export const rgnBatch05: Procedure[] = [
       "Assemble syringe and needle using sterile technique"
     ],
     "answer": "File/break ampoule with a clean swab",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Avoid step 18 if it is a prefilled medicated syringe",
       "Ensure patient’s right to know/consent and to refuse medication",
@@ -3838,10 +3838,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Draw medication with a syringe and discard the needle into the sharps container",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Expose the chosen site",
       "Check on patient after thirty (30) minutes for therapeutic effect",
@@ -3849,10 +3849,10 @@ export const rgnBatch05: Procedure[] = [
       "If it is a prefilled syringe with medication remove the cover of the syringe"
     ],
     "answer": "If it is a prefilled syringe with medication remove the cover of the syringe",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "The nurse is carrying out administration of subcutaneous medication. Which action best matches this part of the procedure?",
     "options": [
       "Expose the chosen site",
       "Discard syringe and needle into a sharps container",
@@ -3860,10 +3860,10 @@ export const rgnBatch05: Procedure[] = [
       "Withdraw the needle rapidly, apply pressure to any bleeding point"
     ],
     "answer": "Expose the chosen site",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "When collecting a specimen as part of administration of subcutaneous medication, which principle protects the reliability of the result?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Clean the chosen site with a swab dipped in antimicrobial solution",
@@ -3871,10 +3871,10 @@ export const rgnBatch05: Procedure[] = [
       "Grasp/spread the skin firmly"
     ],
     "answer": "Clean the chosen site with a swab dipped in antimicrobial solution",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Which step should be performed now during administration of subcutaneous medication?",
     "options": [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
       "Assemble syringe and needle using sterile technique",
@@ -3882,10 +3882,10 @@ export const rgnBatch05: Procedure[] = [
       "File/break ampoule with a clean swab"
     ],
     "answer": "Grasp/spread the skin firmly",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of subcutaneous medication?",
     "options": [
       "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
       "Perform hand hygiene",
@@ -3893,10 +3893,10 @@ export const rgnBatch05: Procedure[] = [
       "Insert the needle into the skin at an angle of 45° and release the grasped skin"
     ],
     "answer": "Insert the needle into the skin at an angle of 45° and release the grasped skin",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "The nurse is carrying out administration of subcutaneous medication. Which action best matches this part of the procedure?",
     "options": [
       "Avoid step 18 if it is a prefilled medicated syringe",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -3904,10 +3904,10 @@ export const rgnBatch05: Procedure[] = [
       "Check on patient after thirty (30) minutes for therapeutic effect"
     ],
     "answer": "Avoid step 18 if it is a prefilled medicated syringe",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Before carrying out administration of subcutaneous medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Prepare and sent tray to the bed side",
       "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
@@ -3915,10 +3915,10 @@ export const rgnBatch05: Procedure[] = [
       "Discard syringe and needle into a sharps container"
     ],
     "answer": "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Which assessment during administration of subcutaneous medication can reveal a potentially urgent complication?",
     "options": [
       "Explain procedure and reassure patient",
       "Clean the chosen site with a swab dipped in antimicrobial solution",
@@ -3926,10 +3926,10 @@ export const rgnBatch05: Procedure[] = [
       "Grasp/spread the skin firmly"
     ],
     "answer": "Withdraw the needle rapidly, apply pressure to any bleeding point",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Inspect for bleeding and assess the patient's overall condition. Report fresh, increasing or otherwise concerning bleeding immediately and follow the relevant escalation protocol."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of subcutaneous medication?",
     "options": [
       "Dispose off used items and decontaminate tray",
       "File/break ampoule with a clean swab",
@@ -3937,10 +3937,10 @@ export const rgnBatch05: Procedure[] = [
       "Discard syringe and needle into a sharps container"
     ],
     "answer": "Discard syringe and needle into a sharps container",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "When positioning the patient for administration of subcutaneous medication, what should guide the nurse's choice of position?",
     "options": [
       "Put patient into a desirable position",
       "Choose the correct needle size",
@@ -3948,10 +3948,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Put patient into a desirable position",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "After completing this part of administration of subcutaneous medication, what makes the clinical record useful for continuity of care?",
     "options": [
       "If it is a prefilled syringe with medication remove the cover of the syringe",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -3959,10 +3959,10 @@ export const rgnBatch05: Procedure[] = [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 23 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "After the hands-on part of administration of subcutaneous medication, how should used equipment and waste be managed?",
     "options": [
       "Check patient details and medication dosage against the treatment chart (manual or electronic)",
       "Withdraw the needle rapidly, apply pressure to any bleeding point",
@@ -3970,10 +3970,10 @@ export const rgnBatch05: Procedure[] = [
       "Discard syringe and needle into a sharps container"
     ],
     "answer": "Dispose off used items and decontaminate tray",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 24 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "Before proceeding with administration of subcutaneous medication, what infection-prevention action is required at this point?",
     "options": [
       "Ensure patient’s right to know/consent and to refuse medication",
       "Insert the needle into the skin at an angle of 45° and release the grasped skin",
@@ -3981,10 +3981,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 25 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "question": "The nurse is carrying out administration of subcutaneous medication. Which action best matches this part of the procedure?",
     "options": [
       "Check on patient after thirty (30) minutes for therapeutic effect",
       "Draw medication with a syringe and discard the needle into the sharps container",
@@ -3992,7 +3992,7 @@ export const rgnBatch05: Procedure[] = [
       "File/break ampoule with a clean swab"
     ],
     "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -4087,7 +4087,7 @@ export const rgnBatch05: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=DECJaBf2PtE",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Perform hand hygiene",
@@ -4095,10 +4095,10 @@ export const rgnBatch05: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "To complete administration of intradermal medication safely, which action should the nurse take at this point?",
     "options": [
       "Assemble syringe and needle using sterile technique",
       "Establish rapport (Refer to steps)",
@@ -4106,10 +4106,10 @@ export const rgnBatch05: Procedure[] = [
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Before carrying out administration of intradermal medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Perform hand hygiene",
       "Inject medication slowly and steadily while observing for bleb formation",
@@ -4117,10 +4117,10 @@ export const rgnBatch05: Procedure[] = [
       "Draw a circle with marker around the bleb"
     ],
     "answer": "Explain procedure and reassure patient",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Before carrying out administration of intradermal medication, what should the nurse do to support informed cooperation?",
     "options": [
       "Report to appropriate officer",
       "Expose the chosen site",
@@ -4128,10 +4128,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Ensure patient’s right to know/consent and to refuse medication",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Before proceeding with administration of intradermal medication, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Check patient details and medication dosage against the treatment chart (manual or electronic)",
@@ -4139,10 +4139,10 @@ export const rgnBatch05: Procedure[] = [
       "Ensure patient’s right to know/consent and to refuse medication"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "To complete administration of intradermal medication safely, which action should the nurse take at this point?",
     "options": [
       "Expose the chosen site",
       "Choose the correct needle size",
@@ -4150,10 +4150,10 @@ export const rgnBatch05: Procedure[] = [
       "Report to appropriate officer"
     ],
     "answer": "Choose the correct needle size",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Which step should be performed now during administration of intradermal medication?",
     "options": [
       "Check patient details and medication dosage against the treatment chart (manual or electronic)",
       "Draw a circle with marker around the bleb",
@@ -4161,10 +4161,10 @@ export const rgnBatch05: Procedure[] = [
       "Instruct patient not to rub or apply any pressure to the area"
     ],
     "answer": "Prepare and sent tray to the bed side",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Explain procedure and reassure patient",
       "Insert the needle just below the skin at an angle of 10-15°",
@@ -4172,10 +4172,10 @@ export const rgnBatch05: Procedure[] = [
       "Check patient details and medication dosage against the treatment chart (manual or electronic)"
     ],
     "answer": "Check patient details and medication dosage against the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "The nurse is carrying out administration of intradermal medication. Which action best matches this part of the procedure?",
     "options": [
       "Assemble syringe and needle using sterile technique",
       "If it is a prefilled syringe with medication remove the cover of the syringe",
@@ -4183,10 +4183,10 @@ export const rgnBatch05: Procedure[] = [
       "Prepare and sent tray to the bed side"
     ],
     "answer": "Assemble syringe and needle using sterile technique",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Insert the needle just below the skin at an angle of 10-15°",
       "Draw medication with a syringe and avoid creating air bubbles",
@@ -4194,10 +4194,10 @@ export const rgnBatch05: Procedure[] = [
       "Explain procedure and reassure patient"
     ],
     "answer": "Draw medication with a syringe and avoid creating air bubbles",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Draw medication with a syringe and avoid creating air bubbles",
       "Instruct patient not to rub or apply any pressure to the area",
@@ -4205,10 +4205,10 @@ export const rgnBatch05: Procedure[] = [
       "Check on patient after five (5) and fifteen (15) minutes for reactions"
     ],
     "answer": "If it is a prefilled syringe with medication remove the cover of the syringe",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of intradermal medication?",
     "options": [
       "Choose the correct needle size",
       "If blood is present dab the area with a dry swab (avoid rubbing the area)",
@@ -4216,10 +4216,10 @@ export const rgnBatch05: Procedure[] = [
       "Expose the chosen site"
     ],
     "answer": "Expose the chosen site",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "When collecting a specimen as part of administration of intradermal medication, which principle protects the reliability of the result?",
     "options": [
       "Clean the chosen site with a swab dipped in antimicrobial solution",
       "Pull the skin towards your hand",
@@ -4227,10 +4227,10 @@ export const rgnBatch05: Procedure[] = [
       "Draw medication with a syringe and avoid creating air bubbles"
     ],
     "answer": "Clean the chosen site with a swab dipped in antimicrobial solution",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "To complete administration of intradermal medication safely, which action should the nurse take at this point?",
     "options": [
       "If blood is present dab the area with a dry swab (avoid rubbing the area)",
       "Pull the skin towards your hand",
@@ -4238,10 +4238,10 @@ export const rgnBatch05: Procedure[] = [
       "Choose the correct needle size"
     ],
     "answer": "Pull the skin towards your hand",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Which step should be performed now during administration of intradermal medication?",
     "options": [
       "Clean the chosen site with a swab dipped in antimicrobial solution",
       "Check on patient after five (5) and fifteen (15) minutes for reactions",
@@ -4249,10 +4249,10 @@ export const rgnBatch05: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Insert the needle just below the skin at an angle of 10-15°",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Assemble syringe and needle using sterile technique",
       "Reposition patient",
@@ -4260,10 +4260,10 @@ export const rgnBatch05: Procedure[] = [
       "Inject medication slowly and steadily while observing for bleb formation"
     ],
     "answer": "Inject medication slowly and steadily while observing for bleb formation",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "The nurse is carrying out administration of intradermal medication. Which action best matches this part of the procedure?",
     "options": [
       "Remove the needle and discard into a sharps container",
       "Inject medication slowly and steadily while observing for bleb formation",
@@ -4271,10 +4271,10 @@ export const rgnBatch05: Procedure[] = [
       "Clean the chosen site with a swab dipped in antimicrobial solution"
     ],
     "answer": "Remove the needle and discard into a sharps container",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "When collecting a specimen as part of administration of intradermal medication, which principle protects the reliability of the result?",
     "options": [
       "Reposition patient",
       "If blood is present dab the area with a dry swab (avoid rubbing the area)",
@@ -4282,10 +4282,10 @@ export const rgnBatch05: Procedure[] = [
       "Assemble syringe and needle using sterile technique"
     ],
     "answer": "If blood is present dab the area with a dry swab (avoid rubbing the area)",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Which step should be performed now during administration of intradermal medication?",
     "options": [
       "Inject medication slowly and steadily while observing for bleb formation",
       "Establish rapport (Refer to steps)",
@@ -4293,10 +4293,10 @@ export const rgnBatch05: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Draw a circle with marker around the bleb",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Which nursing action is required at this stage of administration of intradermal medication?",
     "options": [
       "Expose the chosen site",
       "Dispose off used items and decontaminate tray",
@@ -4304,10 +4304,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe the area for localize inflammations"
     ],
     "answer": "Observe the area for localize inflammations",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "When positioning the patient for administration of intradermal medication, what should guide the nurse's choice of position?",
     "options": [
       "Reposition patient",
       "Draw a circle with marker around the bleb",
@@ -4315,10 +4315,10 @@ export const rgnBatch05: Procedure[] = [
       "Inject medication slowly and steadily while observing for bleb formation"
     ],
     "answer": "Reposition patient",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "To complete administration of intradermal medication safely, which action should the nurse take at this point?",
     "options": [
       "Dispose off used items and decontaminate tray",
       "Instruct patient not to rub or apply any pressure to the area",
@@ -4326,10 +4326,10 @@ export const rgnBatch05: Procedure[] = [
       "Expose the chosen site"
     ],
     "answer": "Instruct patient not to rub or apply any pressure to the area",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "After completing this part of administration of intradermal medication, what makes the clinical record useful for continuity of care?",
     "options": [
       "Draw a circle with marker around the bleb",
       "Perform hand hygiene",
@@ -4337,10 +4337,10 @@ export const rgnBatch05: Procedure[] = [
       "Check patient details and medication dosage against the treatment chart (manual or electronic)"
     ],
     "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 24 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "After the hands-on part of administration of intradermal medication, how should used equipment and waste be managed?",
     "options": [
       "Insert the needle just below the skin at an angle of 10-15°",
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
@@ -4348,10 +4348,10 @@ export const rgnBatch05: Procedure[] = [
       "Dispose off used items and decontaminate tray"
     ],
     "answer": "Dispose off used items and decontaminate tray",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 25 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Before proceeding with administration of intradermal medication, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
@@ -4359,10 +4359,10 @@ export const rgnBatch05: Procedure[] = [
       "Observe the area for localize inflammations"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 26 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "To complete administration of intradermal medication safely, which action should the nurse take at this point?",
     "options": [
       "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
       "Check on patient after five (5) and fifteen (15) minutes for reactions",
@@ -4370,10 +4370,10 @@ export const rgnBatch05: Procedure[] = [
       "Insert the needle just below the skin at an angle of 10-15°"
     ],
     "answer": "Check on patient after five (5) and fifteen (15) minutes for reactions",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 27 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "question": "Which step should be performed now during administration of intradermal medication?",
     "options": [
       "Instruct patient not to rub or apply any pressure to the area",
       "Check patient details and medication dosage against the treatment chart (manual or electronic)",
@@ -4381,7 +4381,7 @@ export const rgnBatch05: Procedure[] = [
       "If it is a prefilled syringe with medication remove the cover of the syringe"
     ],
     "answer": "Report to appropriate officer",
-    "explanation": "This checks recall of step 27 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
