@@ -1034,47 +1034,50 @@ export const rgnBatch05: Procedure[] = [
     id: "rgn-039",
     title: "SERVING OF BEDPAN TO A PATIENT",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure assists a patient who cannot safely use a toilet to pass urine or stool in bed. It combines respectful elimination care with safe positioning, infection prevention, observation of output and prompt reporting of abnormalities.",
-    purpose: [
-      "Support safe bowel or bladder elimination",
-      "Maintain comfort, privacy and dignity",
-      "Observe and communicate relevant elimination findings",
-    ],
+      "This is the process of promptly assisting a bedridden patient with a bedpan to maintain his/her bowel elimination pattern without getting out of bed. Most patients feel embarrassed when requesting for this assistance, the nurse must therefore be courteous and understanding when assisting the patient.",
+    purpose: [],
     indications: [
       "Patient is confined to bed or cannot safely transfer to a toilet",
       "Patient requires assistance because of weakness, pain, injury or prescribed activity restriction",
       "Patient needs a bedpan for collection or observation of urine or stool",
     ],
     equipment: [
-      "Clean covered bedpan appropriate for the patient",
-      "Disposable gloves and additional PPE according to risk assessment",
-      "Mackintosh and dressing towel or disposable bed protector",
-      "Toilet tissue, wipes, warm water and soap or approved cleansing supplies",
-      "Hand hygiene supplies",
-      "Call bell and privacy screen or curtain",
-      "Bedpan carrier or covered receptacle for transport",
-      "Graduated container if output measurement is required",
-    ],
+  "Trolley containing the following:",
+  "Bowl",
+  "Jug of water",
+  "Soap",
+  "Wipes/tissue",
+  "Covered bedpan",
+  "Receiver",
+  "Mackintosh and dressing towel"
+],
     preparation: [
       "Confirm the patient's identity, assess mobility, pain, consciousness and elimination needs, and check for precautions.",
       "Explain the procedure, obtain cooperation and provide privacy; ask about preferred assistance and any cultural or personal concerns.",
       "Perform hand hygiene and gather equipment without placing clean items on contaminated surfaces.",
     ],
     steps: [
-      "Explain the procedure, confirm consent and ensure the call bell is within reach.",
-      "Position the bed at a safe working height, apply brakes and protect the patient from falls.",
-      "Provide privacy, lower only the necessary bedclothes and maintain the patient's dignity and warmth.",
-      "Ask the patient to flex the knees and lift the hips if able; otherwise use safe moving and handling technique with assistance.",
-      "Place the bedpan securely under the buttocks with the wider end positioned appropriately, checking comfort and alignment.",
-      "Cover the patient and leave sufficient privacy while remaining close enough to respond promptly.",
-      "Ask the patient to use the call bell when finished and ensure the call bell remains accessible.",
-      "Put on gloves and PPE as indicated before removing the bedpan; support the patient and cover the bedpan immediately.",
-      "Observe the urine or stool for amount, colour, consistency, blood, mucus, unusual odour or other relevant findings.",
-      "Clean the patient from the cleanest area toward the less clean area, provide hand hygiene assistance and replace clothing and bed linen as needed.",
-      "Transport the covered bedpan safely to the sluice, dispose of contents according to local policy and decontaminate the bedpan.",
-      "Remove PPE safely, perform hand hygiene, make the patient comfortable and check that the call bell and personal items are within reach.",
-    ],
+  "Explain procedure and provide privacy",
+  "Prepare and send trolley to the bedside",
+  "Stand at the right side of the bed with assistant on the other side",
+  "Loosen to bed clothings",
+  "Place the mackintosh and dressing towel at the midsection of the bed",
+  "Gently lift patient with the assistant onto bedpan",
+  "Leave patient for sometime and inform him/her to call your attention when he/she is done",
+  "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately",
+  "Don gloves, cleans patient with wipes/tissue and discard",
+  "Remove gloves and perform hand hygiene",
+  "Allow patient to wash hands with soap and water and dry hands",
+  "Arrange bed clothes and leave patient comfortable in bed",
+  "Take bedpan to the sluice room and inspect content before emptying",
+  "Measure urine if any, when necessary and record",
+  "Empty bedpan, decontaminate, wash, sterilize and remove screen",
+  "Perform hand hygiene, document procedures and report any abnormalities"
+],
     precautions: [
       "Do not leave a confused, weak or high-risk patient unsupported on a bedpan.",
       "Use a fracture bedpan or alternative equipment when indicated by the patient's condition or mobility.",
@@ -1103,49 +1106,238 @@ export const rgnBatch05: Procedure[] = [
       "Follow the facility's infection prevention, waste disposal and manual handling policies.",
       "Use an interpreter or communication support when needed to preserve informed participation.",
     ],
-    quiz: rgn_039Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Explain procedure and provide privacy",
+      "Place the mackintosh and dressing towel at the midsection of the bed",
+      "Perform hand hygiene, document procedures and report any abnormalities",
+      "Arrange bed clothes and leave patient comfortable in bed"
+    ],
+    "answer": "Explain procedure and provide privacy",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Loosen to bed clothings",
+      "Prepare and send trolley to the bedside",
+      "Arrange bed clothes and leave patient comfortable in bed",
+      "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately"
+    ],
+    "answer": "Prepare and send trolley to the bedside",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Empty bedpan, decontaminate, wash, sterilize and remove screen",
+      "Allow patient to wash hands with soap and water and dry hands",
+      "Stand at the right side of the bed with assistant on the other side",
+      "Loosen to bed clothings"
+    ],
+    "answer": "Stand at the right side of the bed with assistant on the other side",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Allow patient to wash hands with soap and water and dry hands",
+      "Leave patient for sometime and inform him/her to call your attention when he/she is done",
+      "Prepare and send trolley to the bedside",
+      "Loosen to bed clothings"
+    ],
+    "answer": "Loosen to bed clothings",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Place the mackintosh and dressing towel at the midsection of the bed",
+      "Prepare and send trolley to the bedside",
+      "Measure urine if any, when necessary and record",
+      "Remove gloves and perform hand hygiene"
+    ],
+    "answer": "Place the mackintosh and dressing towel at the midsection of the bed",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Explain procedure and provide privacy",
+      "Gently lift patient with the assistant onto bedpan",
+      "Remove gloves and perform hand hygiene",
+      "Place the mackintosh and dressing towel at the midsection of the bed"
+    ],
+    "answer": "Gently lift patient with the assistant onto bedpan",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Take bedpan to the sluice room and inspect content before emptying",
+      "Don gloves, cleans patient with wipes/tissue and discard",
+      "Leave patient for sometime and inform him/her to call your attention when he/she is done",
+      "Explain procedure and provide privacy"
+    ],
+    "answer": "Leave patient for sometime and inform him/her to call your attention when he/she is done",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Don gloves, cleans patient with wipes/tissue and discard",
+      "Loosen to bed clothings",
+      "Perform hand hygiene, document procedures and report any abnormalities",
+      "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately"
+    ],
+    "answer": "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Don gloves, cleans patient with wipes/tissue and discard",
+      "Perform hand hygiene, document procedures and report any abnormalities",
+      "Arrange bed clothes and leave patient comfortable in bed",
+      "Leave patient for sometime and inform him/her to call your attention when he/she is done"
+    ],
+    "answer": "Don gloves, cleans patient with wipes/tissue and discard",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Empty bedpan, decontaminate, wash, sterilize and remove screen",
+      "Remove gloves and perform hand hygiene",
+      "Leave patient for sometime and inform him/her to call your attention when he/she is done",
+      "Stand at the right side of the bed with assistant on the other side"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Remove gloves and perform hand hygiene",
+      "Gently lift patient with the assistant onto bedpan",
+      "Allow patient to wash hands with soap and water and dry hands",
+      "Empty bedpan, decontaminate, wash, sterilize and remove screen"
+    ],
+    "answer": "Allow patient to wash hands with soap and water and dry hands",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Gently lift patient with the assistant onto bedpan",
+      "Prepare and send trolley to the bedside",
+      "Measure urine if any, when necessary and record",
+      "Arrange bed clothes and leave patient comfortable in bed"
+    ],
+    "answer": "Arrange bed clothes and leave patient comfortable in bed",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Take bedpan to the sluice room and inspect content before emptying",
+      "Measure urine if any, when necessary and record",
+      "Don gloves, cleans patient with wipes/tissue and discard",
+      "Place the mackintosh and dressing towel at the midsection of the bed"
+    ],
+    "answer": "Take bedpan to the sluice room and inspect content before emptying",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Arrange bed clothes and leave patient comfortable in bed",
+      "Measure urine if any, when necessary and record",
+      "Place the mackintosh and dressing towel at the midsection of the bed",
+      "Explain procedure and provide privacy"
+    ],
+    "answer": "Measure urine if any, when necessary and record",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Lift patient again with assistant to remove the bedpan after use, cover the bedpan immediately",
+      "Loosen to bed clothings",
+      "Empty bedpan, decontaminate, wash, sterilize and remove screen",
+      "Arrange bed clothes and leave patient comfortable in bed"
+    ],
+    "answer": "Empty bedpan, decontaminate, wash, sterilize and remove screen",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of SERVING OF BEDPAN TO A PATIENT?",
+    "options": [
+      "Loosen to bed clothings",
+      "Empty bedpan, decontaminate, wash, sterilize and remove screen",
+      "Allow patient to wash hands with soap and water and dry hands",
+      "Perform hand hygiene, document procedures and report any abnormalities"
+    ],
+    "answer": "Perform hand hygiene, document procedures and report any abnormalities",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-040",
     title: "ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure covers safe administration of prescribed solid medication by mouth, including tablets, capsules and caplets, and the sublingual or buccal placement of medicines when specifically prescribed. The nurse verifies the prescription, supports informed choice, assesses swallowing safety and observes the patient after administration.",
-    purpose: [
-      "Achieve the prescribed therapeutic effect",
-      "Provide prophylaxis or support investigation when prescribed",
-      "Administer medication safely while respecting the patient's right to information and refusal",
-    ],
+      "Enteral medications are administered through the oral, sublingual and buccal routes. These medications come in the form of either tablets, capsule, caplets or mixtures. In oral administration the medication is mostly swallowed whilst with sublingual, the medication is placed under the tongue and allowed to dissolve whereas with buccal, the medication is placed in between the cheek and allowed to dissolve.",
+    purpose: [],
     indications: [
       "A valid prescription for an oral, buccal or sublingual solid medication",
       "Patient is able to receive the medication through the prescribed route",
       "Medication is clinically appropriate after checking allergies, swallowing ability and relevant precautions",
     ],
     equipment: [
-      "Medication treatment chart or authorised electronic medication record",
-      "Prescribed medication in its original labelled package",
-      "Clean medication tray or cup and medicine spoon when required",
-      "Drinking water or other prescribed suitable fluid",
-      "Pill cutter or crusher only when authorised and safe for that medication",
-      "Hand hygiene supplies and waste receptacle",
-    ],
+  "A tray containing the following:",
+  "Medication",
+  "Drinking cup",
+  "Bottle of water",
+  "Spoon in a saucer or measuring cup",
+  "Medication Treatment Chart (Manual or Electronic)",
+  "Pill-crushing device if necessary"
+],
     preparation: [
       "Review the prescription, indication, allergies, contraindications, swallowing ability, level of consciousness and relevant observations.",
       "Prepare medicines for one patient at a time and check the label against the medication record at the required stages.",
       "Confirm whether the medicine must be swallowed, held under the tongue or placed between the cheek and gum.",
     ],
     steps: [
-      "Perform hand hygiene and identify the patient using approved identifiers.",
-      "Explain the medication name, purpose, route and relevant instructions; answer questions within scope and respect refusal.",
-      "Check the medication, patient, dose, route, time, indication, allergies, expiry and prescription before removing the dose.",
-      "Position the patient upright or as upright as the condition allows and assess readiness to swallow.",
-      "Offer the medication without touching it with bare hands, using clean equipment and the prescribed route.",
-      "For an oral dose, offer water if appropriate and observe the patient swallow; for buccal or sublingual medication, ensure it remains in the prescribed site until dissolved.",
-      "Do not crush, split or mix medication unless the product information and authorised prescriber or pharmacist guidance allow it.",
-      "Observe for difficulty swallowing, choking, vomiting, immediate allergy or other adverse response.",
-      "Dispose of packaging and clean reusable equipment according to policy; perform hand hygiene.",
-      "Record administration or refusal immediately and reassess the patient or therapeutic response as indicated.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+  "Perform hand hygiene",
+  "Prepare and send tray to the bedside",
+  "Read the label on the package and compare with patient’s treatment chart (manual or electronic)",
+  "Take out the medication and compare with the patient treatment chart (manual or electronic) for the dosage",
+  "Pour out water into a drinking cup if it is to be administered orally",
+  "Take the tablet with a spoon",
+  "Give the tablet to the patient and ensure patient:",
+  "Swallow with the aid of water if it is to be administered orally",
+  "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually",
+  "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
+  "Stay with patient until all medications are taken",
+  "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth",
+  "Congratulate patient and make him/her assume a desirable position",
+  "Observe patient for any adverse reaction",
+  "Encourage patient to report any adverse reaction",
+  "Dispose off used items",
+  "Perform hand hygiene",
+  "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+  "Check on patient after thirty (30) minutes for therapeutic effect"
+],
     precautions: [
       "Do not give oral medication to a patient with unsafe swallowing, reduced consciousness or an active aspiration risk without appropriate assessment and direction.",
       "Do not leave medication unattended or record it as given before confirming administration.",
@@ -1175,49 +1367,304 @@ export const rgnBatch05: Procedure[] = [
       "Follow N&MC Ghana standards, facility medication policy and the approved product information.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=JH413AIgZ3k",
-    quiz: rgn_040Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Prepare and send tray to the bedside",
+      "Congratulate patient and make him/her assume a desirable position",
+      "Take out the medication and compare with the patient treatment chart (manual or electronic) for the dosage"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Stay with patient until all medications are taken",
+      "Establish rapport (Refer to steps)",
+      "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Give the tablet to the patient and ensure patient:",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Dispose off used items"
+    ],
+    "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Read the label on the package and compare with patient’s treatment chart (manual or electronic)",
+      "Observe patient for any adverse reaction",
+      "Pour out water into a drinking cup if it is to be administered orally",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Prepare and send tray to the bedside",
+      "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth"
+    ],
+    "answer": "Prepare and send tray to the bedside",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Read the label on the package and compare with patient’s treatment chart (manual or electronic)",
+      "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+      "Swallow with the aid of water if it is to be administered orally"
+    ],
+    "answer": "Read the label on the package and compare with patient’s treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Encourage patient to report any adverse reaction",
+      "Take the tablet with a spoon",
+      "Take out the medication and compare with the patient treatment chart (manual or electronic) for the dosage",
+      "Read the label on the package and compare with patient’s treatment chart (manual or electronic)"
+    ],
+    "answer": "Take out the medication and compare with the patient treatment chart (manual or electronic) for the dosage",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Stay with patient until all medications are taken",
+      "Perform hand hygiene",
+      "Congratulate patient and make him/her assume a desirable position",
+      "Pour out water into a drinking cup if it is to be administered orally"
+    ],
+    "answer": "Pour out water into a drinking cup if it is to be administered orally",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Take the tablet with a spoon",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Take the tablet with a spoon",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Take the tablet with a spoon",
+      "Give the tablet to the patient and ensure patient:",
+      "Take out the medication and compare with the patient treatment chart (manual or electronic) for the dosage",
+      "Dispose off used items"
+    ],
+    "answer": "Give the tablet to the patient and ensure patient:",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Prepare and send tray to the bedside",
+      "Observe patient for any adverse reaction",
+      "Swallow with the aid of water if it is to be administered orally",
+      "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth"
+    ],
+    "answer": "Swallow with the aid of water if it is to be administered orally",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually"
+    ],
+    "answer": "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
+      "Pour out water into a drinking cup if it is to be administered orally",
+      "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+      "Give the tablet to the patient and ensure patient:"
+    ],
+    "answer": "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Encourage patient to report any adverse reaction",
+      "Stay with patient until all medications are taken",
+      "Congratulate patient and make him/her assume a desirable position",
+      "Read the label on the package and compare with patient’s treatment chart (manual or electronic)"
+    ],
+    "answer": "Stay with patient until all medications are taken",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
+      "Perform hand hygiene",
+      "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Take the tablet with a spoon",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Swallow with the aid of water if it is to be administered orally",
+      "Congratulate patient and make him/her assume a desirable position"
+    ],
+    "answer": "Congratulate patient and make him/her assume a desirable position",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Observe patient for any adverse reaction",
+      "Congratulate patient and make him/her assume a desirable position",
+      "Take out the medication and compare with the patient treatment chart (manual or electronic) for the dosage",
+      "Dispose off used items"
+    ],
+    "answer": "Observe patient for any adverse reaction",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Prepare and send tray to the bedside",
+      "Encourage patient to report any adverse reaction",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Stay with patient until all medications are taken"
+    ],
+    "answer": "Encourage patient to report any adverse reaction",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Place the medication under the tongue and allow to dissolve if it is to be administered sublingually",
+      "Dispose off used items",
+      "Give the tablet to the patient and ensure patient:"
+    ],
+    "answer": "Dispose off used items",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Encourage patient to report any adverse reaction",
+      "Take the tablet with a spoon",
+      "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+      "Perform hand hygiene",
+      "Engage patient in a brief conversation to assess if all medications are swallowed or retained in the mouth",
+      "Read the label on the package and compare with patient’s treatment chart (manual or electronic)"
+    ],
+    "answer": "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF ORAL MEDICATIONS (TABLETS, CAPSULES, CAPLETS ETC.)?",
+    "options": [
+      "Place the medication in between the cheeks and allow to dissolve if it is to be administered buccally",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Swallow with the aid of water if it is to be administered orally",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-041",
     title: "ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure covers administration of a prescribed liquid oral medication or mixture. Accurate identification, shaking when required, eye-level measurement, swallowing assessment, observation and documentation are essential because liquid strengths and volumes vary.",
-    purpose: [
-      "Deliver a prescribed therapeutic or prophylactic dose",
-      "Provide an oral formulation for a patient who needs or prefers liquid medication",
-      "Support safe, accurate medication administration and evaluation of response",
-    ],
+      "Enteral medications are administered through the oral, sublingual and buccal routes. These medications come in the form of either tablets, capsule, caplets or mixtures. In oral administration the medication is mostly swallowed whilst with sublingual, the medication is placed under the tongue and allowed to dissolve whereas with buccal, the medication is placed in between the cheek and allowed to dissolve.",
+    purpose: [],
     indications: [
       "A valid prescription for a liquid oral medication",
       "Patient can safely swallow the prescribed preparation",
       "A liquid formulation is prescribed or clinically appropriate",
     ],
     equipment: [
-      "Medication treatment chart or authorised electronic medication record",
-      "Original labelled bottle of the prescribed oral mixture",
-      "Calibrated oral syringe, medicine cup or measuring spoon as appropriate",
-      "Clean tray, water and disposable tissue",
-      "Pill or bottle opener only if required",
-      "Hand hygiene supplies and waste receptacle",
-    ],
+  "A tray containing the following:",
+  "Medication",
+  "Drinking cup",
+  "Bottle of water",
+  "Spoon in a saucer or measuring cup",
+  "Medication Treatment Chart (Manual or Electronic)",
+  "Pill-crushing device if necessary",
+  "Straw"
+],
     preparation: [
       "Check the medication, concentration, dose, patient identifiers, allergies, expiry and prescription.",
       "Read the label and product instructions for shaking, dilution, storage and measuring requirements.",
       "Assess swallowing ability, level of consciousness, nausea and any reason the oral route may be unsafe.",
     ],
     steps: [
-      "Perform hand hygiene and identify the patient using approved identifiers.",
-      "Explain the medication, purpose, dose and route; obtain cooperation and respect the patient's right to refuse.",
-      "Check the bottle label against the medication record before opening and gently shake the bottle when instructed.",
-      "Place the cap with its inside protected, hold the bottle with the label uppermost and pour at eye level.",
-      "Measure the prescribed dose using a calibrated device; do not use an unmarked household spoon.",
-      "Recheck the measured volume against the prescription, close the bottle and clean any residue from the outside.",
-      "Position the patient upright or as upright as possible, give the mixture and offer water if appropriate.",
-      "Observe that the dose is swallowed and monitor for coughing, vomiting, allergy or other adverse response.",
-      "Dispose of used materials, clean reusable equipment and perform hand hygiene.",
-      "Document administration or refusal and evaluate the patient's response at the appropriate time.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+  "Perform hand hygiene",
+  "Prepare and send tray to the bedside",
+  "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)",
+  "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
+  "Shake the bottle gently",
+  "Remove the cork and holds it with the little or ring finger",
+  "Pick the medicine glass and with the thumb nail marks the level of the measure to be taken",
+  "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
+  "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
+  "Carry medicine to the patient on a saucer, a teaspoon may be added for stirring if it is a suspension",
+  "Encourage patient to drink the medicine and serve water if necessary",
+  "Congratulate patient and make him/her assume a desirable position",
+  "Observe patient for any adverse reaction",
+  "Encourage patient to report any adverse",
+  "Dispose off used items",
+  "Perform hand hygiene",
+  "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+  "Check on patient after thirty (30) minutes for therapeutic effect"
+],
     precautions: [
       "Do not estimate a dose or use a different concentration without clarification.",
       "Do not give a suspension without redistributing it when the label requires shaking.",
@@ -1247,50 +1694,319 @@ export const rgnBatch05: Procedure[] = [
       "Follow the manufacturer's instructions and local medication policy for storage and beyond-use dates.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=dAR5pxDqOcs",
-    quiz: rgn_041Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Prepare and send tray to the bedside",
+      "Observe patient for any adverse reaction",
+      "Shake the bottle gently"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Congratulate patient and make him/her assume a desirable position",
+      "Establish rapport (Refer to steps)",
+      "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
+      "Perform hand hygiene"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
+      "Establish rapport (Refer to steps)",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)"
+    ],
+    "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
+      "Dispose off used items",
+      "Pick the medicine glass and with the thumb nail marks the level of the measure to be taken",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Prepare and send tray to the bedside",
+      "Encourage patient to drink the medicine and serve water if necessary",
+      "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)",
+      "Encourage patient to report any adverse"
+    ],
+    "answer": "Prepare and send tray to the bedside",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Perform hand hygiene",
+      "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Carry medicine to the patient on a saucer, a teaspoon may be added for stirring if it is a suspension"
+    ],
+    "answer": "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
+      "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
+      "Remove the cork and holds it with the little or ring finger"
+    ],
+    "answer": "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Observe patient for any adverse reaction",
+      "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
+      "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+      "Shake the bottle gently"
+    ],
+    "answer": "Shake the bottle gently",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Remove the cork and holds it with the little or ring finger",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Congratulate patient and make him/her assume a desirable position",
+      "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)"
+    ],
+    "answer": "Remove the cork and holds it with the little or ring finger",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Encourage patient to drink the medicine and serve water if necessary",
+      "Pick the medicine glass and with the thumb nail marks the level of the measure to be taken",
+      "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Pick the medicine glass and with the thumb nail marks the level of the measure to be taken",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Remove the cork and holds it with the little or ring finger",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
+      "Dispose off used items"
+    ],
+    "answer": "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Prepare and send tray to the bedside",
+      "Encourage patient to report any adverse",
+      "Shake the bottle gently",
+      "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)"
+    ],
+    "answer": "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Carry medicine to the patient on a saucer, a teaspoon may be added for stirring if it is a suspension",
+      "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
+      "Perform hand hygiene",
+      "Observe patient for any adverse reaction"
+    ],
+    "answer": "Carry medicine to the patient on a saucer, a teaspoon may be added for stirring if it is a suspension",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Encourage patient to drink the medicine and serve water if necessary",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most"
+    ],
+    "answer": "Encourage patient to drink the medicine and serve water if necessary",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+      "Pick the medicine glass and with the thumb nail marks the level of the measure to be taken",
+      "Congratulate patient and make him/her assume a desirable position",
+      "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage"
+    ],
+    "answer": "Congratulate patient and make him/her assume a desirable position",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Encourage patient to drink the medicine and serve water if necessary",
+      "Read the label on the bottle and compare with patient’s treatment chart (manual or electronic)",
+      "Dispose off used items",
+      "Observe patient for any adverse reaction"
+    ],
+    "answer": "Observe patient for any adverse reaction",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Encourage patient to report any adverse",
+      "Establish rapport (Refer to steps)",
+      "Carry medicine to the patient on a saucer, a teaspoon may be added for stirring if it is a suspension",
+      "Prepare and send tray to the bedside"
+    ],
+    "answer": "Encourage patient to report any adverse",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Replace the cork and compare the quantity with the dosage on the patient’s treatment chart (manual or electronic)",
+      "Dispose off used items",
+      "Remove the cork and holds it with the little or ring finger",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Dispose off used items",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Remove the cork and holds it with the little or ring finger",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Perform hand hygiene",
+      "Encourage patient to report any adverse"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Perform hand hygiene",
+      "Congratulate patient and make him/her assume a desirable position",
+      "Take out the bottle and compare with the patient treatment chart (manual or electronic) for the dosage",
+      "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)"
+    ],
+    "answer": "Document procedure in the nurses’ note and chart on treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF ORAL MEDICATIONS (MIXTURES)?",
+    "options": [
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Pour out the prescribed dose at eye level in the bright light, holding the bottle with the label upper most",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Encourage patient to drink the medicine and serve water if necessary"
+    ],
+    "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-042",
     title: "ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure describes preparation and monitoring of a prescribed intravenous fluid or medication infusion through suitable vascular access. It requires accurate prescription checks, aseptic handling, correct rate control, assessment of the patient and IV site, and prompt response to complications.",
-    purpose: [
-      "Deliver prescribed fluid or medication directly into the vascular system",
-      "Maintain or correct fluid and electrolyte balance when ordered",
-      "Achieve a controlled therapeutic effect with close monitoring",
-    ],
+      "Parenteral route of medication administration entails the introduction of medications directly through the skin for gradual distribution into systemic circulation and body tissues. Routes: intravenous (vein), intramuscular (muscle), subcutaneous (under the skin), intradermal (dermis), intrathecal (spinal canal). These medications are delivered in the form of sterile ampoule, vial or volumes of fluid(s). During the procedure, the nurse is required to generally observe the patient and also observe strict aseptic technique to minimize the introduction of micro-organisms into the body.",
+    purpose: [],
     indications: [
       "A valid prescription for an intravenous fluid or infusion medication",
       "Patient requires a prescribed IV route because oral or another route is unsuitable or insufficient",
       "Suitable vascular access and monitoring arrangements are available",
     ],
     equipment: [
-      "Prescribed IV fluid or medication and treatment or infusion chart",
-      "Giving set, extension set, needleless connector or pump as appropriate",
-      "Approved IV stand, infusion pump or calibrated rate-control device",
-      "Antiseptic swabs, sterile dressing and approved flush if prescribed",
-      "Gloves and PPE according to risk assessment",
-      "Tourniquet and cannulation equipment only when cannulation is within the nurse's competence and prescription",
-      "Sharps container, waste receptacle, hand hygiene supplies and protective bed covering",
-    ],
+  "A trolley containing the following:",
+  "Top Shelf",
+  "A sterile field with two sterile gallipot with a lid",
+  "Bottom Shelf",
+  "Cannula (Different sizes)",
+  "Tourniquet",
+  "Medication (Infusion bag/bottle, ampoule or vial)",
+  "Syringe and needle",
+  "Sterile glove",
+  "Sterile cotton in a pack",
+  "Antimicrobial solution (Methylated spirit)",
+  "Sterile water",
+  "Receiver for used items",
+  "Sharps container",
+  "Adhesive strips/tape",
+  "Mackintosh and dressing towel",
+  "Timer",
+  "Giving set",
+  "Drip stand"
+],
     preparation: [
       "Review the prescription, allergies, patient identity, indication, fluid restriction, baseline observations and IV access.",
       "Inspect the container for label, expiry, seal, leaks, clarity, colour, particles and prescribed volume.",
       "Explain the procedure and possible sensations, obtain cooperation and ensure the patient can call for help.",
     ],
     steps: [
-      "Perform hand hygiene, identify the patient and compare the prescription with the fluid or medication label.",
-      "Position and protect the patient, ensure the bed is safe and place the IV stand or pump appropriately.",
-      "Perform hand hygiene again as indicated, open the giving set without contaminating sterile ends and insert the spike into the container.",
-      "Prime the tubing fully, remove air, close the clamp and attach the appropriate connector or pump tubing.",
-      "Inspect the IV site for patency, pain, redness, swelling, leakage, coolness or a loose dressing before connection.",
-      "Disinfect the access port using the approved antiseptic and allow it to dry according to policy.",
-      "Connect the giving set aseptically, open the clamp or start the pump and set the prescribed rate.",
-      "Observe the patient and site closely at the start, recheck the rate and monitor for infiltration, phlebitis, fluid overload or systemic reaction.",
-      "Dispose of sharps immediately without recapping, remove PPE safely and perform hand hygiene.",
-      "Reassess the patient, maintain comfort and document fluid balance, response and any abnormality throughout the infusion.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+  "Perform hand hygiene",
+  "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
+  "Prepare and send trolley and other equipment to the patient’s bedside",
+  "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
+  "Encourage patient to use the washroom or serve a bedpan/urinal",
+  "Check vital signs and records",
+  "Select and inspect sites for administration",
+  "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
+  "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle",
+  "Hang the infusion bag/bottle on the drip stand",
+  "Remove the cap from the other end of the giving set and attach needle to it",
+  "Assist patient to assume a desirable position",
+  "Protect the bed with a mackintosh and dressing towel",
+  "Fill the chamber half way and expel air from the giving set",
+  "Perform hand hygiene using alcohol rub",
+  "Wears sterile gloves",
+  "Clean the site with antimicrobial solution (methylated spirit) with cotton swab",
+  "Ask assistant to apply tourniquet to locate the vein",
+  "Introduce the cannula into the vein",
+  "Remove the metallic stylet and put it in the sharps container",
+  "Release the tourniquet and connect the giving set",
+  "Secure cannula into position and check for infiltration or haematoma",
+  "Remove glove and perform hand hygiene",
+  "Regulate the flow rate as ordered with the aid of a timer",
+  "Reposition patient appropriately in bed",
+  "Observe patient for any adverse reaction",
+  "Encourage patient to report any adverse reaction",
+  "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
+  "Record time of setting up, type and amount of fluid on the treatment, intake and output chart",
+  "Document procedure on nurses’ notes (manually or electronically)",
+  "Dispose off used items and decontaminate trolley",
+  "Perform hand hygiene",
+  "Check on patient after thirty (30) minutes for therapeutic effect"
+],
     precautions: [
       "Only administer IV therapy within current competence, prescription and facility policy; seek support when required.",
       "Never use a cloudy, leaking, expired, damaged or visibly contaminated container.",
@@ -1320,50 +2036,474 @@ export const rgnBatch05: Procedure[] = [
       "Monitor patients at increased risk of fluid overload more frequently as prescribed.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=W8-WlfOtSo0",
-    quiz: rgn_042Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
+      "Protect the bed with a mackintosh and dressing towel",
+      "Regulate the flow rate as ordered with the aid of a timer"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Dispose off used items and decontaminate trolley",
+      "Establish rapport (Refer to steps)",
+      "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle",
+      "Remove the metallic stylet and put it in the sharps container"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Encourage patient to report any adverse reaction",
+      "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Wears sterile gloves"
+    ],
+    "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Remove glove and perform hand hygiene",
+      "Establish rapport (Refer to steps)",
+      "Remove the cap from the other end of the giving set and attach needle to it",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
+      "Document procedure on nurses’ notes (manually or electronically)",
+      "Select and inspect sites for administration",
+      "Ask assistant to apply tourniquet to locate the vein"
+    ],
+    "answer": "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Reposition patient appropriately in bed",
+      "Prepare and send trolley and other equipment to the patient’s bedside",
+      "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
+      "Fill the chamber half way and expel air from the giving set"
+    ],
+    "answer": "Prepare and send trolley and other equipment to the patient’s bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Release the tourniquet and connect the giving set",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
+      "Hang the infusion bag/bottle on the drip stand"
+    ],
+    "answer": "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Clean the site with antimicrobial solution (methylated spirit) with cotton swab",
+      "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
+      "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
+      "Encourage patient to use the washroom or serve a bedpan/urinal"
+    ],
+    "answer": "Encourage patient to use the washroom or serve a bedpan/urinal",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Check vital signs and records",
+      "Regulate the flow rate as ordered with the aid of a timer",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Assist patient to assume a desirable position"
+    ],
+    "answer": "Check vital signs and records",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Introduce the cannula into the vein",
+      "Select and inspect sites for administration",
+      "Dispose off used items and decontaminate trolley",
+      "Place infusion stand at the side of the bed and prepare adhesive strips/tape"
+    ],
+    "answer": "Select and inspect sites for administration",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Perform hand hygiene using alcohol rub",
+      "Observe patient for any adverse reaction",
+      "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
+      "Prepare and send trolley and other equipment to the patient’s bedside"
+    ],
+    "answer": "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Remove the cap from the other end of the giving set and attach needle to it",
+      "Secure cannula into position and check for infiltration or haematoma",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle"
+    ],
+    "answer": "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Hang the infusion bag/bottle on the drip stand",
+      "Ask assistant to apply tourniquet to locate the vein",
+      "Record time of setting up, type and amount of fluid on the treatment, intake and output chart",
+      "Encourage patient to use the washroom or serve a bedpan/urinal"
+    ],
+    "answer": "Hang the infusion bag/bottle on the drip stand",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Protect the bed with a mackintosh and dressing towel",
+      "Remove the cap from the other end of the giving set and attach needle to it",
+      "Reposition patient appropriately in bed",
+      "Perform hand hygiene"
+    ],
+    "answer": "Remove the cap from the other end of the giving set and attach needle to it",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
+      "Remove the metallic stylet and put it in the sharps container",
+      "Assist patient to assume a desirable position",
+      "Check on patient after thirty (30) minutes for therapeutic effect"
+    ],
+    "answer": "Assist patient to assume a desirable position",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
+      "Wears sterile gloves",
+      "Encourage patient to report any adverse reaction",
+      "Protect the bed with a mackintosh and dressing towel"
+    ],
+    "answer": "Protect the bed with a mackintosh and dressing towel",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Fill the chamber half way and expel air from the giving set",
+      "Remove the cap from the other end of the giving set and attach needle to it",
+      "Remove glove and perform hand hygiene",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Fill the chamber half way and expel air from the giving set",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Check vital signs and records",
+      "Perform hand hygiene using alcohol rub",
+      "Introduce the cannula into the vein",
+      "Document procedure on nurses’ notes (manually or electronically)"
+    ],
+    "answer": "Perform hand hygiene using alcohol rub",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
+      "Protect the bed with a mackintosh and dressing towel",
+      "Wears sterile gloves",
+      "Observe patient for any adverse reaction"
+    ],
+    "answer": "Wears sterile gloves",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle",
+      "Release the tourniquet and connect the giving set",
+      "Clean the site with antimicrobial solution (methylated spirit) with cotton swab"
+    ],
+    "answer": "Clean the site with antimicrobial solution (methylated spirit) with cotton swab",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Ask assistant to apply tourniquet to locate the vein",
+      "Encourage patient to use the washroom or serve a bedpan/urinal",
+      "Wears sterile gloves",
+      "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling"
+    ],
+    "answer": "Ask assistant to apply tourniquet to locate the vein",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Introduce the cannula into the vein",
+      "Assist patient to assume a desirable position",
+      "Regulate the flow rate as ordered with the aid of a timer"
+    ],
+    "answer": "Introduce the cannula into the vein",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Dispose off used items and decontaminate trolley",
+      "Select and inspect sites for administration",
+      "Remove the metallic stylet and put it in the sharps container",
+      "Introduce the cannula into the vein"
+    ],
+    "answer": "Remove the metallic stylet and put it in the sharps container",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Encourage patient to report any adverse reaction",
+      "Prepare and send trolley and other equipment to the patient’s bedside",
+      "Fill the chamber half way and expel air from the giving set",
+      "Release the tourniquet and connect the giving set"
+    ],
+    "answer": "Release the tourniquet and connect the giving set",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Secure cannula into position and check for infiltration or haematoma",
+      "Establish rapport (Refer to steps)",
+      "Hang the infusion bag/bottle on the drip stand",
+      "Release the tourniquet and connect the giving set"
+    ],
+    "answer": "Secure cannula into position and check for infiltration or haematoma",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Record time of setting up, type and amount of fluid on the treatment, intake and output chart",
+      "Remove glove and perform hand hygiene",
+      "Check vital signs and records",
+      "Clean the site with antimicrobial solution (methylated spirit) with cotton swab"
+    ],
+    "answer": "Remove glove and perform hand hygiene",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 27 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Reposition patient appropriately in bed",
+      "Perform hand hygiene",
+      "Regulate the flow rate as ordered with the aid of a timer",
+      "Protect the bed with a mackintosh and dressing towel"
+    ],
+    "answer": "Regulate the flow rate as ordered with the aid of a timer",
+    "explanation": "This checks recall of step 27 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 28 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Remove the metallic stylet and put it in the sharps container",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
+      "Reposition patient appropriately in bed"
+    ],
+    "answer": "Reposition patient appropriately in bed",
+    "explanation": "This checks recall of step 28 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 29 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Observe patient for any adverse reaction",
+      "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
+      "Read the label on the infusion and compare with patient’s treatment chart (manual or electronic)",
+      "Perform hand hygiene using alcohol rub"
+    ],
+    "answer": "Observe patient for any adverse reaction",
+    "explanation": "This checks recall of step 29 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 30 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Secure cannula into position and check for infiltration or haematoma",
+      "Encourage patient to report any adverse reaction",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Remove the cap from the other end of the giving set and attach needle to it"
+    ],
+    "answer": "Encourage patient to report any adverse reaction",
+    "explanation": "This checks recall of step 30 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 31 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Ask assistant to apply tourniquet to locate the vein",
+      "Document procedure on nurses’ notes (manually or electronically)",
+      "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
+      "Select and inspect sites for administration"
+    ],
+    "answer": "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
+    "explanation": "This checks recall of step 31 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 32 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Fill the chamber half way and expel air from the giving set",
+      "Reposition patient appropriately in bed",
+      "Ensure quality of the infusion (check for cloudiness, sediments and other particles)",
+      "Record time of setting up, type and amount of fluid on the treatment, intake and output chart"
+    ],
+    "answer": "Record time of setting up, type and amount of fluid on the treatment, intake and output chart",
+    "explanation": "This checks recall of step 32 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 33 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Document procedure on nurses’ notes (manually or electronically)",
+      "Release the tourniquet and connect the giving set",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Insert the piercing needle of giving set into the rubber seal of the infusion bag/bottle"
+    ],
+    "answer": "Document procedure on nurses’ notes (manually or electronically)",
+    "explanation": "This checks recall of step 33 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 34 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Wears sterile gloves",
+      "Dispose off used items and decontaminate trolley",
+      "Check infusion rate accuracy after ten (10) minutes and continue to observe the site of insertion for swelling",
+      "Encourage patient to use the washroom or serve a bedpan/urinal"
+    ],
+    "answer": "Dispose off used items and decontaminate trolley",
+    "explanation": "This checks recall of step 34 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 35 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Protect the bed with a mackintosh and dressing towel",
+      "Regulate the flow rate as ordered with the aid of a timer",
+      "Perform hand hygiene",
+      "Ensure quality of the infusion (check for cloudiness, sediments and other particles)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 35 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 36 of ADMINISTRATION OF INTRAVENOUS MEDICATION (INFUSION)?",
+    "options": [
+      "Place infusion stand at the side of the bed and prepare adhesive strips/tape",
+      "Introduce the cannula into the vein",
+      "Document procedure on nurses’ notes (manually or electronically)",
+      "Check on patient after thirty (30) minutes for therapeutic effect"
+    ],
+    "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
+    "explanation": "This checks recall of step 36 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-043",
     title: "ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure covers reconstitution of a prescribed injectable medication from an ampoule or vial and administration through suitable IV access when that route and method are authorised. Accurate diluent selection, aseptic preparation, concentration checks, safe IV access and close observation are essential.",
-    purpose: [
-      "Prepare a stable, accurate concentration of prescribed injectable medication",
-      "Administer medication through an appropriate IV access using the prescribed method",
-      "Detect local or systemic complications early",
-    ],
+      "Parenteral route of medication administration entails the introduction of medications directly through the skin for gradual distribution into systemic circulation and body tissues. Routes: intravenous (vein), intramuscular (muscle), subcutaneous (under the skin), intradermal (dermis), intrathecal (spinal canal). These medications are delivered in the form of sterile ampoule, vial or volumes of fluid(s). During the procedure, the nurse is required to generally observe the patient and also observe strict aseptic technique to minimize the introduction of micro-organisms into the body.",
+    purpose: [],
     indications: [
       "A prescribed injectable medication supplied as an ampoule or powder in a vial",
       "Manufacturer or pharmacy instructions specify reconstitution before administration",
       "The patient has suitable IV access and the route is authorised",
     ],
     equipment: [
-      "Medication ampoule or vial and authorised treatment chart",
-      "Correct sterile diluent and reconstitution device",
-      "Sterile syringe and needles or needleless transfer device",
-      "Alcohol or approved antiseptic swabs and sterile gauze",
-      "Gloves and PPE according to risk assessment",
-      "Receiver, sharps container, waste receptacle and hand hygiene supplies",
-      "Compatible IV access supplies and prescribed flush when required",
-    ],
+  "A trolley containing the following:",
+  "Top Shelf",
+  "A sterile field with two sterile gallipot with a lid",
+  "Bottom Shelf",
+  "Cannula (Different sizes)",
+  "Tourniquet",
+  "Medication (Infusion bag/bottle, ampoule or vial)",
+  "Syringe and needle",
+  "Sterile glove",
+  "Sterile cotton in a pack",
+  "Antimicrobial solution (Methylated spirit)",
+  "Sterile water",
+  "Receiver for used items",
+  "Sharps container",
+  "Adhesive strips/tape",
+  "Mackintosh and dressing towel",
+  "Timer"
+],
     preparation: [
       "Check the prescription, patient, medication, dose, route, expiry, allergies, diluent, concentration and reconstitution instructions.",
       "Check compatibility, storage conditions, required final volume and beyond-use time before preparing the medication.",
       "Prepare in a clean designated area using aseptic non-touch technique and explain the procedure to the patient.",
     ],
     steps: [
-      "Perform hand hygiene and identify the patient using approved identifiers.",
-      "Inspect the ampoule or vial, diluent and equipment; reject any damaged, expired or compromised item.",
-      "Use safe ampoule-opening technique or disinfect the vial stopper and allow it to dry.",
-      "Draw up the correct diluent, add it to the vial when required and dissolve the medication using the prescribed gentle method.",
-      "Inspect the reconstituted solution for the expected appearance, particles, precipitate, colour and volume.",
-      "Draw up the prescribed dose using a new sterile syringe and suitable needle or transfer device; remove air safely.",
-      "Assess IV access for patency and site complications, disinfect the access port and allow it to dry.",
-      "Administer at the prescribed rate or connect to the compatible infusion system; observe the patient and site throughout.",
-      "Stop administration and seek urgent help for significant pain, swelling, resistance, rash, wheeze, hypotension or deterioration.",
-      "Dispose of sharps and materials safely, perform hand hygiene, reassess the patient and document the preparation and administration.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Check medication label and method of reconstitution as per manufacturer’s instructions",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+  "Perform hand hygiene",
+  "Prepare and sent trolley to the bed side",
+  "Ensure a cannula is in situ",
+  "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+  "Reconstitute as per manufacturers instruction where necessary/prescribers order",
+  "Examine reconstituted medication for cloudiness and sediments",
+  "Draw medication with syringe, expel air from the barrel and place the syringe into a receiver",
+  "Protect bed linen with a mackintosh and dressing towel",
+  "Put patient in a desirable position",
+  "Perform hand hygiene",
+  "Wear sterile glove",
+  "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
+  "Fix syringe with the medication into the entry port of cannula",
+  "Pull gently on the plunger to check for blood return",
+  "Push medication slowly using the push-stop-push-stop technique till administration is completed",
+  "Observe patient throughout the administration for any reaction and swelling",
+  "Continue observing patient five (5) to ten (10) minutes later after injecting medication",
+  "Reposition patient appropriately in bed",
+  "Encourage patient to report any adverse reaction",
+  "Remove mackintosh and dressing towel",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate trolley",
+  "Perform hand hygiene",
+  "Check on patient after thirty (30) minutes for therapeutic effect"
+],
     precautions: [
       "Do not administer a solution that is cloudy, discoloured, precipitated, contaminated or outside its permitted use time.",
       "Do not substitute a diluent, change the final concentration or mix medications without authorised compatibility guidance.",
@@ -1393,49 +2533,391 @@ export const rgnBatch05: Procedure[] = [
       "Escalate any discrepancy rather than making an independent alteration to the prescribed preparation.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=JIYagnD_kk8",
-    quiz: rgn_043Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Fix syringe with the medication into the entry port of cannula",
+      "Check medication label and method of reconstitution as per manufacturer’s instructions"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Reconstitute as per manufacturers instruction where necessary/prescribers order",
+      "Check medication label and method of reconstitution as per manufacturer’s instructions",
+      "Protect bed linen with a mackintosh and dressing towel",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Check medication label and method of reconstitution as per manufacturer’s instructions",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Perform hand hygiene",
+      "Fix syringe with the medication into the entry port of cannula",
+      "Establish rapport (Refer to steps)",
+      "Observe patient throughout the administration for any reaction and swelling"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Protect bed linen with a mackintosh and dressing towel",
+      "Remove mackintosh and dressing towel",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse"
+    ],
+    "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Perform hand hygiene",
+      "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+      "Observe patient throughout the administration for any reaction and swelling",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Protect bed linen with a mackintosh and dressing towel",
+      "Prepare and sent trolley to the bed side",
+      "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
+      "Check on patient after thirty (30) minutes for therapeutic effect"
+    ],
+    "answer": "Prepare and sent trolley to the bed side",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+      "Observe patient throughout the administration for any reaction and swelling",
+      "Ensure a cannula is in situ",
+      "Encourage patient to report any adverse reaction"
+    ],
+    "answer": "Ensure a cannula is in situ",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage"
+    ],
+    "answer": "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Reconstitute as per manufacturers instruction where necessary/prescribers order",
+      "Draw medication with syringe, expel air from the barrel and place the syringe into a receiver",
+      "Encourage patient to report any adverse reaction",
+      "Ensure a cannula is in situ"
+    ],
+    "answer": "Reconstitute as per manufacturers instruction where necessary/prescribers order",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
+      "Examine reconstituted medication for cloudiness and sediments",
+      "Push medication slowly using the push-stop-push-stop technique till administration is completed",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Examine reconstituted medication for cloudiness and sediments",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Examine reconstituted medication for cloudiness and sediments",
+      "Encourage patient to report any adverse reaction",
+      "Draw medication with syringe, expel air from the barrel and place the syringe into a receiver",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Draw medication with syringe, expel air from the barrel and place the syringe into a receiver",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Prepare and sent trolley to the bed side",
+      "Push medication slowly using the push-stop-push-stop technique till administration is completed",
+      "Establish rapport (Refer to steps)",
+      "Protect bed linen with a mackintosh and dressing towel"
+    ],
+    "answer": "Protect bed linen with a mackintosh and dressing towel",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Put patient in a desirable position",
+      "Wear sterile glove",
+      "Dispose off used items and decontaminate trolley",
+      "Examine reconstituted medication for cloudiness and sediments"
+    ],
+    "answer": "Put patient in a desirable position",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Push medication slowly using the push-stop-push-stop technique till administration is completed",
+      "Perform hand hygiene",
+      "Reposition patient appropriately in bed",
+      "Ensure a cannula is in situ"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Put patient in a desirable position",
+      "Dispose off used items and decontaminate trolley",
+      "Wear sterile glove",
+      "Check medication label and method of reconstitution as per manufacturer’s instructions"
+    ],
+    "answer": "Wear sterile glove",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Reconstitute as per manufacturers instruction where necessary/prescribers order",
+      "Reposition patient appropriately in bed",
+      "Prepare and sent trolley to the bed side",
+      "Clean entry port of cannula with antimicrobial solution and cotton wool swab"
+    ],
+    "answer": "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Fix syringe with the medication into the entry port of cannula",
+      "Pull gently on the plunger to check for blood return",
+      "Check medication label and method of reconstitution as per manufacturer’s instructions",
+      "Put patient in a desirable position"
+    ],
+    "answer": "Fix syringe with the medication into the entry port of cannula",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Reposition patient appropriately in bed",
+      "Pull gently on the plunger to check for blood return",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Reconstitute as per manufacturers instruction where necessary/prescribers order"
+    ],
+    "answer": "Pull gently on the plunger to check for blood return",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Fix syringe with the medication into the entry port of cannula",
+      "Check medication label and method of reconstitution as per manufacturer’s instructions",
+      "Push medication slowly using the push-stop-push-stop technique till administration is completed",
+      "Perform hand hygiene"
+    ],
+    "answer": "Push medication slowly using the push-stop-push-stop technique till administration is completed",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Protect bed linen with a mackintosh and dressing towel",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Reconstitute as per manufacturers instruction where necessary/prescribers order",
+      "Observe patient throughout the administration for any reaction and swelling"
+    ],
+    "answer": "Observe patient throughout the administration for any reaction and swelling",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Continue observing patient five (5) to ten (10) minutes later after injecting medication",
+      "Observe patient throughout the administration for any reaction and swelling",
+      "Perform hand hygiene",
+      "Fix syringe with the medication into the entry port of cannula"
+    ],
+    "answer": "Continue observing patient five (5) to ten (10) minutes later after injecting medication",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Reposition patient appropriately in bed",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Protect bed linen with a mackintosh and dressing towel"
+    ],
+    "answer": "Reposition patient appropriately in bed",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Observe patient throughout the administration for any reaction and swelling",
+      "Perform hand hygiene",
+      "Encourage patient to report any adverse reaction",
+      "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage"
+    ],
+    "answer": "Encourage patient to report any adverse reaction",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Protect bed linen with a mackintosh and dressing towel",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Remove mackintosh and dressing towel",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Encourage patient to report any adverse reaction",
+      "Read the label on the ampoule/vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+      "Observe patient throughout the administration for any reaction and swelling"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Dispose off used items and decontaminate trolley",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Clean entry port of cannula with antimicrobial solution and cotton wool swab"
+    ],
+    "answer": "Dispose off used items and decontaminate trolley",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 27 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Remove mackintosh and dressing towel",
+      "Reconstitute as per manufacturers instruction where necessary/prescribers order",
+      "Perform hand hygiene",
+      "Protect bed linen with a mackintosh and dressing towel"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 27 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 28 of ADMINISTRATION OF INTRAVENOUS MEDICATION (AMPOULE/VIAL RECONSTITUTION)?",
+    "options": [
+      "Push medication slowly using the push-stop-push-stop technique till administration is completed",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Clean entry port of cannula with antimicrobial solution and cotton wool swab",
+      "Check on patient after thirty (30) minutes for therapeutic effect"
+    ],
+    "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
+    "explanation": "This checks recall of step 28 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-044",
     title: "ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure covers administration of a prescribed medication supplied in a vial through an appropriate IV line or infusion system. It emphasises correct preparation, compatibility, aseptic access, prescribed rate and monitoring for local and systemic complications.",
-    purpose: [
-      "Deliver a prescribed vial medication through the IV route",
-      "Provide a controlled therapeutic effect when IV administration is indicated",
-      "Maintain patient safety through line and reaction monitoring",
-    ],
+      "Parenteral route of medication administration entails the introduction of medications directly through the skin for gradual distribution into systemic circulation and body tissues. Routes: intravenous (vein), intramuscular (muscle), subcutaneous (under the skin), intradermal (dermis), intrathecal (spinal canal). These medications are delivered in the form of sterile ampoule, vial or volumes of fluid(s). During the procedure, the nurse is required to generally observe the patient and also observe strict aseptic technique to minimize the introduction of micro-organisms into the body.",
+    purpose: [],
     indications: [
       "A valid prescription for a medication supplied in a vial for IV administration",
       "The medication has been prepared or reconstituted according to authorised instructions",
       "The patient has suitable access and the prescribed method is within the nurse's competence",
     ],
     equipment: [
-      "Prescribed vial medication and medication treatment chart",
-      "Correct diluent, syringe and needle or approved transfer device",
-      "Compatible giving set, extension line, infusion pump or rate-control device",
-      "Antiseptic swabs, sterile dressing and prescribed flush",
-      "Gloves and PPE according to risk assessment",
-      "Sharps container, waste receptacle and hand hygiene supplies",
-    ],
+  "A trolley containing the following:",
+  "Top Shelf",
+  "A sterile field with two sterile gallipot with a lid",
+  "Bottom Shelf",
+  "Cannula (Different sizes)",
+  "Tourniquet",
+  "Medication (Infusion bag/bottle, ampoule or vial)",
+  "Syringe and needle",
+  "Sterile glove",
+  "Sterile cotton in a pack",
+  "Antimicrobial solution (Methylated spirit)",
+  "Sterile water",
+  "Receiver for used items",
+  "Sharps container",
+  "Adhesive strips/tape",
+  "Mackintosh and dressing towel",
+  "Timer",
+  "Drip stand",
+  "Giving set"
+],
     preparation: [
       "Check patient identifiers, prescription, vial label, concentration, diluent, compatibility, expiry, allergies and route.",
       "Inspect the vial and solution for seal damage, leaks, cloudiness, particles or unexpected colour.",
       "Explain the medication and monitoring plan, obtain cooperation and ensure the patient can call for assistance.",
     ],
     steps: [
-      "Perform hand hygiene, identify the patient and prepare the medication in a clean area using aseptic non-touch technique.",
-      "Reconstitute or dilute the vial only as directed, label the prepared medication if it is not administered immediately and verify the final dose.",
-      "Prime the compatible giving set or prepare the syringe, removing air without contaminating the sterile parts.",
-      "Check the IV cannula or line for patency and inspect the site for pain, redness, swelling, leakage or a loose dressing.",
-      "Disinfect the access port with the approved antiseptic and allow it to dry.",
-      "Connect the medication or giving set aseptically and set the prescribed rate using an appropriate device.",
-      "Remain alert to pain, resistance, swelling, rash, wheeze, fever, chills, hypotension or other adverse responses.",
-      "Stop or manage the medication according to emergency or IV complication protocol and call for help if a serious reaction occurs.",
-      "At completion, clamp, flush or disconnect only as prescribed, dispose of equipment safely and perform hand hygiene.",
-      "Reassess the patient and document medication details, time, rate, site, response and any reaction.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Check medication label and method of reconstitution as per manufacturer’s instructions",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+  "Perform hand hygiene",
+  "Prepare and sent trolley to the bed side",
+  "Ensure a cannula is in situ",
+  "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+  "Reconstitute as per manufacturers instruction/prescribers order",
+  "Ensure quality of the medication (check for cloudiness, sediments and particles)",
+  "Place infusion stand at the side of the bed",
+  "Hang vial on the drip stand",
+  "Draw the medication into a syringe",
+  "Protect bed with a mackintosh and dressing towel",
+  "Remove the cap from the other end of the giving set",
+  "Connect giving set, fill the chamber half way and expel air",
+  "Perform hand hygiene",
+  "Wear sterile gloves",
+  "Clean the entry port of cannula with antimicrobial solution (methylated spirit)",
+  "Connect giving set to the cannula via entry port",
+  "Regulate the flow rate as ordered with a timer",
+  "Reposition patient appropriately in bed",
+  "Observe patient for adverse reaction",
+  "Encourage patient to report any adverse reaction",
+  "Remove mackintosh and dressing towel",
+  "Record time of setting up medication, name of medication and amount on the intake and output chart and Treatment Chart (Manual or Electronic)",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate trolley",
+  "Perform hand hygiene",
+  "Check on patient after thirty (30) minutes for therapeutic effect",
+  "Remove giving set from cannula after administration of medication and cover the entry port cannula"
+],
     precautions: [
       "Do not administer medication from a vial with an uncertain label, expiry, appearance or storage history.",
       "Check compatibility before adding medication to an infusion and use a separate line when indicated.",
@@ -1465,49 +2947,406 @@ export const rgnBatch05: Procedure[] = [
       "Use an infusion pump when required for accurate delivery and monitor it according to policy.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=n7mVbMRTi_E",
-    quiz: rgn_044Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Connect giving set, fill the chamber half way and expel air",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Prepare and sent trolley to the bed side",
+      "Check medication label and method of reconstitution as per manufacturer’s instructions",
+      "Hang vial on the drip stand",
+      "Encourage patient to report any adverse reaction"
+    ],
+    "answer": "Check medication label and method of reconstitution as per manufacturer’s instructions",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Draw the medication into a syringe",
+      "Establish rapport (Refer to steps)",
+      "Connect giving set to the cannula via entry port"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Reconstitute as per manufacturers instruction/prescribers order",
+      "Regulate the flow rate as ordered with a timer",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse"
+    ],
+    "answer": "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Connect giving set, fill the chamber half way and expel air",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Prepare and sent trolley to the bed side",
+      "Hang vial on the drip stand",
+      "Encourage patient to report any adverse reaction"
+    ],
+    "answer": "Prepare and sent trolley to the bed side",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Draw the medication into a syringe",
+      "Ensure a cannula is in situ",
+      "Connect giving set to the cannula via entry port"
+    ],
+    "answer": "Ensure a cannula is in situ",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Reconstitute as per manufacturers instruction/prescribers order",
+      "Regulate the flow rate as ordered with a timer",
+      "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage"
+    ],
+    "answer": "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Reconstitute as per manufacturers instruction/prescribers order",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Connect giving set, fill the chamber half way and expel air",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Reconstitute as per manufacturers instruction/prescribers order",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Ensure quality of the medication (check for cloudiness, sediments and particles)",
+      "Hang vial on the drip stand",
+      "Encourage patient to report any adverse reaction"
+    ],
+    "answer": "Ensure quality of the medication (check for cloudiness, sediments and particles)",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Draw the medication into a syringe",
+      "Place infusion stand at the side of the bed",
+      "Connect giving set to the cannula via entry port"
+    ],
+    "answer": "Place infusion stand at the side of the bed",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+      "Regulate the flow rate as ordered with a timer",
+      "Hang vial on the drip stand"
+    ],
+    "answer": "Hang vial on the drip stand",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Draw the medication into a syringe",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Connect giving set, fill the chamber half way and expel air",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Draw the medication into a syringe",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Protect bed with a mackintosh and dressing towel",
+      "Place infusion stand at the side of the bed",
+      "Encourage patient to report any adverse reaction"
+    ],
+    "answer": "Protect bed with a mackintosh and dressing towel",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Hang vial on the drip stand",
+      "Remove the cap from the other end of the giving set",
+      "Connect giving set to the cannula via entry port"
+    ],
+    "answer": "Remove the cap from the other end of the giving set",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+      "Regulate the flow rate as ordered with a timer",
+      "Connect giving set, fill the chamber half way and expel air"
+    ],
+    "answer": "Connect giving set, fill the chamber half way and expel air",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Connect giving set, fill the chamber half way and expel air",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Wear sterile gloves",
+      "Place infusion stand at the side of the bed",
+      "Encourage patient to report any adverse reaction"
+    ],
+    "answer": "Wear sterile gloves",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Hang vial on the drip stand",
+      "Clean the entry port of cannula with antimicrobial solution (methylated spirit)",
+      "Connect giving set to the cannula via entry port"
+    ],
+    "answer": "Clean the entry port of cannula with antimicrobial solution (methylated spirit)",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+      "Regulate the flow rate as ordered with a timer",
+      "Connect giving set to the cannula via entry port"
+    ],
+    "answer": "Connect giving set to the cannula via entry port",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Regulate the flow rate as ordered with a timer",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Remove the cap from the other end of the giving set",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Regulate the flow rate as ordered with a timer",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Reposition patient appropriately in bed",
+      "Place infusion stand at the side of the bed",
+      "Encourage patient to report any adverse reaction"
+    ],
+    "answer": "Reposition patient appropriately in bed",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Hang vial on the drip stand",
+      "Observe patient for adverse reaction",
+      "Clean the entry port of cannula with antimicrobial solution (methylated spirit)"
+    ],
+    "answer": "Observe patient for adverse reaction",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+      "Connect giving set to the cannula via entry port",
+      "Encourage patient to report any adverse reaction"
+    ],
+    "answer": "Encourage patient to report any adverse reaction",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Remove mackintosh and dressing towel",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Remove the cap from the other end of the giving set",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Remove mackintosh and dressing towel",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Record time of setting up medication, name of medication and amount on the intake and output chart and Treatment Chart (Manual or Electronic)",
+      "Place infusion stand at the side of the bed",
+      "Observe patient for adverse reaction"
+    ],
+    "answer": "Record time of setting up medication, name of medication and amount on the intake and output chart and Treatment Chart (Manual or Electronic)",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 27 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Hang vial on the drip stand",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Clean the entry port of cannula with antimicrobial solution (methylated spirit)"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 27 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 28 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Record time of setting up medication, name of medication and amount on the intake and output chart and Treatment Chart (Manual or Electronic)",
+      "Read the label on the vial and compare with patient’s treatment chart (manual or electronic) for the dosage",
+      "Connect giving set to the cannula via entry port",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Dispose off used items and decontaminate trolley",
+    "explanation": "This checks recall of step 28 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 29 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Explain procedure to patient and ensure patient’s right to know/consent and to refuse",
+      "Connect giving set, fill the chamber half way and expel air",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 29 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 30 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Perform hand hygiene",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Place infusion stand at the side of the bed",
+      "Observe patient for adverse reaction"
+    ],
+    "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
+    "explanation": "This checks recall of step 30 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 31 of ADMINISTRATION OF INTRAVENOUS MEDICATION (VIAL)?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Hang vial on the drip stand",
+      "Remove giving set from cannula after administration of medication and cover the entry port cannula",
+      "Clean the entry port of cannula with antimicrobial solution (methylated spirit)"
+    ],
+    "answer": "Remove giving set from cannula after administration of medication and cover the entry port cannula",
+    "explanation": "This checks recall of step 31 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-045",
     title: "ADMINISTRATION OF INTRAMUSCULAR MEDICATION",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure describes administration of a prescribed medication into suitable muscle tissue. Safe practice requires medication verification, site and patient assessment, privacy, aseptic technique, correct equipment and needle selection, observation and documentation.",
-    purpose: [
-      "Deliver a prescribed medication into muscle for systemic or local absorption",
-      "Achieve a therapeutic, prophylactic or diagnostic effect when the intramuscular route is indicated",
-      "Minimise pain, injury, infection and medication error",
-    ],
+      "This is the administration of chemical substances that alter the physiological function of the patient/client with the potential of improving his/her health status. As part of the care process the nurse is expected to administer all medications prescribed for the patient/client during hospitalization. The nurse has the responsibility of familiarizing him/herself with the approved institutional protocols and safety measures on medications. The basic seven (7) rights: right patient, right medication, right dosage, right route, right time, right of patient to refuse the medication, right to documentation.",
+    purpose: [],
     indications: [
       "A valid prescription specifies the intramuscular route",
       "Medication volume and formulation are suitable for intramuscular tissue",
       "The patient has an appropriate muscle site after assessment",
     ],
     equipment: [
-      "Prescribed medication, treatment chart and original labelled container",
-      "Appropriate sterile syringe and needle selected for the patient and medication",
-      "Antiseptic swabs, sterile gauze and adhesive strip if needed",
-      "Gloves and PPE according to risk assessment",
-      "Receiver and approved sharps container",
-      "Hand hygiene supplies and protective bed covering when required",
-    ],
+  "A tray containing the following:",
+  "Medication",
+  "Two or three syringes",
+  "Needles",
+  "Cotton wool swabs in gallipot",
+  "Antimicrobial solution",
+  "Treatment chat",
+  "File where necessary",
+  "Sharps container"
+],
     preparation: [
       "Check patient, medication, dose, route, time, indication, allergies, expiry and prescription.",
       "Assess age, muscle mass, skin condition, bleeding risk, anticoagulant use, mobility and previous injection sites.",
       "Explain the procedure, obtain cooperation and consent, provide privacy and position the patient safely.",
     ],
     steps: [
-      "Perform hand hygiene and identify the patient using approved identifiers.",
-      "Prepare the medication using aseptic technique, inspect it and remove air from the syringe without contaminating the needle.",
-      "Select a safe muscle and site according to medication, patient assessment and facility policy; avoid bruised, inflamed or injured tissue.",
-      "Position the patient to relax the muscle and expose only the required area while maintaining dignity.",
-      "Clean the skin with approved antiseptic and allow it to dry; do not touch the prepared site.",
-      "Insert the needle smoothly at 90 degrees using the selected technique and administer at the prescribed rate.",
-      "Follow local policy regarding aspiration; if blood appears when aspiration is required, stop and manage the equipment safely.",
-      "Withdraw the needle smoothly, apply gentle pressure with gauze if needed and activate the safety device.",
-      "Discard the needle and syringe immediately into the sharps container without recapping.",
-      "Reposition the patient, observe for pain, bleeding, allergy or other reaction, perform hand hygiene and document the care.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure and reassure patient",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Prepare and sent tray to the bed side",
+  "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+  "Assemble syringe and needle using sterile technique",
+  "File/break ampoule or remove metal cap of vial with a clean swab",
+  "Draw medication with a syringe and discard the needle into the sharp container",
+  "Replace needle with a new one and expel air",
+  "Assist patient into a required position and exposes site for injection",
+  "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
+  "Insert the needle quickly and firmly deep into the muscle at right angle",
+  "Withdraw plunger a little to ensure needle is not in the blood vessel (if blood appears withdraws needle)",
+  "Push to release medication into the tissue",
+  "Withdraw the syringe and needle quickly and with a swab gently applies pressure to the site of injection",
+  "Discard syringe and needle into a sharps container",
+  "Put patient into a desirable position",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate tray",
+  "Perform hand hygiene",
+  "Check on patient after thirty (30) minutes for therapeutic effect"
+],
     precautions: [
       "Do not inject into an infected, bruised, scarred, oedematous or damaged site.",
       "Use additional assessment and advice for patients with bleeding disorders, anticoagulants, low muscle mass or altered sensation.",
@@ -1537,49 +3376,319 @@ export const rgnBatch05: Procedure[] = [
       "Use a qualified interpreter or communication aid when needed for consent and safety instructions.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=jmIwY6zwdMo",
-    quiz: rgn_045Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Push to release medication into the tissue",
+      "Prepare and sent tray to the bed side"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
+      "Establish rapport (Refer to steps)",
+      "Assist patient into a required position and exposes site for injection",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "File/break ampoule or remove metal cap of vial with a clean swab",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Explain procedure and reassure patient",
+      "Put patient into a desirable position"
+    ],
+    "answer": "Explain procedure and reassure patient",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Push to release medication into the tissue",
+      "Prepare and sent tray to the bed side",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Assist patient into a required position and exposes site for injection",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Prepare and sent tray to the bed side",
+      "Put patient into a desirable position",
+      "File/break ampoule or remove metal cap of vial with a clean swab"
+    ],
+    "answer": "Prepare and sent tray to the bed side",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Push to release medication into the tissue",
+      "Perform hand hygiene",
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Assist patient into a required position and exposes site for injection",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
+      "Assemble syringe and needle using sterile technique"
+    ],
+    "answer": "Assemble syringe and needle using sterile technique",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "File/break ampoule or remove metal cap of vial with a clean swab",
+      "Put patient into a desirable position",
+      "Assemble syringe and needle using sterile technique",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "File/break ampoule or remove metal cap of vial with a clean swab",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Draw medication with a syringe and discard the needle into the sharp container",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Push to release medication into the tissue"
+    ],
+    "answer": "Draw medication with a syringe and discard the needle into the sharp container",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
+      "Replace needle with a new one and expel air",
+      "Assist patient into a required position and exposes site for injection"
+    ],
+    "answer": "Replace needle with a new one and expel air",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Put patient into a desirable position",
+      "Assemble syringe and needle using sterile technique",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Assist patient into a required position and exposes site for injection"
+    ],
+    "answer": "Assist patient into a required position and exposes site for injection",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Push to release medication into the tissue",
+      "Perform hand hygiene"
+    ],
+    "answer": "Clean injection site with cotton swab dipped in antimicrobial solution (i.e. upper outer quadrant for buttocks and outer aspect for thigh)",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Assist patient into a required position and exposes site for injection",
+      "Insert the needle quickly and firmly deep into the muscle at right angle",
+      "Replace needle with a new one and expel air",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Insert the needle quickly and firmly deep into the muscle at right angle",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Assemble syringe and needle using sterile technique",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Withdraw plunger a little to ensure needle is not in the blood vessel (if blood appears withdraws needle)",
+      "Put patient into a desirable position"
+    ],
+    "answer": "Withdraw plunger a little to ensure needle is not in the blood vessel (if blood appears withdraws needle)",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Withdraw plunger a little to ensure needle is not in the blood vessel (if blood appears withdraws needle)",
+      "Perform hand hygiene",
+      "Push to release medication into the tissue"
+    ],
+    "answer": "Push to release medication into the tissue",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Withdraw the syringe and needle quickly and with a swab gently applies pressure to the site of injection",
+      "Replace needle with a new one and expel air",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Assist patient into a required position and exposes site for injection"
+    ],
+    "answer": "Withdraw the syringe and needle quickly and with a swab gently applies pressure to the site of injection",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Discard syringe and needle into a sharps container",
+      "Put patient into a desirable position",
+      "Assemble syringe and needle using sterile technique"
+    ],
+    "answer": "Discard syringe and needle into a sharps container",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Withdraw plunger a little to ensure needle is not in the blood vessel (if blood appears withdraws needle)",
+      "Perform hand hygiene",
+      "Put patient into a desirable position",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Put patient into a desirable position",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Replace needle with a new one and expel air",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Assist patient into a required position and exposes site for injection",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Discard syringe and needle into a sharps container",
+      "Assemble syringe and needle using sterile technique",
+      "Put patient into a desirable position"
+    ],
+    "answer": "Dispose off used items and decontaminate tray",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Prepare and sent tray to the bed side",
+      "Perform hand hygiene",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Push to release medication into the tissue"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRAMUSCULAR MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Assist patient into a required position and exposes site for injection",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Replace needle with a new one and expel air"
+    ],
+    "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-046",
     title: "ADMINISTRATION OF SUBCUTANEOUS MEDICATION",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure describes administration of a prescribed small-volume medication into subcutaneous tissue. The nurse selects an appropriate site and angle, maintains asepsis, observes the patient and documents the dose and site for safe follow-up.",
-    purpose: [
-      "Administer a prescribed medication into subcutaneous tissue",
-      "Provide slower absorption when the medication and prescription indicate this route",
-      "Reduce discomfort and local complications through correct site and technique",
-    ],
+      "This is the introduction of the low doses of medication into the highly vascular layer beneath the epidermis.",
+    purpose: [],
     indications: [
       "A valid prescription specifies the subcutaneous route",
       "The medication and volume are suitable for subcutaneous administration",
       "The patient has an appropriate area of healthy subcutaneous tissue",
     ],
     equipment: [
-      "Prescribed medication and treatment chart",
-      "Sterile single-use syringe and appropriate needle or authorised prefilled syringe",
-      "Antiseptic swabs, sterile gauze and adhesive strip if needed",
-      "Gloves and PPE according to risk assessment",
-      "Receiver and approved sharps container",
-      "Hand hygiene supplies and protective bed covering when required",
-    ],
+  "A tray with the following:",
+  "Sterile 1-2mls syringe and needles",
+  "Prefilled syringe with medication (if available)",
+  "Ampoule containing the medication",
+  "Gallipot with sterile cotton wool swabs",
+  "Gallipot with antimicrobial solution",
+  "Receiver for used swabs",
+  "File if necessary"
+],
     preparation: [
       "Verify patient, medication, dose, route, time, allergies, expiry, indication and prescription.",
       "Assess the patient's tissue depth, skin condition, bleeding risk, previous injection sites and ability to cooperate.",
       "Explain the procedure, obtain consent and provide privacy before positioning the patient.",
     ],
     steps: [
-      "Perform hand hygiene and identify the patient using approved identifiers.",
-      "Prepare the medication aseptically and remove air according to the product instructions without contaminating the needle.",
-      "Select and inspect a healthy site with sufficient subcutaneous tissue; rotate sites when repeated doses are prescribed.",
-      "Position the patient comfortably, expose only the site and clean it with approved antiseptic, allowing it to dry.",
-      "Lift or spread the skin fold as indicated by tissue depth and insert the needle at the prescribed angle, commonly 45 or 90 degrees.",
-      "Administer the medication steadily according to product and facility guidance; do not massage unless specifically directed.",
-      "Follow local policy regarding aspiration and stop safely if blood, unexpected pain or resistance occurs.",
-      "Withdraw the needle, apply gentle pressure if needed and dispose of the sharp immediately without recapping.",
-      "Reposition the patient, inspect the site and observe for bleeding, swelling, pain, allergy or other response.",
-      "Perform hand hygiene and document medication, dose, route, time, exact site, response and any abnormality.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure and reassure patient",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Choose the correct needle size",
+  "Prepare and sent tray to the bed side",
+  "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+  "Assemble syringe and needle using sterile technique",
+  "File/break ampoule with a clean swab",
+  "Draw medication with a syringe and discard the needle into the sharps container",
+  "If it is a prefilled syringe with medication remove the cover of the syringe",
+  "Expose the chosen site",
+  "Clean the chosen site with a swab dipped in antimicrobial solution",
+  "Grasp/spread the skin firmly",
+  "Insert the needle into the skin at an angle of 45° and release the grasped skin",
+  "Avoid step 18 if it is a prefilled medicated syringe",
+  "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
+  "Withdraw the needle rapidly, apply pressure to any bleeding point",
+  "Discard syringe and needle into a sharps container",
+  "Put patient into a desirable position",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate tray",
+  "Perform hand hygiene",
+  "Check on patient after thirty (30) minutes for therapeutic effect"
+],
     precautions: [
       "Avoid bruised, scarred, inflamed, infected, oedematous or previously overused sites.",
       "Do not massage medications for which massage can alter absorption or cause tissue injury.",
@@ -1609,49 +3718,344 @@ export const rgnBatch05: Procedure[] = [
       "Use the facility's approved needle, angle, site and sharps-disposal standards.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=H0EtSorwGnU",
-    quiz: rgn_046Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Insert the needle into the skin at an angle of 45° and release the grasped skin",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Draw medication with a syringe and discard the needle into the sharps container",
+      "Establish rapport (Refer to steps)",
+      "If it is a prefilled syringe with medication remove the cover of the syringe",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Prepare and sent tray to the bed side",
+      "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
+      "Explain procedure and reassure patient",
+      "Withdraw the needle rapidly, apply pressure to any bleeding point"
+    ],
+    "answer": "Explain procedure and reassure patient",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Clean the chosen site with a swab dipped in antimicrobial solution",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "File/break ampoule with a clean swab",
+      "Put patient into a desirable position",
+      "Assemble syringe and needle using sterile technique"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Insert the needle into the skin at an angle of 45° and release the grasped skin",
+      "Choose the correct needle size",
+      "Avoid step 18 if it is a prefilled medicated syringe",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Choose the correct needle size",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "If it is a prefilled syringe with medication remove the cover of the syringe",
+      "Dispose off used items and decontaminate tray",
+      "Prepare and sent tray to the bed side",
+      "Check on patient after thirty (30) minutes for therapeutic effect"
+    ],
+    "answer": "Prepare and sent tray to the bed side",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Prepare and sent tray to the bed side",
+      "Withdraw the needle rapidly, apply pressure to any bleeding point",
+      "Choose the correct needle size",
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)"
+    ],
+    "answer": "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Assemble syringe and needle using sterile technique",
+      "Grasp/spread the skin firmly",
+      "Establish rapport (Refer to steps)",
+      "Clean the chosen site with a swab dipped in antimicrobial solution"
+    ],
+    "answer": "Assemble syringe and needle using sterile technique",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Put patient into a desirable position",
+      "File/break ampoule with a clean swab",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Assemble syringe and needle using sterile technique"
+    ],
+    "answer": "File/break ampoule with a clean swab",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Avoid step 18 if it is a prefilled medicated syringe",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Draw medication with a syringe and discard the needle into the sharps container",
+      "Perform hand hygiene"
+    ],
+    "answer": "Draw medication with a syringe and discard the needle into the sharps container",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Expose the chosen site",
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Draw medication with a syringe and discard the needle into the sharps container",
+      "If it is a prefilled syringe with medication remove the cover of the syringe"
+    ],
+    "answer": "If it is a prefilled syringe with medication remove the cover of the syringe",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Expose the chosen site",
+      "Discard syringe and needle into a sharps container",
+      "Prepare and sent tray to the bed side",
+      "Withdraw the needle rapidly, apply pressure to any bleeding point"
+    ],
+    "answer": "Expose the chosen site",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Clean the chosen site with a swab dipped in antimicrobial solution",
+      "Explain procedure and reassure patient",
+      "Grasp/spread the skin firmly"
+    ],
+    "answer": "Clean the chosen site with a swab dipped in antimicrobial solution",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Assemble syringe and needle using sterile technique",
+      "Grasp/spread the skin firmly",
+      "File/break ampoule with a clean swab"
+    ],
+    "answer": "Grasp/spread the skin firmly",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
+      "Perform hand hygiene",
+      "Avoid step 18 if it is a prefilled medicated syringe",
+      "Insert the needle into the skin at an angle of 45° and release the grasped skin"
+    ],
+    "answer": "Insert the needle into the skin at an angle of 45° and release the grasped skin",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Avoid step 18 if it is a prefilled medicated syringe",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "If it is a prefilled syringe with medication remove the cover of the syringe",
+      "Check on patient after thirty (30) minutes for therapeutic effect"
+    ],
+    "answer": "Avoid step 18 if it is a prefilled medicated syringe",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Prepare and sent tray to the bed side",
+      "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+      "Discard syringe and needle into a sharps container"
+    ],
+    "answer": "Pull back the plunger, if no blood is aspirated depress the plunger and inject the medication slowly. (If blood appears withdraw the needle, replace it and begin again. Explain to the patient what has occurred)",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Explain procedure and reassure patient",
+      "Clean the chosen site with a swab dipped in antimicrobial solution",
+      "Withdraw the needle rapidly, apply pressure to any bleeding point",
+      "Grasp/spread the skin firmly"
+    ],
+    "answer": "Withdraw the needle rapidly, apply pressure to any bleeding point",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "File/break ampoule with a clean swab",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Discard syringe and needle into a sharps container"
+    ],
+    "answer": "Discard syringe and needle into a sharps container",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Put patient into a desirable position",
+      "Choose the correct needle size",
+      "Avoid step 18 if it is a prefilled medicated syringe",
+      "Perform hand hygiene"
+    ],
+    "answer": "Put patient into a desirable position",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "If it is a prefilled syringe with medication remove the cover of the syringe",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Expose the chosen site",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+      "Withdraw the needle rapidly, apply pressure to any bleeding point",
+      "Dispose off used items and decontaminate tray",
+      "Discard syringe and needle into a sharps container"
+    ],
+    "answer": "Dispose off used items and decontaminate tray",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Insert the needle into the skin at an angle of 45° and release the grasped skin",
+      "Explain procedure and reassure patient",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of ADMINISTRATION OF SUBCUTANEOUS MEDICATION?",
+    "options": [
+      "Check on patient after thirty (30) minutes for therapeutic effect",
+      "Draw medication with a syringe and discard the needle into the sharps container",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "File/break ampoule with a clean swab"
+    ],
+    "answer": "Check on patient after thirty (30) minutes for therapeutic effect",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-047",
     title: "ADMINISTRATION OF INTRADERMAL MEDICATION",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure describes placement of a small prescribed volume into the dermal layer for a local medication effect or diagnostic test. Accurate shallow insertion, bleb observation, site marking, follow-up assessment and clear documentation are essential.",
-    purpose: [
-      "Administer a small prescribed dose into the dermis",
-      "Perform a diagnostic or sensitivity test according to an approved protocol",
-      "Provide a local response that can be assessed at the specified time",
-    ],
+      "It is the administration of medication into the dermal layer of the skin which is directly underneath the epidermis.",
+    purpose: [],
     indications: [
       "An authorised prescription or protocol specifies the intradermal route",
       "A small volume is required for a diagnostic, sensitivity or local medication procedure",
       "The selected skin is intact, healthy and suitable for follow-up observation",
     ],
     equipment: [
-      "Prescribed medication or test preparation and treatment or test form",
-      "Sterile 1 mL syringe and appropriate fine needle or authorised prefilled device",
-      "Antiseptic swabs and dry sterile swab",
-      "Skin marker and ruler when required by the protocol",
-      "Gloves and PPE according to risk assessment",
-      "Sharps container, receiver and hand hygiene supplies",
-    ],
+  "A tray containing the following:",
+  "Medication",
+  "Prefilled medication syringe (if available)",
+  "Two or three syringes (1ml)",
+  "Needles (26-28 gauge)",
+  "Cotton wool swabs in gallipot",
+  "Antimicrobial solution",
+  "Treatment chat",
+  "Sharps container"
+],
     preparation: [
       "Verify patient, medication or test, dose, route, expiry, allergies, indication and review time.",
       "Assess the skin and avoid bruised, scarred, inflamed, infected, hairy or previously tested sites when the protocol requires another site.",
       "Explain that a small bleb may form, obtain consent and tell the patient not to rub the area.",
     ],
     steps: [
-      "Perform hand hygiene and identify the patient using approved identifiers.",
-      "Prepare the medication or test aseptically, ensure the correct small volume and remove air without contaminating the needle.",
-      "Position and support the patient, expose the selected site and maintain privacy.",
-      "Clean the site with approved antiseptic and allow it to dry completely.",
-      "Pull the skin gently and insert the bevel just under the skin at the shallow angle specified by the protocol, commonly 5 to 15 degrees.",
-      "Inject slowly until the small prescribed bleb or wheal forms; do not massage or apply pressure.",
-      "Withdraw the needle, dab any small blood spot gently with dry sterile gauze and discard the sharp immediately.",
-      "Mark or measure the site when required, record the time and give the patient clear instructions for protection and review.",
-      "Observe for immediate reaction, perform hand hygiene and reassess the site at the protocol-specified time.",
-      "Document the medication or test, dose, site, time, appearance, review result, patient response and action taken.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure and reassure patient",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Choose the correct needle size",
+  "Prepare and sent tray to the bed side",
+  "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+  "Assemble syringe and needle using sterile technique",
+  "Draw medication with a syringe and avoid creating air bubbles",
+  "If it is a prefilled syringe with medication remove the cover of the syringe",
+  "Expose the chosen site",
+  "Clean the chosen site with a swab dipped in antimicrobial solution",
+  "Pull the skin towards your hand",
+  "Insert the needle just below the skin at an angle of 10-15°",
+  "Inject medication slowly and steadily while observing for bleb formation",
+  "Remove the needle and discard into a sharps container",
+  "If blood is present dab the area with a dry swab (avoid rubbing the area)",
+  "Draw a circle with marker around the bleb",
+  "Observe the area for localize inflammations",
+  "Reposition patient",
+  "Instruct patient not to rub or apply any pressure to the area",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate tray",
+  "Perform hand hygiene",
+  "Check on patient after five (5) and fifteen (15) minutes for reactions",
+  "Report to appropriate officer"
+],
     precautions: [
       "Do not rub, massage, cover tightly or apply medication to the test site unless the protocol directs it.",
       "Do not use an unlabelled or expired preparation or a site that may make the result unreliable.",
@@ -1681,6 +4085,304 @@ export const rgnBatch05: Procedure[] = [
       "Use an interpreter or communication aid to ensure the patient understands site care and follow-up.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=DECJaBf2PtE",
-    quiz: rgn_047Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Inject medication slowly and steadily while observing for bleb formation",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Assemble syringe and needle using sterile technique",
+      "Establish rapport (Refer to steps)",
+      "Expose the chosen site",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Inject medication slowly and steadily while observing for bleb formation",
+      "Explain procedure and reassure patient",
+      "Draw a circle with marker around the bleb"
+    ],
+    "answer": "Explain procedure and reassure patient",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Report to appropriate officer",
+      "Expose the chosen site",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+      "Draw a circle with marker around the bleb",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Expose the chosen site",
+      "Choose the correct needle size",
+      "Insert the needle just below the skin at an angle of 10-15°",
+      "Report to appropriate officer"
+    ],
+    "answer": "Choose the correct needle size",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+      "Draw a circle with marker around the bleb",
+      "Prepare and sent tray to the bed side",
+      "Instruct patient not to rub or apply any pressure to the area"
+    ],
+    "answer": "Prepare and sent tray to the bed side",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Explain procedure and reassure patient",
+      "Insert the needle just below the skin at an angle of 10-15°",
+      "Report to appropriate officer",
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)"
+    ],
+    "answer": "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Assemble syringe and needle using sterile technique",
+      "If it is a prefilled syringe with medication remove the cover of the syringe",
+      "Instruct patient not to rub or apply any pressure to the area",
+      "Prepare and sent tray to the bed side"
+    ],
+    "answer": "Assemble syringe and needle using sterile technique",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Insert the needle just below the skin at an angle of 10-15°",
+      "Draw medication with a syringe and avoid creating air bubbles",
+      "If blood is present dab the area with a dry swab (avoid rubbing the area)",
+      "Explain procedure and reassure patient"
+    ],
+    "answer": "Draw medication with a syringe and avoid creating air bubbles",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Draw medication with a syringe and avoid creating air bubbles",
+      "Instruct patient not to rub or apply any pressure to the area",
+      "If it is a prefilled syringe with medication remove the cover of the syringe",
+      "Check on patient after five (5) and fifteen (15) minutes for reactions"
+    ],
+    "answer": "If it is a prefilled syringe with medication remove the cover of the syringe",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Choose the correct needle size",
+      "If blood is present dab the area with a dry swab (avoid rubbing the area)",
+      "Explain procedure and reassure patient",
+      "Expose the chosen site"
+    ],
+    "answer": "Expose the chosen site",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Clean the chosen site with a swab dipped in antimicrobial solution",
+      "Pull the skin towards your hand",
+      "Check on patient after five (5) and fifteen (15) minutes for reactions",
+      "Draw medication with a syringe and avoid creating air bubbles"
+    ],
+    "answer": "Clean the chosen site with a swab dipped in antimicrobial solution",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "If blood is present dab the area with a dry swab (avoid rubbing the area)",
+      "Pull the skin towards your hand",
+      "Reposition patient",
+      "Choose the correct needle size"
+    ],
+    "answer": "Pull the skin towards your hand",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Clean the chosen site with a swab dipped in antimicrobial solution",
+      "Check on patient after five (5) and fifteen (15) minutes for reactions",
+      "Insert the needle just below the skin at an angle of 10-15°",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Insert the needle just below the skin at an angle of 10-15°",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Assemble syringe and needle using sterile technique",
+      "Reposition patient",
+      "Choose the correct needle size",
+      "Inject medication slowly and steadily while observing for bleb formation"
+    ],
+    "answer": "Inject medication slowly and steadily while observing for bleb formation",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Remove the needle and discard into a sharps container",
+      "Inject medication slowly and steadily while observing for bleb formation",
+      "Establish rapport (Refer to steps)",
+      "Clean the chosen site with a swab dipped in antimicrobial solution"
+    ],
+    "answer": "Remove the needle and discard into a sharps container",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Reposition patient",
+      "If blood is present dab the area with a dry swab (avoid rubbing the area)",
+      "Dispose off used items and decontaminate tray",
+      "Assemble syringe and needle using sterile technique"
+    ],
+    "answer": "If blood is present dab the area with a dry swab (avoid rubbing the area)",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Inject medication slowly and steadily while observing for bleb formation",
+      "Establish rapport (Refer to steps)",
+      "Draw a circle with marker around the bleb",
+      "Perform hand hygiene"
+    ],
+    "answer": "Draw a circle with marker around the bleb",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Expose the chosen site",
+      "Dispose off used items and decontaminate tray",
+      "Assemble syringe and needle using sterile technique",
+      "Observe the area for localize inflammations"
+    ],
+    "answer": "Observe the area for localize inflammations",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Reposition patient",
+      "Draw a circle with marker around the bleb",
+      "Perform hand hygiene",
+      "Inject medication slowly and steadily while observing for bleb formation"
+    ],
+    "answer": "Reposition patient",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Instruct patient not to rub or apply any pressure to the area",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Expose the chosen site"
+    ],
+    "answer": "Instruct patient not to rub or apply any pressure to the area",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Draw a circle with marker around the bleb",
+      "Perform hand hygiene",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Insert the needle just below the skin at an angle of 10-15°",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Expose the chosen site",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Dispose off used items and decontaminate tray",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Assemble syringe and needle using sterile technique",
+      "Observe the area for localize inflammations"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Check on patient after five (5) and fifteen (15) minutes for reactions",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Insert the needle just below the skin at an angle of 10-15°"
+    ],
+    "answer": "Check on patient after five (5) and fifteen (15) minutes for reactions",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 27 of ADMINISTRATION OF INTRADERMAL MEDICATION?",
+    "options": [
+      "Instruct patient not to rub or apply any pressure to the area",
+      "Check patient details and medication dosage against the treatment chart (manual or electronic)",
+      "Report to appropriate officer",
+      "If it is a prefilled syringe with medication remove the cover of the syringe"
+    ],
+    "answer": "Report to appropriate officer",
+    "explanation": "This checks recall of step 27 in the procedure sequence."
+  }
+],
   },
 ];
