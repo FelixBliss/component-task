@@ -1092,7 +1092,7 @@ export const rgnBatch04: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=Lh0vnRTA6OI",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "The nurse is carrying out education on condition and its management. Which action best matches this part of the procedure?",
     "options": [
       "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
       "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
@@ -1100,10 +1100,10 @@ export const rgnBatch04: Procedure[] = [
       "Identify the suitable language for the patient"
     ],
     "answer": "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "To complete education on condition and its management safely, which action should the nurse take at this point?",
     "options": [
       "Ensure patient and significant other understands the teaching and clarify where need be",
       "Establish rapport with the patient (Refer to steps)",
@@ -1111,10 +1111,10 @@ export const rgnBatch04: Procedure[] = [
       "Involve relatives or significant other if any"
     ],
     "answer": "Establish rapport with the patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Before carrying out education on condition and its management, what should the nurse do to support informed cooperation?",
     "options": [
       "Find patient’s level or awareness on possible management options",
       "Establish rapport with the patient (Refer to steps)",
@@ -1122,10 +1122,10 @@ export const rgnBatch04: Procedure[] = [
       "Thank patient and relatives for the cooperation"
     ],
     "answer": "Explain the need for education to patient",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Which nursing action is required at this stage of education on condition and its management?",
     "options": [
       "Sit comfortably by the patient",
       "Provide patient with clear simple pamphlets or other sources of readable information",
@@ -1133,10 +1133,10 @@ export const rgnBatch04: Procedure[] = [
       "Involve relatives or significant other if any"
     ],
     "answer": "Involve relatives or significant other if any",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "A patient is about to undergo education on condition and its management. Which action protects their dignity during preparation?",
     "options": [
       "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
       "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
@@ -1144,10 +1144,10 @@ export const rgnBatch04: Procedure[] = [
       "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt"
     ],
     "answer": "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 6 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "When positioning the patient for education on condition and its management, what should guide the nurse's choice of position?",
     "options": [
       "Involve relatives or significant other if any",
       "Assist patient into a desirable position",
@@ -1155,10 +1155,10 @@ export const rgnBatch04: Procedure[] = [
       "Explain the possible outcome of condition and prognoses"
     ],
     "answer": "Assist patient into a desirable position",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 7 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Which step should be performed now during education on condition and its management?",
     "options": [
       "Document procedure and report to appropriate officer",
       "Explain to patient the rationale for the various investigations and treatment adopted",
@@ -1166,10 +1166,10 @@ export const rgnBatch04: Procedure[] = [
       "Find patient’s level or awareness of condition"
     ],
     "answer": "Sit comfortably by the patient",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Which nursing action is required at this stage of education on condition and its management?",
     "options": [
       "Allow patient and significant other to ask questions for clarity",
       "Sit comfortably by the patient",
@@ -1177,10 +1177,10 @@ export const rgnBatch04: Procedure[] = [
       "Identify the suitable language for the patient"
     ],
     "answer": "Identify the suitable language for the patient",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "The nurse is carrying out education on condition and its management. Which action best matches this part of the procedure?",
     "options": [
       "Find patient’s level or awareness of condition",
       "Explain the need for education to patient",
@@ -1188,10 +1188,10 @@ export const rgnBatch04: Procedure[] = [
       "Assist patient into a desirable position"
     ],
     "answer": "Find patient’s level or awareness of condition",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "To complete education on condition and its management safely, which action should the nurse take at this point?",
     "options": [
       "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
       "Build on what the patient knows about the condition with scientific data of condition",
@@ -1199,10 +1199,10 @@ export const rgnBatch04: Procedure[] = [
       "Establish rapport with the patient (Refer to steps)"
     ],
     "answer": "Build on what the patient knows about the condition with scientific data of condition",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Which step should be performed now during education on condition and its management?",
     "options": [
       "Find patient’s level or awareness of condition",
       "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
@@ -1210,10 +1210,10 @@ export const rgnBatch04: Procedure[] = [
       "Provide patient with clear simple pamphlets or other sources of readable information"
     ],
     "answer": "Find patient’s level or awareness on possible management options",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Before carrying out education on condition and its management, what should the nurse do to support informed cooperation?",
     "options": [
       "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
       "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
@@ -1221,10 +1221,10 @@ export const rgnBatch04: Procedure[] = [
       "Explain to patient the rationale for the various investigations and treatment adopted"
     ],
     "answer": "Explain to patient the rationale for the various investigations and treatment adopted",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 13 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Before carrying out education on condition and its management, what should the nurse do to support informed cooperation?",
     "options": [
       "Explain the possible outcome of condition and prognoses",
       "Explain to patient the rationale for the various investigations and treatment adopted",
@@ -1232,10 +1232,10 @@ export const rgnBatch04: Procedure[] = [
       "Allow patient and significant other to ask questions for clarity"
     ],
     "answer": "Explain the possible outcome of condition and prognoses",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 14 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Before carrying out education on condition and its management, what should the nurse do to support informed cooperation?",
     "options": [
       "Explain the need for education to patient",
       "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
@@ -1243,10 +1243,10 @@ export const rgnBatch04: Procedure[] = [
       "Find patient’s level or awareness on possible management options"
     ],
     "answer": "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 15 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Which step should be performed now during education on condition and its management?",
     "options": [
       "Thank patient and relatives for the cooperation",
       "Build on what the patient knows about the condition with scientific data of condition",
@@ -1254,10 +1254,10 @@ export const rgnBatch04: Procedure[] = [
       "Sit comfortably by the patient"
     ],
     "answer": "Ensure patient and significant other understands the teaching and clarify where need be",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Which nursing action is required at this stage of education on condition and its management?",
     "options": [
       "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
       "Assist patient into a desirable position",
@@ -1265,10 +1265,10 @@ export const rgnBatch04: Procedure[] = [
       "Allow patient and significant other to ask questions for clarity"
     ],
     "answer": "Allow patient and significant other to ask questions for clarity",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "The nurse is carrying out education on condition and its management. Which action best matches this part of the procedure?",
     "options": [
       "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
       "Establish rapport with the patient (Refer to steps)",
@@ -1276,10 +1276,10 @@ export const rgnBatch04: Procedure[] = [
       "Ensure enabling and relaxed environment to maintain privacy and individuality of patient"
     ],
     "answer": "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "To complete education on condition and its management safely, which action should the nurse take at this point?",
     "options": [
       "Explain to patient the rationale for the various investigations and treatment adopted",
       "Provide patient with clear simple pamphlets or other sources of readable information",
@@ -1287,10 +1287,10 @@ export const rgnBatch04: Procedure[] = [
       "Confirm patient’s diagnoses against the patient’s record (manually or electronic)"
     ],
     "answer": "Provide patient with clear simple pamphlets or other sources of readable information",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "Which step should be performed now during education on condition and its management?",
     "options": [
       "Identify the suitable language for the patient",
       "Document procedure and report to appropriate officer",
@@ -1298,10 +1298,10 @@ export const rgnBatch04: Procedure[] = [
       "Allow patient and significant other to ask questions for clarity"
     ],
     "answer": "Thank patient and relatives for the cooperation",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of EDUCATION ON CONDITION AND ITS MANAGEMENT?",
+    "question": "After completing this part of education on condition and its management, what makes the clinical record useful for continuity of care?",
     "options": [
       "Involve relatives or significant other if any",
       "Ensure patient and significant other understands the teaching and clarify where need be",
@@ -1309,7 +1309,7 @@ export const rgnBatch04: Procedure[] = [
       "Document procedure and report to appropriate officer"
     ],
     "answer": "Document procedure and report to appropriate officer",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
   },
@@ -1388,7 +1388,7 @@ export const rgnBatch04: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=s-LBEmMBUvU",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMISSION OF A PATIENT?",
+    "question": "The nurse is carrying out admission of a patient. Which action best matches this part of the procedure?",
     "options": [
       "Welcome patient and relatives to the nurses station",
       "Identify and confirm patient’s name, particulars and reassures him/her and relatives",
@@ -1396,10 +1396,10 @@ export const rgnBatch04: Procedure[] = [
       "Document all assessments, findings and treatments in appropriate notes charts (manually or electronically)"
     ],
     "answer": "Welcome patient and relatives to the nurses station",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of ADMISSION OF A PATIENT?",
+    "question": "To complete admission of a patient safely, which action should the nurse take at this point?",
     "options": [
       "Make relative comfortable in the waiting area",
       "Introduce self (nurse) and any staff present",
@@ -1407,10 +1407,10 @@ export const rgnBatch04: Procedure[] = [
       "Inform patients/relatives about the routine ward activities"
     ],
     "answer": "Introduce self (nurse) and any staff present",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMISSION OF A PATIENT?",
+    "question": "After completing this part of admission of a patient, what makes the clinical record useful for continuity of care?",
     "options": [
       "Introduce self (nurse) and any staff present",
       "Administer prescribed medications",
@@ -1418,10 +1418,10 @@ export const rgnBatch04: Procedure[] = [
       "If client is a scheme holder, go ahead and process"
     ],
     "answer": "Collect necessary documents, admission notes and any other information from the accompanying nurse",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 4 of ADMISSION OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of admission of a patient?",
     "options": [
       "Allow relative(s) to see patient and bid goodbye",
       "Check vital signs and records",
@@ -1429,10 +1429,10 @@ export const rgnBatch04: Procedure[] = [
       "Assess the patients conditions and note any supportive gadgets/devices"
     ],
     "answer": "Assess the patients conditions and note any supportive gadgets/devices",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of ADMISSION OF A PATIENT?",
+    "question": "The nurse is carrying out admission of a patient. Which action best matches this part of the procedure?",
     "options": [
       "Identify and confirm patient’s name, particulars and reassures him/her and relatives",
       "Send patient to bedside and position him/her as per the conditions permits",
@@ -1440,10 +1440,10 @@ export const rgnBatch04: Procedure[] = [
       "Plan care for the patient using the nursing process approach"
     ],
     "answer": "Identify and confirm patient’s name, particulars and reassures him/her and relatives",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of ADMISSION OF A PATIENT?",
+    "question": "When positioning the patient for admission of a patient, what should guide the nurse's choice of position?",
     "options": [
       "Take comprehensive history from the patient or relatives",
       "Send patient to bedside and position him/her as per the conditions permits",
@@ -1451,10 +1451,10 @@ export const rgnBatch04: Procedure[] = [
       "Enter patient’s name into admission, discharges book and daily ward state (manually or electronically)"
     ],
     "answer": "Send patient to bedside and position him/her as per the conditions permits",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 7 of ADMISSION OF A PATIENT?",
+    "question": "Which step should be performed now during admission of a patient?",
     "options": [
       "Collect necessary documents, admission notes and any other information from the accompanying nurse",
       "Assist patient to change into appropriate clothing",
@@ -1462,10 +1462,10 @@ export const rgnBatch04: Procedure[] = [
       "If client is a cash-in client, request for deposit per the institutional protocol"
     ],
     "answer": "Make relative comfortable in the waiting area",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMISSION OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of admission of a patient?",
     "options": [
       "Document all assessments, findings and treatments in appropriate notes charts (manually or electronically)",
       "Secure intravenous access and extracts sample for requested laboratory investigations",
@@ -1473,10 +1473,10 @@ export const rgnBatch04: Procedure[] = [
       "Take comprehensive history from the patient or relatives"
     ],
     "answer": "Take comprehensive history from the patient or relatives",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of ADMISSION OF A PATIENT?",
+    "question": "The nurse is carrying out admission of a patient. Which action best matches this part of the procedure?",
     "options": [
       "Perform general head to toe assessment",
       "Send patient to bedside and position him/her as per the conditions permits",
@@ -1484,10 +1484,10 @@ export const rgnBatch04: Procedure[] = [
       "Welcome patient and relatives to the nurses station"
     ],
     "answer": "Perform general head to toe assessment",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMISSION OF A PATIENT?",
+    "question": "While providing admission of a patient, why must the nurse complete the prescribed observations at the specified intervals?",
     "options": [
       "Take comprehensive history from the patient or relatives",
       "Check vital signs and records",
@@ -1495,10 +1495,10 @@ export const rgnBatch04: Procedure[] = [
       "Instruct patient/relatives to read and sign consent form if necessary"
     ],
     "answer": "Check vital signs and records",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Trended observations help detect deterioration early. Record the measurements, compare them with previous findings and escalate abnormal values or clinical concern according to local policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMISSION OF A PATIENT?",
+    "question": "When collecting a specimen as part of admission of a patient, which principle protects the reliability of the result?",
     "options": [
       "Assess the patients conditions and note any supportive gadgets/devices",
       "Ask patient to declare valuables if any according to the institution’s protocol",
@@ -1506,10 +1506,10 @@ export const rgnBatch04: Procedure[] = [
       "Introduce him/her to other patients near him/her in the ward"
     ],
     "answer": "Secure intravenous access and extracts sample for requested laboratory investigations",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMISSION OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of admission of a patient?",
     "options": [
       "Plan care for the patient using the nursing process approach",
       "Secure intravenous access and extracts sample for requested laboratory investigations",
@@ -1517,10 +1517,10 @@ export const rgnBatch04: Procedure[] = [
       "Send patient to do other requested investigations e.g. X-rays, C.T. Scan etc. (if any)"
     ],
     "answer": "Send patient to do other requested investigations e.g. X-rays, C.T. Scan etc. (if any)",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMISSION OF A PATIENT?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Inform charge nurse of any urgent prescribed medication and ensure they are available",
       "Make relative comfortable in the waiting area",
@@ -1528,10 +1528,10 @@ export const rgnBatch04: Procedure[] = [
       "Introduce self (nurse) and any staff present"
     ],
     "answer": "Inform charge nurse of any urgent prescribed medication and ensure they are available",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 14 of ADMISSION OF A PATIENT?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Perform general head to toe assessment",
       "Administer prescribed medications",
@@ -1539,10 +1539,10 @@ export const rgnBatch04: Procedure[] = [
       "Allow relative(s) to see patient and bid goodbye"
     ],
     "answer": "Administer prescribed medications",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 15 of ADMISSION OF A PATIENT?",
+    "question": "Which step should be performed now during admission of a patient?",
     "options": [
       "Identify and confirm patient’s name, particulars and reassures him/her and relatives",
       "Keep patient valuables according to the institution’s protocol",
@@ -1550,10 +1550,10 @@ export const rgnBatch04: Procedure[] = [
       "Orientate patient/relative(s) to ward if condition permits"
     ],
     "answer": "Assist patient to change into appropriate clothing",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMISSION OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of admission of a patient?",
     "options": [
       "Welcome patient and relatives to the nurses station",
       "Send patient to do other requested investigations e.g. X-rays, C.T. Scan etc. (if any)",
@@ -1561,10 +1561,10 @@ export const rgnBatch04: Procedure[] = [
       "Ask patient to declare valuables if any according to the institution’s protocol"
     ],
     "answer": "Ask patient to declare valuables if any according to the institution’s protocol",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMISSION OF A PATIENT?",
+    "question": "The nurse is carrying out admission of a patient. Which action best matches this part of the procedure?",
     "options": [
       "Keep patient valuables according to the institution’s protocol",
       "Take comprehensive history from the patient or relatives",
@@ -1572,10 +1572,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect necessary documents, admission notes and any other information from the accompanying nurse"
     ],
     "answer": "Keep patient valuables according to the institution’s protocol",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMISSION OF A PATIENT?",
+    "question": "Before carrying out admission of a patient, what should the nurse do to support informed cooperation?",
     "options": [
       "Check vital signs and records",
       "Explain National Health/Mutual Insurance Schemes to patient and relative(s)",
@@ -1583,10 +1583,10 @@ export const rgnBatch04: Procedure[] = [
       "Document all assessments, findings and treatments in appropriate notes charts (manually or electronically)"
     ],
     "answer": "Explain National Health/Mutual Insurance Schemes to patient and relative(s)",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 19 of ADMISSION OF A PATIENT?",
+    "question": "Which step should be performed now during admission of a patient?",
     "options": [
       "Send patient to bedside and position him/her as per the conditions permits",
       "Keep patient valuables according to the institution’s protocol",
@@ -1594,10 +1594,10 @@ export const rgnBatch04: Procedure[] = [
       "Inform patients/relatives about the routine ward activities"
     ],
     "answer": "If client is a scheme holder, go ahead and process",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of ADMISSION OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of admission of a patient?",
     "options": [
       "Introduce self (nurse) and any staff present",
       "Inform charge nurse of any urgent prescribed medication and ensure they are available",
@@ -1605,10 +1605,10 @@ export const rgnBatch04: Procedure[] = [
       "If client is a cash-in client, request for deposit per the institutional protocol"
     ],
     "answer": "If client is a cash-in client, request for deposit per the institutional protocol",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of ADMISSION OF A PATIENT?",
+    "question": "The nurse is carrying out admission of a patient. Which action best matches this part of the procedure?",
     "options": [
       "Introduce him/her to other patients near him/her in the ward",
       "Perform general head to toe assessment",
@@ -1616,10 +1616,10 @@ export const rgnBatch04: Procedure[] = [
       "Assess the patients conditions and note any supportive gadgets/devices"
     ],
     "answer": "Introduce him/her to other patients near him/her in the ward",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 22 of ADMISSION OF A PATIENT?",
+    "question": "To complete admission of a patient safely, which action should the nurse take at this point?",
     "options": [
       "Secure intravenous access and extracts sample for requested laboratory investigations",
       "Orientate patient/relative(s) to ward if condition permits",
@@ -1627,10 +1627,10 @@ export const rgnBatch04: Procedure[] = [
       "Plan care for the patient using the nursing process approach"
     ],
     "answer": "Orientate patient/relative(s) to ward if condition permits",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 23 of ADMISSION OF A PATIENT?",
+    "question": "Before carrying out admission of a patient, what should the nurse do to support informed cooperation?",
     "options": [
       "Make relative comfortable in the waiting area",
       "Explain National Health/Mutual Insurance Schemes to patient and relative(s)",
@@ -1638,10 +1638,10 @@ export const rgnBatch04: Procedure[] = [
       "Enter patient’s name into admission, discharges book and daily ward state (manually or electronically)"
     ],
     "answer": "Inform patients/relatives about the routine ward activities",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 24 of ADMISSION OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of admission of a patient?",
     "options": [
       "Collect necessary documents, admission notes and any other information from the accompanying nurse",
       "Administer prescribed medications",
@@ -1649,10 +1649,10 @@ export const rgnBatch04: Procedure[] = [
       "Enter patient’s name into admission, discharges book and daily ward state (manually or electronically)"
     ],
     "answer": "Enter patient’s name into admission, discharges book and daily ward state (manually or electronically)",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 25 of ADMISSION OF A PATIENT?",
+    "question": "Before carrying out admission of a patient, what should the nurse do to support informed cooperation?",
     "options": [
       "Instruct patient/relatives to read and sign consent form if necessary",
       "Check vital signs and records",
@@ -1660,10 +1660,10 @@ export const rgnBatch04: Procedure[] = [
       "Identify and confirm patient’s name, particulars and reassures him/her and relatives"
     ],
     "answer": "Instruct patient/relatives to read and sign consent form if necessary",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 26 of ADMISSION OF A PATIENT?",
+    "question": "To complete admission of a patient safely, which action should the nurse take at this point?",
     "options": [
       "Send patient to do other requested investigations e.g. X-rays, C.T. Scan etc. (if any)",
       "Allow relative(s) to see patient and bid goodbye",
@@ -1671,10 +1671,10 @@ export const rgnBatch04: Procedure[] = [
       "Welcome patient and relatives to the nurses station"
     ],
     "answer": "Allow relative(s) to see patient and bid goodbye",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 27 of ADMISSION OF A PATIENT?",
+    "question": "After completing this part of admission of a patient, what makes the clinical record useful for continuity of care?",
     "options": [
       "Take comprehensive history from the patient or relatives",
       "If client is a scheme holder, go ahead and process",
@@ -1682,10 +1682,10 @@ export const rgnBatch04: Procedure[] = [
       "Enter patient’s name into admission, discharges book and daily ward state (manually or electronically)"
     ],
     "answer": "Document all assessments, findings and treatments in appropriate notes charts (manually or electronically)",
-    "explanation": "This checks recall of step 27 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 28 of ADMISSION OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of admission of a patient?",
     "options": [
       "Assess the patients conditions and note any supportive gadgets/devices",
       "Assist patient to change into appropriate clothing",
@@ -1693,7 +1693,7 @@ export const rgnBatch04: Procedure[] = [
       "Plan care for the patient using the nursing process approach"
     ],
     "answer": "Plan care for the patient using the nursing process approach",
-    "explanation": "This checks recall of step 28 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -1762,7 +1762,7 @@ export const rgnBatch04: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=K0c9fSd46JA",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of SIMPLE UNOCCUPIED BED?",
+    "question": "Before proceeding with simple unoccupied bed, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Pull sheet tight so that there are no creases",
@@ -1770,10 +1770,10 @@ export const rgnBatch04: Procedure[] = [
       "Slip the pillow cases on the pillows with an assistant"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 2 of SIMPLE UNOCCUPIED BED?",
+    "question": "To complete simple unoccupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Tuck in sides under the mattress to prevent creases",
       "Collect, arranges items on trolley and send to bedside",
@@ -1781,10 +1781,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners"
     ],
     "answer": "Collect, arranges items on trolley and send to bedside",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of SIMPLE UNOCCUPIED BED?",
+    "question": "Which step should be performed now during simple unoccupied bed?",
     "options": [
       "Fold over at the bottom and tuck in loosely",
       "Pull and tuck sheet at the sides to prevent creases",
@@ -1792,10 +1792,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "3. Arrange items in order of use on chairs or heart table",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of SIMPLE UNOCCUPIED BED?",
+    "question": "Which nursing action is required at this stage of simple unoccupied bed?",
     "options": [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
       "Collect, arranges items on trolley and send to bedside",
@@ -1803,10 +1803,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Place bottom sheet evenly on the bed",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of SIMPLE UNOCCUPIED BED?",
+    "question": "The nurse is carrying out simple unoccupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Fold top sheet over the counterpane at the top end (per either Open or Closed bed)",
@@ -1814,10 +1814,10 @@ export const rgnBatch04: Procedure[] = [
       "3. Arrange items in order of use on chairs or heart table"
     ],
     "answer": "Pull sheet tight so that there are no creases",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of SIMPLE UNOCCUPIED BED?",
+    "question": "To complete simple unoccupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Place pillows on bed with open ends away from the entrance",
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners",
@@ -1825,10 +1825,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck in sides under the mattress to prevent creases"
     ],
     "answer": "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of SIMPLE UNOCCUPIED BED?",
+    "question": "Which step should be performed now during simple unoccupied bed?",
     "options": [
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners",
       "Remove trolley and chair or heart table",
@@ -1836,10 +1836,10 @@ export const rgnBatch04: Procedure[] = [
       "Fold over at the bottom and tuck in loosely"
     ],
     "answer": "Pull and tuck sheet at the sides to prevent creases",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of SIMPLE UNOCCUPIED BED?",
+    "question": "Which nursing action is required at this stage of simple unoccupied bed?",
     "options": [
       "Collect, arranges items on trolley and send to bedside",
       "Place counterpane (if necessary) loosely over the bed",
@@ -1847,10 +1847,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bed mat or draw mackintosh at the mid portion of the bed"
     ],
     "answer": "Place bed mat or draw mackintosh at the mid portion of the bed",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of SIMPLE UNOCCUPIED BED?",
+    "question": "The nurse is carrying out simple unoccupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
       "Slip the pillow cases on the pillows with an assistant",
@@ -1858,10 +1858,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck counterpane (if necessary) at the bottom end using mitered or envelop corners"
     ],
     "answer": "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of SIMPLE UNOCCUPIED BED?",
+    "question": "To complete simple unoccupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Slip the pillow cases on the pillows with an assistant",
@@ -1869,10 +1869,10 @@ export const rgnBatch04: Procedure[] = [
       "Place pillows on bed with open ends away from the entrance"
     ],
     "answer": "Slip the pillow cases on the pillows with an assistant",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of SIMPLE UNOCCUPIED BED?",
+    "question": "Which step should be performed now during simple unoccupied bed?",
     "options": [
       "Remove trolley and chair or heart table",
       "Place top sheet on bed with the wrong side uppermost",
@@ -1880,10 +1880,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners"
     ],
     "answer": "Place pillows on bed with open ends away from the entrance",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of SIMPLE UNOCCUPIED BED?",
+    "question": "Which nursing action is required at this stage of simple unoccupied bed?",
     "options": [
       "Place counterpane (if necessary) loosely over the bed",
       "Pull and tuck sheet at the sides to prevent creases",
@@ -1891,10 +1891,10 @@ export const rgnBatch04: Procedure[] = [
       "Place top sheet on bed with the wrong side uppermost"
     ],
     "answer": "Place top sheet on bed with the wrong side uppermost",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of SIMPLE UNOCCUPIED BED?",
+    "question": "The nurse is carrying out simple unoccupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Fold over at the bottom and tuck in loosely",
       "3. Arrange items in order of use on chairs or heart table",
@@ -1902,10 +1902,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bed mat or draw mackintosh at the mid portion of the bed"
     ],
     "answer": "Fold over at the bottom and tuck in loosely",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of SIMPLE UNOCCUPIED BED?",
+    "question": "To complete simple unoccupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Fold top sheet over the counterpane at the top end (per either Open or Closed bed)",
       "Place counterpane (if necessary) loosely over the bed",
@@ -1913,10 +1913,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Place counterpane (if necessary) loosely over the bed",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of SIMPLE UNOCCUPIED BED?",
+    "question": "Which step should be performed now during simple unoccupied bed?",
     "options": [
       "Place pillows on bed with open ends away from the entrance",
       "Pull sheet tight so that there are no creases",
@@ -1924,10 +1924,10 @@ export const rgnBatch04: Procedure[] = [
       "Remove trolley and chair or heart table"
     ],
     "answer": "Tuck counterpane (if necessary) at the bottom end using mitered or envelop corners",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of SIMPLE UNOCCUPIED BED?",
+    "question": "Which nursing action is required at this stage of simple unoccupied bed?",
     "options": [
       "Pull and tuck sheet at the sides to prevent creases",
       "Perform hand hygiene",
@@ -1935,10 +1935,10 @@ export const rgnBatch04: Procedure[] = [
       "Fold top sheet over the counterpane at the top end (per either Open or Closed bed)"
     ],
     "answer": "Fold top sheet over the counterpane at the top end (per either Open or Closed bed)",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of SIMPLE UNOCCUPIED BED?",
+    "question": "The nurse is carrying out simple unoccupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Tuck in sides under the mattress to prevent creases",
       "Place counterpane (if necessary) loosely over the bed",
@@ -1946,10 +1946,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect, arranges items on trolley and send to bedside"
     ],
     "answer": "Tuck in sides under the mattress to prevent creases",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of SIMPLE UNOCCUPIED BED?",
+    "question": "To complete simple unoccupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
       "Remove trolley and chair or heart table",
@@ -1957,10 +1957,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck counterpane (if necessary) at the bottom end using mitered or envelop corners"
     ],
     "answer": "Remove trolley and chair or heart table",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of SIMPLE UNOCCUPIED BED?",
+    "question": "Before proceeding with simple unoccupied bed, what infection-prevention action is required at this point?",
     "options": [
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners",
       "Tuck in sides under the mattress to prevent creases",
@@ -1968,7 +1968,7 @@ export const rgnBatch04: Procedure[] = [
       "Place top sheet on bed with the wrong side uppermost"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   }
 ],
   },
@@ -2046,7 +2046,7 @@ export const rgnBatch04: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=AN9pvC499P4",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of SIMPLE OCCUPIED BED?",
+    "question": "The nurse is carrying out simple occupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Collect and arrange items on trolley and bring them to the bedside",
@@ -2054,10 +2054,10 @@ export const rgnBatch04: Procedure[] = [
       "Arrange sheets in order of use on chairs or a heart table"
     ],
     "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of SIMPLE OCCUPIED BED?",
+    "question": "Before carrying out simple occupied bed, what should the nurse do to support informed cooperation?",
     "options": [
       "Create a mitered or envelope corner at the ends",
       "Explain procedure to patient to gain his/her cooperation and participation",
@@ -2065,10 +2065,10 @@ export const rgnBatch04: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Explain procedure to patient to gain his/her cooperation and participation",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of SIMPLE OCCUPIED BED?",
+    "question": "A patient is about to undergo simple occupied bed. Which action protects their dignity during preparation?",
     "options": [
       "Leave patient with only one pillow and cover him/her with top sheet",
       "Cover patient with top sheet and counterpane if necessary and make patient comfortable",
@@ -2076,10 +2076,10 @@ export const rgnBatch04: Procedure[] = [
       "Ask assistant to hold the top edge of the clean sheets while the old sheet is gradually pulled down to the foot end of the bed and place in a receptacle"
     ],
     "answer": "Ensure patient privacy",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 4 of SIMPLE OCCUPIED BED?",
+    "question": "Before proceeding with simple occupied bed, what infection-prevention action is required at this point?",
     "options": [
       "Collect and arrange items on trolley and bring them to the bedside",
       "Remove dirty bottom sheet and places it in a receptacle",
@@ -2087,10 +2087,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 5 of SIMPLE OCCUPIED BED?",
+    "question": "The nurse is carrying out simple occupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Collect and arrange items on trolley and bring them to the bedside",
       "Cover the bed with a clean rolled bottom sheet halfway in the middle of the bed",
@@ -2098,10 +2098,10 @@ export const rgnBatch04: Procedure[] = [
       "Create a mitered or envelope corner at the ends"
     ],
     "answer": "Collect and arrange items on trolley and bring them to the bedside",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of SIMPLE OCCUPIED BED?",
+    "question": "To complete simple occupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Cover patient with top sheet and counterpane if necessary and make patient comfortable",
       "Arrange sheets in order of use on chairs or a heart table",
@@ -2109,10 +2109,10 @@ export const rgnBatch04: Procedure[] = [
       "Leave patient with only one pillow and cover him/her with top sheet"
     ],
     "answer": "Arrange sheets in order of use on chairs or a heart table",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of SIMPLE OCCUPIED BED?",
+    "question": "Which step should be performed now during simple occupied bed?",
     "options": [
       "Remove dirty bottom sheet and places it in a receptacle",
       "Collect and arrange items on trolley and bring them to the bedside",
@@ -2120,10 +2120,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Remove any equipment attached to the bed e.g. drip stand, side rails etc.",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of SIMPLE OCCUPIED BED?",
+    "question": "Which nursing action is required at this stage of simple occupied bed?",
     "options": [
       "Cover the bed with a clean rolled bottom sheet halfway in the middle of the bed",
       "Establish rapport (Refer to steps)",
@@ -2131,10 +2131,10 @@ export const rgnBatch04: Procedure[] = [
       "Loosen sheets at the side of bed and remove extra beddings leaving only the top sheet"
     ],
     "answer": "Loosen sheets at the side of bed and remove extra beddings leaving only the top sheet",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of SIMPLE OCCUPIED BED?",
+    "question": "The nurse is carrying out simple occupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Leave patient with only one pillow and cover him/her with top sheet",
       "Ask assistant to hold the top edge of the clean sheets while the old sheet is gradually pulled down to the foot end of the bed and place in a receptacle",
@@ -2142,10 +2142,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover patient with top sheet and counterpane if necessary and make patient comfortable"
     ],
     "answer": "Leave patient with only one pillow and cover him/her with top sheet",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of SIMPLE OCCUPIED BED?",
+    "question": "To complete simple occupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Collect and arrange items on trolley and bring them to the bedside",
       "Assist the patient to turn to the side away from the clean portion of the linen supported by another nurse",
@@ -2153,10 +2153,10 @@ export const rgnBatch04: Procedure[] = [
       "Remove dirty bottom sheet and places it in a receptacle"
     ],
     "answer": "Assist the patient to turn to the side away from the clean portion of the linen supported by another nurse",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of SIMPLE OCCUPIED BED?",
+    "question": "Which step should be performed now during simple occupied bed?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Create a mitered or envelope corner at the ends",
@@ -2164,10 +2164,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover the bed with a clean rolled bottom sheet halfway in the middle of the bed"
     ],
     "answer": "Roll dirty bottom sheet under patient use glove if necessary",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of SIMPLE OCCUPIED BED?",
+    "question": "Which nursing action is required at this stage of simple occupied bed?",
     "options": [
       "Ask assistant to hold the top edge of the clean sheets while the old sheet is gradually pulled down to the foot end of the bed and place in a receptacle",
       "Loosen sheets at the side of bed and remove extra beddings leaving only the top sheet",
@@ -2175,10 +2175,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover the bed with a clean rolled bottom sheet halfway in the middle of the bed"
     ],
     "answer": "Cover the bed with a clean rolled bottom sheet halfway in the middle of the bed",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of SIMPLE OCCUPIED BED?",
+    "question": "The nurse is carrying out simple occupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Create a mitered or envelope corner at the ends",
       "Perform hand hygiene",
@@ -2186,10 +2186,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect and arrange items on trolley and bring them to the bedside"
     ],
     "answer": "Create a mitered or envelope corner at the ends",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of SIMPLE OCCUPIED BED?",
+    "question": "To complete simple occupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Cover the bed with a clean rolled bottom sheet halfway in the middle of the bed",
       "Put on bed mat or draw mackintosh and draw sheet mid portion of the bed tucking in greater part nearest to the door",
@@ -2197,10 +2197,10 @@ export const rgnBatch04: Procedure[] = [
       "Establish rapport (Refer to steps)"
     ],
     "answer": "Put on bed mat or draw mackintosh and draw sheet mid portion of the bed tucking in greater part nearest to the door",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of SIMPLE OCCUPIED BED?",
+    "question": "Which step should be performed now during simple occupied bed?",
     "options": [
       "Loosen sheets at the side of bed and remove extra beddings leaving only the top sheet",
       "Cover patient with top sheet and counterpane if necessary and make patient comfortable",
@@ -2208,10 +2208,10 @@ export const rgnBatch04: Procedure[] = [
       "Ask assistant to hold the top edge of the clean sheets while the old sheet is gradually pulled down to the foot end of the bed and place in a receptacle"
     ],
     "answer": "Assist patient gently unto the clean sheet",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of SIMPLE OCCUPIED BED?",
+    "question": "Which nursing action is required at this stage of simple occupied bed?",
     "options": [
       "Perform hand hygiene",
       "Assist patient gently unto the clean sheet",
@@ -2219,10 +2219,10 @@ export const rgnBatch04: Procedure[] = [
       "Remove dirty bottom sheet and places it in a receptacle"
     ],
     "answer": "Remove dirty bottom sheet and places it in a receptacle",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of SIMPLE OCCUPIED BED?",
+    "question": "The nurse is carrying out simple occupied bed. Which action best matches this part of the procedure?",
     "options": [
       "Pull the bottom sheet at the other end tightly and tuck in",
       "Roll dirty bottom sheet under patient use glove if necessary",
@@ -2230,10 +2230,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover the bed with a clean rolled bottom sheet halfway in the middle of the bed"
     ],
     "answer": "Pull the bottom sheet at the other end tightly and tuck in",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of SIMPLE OCCUPIED BED?",
+    "question": "To complete simple occupied bed safely, which action should the nurse take at this point?",
     "options": [
       "Cover patient with top sheet and counterpane if necessary and make patient comfortable",
       "Spread top sheets and counterpane if necessary over the existing sheets",
@@ -2241,10 +2241,10 @@ export const rgnBatch04: Procedure[] = [
       "Loosen sheets at the side of bed and remove extra beddings leaving only the top sheet"
     ],
     "answer": "Spread top sheets and counterpane if necessary over the existing sheets",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of SIMPLE OCCUPIED BED?",
+    "question": "Which step should be performed now during simple occupied bed?",
     "options": [
       "Assist patient gently unto the clean sheet",
       "Collect and arrange items on trolley and bring them to the bedside",
@@ -2252,10 +2252,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Ask assistant to hold the top edge of the clean sheets while the old sheet is gradually pulled down to the foot end of the bed and place in a receptacle",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of SIMPLE OCCUPIED BED?",
+    "question": "Which nursing action is required at this stage of simple occupied bed?",
     "options": [
       "Roll dirty bottom sheet under patient use glove if necessary",
       "Establish rapport (Refer to steps)",
@@ -2263,10 +2263,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover patient with top sheet and counterpane if necessary and make patient comfortable"
     ],
     "answer": "Cover patient with top sheet and counterpane if necessary and make patient comfortable",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of SIMPLE OCCUPIED BED?",
+    "question": "A patient is about to undergo simple occupied bed. Which action protects their dignity during preparation?",
     "options": [
       "Clear items and removes screen",
       "Spread top sheets and counterpane if necessary over the existing sheets",
@@ -2274,10 +2274,10 @@ export const rgnBatch04: Procedure[] = [
       "Ask assistant to hold the top edge of the clean sheets while the old sheet is gradually pulled down to the foot end of the bed and place in a receptacle"
     ],
     "answer": "Clear items and removes screen",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 22 of SIMPLE OCCUPIED BED?",
+    "question": "Before proceeding with simple occupied bed, what infection-prevention action is required at this point?",
     "options": [
       "Arrange sheets in order of use on chairs or a heart table",
       "Perform hand hygiene",
@@ -2285,10 +2285,10 @@ export const rgnBatch04: Procedure[] = [
       "Remove dirty bottom sheet and places it in a receptacle"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 23 of SIMPLE OCCUPIED BED?",
+    "question": "After completing this part of simple occupied bed, what makes the clinical record useful for continuity of care?",
     "options": [
       "Establish rapport (Refer to steps)",
       "Cover the bed with a clean rolled bottom sheet halfway in the middle of the bed",
@@ -2296,7 +2296,7 @@ export const rgnBatch04: Procedure[] = [
       "Roll dirty bottom sheet under patient use glove if necessary"
     ],
     "answer": "Document findings and report",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
   },
@@ -2364,7 +2364,7 @@ export const rgnBatch04: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=A-gC3C7uf_s",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of ADMISSION BED?",
+    "question": "Before proceeding with admission bed, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Pull sheet tight so that there are no creases",
@@ -2372,10 +2372,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh with draw sheet and tuck in at the sides"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 2 of ADMISSION BED?",
+    "question": "To complete admission bed safely, which action should the nurse take at this point?",
     "options": [
       "Put on top bed clothes",
       "Collect, arrange items on trolley and send to bedside",
@@ -2383,10 +2383,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Collect, arrange items on trolley and send to bedside",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of ADMISSION BED?",
+    "question": "Which step should be performed now during admission bed?",
     "options": [
       "Place long mackintosh over the pillow and the bottom sheet and tuck around",
       "Collect, arrange items on trolley and send to bedside",
@@ -2394,10 +2394,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bed accessories at the appropriate sides of the bed"
     ],
     "answer": "Arrange items in order of use on a chair or heart table",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of ADMISSION BED?",
+    "question": "Which nursing action is required at this stage of admission bed?",
     "options": [
       "Place bed mat or draw mackintosh at the mid portion of the bed",
       "Fold the bed clothes on the other side nearest to the door, leaving it open to facilitate quick admittance",
@@ -2405,10 +2405,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Place bottom sheet evenly on the bed",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of ADMISSION BED?",
+    "question": "The nurse is carrying out admission bed. Which action best matches this part of the procedure?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Put in hot water bottles if necessary",
@@ -2416,10 +2416,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck in the bed clothes on the other side"
     ],
     "answer": "Pull sheet tight so that there are no creases",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of ADMISSION BED?",
+    "question": "To complete admission bed safely, which action should the nurse take at this point?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
@@ -2427,10 +2427,10 @@ export const rgnBatch04: Procedure[] = [
       "Place second bath blanket over the bed"
     ],
     "answer": "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of ADMISSION BED?",
+    "question": "Which step should be performed now during admission bed?",
     "options": [
       "Remove trolley and chairs",
       "Place one bath blanket or flannelette over the mackintosh and fold under itself",
@@ -2438,10 +2438,10 @@ export const rgnBatch04: Procedure[] = [
       "Slip the pillow cases on the pillows with an assistant"
     ],
     "answer": "Place bed mat or draw mackintosh at the mid portion of the bed",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of ADMISSION BED?",
+    "question": "Which nursing action is required at this stage of admission bed?",
     "options": [
       "Place counterpane loosely over the top bed clothes (if necessary)",
       "Place bed mat or draw mackintosh at the mid portion of the bed",
@@ -2449,10 +2449,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh with draw sheet and tuck in at the sides"
     ],
     "answer": "Cover mackintosh with draw sheet and tuck in at the sides",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of ADMISSION BED?",
+    "question": "The nurse is carrying out admission bed. Which action best matches this part of the procedure?",
     "options": [
       "Slip the pillow cases on the pillows with an assistant",
       "Arrange items in order of use on a chair or heart table",
@@ -2460,10 +2460,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners"
     ],
     "answer": "Slip the pillow cases on the pillows with an assistant",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of ADMISSION BED?",
+    "question": "To complete admission bed safely, which action should the nurse take at this point?",
     "options": [
       "Put in hot water bottles if necessary",
       "Place pillows on bed with open ends away from the entrance",
@@ -2471,10 +2471,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect, arrange items on trolley and send to bedside"
     ],
     "answer": "Place pillows on bed with open ends away from the entrance",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of ADMISSION BED?",
+    "question": "Which step should be performed now during admission bed?",
     "options": [
       "Slip the pillow cases on the pillows with an assistant",
       "Perform hand hygiene",
@@ -2482,10 +2482,10 @@ export const rgnBatch04: Procedure[] = [
       "Fold the bed clothes on the other side nearest to the door, leaving it open to facilitate quick admittance"
     ],
     "answer": "Place long mackintosh over the pillow and the bottom sheet and tuck around",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of ADMISSION BED?",
+    "question": "Which nursing action is required at this stage of admission bed?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Tuck in the bed clothes on the other side",
@@ -2493,10 +2493,10 @@ export const rgnBatch04: Procedure[] = [
       "Place one bath blanket or flannelette over the mackintosh and fold under itself"
     ],
     "answer": "Place one bath blanket or flannelette over the mackintosh and fold under itself",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of ADMISSION BED?",
+    "question": "The nurse is carrying out admission bed. Which action best matches this part of the procedure?",
     "options": [
       "Place second bath blanket over the bed",
       "Place one bath blanket or flannelette over the mackintosh and fold under itself",
@@ -2504,10 +2504,10 @@ export const rgnBatch04: Procedure[] = [
       "Place counterpane loosely over the top bed clothes (if necessary)"
     ],
     "answer": "Place second bath blanket over the bed",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of ADMISSION BED?",
+    "question": "To complete admission bed safely, which action should the nurse take at this point?",
     "options": [
       "Arrange items in order of use on a chair or heart table",
       "Put in hot water bottles if necessary",
@@ -2515,10 +2515,10 @@ export const rgnBatch04: Procedure[] = [
       "Place long mackintosh over the pillow and the bottom sheet and tuck around"
     ],
     "answer": "Put in hot water bottles if necessary",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of ADMISSION BED?",
+    "question": "Which step should be performed now during admission bed?",
     "options": [
       "Place bed accessories at the appropriate sides of the bed",
       "Place pillows on bed with open ends away from the entrance",
@@ -2526,10 +2526,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bed mat or draw mackintosh at the mid portion of the bed"
     ],
     "answer": "Put on top bed clothes",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of ADMISSION BED?",
+    "question": "Which nursing action is required at this stage of admission bed?",
     "options": [
       "Put in hot water bottles if necessary",
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
@@ -2537,10 +2537,10 @@ export const rgnBatch04: Procedure[] = [
       "Place counterpane loosely over the top bed clothes (if necessary)"
     ],
     "answer": "Place counterpane loosely over the top bed clothes (if necessary)",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of ADMISSION BED?",
+    "question": "The nurse is carrying out admission bed. Which action best matches this part of the procedure?",
     "options": [
       "Tuck in the bed clothes on the other side",
       "Collect, arrange items on trolley and send to bedside",
@@ -2548,10 +2548,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull sheet tight so that there are no creases"
     ],
     "answer": "Tuck in the bed clothes on the other side",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of ADMISSION BED?",
+    "question": "To complete admission bed safely, which action should the nurse take at this point?",
     "options": [
       "Place one bath blanket or flannelette over the mackintosh and fold under itself",
       "Fold the bed clothes on the other side nearest to the door, leaving it open to facilitate quick admittance",
@@ -2559,10 +2559,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Fold the bed clothes on the other side nearest to the door, leaving it open to facilitate quick admittance",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of ADMISSION BED?",
+    "question": "Which step should be performed now during admission bed?",
     "options": [
       "Cover mackintosh with draw sheet and tuck in at the sides",
       "Remove trolley and chairs",
@@ -2570,10 +2570,10 @@ export const rgnBatch04: Procedure[] = [
       "Place counterpane loosely over the top bed clothes (if necessary)"
     ],
     "answer": "Place bed accessories at the appropriate sides of the bed",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of ADMISSION BED?",
+    "question": "Before proceeding with admission bed, what infection-prevention action is required at this point?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Place counterpane loosely over the top bed clothes (if necessary)",
@@ -2581,10 +2581,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 21 of ADMISSION BED?",
+    "question": "The nurse is carrying out admission bed. Which action best matches this part of the procedure?",
     "options": [
       "Remove trolley and chairs",
       "Place long mackintosh over the pillow and the bottom sheet and tuck around",
@@ -2592,7 +2592,7 @@ export const rgnBatch04: Procedure[] = [
       "Put in hot water bottles if necessary"
     ],
     "answer": "Remove trolley and chairs",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ],
   },
@@ -2668,7 +2668,7 @@ export const rgnBatch04: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=AdkoFiFrz7o",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of CARDIAC BED?",
+    "question": "Before proceeding with cardiac bed, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Pull sheet tight so that there are no creases",
@@ -2676,10 +2676,10 @@ export const rgnBatch04: Procedure[] = [
       "Place covered air rings in between the mackintosh and draw sheet"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 2 of CARDIAC BED?",
+    "question": "To complete cardiac bed safely, which action should the nurse take at this point?",
     "options": [
       "Place heart table with covered pillows in position",
       "Collect, arrange items on trolley and send to bedside",
@@ -2687,10 +2687,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull sheet tight so that there are no creases"
     ],
     "answer": "Collect, arrange items on trolley and send to bedside",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of CARDIAC BED?",
+    "question": "Which step should be performed now during cardiac bed?",
     "options": [
       "Arrange pillows in an arm chair-like fashion",
       "Pull sheet tight so that there are no creases",
@@ -2698,10 +2698,10 @@ export const rgnBatch04: Procedure[] = [
       "Clear items (chairs and trolley)"
     ],
     "answer": "Arrange items in order of use on a chair or heart table",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of CARDIAC BED?",
+    "question": "Which nursing action is required at this stage of cardiac bed?",
     "options": [
       "Cover mackintosh with draw sheet and tuck in at the sides",
       "Clear items (chairs and trolley)",
@@ -2709,10 +2709,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Place bottom sheet evenly on the bed",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of CARDIAC BED?",
+    "question": "The nurse is carrying out cardiac bed. Which action best matches this part of the procedure?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Tuck in the sides of top clothing loosely",
@@ -2720,10 +2720,10 @@ export const rgnBatch04: Procedure[] = [
       "Clear items (chairs and trolley)"
     ],
     "answer": "Pull sheet tight so that there are no creases",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of CARDIAC BED?",
+    "question": "To complete cardiac bed safely, which action should the nurse take at this point?",
     "options": [
       "Cover mackintosh with draw sheet and tuck in at the sides",
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
@@ -2731,10 +2731,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck in the sides of top clothing loosely"
     ],
     "answer": "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of CARDIAC BED?",
+    "question": "Which step should be performed now during cardiac bed?",
     "options": [
       "Arrange items in order of use on a chair or heart table",
       "Tuck in the sides of top clothing loosely",
@@ -2742,10 +2742,10 @@ export const rgnBatch04: Procedure[] = [
       "Place/elevate back rest at top end of bed"
     ],
     "answer": "Place bed mat or draw mackintosh at the mid portion of the bed",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of CARDIAC BED?",
+    "question": "Which nursing action is required at this stage of cardiac bed?",
     "options": [
       "Place writing materials within reach of patient",
       "Place/elevate back rest at top end of bed",
@@ -2753,10 +2753,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh with draw sheet and tuck in at the sides"
     ],
     "answer": "Cover mackintosh with draw sheet and tuck in at the sides",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of CARDIAC BED?",
+    "question": "The nurse is carrying out cardiac bed. Which action best matches this part of the procedure?",
     "options": [
       "Place covered air rings in between the mackintosh and draw sheet",
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
@@ -2764,10 +2764,10 @@ export const rgnBatch04: Procedure[] = [
       "Place/elevate back rest at top end of bed"
     ],
     "answer": "Place covered air rings in between the mackintosh and draw sheet",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of CARDIAC BED?",
+    "question": "To complete cardiac bed safely, which action should the nurse take at this point?",
     "options": [
       "Place writing materials within reach of patient",
       "Slip the pillow cases on the pillows with an assistant",
@@ -2775,10 +2775,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners"
     ],
     "answer": "Slip the pillow cases on the pillows with an assistant",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of CARDIAC BED?",
+    "question": "Which step should be performed now during cardiac bed?",
     "options": [
       "Place foot rest/sand bags in position",
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
@@ -2786,10 +2786,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect, arrange items on trolley and send to bedside"
     ],
     "answer": "Place/elevate back rest at top end of bed",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of CARDIAC BED?",
+    "question": "Which nursing action is required at this stage of cardiac bed?",
     "options": [
       "Place covered air rings in between the mackintosh and draw sheet",
       "Collect, arrange items on trolley and send to bedside",
@@ -2797,10 +2797,10 @@ export const rgnBatch04: Procedure[] = [
       "Arrange pillows in an arm chair-like fashion"
     ],
     "answer": "Arrange pillows in an arm chair-like fashion",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of CARDIAC BED?",
+    "question": "The nurse is carrying out cardiac bed. Which action best matches this part of the procedure?",
     "options": [
       "Place top sheet on bed with the wrong side upper most and folds sheets over at the bottom",
       "Place sputum mug and bell within reach of patient",
@@ -2808,10 +2808,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect, arrange items on trolley and send to bedside"
     ],
     "answer": "Place top sheet on bed with the wrong side upper most and folds sheets over at the bottom",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of CARDIAC BED?",
+    "question": "When positioning the patient for cardiac bed, what should guide the nurse's choice of position?",
     "options": [
       "Place covered air rings in between the mackintosh and draw sheet",
       "Place foot rest/sand bags in position",
@@ -2819,10 +2819,10 @@ export const rgnBatch04: Procedure[] = [
       "Place sputum mug and bell within reach of patient"
     ],
     "answer": "Place foot rest/sand bags in position",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 15 of CARDIAC BED?",
+    "question": "Which step should be performed now during cardiac bed?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Place sputum mug and bell within reach of patient",
@@ -2830,10 +2830,10 @@ export const rgnBatch04: Procedure[] = [
       "Arrange pillows in an arm chair-like fashion"
     ],
     "answer": "Tuck in the sides of top clothing loosely",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of CARDIAC BED?",
+    "question": "When positioning the patient for cardiac bed, what should guide the nurse's choice of position?",
     "options": [
       "Perform hand hygiene",
       "Arrange pillows in an arm chair-like fashion",
@@ -2841,10 +2841,10 @@ export const rgnBatch04: Procedure[] = [
       "Place heart table with covered pillows in position"
     ],
     "answer": "Place heart table with covered pillows in position",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 17 of CARDIAC BED?",
+    "question": "The nurse is carrying out cardiac bed. Which action best matches this part of the procedure?",
     "options": [
       "Place sputum mug and bell within reach of patient",
       "Cover mackintosh with draw sheet and tuck in at the sides",
@@ -2852,10 +2852,10 @@ export const rgnBatch04: Procedure[] = [
       "Arrange pillows in an arm chair-like fashion"
     ],
     "answer": "Place sputum mug and bell within reach of patient",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of CARDIAC BED?",
+    "question": "To complete cardiac bed safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Place writing materials within reach of patient",
@@ -2863,10 +2863,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh with draw sheet and tuck in at the sides"
     ],
     "answer": "Place writing materials within reach of patient",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of CARDIAC BED?",
+    "question": "Which step should be performed now during cardiac bed?",
     "options": [
       "Tuck in the sides of top clothing loosely",
       "Cover mackintosh with draw sheet and tuck in at the sides",
@@ -2874,10 +2874,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Clear items (chairs and trolley)",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of CARDIAC BED?",
+    "question": "Before proceeding with cardiac bed, what infection-prevention action is required at this point?",
     "options": [
       "Arrange pillows in an arm chair-like fashion",
       "Pull sheet tight so that there are no creases",
@@ -2885,7 +2885,7 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   }
 ],
   },
@@ -2959,7 +2959,7 @@ export const rgnBatch04: Procedure[] = [
     videoUrl: "https://www.youtube.com/watch?v=jtXvhgaV08M",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of OPERATION BED?",
+    "question": "Before proceeding with operation bed, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Pull sheet tight so that there are no creases",
@@ -2967,10 +2967,10 @@ export const rgnBatch04: Procedure[] = [
       "Spread blanket on bed"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 2 of OPERATION BED?",
+    "question": "To complete operation bed safely, which action should the nurse take at this point?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Collect, arrange items on trolley and send to bedside",
@@ -2978,10 +2978,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh with draw sheet and tuck in at the sides"
     ],
     "answer": "Collect, arrange items on trolley and send to bedside",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of OPERATION BED?",
+    "question": "Which step should be performed now during operation bed?",
     "options": [
       "Place a post anaesthetic tray by bed side",
       "Place hot water bottles on the bed",
@@ -2989,10 +2989,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Arrange items in order of use on a chair or heart table",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of OPERATION BED?",
+    "question": "Which nursing action is required at this stage of operation bed?",
     "options": [
       "Place hot water bottles on the bed",
       "Place bed mat or draw mackintosh at the mid portion of the bed",
@@ -3000,10 +3000,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Place bottom sheet evenly on the bed",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of OPERATION BED?",
+    "question": "The nurse is carrying out operation bed. Which action best matches this part of the procedure?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Collect, arrange items on trolley and send to bedside",
@@ -3011,10 +3011,10 @@ export const rgnBatch04: Procedure[] = [
       "Leave pillow on chair by the bed"
     ],
     "answer": "Pull sheet tight so that there are no creases",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of OPERATION BED?",
+    "question": "To complete operation bed safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
@@ -3022,10 +3022,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull sheet tight so that there are no creases"
     ],
     "answer": "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of OPERATION BED?",
+    "question": "Which step should be performed now during operation bed?",
     "options": [
       "Place top sheet on with the wrong side uppermost and turns back the bottom end",
       "Place protective dressing towel at top of the bed towards the sides",
@@ -3033,10 +3033,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Place bed mat or draw mackintosh at the mid portion of the bed",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of OPERATION BED?",
+    "question": "Which nursing action is required at this stage of operation bed?",
     "options": [
       "Place protective dressing towel at top of the bed towards the sides",
       "Place bottom sheet evenly on the bed",
@@ -3044,10 +3044,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh with draw sheet and tuck in at the sides"
     ],
     "answer": "Cover mackintosh with draw sheet and tuck in at the sides",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of OPERATION BED?",
+    "question": "The nurse is carrying out operation bed. Which action best matches this part of the procedure?",
     "options": [
       "Place protective dressing towel at top of the bed towards the sides",
       "Arrange other bed accessories by the bedside e.g. drip stand, bed rails, vital signs tray medication tray, suction machine, oxygen apparatus",
@@ -3055,10 +3055,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bed mat or draw mackintosh at the mid portion of the bed"
     ],
     "answer": "Place protective dressing towel at top of the bed towards the sides",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of OPERATION BED?",
+    "question": "To complete operation bed safely, which action should the nurse take at this point?",
     "options": [
       "Place a post anaesthetic tray by bed side",
       "Leave pillow on chair by the bed",
@@ -3066,10 +3066,10 @@ export const rgnBatch04: Procedure[] = [
       "Arrange items in order of use on a chair or heart table"
     ],
     "answer": "Leave pillow on chair by the bed",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of OPERATION BED?",
+    "question": "Which step should be performed now during operation bed?",
     "options": [
       "Leave pillow on chair by the bed",
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
@@ -3077,10 +3077,10 @@ export const rgnBatch04: Procedure[] = [
       "Place a post anaesthetic tray by bed side"
     ],
     "answer": "Place hot water bottles on the bed",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of OPERATION BED?",
+    "question": "Which nursing action is required at this stage of operation bed?",
     "options": [
       "Tuck the sheet evenly under the mattress at the top and bottom using enveloped or mitered corners",
       "Collect, arrange items on trolley and send to bedside",
@@ -3088,10 +3088,10 @@ export const rgnBatch04: Procedure[] = [
       "Spread blanket on bed"
     ],
     "answer": "Spread blanket on bed",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of OPERATION BED?",
+    "question": "The nurse is carrying out operation bed. Which action best matches this part of the procedure?",
     "options": [
       "Place top sheet on with the wrong side uppermost and turns back the bottom end",
       "Fold the top bed clothes at the open side in three parts over the bed for easy admission of patient",
@@ -3099,10 +3099,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull sheet tight so that there are no creases"
     ],
     "answer": "Place top sheet on with the wrong side uppermost and turns back the bottom end",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of OPERATION BED?",
+    "question": "To complete operation bed safely, which action should the nurse take at this point?",
     "options": [
       "Spread blanket on bed",
       "Fold the top bed clothes at the open side in three parts over the bed for easy admission of patient",
@@ -3110,10 +3110,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Fold the top bed clothes at the open side in three parts over the bed for easy admission of patient",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of OPERATION BED?",
+    "question": "Which step should be performed now during operation bed?",
     "options": [
       "Cover mackintosh with draw sheet and tuck in at the sides",
       "Place bottom sheet evenly on the bed",
@@ -3121,10 +3121,10 @@ export const rgnBatch04: Procedure[] = [
       "Spread blanket on bed"
     ],
     "answer": "Place a post anaesthetic tray by bed side",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of OPERATION BED?",
+    "question": "While providing operation bed, why must the nurse complete the prescribed observations at the specified intervals?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Place a post anaesthetic tray by bed side",
@@ -3132,10 +3132,10 @@ export const rgnBatch04: Procedure[] = [
       "Arrange other bed accessories by the bedside e.g. drip stand, bed rails, vital signs tray medication tray, suction machine, oxygen apparatus"
     ],
     "answer": "Arrange other bed accessories by the bedside e.g. drip stand, bed rails, vital signs tray medication tray, suction machine, oxygen apparatus",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Trended observations help detect deterioration early. Record the measurements, compare them with previous findings and escalate abnormal values or clinical concern according to local policy."
   },
   {
-    "question": "Which action is listed as step 17 of OPERATION BED?",
+    "question": "Before proceeding with operation bed, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Spread blanket on bed",
@@ -3143,7 +3143,7 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   }
 ],
   },
@@ -3218,7 +3218,7 @@ export const rgnBatch04: Procedure[] = [
     ],
     quiz: [
   {
-    "question": "Which action is listed as step 1 of FRACTURE BED?",
+    "question": "Before proceeding with fracture bed, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Place bottom sheet evenly on the bed",
@@ -3226,10 +3226,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 2 of FRACTURE BED?",
+    "question": "To complete fracture bed safely, which action should the nurse take at this point?",
     "options": [
       "Place top sheet on bed with the wrong side uppermost",
       "Collect, arranges items on trolley and send to bedside",
@@ -3237,10 +3237,10 @@ export const rgnBatch04: Procedure[] = [
       "Arrange items in order of use on chairs or heart table"
     ],
     "answer": "Collect, arranges items on trolley and send to bedside",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of FRACTURE BED?",
+    "question": "Which step should be performed now during fracture bed?",
     "options": [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
       "Remove trolley and chair or heart table",
@@ -3248,10 +3248,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck in sheets loosely at the sides"
     ],
     "answer": "Arrange items in order of use on chairs or heart table",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of FRACTURE BED?",
+    "question": "Which nursing action is required at this stage of fracture bed?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Fold over top bed clothing at the bottom end",
@@ -3259,10 +3259,10 @@ export const rgnBatch04: Procedure[] = [
       "Place fracture boards under the mattress to provide firm support and prevent sagging"
     ],
     "answer": "Place fracture boards under the mattress to provide firm support and prevent sagging",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of FRACTURE BED?",
+    "question": "The nurse is carrying out fracture bed. Which action best matches this part of the procedure?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Place pillows on bed with open ends away from the entrance",
@@ -3270,10 +3270,10 @@ export const rgnBatch04: Procedure[] = [
       "Fold over at the bottom and tuck in loosely"
     ],
     "answer": "Place bottom sheet evenly on the bed",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of FRACTURE BED?",
+    "question": "To complete fracture bed safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Pull sheet tight so that there are no creases",
@@ -3281,10 +3281,10 @@ export const rgnBatch04: Procedure[] = [
       "Place small mackintosh and dressing towel at where the fracture is located on the bed"
     ],
     "answer": "Pull sheet tight so that there are no creases",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of FRACTURE BED?",
+    "question": "Which step should be performed now during fracture bed?",
     "options": [
       "Place a foot board or sand bags at the foot end of the bed",
       "Place bed mat or draw mackintosh at the mid portion of the bed",
@@ -3292,10 +3292,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull sheet tight so that there are no creases"
     ],
     "answer": "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of FRACTURE BED?",
+    "question": "Which nursing action is required at this stage of fracture bed?",
     "options": [
       "Place top sheet on bed with the wrong side uppermost",
       "Place fracture boards under the mattress to provide firm support and prevent sagging",
@@ -3303,10 +3303,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull and tuck sheet at the sides to prevent creases"
     ],
     "answer": "Pull and tuck sheet at the sides to prevent creases",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of FRACTURE BED?",
+    "question": "The nurse is carrying out fracture bed. Which action best matches this part of the procedure?",
     "options": [
       "Place bed mat or draw mackintosh at the mid portion of the bed",
       "Remove trolley and chair or heart table",
@@ -3314,10 +3314,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect, arranges items on trolley and send to bedside"
     ],
     "answer": "Place bed mat or draw mackintosh at the mid portion of the bed",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of FRACTURE BED?",
+    "question": "To complete fracture bed safely, which action should the nurse take at this point?",
     "options": [
       "Place bed mat or draw mackintosh at the mid portion of the bed",
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
@@ -3325,10 +3325,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck in sheets loosely at the sides"
     ],
     "answer": "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of FRACTURE BED?",
+    "question": "Which step should be performed now during fracture bed?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Fold over top bed clothing at the bottom end",
@@ -3336,10 +3336,10 @@ export const rgnBatch04: Procedure[] = [
       "Fold over at the bottom and tuck in loosely"
     ],
     "answer": "Place small mackintosh and dressing towel at where the fracture is located on the bed",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of FRACTURE BED?",
+    "question": "Which nursing action is required at this stage of fracture bed?",
     "options": [
       "Perform hand hygiene",
       "Place pillows on bed with open ends away from the entrance",
@@ -3347,10 +3347,10 @@ export const rgnBatch04: Procedure[] = [
       "Slip the pillow cases on the pillows with an assistant"
     ],
     "answer": "Slip the pillow cases on the pillows with an assistant",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of FRACTURE BED?",
+    "question": "The nurse is carrying out fracture bed. Which action best matches this part of the procedure?",
     "options": [
       "Place pillows on bed with open ends away from the entrance",
       "Pull and tuck sheet at the sides to prevent creases",
@@ -3358,10 +3358,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides"
     ],
     "answer": "Place pillows on bed with open ends away from the entrance",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of FRACTURE BED?",
+    "question": "To complete fracture bed safely, which action should the nurse take at this point?",
     "options": [
       "Place a foot board or sand bags at the foot end of the bed",
       "Place top sheet on bed with the wrong side uppermost",
@@ -3369,10 +3369,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull sheet tight so that there are no creases"
     ],
     "answer": "Place top sheet on bed with the wrong side uppermost",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of FRACTURE BED?",
+    "question": "Which step should be performed now during fracture bed?",
     "options": [
       "Place pillows on bed with open ends away from the entrance",
       "Place fracture boards under the mattress to provide firm support and prevent sagging",
@@ -3380,10 +3380,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect, arranges items on trolley and send to bedside"
     ],
     "answer": "Fold over at the bottom and tuck in loosely",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of FRACTURE BED?",
+    "question": "Which nursing action is required at this stage of fracture bed?",
     "options": [
       "Place bed mat or draw mackintosh at the mid portion of the bed",
       "Remove trolley and chair or heart table",
@@ -3391,10 +3391,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bed cover and counterpane (if necessary) loosely over the bed"
     ],
     "answer": "Place bed cover and counterpane (if necessary) loosely over the bed",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of FRACTURE BED?",
+    "question": "The nurse is carrying out fracture bed. Which action best matches this part of the procedure?",
     "options": [
       "Fold over top bed clothing at the bottom end",
       "Place bed cover and counterpane (if necessary) loosely over the bed",
@@ -3402,10 +3402,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck in sheets loosely at the sides"
     ],
     "answer": "Fold over top bed clothing at the bottom end",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of FRACTURE BED?",
+    "question": "To complete fracture bed safely, which action should the nurse take at this point?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Place a foot board or sand bags at the foot end of the bed",
@@ -3413,10 +3413,10 @@ export const rgnBatch04: Procedure[] = [
       "Place top sheet on bed with the wrong side uppermost"
     ],
     "answer": "Place a foot board or sand bags at the foot end of the bed",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of FRACTURE BED?",
+    "question": "Which step should be performed now during fracture bed?",
     "options": [
       "Perform hand hygiene",
       "Slip the pillow cases on the pillows with an assistant",
@@ -3424,10 +3424,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides"
     ],
     "answer": "Tuck in sheets loosely at the sides",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of FRACTURE BED?",
+    "question": "Which nursing action is required at this stage of fracture bed?",
     "options": [
       "Fold over top bed clothing at the bottom end",
       "Pull and tuck sheet at the sides to prevent creases",
@@ -3435,10 +3435,10 @@ export const rgnBatch04: Procedure[] = [
       "Attach bed accessories if any"
     ],
     "answer": "Attach bed accessories if any",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of FRACTURE BED?",
+    "question": "The nurse is carrying out fracture bed. Which action best matches this part of the procedure?",
     "options": [
       "Remove trolley and chair or heart table",
       "Place fracture boards under the mattress to provide firm support and prevent sagging",
@@ -3446,10 +3446,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull sheet tight so that there are no creases"
     ],
     "answer": "Remove trolley and chair or heart table",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 22 of FRACTURE BED?",
+    "question": "Before proceeding with fracture bed, what infection-prevention action is required at this point?",
     "options": [
       "Place top sheet on bed with the wrong side uppermost",
       "Perform hand hygiene",
@@ -3457,7 +3457,7 @@ export const rgnBatch04: Procedure[] = [
       "Arrange items in order of use on chairs or heart table"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   }
 ],
   },
@@ -3531,7 +3531,7 @@ export const rgnBatch04: Procedure[] = [
     ],
     quiz: [
   {
-    "question": "Which action is listed as step 1 of DIVIDED BED?",
+    "question": "Before proceeding with divided bed, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Pull sheet tight so that there are no creases",
@@ -3539,10 +3539,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bed mat or draw mackintosh at the mid portion of the bed"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 2 of DIVIDED BED?",
+    "question": "To complete divided bed safely, which action should the nurse take at this point?",
     "options": [
       "Place the second top sheet at the lower half of the cradle and fold it over",
       "Collect, arranges items on trolley and send to bedside",
@@ -3550,10 +3550,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Collect, arranges items on trolley and send to bedside",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of DIVIDED BED?",
+    "question": "Which step should be performed now during divided bed?",
     "options": [
       "Place the bed cradle at the mid portion of the bed",
       "Collect, arranges items on trolley and send to bedside",
@@ -3561,10 +3561,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck in sides under the mattress loosely"
     ],
     "answer": "Arrange items in order of use on chairs or heart table",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of DIVIDED BED?",
+    "question": "Which nursing action is required at this stage of divided bed?",
     "options": [
       "Pull and tuck sheet at the sides to prevent creases",
       "Create an opening to aid observation of the body part",
@@ -3572,10 +3572,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bottom sheet evenly on the bed"
     ],
     "answer": "Place bottom sheet evenly on the bed",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of DIVIDED BED?",
+    "question": "The nurse is carrying out divided bed. Which action best matches this part of the procedure?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Place the first top sheet at the upper half of the cradle and fold it over",
@@ -3583,10 +3583,10 @@ export const rgnBatch04: Procedure[] = [
       "Ensure that the two sections of the top bed clothings overlap each other"
     ],
     "answer": "Pull sheet tight so that there are no creases",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of DIVIDED BED?",
+    "question": "To complete divided bed safely, which action should the nurse take at this point?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners",
@@ -3594,10 +3594,10 @@ export const rgnBatch04: Procedure[] = [
       "Place pillows on bed with open ends away from the entrance"
     ],
     "answer": "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of DIVIDED BED?",
+    "question": "Which step should be performed now during divided bed?",
     "options": [
       "Remove trolley and chair or heart table",
       "Slip the pillow cases on the pillows with an assistant",
@@ -3605,10 +3605,10 @@ export const rgnBatch04: Procedure[] = [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides"
     ],
     "answer": "Pull and tuck sheet at the sides to prevent creases",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of DIVIDED BED?",
+    "question": "Which nursing action is required at this stage of divided bed?",
     "options": [
       "Place counterpane (if necessary) in the same fashion as the top sheets",
       "Pull and tuck sheet at the sides to prevent creases",
@@ -3616,10 +3616,10 @@ export const rgnBatch04: Procedure[] = [
       "Place bed mat or draw mackintosh at the mid portion of the bed"
     ],
     "answer": "Place bed mat or draw mackintosh at the mid portion of the bed",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of DIVIDED BED?",
+    "question": "The nurse is carrying out divided bed. Which action best matches this part of the procedure?",
     "options": [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
       "Arrange items in order of use on chairs or heart table",
@@ -3627,10 +3627,10 @@ export const rgnBatch04: Procedure[] = [
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners"
     ],
     "answer": "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of DIVIDED BED?",
+    "question": "To complete divided bed safely, which action should the nurse take at this point?",
     "options": [
       "Place the first top sheet at the upper half of the cradle and fold it over",
       "Place extra mackintosh and dressing towel or bedlinen at the site where the injury is located",
@@ -3638,10 +3638,10 @@ export const rgnBatch04: Procedure[] = [
       "Collect, arranges items on trolley and send to bedside"
     ],
     "answer": "Place extra mackintosh and dressing towel or bedlinen at the site where the injury is located",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of DIVIDED BED?",
+    "question": "Which step should be performed now during divided bed?",
     "options": [
       "Cover mackintosh or bed mat with draw sheet and tuck in at the sides",
       "Perform hand hygiene",
@@ -3649,10 +3649,10 @@ export const rgnBatch04: Procedure[] = [
       "Create an opening to aid observation of the body part"
     ],
     "answer": "Place the bed cradle at the mid portion of the bed",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of DIVIDED BED?",
+    "question": "Which nursing action is required at this stage of divided bed?",
     "options": [
       "Pull sheet tight so that there are no creases",
       "Ensure that the two sections of the top bed clothings overlap each other",
@@ -3660,10 +3660,10 @@ export const rgnBatch04: Procedure[] = [
       "Slip the pillow cases on the pillows with an assistant"
     ],
     "answer": "Slip the pillow cases on the pillows with an assistant",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of DIVIDED BED?",
+    "question": "The nurse is carrying out divided bed. Which action best matches this part of the procedure?",
     "options": [
       "Place pillows on bed with open ends away from the entrance",
       "Slip the pillow cases on the pillows with an assistant",
@@ -3671,10 +3671,10 @@ export const rgnBatch04: Procedure[] = [
       "Place counterpane (if necessary) in the same fashion as the top sheets"
     ],
     "answer": "Place pillows on bed with open ends away from the entrance",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of DIVIDED BED?",
+    "question": "To complete divided bed safely, which action should the nurse take at this point?",
     "options": [
       "Arrange items in order of use on chairs or heart table",
       "Place the first top sheet at the upper half of the cradle and fold it over",
@@ -3682,10 +3682,10 @@ export const rgnBatch04: Procedure[] = [
       "Place the bed cradle at the mid portion of the bed"
     ],
     "answer": "Place the first top sheet at the upper half of the cradle and fold it over",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of DIVIDED BED?",
+    "question": "Which step should be performed now during divided bed?",
     "options": [
       "Tuck in sides under the mattress loosely",
       "Place extra mackintosh and dressing towel or bedlinen at the site where the injury is located",
@@ -3693,10 +3693,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull and tuck sheet at the sides to prevent creases"
     ],
     "answer": "Place the second top sheet at the lower half of the cradle and fold it over",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of DIVIDED BED?",
+    "question": "Which nursing action is required at this stage of divided bed?",
     "options": [
       "Place the first top sheet at the upper half of the cradle and fold it over",
       "Tuck the bottom sheet evenly under the mattress at the top and bottom using mitered or enveloped corners",
@@ -3704,10 +3704,10 @@ export const rgnBatch04: Procedure[] = [
       "Place counterpane (if necessary) in the same fashion as the top sheets"
     ],
     "answer": "Place counterpane (if necessary) in the same fashion as the top sheets",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of DIVIDED BED?",
+    "question": "The nurse is carrying out divided bed. Which action best matches this part of the procedure?",
     "options": [
       "Ensure that the two sections of the top bed clothings overlap each other",
       "Collect, arranges items on trolley and send to bedside",
@@ -3715,10 +3715,10 @@ export const rgnBatch04: Procedure[] = [
       "Pull sheet tight so that there are no creases"
     ],
     "answer": "Ensure that the two sections of the top bed clothings overlap each other",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of DIVIDED BED?",
+    "question": "To complete divided bed safely, which action should the nurse take at this point?",
     "options": [
       "Slip the pillow cases on the pillows with an assistant",
       "Create an opening to aid observation of the body part",
@@ -3726,10 +3726,10 @@ export const rgnBatch04: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Create an opening to aid observation of the body part",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of DIVIDED BED?",
+    "question": "Which step should be performed now during divided bed?",
     "options": [
       "Place bed mat or draw mackintosh at the mid portion of the bed",
       "Remove trolley and chair or heart table",
@@ -3737,10 +3737,10 @@ export const rgnBatch04: Procedure[] = [
       "Place counterpane (if necessary) in the same fashion as the top sheets"
     ],
     "answer": "Tuck in sides under the mattress loosely",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of DIVIDED BED?",
+    "question": "Which nursing action is required at this stage of divided bed?",
     "options": [
       "Place bottom sheet evenly on the bed",
       "Place the second top sheet at the lower half of the cradle and fold it over",
@@ -3748,10 +3748,10 @@ export const rgnBatch04: Procedure[] = [
       "Remove trolley and chair or heart table"
     ],
     "answer": "Remove trolley and chair or heart table",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 21 of DIVIDED BED?",
+    "question": "Before proceeding with divided bed, what infection-prevention action is required at this point?",
     "options": [
       "Perform hand hygiene",
       "Slip the pillow cases on the pillows with an assistant",
@@ -3759,7 +3759,7 @@ export const rgnBatch04: Procedure[] = [
       "Place the second top sheet at the lower half of the cradle and fold it over"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   }
 ],
   },
