@@ -3,51 +3,48 @@ import type { Procedure } from "../../procedureTypes";
 export const rgnBatch02: Procedure[] = [
   {
     id: "rgn-011",
-    title: "Educating a Patient on Medication Prior to Discharge",
+    title: "EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Education provided to a patient and, where appropriate, relatives or significant others about prescribed medication before discharge to promote safe and effective medication use.",
-    purpose: [
-      "Promote safe and effective use of discharge medications.",
-      "Ensure the patient understands the purpose, dose, frequency and route of each medication.",
-      "Improve adherence to the prescribed treatment regimen.",
-      "Reduce medication-related errors after discharge.",
-      "Promote continuity of care after discharge."
-    ],
+      "This is an ongoing interaction between the patient and the nurse, through which the patient's condition and its management are discussed into details using clear and simple language. This procedure is very essential in the health care process as it provides the patient the opportunity to know about the possible diagnoses, treatment and prognoses.",
+    purpose: [],
     indications: [
       "Patient being discharged with prescribed medication.",
       "Patient or caregiver requiring education about medication administration.",
       "Patient requiring demonstration of a medication administration technique."
     ],
     equipment: [
-      "Patient's medication chart/prescription (Manual or electronic)",
-      "Patient's medication(s)",
-      "Pamphlets/information leaflets (if available)",
-      "Chair"
-    ],
+  "Patient’s folder (Manual or electronic)",
+  "Treatment sheet (Manual or electronic)",
+  "Chair",
+  "Care devices/gadgets (if any)",
+  "Pamphlets/source of readable information"
+],
     steps: [
-      "Confirm patient's discharge medication against prescription/chart.",
-      "Establish rapport with patient.",
-      "Explain the need for medication education to patient.",
-      "Involve relative or significant other if any.",
-      "Ensure privacy and a relaxed environment.",
-      "Assist patient into a comfortable position.",
-      "Show and name each medication to the patient.",
-      "Explain the purpose of each medication.",
-      "Explain the dosage, frequency and route of administration of each medication.",
-      "Explain the duration of treatment for each medication.",
-      "Explain possible side effects to look out for and what to do if they occur.",
-      "Explain any special instructions e.g. taking with food, avoiding certain substances, storage conditions.",
-      "Emphasize the importance of completing the full course of medication (e.g. antibiotics).",
-      "Explain the consequences of missed doses or non-compliance.",
-      "Demonstrate correct administration technique where necessary (e.g. inhalers, insulin).",
-      "Allow patient/relative to return demonstrate where applicable.",
-      "Provide patient with written information/pamphlets if available.",
-      "Allow patient and relative to ask questions for clarity.",
-      "Ensure patient understands when to return for review or refill.",
-      "Thank patient and relatives for their cooperation.",
-      "Document education given and patient's level of understanding."
-    ],
+  "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
+  "Establish rapport with the patient (Refer to steps)",
+  "Explain the need for education to patient",
+  "Involve relatives or significant other if any",
+  "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
+  "Assist patient into a desirable position",
+  "Sit comfortably by the patient",
+  "Identify the suitable language for the patient",
+  "Find patient’s level or awareness of condition",
+  "Build on what the patient knows about the condition with scientific data of condition",
+  "Find patient’s level or awareness on possible management options",
+  "Explain to patient the rationale for the various investigations and treatment adopted",
+  "Explain the possible outcome of condition and prognoses",
+  "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
+  "Ensure patient and significant other understands the teaching and clarify where need be",
+  "Allow patient and significant other to ask questions for clarity",
+  "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
+  "Provide patient with clear simple pamphlets or other sources of readable information",
+  "Thank patient and relatives for the cooperation",
+  "Document procedure and report to appropriate officer"
+],
     precautions: [
       "Verify medications against the current prescription before providing education.",
       "Use language appropriate to the patient's level of understanding.",
@@ -59,145 +56,258 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.youtube.com/watch?v=QU7vFB7IGdk",
     quiz: [
-      {
-        question: "What should the nurse do first when educating a patient about discharge medications?",
-        options: [
-          "Give the patient the medication",
-          "Confirm the discharge medication against the prescription/chart",
-          "Ask the patient to leave",
-          "Discuss unrelated health problems"
-        ],
-        answer: "Confirm the discharge medication against the prescription/chart"
-      },
-      {
-        question: "Why should the nurse explain the purpose of each medication?",
-        options: [
-          "To increase the number of medications",
-          "To help the patient understand why each medication is prescribed",
-          "To replace the prescription",
-          "To avoid documentation"
-        ],
-        answer: "To help the patient understand why each medication is prescribed"
-      },
-      {
-        question: "Which teaching method helps confirm that the patient understands the instructions?",
-        options: [
-          "Teach-back or return demonstration",
-          "Giving instructions without questions",
-          "Speaking only to the relative",
-          "Using complex medical terminology"
-        ],
-        answer: "Teach-back or return demonstration"
-      },
-      {
-        question: "Which information should be included when teaching about a medication?",
-        options: [
-          "Dose, frequency and route",
-          "Only the colour of the tablet",
-          "Only the price",
-          "Only the manufacturer's name"
-        ],
-        answer: "Dose, frequency and route"
-      },
-      {
-        question: "Why should possible side effects be discussed?",
-        options: [
-          "To frighten the patient",
-          "So the patient knows what to look for and what action to take",
-          "To encourage missed doses",
-          "To replace follow-up"
-        ],
-        answer: "So the patient knows what to look for and what action to take"
-      },
-      {
-        question: "What should the nurse do if the patient demonstrates incorrect inhaler technique?",
-        options: [
-          "Ignore the error",
-          "Correct the technique and allow the patient to demonstrate again",
-          "Discontinue all medication",
-          "Send the patient home immediately"
-        ],
-        answer: "Correct the technique and allow the patient to demonstrate again"
-      },
-      {
-        question: "Which information may be included as a special medication instruction?",
-        options: [
-          "Whether the medication should be taken with food",
-          "The nurse's personal preference",
-          "The patient's favourite meal",
-          "The ward's visiting hours only"
-        ],
-        answer: "Whether the medication should be taken with food"
-      },
-      {
-        question: "What should the nurse encourage the patient to do when unsure about the medication?",
-        options: [
-          "Guess the dose",
-          "Ask questions for clarification",
-          "Skip all doses",
-          "Double the next dose"
-        ],
-        answer: "Ask questions for clarification"
-      },
-      {
-        question: "Why should written information be provided when available?",
-        options: [
-          "It can reinforce verbal teaching after discharge",
-          "It replaces all verbal education",
-          "It prevents the patient from asking questions",
-          "It is only for hospital staff"
-        ],
-        answer: "It can reinforce verbal teaching after discharge"
-      },
-      {
-        question: "What should be documented after medication education?",
-        options: [
-          "Only the medication colour",
-          "The education given and patient's level of understanding",
-          "Only the patient's meal",
-          "Nothing"
-        ],
-        answer: "The education given and patient's level of understanding"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
+      "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
+      "Allow patient and significant other to ask questions for clarity",
+      "Identify the suitable language for the patient"
+    ],
+    "answer": "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Ensure patient and significant other understands the teaching and clarify where need be",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain to patient the rationale for the various investigations and treatment adopted",
+      "Involve relatives or significant other if any"
+    ],
+    "answer": "Establish rapport with the patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Find patient’s level or awareness on possible management options",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain the need for education to patient",
+      "Thank patient and relatives for the cooperation"
+    ],
+    "answer": "Explain the need for education to patient",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Sit comfortably by the patient",
+      "Provide patient with clear simple pamphlets or other sources of readable information",
+      "Build on what the patient knows about the condition with scientific data of condition",
+      "Involve relatives or significant other if any"
+    ],
+    "answer": "Involve relatives or significant other if any",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
+      "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
+      "Assist patient into a desirable position",
+      "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt"
+    ],
+    "answer": "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Involve relatives or significant other if any",
+      "Assist patient into a desirable position",
+      "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
+      "Explain the possible outcome of condition and prognoses"
+    ],
+    "answer": "Assist patient into a desirable position",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Document procedure and report to appropriate officer",
+      "Explain to patient the rationale for the various investigations and treatment adopted",
+      "Sit comfortably by the patient",
+      "Find patient’s level or awareness of condition"
+    ],
+    "answer": "Sit comfortably by the patient",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Allow patient and significant other to ask questions for clarity",
+      "Sit comfortably by the patient",
+      "Thank patient and relatives for the cooperation",
+      "Identify the suitable language for the patient"
+    ],
+    "answer": "Identify the suitable language for the patient",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Find patient’s level or awareness of condition",
+      "Explain the need for education to patient",
+      "Ensure patient and significant other understands the teaching and clarify where need be",
+      "Assist patient into a desirable position"
+    ],
+    "answer": "Find patient’s level or awareness of condition",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
+      "Build on what the patient knows about the condition with scientific data of condition",
+      "Find patient’s level or awareness on possible management options",
+      "Establish rapport with the patient (Refer to steps)"
+    ],
+    "answer": "Build on what the patient knows about the condition with scientific data of condition",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Find patient’s level or awareness of condition",
+      "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
+      "Find patient’s level or awareness on possible management options",
+      "Provide patient with clear simple pamphlets or other sources of readable information"
+    ],
+    "answer": "Find patient’s level or awareness on possible management options",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
+      "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
+      "Identify the suitable language for the patient",
+      "Explain to patient the rationale for the various investigations and treatment adopted"
+    ],
+    "answer": "Explain to patient the rationale for the various investigations and treatment adopted",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Explain the possible outcome of condition and prognoses",
+      "Explain to patient the rationale for the various investigations and treatment adopted",
+      "Involve relatives or significant other if any",
+      "Allow patient and significant other to ask questions for clarity"
+    ],
+    "answer": "Explain the possible outcome of condition and prognoses",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Explain the need for education to patient",
+      "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
+      "Document procedure and report to appropriate officer",
+      "Find patient’s level or awareness on possible management options"
+    ],
+    "answer": "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Thank patient and relatives for the cooperation",
+      "Build on what the patient knows about the condition with scientific data of condition",
+      "Ensure patient and significant other understands the teaching and clarify where need be",
+      "Sit comfortably by the patient"
+    ],
+    "answer": "Ensure patient and significant other understands the teaching and clarify where need be",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
+      "Assist patient into a desirable position",
+      "Provide patient with clear simple pamphlets or other sources of readable information",
+      "Allow patient and significant other to ask questions for clarity"
+    ],
+    "answer": "Allow patient and significant other to ask questions for clarity",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain the possible outcome of condition and prognoses",
+      "Ensure enabling and relaxed environment to maintain privacy and individuality of patient"
+    ],
+    "answer": "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Explain to patient the rationale for the various investigations and treatment adopted",
+      "Provide patient with clear simple pamphlets or other sources of readable information",
+      "Find patient’s level or awareness of condition",
+      "Confirm patient’s diagnoses against the patient’s record (manually or electronic)"
+    ],
+    "answer": "Provide patient with clear simple pamphlets or other sources of readable information",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Identify the suitable language for the patient",
+      "Document procedure and report to appropriate officer",
+      "Thank patient and relatives for the cooperation",
+      "Allow patient and significant other to ask questions for clarity"
+    ],
+    "answer": "Thank patient and relatives for the cooperation",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "options": [
+      "Involve relatives or significant other if any",
+      "Ensure patient and significant other understands the teaching and clarify where need be",
+      "Sit comfortably by the patient",
+      "Document procedure and report to appropriate officer"
+    ],
+    "answer": "Document procedure and report to appropriate officer",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-012",
-    title: "Explanation of Procedure to Patient/Client and Family",
+    title: "EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Communication with the patient/client and family to explain a proposed procedure, including its purpose, process, expected effects, benefits and possible risks before appropriate consent is obtained.",
-    purpose: [
-      "Help the patient/client and family understand the proposed procedure.",
-      "Promote informed participation in care.",
-      "Reduce anxiety and fear.",
-      "Provide an opportunity for questions and clarification.",
-      "Support appropriate consent and cooperation."
-    ],
+      "It is the act of describing a procedure, an action or task that will be carried out for a patient/client and or the family during the delivery of care.",
+    purpose: [],
     indications: [
       "Before performing a nursing or clinical procedure.",
       "When a patient/client or family requires clarification about a procedure.",
       "When informed participation and consent are required."
     ],
-    equipment: [],
+    equipment: [
+  "N/A"
+],
     steps: [
-      "Approach patient/client in a friendly manner.",
-      "Introduce self to patient/client and family.",
-      "Confirm identity of patient/client.",
-      "Explain purpose of the procedure to be performed.",
-      "Explain the procedure in simple and clear terms devoid of medical jargon.",
-      "Explain how the procedure will be carried out step by step.",
-      "Explain the expected duration of the procedure.",
-      "Explain any discomfort or sensations the patient/client may experience.",
-      "Explain the expected benefits of the procedure.",
-      "Explain any possible risks or complications.",
-      "Answer any questions from patient/client and family.",
-      "Obtain verbal or written consent as appropriate.",
-      "Reassure patient/client throughout the explanation.",
-      "Thank patient/client and family for their attention and cooperation.",
-      "Document that explanation was given and patient's/family's response."
-    ],
+  "Inform patient/clients about the specific procedure and its purpose",
+  "Find out patient/clients level of knowledge on the intended procedure",
+  "Explain to patient/client what he/she should expect from the nurses",
+  "Explain the steps of the procedure in clear and simple language",
+  "Explain to patient/client the level of invasion or pain (if any)",
+  "Outline the actions that will be taken to reduce pain (if any)",
+  "Explain to patient/client his/her role during and after the procedure",
+  "Allow patient/client to ask questions for clarity",
+  "Assess patient/clients level of willingness to undergo the specific procedure"
+],
     precautions: [
       "Maintain privacy and confidentiality.",
       "Use simple language appropriate to the patient's level of understanding.",
@@ -209,149 +319,149 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.youtube.com/watch?v=eNIbpEAVk4g",
     quiz: [
-      {
-        question: "What is an important first communication action when approaching the patient?",
-        options: [
-          "Introduce yourself",
-          "Begin the procedure immediately",
-          "Leave the patient alone",
-          "Ask the family to explain the procedure"
-        ],
-        answer: "Introduce yourself"
-      },
-      {
-        question: "Why should medical jargon be avoided?",
-        options: [
-          "It makes documentation impossible",
-          "It may make the explanation difficult for the patient to understand",
-          "It is always illegal",
-          "It increases procedure time"
-        ],
-        answer: "It may make the explanation difficult for the patient to understand"
-      },
-      {
-        question: "Which information should be explained before a procedure?",
-        options: [
-          "Purpose, process, expected effects and possible risks",
-          "Only the nurse's name",
-          "Only the procedure cost",
-          "Only the patient's diagnosis"
-        ],
-        answer: "Purpose, process, expected effects and possible risks"
-      },
-      {
-        question: "Why should the expected duration of the procedure be explained?",
-        options: [
-          "To help the patient know what to expect",
-          "To avoid obtaining consent",
-          "To shorten the procedure",
-          "To replace assessment"
-        ],
-        answer: "To help the patient know what to expect"
-      },
-      {
-        question: "What should the nurse do when the patient asks a question?",
-        options: [
-          "Ignore it",
-          "Answer or clarify it appropriately",
-          "Tell the patient not to ask questions",
-          "Ask another patient to answer"
-        ],
-        answer: "Answer or clarify it appropriately"
-      },
-      {
-        question: "What is the purpose of reassurance during the explanation?",
-        options: [
-          "To reduce unnecessary anxiety",
-          "To prevent questions",
-          "To avoid consent",
-          "To speed up documentation"
-        ],
-        answer: "To reduce unnecessary anxiety"
-      },
-      {
-        question: "What should be obtained as appropriate before the procedure?",
-        options: [
-          "Consent",
-          "A meal",
-          "A visitor's permission",
-          "A discharge summary"
-        ],
-        answer: "Consent"
-      },
-      {
-        question: "Why should the patient's identity be confirmed?",
-        options: [
-          "To ensure the explanation and procedure relate to the correct patient",
-          "To determine the patient's occupation",
-          "To select the patient's meal",
-          "To calculate hospital fees"
-        ],
-        answer: "To ensure the explanation and procedure relate to the correct patient"
-      },
-      {
-        question: "Which communication approach is most appropriate?",
-        options: [
-          "Simple and clear language",
-          "Complex technical language",
-          "Speaking only to relatives",
-          "Giving no explanation"
-        ],
-        answer: "Simple and clear language"
-      },
-      {
-        question: "What should be documented after the explanation?",
-        options: [
-          "That the explanation was given and the patient's/family's response",
-          "Only the nurse's name",
-          "Only the room number",
-          "Nothing"
-        ],
-        answer: "That the explanation was given and the patient's/family's response"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Inform patient/clients about the specific procedure and its purpose",
+      "Explain to patient/client the level of invasion or pain (if any)",
+      "Allow patient/client to ask questions for clarity",
+      "Explain to patient/client what he/she should expect from the nurses"
+    ],
+    "answer": "Inform patient/clients about the specific procedure and its purpose",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Inform patient/clients about the specific procedure and its purpose",
+      "Find out patient/clients level of knowledge on the intended procedure",
+      "Explain the steps of the procedure in clear and simple language",
+      "Explain to patient/client his/her role during and after the procedure"
+    ],
+    "answer": "Find out patient/clients level of knowledge on the intended procedure",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Outline the actions that will be taken to reduce pain (if any)",
+      "Assess patient/clients level of willingness to undergo the specific procedure",
+      "Explain to patient/client what he/she should expect from the nurses",
+      "Find out patient/clients level of knowledge on the intended procedure"
+    ],
+    "answer": "Explain to patient/client what he/she should expect from the nurses",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Inform patient/clients about the specific procedure and its purpose",
+      "Explain to patient/client the level of invasion or pain (if any)",
+      "Allow patient/client to ask questions for clarity",
+      "Explain the steps of the procedure in clear and simple language"
+    ],
+    "answer": "Explain the steps of the procedure in clear and simple language",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Explain to patient/client the level of invasion or pain (if any)",
+      "Assess patient/clients level of willingness to undergo the specific procedure",
+      "Explain to patient/client what he/she should expect from the nurses",
+      "Explain to patient/client his/her role during and after the procedure"
+    ],
+    "answer": "Explain to patient/client the level of invasion or pain (if any)",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Explain to patient/client the level of invasion or pain (if any)",
+      "Outline the actions that will be taken to reduce pain (if any)",
+      "Allow patient/client to ask questions for clarity",
+      "Find out patient/clients level of knowledge on the intended procedure"
+    ],
+    "answer": "Outline the actions that will be taken to reduce pain (if any)",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Inform patient/clients about the specific procedure and its purpose",
+      "Explain the steps of the procedure in clear and simple language",
+      "Explain to patient/client his/her role during and after the procedure",
+      "Outline the actions that will be taken to reduce pain (if any)"
+    ],
+    "answer": "Explain to patient/client his/her role during and after the procedure",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Explain to patient/client the level of invasion or pain (if any)",
+      "Assess patient/clients level of willingness to undergo the specific procedure",
+      "Explain to patient/client what he/she should expect from the nurses",
+      "Allow patient/client to ask questions for clarity"
+    ],
+    "answer": "Allow patient/client to ask questions for clarity",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "options": [
+      "Assess patient/clients level of willingness to undergo the specific procedure",
+      "Explain the steps of the procedure in clear and simple language",
+      "Explain to patient/client his/her role during and after the procedure",
+      "Find out patient/clients level of knowledge on the intended procedure"
+    ],
+    "answer": "Assess patient/clients level of willingness to undergo the specific procedure",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-013",
-    title: "Discharge Planning",
+    title: "DISCHARGE PLANNING",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "A coordinated process of assessing and arranging the patient's ongoing care, support, education, referrals and follow-up needs in preparation for discharge.",
-    purpose: [
-      "Promote continuity of care after discharge.",
-      "Identify ongoing patient and caregiver needs.",
-      "Prepare the patient and family for safe care at home.",
-      "Coordinate multidisciplinary and community services.",
-      "Reduce avoidable complications and readmissions."
-    ],
+      "These are activities organized during the hospitalization phase of the care of patient towards his/her return to the home or community to maintain his/her health status and prevent further ill-health. Discharge planning is initiated on the day of admission and co-ordinated by the entire health team.",
+    purpose: [],
     indications: [
       "Patient admitted to hospital and likely to require discharge planning.",
       "Patient with ongoing care needs after discharge.",
       "Patient requiring community services, equipment or follow-up."
     ],
     equipment: [
-      "Patient's medical records (Manual or electronic)",
-      "Discharge planning form/checklist (Manual or electronic)",
-      "Referral forms (if applicable)"
-    ],
+  "Patient’s folder",
+  "Treatment chart (manual or electronic)"
+],
     steps: [
-      "Begin discharge planning early, preferably on admission.",
-      "Assess patient's ongoing care needs post-discharge.",
-      "Identify patient's home and social support systems.",
-      "Involve patient and family in the planning process.",
-      "Liaise with the multidisciplinary team (physiotherapist, dietitian, social worker etc.) as needed.",
-      "Assess patient's and caregiver's ability to manage care at home.",
-      "Identify any equipment or home modifications needed.",
-      "Arrange for necessary referrals to community health services if required.",
-      "Plan for follow-up appointments and reviews.",
-      "Educate patient and family on condition, medication and home care.",
-      "Assess patient's understanding of the discharge plan.",
-      "Document the discharge plan in patient's notes.",
-      "Communicate discharge plan to all members of the healthcare team.",
-      "Review and update discharge plan as patient's condition changes.",
-      "Confirm readiness for discharge with the medical team."
-    ],
+  "Review patient assessment data and admission notes",
+  "Estimate possible duration of hospitalization with health team members",
+  "Discuss with the unit staff patient treatment plan for nursing care",
+  "Identify with health team issues that has to be discussed with patient about his/her treatment and after care",
+  "Establish rapport with patient and relatives (Refer to steps)",
+  "Educate patient and relatives on the disease condition and its management",
+  "Discuss with patient and family the possible duration of hospitalization",
+  "Encourage them to express their fears and ask questions",
+  "Involve patient and relatives in the care process",
+  "Obtain signed referral forms to specific therapist if applicable",
+  "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary",
+  "Public Health Nurse",
+  "Nutritionist",
+  "Social Worker",
+  "Physiotherapist",
+  "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge",
+  "Discuss plan with patient and relatives discharge",
+  "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any",
+  "Document circumstance of discharge.",
+  "Give emotional support all through procedure and provide patient with necessary explanations"
+],
     precautions: [
       "Begin planning early.",
       "Involve the patient and appropriate family members.",
@@ -363,154 +473,270 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://my.clevelandclinic.org/podcasts/nurse-essentials/planning-for-safe-patient-discharges",
     quiz: [
-      {
-        question: "When should discharge planning ideally begin?",
-        options: [
-          "Only on the day of discharge",
-          "Preferably on admission",
-          "After the patient leaves",
-          "Only after complications occur"
-        ],
-        answer: "Preferably on admission"
-      },
-      {
-        question: "What is an important part of discharge planning?",
-        options: [
-          "Assessing ongoing care needs",
-          "Ignoring the home environment",
-          "Avoiding family involvement",
-          "Cancelling follow-up"
-        ],
-        answer: "Assessing ongoing care needs"
-      },
-      {
-        question: "Who should be involved in discharge planning?",
-        options: [
-          "Only the nurse",
-          "Patient, family/caregiver and relevant healthcare professionals",
-          "Only the hospital administrator",
-          "Only the patient's visitor"
-        ],
-        answer: "Patient, family/caregiver and relevant healthcare professionals"
-      },
-      {
-        question: "Why should the patient's home and social support be assessed?",
-        options: [
-          "To determine whether the planned care can be supported after discharge",
-          "To determine the patient's occupation",
-          "To calculate the patient's age",
-          "To replace medical assessment"
-        ],
-        answer: "To determine whether the planned care can be supported after discharge"
-      },
-      {
-        question: "Which professional may be involved in discharge planning?",
-        options: [
-          "Physiotherapist",
-          "Only the receptionist",
-          "Only the security officer",
-          "Only the cleaner"
-        ],
-        answer: "Physiotherapist"
-      },
-      {
-        question: "What should be assessed regarding the caregiver?",
-        options: [
-          "Ability to manage the patient's care at home",
-          "Favourite food",
-          "Personal hobbies",
-          "Preferred uniform"
-        ],
-        answer: "Ability to manage the patient's care at home"
-      },
-      {
-        question: "What should happen to the discharge plan when the patient's condition changes?",
-        options: [
-          "It should be reviewed and updated",
-          "It should be discarded",
-          "It should never be changed",
-          "It should be hidden"
-        ],
-        answer: "It should be reviewed and updated"
-      },
-      {
-        question: "Why are referrals arranged before discharge when needed?",
-        options: [
-          "To support continuity of care",
-          "To delay treatment",
-          "To replace medication",
-          "To avoid documentation"
-        ],
-        answer: "To support continuity of care"
-      },
-      {
-        question: "What should the nurse assess after educating the patient about the discharge plan?",
-        options: [
-          "The patient's understanding",
-          "The patient's favourite colour",
-          "The patient's occupation only",
-          "The patient's room preference"
-        ],
-        answer: "The patient's understanding"
-      },
-      {
-        question: "Who should receive relevant information about the discharge plan?",
-        options: [
-          "Appropriate members of the healthcare team",
-          "Only unrelated visitors",
-          "Only other patients",
-          "Nobody"
-        ],
-        answer: "Appropriate members of the healthcare team"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of DISCHARGE PLANNING?",
+    "options": [
+      "Review patient assessment data and admission notes",
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge",
+      "Encourage them to express their fears and ask questions"
+    ],
+    "answer": "Review patient assessment data and admission notes",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of DISCHARGE PLANNING?",
+    "options": [
+      "Physiotherapist",
+      "Estimate possible duration of hospitalization with health team members",
+      "Public Health Nurse",
+      "Identify with health team issues that has to be discussed with patient about his/her treatment and after care"
+    ],
+    "answer": "Estimate possible duration of hospitalization with health team members",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of DISCHARGE PLANNING?",
+    "options": [
+      "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary",
+      "Estimate possible duration of hospitalization with health team members",
+      "Discuss with the unit staff patient treatment plan for nursing care",
+      "Document circumstance of discharge."
+    ],
+    "answer": "Discuss with the unit staff patient treatment plan for nursing care",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of DISCHARGE PLANNING?",
+    "options": [
+      "Discuss with patient and family the possible duration of hospitalization",
+      "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any",
+      "Obtain signed referral forms to specific therapist if applicable",
+      "Identify with health team issues that has to be discussed with patient about his/her treatment and after care"
+    ],
+    "answer": "Identify with health team issues that has to be discussed with patient about his/her treatment and after care",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of DISCHARGE PLANNING?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Social Worker",
+      "Educate patient and relatives on the disease condition and its management",
+      "Discuss plan with patient and relatives discharge"
+    ],
+    "answer": "Establish rapport with patient and relatives (Refer to steps)",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of DISCHARGE PLANNING?",
+    "options": [
+      "Identify with health team issues that has to be discussed with patient about his/her treatment and after care",
+      "Educate patient and relatives on the disease condition and its management",
+      "Review patient assessment data and admission notes",
+      "Nutritionist"
+    ],
+    "answer": "Educate patient and relatives on the disease condition and its management",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of DISCHARGE PLANNING?",
+    "options": [
+      "Give emotional support all through procedure and provide patient with necessary explanations",
+      "Public Health Nurse",
+      "Discuss with patient and family the possible duration of hospitalization",
+      "Involve patient and relatives in the care process"
+    ],
+    "answer": "Discuss with patient and family the possible duration of hospitalization",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of DISCHARGE PLANNING?",
+    "options": [
+      "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge",
+      "Discuss with patient and family the possible duration of hospitalization",
+      "Document circumstance of discharge.",
+      "Encourage them to express their fears and ask questions"
+    ],
+    "answer": "Encourage them to express their fears and ask questions",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of DISCHARGE PLANNING?",
+    "options": [
+      "Involve patient and relatives in the care process",
+      "Discuss with the unit staff patient treatment plan for nursing care",
+      "Physiotherapist",
+      "Educate patient and relatives on the disease condition and its management"
+    ],
+    "answer": "Involve patient and relatives in the care process",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of DISCHARGE PLANNING?",
+    "options": [
+      "Social Worker",
+      "Obtain signed referral forms to specific therapist if applicable",
+      "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary",
+      "Estimate possible duration of hospitalization with health team members"
+    ],
+    "answer": "Obtain signed referral forms to specific therapist if applicable",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of DISCHARGE PLANNING?",
+    "options": [
+      "Involve patient and relatives in the care process",
+      "Review patient assessment data and admission notes",
+      "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary",
+      "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any"
+    ],
+    "answer": "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of DISCHARGE PLANNING?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Discuss plan with patient and relatives discharge",
+      "Encourage them to express their fears and ask questions",
+      "Public Health Nurse"
+    ],
+    "answer": "Public Health Nurse",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of DISCHARGE PLANNING?",
+    "options": [
+      "Nutritionist",
+      "Public Health Nurse",
+      "Identify with health team issues that has to be discussed with patient about his/her treatment and after care",
+      "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge"
+    ],
+    "answer": "Nutritionist",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of DISCHARGE PLANNING?",
+    "options": [
+      "Discuss with the unit staff patient treatment plan for nursing care",
+      "Social Worker",
+      "Give emotional support all through procedure and provide patient with necessary explanations",
+      "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary"
+    ],
+    "answer": "Social Worker",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of DISCHARGE PLANNING?",
+    "options": [
+      "Document circumstance of discharge.",
+      "Obtain signed referral forms to specific therapist if applicable",
+      "Physiotherapist",
+      "Discuss with patient and family the possible duration of hospitalization"
+    ],
+    "answer": "Physiotherapist",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of DISCHARGE PLANNING?",
+    "options": [
+      "Social Worker",
+      "Educate patient and relatives on the disease condition and its management",
+      "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any",
+      "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge"
+    ],
+    "answer": "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of DISCHARGE PLANNING?",
+    "options": [
+      "Discuss plan with patient and relatives discharge",
+      "Estimate possible duration of hospitalization with health team members",
+      "Nutritionist",
+      "Establish rapport with patient and relatives (Refer to steps)"
+    ],
+    "answer": "Discuss plan with patient and relatives discharge",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of DISCHARGE PLANNING?",
+    "options": [
+      "Public Health Nurse",
+      "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any",
+      "Involve patient and relatives in the care process",
+      "Review patient assessment data and admission notes"
+    ],
+    "answer": "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of DISCHARGE PLANNING?",
+    "options": [
+      "Encourage them to express their fears and ask questions",
+      "Give emotional support all through procedure and provide patient with necessary explanations",
+      "Document circumstance of discharge.",
+      "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge"
+    ],
+    "answer": "Document circumstance of discharge.",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of DISCHARGE PLANNING?",
+    "options": [
+      "Identify with health team issues that has to be discussed with patient about his/her treatment and after care",
+      "Physiotherapist",
+      "Discuss with patient and family the possible duration of hospitalization",
+      "Give emotional support all through procedure and provide patient with necessary explanations"
+    ],
+    "answer": "Give emotional support all through procedure and provide patient with necessary explanations",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-014",
-    title: "Discharge of a Patient",
+    title: "DISCHARGE OF A PATIENT",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "The organized process of preparing and releasing a patient from hospital care after authorization for discharge, including education, documentation, return of belongings and arrangements for follow-up care.",
-    purpose: [
-      "Ensure safe and organized discharge.",
-      "Provide continuity of care.",
-      "Ensure required education and documentation are completed.",
-      "Return patient belongings and valuables.",
-      "Prepare the bed for the next patient."
-    ],
+      "This is when a patient is authorized to leave the ward after the completion of the treatment. This is granted when the doctor/physician deems patient fit to return home or to his/her community. Occasionally, the discharge is carried out upon patient's own request. It is important that patient and relatives have pre-knowledge of the discharge.",
+    purpose: [],
     indications: [
       "Patient with an authorized discharge order.",
       "Patient medically cleared for discharge.",
       "Patient who has completed the required inpatient treatment."
     ],
     equipment: [
-      "Patient's medical records/folder (Manual or electronic)",
-      "Discharge summary/notes (Manual or electronic)",
-      "Patient's medications (if any)",
-      "Patient's personal belongings and valuables",
-      "Wheelchair/stretcher (if needed)"
-    ],
+  "Admission and discharge documents (Manual and Electronic)",
+  "Patient’s medications",
+  "Receptacle for used linen",
+  "Container for disinfectant"
+],
     steps: [
-      "Confirm discharge order from the medical team.",
-      "Inform patient and relatives of the discharge.",
-      "Ensure patient has settled bills/insurance claims according to institutional protocol.",
-      "Retrieve patient's valuables and return to patient.",
-      "Complete discharge summary/notes (manually or electronically).",
-      "Educate patient on medication prior to discharge.",
-      "Educate patient on condition and its management.",
-      "Arrange for follow-up appointment/review date.",
-      "Provide referral letter if applicable.",
-      "Assist patient to dress in personal clothing.",
-      "Assist patient to pack belongings.",
-      "Assist patient onto wheelchair/stretcher if necessary.",
-      "Escort/accompany patient to the exit or waiting transport.",
-      "Bid patient and relatives farewell.",
-      "Remove and decontaminate bed linen and accessories.",
-      "Make up bed for next patient.",
-      "Update ward state/discharge book (manually or electronically).",
-      "Document discharge process and time of discharge."
-    ],
+  "Ensure that discharge papers are duly signed by discharging doctor",
+  "Inform patient and relatives about discharge and current state of health",
+  "Allay patients fear and anxiety on the impending discharge",
+  "Educate patient and relative(s) on need for continuing treatment and follow up care",
+  "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
+  "Ensure that patient’s hospital bill is assessed",
+  "Let patient and relative know the cost of treatment and payment modalities",
+  "Collect medication for patient from hospital’s pharmacy where applicable",
+  "Explain how medication should be taken and stored and disposed off at home",
+  "Help patient to pack his/her belongings",
+  "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed",
+  "Remove all I.V. access lines and other tubes or drainage",
+  "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance",
+  "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
+  "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)",
+  "Thank and bids them good-bye",
+  "Ensure linen are removed, decontaminate beds and its accessories",
+  "Make new bed for next patient"
+],
     precautions: [
       "Confirm the discharge order before releasing the patient.",
       "Ensure the correct patient receives medications, documents and valuables.",
@@ -522,121 +748,217 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.osmosis.org/learn/Hospital_discharges%3A_Role_of_the_nurse",
     quiz: [
-      {
-        question: "What should be confirmed before discharging a patient?",
-        options: [
-          "The discharge order from the medical team",
-          "The patient's favourite food",
-          "The next patient's diagnosis",
-          "The visitor's permission"
-        ],
-        answer: "The discharge order from the medical team"
-      },
-      {
-        question: "What should happen to the patient's valuables?",
-        options: [
-          "They should be retrieved and returned according to protocol",
-          "They should be left on the ward",
-          "They should be discarded",
-          "They should be given to another patient"
-        ],
-        answer: "They should be retrieved and returned according to protocol"
-      },
-      {
-        question: "Which education should be provided before discharge?",
-        options: [
-          "Medication and condition-management education",
-          "Only information about hospital parking",
-          "Only information about visiting hours",
-          "No education"
-        ],
-        answer: "Medication and condition-management education"
-      },
-      {
-        question: "What should be arranged when appropriate?",
-        options: [
-          "Follow-up appointment",
-          "Another admission immediately",
-          "Cancellation of all reviews",
-          "No further care"
-        ],
-        answer: "Follow-up appointment"
-      },
-      {
-        question: "When might a wheelchair or stretcher be required?",
-        options: [
-          "When the patient's condition requires assistance with mobility",
-          "For every patient",
-          "Only for visitors",
-          "Only for staff"
-        ],
-        answer: "When the patient's condition requires assistance with mobility"
-      },
-      {
-        question: "What should happen to the patient's belongings?",
-        options: [
-          "Assist the patient to pack them",
-          "Leave them on the ward",
-          "Discard them",
-          "Give them to another patient"
-        ],
-        answer: "Assist the patient to pack them"
-      },
-      {
-        question: "What should be done after the patient leaves?",
-        options: [
-          "Decontaminate linen/accessories and prepare the bed for the next patient",
-          "Leave the bed unchanged",
-          "Discard all ward equipment",
-          "Close the ward"
-        ],
-        answer: "Decontaminate linen/accessories and prepare the bed for the next patient"
-      },
-      {
-        question: "Why is the ward state/discharge book updated?",
-        options: [
-          "To maintain an accurate record of the patient's discharge",
-          "To replace the medical record",
-          "To avoid documentation",
-          "To record staff meals"
-        ],
-        answer: "To maintain an accurate record of the patient's discharge"
-      },
-      {
-        question: "What should be documented?",
-        options: [
-          "The discharge process and time of discharge",
-          "Only the patient's clothing",
-          "Only the visitor's name",
-          "Nothing"
-        ],
-        answer: "The discharge process and time of discharge"
-      },
-      {
-        question: "Why should follow-up instructions be clear?",
-        options: [
-          "To support continuity of care after discharge",
-          "To prevent the patient from returning",
-          "To replace all medications",
-          "To avoid patient education"
-        ],
-        answer: "To support continuity of care after discharge"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Ensure that discharge papers are duly signed by discharging doctor",
+      "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
+      "Thank and bids them good-bye",
+      "Help patient to pack his/her belongings"
+    ],
+    "answer": "Ensure that discharge papers are duly signed by discharging doctor",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Ensure linen are removed, decontaminate beds and its accessories",
+      "Inform patient and relatives about discharge and current state of health",
+      "Remove all I.V. access lines and other tubes or drainage",
+      "Ensure that patient’s hospital bill is assessed"
+    ],
+    "answer": "Inform patient and relatives about discharge and current state of health",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance",
+      "Let patient and relative know the cost of treatment and payment modalities",
+      "Allay patients fear and anxiety on the impending discharge",
+      "Ensure that discharge papers are duly signed by discharging doctor"
+    ],
+    "answer": "Allay patients fear and anxiety on the impending discharge",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Explain how medication should be taken and stored and disposed off at home",
+      "Inform patient and relatives about discharge and current state of health",
+      "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
+      "Educate patient and relative(s) on need for continuing treatment and follow up care"
+    ],
+    "answer": "Educate patient and relative(s) on need for continuing treatment and follow up care",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
+      "Thank and bids them good-bye",
+      "Help patient to pack his/her belongings",
+      "Allay patients fear and anxiety on the impending discharge"
+    ],
+    "answer": "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed",
+      "Ensure that patient’s hospital bill is assessed",
+      "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
+      "Ensure linen are removed, decontaminate beds and its accessories"
+    ],
+    "answer": "Ensure that patient’s hospital bill is assessed",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Ensure that patient’s hospital bill is assessed",
+      "Make new bed for next patient",
+      "Let patient and relative know the cost of treatment and payment modalities",
+      "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance"
+    ],
+    "answer": "Let patient and relative know the cost of treatment and payment modalities",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Inform patient and relatives about discharge and current state of health",
+      "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
+      "Let patient and relative know the cost of treatment and payment modalities",
+      "Collect medication for patient from hospital’s pharmacy where applicable"
+    ],
+    "answer": "Collect medication for patient from hospital’s pharmacy where applicable",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Explain how medication should be taken and stored and disposed off at home",
+      "Help patient to pack his/her belongings",
+      "Allay patients fear and anxiety on the impending discharge",
+      "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)"
+    ],
+    "answer": "Explain how medication should be taken and stored and disposed off at home",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Educate patient and relative(s) on need for continuing treatment and follow up care",
+      "Help patient to pack his/her belongings",
+      "Ensure linen are removed, decontaminate beds and its accessories",
+      "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed"
+    ],
+    "answer": "Help patient to pack his/her belongings",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Make new bed for next patient",
+      "Remove all I.V. access lines and other tubes or drainage",
+      "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed",
+      "Ensure that patient’s hospital bill is assessed"
+    ],
+    "answer": "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
+      "Let patient and relative know the cost of treatment and payment modalities",
+      "Ensure that discharge papers are duly signed by discharging doctor",
+      "Remove all I.V. access lines and other tubes or drainage"
+    ],
+    "answer": "Remove all I.V. access lines and other tubes or drainage",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance",
+      "Allay patients fear and anxiety on the impending discharge",
+      "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)",
+      "Collect medication for patient from hospital’s pharmacy where applicable"
+    ],
+    "answer": "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Thank and bids them good-bye",
+      "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
+      "Help patient to pack his/her belongings",
+      "Educate patient and relative(s) on need for continuing treatment and follow up care"
+    ],
+    "answer": "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed",
+      "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
+      "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)",
+      "Make new bed for next patient"
+    ],
+    "answer": "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Let patient and relative know the cost of treatment and payment modalities",
+      "Ensure that discharge papers are duly signed by discharging doctor",
+      "Remove all I.V. access lines and other tubes or drainage",
+      "Thank and bids them good-bye"
+    ],
+    "answer": "Thank and bids them good-bye",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Ensure linen are removed, decontaminate beds and its accessories",
+      "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
+      "Collect medication for patient from hospital’s pharmacy where applicable",
+      "Inform patient and relatives about discharge and current state of health"
+    ],
+    "answer": "Ensure linen are removed, decontaminate beds and its accessories",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of DISCHARGE OF A PATIENT?",
+    "options": [
+      "Explain how medication should be taken and stored and disposed off at home",
+      "Make new bed for next patient",
+      "Educate patient and relative(s) on need for continuing treatment and follow up care",
+      "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)"
+    ],
+    "answer": "Make new bed for next patient",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-015",
-    title: "Checking and Recording of Body Temperature",
+    title: "CHECKING AND RECORDING OF BODY TEMPERATURE",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Measurement and documentation of a patient's body temperature using an appropriate thermometer and measurement site.",
-    purpose: [
-      "Determine body temperature.",
-      "Monitor changes in temperature.",
-      "Identify abnormal temperature readings.",
-      "Provide information for clinical assessment."
-    ],
+      "This is the process of measuring the amount of heat in the body which represents the balance between heat production and heat loss. Body temperature is usually measured by the use of digital clinical thermometer. The unit of measurement is degree centigrade (℃) and the normal range is 36.5℃ to 37.2℃. Sites for measuring the body temperature can be any part of the body using the digital thermometer.",
+    purpose: [],
     indications: [
       "Routine monitoring of vital signs.",
       "Suspected fever or hypothermia.",
@@ -644,29 +966,41 @@ export const rgnBatch02: Procedure[] = [
       "Patients requiring regular temperature monitoring."
     ],
     equipment: [
-      "Thermometer (digital/tympanic/mercury as per institutional protocol)",
-      "Swabs/tissue",
-      "Receiver for used swabs",
-      "Alcohol swabs",
-      "Temperature chart (Manual or electronic)",
-      "Watch with second hand"
-    ],
+  "Electronic thermometer (Oral, axilla, rectal)",
+  "Breast watch or appropriate timer",
+  "Dry cotton wool in gallipot",
+  "Receiver for used swabs",
+  "Temperature or observational chart (Manual or electronic)",
+  "Pen"
+],
     steps: [
-      "Explain procedure to patient.",
-      "Perform hand hygiene.",
-      "Assemble equipment and take to bedside.",
-      "Position patient comfortably.",
-      "Check the site to be used is free from any contraindication.",
-      "Clean thermometer if applicable.",
-      "Place thermometer in appropriate site for the required time as per device instructions.",
-      "Remove thermometer and read the temperature.",
-      "Note the reading.",
-      "Clean thermometer and return to appropriate storage.",
-      "Perform hand hygiene.",
-      "Record temperature reading on the chart with date and time.",
-      "Report any abnormal readings to appropriate officer.",
-      "Reposition patient comfortably."
-    ],
+  "Establish rapport with patient (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Prepare and send tray to patient’s bedside",
+  "Assist patient into an appropriate position",
+  "Provide privacy",
+  "Perform hand hygiene",
+  "Expose and clean area where temperature will be taken, if:",
+  "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool",
+  "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
+  "Oral – ensure the mouth is empty",
+  "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap",
+  "Press knob to show reading on the screen",
+  "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
+  "Check temperature as follows:",
+  "Axilla – inserts thermometer into the axilla between two skin folds",
+  "Temporal – place the probe flush on patient’s forehead",
+  "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
+  "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
+  "Leave thermometer for two to three minutes or as indicated by manufacturer",
+  "Removes thermometer after beep, read and record findings on the chart",
+  "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
+  "Perform hand hygiene",
+  "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+  "Chart readings of on observation 14 hourly chart (manual or electronic)",
+  "Assist patient to return to a desirable position",
+  "Dispose off used items and return thermometer back to its storage section"
+],
     precautions: [
       "Use an appropriate thermometer and measurement site.",
       "Check for contraindications.",
@@ -677,121 +1011,305 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
-      {
-        question: "What should be done before measuring temperature?",
-        options: [
-          "Explain the procedure and perform hand hygiene",
-          "Give medication",
-          "Remove all clothing",
-          "Leave the patient unattended"
-        ],
-        answer: "Explain the procedure and perform hand hygiene"
-      },
-      {
-        question: "Why should the measurement site be checked?",
-        options: [
-          "To identify contraindications",
-          "To determine the patient's age",
-          "To calculate the patient's weight",
-          "To choose the patient's meal"
-        ],
-        answer: "To identify contraindications"
-      },
-      {
-        question: "What should be followed when using an electronic thermometer?",
-        options: [
-          "The device instructions",
-          "The patient's preference only",
-          "An unrelated procedure",
-          "No instructions"
-        ],
-        answer: "The device instructions"
-      },
-      {
-        question: "What should be done after reading the temperature?",
-        options: [
-          "Note and record the reading",
-          "Forget the reading",
-          "Discard the chart",
-          "Immediately discharge the patient"
-        ],
-        answer: "Note and record the reading"
-      },
-      {
-        question: "What should be done with the thermometer after use?",
-        options: [
-          "Clean it appropriately and return it to storage",
-          "Place it on the floor",
-          "Give it to another patient",
-          "Throw it away routinely"
-        ],
-        answer: "Clean it appropriately and return it to storage"
-      },
-      {
-        question: "When should an abnormal temperature be reported?",
-        options: [
-          "Promptly according to protocol",
-          "Only at discharge",
-          "At the next appointment",
-          "Never"
-        ],
-        answer: "Promptly according to protocol"
-      },
-      {
-        question: "Why is temperature recorded with date and time?",
-        options: [
-          "To establish an accurate clinical record and trend",
-          "To determine the patient's address",
-          "To calculate hospital fees",
-          "To replace assessment"
-        ],
-        answer: "To establish an accurate clinical record and trend"
-      },
-      {
-        question: "Which is an example of a temperature measurement site?",
-        options: [
-          "Axilla",
-          "Forehead hair",
-          "Palm only",
-          "Knee joint"
-        ],
-        answer: "Axilla"
-      },
-      {
-        question: "What should the nurse prioritize during the procedure?",
-        options: [
-          "Patient comfort and safety",
-          "Speed at all costs",
-          "Avoiding documentation",
-          "Leaving equipment unclean"
-        ],
-        answer: "Patient comfort and safety"
-      },
-      {
-        question: "What is the main reason for monitoring body temperature?",
-        options: [
-          "To identify changes that may indicate a clinical problem",
-          "To determine the patient's occupation",
-          "To select a meal",
-          "To replace physical assessment"
-        ],
-        answer: "To identify changes that may indicate a clinical problem"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Provide privacy",
+      "Temporal – place the probe flush on patient’s forehead",
+      "Prepare and send tray to patient’s bedside"
+    ],
+    "answer": "Establish rapport with patient (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Oral – ensure the mouth is empty",
+      "Explain procedure to patient (Refer to steps)",
+      "Press knob to show reading on the screen",
+      "Chart readings of on observation 14 hourly chart (manual or electronic)"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Perform hand hygiene",
+      "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
+      "Prepare and send tray to patient’s bedside",
+      "Leave thermometer for two to three minutes or as indicated by manufacturer"
+    ],
+    "answer": "Prepare and send tray to patient’s bedside",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
+      "Assist patient to return to a desirable position",
+      "Assist patient into an appropriate position"
+    ],
+    "answer": "Assist patient into an appropriate position",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Provide privacy",
+      "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
+      "Removes thermometer after beep, read and record findings on the chart",
+      "Expose and clean area where temperature will be taken, if:"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Check temperature as follows:",
+      "Perform hand hygiene",
+      "Temporal – place the probe flush on patient’s forehead",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Oral – ensure the mouth is empty",
+      "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
+      "Expose and clean area where temperature will be taken, if:",
+      "Chart readings of on observation 14 hourly chart (manual or electronic)"
+    ],
+    "answer": "Expose and clean area where temperature will be taken, if:",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Provide privacy",
+      "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
+      "Prepare and send tray to patient’s bedside",
+      "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool"
+    ],
+    "answer": "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
+      "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
+      "Assist patient to return to a desirable position",
+      "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap"
+    ],
+    "answer": "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
+      "Oral – ensure the mouth is empty",
+      "Removes thermometer after beep, read and record findings on the chart",
+      "Perform hand hygiene"
+    ],
+    "answer": "Oral – ensure the mouth is empty",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Check temperature as follows:",
+      "Dispose off used items and return thermometer back to its storage section",
+      "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
+      "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
+      "Expose and clean area where temperature will be taken, if:",
+      "Press knob to show reading on the screen"
+    ],
+    "answer": "Press knob to show reading on the screen",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
+      "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
+      "Prepare and send tray to patient’s bedside",
+      "Axilla – inserts thermometer into the axilla between two skin folds"
+    ],
+    "answer": "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+      "Check temperature as follows:",
+      "Assist patient to return to a desirable position",
+      "Oral – ensure the mouth is empty"
+    ],
+    "answer": "Check temperature as follows:",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
+      "Assist patient into an appropriate position",
+      "Axilla – inserts thermometer into the axilla between two skin folds",
+      "Perform hand hygiene"
+    ],
+    "answer": "Axilla – inserts thermometer into the axilla between two skin folds",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
+      "Dispose off used items and return thermometer back to its storage section",
+      "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap",
+      "Temporal – place the probe flush on patient’s forehead"
+    ],
+    "answer": "Temporal – place the probe flush on patient’s forehead",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
+      "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
+      "Expose and clean area where temperature will be taken, if:",
+      "Leave thermometer for two to three minutes or as indicated by manufacturer"
+    ],
+    "answer": "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
+      "Prepare and send tray to patient’s bedside",
+      "Check temperature as follows:"
+    ],
+    "answer": "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+      "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool",
+      "Leave thermometer for two to three minutes or as indicated by manufacturer",
+      "Oral – ensure the mouth is empty"
+    ],
+    "answer": "Leave thermometer for two to three minutes or as indicated by manufacturer",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
+      "Assist patient into an appropriate position",
+      "Axilla – inserts thermometer into the axilla between two skin folds",
+      "Removes thermometer after beep, read and record findings on the chart"
+    ],
+    "answer": "Removes thermometer after beep, read and record findings on the chart",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
+      "Dispose off used items and return thermometer back to its storage section",
+      "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap",
+      "Chart readings of on observation 14 hourly chart (manual or electronic)"
+    ],
+    "answer": "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Provide privacy",
+      "Perform hand hygiene",
+      "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool",
+      "Leave thermometer for two to three minutes or as indicated by manufacturer"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Press knob to show reading on the screen",
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+      "Check temperature as follows:"
+    ],
+    "answer": "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
+      "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool",
+      "Leave thermometer for two to three minutes or as indicated by manufacturer",
+      "Chart readings of on observation 14 hourly chart (manual or electronic)"
+    ],
+    "answer": "Chart readings of on observation 14 hourly chart (manual or electronic)",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Assist patient to return to a desirable position",
+      "Assist patient into an appropriate position",
+      "Axilla – inserts thermometer into the axilla between two skin folds",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Assist patient to return to a desirable position",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "options": [
+      "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
+      "Dispose off used items and return thermometer back to its storage section",
+      "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap",
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer"
+    ],
+    "answer": "Dispose off used items and return thermometer back to its storage section",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-016",
-    title: "Checking and Recording of Pulse",
+    title: "CHECKING AND RECORDING OF PULSE",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Assessment and documentation of pulse rate, rhythm and volume to monitor cardiovascular status and identify abnormalities.",
-    purpose: [
-      "Determine pulse rate.",
-      "Assess rhythm and volume.",
-      "Monitor cardiovascular status.",
-      "Identify abnormal pulse findings."
-    ],
+      "Checking of pulse is the act of measuring the number of times the heart beats, rhythm and strength of the beat within a minute. During the procedure an artery is located under the skin directly on a bone by firmly pressing on the selected artery to feel the beat. The unit of measurement is beats per minutes (bpm). Normal ranges: Adults 60–100, average 80bpm. Children: 1–12 months 80–140, average 120bpm; 2–6 years 75–130, average 100bpm; 7–12 years 75–110, average 95bpm.",
+    purpose: [],
     indications: [
       "Routine monitoring of vital signs.",
       "Cardiovascular assessment.",
@@ -799,23 +1317,24 @@ export const rgnBatch02: Procedure[] = [
       "Patients requiring regular pulse monitoring."
     ],
     equipment: [
-      "Watch with second hand",
-      "Pulse/vital signs chart (Manual or electronic)",
-      "Pen"
-    ],
+  "Pen",
+  "Observation chart",
+  "Breast watch or appropriate timer"
+],
     steps: [
-      "Explain procedure to patient.",
-      "Perform hand hygiene.",
-      "Position patient comfortably.",
-      "Locate the pulse site, commonly the radial artery, using the pads of first three fingers.",
-      "Apply gentle pressure to feel the pulse.",
-      "Count the pulse rate for a full minute or according to protocol.",
-      "Note rhythm and volume/strength.",
-      "Record pulse rate, rhythm and volume with date and time.",
-      "Perform hand hygiene.",
-      "Report abnormal findings.",
-      "Reposition patient comfortably."
-    ],
+  "Establish rapport with the patient (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Assist patient into an appropriate resting position",
+  "Place first three fingers of one hand on the anterior aspect of patient forearm just above the base of the thumb",
+  "Feel the pulsations of the radial artery",
+  "With the aid of an appropriate timer count for a full minute",
+  "Concentrate on the beats of the pulse when counting rather than the timer",
+  "Note the rhythm, volume and tension of the pulse",
+  "Record the pulse on the observation chart",
+  "Perform hand hygiene",
+  "Assist patient to return to a desirable position",
+  "Discuss findings with patient and report any abnormalities detected to appropriate officer"
+],
     precautions: [
       "Use finger pads rather than the thumb.",
       "Avoid excessive pressure.",
@@ -826,121 +1345,151 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
-      {
-        question: "Which fingers are commonly used to palpate the radial pulse?",
-        options: [
-          "Pads of the first three fingers",
-          "Thumb only",
-          "Little finger only",
-          "Palm of the hand"
-        ],
-        answer: "Pads of the first three fingers"
-      },
-      {
-        question: "Why should the thumb generally not be used to assess the patient's pulse?",
-        options: [
-          "It has its own palpable pulse",
-          "It cannot touch the wrist",
-          "It is too short",
-          "It causes fever"
-        ],
-        answer: "It has its own palpable pulse"
-      },
-      {
-        question: "What characteristics should be assessed?",
-        options: [
-          "Rate, rhythm and volume",
-          "Colour, height and weight",
-          "Temperature only",
-          "Pain only"
-        ],
-        answer: "Rate, rhythm and volume"
-      },
-      {
-        question: "What should be done if the pulse rhythm is irregular?",
-        options: [
-          "Count for a full minute",
-          "Stop immediately",
-          "Count for five seconds",
-          "Estimate the rate"
-        ],
-        answer: "Count for a full minute"
-      },
-      {
-        question: "How much pressure should be applied when locating the pulse?",
-        options: [
-          "Gentle pressure",
-          "Maximum pressure",
-          "No contact",
-          "Pressure that causes pain"
-        ],
-        answer: "Gentle pressure"
-      },
-      {
-        question: "What should be recorded?",
-        options: [
-          "Pulse rate, rhythm and volume with date and time",
-          "Only the patient's name",
-          "Only the nurse's name",
-          "Only the room number"
-        ],
-        answer: "Pulse rate, rhythm and volume with date and time"
-      },
-      {
-        question: "Which equipment is essential for timing the pulse?",
-        options: [
-          "Watch with a second hand",
-          "Thermometer",
-          "Glucometer",
-          "Sphygmomanometer only"
-        ],
-        answer: "Watch with a second hand"
-      },
-      {
-        question: "What should be done when an abnormal pulse is detected?",
-        options: [
-          "Report it to the appropriate officer",
-          "Ignore it",
-          "Erase the record",
-          "Discharge the patient"
-        ],
-        answer: "Report it to the appropriate officer"
-      },
-      {
-        question: "Why should the patient be positioned comfortably?",
-        options: [
-          "To promote accurate assessment and patient comfort",
-          "To make the procedure longer",
-          "To prevent documentation",
-          "To increase pulse rate deliberately"
-        ],
-        answer: "To promote accurate assessment and patient comfort"
-      },
-      {
-        question: "Where is the radial pulse commonly assessed?",
-        options: [
-          "At the wrist",
-          "At the ankle only",
-          "Behind the ear only",
-          "On the forehead"
-        ],
-        answer: "At the wrist"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Establish rapport with the patient (Refer to steps)",
+      "Feel the pulsations of the radial artery",
+      "Explain procedure to patient (Refer to steps)",
+      "Assist patient into an appropriate resting position"
+    ],
+    "answer": "Establish rapport with the patient (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Assist patient into an appropriate resting position",
+      "Explain procedure to patient (Refer to steps)",
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+      "Establish rapport with the patient (Refer to steps)"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Assist patient into an appropriate resting position",
+      "Note the rhythm, volume and tension of the pulse"
+    ],
+    "answer": "Assist patient into an appropriate resting position",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Assist patient into an appropriate resting position",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Place first three fingers of one hand on the anterior aspect of patient forearm just above the base of the thumb"
+    ],
+    "answer": "Place first three fingers of one hand on the anterior aspect of patient forearm just above the base of the thumb",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Feel the pulsations of the radial artery",
+      "Assist patient to return to a desirable position",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Feel the pulsations of the radial artery",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Explain procedure to patient (Refer to steps)",
+      "With the aid of an appropriate timer count for a full minute",
+      "Concentrate on the beats of the pulse when counting rather than the timer",
+      "Establish rapport with the patient (Refer to steps)"
+    ],
+    "answer": "With the aid of an appropriate timer count for a full minute",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Establish rapport with the patient (Refer to steps)",
+      "Assist patient into an appropriate resting position",
+      "Concentrate on the beats of the pulse when counting rather than the timer",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Concentrate on the beats of the pulse when counting rather than the timer",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Perform hand hygiene",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Note the rhythm, volume and tension of the pulse"
+    ],
+    "answer": "Note the rhythm, volume and tension of the pulse",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Record the pulse on the observation chart",
+      "Feel the pulsations of the radial artery",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Record the pulse on the observation chart",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Assist patient into an appropriate resting position",
+      "Perform hand hygiene",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Assist patient to return to a desirable position",
+      "Note the rhythm, volume and tension of the pulse"
+    ],
+    "answer": "Assist patient to return to a desirable position",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of CHECKING AND RECORDING OF PULSE?",
+    "options": [
+      "Place first three fingers of one hand on the anterior aspect of patient forearm just above the base of the thumb",
+      "Establish rapport with the patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer"
+    ],
+    "answer": "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-017",
-    title: "Checking and Recording of Respiration",
+    title: "CHECKING AND RECORDING OF RESPIRATION",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Observation and documentation of respiratory rate, rhythm, depth and character to assess respiratory status.",
-    purpose: [
-      "Determine respiratory rate.",
-      "Assess rhythm and depth.",
-      "Identify abnormal respiratory patterns and sounds.",
-      "Monitor respiratory status."
-    ],
+      "This is the act of measuring the number of breaths of a patient/client in cycles per minute. Each cycle involves one sequence of inspiration, expiration and a pause. It is measured by counting the number of times a patient's/client's chest rises and falls in a minute. The unit of measurement is cycles or breaths per minute (bpm). Normal ranges: Infants (birth–1 year) 30–60; Toddler (1–3 years) 24–40; 3–6 years 22–34; 6–12 years 18–30; Adolescent (12–18 years) 12–16; Adults 16–20.",
+    purpose: [],
     indications: [
       "Routine monitoring of vital signs.",
       "Patients with respiratory symptoms.",
@@ -948,21 +1497,24 @@ export const rgnBatch02: Procedure[] = [
       "Patients requiring regular respiratory assessment."
     ],
     equipment: [
-      "Watch with second hand",
-      "Respiration/vital signs chart (Manual or electronic)",
-      "Pen"
-    ],
+  "Pen",
+  "Observation chart",
+  "Breast watch or appropriate timer"
+],
     steps: [
-      "Perform hand hygiene.",
-      "Position patient comfortably without informing patient directly that respiration is being counted.",
-      "Observe rise and fall of chest/abdomen.",
-      "Count one rise and one fall as one respiration.",
-      "Count respirations for a full minute.",
-      "Note rhythm, depth and abnormal sounds such as wheezing or stridor.",
-      "Record respiration rate, rhythm and character with date and time.",
-      "Perform hand hygiene.",
-      "Report abnormal findings."
-    ],
+  "Establish rapport with patient (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Assist patient into an appropriate resting position",
+  "Observe patient respiration without his/her awareness",
+  "Observe the position in which patient breath better and skin colour",
+  "Note the rise and fall of patient chest during inspiration and expiration, the rise and fall counts as one cycle",
+  "With the aid of an appropriate timer count for a full minute",
+  "Note the depth rhythm and any difficulty in breathing",
+  "Record the findings on the observational chart (manual/electronic)",
+  "Perform hand hygiene",
+  "Assist patient to return to a desirable position",
+  "Discuss findings with patient and report any abnormalities detected appropriate officer"
+],
     precautions: [
       "Avoid unnecessarily altering the patient's natural breathing pattern.",
       "Count respirations accurately.",
@@ -973,121 +1525,151 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
-      {
-        question: "Why should the patient not be told directly that respirations are being counted?",
-        options: [
-          "The patient may consciously alter the breathing pattern",
-          "It makes documentation impossible",
-          "It causes infection",
-          "It changes body temperature"
-        ],
-        answer: "The patient may consciously alter the breathing pattern"
-      },
-      {
-        question: "What constitutes one respiration?",
-        options: [
-          "One rise and one fall of the chest/abdomen",
-          "Two rises only",
-          "One cough",
-          "One heartbeat"
-        ],
-        answer: "One rise and one fall of the chest/abdomen"
-      },
-      {
-        question: "How long should respirations be counted according to the supplied procedure?",
-        options: [
-          "One full minute",
-          "Five seconds",
-          "Ten seconds only",
-          "One hour"
-        ],
-        answer: "One full minute"
-      },
-      {
-        question: "Which characteristics should be assessed?",
-        options: [
-          "Rate, rhythm, depth and character",
-          "Colour and weight only",
-          "Temperature only",
-          "Blood pressure only"
-        ],
-        answer: "Rate, rhythm, depth and character"
-      },
-      {
-        question: "Which may be an abnormal respiratory sound?",
-        options: [
-          "Wheezing",
-          "Normal speech",
-          "Blinking",
-          "Swallowing"
-        ],
-        answer: "Wheezing"
-      },
-      {
-        question: "What should be used to time respirations?",
-        options: [
-          "Watch with second hand",
-          "Thermometer",
-          "Glucometer",
-          "Pulse oximeter only"
-        ],
-        answer: "Watch with second hand"
-      },
-      {
-        question: "What should be done after assessment?",
-        options: [
-          "Record findings with date and time",
-          "Forget the result",
-          "Discard the chart",
-          "Only tell another patient"
-        ],
-        answer: "Record findings with date and time"
-      },
-      {
-        question: "What should happen when an abnormal respiratory finding is identified?",
-        options: [
-          "Report it to the appropriate officer",
-          "Ignore it",
-          "Wait until discharge",
-          "Delete the observation"
-        ],
-        answer: "Report it to the appropriate officer"
-      },
-      {
-        question: "What should the patient's position be during the assessment?",
-        options: [
-          "Comfortable",
-          "Always standing",
-          "Always prone",
-          "Unrestrained and uncomfortable"
-        ],
-        answer: "Comfortable"
-      },
-      {
-        question: "What body movement is primarily observed when counting respirations?",
-        options: [
-          "Rise and fall of the chest or abdomen",
-          "Movement of the fingers",
-          "Movement of the eyes",
-          "Movement of the feet"
-        ],
-        answer: "Rise and fall of the chest or abdomen"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Observe the position in which patient breath better and skin colour",
+      "Explain procedure to patient (Refer to steps)",
+      "Assist patient into an appropriate resting position"
+    ],
+    "answer": "Establish rapport with patient (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Assist patient into an appropriate resting position",
+      "Explain procedure to patient (Refer to steps)",
+      "Discuss findings with patient and report any abnormalities detected appropriate officer",
+      "Establish rapport with patient (Refer to steps)"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Assist patient into an appropriate resting position",
+      "Note the depth rhythm and any difficulty in breathing"
+    ],
+    "answer": "Assist patient into an appropriate resting position",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Assist patient into an appropriate resting position",
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Observe patient respiration without his/her awareness"
+    ],
+    "answer": "Observe patient respiration without his/her awareness",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Observe the position in which patient breath better and skin colour",
+      "Assist patient to return to a desirable position",
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Observe the position in which patient breath better and skin colour",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Explain procedure to patient (Refer to steps)",
+      "Note the rise and fall of patient chest during inspiration and expiration, the rise and fall counts as one cycle",
+      "With the aid of an appropriate timer count for a full minute",
+      "Establish rapport with patient (Refer to steps)"
+    ],
+    "answer": "Note the rise and fall of patient chest during inspiration and expiration, the rise and fall counts as one cycle",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Assist patient into an appropriate resting position",
+      "With the aid of an appropriate timer count for a full minute",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "With the aid of an appropriate timer count for a full minute",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Note the depth rhythm and any difficulty in breathing"
+    ],
+    "answer": "Note the depth rhythm and any difficulty in breathing",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Record the findings on the observational chart (manual/electronic)",
+      "Observe the position in which patient breath better and skin colour",
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Record the findings on the observational chart (manual/electronic)",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Assist patient into an appropriate resting position",
+      "Perform hand hygiene",
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Assist patient to return to a desirable position",
+      "Note the depth rhythm and any difficulty in breathing"
+    ],
+    "answer": "Assist patient to return to a desirable position",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of CHECKING AND RECORDING OF RESPIRATION?",
+    "options": [
+      "Observe patient respiration without his/her awareness",
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Discuss findings with patient and report any abnormalities detected appropriate officer"
+    ],
+    "answer": "Discuss findings with patient and report any abnormalities detected appropriate officer",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-018",
-    title: "Checking of Blood Pressure",
+    title: "CHECKING OF BLOOD PRESSURE",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Measurement and documentation of arterial blood pressure using an appropriate sphygmomanometer and cuff.",
-    purpose: [
-      "Measure systolic and diastolic blood pressure.",
-      "Monitor cardiovascular status.",
-      "Identify abnormal blood pressure readings.",
-      "Monitor response to treatment."
-    ],
+      "This is the act of measuring the blood pressure exerted laterally on the walls of blood vessels when the heart contracts and relaxes. The digital or manual sphygmomanometer can be used to record the pressure levels. These values are recorded in millimetres of mercury (mmHg). Two values are recorded: systolic (upper) and diastolic (lower). Normal ranges (Potter, Perry, Stockert & Hall 8th Edition, 2014): 1–12 months 85/54; 1–5 years 95/65; 6–9 years 105/65; 10–13 years 110/65; 14–17 years 119/75; 18 years and older <120/<80.",
+    purpose: [],
     indications: [
       "Routine monitoring of vital signs.",
       "Assessment of suspected hypertension or hypotension.",
@@ -1095,32 +1677,35 @@ export const rgnBatch02: Procedure[] = [
       "Patients requiring regular blood pressure monitoring."
     ],
     equipment: [
-      "Sphygmomanometer (aneroid/digital/mercury)",
-      "Stethoscope",
-      "Vital signs chart (Manual or electronic)",
-      "Pen",
-      "Alcohol swabs"
-    ],
+  "Pen",
+  "Observation or Blood Pressure chart",
+  "Stethoscope",
+  "Sphygmomanometer with appropriate cuff size",
+  "Ruler",
+  "Electronic device e.g. tablet"
+],
     steps: [
-      "Explain procedure to patient.",
-      "Perform hand hygiene.",
-      "Position patient comfortably with arm supported at heart level.",
-      "Expose the arm ensuring clothing does not constrict.",
-      "Select appropriate cuff size and apply snugly around upper arm, about 2-3cm above antecubital fossa.",
-      "Palpate brachial artery.",
-      "Place stethoscope over brachial artery.",
-      "Close the valve.",
-      "Inflate cuff to about 30mmHg above point where pulse disappears.",
-      "Slowly release valve.",
-      "Note first sound as systolic pressure.",
-      "Note disappearance of sound as diastolic pressure.",
-      "Deflate cuff completely and remove.",
-      "Record reading with date and time.",
-      "Perform hand hygiene.",
-      "Clean stethoscope and equipment.",
-      "Report abnormal readings.",
-      "Reposition patient comfortably."
-    ],
+  "Establish rapport and identify the patient by the name",
+  "Explain procedure to patient",
+  "Prepare tray and sent to bedside",
+  "Assist patient into an appropriate resting position with the arm supported",
+  "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
+  "Empty cuff of air and place the center of the cuff over the brachial artery",
+  "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
+  "Inflates cuff by:",
+  "Electronic – pressing the start knob and wait for reading to appear on the screen",
+  "Manual",
+  "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury",
+  "Check, wear and place stethoscope on brachial artery",
+  "Release cuff pressure slowly and listen to the sound with stethoscope against the movement of the mercury",
+  "Deflate the cuff until the mercury disappear",
+  "Remove cuff and reassemble apparatus",
+  "Thank and makes patient comfortable",
+  "Record the findings on the observation chart",
+  "Perform hand hygiene",
+  "Assist patient to return to a desirable position",
+  "Discuss findings with patient and report any abnormalities detected to appropriate officer"
+],
     precautions: [
       "Select the correct cuff size.",
       "Support arm at heart level.",
@@ -1132,121 +1717,239 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
-      {
-        question: "Where should the patient's arm be positioned during blood pressure measurement?",
-        options: [
-          "Supported at heart level",
-          "Hanging below the heart",
-          "Above the head",
-          "Behind the back"
-        ],
-        answer: "Supported at heart level"
-      },
-      {
-        question: "Why is selecting the correct cuff size important?",
-        options: [
-          "It helps obtain an accurate blood pressure measurement",
-          "It changes the patient's diagnosis",
-          "It replaces the stethoscope",
-          "It eliminates documentation"
-        ],
-        answer: "It helps obtain an accurate blood pressure measurement"
-      },
-      {
-        question: "Where is the cuff placed?",
-        options: [
-          "Around the upper arm above the antecubital fossa",
-          "Around the wrist only",
-          "Around the neck",
-          "Around the chest"
-        ],
-        answer: "Around the upper arm above the antecubital fossa"
-      },
-      {
-        question: "Which artery is palpated before auscultation?",
-        options: [
-          "Brachial artery",
-          "Carotid artery only",
-          "Femoral artery",
-          "Temporal artery"
-        ],
-        answer: "Brachial artery"
-      },
-      {
-        question: "What does the first Korotkoff sound represent in the supplied procedure?",
-        options: [
-          "Systolic pressure",
-          "Diastolic pressure",
-          "Pulse deficit",
-          "Respiratory rate"
-        ],
-        answer: "Systolic pressure"
-      },
-      {
-        question: "What does disappearance of the sound indicate in the supplied procedure?",
-        options: [
-          "Diastolic pressure",
-          "Systolic pressure",
-          "Temperature",
-          "Oxygen saturation"
-        ],
-        answer: "Diastolic pressure"
-      },
-      {
-        question: "How should the cuff be deflated?",
-        options: [
-          "Gradually and slowly",
-          "Immediately",
-          "Randomly",
-          "Not at all"
-        ],
-        answer: "Gradually and slowly"
-      },
-      {
-        question: "What should be done after obtaining the reading?",
-        options: [
-          "Record it with date and time",
-          "Forget it",
-          "Erase the chart",
-          "Tell another patient"
-        ],
-        answer: "Record it with date and time"
-      },
-      {
-        question: "What should be done with abnormal blood pressure readings?",
-        options: [
-          "Report them to the appropriate officer",
-          "Ignore them",
-          "Hide them",
-          "Wait until discharge"
-        ],
-        answer: "Report them to the appropriate officer"
-      },
-      {
-        question: "What should be done after using the stethoscope?",
-        options: [
-          "Clean it appropriately",
-          "Place it on the floor",
-          "Give it to another patient",
-          "Leave it contaminated"
-        ],
-        answer: "Clean it appropriately"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Establish rapport and identify the patient by the name",
+      "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
+      "Thank and makes patient comfortable",
+      "Inflates cuff by:"
+    ],
+    "answer": "Establish rapport and identify the patient by the name",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Remove cuff and reassemble apparatus",
+      "Explain procedure to patient",
+      "Check, wear and place stethoscope on brachial artery",
+      "Assist patient into an appropriate resting position with the arm supported"
+    ],
+    "answer": "Explain procedure to patient",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury",
+      "Explain procedure to patient",
+      "Prepare tray and sent to bedside",
+      "Assist patient to return to a desirable position"
+    ],
+    "answer": "Prepare tray and sent to bedside",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
+      "Perform hand hygiene",
+      "Manual",
+      "Assist patient into an appropriate resting position with the arm supported"
+    ],
+    "answer": "Assist patient into an appropriate resting position with the arm supported",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
+      "Deflate the cuff until the mercury disappear",
+      "Empty cuff of air and place the center of the cuff over the brachial artery",
+      "Record the findings on the observation chart"
+    ],
+    "answer": "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Assist patient into an appropriate resting position with the arm supported",
+      "Empty cuff of air and place the center of the cuff over the brachial artery",
+      "Establish rapport and identify the patient by the name",
+      "Release cuff pressure slowly and listen to the sound with stethoscope against the movement of the mercury"
+    ],
+    "answer": "Empty cuff of air and place the center of the cuff over the brachial artery",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+      "Check, wear and place stethoscope on brachial artery",
+      "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
+      "Electronic – pressing the start knob and wait for reading to appear on the screen"
+    ],
+    "answer": "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Thank and makes patient comfortable",
+      "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
+      "Assist patient to return to a desirable position",
+      "Inflates cuff by:"
+    ],
+    "answer": "Inflates cuff by:",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Electronic – pressing the start knob and wait for reading to appear on the screen",
+      "Prepare tray and sent to bedside",
+      "Remove cuff and reassemble apparatus",
+      "Empty cuff of air and place the center of the cuff over the brachial artery"
+    ],
+    "answer": "Electronic – pressing the start knob and wait for reading to appear on the screen",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Deflate the cuff until the mercury disappear",
+      "Manual",
+      "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury",
+      "Explain procedure to patient"
+    ],
+    "answer": "Manual",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Electronic – pressing the start knob and wait for reading to appear on the screen",
+      "Establish rapport and identify the patient by the name",
+      "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury",
+      "Perform hand hygiene"
+    ],
+    "answer": "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
+      "Record the findings on the observation chart",
+      "Inflates cuff by:",
+      "Check, wear and place stethoscope on brachial artery"
+    ],
+    "answer": "Check, wear and place stethoscope on brachial artery",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Release cuff pressure slowly and listen to the sound with stethoscope against the movement of the mercury",
+      "Check, wear and place stethoscope on brachial artery",
+      "Assist patient into an appropriate resting position with the arm supported",
+      "Thank and makes patient comfortable"
+    ],
+    "answer": "Release cuff pressure slowly and listen to the sound with stethoscope against the movement of the mercury",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Prepare tray and sent to bedside",
+      "Deflate the cuff until the mercury disappear",
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+      "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury"
+    ],
+    "answer": "Deflate the cuff until the mercury disappear",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Assist patient to return to a desirable position",
+      "Manual",
+      "Remove cuff and reassemble apparatus",
+      "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends"
+    ],
+    "answer": "Remove cuff and reassemble apparatus",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Deflate the cuff until the mercury disappear",
+      "Empty cuff of air and place the center of the cuff over the brachial artery",
+      "Perform hand hygiene",
+      "Thank and makes patient comfortable"
+    ],
+    "answer": "Thank and makes patient comfortable",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Record the findings on the observation chart",
+      "Explain procedure to patient",
+      "Release cuff pressure slowly and listen to the sound with stethoscope against the movement of the mercury",
+      "Stretch patient’s arm and places sphygmomanometer beside arm at the same level"
+    ],
+    "answer": "Record the findings on the observation chart",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Check, wear and place stethoscope on brachial artery",
+      "Perform hand hygiene",
+      "Electronic – pressing the start knob and wait for reading to appear on the screen",
+      "Establish rapport and identify the patient by the name"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Inflates cuff by:",
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+      "Assist patient to return to a desirable position",
+      "Thank and makes patient comfortable"
+    ],
+    "answer": "Assist patient to return to a desirable position",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of CHECKING OF BLOOD PRESSURE?",
+    "options": [
+      "Assist patient into an appropriate resting position with the arm supported",
+      "Remove cuff and reassemble apparatus",
+      "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
+      "Discuss findings with patient and report any abnormalities detected to appropriate officer"
+    ],
+    "answer": "Discuss findings with patient and report any abnormalities detected to appropriate officer",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-019",
-    title: "Checking and Recording of Oxygen Saturation (SpO2)",
+    title: "CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Measurement and documentation of peripheral oxygen saturation using a pulse oximeter to assess oxygenation.",
-    purpose: [
-      "Measure peripheral oxygen saturation.",
-      "Monitor oxygenation status.",
-      "Identify abnormal oxygen saturation readings.",
-      "Monitor response to respiratory treatment."
-    ],
+      "This is one of the components of vital signs. This is the process of checking and recording of oxygen saturation levels in a patient's blood. It is done with the aid of a clip-like device known as pulse oximeter. A pulse oximeter helps to identify the oxygen changes in patients with the aid of light-emitting diode (LED). During the procedure the device is attached to either the patient's earlobe, finger or toe. The measuring unit is SpO2 and the normal value is 95% and above.",
+    purpose: [],
     indications: [
       "Routine monitoring of vital signs.",
       "Patients with respiratory symptoms.",
@@ -1254,25 +1957,26 @@ export const rgnBatch02: Procedure[] = [
       "Patients requiring oxygenation monitoring."
     ],
     equipment: [
-      "Pulse oximeter",
-      "Vital signs chart (Manual or electronic)",
-      "Alcohol swabs",
-      "Pen"
-    ],
+  "Pulse oximeter",
+  "Dry cotton wool in a gallipot",
+  "Observation chart",
+  "Pen"
+],
     steps: [
-      "Explain procedure to patient.",
-      "Perform hand hygiene.",
-      "Select appropriate site such as finger, ear lobe or toe.",
-      "Ensure site is clean and free of nail polish/artificial nails where applicable.",
-      "Attach pulse oximeter probe.",
-      "Switch on device and wait for steady reading/waveform.",
-      "Note oxygen saturation percentage and pulse rate.",
-      "Remove probe.",
-      "Clean probe with alcohol swab.",
-      "Record SpO2 with date and time.",
-      "Perform hand hygiene.",
-      "Report abnormal readings."
-    ],
+  "Establish rapport with patient (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Press the start knob to check if the device is functioning",
+  "Prepare and send tray to patient’s bedside",
+  "Assist patient into an appropriate position",
+  "Perform hand hygiene",
+  "Examine the sites for capillary refill and coldness",
+  "Clean the site with a dry swab",
+  "Warm the sites if the area is cold by either rubbing or applying warm compress",
+  "Place the device on either the finger, toe or earlobe",
+  "Record findings on the oximeter on the observation chart (manual or electronic)",
+  "Remove the device",
+  "Discuss findings with patient and appropriate officer"
+],
     precautions: [
       "Use an appropriate measurement site.",
       "Ensure the site is suitable for measurement.",
@@ -1284,121 +1988,162 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
-      {
-        question: "What device is used to measure peripheral oxygen saturation?",
-        options: [
-          "Pulse oximeter",
-          "Sphygmomanometer",
-          "Thermometer",
-          "Glucometer"
-        ],
-        answer: "Pulse oximeter"
-      },
-      {
-        question: "Which is an appropriate pulse oximeter site?",
-        options: [
-          "Finger",
-          "Forehead hair",
-          "Upper arm only",
-          "Abdomen"
-        ],
-        answer: "Finger"
-      },
-      {
-        question: "Why should nail polish be considered before applying the probe?",
-        options: [
-          "It may interfere with the measurement",
-          "It causes fever",
-          "It changes blood pressure",
-          "It prevents hand hygiene"
-        ],
-        answer: "It may interfere with the measurement"
-      },
-      {
-        question: "When should the SpO2 reading be recorded?",
-        options: [
-          "After waiting for a steady reading/waveform",
-          "Immediately before switching on the device",
-          "Before attaching the probe",
-          "Without looking at the display"
-        ],
-        answer: "After waiting for a steady reading/waveform"
-      },
-      {
-        question: "What additional value may the pulse oximeter display?",
-        options: [
-          "Pulse rate",
-          "Temperature",
-          "Blood glucose",
-          "Urine output"
-        ],
-        answer: "Pulse rate"
-      },
-      {
-        question: "What should be done after removing the probe?",
-        options: [
-          "Clean it appropriately",
-          "Throw it away routinely",
-          "Place it on the floor",
-          "Give it to another patient"
-        ],
-        answer: "Clean it appropriately"
-      },
-      {
-        question: "What should be documented?",
-        options: [
-          "SpO2 reading with date and time",
-          "Only the patient's name",
-          "Only the nurse's name",
-          "Only the device brand"
-        ],
-        answer: "SpO2 reading with date and time"
-      },
-      {
-        question: "What should the nurse do with an abnormal SpO2 reading?",
-        options: [
-          "Report it to the appropriate officer",
-          "Ignore it",
-          "Delete it",
-          "Wait until discharge"
-        ],
-        answer: "Report it to the appropriate officer"
-      },
-      {
-        question: "Why should a stable waveform/reading be obtained?",
-        options: [
-          "To improve confidence in the measurement",
-          "To increase the patient's pulse",
-          "To replace assessment",
-          "To make the procedure longer"
-        ],
-        answer: "To improve confidence in the measurement"
-      },
-      {
-        question: "What should be considered when interpreting SpO2?",
-        options: [
-          "The patient's clinical condition and prescribed target range",
-          "Only the patient's age",
-          "Only the room temperature",
-          "Only the device colour"
-        ],
-        answer: "The patient's clinical condition and prescribed target range"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Assist patient into an appropriate position",
+      "Prepare and send tray to patient’s bedside",
+      "Press the start knob to check if the device is functioning"
+    ],
+    "answer": "Establish rapport with patient (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Place the device on either the finger, toe or earlobe",
+      "Explain procedure to patient (Refer to steps)",
+      "Remove the device",
+      "Record findings on the oximeter on the observation chart (manual or electronic)"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Perform hand hygiene",
+      "Assist patient into an appropriate position",
+      "Press the start knob to check if the device is functioning",
+      "Examine the sites for capillary refill and coldness"
+    ],
+    "answer": "Press the start knob to check if the device is functioning",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Discuss findings with patient and appropriate officer",
+      "Remove the device",
+      "Prepare and send tray to patient’s bedside"
+    ],
+    "answer": "Prepare and send tray to patient’s bedside",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Assist patient into an appropriate position",
+      "Warm the sites if the area is cold by either rubbing or applying warm compress",
+      "Clean the site with a dry swab",
+      "Examine the sites for capillary refill and coldness"
+    ],
+    "answer": "Assist patient into an appropriate position",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Perform hand hygiene",
+      "Press the start knob to check if the device is functioning",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Place the device on either the finger, toe or earlobe",
+      "Warm the sites if the area is cold by either rubbing or applying warm compress",
+      "Examine the sites for capillary refill and coldness",
+      "Record findings on the oximeter on the observation chart (manual or electronic)"
+    ],
+    "answer": "Examine the sites for capillary refill and coldness",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Assist patient into an appropriate position",
+      "Prepare and send tray to patient’s bedside",
+      "Press the start knob to check if the device is functioning",
+      "Clean the site with a dry swab"
+    ],
+    "answer": "Clean the site with a dry swab",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Warm the sites if the area is cold by either rubbing or applying warm compress",
+      "Discuss findings with patient and appropriate officer",
+      "Remove the device",
+      "Record findings on the oximeter on the observation chart (manual or electronic)"
+    ],
+    "answer": "Warm the sites if the area is cold by either rubbing or applying warm compress",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Assist patient into an appropriate position",
+      "Place the device on either the finger, toe or earlobe",
+      "Examine the sites for capillary refill and coldness",
+      "Perform hand hygiene"
+    ],
+    "answer": "Place the device on either the finger, toe or earlobe",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Discuss findings with patient and appropriate officer",
+      "Record findings on the oximeter on the observation chart (manual or electronic)",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Record findings on the oximeter on the observation chart (manual or electronic)",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Warm the sites if the area is cold by either rubbing or applying warm compress",
+      "Clean the site with a dry swab",
+      "Examine the sites for capillary refill and coldness",
+      "Remove the device"
+    ],
+    "answer": "Remove the device",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "options": [
+      "Discuss findings with patient and appropriate officer",
+      "Prepare and send tray to patient’s bedside",
+      "Press the start knob to check if the device is functioning",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Discuss findings with patient and appropriate officer",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-020",
-    title: "Monitoring of Blood Glucose Level",
+    title: "MONITORING BLOOD GLUCOSE LEVEL",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Measurement and documentation of capillary blood glucose using a glucometer to monitor the patient's blood glucose level.",
-    purpose: [
-      "Determine capillary blood glucose level.",
-      "Monitor blood glucose trends.",
-      "Identify abnormal glucose readings.",
-      "Guide appropriate clinical management according to the patient's treatment plan."
-    ],
+      "This is the act of checking the amount/concentration of glucose in the blood with the use of a glucometer or blood glucose meter. During the procedure a drop of capillary blood is obtained from any of the fingers or the palmar surface area and dropped on the blood glucose test strip which is attached to the glucose monitor for reading. Normal random blood sugar (adult): 3 – 6 mmol/L.",
+    purpose: [],
     indications: [
       "Patients with diabetes mellitus.",
       "Patients requiring blood glucose monitoring.",
@@ -1406,34 +2151,38 @@ export const rgnBatch02: Procedure[] = [
       "Patients at risk of abnormal blood glucose."
     ],
     equipment: [
-      "Glucometer",
-      "Test strips",
-      "Lancet/lancing device",
-      "Alcohol swabs",
-      "Cotton wool/dry swab",
-      "Sharps container",
-      "Gloves",
-      "Blood glucose chart (Manual or electronic)"
-    ],
+  "A tray containing the following:",
+  "Blood glucose monitor/glucometer",
+  "Test strip",
+  "Lancet or needle",
+  "Disposable gloves",
+  "Cotton wool swab in a gallipot",
+  "Receiver for used swabs",
+  "Sharps container"
+],
     steps: [
-      "Explain procedure to patient.",
-      "Perform hand hygiene and put on gloves.",
-      "Check expiry date of test strips and ensure glucometer is calibrated/coded correctly.",
-      "Select puncture site, usually side of fingertip.",
-      "Clean site with alcohol swab and allow to dry.",
-      "Insert test strip into glucometer.",
-      "Prick site with lancet/lancing device.",
-      "Wipe away first drop of blood with dry swab.",
-      "Apply second drop of blood to test strip.",
-      "Apply gentle pressure to puncture site with cotton wool.",
-      "Wait for glucometer to display reading.",
-      "Note blood glucose reading.",
-      "Dispose of lancet in sharps container.",
-      "Remove test strip and dispose appropriately.",
-      "Remove gloves and perform hand hygiene.",
-      "Record blood glucose reading with date and time.",
-      "Report abnormal readings."
-    ],
+  "Check physicians order for the frequency of monitoring glucose level",
+  "Identify patient and establish rapport (Refer to steps)",
+  "Explain procedure (Refer to steps)",
+  "Perform hand hygiene",
+  "Check the functionality of the glucose meter and ensure reading is in mmol/L",
+  "Set the tray and send to the bedside",
+  "Select the site for glucose check (fingers/palmer area)",
+  "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)",
+  "Insert glucose strip into the glucometer and check for its functionality",
+  "Wear disposable glove",
+  "Clean the area with antimicrobial solution and allow to dry",
+  "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm",
+  "Puncture the area using lancet or needle",
+  "Drop blood on the glucose strip and allow to read",
+  "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
+  "After noting the reading on the glucometer remove the strip and dispose off",
+  "Remove gloves",
+  "Perform hand hygiene",
+  "Discuss findings with the patient and appropriate officer",
+  "Document on the appropriate recording software and observation chart (manual or electronic)",
+  "Dispose off used items, decontaminate tray and place the glucometer in a safe area"
+],
     precautions: [
       "Check test-strip expiry before use.",
       "Follow the glucometer manufacturer's instructions.",
@@ -1446,106 +2195,237 @@ export const rgnBatch02: Procedure[] = [
     videoUrl:
       "https://www.youtube.com/watch?v=MZCf621bRHs",
     quiz: [
-      {
-        question: "Which device is used to measure capillary blood glucose?",
-        options: [
-          "Glucometer",
-          "Pulse oximeter",
-          "Sphygmomanometer",
-          "Thermometer"
-        ],
-        answer: "Glucometer"
-      },
-      {
-        question: "What should be checked before using test strips?",
-        options: [
-          "Expiry date",
-          "Patient's height",
-          "Ward temperature only",
-          "Patient's occupation"
-        ],
-        answer: "Expiry date"
-      },
-      {
-        question: "Where is the usual puncture site?",
-        options: [
-          "Side of the fingertip",
-          "Centre of the palm",
-          "Elbow",
-          "Forehead"
-        ],
-        answer: "Side of the fingertip"
-      },
-      {
-        question: "What should happen after cleaning the finger with alcohol?",
-        options: [
-          "Allow the site to dry",
-          "Immediately cover it",
-          "Apply lotion",
-          "Blow on it continuously"
-        ],
-        answer: "Allow the site to dry"
-      },
-      {
-        question: "According to the supplied procedure, what is done with the first drop of blood?",
-        options: [
-          "Wipe it away with a dry swab",
-          "Apply it to the strip",
-          "Put it in the sharps container",
-          "Mix it with alcohol"
-        ],
-        answer: "Wipe it away with a dry swab"
-      },
-      {
-        question: "Where should the lancet be disposed of?",
-        options: [
-          "Sharps container",
-          "General waste bin",
-          "Bedside table",
-          "Patient's locker"
-        ],
-        answer: "Sharps container"
-      },
-      {
-        question: "What should be done after obtaining the glucose result?",
-        options: [
-          "Record the reading with date and time",
-          "Erase the result",
-          "Ignore the result",
-          "Discard the chart"
-        ],
-        answer: "Record the reading with date and time"
-      },
-      {
-        question: "What should the nurse do when an abnormal blood glucose reading is identified?",
-        options: [
-          "Report it to the appropriate officer",
-          "Ignore it",
-          "Wait until discharge",
-          "Delete the result"
-        ],
-        answer: "Report it to the appropriate officer"
-      },
-      {
-        question: "Why should gloves be used for the procedure?",
-        options: [
-          "To reduce exposure to blood and support infection prevention",
-          "To increase blood glucose",
-          "To prevent the patient from feeling the prick",
-          "To replace hand hygiene"
-        ],
-        answer: "To reduce exposure to blood and support infection prevention"
-      },
-      {
-        question: "What should be done with the test strip after use?",
-        options: [
-          "Dispose of it appropriately according to protocol",
-          "Reuse it for another patient",
-          "Give it to the patient",
-          "Place it on the bedside table"
-        ],
-        answer: "Dispose of it appropriately according to protocol"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Check physicians order for the frequency of monitoring glucose level",
+      "Check the functionality of the glucose meter and ensure reading is in mmol/L",
+      "After noting the reading on the glucometer remove the strip and dispose off",
+      "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)"
+    ],
+    "answer": "Check physicians order for the frequency of monitoring glucose level",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
+      "Identify patient and establish rapport (Refer to steps)",
+      "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm",
+      "Perform hand hygiene"
+    ],
+    "answer": "Identify patient and establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Clean the area with antimicrobial solution and allow to dry",
+      "Identify patient and establish rapport (Refer to steps)",
+      "Explain procedure (Refer to steps)",
+      "Document on the appropriate recording software and observation chart (manual or electronic)"
+    ],
+    "answer": "Explain procedure (Refer to steps)",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Select the site for glucose check (fingers/palmer area)",
+      "Discuss findings with the patient and appropriate officer",
+      "Wear disposable glove",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Check the functionality of the glucose meter and ensure reading is in mmol/L",
+      "Drop blood on the glucose strip and allow to read",
+      "Set the tray and send to the bedside",
+      "Remove gloves"
+    ],
+    "answer": "Check the functionality of the glucose meter and ensure reading is in mmol/L",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Perform hand hygiene",
+      "Set the tray and send to the bedside",
+      "Check physicians order for the frequency of monitoring glucose level",
+      "Puncture the area using lancet or needle"
+    ],
+    "answer": "Set the tray and send to the bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
+      "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm",
+      "Select the site for glucose check (fingers/palmer area)",
+      "Insert glucose strip into the glucometer and check for its functionality"
+    ],
+    "answer": "Select the site for glucose check (fingers/palmer area)",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "After noting the reading on the glucometer remove the strip and dispose off",
+      "Select the site for glucose check (fingers/palmer area)",
+      "Document on the appropriate recording software and observation chart (manual or electronic)",
+      "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)"
+    ],
+    "answer": "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Insert glucose strip into the glucometer and check for its functionality",
+      "Explain procedure (Refer to steps)",
+      "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
+      "Set the tray and send to the bedside"
+    ],
+    "answer": "Insert glucose strip into the glucometer and check for its functionality",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Drop blood on the glucose strip and allow to read",
+      "Wear disposable glove",
+      "Clean the area with antimicrobial solution and allow to dry",
+      "Identify patient and establish rapport (Refer to steps)"
+    ],
+    "answer": "Wear disposable glove",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Insert glucose strip into the glucometer and check for its functionality",
+      "Check physicians order for the frequency of monitoring glucose level",
+      "Clean the area with antimicrobial solution and allow to dry",
+      "Discuss findings with the patient and appropriate officer"
+    ],
+    "answer": "Clean the area with antimicrobial solution and allow to dry",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Check the functionality of the glucose meter and ensure reading is in mmol/L",
+      "Remove gloves",
+      "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)",
+      "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm"
+    ],
+    "answer": "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Puncture the area using lancet or needle",
+      "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm",
+      "Perform hand hygiene",
+      "After noting the reading on the glucometer remove the strip and dispose off"
+    ],
+    "answer": "Puncture the area using lancet or needle",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Explain procedure (Refer to steps)",
+      "Drop blood on the glucose strip and allow to read",
+      "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
+      "Clean the area with antimicrobial solution and allow to dry"
+    ],
+    "answer": "Drop blood on the glucose strip and allow to read",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Document on the appropriate recording software and observation chart (manual or electronic)",
+      "Wear disposable glove",
+      "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
+      "Select the site for glucose check (fingers/palmer area)"
+    ],
+    "answer": "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Drop blood on the glucose strip and allow to read",
+      "Set the tray and send to the bedside",
+      "Discuss findings with the patient and appropriate officer",
+      "After noting the reading on the glucometer remove the strip and dispose off"
+    ],
+    "answer": "After noting the reading on the glucometer remove the strip and dispose off",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Remove gloves",
+      "Identify patient and establish rapport (Refer to steps)",
+      "Puncture the area using lancet or needle",
+      "Check the functionality of the glucose meter and ensure reading is in mmol/L"
+    ],
+    "answer": "Remove gloves",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Puncture the area using lancet or needle",
+      "Perform hand hygiene",
+      "Wear disposable glove",
+      "Check physicians order for the frequency of monitoring glucose level"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)",
+      "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
+      "Discuss findings with the patient and appropriate officer",
+      "After noting the reading on the glucometer remove the strip and dispose off"
+    ],
+    "answer": "Discuss findings with the patient and appropriate officer",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Perform hand hygiene",
+      "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
+      "Select the site for glucose check (fingers/palmer area)",
+      "Document on the appropriate recording software and observation chart (manual or electronic)"
+    ],
+    "answer": "Document on the appropriate recording software and observation chart (manual or electronic)",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "options": [
+      "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
+      "Clean the area with antimicrobial solution and allow to dry",
+      "Explain procedure (Refer to steps)",
+      "Drop blood on the glucose strip and allow to read"
+    ],
+    "answer": "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  }
+]
   }
 ];

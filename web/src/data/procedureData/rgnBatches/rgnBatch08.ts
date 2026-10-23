@@ -12,196 +12,2052 @@ export const rgnBatch08: Procedure[] = [
     id: "rgn-066",
     title: "TAKING OVER A WARD",
     category: "General Nursing (RGN)",
-    overview: "Taking over a ward is the incoming nurse’s systematic verification of patients, records, staff information, medicines, equipment, and environmental safety. It converts the outgoing report into an accountable assessment of the ward at the start of a shift.",
-    purpose: ["Establish the current condition and priorities of every patient", "Identify risks and outstanding care at the beginning of duty", "Accept responsibility for medicines, equipment, records, and ward safety", "Promote continuity, communication, and accountability"],
+    types: [
+  "N/A"
+],
+    overview: "It is the practice of exchanging important and relevant information physically and electronically about a patient (using Electronic Medical Records Review (EMR)), staff, equipment and nursing activities that occurred during a shift from outgoing team of nurses/midwives to incoming team of nurses/midwives i.e. morning, afternoon and night.",
+    purpose: [],
     indications: ["Beginning a morning, afternoon, or night duty", "Assumption of responsibility after staff redeployment", "Any formal transfer of ward responsibility"],
-    equipment: ["Ward census or state", "Patient folders or approved electronic record", "Observation, treatment, fluid-balance, and care-plan charts", "Handover or report book", "Controlled-drug register and key according to policy", "Equipment checklist and maintenance log", "Pen or approved electronic documentation system"],
-    steps: ["Arrive on time, perform hand hygiene, and receive the outgoing nurse’s structured verbal report in a private area.", "Read the ward report and relevant patient records, confirming diagnoses, allergies, risks, recent observations, investigations, and outstanding actions.", "Clarify any discrepancy or incomplete information before accepting responsibility; use closed-loop communication.", "Conduct a bed-to-bed assessment with the outgoing nurse, identifying each patient with two identifiers and asking about immediate concerns.", "Check the patient’s general condition, airway and breathing support, consciousness, pain, skin and pressure areas, nutrition, elimination, mobility, and safeguarding needs.", "Verify oxygen, infusions, drains, catheters, feeding tubes, dressings, monitoring equipment, and alarms; confirm prescribed settings and patency.", "Review medicines due, allergies, controlled medicines, emergency equipment, stock, keys, and any medicine needing urgent action.", "Inspect the ward, utility areas, emergency exits, oxygen supply, suction, call bells, resuscitation equipment, cleanliness, and equipment defects.", "Record hazards, staffing concerns, missing resources, and unresolved clinical tasks; escalate urgent risks immediately.", "Sign or electronically confirm the handover only after understanding it, document the taking-over process, and begin the prioritized plan of care."],
+    equipment: [
+  "The following manual or electronic documents:",
+  "24 Hourly report book",
+  "Patient’s folders",
+  "Patient observation charts",
+  "Ward state",
+  "Nurse’s changes book 6. Other relevant documents (based on facility protocol)"
+],
+    steps: [
+  "Greet the nurses on duty",
+  "Ask for oral information on major happenings on the ward from the outgoing nurse",
+  "Read reports",
+  "Enquire about sensitive information on patients at the nurse’s station",
+  "Take over ward from bed to bed verifying the state of all patients",
+  "Establish rapport with patients during taking over, ask about their concerns and general health",
+  "Confirm information about the patients on charts and notes provide",
+  "Check with outgoing nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
+  "Check on any drainage tubes if they are draining well and record the amount if necessary e.g. intravenous line, catheter, NG tubes etc.",
+  "Conduct inspection of ward with the outgoing nurse and note defective equipment",
+  "Ensure resources needed for work are available and adequate and takes over controlled medication",
+  "Counter-signs written ward report",
+  "Note important issues and document",
+  "Congratulate out-going nurse"
+],
     precautions: ["Never accept responsibility for an unclear or unsafe handover without escalating and recording the concern.", "Check actual patient and device status rather than relying only on verbal report.", "Protect confidentiality during bedside review and electronic record access.", "Controlled medicines, keys, and equipment must be counted and transferred according to facility policy."],
     preparation: ["Know the ward layout, emergency procedures, staffing allocation, and local escalation pathways.", "Prioritize unstable patients and time-critical treatments before routine administrative tasks."],
     documentation: ["Record handover time, staff involved, patient risks, outstanding tasks, counts, equipment faults, and escalations.", "Update the ward state and care plan when the assessment identifies a change."],
     quiz: [
-      q("What is the main purpose of taking over a ward?", ["To verify patient and ward safety and accept accountable responsibility", "To replace all patient assessments with a verbal report", "To delay urgent care until the next shift", "To inspect only the staff room"], "To verify patient and ward safety and accept accountable responsibility", "Taking over requires active verification of patients, records, equipment, medicines, and outstanding risks."),
-      q("What should the incoming nurse do when the report conflicts with the patient’s current condition?", ["Assess the patient, clarify the discrepancy, and escalate if necessary", "Ignore the assessment", "Change the record without checking", "Wait until discharge"], "Assess the patient, clarify the discrepancy, and escalate if necessary", "Current patient safety takes priority over an inaccurate or incomplete report."),
-      q("Which review should occur at the bedside?", ["Patient condition, identity, devices, infusions, drains, and immediate risks", "Only the patient’s clothing", "Only the ward’s visitor list", "The outgoing nurse’s personal schedule"], "Patient condition, identity, devices, infusions, drains, and immediate risks", "Bedside verification confirms that high-risk care is functioning as reported."),
-      q("How should controlled medicines be taken over?", ["Count and sign them with authorized staff according to policy", "Estimate the number from memory", "Leave the keys in an open drawer", "Ask a visitor to count them"], "Count and sign them with authorized staff according to policy", "A witnessed count and documented transfer protect patients, staff, and medicine security."),
-      q("What should be done with an equipment defect that may affect care?", ["Remove it from use if unsafe, report it, and arrange an alternative", "Hide it in a cupboard", "Continue using it without documentation", "Wait for the next annual inspection"], "Remove it from use if unsafe, report it, and arrange an alternative", "Defective equipment can cause harm and needs immediate risk control."),
-      q("Why are two patient identifiers used during taking over?", ["To reduce wrong-patient errors", "To shorten the handover", "To replace the patient’s consent", "To identify the nurse’s uniform"], "To reduce wrong-patient errors", "Two identifiers support safe matching of patients with records, medicines, and devices."),
-      q("Which patient should be checked first?", ["A patient reported to be deteriorating or needing time-critical care", "A patient with no outstanding needs", "A vacant bed", "The staff refrigerator"], "A patient reported to be deteriorating or needing time-critical care", "Urgency and clinical risk determine priorities."),
-      q("What is closed-loop communication during handover?", ["The receiver repeats or confirms the information and required action", "Leaving the ward without a reply", "Writing an unrelated note", "Speaking only to visitors"], "The receiver repeats or confirms the information and required action", "Closed-loop communication confirms that important information was understood."),
-      q("What should be recorded when taking over identifies an unresolved risk?", ["The risk, immediate action, person informed, and follow-up plan", "Nothing until the risk causes harm", "Only the patient’s bed number", "A private message with no clinical record"], "The risk, immediate action, person informed, and follow-up plan", "Clear documentation supports escalation and accountable follow-up."),
-      q("Why should the incoming nurse inspect the ward environment?", ["Environmental hazards and missing resources can directly affect patient safety", "It replaces clinical assessment", "It is only a housekeeping exercise", "It prevents all medication errors"], "Environmental hazards and missing resources can directly affect patient safety", "Emergency equipment, exits, call bells, and hazards must be ready at the start of duty."),
+  {
+    "question": "Which action is listed as step 1 of TAKING OVER A WARD?",
+    "options": [
+      "Greet the nurses on duty",
+      "Take over ward from bed to bed verifying the state of all patients",
+      "Read reports",
+      "Congratulate out-going nurse"
     ],
+    "answer": "Greet the nurses on duty",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of TAKING OVER A WARD?",
+    "options": [
+      "Check with outgoing nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
+      "Ask for oral information on major happenings on the ward from the outgoing nurse",
+      "Counter-signs written ward report",
+      "Conduct inspection of ward with the outgoing nurse and note defective equipment"
+    ],
+    "answer": "Ask for oral information on major happenings on the ward from the outgoing nurse",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of TAKING OVER A WARD?",
+    "options": [
+      "Enquire about sensitive information on patients at the nurse’s station",
+      "Greet the nurses on duty",
+      "Read reports",
+      "Establish rapport with patients during taking over, ask about their concerns and general health"
+    ],
+    "answer": "Read reports",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of TAKING OVER A WARD?",
+    "options": [
+      "Note important issues and document",
+      "Ensure resources needed for work are available and adequate and takes over controlled medication",
+      "Check on any drainage tubes if they are draining well and record the amount if necessary e.g. intravenous line, catheter, NG tubes etc.",
+      "Enquire about sensitive information on patients at the nurse’s station"
+    ],
+    "answer": "Enquire about sensitive information on patients at the nurse’s station",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of TAKING OVER A WARD?",
+    "options": [
+      "Take over ward from bed to bed verifying the state of all patients",
+      "Confirm information about the patients on charts and notes provide",
+      "Enquire about sensitive information on patients at the nurse’s station",
+      "Ask for oral information on major happenings on the ward from the outgoing nurse"
+    ],
+    "answer": "Take over ward from bed to bed verifying the state of all patients",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of TAKING OVER A WARD?",
+    "options": [
+      "Conduct inspection of ward with the outgoing nurse and note defective equipment",
+      "Establish rapport with patients during taking over, ask about their concerns and general health",
+      "Congratulate out-going nurse",
+      "Counter-signs written ward report"
+    ],
+    "answer": "Establish rapport with patients during taking over, ask about their concerns and general health",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of TAKING OVER A WARD?",
+    "options": [
+      "Take over ward from bed to bed verifying the state of all patients",
+      "Read reports",
+      "Confirm information about the patients on charts and notes provide",
+      "Check with outgoing nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc."
+    ],
+    "answer": "Confirm information about the patients on charts and notes provide",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of TAKING OVER A WARD?",
+    "options": [
+      "Greet the nurses on duty",
+      "Note important issues and document",
+      "Ensure resources needed for work are available and adequate and takes over controlled medication",
+      "Check with outgoing nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc."
+    ],
+    "answer": "Check with outgoing nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of TAKING OVER A WARD?",
+    "options": [
+      "Check on any drainage tubes if they are draining well and record the amount if necessary e.g. intravenous line, catheter, NG tubes etc.",
+      "Check with outgoing nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
+      "Establish rapport with patients during taking over, ask about their concerns and general health",
+      "Enquire about sensitive information on patients at the nurse’s station"
+    ],
+    "answer": "Check on any drainage tubes if they are draining well and record the amount if necessary e.g. intravenous line, catheter, NG tubes etc.",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of TAKING OVER A WARD?",
+    "options": [
+      "Counter-signs written ward report",
+      "Conduct inspection of ward with the outgoing nurse and note defective equipment",
+      "Ask for oral information on major happenings on the ward from the outgoing nurse",
+      "Congratulate out-going nurse"
+    ],
+    "answer": "Conduct inspection of ward with the outgoing nurse and note defective equipment",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of TAKING OVER A WARD?",
+    "options": [
+      "Confirm information about the patients on charts and notes provide",
+      "Take over ward from bed to bed verifying the state of all patients",
+      "Ensure resources needed for work are available and adequate and takes over controlled medication",
+      "Check on any drainage tubes if they are draining well and record the amount if necessary e.g. intravenous line, catheter, NG tubes etc."
+    ],
+    "answer": "Ensure resources needed for work are available and adequate and takes over controlled medication",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of TAKING OVER A WARD?",
+    "options": [
+      "Read reports",
+      "Greet the nurses on duty",
+      "Note important issues and document",
+      "Counter-signs written ward report"
+    ],
+    "answer": "Counter-signs written ward report",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of TAKING OVER A WARD?",
+    "options": [
+      "Note important issues and document",
+      "Conduct inspection of ward with the outgoing nurse and note defective equipment",
+      "Check with outgoing nurse if gadgets on patients are functioning e.g. cardiac monitor, oxygen flow metre etc.",
+      "Establish rapport with patients during taking over, ask about their concerns and general health"
+    ],
+    "answer": "Note important issues and document",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of TAKING OVER A WARD?",
+    "options": [
+      "Note important issues and document",
+      "Congratulate out-going nurse",
+      "Enquire about sensitive information on patients at the nurse’s station",
+      "Ask for oral information on major happenings on the ward from the outgoing nurse"
+    ],
+    "answer": "Congratulate out-going nurse",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-067",
-    title: "WASHING OF PATIENT’S HAIR IN BED",
+    title: "WASHING OF PATIENT'S HAIR IN BED",
     category: "General Nursing (RGN)",
-    overview: "Bed hair washing provides scalp hygiene and comfort for a patient who cannot safely access a bathroom or basin. The nurse protects the airway, ears, eyes, skin, temperature, dignity, and lines while using a waterproof trough and controlled water flow.",
-    purpose: ["Remove sweat, oil, dirt, and microorganisms from the hair and scalp", "Promote comfort, circulation, relaxation, and self-esteem", "Maintain personal hygiene for a dependent or immobile patient"],
+    types: [
+  "N/A"
+],
+    overview: "This is the process of maintaining the cleanliness of a patient's hair by washing the hair with water and shampoo. This activity is mostly performed for patient who are bedridden and need assistance in the maintenance of their personal hygiene care.",
+    purpose: [],
     indications: ["A bedridden or dependent patient unable to wash hair independently", "Scalp hygiene required as part of personal care", "A patient who can tolerate the position and water exposure"],
-    equipment: ["Waterproof trough or long mackintosh and bucket", "Warm water, basin, shampoo, and conditioner if desired", "Bath and face towels, washcloths, and cotton wool", "Comb, brush, hair ties, and prescribed hair products", "Waterproof pad and clean linen", "PPE, gloves if contact with body fluids is expected", "Call bell and documentation record"],
-    steps: ["Assess the patient’s condition, mobility, cognition, pain, temperature tolerance, scalp condition, tubes, lines, and ability to tolerate head extension.", "Explain the procedure, obtain consent, provide privacy, and ask about preferred water temperature, products, hairstyle, and cultural preferences.", "Perform hand hygiene, prepare the equipment, raise the bed to a safe working height, and protect the patient’s airway and lines.", "Position the patient with the head supported at the edge of the bed or in a hair-washing basin only if clinically safe; use a trough to direct water into a bucket.", "Protect the bed and shoulders with waterproof material and towels, cover the eyes and ears as appropriate, and test water temperature.", "Comb gently to remove tangles, wet the hair gradually, apply a small amount of shampoo, and massage the scalp with fingertips without scratching.", "Rinse thoroughly until no shampoo remains, apply conditioner if appropriate, and prevent water from entering the eyes, ears, nose, or airway.", "Squeeze water gently from the hair, wrap it in a towel, remove the wet trough and linen, and dry the scalp and hair thoroughly.", "Assist the patient into a safe comfortable position, replace wet linen, style the hair according to preference, and ensure the call bell is available.", "Clean and store equipment, perform hand hygiene, assess the scalp and patient tolerance, and document the care and any abnormal findings."],
+    equipment: [
+  "A trolley containing the following:",
+  "Top shelf",
+  "Bowl",
+  "Two bath towel",
+  "Face towel",
+  "Cotton wool swabs in a gallipot",
+  "Shampoo and conditioner",
+  "Hair comb",
+  "Kidney dish",
+  "Hair pins where necessary",
+  "vii. Hair pomade",
+  "Bottom shelf",
+  "Two jugs containing hot and cold water",
+  "Long mackintosh and a bath blanket/big towel/linen",
+  "Clean linen if required",
+  "Hairdryer if available",
+  "Bucket for used water"
+],
+    steps: [
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Provide privacy",
+  "Perform hand hygiene, prepare and send trolley to bedside",
+  "Assist patient into a fowler’s position or lie flat in with the head extended to the edge of the bed (if condition permits)",
+  "Arrange long mackintosh and a bath blanket/big towel/linen into a trough, fashioned under the patient’s shoulders, neck, head and extend it down into a bucket",
+  "Cover mackintosh with a bath towel under the patient’s neck and around the shoulders",
+  "Remove hair accessories, comb and remove tangles",
+  "Pluck the ear with cotton wool balls",
+  "Mix the water to the patient’s preferred temperature",
+  "Wet hair and apply soap/shampoo",
+  "Massage hair well, rinse and repeat till the hair is clean (a woman require more rinse water than a man)",
+  "Wipe any moisture around eye, face and neck",
+  "Squeeze hair gently and tie hair up in a towel",
+  "Remove long mackintosh and a bath blanket/big towel/linen",
+  "Assist patient into a sitting up position",
+  "Dry thoroughly with a towel and a hand dryer",
+  "Apply pomade, comb and style hair to patient’s liking",
+  "Change linen if wet",
+  "Put patient in a desirable position",
+  "Dispose off used items and decontaminate trolley",
+  "Perform hand hygiene",
+  "Document procedure in nurses’ notes (manual or electronic) and report findings to appropriate officer"
+],
     precautions: ["Do not extend the neck or expose the patient to water if respiratory, cervical-spine, neurological, or cardiovascular status makes it unsafe.", "Avoid hot water, vigorous scalp massage, hair dryers near wet skin, and water near electrical equipment.", "Protect hearing aids, dressings, IV lines, oxygen, and other devices from water.", "Stop for breathlessness, dizziness, chills, pain, distress, or a change in level of consciousness."],
     preparation: ["Check for scalp lesions, infestations, pressure areas, or prescribed treatments and report abnormalities.", "Ask for assistance when the patient is heavy, confused, unstable, or unable to maintain position."],
     afterCare: ["Dry the hair and scalp completely, maintain warmth, and check for wet linen or skin folds.", "Offer fluids or rest if appropriate and teach the patient to report scalp pain, itching, sores, or persistent dizziness."],
     documentation: ["Record the patient’s tolerance, scalp condition, products used, hair care preference, and any abnormal findings.", "Document refusal, assistance required, skin injury, infestation, or escalation."],
     quiz: [
-      q("What is the first safety assessment before washing hair in bed?", ["Whether the patient can safely tolerate the position and water exposure", "Whether the shampoo bottle is attractive", "Whether the room has a television", "Whether the patient has eaten dessert"], "Whether the patient can safely tolerate the position and water exposure", "Position, airway, neurological, respiratory, and cardiovascular safety must be assessed first."),
-      q("How should water temperature be checked?", ["Test it before applying it to the patient and ask about comfort", "Use very hot water to remove oil", "Allow water to run without checking", "Use ice water for every patient"], "Test it before applying it to the patient and ask about comfort", "Testing prevents burns, chilling, and discomfort."),
-      q("What protects the bed during the procedure?", ["A waterproof trough or mackintosh with towels", "A medication chart", "A dry paper label", "A sterile syringe"], "A waterproof trough or mackintosh with towels", "Waterproof protection prevents wet linen, skin damage, and environmental contamination."),
-      q("How should shampoo be massaged into the scalp?", ["With fingertips gently, avoiding scratching with fingernails", "With forceful rubbing", "With a sharp comb", "By pulling the hair"], "With fingertips gently, avoiding scratching with fingernails", "Gentle fingertip massage cleanses without causing scalp trauma."),
-      q("Which device needs protection from water?", ["Oxygen tubing, IV lines, dressings, and hearing aids", "A clean dry towel", "The patient’s paper chart kept away from the bed", "A sealed waste bag"], "Oxygen tubing, IV lines, dressings, and hearing aids", "Water can damage equipment, loosen dressings, or compromise therapy."),
-      q("What should the nurse do if the patient becomes breathless?", ["Stop, reposition safely, assess, and seek help as indicated", "Continue quickly until the hair is clean", "Pour more water to cool the patient", "Leave the patient alone"], "Stop, reposition safely, assess, and seek help as indicated", "A change in breathing is a priority over completing hygiene care."),
-      q("Why must the hair and scalp be dried thoroughly?", ["To maintain warmth and prevent prolonged moisture-related skin problems", "To sterilize the hair", "To avoid all future bathing", "To increase shampoo absorption"], "To maintain warmth and prevent prolonged moisture-related skin problems", "Drying supports comfort, temperature regulation, and skin integrity."),
-      q("How should tangles be managed?", ["Comb gently from the ends toward the roots", "Pull forcefully from the scalp", "Cut hair without consent", "Ignore all tangles"], "Comb gently from the ends toward the roots", "Working gently from the ends reduces traction and pain."),
-      q("Which finding should be reported?", ["Scalp sores, infestation, bleeding, or unexplained hair loss", "A clean intact scalp", "The patient’s preferred hairstyle", "A dry towel"], "Scalp sores, infestation, bleeding, or unexplained hair loss", "Abnormal scalp findings may require treatment or clinical review."),
-      q("What is essential after repositioning the patient?", ["Ensure comfort, warmth, safety, and access to the call bell", "Leave the bed at its highest position", "Leave wet linen underneath", "Remove all personal items"], "Ensure comfort, warmth, safety, and access to the call bell", "Safe completion includes post-care assessment and environmental safety."),
+  {
+    "question": "Which action is listed as step 1 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Assist patient into a fowler’s position or lie flat in with the head extended to the edge of the bed (if condition permits)",
+      "Assist patient into a sitting up position",
+      "Explain procedure to patient (Refer to steps)"
     ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Massage hair well, rinse and repeat till the hair is clean (a woman require more rinse water than a man)",
+      "Document procedure in nurses’ notes (manual or electronic) and report findings to appropriate officer"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Remove hair accessories, comb and remove tangles",
+      "Establish rapport (Refer to steps)",
+      "Provide privacy",
+      "Change linen if wet"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Provide privacy",
+      "Remove long mackintosh and a bath blanket/big towel/linen",
+      "Establish rapport (Refer to steps)",
+      "Perform hand hygiene, prepare and send trolley to bedside"
+    ],
+    "answer": "Perform hand hygiene, prepare and send trolley to bedside",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Assist patient into a fowler’s position or lie flat in with the head extended to the edge of the bed (if condition permits)",
+      "Wet hair and apply soap/shampoo",
+      "Perform hand hygiene",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Assist patient into a fowler’s position or lie flat in with the head extended to the edge of the bed (if condition permits)",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Arrange long mackintosh and a bath blanket/big towel/linen into a trough, fashioned under the patient’s shoulders, neck, head and extend it down into a bucket",
+      "Apply pomade, comb and style hair to patient’s liking",
+      "Cover mackintosh with a bath towel under the patient’s neck and around the shoulders"
+    ],
+    "answer": "Arrange long mackintosh and a bath blanket/big towel/linen into a trough, fashioned under the patient’s shoulders, neck, head and extend it down into a bucket",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Squeeze hair gently and tie hair up in a towel",
+      "Establish rapport (Refer to steps)",
+      "Cover mackintosh with a bath towel under the patient’s neck and around the shoulders",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Cover mackintosh with a bath towel under the patient’s neck and around the shoulders",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Mix the water to the patient’s preferred temperature",
+      "Dispose off used items and decontaminate trolley",
+      "Establish rapport (Refer to steps)",
+      "Remove hair accessories, comb and remove tangles"
+    ],
+    "answer": "Remove hair accessories, comb and remove tangles",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Pluck the ear with cotton wool balls",
+      "Dry thoroughly with a towel and a hand dryer",
+      "Assist patient into a fowler’s position or lie flat in with the head extended to the edge of the bed (if condition permits)",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Pluck the ear with cotton wool balls",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Explain procedure to patient (Refer to steps)",
+      "Mix the water to the patient’s preferred temperature",
+      "Establish rapport (Refer to steps)",
+      "Wipe any moisture around eye, face and neck"
+    ],
+    "answer": "Mix the water to the patient’s preferred temperature",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Put patient in a desirable position",
+      "Establish rapport (Refer to steps)",
+      "Wet hair and apply soap/shampoo",
+      "Remove hair accessories, comb and remove tangles"
+    ],
+    "answer": "Wet hair and apply soap/shampoo",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Assist patient into a sitting up position",
+      "Perform hand hygiene, prepare and send trolley to bedside",
+      "Establish rapport (Refer to steps)",
+      "Massage hair well, rinse and repeat till the hair is clean (a woman require more rinse water than a man)"
+    ],
+    "answer": "Massage hair well, rinse and repeat till the hair is clean (a woman require more rinse water than a man)",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Wipe any moisture around eye, face and neck",
+      "Document procedure in nurses’ notes (manual or electronic) and report findings to appropriate officer",
+      "Wet hair and apply soap/shampoo",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Wipe any moisture around eye, face and neck",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Squeeze hair gently and tie hair up in a towel",
+      "Cover mackintosh with a bath towel under the patient’s neck and around the shoulders",
+      "Change linen if wet"
+    ],
+    "answer": "Squeeze hair gently and tie hair up in a towel",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Provide privacy",
+      "Establish rapport (Refer to steps)",
+      "Remove long mackintosh and a bath blanket/big towel/linen",
+      "Squeeze hair gently and tie hair up in a towel"
+    ],
+    "answer": "Remove long mackintosh and a bath blanket/big towel/linen",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Perform hand hygiene",
+      "Mix the water to the patient’s preferred temperature",
+      "Establish rapport (Refer to steps)",
+      "Assist patient into a sitting up position"
+    ],
+    "answer": "Assist patient into a sitting up position",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Dry thoroughly with a towel and a hand dryer",
+      "Arrange long mackintosh and a bath blanket/big towel/linen into a trough, fashioned under the patient’s shoulders, neck, head and extend it down into a bucket",
+      "Apply pomade, comb and style hair to patient’s liking",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Dry thoroughly with a towel and a hand dryer",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Apply pomade, comb and style hair to patient’s liking",
+      "Wipe any moisture around eye, face and neck",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Apply pomade, comb and style hair to patient’s liking",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Pluck the ear with cotton wool balls",
+      "Establish rapport (Refer to steps)",
+      "Change linen if wet",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Change linen if wet",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Assist patient into a fowler’s position or lie flat in with the head extended to the edge of the bed (if condition permits)",
+      "Assist patient into a sitting up position",
+      "Establish rapport (Refer to steps)",
+      "Put patient in a desirable position"
+    ],
+    "answer": "Put patient in a desirable position",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Dispose off used items and decontaminate trolley",
+      "Massage hair well, rinse and repeat till the hair is clean (a woman require more rinse water than a man)",
+      "Establish rapport (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Dispose off used items and decontaminate trolley",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Perform hand hygiene",
+      "Change linen if wet",
+      "Remove hair accessories, comb and remove tangles"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of WASHING OF PATIENT'S HAIR IN BED?",
+    "options": [
+      "Remove long mackintosh and a bath blanket/big towel/linen",
+      "Establish rapport (Refer to steps)",
+      "Document procedure in nurses’ notes (manual or electronic) and report findings to appropriate officer",
+      "Perform hand hygiene, prepare and send trolley to bedside"
+    ],
+    "answer": "Document procedure in nurses’ notes (manual or electronic) and report findings to appropriate officer",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-068",
     title: "SPOON FEEDING OF AN ADULT ILL PATIENT",
     category: "General Nursing (RGN)",
-    overview: "Spoon feeding assists an adult who can swallow safely but cannot independently eat. The nurse confirms the prescribed diet, positions the patient upright, offers small amounts at a safe pace, observes swallowing, and stops if aspiration or distress is suspected.",
-    purpose: ["Provide prescribed nutrition and hydration", "Support comfort, dignity, independence, and social interaction", "Observe appetite, swallowing, tolerance, and intake"],
+    types: [
+  "N/A"
+],
+    overview: "It is the provision of nutritional meals through the gastrointestinal tract. This can be done directly through the mouth, stoma or with the aid of nasogastric (NG) tube.",
+    purpose: [],
     indications: ["An adult who requires assistance with oral feeding", "Weakness, illness, reduced mobility, or visual or motor impairment", "A prescribed oral diet when swallowing is assessed as safe"],
-    equipment: ["Prescribed meal or therapeutic diet", "Spoon, cup, and drinking water if allowed", "Napkin or protective bib", "Tray and cardiac table", "Mouth-care supplies", "Gloves and apron if required", "Food and fluid intake chart"],
-    steps: ["Verify patient identity, prescribed diet, allergies, swallowing status, fluid restrictions, and any speech and language therapy recommendations.", "Explain the meal and procedure, ask about toileting, pain, preferred position, cultural or religious needs, and consent.", "Perform hand hygiene, assist the patient with hand and mouth care, position upright with head supported, and check alertness.", "Check food temperature and texture, protect clothing, place the tray within view, and encourage the patient to do as much as possible.", "Offer a small amount from the front of the spoon, allow the patient to close the lips, and wait for chewing and swallowing before the next mouthful.", "Pace the meal according to the patient, alternate food and permitted fluids, and observe for coughing, wet voice, pocketing, fatigue, or breathlessness.", "Stop feeding and assess if choking, repeated coughing, cyanosis, vomiting, or reduced alertness occurs; call for help according to emergency policy.", "Do not force food. Record the amount eaten and fluid taken, including reasons for incomplete intake.", "Provide mouth care, clean the patient, remove the tray, and keep the patient upright for the period recommended by the care plan.", "Perform hand hygiene, reassess comfort and breathing, and document intake, tolerance, swallowing concerns, and referrals."],
+    equipment: [
+  "A tray containing:",
+  "Food",
+  "Spoon",
+  "Bottle of drinking water",
+  "Cup",
+  "Napkins",
+  "Serviette",
+  "A bowl of water",
+  "Hand washing soap",
+  "Bedpan/urinal if necessary",
+  "Mouth wash"
+],
+    steps: [
+  "Establish rapport (Refer to steps)",
+  "Explain the procedure to the patient and inform him/her about the kind of food about to serve",
+  "Ask patient if he/she want to empty the bladder/bowel before eating",
+  "Offer bedpan/urinal if required",
+  "Assist patient to perform hand hygiene",
+  "Perform hand hygiene and prepare meal tray",
+  "Put patient into a desirable position",
+  "Give patient a mouth wash",
+  "Bring food in a tray to patient’s bedside and place it on the cardiac table",
+  "Protect patient’s clothing with the serviette",
+  "Ensure patient is in a comfortable position and ask if prayer is preferred",
+  "Sit beside the patient if convenient to make patient feel relaxed",
+  "Take food by spoon in small bits into patient’s mouth not too far back",
+  "Allow patient time to chew and swallow",
+  "Coordinate the opening of the mouth while introducing the food",
+  "Continue feeding until patient is satisfied",
+  "Give water intermittently as required by patient",
+  "Clean patient’s lips and give a mouth wash",
+  "Remove serviette and reposition patient comfortable",
+  "Encourage patient to comment on the food served",
+  "Congratulate patient and discard tray",
+  "Dispose off tray and wash items",
+  "Perform hand hygiene and document on appropriate charts (manual or electronic)"
+],
     precautions: ["Follow texture, thickness, positioning, and supervision instructions for dysphagia; never improvise a diet texture.", "Never feed an unresponsive, severely drowsy, or actively choking patient.", "Do not rush, force, or place food at the back of the mouth.", "Use aspiration precautions and report recurrent coughing, wet voice, weight loss, or poor intake."],
     preparation: ["Confirm the patient is awake enough to eat and has appropriate dentures, glasses, hearing aids, and positioning support.", "Check for nausea, pain, oral lesions, fatigue, and the need for rest before feeding."],
     afterCare: ["Keep the patient upright and observe for delayed coughing, voice change, nausea, or breathlessness.", "Offer mouth care and ensure food safety, hand hygiene, and a clean environment."],
     documentation: ["Record diet, percentage or amount consumed, fluid intake, assistance level, tolerance, and swallowing observations.", "Document refusal, aspiration signs, and referral to the nurse in charge or speech and language team."],
     quiz: [
-      q("What position is safest for spoon feeding?", ["Upright with the head supported", "Flat on the back", "Prone with the face turned down", "Standing without support"], "Upright with the head supported", "Upright positioning supports swallowing and reduces aspiration risk."),
-      q("How much food should be offered at one time?", ["A small amount, waiting for the patient to chew and swallow", "A full spoon pushed quickly", "Food placed at the back of the throat", "Several mouthfuls at once"], "A small amount, waiting for the patient to chew and swallow", "Small paced amounts allow airway protection and reduce fatigue."),
-      q("Which sign may indicate aspiration risk?", ["Coughing, wet voice, pocketing, or breathlessness during feeding", "A clear voice and comfortable swallow", "Interest in the meal", "Clean hands"], "Coughing, wet voice, pocketing, or breathlessness during feeding", "These signs may indicate impaired airway protection and require stopping and assessment."),
-      q("What should the nurse do if the patient is drowsy and cannot maintain alertness?", ["Stop oral feeding and seek assessment", "Continue feeding quickly", "Place food in the mouth while asleep", "Give a large drink"], "Stop oral feeding and seek assessment", "Adequate alertness is necessary for safe swallowing."),
-      q("Why should food texture be verified?", ["The prescribed texture is matched to swallowing ability", "Texture changes the patient’s identity", "It eliminates the need for positioning", "All patients require liquid food"], "The prescribed texture is matched to swallowing ability", "Texture and fluid thickness may be clinically prescribed to reduce aspiration."),
-      q("What is the safest response to choking or cyanosis?", ["Stop feeding, call for help, and follow emergency airway policy", "Offer another spoonful", "Lay the patient flat and leave", "Record intake before helping"], "Stop feeding, call for help, and follow emergency airway policy", "Airway compromise is an emergency and takes priority over feeding."),
-      q("How should the patient’s independence be supported?", ["Let the patient feed themselves as much as safely possible", "Take over every action without asking", "Ignore their preferences", "Feed from behind without explanation"], "Let the patient feed themselves as much as safely possible", "Supported independence promotes dignity and may improve intake."),
-      q("What should be documented when the patient eats poorly?", ["Amount taken, reason, tolerance, and action or referral", "Only that a tray was delivered", "An invented percentage", "Nothing until the next week"], "Amount taken, reason, tolerance, and action or referral", "Poor intake can affect treatment and nutrition, so it requires accurate follow-up."),
-      q("Why may the patient remain upright after eating?", ["To support digestion and reduce reflux or aspiration risk", "To prevent all bowel movements", "To dry the meal tray", "To replace oral care"], "To support digestion and reduce reflux or aspiration risk", "Post-meal positioning is part of safe feeding care."),
-      q("What should the nurse check before serving the meal?", ["Identity, diet order, allergies, texture, and fluid restrictions", "Only the tray colour", "The visitor’s meal", "The nurse’s break time"], "Identity, diet order, allergies, texture, and fluid restrictions", "Verification prevents wrong-diet, allergy, and fluid-management errors."),
+  {
+    "question": "Which action is listed as step 1 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Assist patient to perform hand hygiene",
+      "Continue feeding until patient is satisfied",
+      "Explain the procedure to the patient and inform him/her about the kind of food about to serve"
     ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Explain the procedure to the patient and inform him/her about the kind of food about to serve",
+      "Sit beside the patient if convenient to make patient feel relaxed",
+      "Perform hand hygiene and document on appropriate charts (manual or electronic)"
+    ],
+    "answer": "Explain the procedure to the patient and inform him/her about the kind of food about to serve",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Give patient a mouth wash",
+      "Establish rapport (Refer to steps)",
+      "Ask patient if he/she want to empty the bladder/bowel before eating",
+      "Remove serviette and reposition patient comfortable"
+    ],
+    "answer": "Ask patient if he/she want to empty the bladder/bowel before eating",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Ask patient if he/she want to empty the bladder/bowel before eating",
+      "Coordinate the opening of the mouth while introducing the food",
+      "Establish rapport (Refer to steps)",
+      "Offer bedpan/urinal if required"
+    ],
+    "answer": "Offer bedpan/urinal if required",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Assist patient to perform hand hygiene",
+      "Ensure patient is in a comfortable position and ask if prayer is preferred",
+      "Dispose off tray and wash items",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Assist patient to perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Perform hand hygiene and prepare meal tray",
+      "Clean patient’s lips and give a mouth wash",
+      "Put patient into a desirable position"
+    ],
+    "answer": "Perform hand hygiene and prepare meal tray",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Allow patient time to chew and swallow",
+      "Establish rapport (Refer to steps)",
+      "Put patient into a desirable position",
+      "Explain the procedure to the patient and inform him/her about the kind of food about to serve"
+    ],
+    "answer": "Put patient into a desirable position",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Protect patient’s clothing with the serviette",
+      "Congratulate patient and discard tray",
+      "Establish rapport (Refer to steps)",
+      "Give patient a mouth wash"
+    ],
+    "answer": "Give patient a mouth wash",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Bring food in a tray to patient’s bedside and place it on the cardiac table",
+      "Give water intermittently as required by patient",
+      "Assist patient to perform hand hygiene",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Bring food in a tray to patient’s bedside and place it on the cardiac table",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Explain the procedure to the patient and inform him/her about the kind of food about to serve",
+      "Protect patient’s clothing with the serviette",
+      "Establish rapport (Refer to steps)",
+      "Take food by spoon in small bits into patient’s mouth not too far back"
+    ],
+    "answer": "Protect patient’s clothing with the serviette",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Encourage patient to comment on the food served",
+      "Establish rapport (Refer to steps)",
+      "Ensure patient is in a comfortable position and ask if prayer is preferred",
+      "Give patient a mouth wash"
+    ],
+    "answer": "Ensure patient is in a comfortable position and ask if prayer is preferred",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Continue feeding until patient is satisfied",
+      "Offer bedpan/urinal if required",
+      "Establish rapport (Refer to steps)",
+      "Sit beside the patient if convenient to make patient feel relaxed"
+    ],
+    "answer": "Sit beside the patient if convenient to make patient feel relaxed",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Take food by spoon in small bits into patient’s mouth not too far back",
+      "Perform hand hygiene and document on appropriate charts (manual or electronic)",
+      "Ensure patient is in a comfortable position and ask if prayer is preferred",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Take food by spoon in small bits into patient’s mouth not too far back",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Allow patient time to chew and swallow",
+      "Put patient into a desirable position",
+      "Remove serviette and reposition patient comfortable"
+    ],
+    "answer": "Allow patient time to chew and swallow",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Ask patient if he/she want to empty the bladder/bowel before eating",
+      "Establish rapport (Refer to steps)",
+      "Coordinate the opening of the mouth while introducing the food",
+      "Allow patient time to chew and swallow"
+    ],
+    "answer": "Coordinate the opening of the mouth while introducing the food",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Dispose off tray and wash items",
+      "Protect patient’s clothing with the serviette",
+      "Establish rapport (Refer to steps)",
+      "Continue feeding until patient is satisfied"
+    ],
+    "answer": "Continue feeding until patient is satisfied",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Give water intermittently as required by patient",
+      "Perform hand hygiene and prepare meal tray",
+      "Clean patient’s lips and give a mouth wash",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Give water intermittently as required by patient",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Clean patient’s lips and give a mouth wash",
+      "Take food by spoon in small bits into patient’s mouth not too far back",
+      "Explain the procedure to the patient and inform him/her about the kind of food about to serve"
+    ],
+    "answer": "Clean patient’s lips and give a mouth wash",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Bring food in a tray to patient’s bedside and place it on the cardiac table",
+      "Establish rapport (Refer to steps)",
+      "Remove serviette and reposition patient comfortable",
+      "Congratulate patient and discard tray"
+    ],
+    "answer": "Remove serviette and reposition patient comfortable",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Assist patient to perform hand hygiene",
+      "Continue feeding until patient is satisfied",
+      "Establish rapport (Refer to steps)",
+      "Encourage patient to comment on the food served"
+    ],
+    "answer": "Encourage patient to comment on the food served",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Congratulate patient and discard tray",
+      "Sit beside the patient if convenient to make patient feel relaxed",
+      "Establish rapport (Refer to steps)",
+      "Explain the procedure to the patient and inform him/her about the kind of food about to serve"
+    ],
+    "answer": "Congratulate patient and discard tray",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Dispose off tray and wash items",
+      "Remove serviette and reposition patient comfortable",
+      "Give patient a mouth wash"
+    ],
+    "answer": "Dispose off tray and wash items",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of SPOON FEEDING OF AN ADULT ILL PATIENT?",
+    "options": [
+      "Coordinate the opening of the mouth while introducing the food",
+      "Establish rapport (Refer to steps)",
+      "Perform hand hygiene and document on appropriate charts (manual or electronic)",
+      "Offer bedpan/urinal if required"
+    ],
+    "answer": "Perform hand hygiene and document on appropriate charts (manual or electronic)",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-069",
     title: "FEEDING A PATIENT PER NASO-GASTRIC TUBE",
     category: "General Nursing (RGN)",
-    overview: "Naso-gastric tube feeding delivers prescribed nutrition, fluids, and medicines into the stomach when oral intake is unsafe or insufficient. Safe practice requires confirmation of tube position using the approved method before every feed, upright positioning, controlled administration, flushing, and monitoring for intolerance.",
-    purpose: ["Provide prescribed nutrition and hydration", "Administer enteral medicines when appropriate", "Support patients who cannot meet needs orally while maintaining gastrointestinal function"],
+    types: [
+  "N/A"
+],
+    overview: "Feeding of a patient is one of the essential task nurses/midwives perform for patients during admission. This is the process of assisting an incapacitated patient to eat in order to meet the daily nutritional requirements. It is the provision of nutritional meals through the gastrointestinal tract. This can be done directly through the mouth, stoma or with the aid of nasogastric (NG) tube.",
+    purpose: [],
     indications: ["A correctly placed and authorized naso-gastric tube", "Inability to meet nutritional needs orally with a functioning gastrointestinal tract", "Prescribed enteral feed, water, or medication"],
-    equipment: ["Prescribed enteral feed and water", "Enteral feeding syringe or feeding pump and giving set", "pH testing strip and aspirate equipment according to policy", "Clean gloves, apron, and protective sheet", "Tube clamp and enteral connectors", "Graduated container and emesis receptacle", "Intake-output and feeding record"],
-    steps: ["Verify the order, patient identity, prescribed feed, volume, rate, allergies, fluid restrictions, and tube type.", "Explain the feed, assess alertness, nausea, abdominal status, aspiration risk, and head-of-bed requirements.", "Perform hand hygiene, prepare the feed at the correct temperature, check expiry and integrity, and use an enteral-only system.", "Position the patient with the head of bed elevated at least 30–45 degrees unless contraindicated.", "Confirm tube position immediately before feeding using the approved local method, usually aspirate pH and external-length assessment; do not rely on the whoosh test.", "Stop and seek review if position cannot be confirmed, the tube has migrated, aspirate is abnormal, or respiratory symptoms are present.", "Flush the tube with the prescribed water volume before feeding, using the correct enteral syringe and gentle technique.", "Administer the prescribed feed by gravity or pump at the ordered rate; do not force feed or use excessive pressure.", "Monitor the patient for coughing, breathlessness, vomiting, abdominal distension, pain, diarrhoea, and feed intolerance; pause and escalate concerns.", "Flush after feeding according to policy, keep the patient elevated for the prescribed period, clean equipment, document feed and response, and perform hand hygiene."],
+    equipment: [
+  "An inserted nasogastric tube",
+  "A tray containing:",
+  "Prescribed amount of feed",
+  "Feeding syringe 50/60 cc",
+  "Calibrated cup/container",
+  "Bottle of water",
+  "Jaconet cape/adult bib",
+  "Disposable gloves",
+  "20cc syringe in a receiver",
+  "Stethoscope"
+],
+    steps: [
+  "Establish rapport with patient and relatives (Refer to steps)",
+  "Explain procedure to patient and relatives (Refer to steps)",
+  "Confirm the type and amount of feed against patient’s records",
+  "Perform hand hygiene",
+  "Send prepared feed in a tray to the patient’s bedside",
+  "Assist patient into a fowler’s position or slightly elevate the head end of the bed",
+  "Make patient comfortable and protects his/her clothes with the jaconet cape/adult bib",
+  "Check for proper placement of tube in the stomach by",
+  "Aspirating abdominal contents for a typical gastric fluid appearance (grassy-green, colourless with mucus shreds) in the tube OR",
+  "Inject 5 – 20cc of air through the tube and auscultate epigastric region with a stethoscope and listen for the whooshing sound simultaneously",
+  "Pour the feed into the calibrated cup and check the temperature",
+  "Pinch the naso-gastric tube, remove spigot and connect the empty syringe barrel",
+  "NB: Ensure that throughout the procedure the tube is never allowed to empty completely to prevent air from entering patient’s stomach",
+  "Hold the syringe in an upright position and pour 10-20mls of water to flush the tube before introducing the feed",
+  "Pour the feed into the syringe barrel, release the pinch and allow the feed to run by gravity",
+  "Continue feeding and observe patient for signs of discomfort till feeding is completed",
+  "Flush the tube with 10-20mls of water at the end of feeding",
+  "Pinch tube, remove the syringe barrel and replace in spigot",
+  "Assist patient to remain in the sitting up position for at least 30 minutes after feeding",
+  "Remove protective clothing, dispose off tray and wash items",
+  "Perform hand hygiene and document on appropriate charts (manual or electronic)"
+],
     precautions: ["Do not commence a feed if tube placement is uncertain; confirm by approved policy and escalate.", "The air-auscultation or whoosh test is not a reliable method of confirming tube position.", "Use enteral equipment and connectors that cannot be inadvertently connected to IV lines.", "Follow local guidance for gastric residuals; do not make decisions from residual volume alone without clinical context."],
     preparation: ["Check the tube’s external marking, fixation, nostril and skin condition, and recent placement documentation.", "Assess bowel sounds, abdominal distension, stool pattern, hydration, and aspiration risk as directed by policy."],
     afterCare: ["Maintain head elevation, provide mouth and nasal care, and check the tube fixation.", "Teach the patient to report nausea, pain, coughing, breathlessness, or tube displacement."],
     documentation: ["Record feed type, volume, route, rate, water flushes, tube position check, patient tolerance, and intake-output.", "Document interruptions, vomiting, aspiration signs, tube displacement, and escalation."],
     videoUrl: "https://www.youtube.com/watch?v=rZxlSgaujA4",
     quiz: [
-      q("What must be confirmed immediately before an NG feed?", ["Tube position using the approved local method", "Only that the feed is warm", "The patient’s visitor list", "The colour of the syringe"], "Tube position using the approved local method", "Feeding an incorrectly positioned tube can cause aspiration or respiratory injury."),
-      q("Which method should not be used alone to confirm NG tube placement?", ["Listening for a whoosh after injecting air", "Approved pH testing with external-length assessment", "Following local policy", "Reviewing placement documentation"], "Listening for a whoosh after injecting air", "The air-auscultation test is unreliable and can falsely suggest gastric placement."),
-      q("What position reduces aspiration risk during feeding?", ["Head of bed elevated about 30–45 degrees", "Flat supine", "Prone with the tube dependent", "Standing unsupported"], "Head of bed elevated about 30–45 degrees", "Elevation supports gastric feeding and reduces reflux and aspiration risk."),
-      q("What should the nurse do if tube position cannot be confirmed?", ["Do not feed and seek clinical review", "Feed slowly anyway", "Push the tube farther", "Inject air repeatedly"], "Do not feed and seek clinical review", "Uncertainty about placement is a safety stop."),
-      q("Why is a pre-feed flush used?", ["To check patency and clear the tube before feeding", "To replace the prescribed feed", "To sterilize the stomach", "To increase the feed concentration"], "To check patency and clear the tube before feeding", "A prescribed flush supports patency and reduces blockage."),
-      q("How should enteral feed be administered?", ["At the prescribed rate using enteral equipment", "By force with a small syringe", "Through an IV giving set", "As quickly as possible"], "At the prescribed rate using enteral equipment", "Controlled administration supports tolerance and prevents avoidable complications."),
-      q("Which finding requires the feed to be paused and the patient assessed?", ["Coughing and breathlessness during feeding", "Comfortable breathing", "An intact tube marking", "A clean feeding record"], "Coughing and breathlessness during feeding", "Respiratory symptoms may indicate aspiration or tube displacement."),
-      q("Why must enteral connectors be used?", ["They reduce the risk of connecting the tube to an incompatible line", "They make every medication injectable", "They remove the need for identification", "They replace tube-position checks"], "They reduce the risk of connecting the tube to an incompatible line", "Enteral-specific systems are designed to prevent wrong-route errors."),
-      q("What should be recorded after the feed?", ["Feed, rate, flushes, position check, tolerance, and intake", "Only that the patient had a tube", "An estimated volume", "Nothing if the feed was prescribed"], "Feed, rate, flushes, position check, tolerance, and intake", "Complete records support nutrition, fluid balance, and complication monitoring."),
-      q("What is appropriate after feeding?", ["Maintain head elevation for the period directed by the care plan", "Immediately place the patient flat", "Remove the tube", "Give an unprescribed laxative"], "Maintain head elevation for the period directed by the care plan", "Post-feed elevation reduces reflux and aspiration risk."),
+  {
+    "question": "Which action is listed as step 1 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Send prepared feed in a tray to the patient’s bedside",
+      "Continue feeding and observe patient for signs of discomfort till feeding is completed",
+      "Make patient comfortable and protects his/her clothes with the jaconet cape/adult bib"
     ],
+    "answer": "Establish rapport with patient and relatives (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Hold the syringe in an upright position and pour 10-20mls of water to flush the tube before introducing the feed",
+      "Explain procedure to patient and relatives (Refer to steps)",
+      "Pinch the naso-gastric tube, remove spigot and connect the empty syringe barrel",
+      "Confirm the type and amount of feed against patient’s records"
+    ],
+    "answer": "Explain procedure to patient and relatives (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Inject 5 – 20cc of air through the tube and auscultate epigastric region with a stethoscope and listen for the whooshing sound simultaneously",
+      "Perform hand hygiene and document on appropriate charts (manual or electronic)",
+      "Confirm the type and amount of feed against patient’s records",
+      "Assist patient to remain in the sitting up position for at least 30 minutes after feeding"
+    ],
+    "answer": "Confirm the type and amount of feed against patient’s records",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Assist patient into a fowler’s position or slightly elevate the head end of the bed",
+      "Flush the tube with 10-20mls of water at the end of feeding",
+      "Check for proper placement of tube in the stomach by",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Send prepared feed in a tray to the patient’s bedside",
+      "NB: Ensure that throughout the procedure the tube is never allowed to empty completely to prevent air from entering patient’s stomach",
+      "Confirm the type and amount of feed against patient’s records",
+      "Pour the feed into the syringe barrel, release the pinch and allow the feed to run by gravity"
+    ],
+    "answer": "Send prepared feed in a tray to the patient’s bedside",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Assist patient into a fowler’s position or slightly elevate the head end of the bed",
+      "Remove protective clothing, dispose off tray and wash items",
+      "Pour the feed into the calibrated cup and check the temperature"
+    ],
+    "answer": "Assist patient into a fowler’s position or slightly elevate the head end of the bed",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Pinch tube, remove the syringe barrel and replace in spigot",
+      "Aspirating abdominal contents for a typical gastric fluid appearance (grassy-green, colourless with mucus shreds) in the tube OR",
+      "Make patient comfortable and protects his/her clothes with the jaconet cape/adult bib",
+      "Assist patient into a fowler’s position or slightly elevate the head end of the bed"
+    ],
+    "answer": "Make patient comfortable and protects his/her clothes with the jaconet cape/adult bib",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Hold the syringe in an upright position and pour 10-20mls of water to flush the tube before introducing the feed",
+      "Perform hand hygiene",
+      "Continue feeding and observe patient for signs of discomfort till feeding is completed",
+      "Check for proper placement of tube in the stomach by"
+    ],
+    "answer": "Check for proper placement of tube in the stomach by",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Aspirating abdominal contents for a typical gastric fluid appearance (grassy-green, colourless with mucus shreds) in the tube OR",
+      "Perform hand hygiene and document on appropriate charts (manual or electronic)",
+      "Pinch the naso-gastric tube, remove spigot and connect the empty syringe barrel",
+      "Explain procedure to patient and relatives (Refer to steps)"
+    ],
+    "answer": "Aspirating abdominal contents for a typical gastric fluid appearance (grassy-green, colourless with mucus shreds) in the tube OR",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Aspirating abdominal contents for a typical gastric fluid appearance (grassy-green, colourless with mucus shreds) in the tube OR",
+      "Inject 5 – 20cc of air through the tube and auscultate epigastric region with a stethoscope and listen for the whooshing sound simultaneously",
+      "Make patient comfortable and protects his/her clothes with the jaconet cape/adult bib",
+      "Assist patient to remain in the sitting up position for at least 30 minutes after feeding"
+    ],
+    "answer": "Inject 5 – 20cc of air through the tube and auscultate epigastric region with a stethoscope and listen for the whooshing sound simultaneously",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Send prepared feed in a tray to the patient’s bedside",
+      "Flush the tube with 10-20mls of water at the end of feeding",
+      "Pour the feed into the calibrated cup and check the temperature",
+      "Pour the feed into the syringe barrel, release the pinch and allow the feed to run by gravity"
+    ],
+    "answer": "Pour the feed into the calibrated cup and check the temperature",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "NB: Ensure that throughout the procedure the tube is never allowed to empty completely to prevent air from entering patient’s stomach",
+      "Confirm the type and amount of feed against patient’s records",
+      "Pinch the naso-gastric tube, remove spigot and connect the empty syringe barrel"
+    ],
+    "answer": "Pinch the naso-gastric tube, remove spigot and connect the empty syringe barrel",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "NB: Ensure that throughout the procedure the tube is never allowed to empty completely to prevent air from entering patient’s stomach",
+      "Check for proper placement of tube in the stomach by",
+      "Remove protective clothing, dispose off tray and wash items",
+      "Inject 5 – 20cc of air through the tube and auscultate epigastric region with a stethoscope and listen for the whooshing sound simultaneously"
+    ],
+    "answer": "NB: Ensure that throughout the procedure the tube is never allowed to empty completely to prevent air from entering patient’s stomach",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Pinch tube, remove the syringe barrel and replace in spigot",
+      "Hold the syringe in an upright position and pour 10-20mls of water to flush the tube before introducing the feed",
+      "Continue feeding and observe patient for signs of discomfort till feeding is completed",
+      "Assist patient into a fowler’s position or slightly elevate the head end of the bed"
+    ],
+    "answer": "Hold the syringe in an upright position and pour 10-20mls of water to flush the tube before introducing the feed",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "NB: Ensure that throughout the procedure the tube is never allowed to empty completely to prevent air from entering patient’s stomach",
+      "Perform hand hygiene",
+      "Pour the feed into the syringe barrel, release the pinch and allow the feed to run by gravity",
+      "Explain procedure to patient and relatives (Refer to steps)"
+    ],
+    "answer": "Pour the feed into the syringe barrel, release the pinch and allow the feed to run by gravity",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Aspirating abdominal contents for a typical gastric fluid appearance (grassy-green, colourless with mucus shreds) in the tube OR",
+      "Perform hand hygiene and document on appropriate charts (manual or electronic)",
+      "Pour the feed into the calibrated cup and check the temperature",
+      "Continue feeding and observe patient for signs of discomfort till feeding is completed"
+    ],
+    "answer": "Continue feeding and observe patient for signs of discomfort till feeding is completed",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Flush the tube with 10-20mls of water at the end of feeding",
+      "Continue feeding and observe patient for signs of discomfort till feeding is completed",
+      "Make patient comfortable and protects his/her clothes with the jaconet cape/adult bib",
+      "Assist patient to remain in the sitting up position for at least 30 minutes after feeding"
+    ],
+    "answer": "Flush the tube with 10-20mls of water at the end of feeding",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Send prepared feed in a tray to the patient’s bedside",
+      "Pinch tube, remove the syringe barrel and replace in spigot",
+      "Confirm the type and amount of feed against patient’s records",
+      "Hold the syringe in an upright position and pour 10-20mls of water to flush the tube before introducing the feed"
+    ],
+    "answer": "Pinch tube, remove the syringe barrel and replace in spigot",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Pinch the naso-gastric tube, remove spigot and connect the empty syringe barrel",
+      "Assist patient to remain in the sitting up position for at least 30 minutes after feeding",
+      "Inject 5 – 20cc of air through the tube and auscultate epigastric region with a stethoscope and listen for the whooshing sound simultaneously"
+    ],
+    "answer": "Assist patient to remain in the sitting up position for at least 30 minutes after feeding",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Flush the tube with 10-20mls of water at the end of feeding",
+      "Check for proper placement of tube in the stomach by",
+      "Assist patient to remain in the sitting up position for at least 30 minutes after feeding",
+      "Remove protective clothing, dispose off tray and wash items"
+    ],
+    "answer": "Remove protective clothing, dispose off tray and wash items",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of FEEDING A PATIENT PER NASO-GASTRIC TUBE?",
+    "options": [
+      "Perform hand hygiene and document on appropriate charts (manual or electronic)",
+      "Perform hand hygiene",
+      "Pour the feed into the syringe barrel, release the pinch and allow the feed to run by gravity",
+      "Assist patient into a fowler’s position or slightly elevate the head end of the bed"
+    ],
+    "answer": "Perform hand hygiene and document on appropriate charts (manual or electronic)",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-070",
     title: "INSTILLATION OF NASAL DROPS",
     category: "General Nursing (RGN)",
-    overview: "Nasal drops deliver prescribed medication or solution to the nasal passages. Correct identification, positioning, aseptic handling, dose accuracy, and observation for local or systemic effects support safe administration.",
-    purpose: ["Deliver a prescribed local therapeutic effect", "Reduce congestion or inflammation when indicated", "Moisten or irrigate the nasal mucosa when prescribed"],
+    types: [
+  "N/A"
+],
+    overview: "It is the administration of medication in the form of liquid drop by drop into a body space of cavity.",
+    purpose: [],
     indications: ["A prescribed nasal medication or solution", "Nasal congestion, inflammation, or dryness requiring local treatment", "A clinician-directed nasal irrigation or therapeutic preparation"],
-    equipment: ["Prescribed nasal drops and medication chart", "Clean dropper or single-use applicator", "Cotton wool or gauze", "Kidney dish or receiver", "Gloves if contact with secretions is expected", "Hand hygiene supplies and documentation record"],
-    steps: ["Check the prescription and medication rights: patient, medication, dose, route, time, indication, allergies, expiry, and integrity.", "Identify the patient with two identifiers, explain the drops, confirm consent, and assess the nasal passages and breathing.", "Perform hand hygiene, prepare the labelled medication, and position the patient supine or as prescribed with the head supported and slightly extended.", "Ask the patient to breathe through the mouth and gently clear the nostrils if necessary without forceful nose blowing.", "Avoid touching the dropper tip to the nose, skin, or other surface; instil the prescribed number of drops into the correct nostril.", "Keep the patient in the prescribed position for several minutes to allow distribution and prevent immediate drainage.", "Dab excess medication with clean gauze, do not ask the patient to blow the nose immediately, and observe for discomfort or respiratory difficulty.", "Dispose of single-use items, clean reusable equipment according to policy, and perform hand hygiene.", "Reposition the patient comfortably and explain expected effects and symptoms to report.", "Document medication, dose, nostril, time, response, and any adverse effect or refusal."],
+    equipment: [
+  "Tray containing the following:",
+  "Cotton wool swabs or gauze swabs",
+  "Prescribed nasal drops",
+  "Dropper",
+  "Receiver",
+  "Treatment Chart (Manual or Electronic)"
+],
+    steps: [
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Set tray and send to the bedside",
+  "Check medication against the treatment chart (manual or electronic) for the right dosage",
+  "Place patient in the supine position with head extended so that his/her chin is higher than his/her vertex",
+  "Clean nostrils with cotton wool swabs if necessary",
+  "Draw up medication and instil by drops as ordered",
+  "Ask patient to remain in position for a few minutes",
+  "Ask patient to breathe through his/her mouth and not to bow his/her nose",
+  "Dab any medication that may drip from his/her nostrils with a dry swab",
+  "Assist patient into a desirable position after five (5) to ten (10) minutes",
+  "Remain with patient for five (5) minutes if a child",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate tray",
+  "Perform hand hygiene",
+  "Report to appropriate officer"
+],
     precautions: ["Do not share droppers between patients and avoid contaminating the bottle tip.", "Check for nasal obstruction, epistaxis, allergy, recent surgery, or a contraindication before administration.", "Do not exceed prescribed frequency; topical decongestants can cause rebound congestion with prolonged use.", "Stop and seek help for severe wheeze, facial swelling, significant bleeding, or anaphylaxis."],
     preparation: ["Review the medication chart and assess whether the patient can maintain the required position.", "Explain that mild transient taste or throat drainage may occur, while severe symptoms require reporting."],
     afterCare: ["Keep the patient comfortable and observe for local irritation, bleeding, dizziness, or breathing difficulty.", "Encourage hand hygiene and correct storage of the medication."],
     documentation: ["Record medication name, dose, nostril, time, position, patient response, and education.", "Document refusal, administration error, adverse reaction, or escalation immediately according to policy."],
     videoUrl: "https://www.youtube.com/watch?v=ghUzhaAMv0o",
     quiz: [
-      q("Which medication check is essential before nasal drops?", ["Right patient, medication, dose, route, time, allergy, and expiry", "Only the bottle colour", "Only the patient’s bed number", "Only the nurse’s memory"], "Right patient, medication, dose, route, time, allergy, and expiry", "Medication rights and product checks reduce administration errors."),
-      q("How should the patient usually be positioned for nasal drops?", ["Supine with the head supported and slightly extended, as prescribed", "Prone with the nose down", "Standing with the head sharply flexed", "Flat with the face covered"], "Supine with the head supported and slightly extended, as prescribed", "Position helps the drops reach the nasal passage and limits immediate drainage."),
-      q("What must be avoided with the dropper tip?", ["Touching the nose, skin, or another surface", "Holding it above the nostril", "Checking the label", "Using hand hygiene"], "Touching the nose, skin, or another surface", "Contact contaminates the applicator and medication."),
-      q("What should the patient do immediately after the drops?", ["Remain in the prescribed position for several minutes", "Blow the nose forcefully", "Drink an entire bottle of water", "Remove the medication label"], "Remain in the prescribed position for several minutes", "Remaining positioned allows the medication to distribute before drainage."),
-      q("Which adverse effect requires urgent attention?", ["Facial swelling or severe breathing difficulty", "Mild brief taste", "A clean nostril", "Comfortable breathing"], "Facial swelling or severe breathing difficulty", "These may indicate a serious allergic or respiratory reaction."),
-      q("Why should prolonged topical decongestant use be avoided?", ["It can cause rebound nasal congestion", "It permanently sterilizes the nose", "It prevents all allergies", "It increases oxygen saturation in every patient"], "It can cause rebound nasal congestion", "Overuse of some topical decongestants can worsen congestion when stopped."),
-      q("What should the nurse do if the patient refuses the drops?", ["Respect the refusal, explain, notify as appropriate, and document it", "Force the medication", "Hide it in food", "Record it as given"], "Respect the refusal, explain, notify as appropriate, and document it", "Patients have the right to informed refusal; safe care includes communication and documentation."),
-      q("Which finding should be assessed before instillation?", ["Nasal bleeding, obstruction, allergy, or recent nasal surgery", "The patient’s shoe size", "The colour of the bedside table", "The ward television channel"], "Nasal bleeding, obstruction, allergy, or recent nasal surgery", "These findings may affect safety or require a revised plan."),
-      q("Where should excess medication be placed?", ["Dabbed with clean gauze and discarded appropriately", "Wiped into the dropper bottle", "Poured onto the bed", "Returned to the container"], "Dabbed with clean gauze and discarded appropriately", "Clean disposal prevents contamination and maintains comfort."),
-      q("What belongs in the medication record?", ["Medication, dose, nostril, time, response, and adverse effects", "Only that the patient was in bed", "Only the bottle size", "Nothing if the medicine was topical"], "Medication, dose, nostril, time, response, and adverse effects", "Topical medicines still require complete administration and response documentation."),
+  {
+    "question": "Which action is listed as step 1 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Draw up medication and instil by drops as ordered"
     ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Establish rapport (Refer to steps)",
+      "Ask patient to breathe through his/her mouth and not to bow his/her nose",
+      "Set tray and send to the bedside"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Dab any medication that may drip from his/her nostrils with a dry swab",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Explain procedure",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Explain procedure",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Clean nostrils with cotton wool swabs if necessary",
+      "Establish rapport (Refer to steps)",
+      "Assist patient into a desirable position after five (5) to ten (10) minutes",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Perform hand hygiene",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Draw up medication and instil by drops as ordered",
+      "Explain procedure"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Ask patient to remain in position for a few minutes",
+      "Set tray and send to the bedside",
+      "Perform hand hygiene",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Set tray and send to the bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Set tray and send to the bedside",
+      "Report to appropriate officer",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Dab any medication that may drip from his/her nostrils with a dry swab"
+    ],
+    "answer": "Check medication against the treatment chart (manual or electronic) for the right dosage",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Assist patient into a desirable position after five (5) to ten (10) minutes",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Place patient in the supine position with head extended so that his/her chin is higher than his/her vertex"
+    ],
+    "answer": "Place patient in the supine position with head extended so that his/her chin is higher than his/her vertex",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Clean nostrils with cotton wool swabs if necessary",
+      "Draw up medication and instil by drops as ordered",
+      "Explain procedure",
+      "Remain with patient for five (5) minutes if a child"
+    ],
+    "answer": "Clean nostrils with cotton wool swabs if necessary",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Draw up medication and instil by drops as ordered",
+      "Dispose off used items and decontaminate tray",
+      "Ask patient to remain in position for a few minutes"
+    ],
+    "answer": "Draw up medication and instil by drops as ordered",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Report to appropriate officer",
+      "Ask patient to breathe through his/her mouth and not to bow his/her nose",
+      "Ask patient to remain in position for a few minutes",
+      "Set tray and send to the bedside"
+    ],
+    "answer": "Ask patient to remain in position for a few minutes",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Assist patient into a desirable position after five (5) to ten (10) minutes",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Ask patient to breathe through his/her mouth and not to bow his/her nose"
+    ],
+    "answer": "Ask patient to breathe through his/her mouth and not to bow his/her nose",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Dab any medication that may drip from his/her nostrils with a dry swab",
+      "Explain procedure",
+      "Remain with patient for five (5) minutes if a child",
+      "Place patient in the supine position with head extended so that his/her chin is higher than his/her vertex"
+    ],
+    "answer": "Dab any medication that may drip from his/her nostrils with a dry swab",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Assist patient into a desirable position after five (5) to ten (10) minutes",
+      "Draw up medication and instil by drops as ordered",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Assist patient into a desirable position after five (5) to ten (10) minutes",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Ask patient to remain in position for a few minutes",
+      "Perform hand hygiene",
+      "Remain with patient for five (5) minutes if a child",
+      "Report to appropriate officer"
+    ],
+    "answer": "Remain with patient for five (5) minutes if a child",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Ask patient to breathe through his/her mouth and not to bow his/her nose",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Assist patient into a desirable position after five (5) to ten (10) minutes",
+      "Place patient in the supine position with head extended so that his/her chin is higher than his/her vertex",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Dispose off used items and decontaminate tray",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Draw up medication and instil by drops as ordered",
+      "Perform hand hygiene",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of INSTILLATION OF NASAL DROPS?",
+    "options": [
+      "Perform hand hygiene",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Report to appropriate officer",
+      "Ask patient to remain in position for a few minutes"
+    ],
+    "answer": "Report to appropriate officer",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-071",
     title: "BLOOD TRANSFUSION",
     category: "General Nursing (RGN)",
-    overview: "Blood transfusion is the controlled administration of a prescribed blood component through a suitable intravenous line. Safe practice requires valid consent, compatible blood verification by two authorized practitioners, baseline observations, close early monitoring, and immediate action for a suspected reaction.",
-    purpose: ["Replace red cells, platelets, plasma, or other components when prescribed", "Improve oxygen-carrying capacity, haemostasis, or circulating volume", "Treat a documented clinical indication while minimizing transfusion risk"],
+    types: [
+  "N/A"
+],
+    overview: "Blood transfusion is the infusion of whole blood or its fraction i.e. plasma, red blood cells (packed cells) into a patient's vein. Whole blood is usually given when a patient's total blood volume, cells or plasma drops below the normal values.",
+    purpose: [],
     indications: ["A documented prescription for a specific blood component", "Symptomatic anaemia or blood loss when transfusion is clinically indicated", "Thrombocytopenia, coagulopathy, or another approved indication"],
-    equipment: ["Correct blood component and patient records", "Blood administration set with appropriate filter", "Patent suitable IV access", "Normal saline where compatible and prescribed", "Vital-signs equipment", "PPE, emergency equipment, and reaction report form", "Consent documentation and transfusion record"],
-    steps: ["Confirm the prescription, indication, valid consent, patient identity, blood group and compatibility requirements, allergies, and baseline observations.", "Explain the transfusion and symptoms to report; verify IV access and ensure emergency support is available.", "At the bedside, two authorized staff independently compare the patient’s identifiers, wristband, prescription, compatibility label, component type, donation or unit number, expiry, and appearance.", "Inspect the blood bag for leaks, clots, abnormal colour, or evidence of contamination; do not use a compromised unit.", "Perform hand hygiene, prime the blood administration set according to policy, and commence promptly using only compatible fluid as approved.", "Record baseline observations and remain with or closely observe the patient during the initial period when reactions are most likely.", "Monitor observations and transfusion site according to policy; observe for fever, chills, rash, flushing, pain, dyspnoea, chest or back pain, hypotension, anxiety, or dark urine.", "If a reaction is suspected, stop the transfusion immediately, keep IV access open with compatible normal saline using new tubing as policy directs, assess the patient, and call the prescriber and nurse in charge.", "Recheck all identification and component details, preserve the bag and tubing as required, collect specimens, and complete the reaction report according to policy.", "On completion, record the component, volume, start and finish times, observations, patient response, and disposal or return of the bag."],
+    equipment: [
+  "General requirement for administration of intravenous fluids",
+  "Blood giving set",
+  "Unit of blood or blood product",
+  "Pre-medication as ordered",
+  "Patient folder (Manual or Electronic)"
+],
+    steps: [
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to the patient (Refer to steps)",
+  "Obtain formal consent from the patient",
+  "Perform hand hygiene",
+  "Prepare trolley and send to the bedside",
+  "Verify the following information with a colleague from the patient’s folder and label on the unit of blood or blood product:",
+  "Full name of patient",
+  "Ward",
+  "Blood group",
+  "Rhesus factor",
+  "Blood unit number",
+  "Expiry date",
+  "Monitor vital signs and record",
+  "Ensure cannula is in situ",
+  "Protect the patient and bed with mackintosh and dressing towel",
+  "Perform hand hygiene and wear sterile gloves",
+  "Administer premedication if prescribed",
+  "Insert the giving set into the pack, fill the chamber and expel air",
+  "Tighten the clip on the giving set",
+  "Insert the giving set into the cannula",
+  "Regulate number of drops per minute accordingly",
+  "Remove gloves and perform hand hygiene",
+  "Record the amount of blood set up and the number of the unit on the fluid intake and output chart",
+  "Continue to observe patient for any adverse reaction and report appropriately",
+  "Dispose off used items and decontaminated",
+  "Discuss findings with patient and relatives"
+],
     precautions: ["Never start blood without a valid prescription, consent, compatible access, baseline observations, and two-person bedside verification.", "Do not add medicines to blood or infuse it with incompatible solutions.", "Do not leave a patient unobserved at the start of transfusion or when symptoms occur.", "Follow local maximum hang-time, monitoring, storage, and reaction protocols."],
     preparation: ["Check recent laboratory results, transfusion history, antibodies, previous reactions, and the patient’s ability to report symptoms.", "Ensure the blood is released and transported according to blood-bank policy and is not left at the bedside unnecessarily."],
     afterCare: ["Continue observation for delayed reactions and provide instructions about reporting fever, rash, dark urine, jaundice, or malaise.", "Assess the IV site and patient response after completion."],
     documentation: ["Record consent, component details, verification staff, observations, start and finish times, volume, IV site, and response.", "Document and report any reaction immediately with all required forms and specimens."],
     videoUrl: "https://www.youtube.com/watch?v=1JzL1GTd99E",
     quiz: [
-      q("What is required before starting a blood transfusion?", ["Prescription, valid consent, baseline observations, and two-person bedside verification", "Only a full blood bag", "A patient’s verbal request without assessment", "A medication cup"], "Prescription, valid consent, baseline observations, and two-person bedside verification", "These checks establish indication, authorization, compatibility, and a baseline for detecting reactions."),
-      q("Which details must be independently checked at the bedside?", ["Patient identifiers, component, unit number, blood group, expiry, and compatibility", "Only the patient’s room number", "Only the colour of the bag", "The meal order"], "Patient identifiers, component, unit number, blood group, expiry, and compatibility", "Independent bedside verification prevents wrong-patient and incompatible transfusion errors."),
-      q("What should the nurse do if a transfusion reaction is suspected?", ["Stop the transfusion immediately and assess and escalate", "Increase the rate", "Disconnect and discard everything without reporting", "Give the next unit"], "Stop the transfusion immediately and assess and escalate", "Stopping exposure is the first safety action while the patient is assessed and treated."),
-      q("Which symptom may indicate a transfusion reaction?", ["Fever, chills, rash, dyspnoea, chest pain, or back pain", "Normal observations and comfort", "A clean IV site", "A correct label"], "Fever, chills, rash, dyspnoea, chest pain, or back pain", "These can be early signs of acute transfusion complications."),
-      q("Which solution is generally compatible for keeping access open during a reaction?", ["Compatible normal saline according to policy", "Dextrose mixed into the blood line", "Any antibiotic solution", "Tap water"], "Compatible normal saline according to policy", "Local transfusion policy specifies compatible fluid; medicines must not be added to blood."),
-      q("Why is close observation needed at the beginning of transfusion?", ["Acute reactions may develop early", "Blood always causes sedation", "The patient cannot speak after transfusion", "It replaces the consent process"], "Acute reactions may develop early", "Early recognition allows the transfusion to be stopped before harm progresses."),
-      q("What should be done with a blood bag showing clots or leakage?", ["Do not use it and notify the blood bank or responsible clinician", "Shake it vigorously", "Warm it in hot water", "Add saline to it"], "Do not use it and notify the blood bank or responsible clinician", "An abnormal or compromised component may be unsafe and requires blood-bank review."),
-      q("Why are baseline observations recorded?", ["To compare with observations during and after transfusion", "To determine the patient’s blood group", "To replace patient identification", "To decide the meal texture"], "To compare with observations during and after transfusion", "A baseline helps identify clinically significant changes."),
-      q("What should never be added to a blood component?", ["Medication or an incompatible solution", "A prescribed compatible saline line", "A transfusion filter", "A patient identification label"], "Medication or an incompatible solution", "Adding medicines or incompatible fluids can damage blood cells or cause dangerous reactions."),
-      q("Which documentation is essential after completion?", ["Component details, staff verification, volume, times, observations, and response", "Only that the patient had a drip", "Only the nurse’s name", "Nothing if there was no reaction"], "Component details, staff verification, volume, times, observations, and response", "Complete traceability is required for safe transfusion practice."),
+  {
+    "question": "Which action is listed as step 1 of BLOOD TRANSFUSION?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Prepare trolley and send to the bedside",
+      "Perform hand hygiene and wear sterile gloves",
+      "Explain procedure to the patient (Refer to steps)"
     ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of BLOOD TRANSFUSION?",
+    "options": [
+      "Blood group",
+      "Explain procedure to the patient (Refer to steps)",
+      "Expiry date",
+      "Record the amount of blood set up and the number of the unit on the fluid intake and output chart"
+    ],
+    "answer": "Explain procedure to the patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of BLOOD TRANSFUSION?",
+    "options": [
+      "Prepare trolley and send to the bedside",
+      "Perform hand hygiene and wear sterile gloves",
+      "Obtain formal consent from the patient",
+      "Tighten the clip on the giving set"
+    ],
+    "answer": "Obtain formal consent from the patient",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of BLOOD TRANSFUSION?",
+    "options": [
+      "Discuss findings with patient and relatives",
+      "Expiry date",
+      "Record the amount of blood set up and the number of the unit on the fluid intake and output chart",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of BLOOD TRANSFUSION?",
+    "options": [
+      "Prepare trolley and send to the bedside",
+      "Ward",
+      "Tighten the clip on the giving set",
+      "Perform hand hygiene"
+    ],
+    "answer": "Prepare trolley and send to the bedside",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of BLOOD TRANSFUSION?",
+    "options": [
+      "Expiry date",
+      "Verify the following information with a colleague from the patient’s folder and label on the unit of blood or blood product:",
+      "Protect the patient and bed with mackintosh and dressing towel",
+      "Discuss findings with patient and relatives"
+    ],
+    "answer": "Verify the following information with a colleague from the patient’s folder and label on the unit of blood or blood product:",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of BLOOD TRANSFUSION?",
+    "options": [
+      "Ward",
+      "Tighten the clip on the giving set",
+      "Full name of patient",
+      "Remove gloves and perform hand hygiene"
+    ],
+    "answer": "Full name of patient",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of BLOOD TRANSFUSION?",
+    "options": [
+      "Obtain formal consent from the patient",
+      "Protect the patient and bed with mackintosh and dressing towel",
+      "Discuss findings with patient and relatives",
+      "Ward"
+    ],
+    "answer": "Ward",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of BLOOD TRANSFUSION?",
+    "options": [
+      "Blood group",
+      "Blood unit number",
+      "Remove gloves and perform hand hygiene",
+      "Full name of patient"
+    ],
+    "answer": "Blood group",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of BLOOD TRANSFUSION?",
+    "options": [
+      "Protect the patient and bed with mackintosh and dressing towel",
+      "Rhesus factor",
+      "Insert the giving set into the pack, fill the chamber and expel air",
+      "Obtain formal consent from the patient"
+    ],
+    "answer": "Rhesus factor",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of BLOOD TRANSFUSION?",
+    "options": [
+      "Rhesus factor",
+      "Remove gloves and perform hand hygiene",
+      "Blood unit number",
+      "Dispose off used items and decontaminated"
+    ],
+    "answer": "Blood unit number",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of BLOOD TRANSFUSION?",
+    "options": [
+      "Verify the following information with a colleague from the patient’s folder and label on the unit of blood or blood product:",
+      "Insert the giving set into the pack, fill the chamber and expel air",
+      "Obtain formal consent from the patient",
+      "Expiry date"
+    ],
+    "answer": "Expiry date",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of BLOOD TRANSFUSION?",
+    "options": [
+      "Monitor vital signs and record",
+      "Ensure cannula is in situ",
+      "Dispose off used items and decontaminated",
+      "Rhesus factor"
+    ],
+    "answer": "Monitor vital signs and record",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of BLOOD TRANSFUSION?",
+    "options": [
+      "Insert the giving set into the pack, fill the chamber and expel air",
+      "Ensure cannula is in situ",
+      "Regulate number of drops per minute accordingly",
+      "Verify the following information with a colleague from the patient’s folder and label on the unit of blood or blood product:"
+    ],
+    "answer": "Ensure cannula is in situ",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of BLOOD TRANSFUSION?",
+    "options": [
+      "Monitor vital signs and record",
+      "Dispose off used items and decontaminated",
+      "Protect the patient and bed with mackintosh and dressing towel",
+      "Explain procedure to the patient (Refer to steps)"
+    ],
+    "answer": "Protect the patient and bed with mackintosh and dressing towel",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of BLOOD TRANSFUSION?",
+    "options": [
+      "Blood group",
+      "Regulate number of drops per minute accordingly",
+      "Verify the following information with a colleague from the patient’s folder and label on the unit of blood or blood product:",
+      "Perform hand hygiene and wear sterile gloves"
+    ],
+    "answer": "Perform hand hygiene and wear sterile gloves",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of BLOOD TRANSFUSION?",
+    "options": [
+      "Administer premedication if prescribed",
+      "Perform hand hygiene and wear sterile gloves",
+      "Explain procedure to the patient (Refer to steps)",
+      "Monitor vital signs and record"
+    ],
+    "answer": "Administer premedication if prescribed",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of BLOOD TRANSFUSION?",
+    "options": [
+      "Regulate number of drops per minute accordingly",
+      "Insert the giving set into the pack, fill the chamber and expel air",
+      "Continue to observe patient for any adverse reaction and report appropriately",
+      "Blood group"
+    ],
+    "answer": "Insert the giving set into the pack, fill the chamber and expel air",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of BLOOD TRANSFUSION?",
+    "options": [
+      "Perform hand hygiene and wear sterile gloves",
+      "Explain procedure to the patient (Refer to steps)",
+      "Tighten the clip on the giving set",
+      "Prepare trolley and send to the bedside"
+    ],
+    "answer": "Tighten the clip on the giving set",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of BLOOD TRANSFUSION?",
+    "options": [
+      "Expiry date",
+      "Continue to observe patient for any adverse reaction and report appropriately",
+      "Blood group",
+      "Insert the giving set into the cannula"
+    ],
+    "answer": "Insert the giving set into the cannula",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of BLOOD TRANSFUSION?",
+    "options": [
+      "Regulate number of drops per minute accordingly",
+      "Tighten the clip on the giving set",
+      "Prepare trolley and send to the bedside",
+      "Perform hand hygiene and wear sterile gloves"
+    ],
+    "answer": "Regulate number of drops per minute accordingly",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of BLOOD TRANSFUSION?",
+    "options": [
+      "Continue to observe patient for any adverse reaction and report appropriately",
+      "Remove gloves and perform hand hygiene",
+      "Establish rapport (Refer to steps)",
+      "Expiry date"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of BLOOD TRANSFUSION?",
+    "options": [
+      "Tighten the clip on the giving set",
+      "Prepare trolley and send to the bedside",
+      "Record the amount of blood set up and the number of the unit on the fluid intake and output chart",
+      "Ward"
+    ],
+    "answer": "Record the amount of blood set up and the number of the unit on the fluid intake and output chart",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of BLOOD TRANSFUSION?",
+    "options": [
+      "Protect the patient and bed with mackintosh and dressing towel",
+      "Establish rapport (Refer to steps)",
+      "Expiry date",
+      "Continue to observe patient for any adverse reaction and report appropriately"
+    ],
+    "answer": "Continue to observe patient for any adverse reaction and report appropriately",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of BLOOD TRANSFUSION?",
+    "options": [
+      "Dispose off used items and decontaminated",
+      "Remove gloves and perform hand hygiene",
+      "Ward",
+      "Tighten the clip on the giving set"
+    ],
+    "answer": "Dispose off used items and decontaminated",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of BLOOD TRANSFUSION?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Discuss findings with patient and relatives",
+      "Perform hand hygiene",
+      "Protect the patient and bed with mackintosh and dressing towel"
+    ],
+    "answer": "Discuss findings with patient and relatives",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-072",
     title: "CARE OF DRAINAGE TUBE",
     category: "General Nursing (RGN)",
-    overview: "Care of a drainage tube maintains an aseptic path for fluid or air to leave a wound or body cavity. The nurse assesses the insertion site, tubing, collection system, output, and patient response without disturbing the drain or applying unprescribed suction or flushing.",
-    purpose: ["Maintain drainage of fluid, blood, pus, or air", "Prevent blockage, infection, leakage, and accidental displacement", "Promote healing and monitor the patient’s response"],
+    types: [
+  "N/A"
+],
+    overview: "This is the aseptic management of drainage tube inserted in a wound to help draw out exudates from the wound bed. There are two main types of drainage tubes used; namely: the close system and open system. The removal of the tube is based on rate of healing, hospital's protocol and the surgeon's discretions.",
+    purpose: [],
     indications: ["A patient with a surgical, wound, chest, abdominal, or other prescribed drain", "Routine drain-site and collection-system assessment", "A need to measure and report drainage"],
-    equipment: ["Clean and sterile gloves as indicated", "Prescribed cleansing solution and sterile gauze", "Appropriate dressing and securement materials", "PPE, kidney dish, waste bags, and sharps container", "Graduated measuring container or drain chart", "Clamp only when specifically prescribed", "Documentation record and emergency supplies appropriate to the drain"],
-    steps: ["Verify the drain type, indication, prescribed management, suction setting if applicable, and patient identity.", "Explain the procedure, assess pain and respiratory or circulatory status, provide privacy, and give prescribed analgesia if needed.", "Perform hand hygiene, prepare equipment, position the patient safely, and protect the bed and clothing.", "Inspect the insertion site and surrounding skin for redness, swelling, warmth, bleeding, leakage, separation, and tenderness.", "Check that the drain is secured, tubing is unkinked and dependent where appropriate, connections are tight, and the collection system is below the site when indicated.", "Put on clean gloves, remove the old dressing, assess the amount, colour, consistency, and odour of drainage, and dispose of it safely.", "Remove gloves, perform hand hygiene, and use sterile technique to clean from the insertion site outward with prescribed solution.", "Apply the appropriate sterile dressing without compressing or occluding the drain; do not manipulate, strip, flush, or clamp unless ordered.", "Measure and record output according to the device and local policy, maintain suction if prescribed, and reassess the patient.", "Dispose of equipment, perform hand hygiene, provide education, and document the drain assessment, care, output, and escalation."],
+    equipment: [
+  "A trolley containing the following:",
+  "Top shelf (a Sterile field with the following sterile items)",
+  "Two (2) or three (3) gallipots for lotions",
+  "Two (2) kidney dish",
+  "Two (2) pairs of dressing forceps",
+  "Two (2) pairs of dissecting forceps",
+  "Sinus forceps",
+  "Probe",
+  "Sterile pair of scissors",
+  "Bottom shelf with the following:",
+  "Dressing lotion",
+  "Sterile cotton and gauze swab in a drum/pack",
+  "Mackintosh and dressing towel",
+  "Adhesive tape/strip",
+  "Bandage",
+  "A pair of scissors",
+  "Apron",
+  "Disposable gloves",
+  "Sterile gloves",
+  "Receiver for used dressings"
+],
+    steps: [
+  "Establish rapport",
+  "Explain procedure to patient and reassure him/her",
+  "Provide privacy",
+  "Perform hand hygiene",
+  "Prepare and send tray to patient’s bedside",
+  "Protect bed linen with dressing mackintosh and towel",
+  "Position patient to expose wound site and fold over bed clothing",
+  "Wear disposable gloves and open wound",
+  "Remove soiled dressing from the wound and assess the wound for signs of healing and leakage of exudate",
+  "Remove gloves and perform hand hygiene",
+  "Wear sterile gloves",
+  "Grasp the protruding end of the drainage tube with an artery forceps and clip/clamp the tube in position",
+  "Remove any stitch holding the drainage tube in position with the scissors",
+  "Gently turn/twist the drainage tube with the wound to loose it if it is a tubular drain",
+  "Use the forceps gently to pull the drain out of the wound for a distance",
+  "Cut the excess tubing off with sterile scissor if it is a corrugated/penrose drain",
+  "Swab with cleansing lotion until clean",
+  "Apply sterile dressing and apply adhesive strips/plaster",
+  "Note amount of drainage and document",
+  "Dispose off used items, decontaminate trolley and instruments",
+  "Document findings in patient’s chart"
+],
     precautions: ["Do not clamp a drain unless specifically ordered; clamping may cause dangerous accumulation of fluid or air.", "Do not strip, milk, flush, or reposition a drain unless the prescription and device policy authorize it.", "Report sudden absence or large increase of drainage, bright-red blood, purulence, foul odour, leakage, displacement, or worsening pain.", "Use drain-specific emergency precautions, especially for chest drains, and never lift a collection system above the insertion site when contraindicated."],
     preparation: ["Review the operation or procedure note and expected output, and compare with prior drainage.", "Ensure the patient can call for help and understands how to protect the tubing during movement."],
     afterCare: ["Secure tubing without tension, maintain a comfortable position, and check that the dressing remains clean and dry.", "Teach the patient to avoid pulling the drain and to report sudden pain, breathlessness, leakage, or displacement."],
     documentation: ["Record site appearance, drain type and position, patency, suction, dressing, output amount and character, pain, and patient tolerance.", "Document abnormalities, actions taken, clinician notification, and any specimen sent."],
     videoUrl: "https://www.youtube.com/watch?v=EGzqXLO9UI8",
     quiz: [
-      q("What is the primary aim of drainage-tube care?", ["Maintain safe drainage while preventing infection, blockage, and displacement", "Remove the drain at every dressing", "Keep the drain clamped continuously", "Increase pain to test sensation"], "Maintain safe drainage while preventing infection, blockage, and displacement", "Drain care combines system function, site protection, assessment, and patient comfort."),
-      q("Which action is unsafe unless specifically prescribed?", ["Clamping, stripping, or flushing the drain", "Checking the dressing", "Measuring output", "Inspecting the insertion site"], "Clamping, stripping, or flushing the drain", "Unprescribed manipulation can obstruct drainage or cause pressure-related complications."),
-      q("What should be assessed at the insertion site?", ["Redness, swelling, warmth, bleeding, leakage, separation, and tenderness", "Only the dressing colour", "Only the patient’s meal", "The age of the equipment"], "Redness, swelling, warmth, bleeding, leakage, separation, and tenderness", "Local findings may indicate infection, bleeding, tissue injury, or displacement."),
-      q("Why should drainage output be compared with previous records?", ["A change can signal bleeding, blockage, leakage, or clinical deterioration", "It changes the drain type", "It replaces patient assessment", "It determines staff breaks"], "A change can signal bleeding, blockage, leakage, or clinical deterioration", "Trends are clinically more useful than an isolated measurement."),
-      q("How should the drain site generally be cleansed?", ["From the insertion site outward using prescribed sterile technique", "From the floor toward the site", "With a reused swab", "From the dressing into the wound"], "From the insertion site outward using prescribed sterile technique", "Outward cleaning limits movement of organisms toward the insertion site."),
-      q("Which drainage finding needs prompt escalation?", ["Sudden bright-red bleeding or sudden absence of expected output", "A stable small amount of expected serous drainage", "A clean dry dressing", "A secure connection"], "Sudden bright-red bleeding or sudden absence of expected output", "These changes may indicate haemorrhage, obstruction, or device malfunction."),
-      q("What should be done if a drain becomes displaced?", ["Stabilize safely and notify the responsible clinician immediately", "Push it back into the wound", "Cut it shorter", "Hide it under the dressing"], "Stabilize safely and notify the responsible clinician immediately", "Reinsertion or alteration is not a routine nursing action and may cause harm."),
-      q("What prevents traction on the drainage tube?", ["Securement and positioning that allow movement without pulling", "Taping it tightly across a joint", "Leaving it unsupported", "Raising the collection bag above the site"], "Securement and positioning that allow movement without pulling", "Appropriate securement reduces pain, tissue injury, and accidental removal."),
-      q("What should the nurse teach a patient with a drain?", ["Avoid pulling it and report pain, leakage, breathlessness, or displacement", "Remove the dressing independently", "Clamp it whenever visitors arrive", "Ignore sudden changes"], "Avoid pulling it and report pain, leakage, breathlessness, or displacement", "Patient participation helps detect complications early."),
-      q("What should be documented after drain care?", ["Site, system function, output, dressing, patient response, and escalation", "Only that gloves were used", "Only the drain colour", "Nothing unless infection is present"], "Site, system function, output, dressing, patient response, and escalation", "Complete documentation supports trend monitoring and continuity of care."),
+  {
+    "question": "Which action is listed as step 1 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Establish rapport",
+      "Prepare and send tray to patient’s bedside",
+      "Cut the excess tubing off with sterile scissor if it is a corrugated/penrose drain",
+      "Position patient to expose wound site and fold over bed clothing"
     ],
+    "answer": "Establish rapport",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Gently turn/twist the drainage tube with the wound to loose it if it is a tubular drain",
+      "Explain procedure to patient and reassure him/her",
+      "Grasp the protruding end of the drainage tube with an artery forceps and clip/clamp the tube in position",
+      "Provide privacy"
+    ],
+    "answer": "Explain procedure to patient and reassure him/her",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Remove gloves and perform hand hygiene",
+      "Document findings in patient’s chart",
+      "Provide privacy",
+      "Note amount of drainage and document"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Protect bed linen with dressing mackintosh and towel",
+      "Swab with cleansing lotion until clean",
+      "Wear disposable gloves and open wound",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Prepare and send tray to patient’s bedside",
+      "Remove any stitch holding the drainage tube in position with the scissors",
+      "Provide privacy",
+      "Use the forceps gently to pull the drain out of the wound for a distance"
+    ],
+    "answer": "Prepare and send tray to patient’s bedside",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Establish rapport",
+      "Protect bed linen with dressing mackintosh and towel",
+      "Dispose off used items, decontaminate trolley and instruments",
+      "Wear sterile gloves"
+    ],
+    "answer": "Protect bed linen with dressing mackintosh and towel",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Apply sterile dressing and apply adhesive strips/plaster",
+      "Remove soiled dressing from the wound and assess the wound for signs of healing and leakage of exudate",
+      "Position patient to expose wound site and fold over bed clothing",
+      "Protect bed linen with dressing mackintosh and towel"
+    ],
+    "answer": "Position patient to expose wound site and fold over bed clothing",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Gently turn/twist the drainage tube with the wound to loose it if it is a tubular drain",
+      "Perform hand hygiene",
+      "Cut the excess tubing off with sterile scissor if it is a corrugated/penrose drain",
+      "Wear disposable gloves and open wound"
+    ],
+    "answer": "Wear disposable gloves and open wound",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Remove soiled dressing from the wound and assess the wound for signs of healing and leakage of exudate",
+      "Document findings in patient’s chart",
+      "Grasp the protruding end of the drainage tube with an artery forceps and clip/clamp the tube in position",
+      "Explain procedure to patient and reassure him/her"
+    ],
+    "answer": "Remove soiled dressing from the wound and assess the wound for signs of healing and leakage of exudate",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Remove soiled dressing from the wound and assess the wound for signs of healing and leakage of exudate",
+      "Remove gloves and perform hand hygiene",
+      "Position patient to expose wound site and fold over bed clothing",
+      "Note amount of drainage and document"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Prepare and send tray to patient’s bedside",
+      "Swab with cleansing lotion until clean",
+      "Wear sterile gloves",
+      "Use the forceps gently to pull the drain out of the wound for a distance"
+    ],
+    "answer": "Wear sterile gloves",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Establish rapport",
+      "Remove any stitch holding the drainage tube in position with the scissors",
+      "Provide privacy",
+      "Grasp the protruding end of the drainage tube with an artery forceps and clip/clamp the tube in position"
+    ],
+    "answer": "Grasp the protruding end of the drainage tube with an artery forceps and clip/clamp the tube in position",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Remove any stitch holding the drainage tube in position with the scissors",
+      "Wear disposable gloves and open wound",
+      "Dispose off used items, decontaminate trolley and instruments",
+      "Remove gloves and perform hand hygiene"
+    ],
+    "answer": "Remove any stitch holding the drainage tube in position with the scissors",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Apply sterile dressing and apply adhesive strips/plaster",
+      "Gently turn/twist the drainage tube with the wound to loose it if it is a tubular drain",
+      "Cut the excess tubing off with sterile scissor if it is a corrugated/penrose drain",
+      "Protect bed linen with dressing mackintosh and towel"
+    ],
+    "answer": "Gently turn/twist the drainage tube with the wound to loose it if it is a tubular drain",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Remove any stitch holding the drainage tube in position with the scissors",
+      "Perform hand hygiene",
+      "Use the forceps gently to pull the drain out of the wound for a distance",
+      "Explain procedure to patient and reassure him/her"
+    ],
+    "answer": "Use the forceps gently to pull the drain out of the wound for a distance",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Remove soiled dressing from the wound and assess the wound for signs of healing and leakage of exudate",
+      "Document findings in patient’s chart",
+      "Wear sterile gloves",
+      "Cut the excess tubing off with sterile scissor if it is a corrugated/penrose drain"
+    ],
+    "answer": "Cut the excess tubing off with sterile scissor if it is a corrugated/penrose drain",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Swab with cleansing lotion until clean",
+      "Cut the excess tubing off with sterile scissor if it is a corrugated/penrose drain",
+      "Position patient to expose wound site and fold over bed clothing",
+      "Note amount of drainage and document"
+    ],
+    "answer": "Swab with cleansing lotion until clean",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Prepare and send tray to patient’s bedside",
+      "Apply sterile dressing and apply adhesive strips/plaster",
+      "Provide privacy",
+      "Gently turn/twist the drainage tube with the wound to loose it if it is a tubular drain"
+    ],
+    "answer": "Apply sterile dressing and apply adhesive strips/plaster",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Establish rapport",
+      "Grasp the protruding end of the drainage tube with an artery forceps and clip/clamp the tube in position",
+      "Note amount of drainage and document",
+      "Remove gloves and perform hand hygiene"
+    ],
+    "answer": "Note amount of drainage and document",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Swab with cleansing lotion until clean",
+      "Wear disposable gloves and open wound",
+      "Note amount of drainage and document",
+      "Dispose off used items, decontaminate trolley and instruments"
+    ],
+    "answer": "Dispose off used items, decontaminate trolley and instruments",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of CARE OF DRAINAGE TUBE?",
+    "options": [
+      "Document findings in patient’s chart",
+      "Perform hand hygiene",
+      "Use the forceps gently to pull the drain out of the wound for a distance",
+      "Protect bed linen with dressing mackintosh and towel"
+    ],
+    "answer": "Document findings in patient’s chart",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-073",
     title: "REMOVAL OF DRAINAGE TUBE",
     category: "General Nursing (RGN)",
-    overview: "Removal of a drainage tube is performed only when ordered or authorized by local protocol and the patient’s condition and output indicate that removal is appropriate. The nurse prepares for pain and bleeding, uses aseptic technique, stops for resistance, and applies a suitable dressing while monitoring for complications.",
-    purpose: ["Remove a drain when it is no longer clinically required", "Prevent infection and irritation from prolonged drainage", "Assess wound closure and support continued healing"],
+    types: [
+  "N/A"
+],
+    overview: "This is a process by which a nurse removes a drainage tube from a wound once the exudates has stopped or becomes less than about 25 ml/day. Drains can be 'shortened' by withdrawing them gradually every day until it is removed completely. Removal of a drain is usually ordered by a doctor or done according to hospital protocol.",
+    purpose: [],
     indications: ["A documented order or approved protocol", "Reduced or ceased output and satisfactory clinical review", "A planned staged withdrawal or complete drain removal"],
-    equipment: ["Sterile dressing set and sterile gloves", "Clean gloves and PPE", "Prescribed cleansing solution and sterile gauze", "Suture cutter or sterile scissors", "Appropriate dressing and adhesive tape", "Waste bag and sharps container", "Pain assessment tool and documentation record"],
-    steps: ["Verify the order, drain type, output trend, site, allergies, patient identity, and any staged-removal plan.", "Explain the procedure, possible pulling sensation, breathing instructions, consent, pain relief, and need to report symptoms.", "Perform hand hygiene, prepare the sterile field, position the patient, protect the bed, and assess baseline observations.", "Put on clean gloves, measure and record the current drainage, and remove the old dressing carefully.", "Remove gloves, perform hand hygiene, and put on sterile gloves; cleanse the site and identify the securing suture.", "Cut and remove the securing suture safely, keeping the drain controlled and avoiding injury to the surrounding skin.", "Ask the patient to breathe as directed by the drain type and gently withdraw the drain with steady traction; stop if resistance or severe pain occurs.", "Inspect the removed drain to confirm it is complete, apply pressure and a sterile occlusive dressing as indicated, and dispose of equipment safely.", "Reassess pain, bleeding, breathing, vital signs, and the wound; report retained fragments, bleeding, respiratory change, or other concern immediately.", "Document the order, drain and output details, removal time, integrity, dressing, patient response, education, and escalation."],
+    equipment: [
+  "A trolley containing the following:",
+  "Top shelf (a Sterile field with the following sterile items)",
+  "Two (2) or three (3) gallipots for lotions",
+  "Two (2) kidney dish",
+  "Two (2) pairs of dressing forceps",
+  "Two (2) pairs of dissecting forceps",
+  "Sinus forceps",
+  "Probe",
+  "Stitch cutter or scissors",
+  "Bottom shelf with the following:",
+  "Dressing lotion",
+  "Sterile cotton and gauze swab in a drum/pack",
+  "Mackintosh and dressing towel",
+  "Adhesive tape/strip",
+  "Bandage",
+  "Scissors",
+  "Apron",
+  "Disposable gloves",
+  "Sterile gloves",
+  "Receiver for used dressings",
+  "Receiver",
+  "Measuring cup"
+],
+    steps: [
+  "Confirm order from doctor(s)’ notes",
+  "Establish rapport with patient",
+  "Explain procedure to the patient",
+  "Provide privacy",
+  "Perform hand hygiene",
+  "Prepare and send trolley to the bedside",
+  "Position patient",
+  "Protect bed with mackintosh and dressing towel",
+  "Wear disposable gloves and note the amount of drain in the bag",
+  "Remove dressing",
+  "Dispose off gloves and perform hand hygiene",
+  "Wear sterile gloves",
+  "Clean and dry the incision and drainage site with sterile dressing gauze",
+  "Carefully cut and remove the securing suture",
+  "While holding sterile gauze in non-dominant hand, stabilize skin",
+  "Ask patient to take a deep breath and remove the drainage",
+  "Firmly group the drainage tube close to the skin with dominant hand and steady motion withdraw the drain",
+  "Stop procedure and inform doctor if resistance occurs",
+  "Dress the wound with sterile dressing",
+  "Apply pressure with gauze and adhesive tape",
+  "Remove mackintosh and dressing towel",
+  "Remove gloves and perform hand hygiene",
+  "Dispose off used item, decontaminate trolley",
+  "Document appropriately in nurses notes, input and output chart (manually or electronically)",
+  "Report any findings to the appropriate officer"
+],
     precautions: ["Do not remove a drain without authorization or when output and clinical review do not support removal.", "Never force a drain against resistance; stop and obtain urgent clinical review.", "Use drain-specific instructions for breathing and occlusive dressings, particularly for thoracic drains.", "Monitor for bleeding, fluid leakage, infection, respiratory compromise, and recurrent collection after removal."],
     preparation: ["Provide analgesia as prescribed and ensure the patient can call for help after the procedure.", "Review imaging, operative instructions, and the expected post-removal dressing and observation plan."],
     afterCare: ["Keep the dressing clean and dry, monitor the site and vital signs, and support mobility safely.", "Teach the patient to report fever, increasing pain, swelling, leakage, bleeding, or breathlessness."],
@@ -209,43 +2065,650 @@ export const rgnBatch08: Procedure[] = [
    videoUrl: "https://www.youtube.com/watch?v=KMi_PB2Ywkg",
     
      quiz: [
-      q("What must be confirmed before removing a drainage tube?", ["An authorized order or protocol and review of output and patient condition", "That the patient is asleep", "That the drain is full", "That no dressing is available"], "An authorized order or protocol and review of output and patient condition", "Drain removal depends on clinical review, output, drain type, and the responsible clinician’s plan."),
-      q("What should the nurse do if resistance is felt during removal?", ["Stop and seek clinical review", "Pull harder", "Cut the drain", "Push it back into the wound"], "Stop and seek clinical review", "Resistance may indicate tissue attachment or retained material and must not be overcome by force."),
-      q("Why is the securing suture removed carefully?", ["To release the drain without cutting surrounding skin or the drain", "To sterilize the wound", "To increase drainage", "To avoid checking output"], "To release the drain without cutting surrounding skin or the drain", "Controlled suture removal reduces tissue injury and prevents damage to the device."),
-      q("What should be checked after the drain is withdrawn?", ["That the drain is complete and no fragment is missing", "Only the colour of the dressing", "The patient’s meal", "The trolley wheels"], "That the drain is complete and no fragment is missing", "A retained fragment can cause infection, inflammation, or a foreign-body complication."),
-      q("Which finding after removal requires urgent escalation?", ["Increasing breathlessness or uncontrolled bleeding", "Mild brief pulling discomfort", "A dry intact dressing", "Stable observations"], "Increasing breathlessness or uncontrolled bleeding", "Respiratory compromise and haemorrhage are urgent complications."),
-      q("What dressing may be required after drain removal?", ["A sterile dressing or occlusive dressing appropriate to the drain type", "An unclean cloth", "No dressing for every drain", "A tight tourniquet"], "A sterile dressing or occlusive dressing appropriate to the drain type", "The dressing protects the tract and must match the site and drain-specific policy."),
-      q("Why should output be measured before removal?", ["It confirms the trend and provides a baseline for the decision and record", "It makes the drain sterile", "It prevents all pain", "It replaces the order"], "It confirms the trend and provides a baseline for the decision and record", "Output trend is part of assessing readiness and detecting abnormalities."),
-      q("What should the patient be taught after removal?", ["Report fever, worsening pain, swelling, leakage, bleeding, or breathlessness", "Remove the dressing if it becomes damp without telling anyone", "Ignore new drainage", "Avoid all movement indefinitely"], "Report fever, worsening pain, swelling, leakage, bleeding, or breathlessness", "These symptoms may indicate infection, fluid collection, bleeding, or respiratory complications."),
-      q("What should be done if severe pain develops during removal?", ["Stop, assess, and seek clinical review", "Continue quickly", "Give unprescribed medication", "Ask the patient to pull the drain"], "Stop, assess, and seek clinical review", "Severe pain may indicate resistance, tissue injury, or another complication."),
-      q("Which information is essential in the record?", ["Drain type, output, removal time, integrity, dressing, observations, and response", "Only that the patient was in bed", "Only the nurse’s initials", "Nothing if removal was ordered"], "Drain type, output, removal time, integrity, dressing, observations, and response", "Complete records support follow-up and provide evidence of safe removal."),
+  {
+    "question": "Which action is listed as step 1 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Confirm order from doctor(s)’ notes",
+      "Perform hand hygiene",
+      "Ask patient to take a deep breath and remove the drainage",
+      "Explain procedure to the patient"
     ],
+    "answer": "Confirm order from doctor(s)’ notes",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Remove dressing",
+      "Establish rapport with patient",
+      "Wear sterile gloves",
+      "Dispose off used item, decontaminate trolley"
+    ],
+    "answer": "Establish rapport with patient",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Prepare and send trolley to the bedside",
+      "Firmly group the drainage tube close to the skin with dominant hand and steady motion withdraw the drain",
+      "Explain procedure to the patient",
+      "Dress the wound with sterile dressing"
+    ],
+    "answer": "Explain procedure to the patient",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Confirm order from doctor(s)’ notes",
+      "Clean and dry the incision and drainage site with sterile dressing gauze",
+      "Document appropriately in nurses notes, input and output chart (manually or electronically)",
+      "Provide privacy"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Perform hand hygiene",
+      "Wear disposable gloves and note the amount of drain in the bag",
+      "Apply pressure with gauze and adhesive tape",
+      "Position patient"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Carefully cut and remove the securing suture",
+      "Prepare and send trolley to the bedside",
+      "Ask patient to take a deep breath and remove the drainage",
+      "Establish rapport with patient"
+    ],
+    "answer": "Prepare and send trolley to the bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Remove dressing",
+      "Remove mackintosh and dressing towel",
+      "Position patient",
+      "Dispose off used item, decontaminate trolley"
+    ],
+    "answer": "Position patient",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Perform hand hygiene",
+      "Firmly group the drainage tube close to the skin with dominant hand and steady motion withdraw the drain",
+      "Explain procedure to the patient",
+      "Protect bed with mackintosh and dressing towel"
+    ],
+    "answer": "Protect bed with mackintosh and dressing towel",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Wear disposable gloves and note the amount of drain in the bag",
+      "Clean and dry the incision and drainage site with sterile dressing gauze",
+      "Document appropriately in nurses notes, input and output chart (manually or electronically)",
+      "Dispose off gloves and perform hand hygiene"
+    ],
+    "answer": "Wear disposable gloves and note the amount of drain in the bag",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Stop procedure and inform doctor if resistance occurs",
+      "Remove dressing",
+      "Apply pressure with gauze and adhesive tape",
+      "Prepare and send trolley to the bedside"
+    ],
+    "answer": "Remove dressing",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Carefully cut and remove the securing suture",
+      "Report any findings to the appropriate officer",
+      "Dispose off gloves and perform hand hygiene",
+      "Establish rapport with patient"
+    ],
+    "answer": "Dispose off gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Wear disposable gloves and note the amount of drain in the bag",
+      "Remove mackintosh and dressing towel",
+      "Position patient",
+      "Wear sterile gloves"
+    ],
+    "answer": "Wear sterile gloves",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Clean and dry the incision and drainage site with sterile dressing gauze",
+      "Firmly group the drainage tube close to the skin with dominant hand and steady motion withdraw the drain",
+      "Explain procedure to the patient",
+      "While holding sterile gauze in non-dominant hand, stabilize skin"
+    ],
+    "answer": "Clean and dry the incision and drainage site with sterile dressing gauze",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Remove gloves and perform hand hygiene",
+      "Carefully cut and remove the securing suture",
+      "Document appropriately in nurses notes, input and output chart (manually or electronically)",
+      "Remove dressing"
+    ],
+    "answer": "Carefully cut and remove the securing suture",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Stop procedure and inform doctor if resistance occurs",
+      "Provide privacy",
+      "While holding sterile gauze in non-dominant hand, stabilize skin",
+      "Prepare and send trolley to the bedside"
+    ],
+    "answer": "While holding sterile gauze in non-dominant hand, stabilize skin",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Clean and dry the incision and drainage site with sterile dressing gauze",
+      "Report any findings to the appropriate officer",
+      "Dispose off gloves and perform hand hygiene",
+      "Ask patient to take a deep breath and remove the drainage"
+    ],
+    "answer": "Ask patient to take a deep breath and remove the drainage",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Firmly group the drainage tube close to the skin with dominant hand and steady motion withdraw the drain",
+      "Remove mackintosh and dressing towel",
+      "Position patient",
+      "Dress the wound with sterile dressing"
+    ],
+    "answer": "Firmly group the drainage tube close to the skin with dominant hand and steady motion withdraw the drain",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Confirm order from doctor(s)’ notes",
+      "Stop procedure and inform doctor if resistance occurs",
+      "Explain procedure to the patient",
+      "Carefully cut and remove the securing suture"
+    ],
+    "answer": "Stop procedure and inform doctor if resistance occurs",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Remove gloves and perform hand hygiene",
+      "Protect bed with mackintosh and dressing towel",
+      "Dress the wound with sterile dressing",
+      "Remove dressing"
+    ],
+    "answer": "Dress the wound with sterile dressing",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Firmly group the drainage tube close to the skin with dominant hand and steady motion withdraw the drain",
+      "Provide privacy",
+      "While holding sterile gauze in non-dominant hand, stabilize skin",
+      "Apply pressure with gauze and adhesive tape"
+    ],
+    "answer": "Apply pressure with gauze and adhesive tape",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Remove mackintosh and dressing towel",
+      "Report any findings to the appropriate officer",
+      "Dispose off gloves and perform hand hygiene",
+      "Dispose off used item, decontaminate trolley"
+    ],
+    "answer": "Remove mackintosh and dressing towel",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Perform hand hygiene",
+      "Remove gloves and perform hand hygiene",
+      "Position patient",
+      "Stop procedure and inform doctor if resistance occurs"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Confirm order from doctor(s)’ notes",
+      "Wear sterile gloves",
+      "Dispose off used item, decontaminate trolley",
+      "Carefully cut and remove the securing suture"
+    ],
+    "answer": "Dispose off used item, decontaminate trolley",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Remove mackintosh and dressing towel",
+      "Protect bed with mackintosh and dressing towel",
+      "Dress the wound with sterile dressing",
+      "Document appropriately in nurses notes, input and output chart (manually or electronically)"
+    ],
+    "answer": "Document appropriately in nurses notes, input and output chart (manually or electronically)",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of REMOVAL OF DRAINAGE TUBE?",
+    "options": [
+      "Report any findings to the appropriate officer",
+      "Provide privacy",
+      "While holding sterile gauze in non-dominant hand, stabilize skin",
+      "Establish rapport with patient"
+    ],
+    "answer": "Report any findings to the appropriate officer",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-074",
     title: "PARENTERAL NUTRITION (PN)",
     category: "General Nursing (RGN)",
-    overview: "Parenteral nutrition provides prescribed nutrients intravenously when the gastrointestinal tract cannot safely meet nutritional needs. It requires strict product and patient verification, aseptic central-line care, an infusion pump, glucose and electrolyte monitoring, and vigilance for metabolic, infectious, and catheter-related complications.",
-    purpose: ["Provide energy, protein, electrolytes, vitamins, and trace elements intravenously", "Support patients who cannot use the gastrointestinal tract adequately", "Promote metabolism, tissue repair, and recovery while enteral nutrition is unsuitable"],
+    types: [
+  "Peripheral Parenteral Nutrition",
+  "Total Parenteral Nutrition"
+],
+    overview: "This is the administration of nutritional support such as proteins, carbohydrates, fats, vitamins, and minerals intravenously.",
+    purpose: [],
     indications: ["A documented prescription for peripheral or total parenteral nutrition", "Intestinal failure, severe malabsorption, bowel rest, or inability to meet needs enterally", "A patient assessed by the nutrition and medical team as requiring PN"],
-    equipment: ["Prescribed PN bag and administration record", "Appropriate central or peripheral venous access", "Infusion pump and dedicated administration tubing", "Correct in-line filter according to solution and local policy", "Alcohol or approved antiseptic for hub care", "Sterile gloves, mask, gown, cap, and PPE as required", "Blood-glucose and vital-sign monitoring equipment", "Emergency supplies and documentation record"],
-    steps: ["Review the prescription, patient identity, indication, access route, solution composition, rate, additives, expiry, and storage requirements.", "Compare the PN label with the prescription and patient wristband using independent checks; inspect for leaks, particles, separation, or unexpected colour change.", "Allow refrigerated PN to reach the approved temperature without unsafe heating; do not use a compromised or expired bag.", "Assess the patient, baseline vital signs, fluid status, glucose, electrolytes, catheter site, and line patency according to the care plan.", "Perform hand hygiene and prepare the pump, tubing, filter, and dedicated line using aseptic technique; prime the tubing without introducing air.", "Don appropriate PPE, disinfect the catheter hub for the specified contact time, and connect the PN using sterile non-touch technique.", "Program and start the infusion at the prescribed rate; use the dedicated lumen and do not abruptly increase or stop without a clinical plan.", "Monitor hourly or as policy directs for pump function, line integrity, glucose, fluid balance, electrolyte symptoms, fever, chills, dyspnoea, and catheter-site changes.", "Change the bag and tubing, flush or lock the line, and taper the infusion only according to the prescription and facility policy to reduce rebound hypoglycaemia.", "Document the solution, checks, rate, access site, monitoring, patient response, and any complication or escalation."],
+    equipment: [
+  "Central venous access devices",
+  "Volume control device",
+  "Filters (0.22 micron for TPN without fat emulsion and 3.2 micron filter for TNA or fat emulsion",
+  "Bag of Parenteral Nutrition",
+  "Administration tubing with luer-lock connections",
+  "Hypoallergic Tape",
+  "Sterile Gloves",
+  "Face Mask",
+  "Gown and cap",
+  "Vital Signs Tray"
+],
+    steps: [
+  "Perform nutritional assessment",
+  "Cross check physician’s order",
+  "Provide Privacy",
+  "Establish rapport with patient",
+  "Explain procedure to the patient and obtain consent",
+  "Perform hand hygiene",
+  "Collect needed items for the procedure",
+  "Review prescribers’ orders and compare to content label on PN solution bag(s) and for rate of infusion. Each component of the PN solution must be verified with the physician’s orders",
+  "Remove the bag of parenteral nutrition at least 1 hr. from the refrigerator if refrigerated",
+  "Inspect fluid for consistency(creamy, or any change in constitution)",
+  "Collect supplies, prepare PN solution, and prime IV tubing with filter as per hospital’s protocol",
+  "Perform hand hygiene, done gown, cap, mask and gloves",
+  "Compare the label on the PN bag to the patient’s wristband",
+  "Use aseptic technique to attach tubing with filter to TNA bag and purge out air",
+  "Close all clamps on new tubing and insert tubing in volume control infuses",
+  "Place patient in supine position and turn head away from venous access device insertion site",
+  "Clean insertion site with povidone iodine solution",
+  "Assist physician while inserting intravenous line",
+  "Connect tubing to hub of VAD after insertion using sterile technique and ensure all connections are locked with luer-connection",
+  "Complete all safety checks for central venous catheter as per hospital’s policy",
+  "Complete the flushing protocol as per hospital’s policy",
+  "Sanitize connections and change IV tubing as per agency policy when changing tubing",
+  "Insert new PN solution and IV tubing into electronic infusion device",
+  "Open all clamps and regulate flow using volume control infuser",
+  "Start PN infusion rate as ordered",
+  "Discard old supplies as per agency protocol, and perform hand hygiene",
+  "Monitor administration hourly; assessing for integrity of fluid, administration system, patient tolerance and other symptoms of complications related to PN",
+  "Document the procedure in the patient chart as per hospital policy"
+],
     precautions: ["PN is a high-alert therapy; use independent verification and never alter the bag or rate without authorization.", "Maintain strict asepsis and a dedicated lumen; do not use the PN line for incompatible medicines or blood sampling unless policy permits.", "Do not stop a continuous PN infusion abruptly without an approved alternative and monitoring plan.", "Report fever, rigors, hyperglycaemia, hypoglycaemia, new dyspnoea, oedema, electrolyte symptoms, or catheter malfunction urgently."],
     preparation: ["Review laboratory results and the nutrition plan, and ensure replacement PN and dextrose support are available if required by policy.", "Confirm the patient and family understand the purpose, monitoring, mobility precautions, and symptoms to report."],
     afterCare: ["Secure the line and pump, maintain the prescribed rate, and inspect the site and patient during and after bag changes.", "Provide oral or enteral intake only if prescribed and continue mouth care even when oral feeding is restricted."],
     documentation: ["Record prescription verification, bag details, route and lumen, rate, filter, start and finish times, glucose, observations, intake-output, and tolerance.", "Document line-site assessment, bag or tubing changes, interruptions, complications, and notification of the clinical team."],
     videoUrl: "https://www.youtube.com/watch?v=NoKybw2Crak",
     quiz: [
-      q("Why is PN considered high-alert therapy?", ["Incorrect composition, route, rate, or interruption can cause serious harm", "It is always given by mouth", "It never affects glucose", "It requires no monitoring"], "Incorrect composition, route, rate, or interruption can cause serious harm", "PN can cause metabolic, infectious, fluid, and catheter-related complications."),
-      q("What must be compared before starting PN?", ["The prescription, bag label, patient identifiers, route, and rate", "Only the colour of the bag", "Only the patient’s age", "The meal menu"], "The prescription, bag label, patient identifiers, route, and rate", "Independent checks prevent wrong-patient, wrong-solution, and wrong-rate errors."),
-      q("What should be done if the PN bag is leaking or contains unexpected particles?", ["Do not use it and notify the responsible team", "Shake it until clear", "Add sterile water", "Start it at a slower rate"], "Do not use it and notify the responsible team", "A compromised or unstable solution may be unsafe and requires replacement and review."),
-      q("Why is a dedicated lumen commonly used for PN?", ["To reduce incompatibility and contamination risks", "To allow all medicines to be mixed", "To avoid checking the catheter", "To increase the patient’s appetite"], "To reduce incompatibility and contamination risks", "Dedicated access protects the solution and the patient from wrong-route or compatibility errors."),
-      q("What is essential when connecting PN to a central line?", ["Aseptic hub disinfection and sterile non-touch technique", "Touching the connection to check it", "Leaving the cap on the floor", "Skipping hand hygiene if gloves are worn"], "Aseptic hub disinfection and sterile non-touch technique", "Central-line infection prevention depends on meticulous aseptic access."),
-      q("What is a risk of abruptly stopping continuous PN?", ["Hypoglycaemia", "Immediate improved nutrition", "Guaranteed fluid balance", "Sterilization of the catheter"], "Hypoglycaemia", "The patient may continue to have insulin activity or metabolic dependence after the carbohydrate infusion stops."),
-      q("Which finding may indicate a catheter-related bloodstream infection?", ["Fever or rigors with a red, painful, or draining catheter site", "A clean dry site and stable temperature", "A correct label", "A functioning pump"], "Fever or rigors with a red, painful, or draining catheter site", "Systemic and local infection signs require prompt assessment and escalation."),
-      q("Why are blood glucose and electrolytes monitored during PN?", ["PN can alter glucose and electrolyte balance", "PN never affects metabolism", "Monitoring replaces the prescription", "It identifies the patient’s blood group"], "PN can alter glucose and electrolyte balance", "Metabolic complications can develop during initiation, changes, or interruption."),
-      q("What should the nurse do if the infusion pump alarms for occlusion?", ["Assess the line and patient, stop unsafe pressure, and troubleshoot or escalate per policy", "Increase the pressure indefinitely", "Flush forcefully without assessment", "Ignore the alarm"], "Assess the line and patient, stop unsafe pressure, and troubleshoot or escalate per policy", "Forceful flushing can damage the catheter or dislodge a clot; the cause must be assessed."),
-      q("Which information belongs in PN documentation?", ["Solution and bag details, rate, access, checks, monitoring, tolerance, and complications", "Only that a pump was present", "Only the patient’s meal preference", "Nothing if the bag finished"], "Solution and bag details, rate, access, checks, monitoring, tolerance, and complications", "Complete traceability is needed for high-alert nutrition therapy."),
+  {
+    "question": "Which action is listed as step 1 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Perform nutritional assessment",
+      "Explain procedure to the patient and obtain consent",
+      "Place patient in supine position and turn head away from venous access device insertion site",
+      "Monitor administration hourly; assessing for integrity of fluid, administration system, patient tolerance and other symptoms of complications related to PN"
     ],
+    "answer": "Perform nutritional assessment",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Collect needed items for the procedure",
+      "Cross check physician’s order",
+      "Perform hand hygiene, done gown, cap, mask and gloves",
+      "Insert new PN solution and IV tubing into electronic infusion device"
+    ],
+    "answer": "Cross check physician’s order",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Cross check physician’s order",
+      "Use aseptic technique to attach tubing with filter to TNA bag and purge out air",
+      "Provide Privacy",
+      "Connect tubing to hub of VAD after insertion using sterile technique and ensure all connections are locked with luer-connection"
+    ],
+    "answer": "Provide Privacy",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Discard old supplies as per agency protocol, and perform hand hygiene",
+      "Inspect fluid for consistency(creamy, or any change in constitution)",
+      "Complete the flushing protocol as per hospital’s policy",
+      "Establish rapport with patient"
+    ],
+    "answer": "Establish rapport with patient",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Explain procedure to the patient and obtain consent",
+      "Perform hand hygiene",
+      "Clean insertion site with povidone iodine solution",
+      "Document the procedure in the patient chart as per hospital policy"
+    ],
+    "answer": "Explain procedure to the patient and obtain consent",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Review prescribers’ orders and compare to content label on PN solution bag(s) and for rate of infusion. Each component of the PN solution must be verified with the physician’s orders",
+      "Perform hand hygiene",
+      "Compare the label on the PN bag to the patient’s wristband",
+      "Open all clamps and regulate flow using volume control infuser"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Provide Privacy",
+      "Close all clamps on new tubing and insert tubing in volume control infuses",
+      "Collect needed items for the procedure",
+      "Complete all safety checks for central venous catheter as per hospital’s policy"
+    ],
+    "answer": "Collect needed items for the procedure",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Monitor administration hourly; assessing for integrity of fluid, administration system, patient tolerance and other symptoms of complications related to PN",
+      "Collect supplies, prepare PN solution, and prime IV tubing with filter as per hospital’s protocol",
+      "Sanitize connections and change IV tubing as per agency policy when changing tubing",
+      "Review prescribers’ orders and compare to content label on PN solution bag(s) and for rate of infusion. Each component of the PN solution must be verified with the physician’s orders"
+    ],
+    "answer": "Review prescribers’ orders and compare to content label on PN solution bag(s) and for rate of infusion. Each component of the PN solution must be verified with the physician’s orders",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Remove the bag of parenteral nutrition at least 1 hr. from the refrigerator if refrigerated",
+      "Perform hand hygiene",
+      "Assist physician while inserting intravenous line",
+      "Perform nutritional assessment"
+    ],
+    "answer": "Remove the bag of parenteral nutrition at least 1 hr. from the refrigerator if refrigerated",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Review prescribers’ orders and compare to content label on PN solution bag(s) and for rate of infusion. Each component of the PN solution must be verified with the physician’s orders",
+      "Inspect fluid for consistency(creamy, or any change in constitution)",
+      "Use aseptic technique to attach tubing with filter to TNA bag and purge out air",
+      "Start PN infusion rate as ordered"
+    ],
+    "answer": "Inspect fluid for consistency(creamy, or any change in constitution)",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Establish rapport with patient",
+      "Place patient in supine position and turn head away from venous access device insertion site",
+      "Collect supplies, prepare PN solution, and prime IV tubing with filter as per hospital’s protocol",
+      "Complete the flushing protocol as per hospital’s policy"
+    ],
+    "answer": "Collect supplies, prepare PN solution, and prime IV tubing with filter as per hospital’s protocol",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Document the procedure in the patient chart as per hospital policy",
+      "Collect supplies, prepare PN solution, and prime IV tubing with filter as per hospital’s protocol",
+      "Insert new PN solution and IV tubing into electronic infusion device",
+      "Perform hand hygiene, done gown, cap, mask and gloves"
+    ],
+    "answer": "Perform hand hygiene, done gown, cap, mask and gloves",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Compare the label on the PN bag to the patient’s wristband",
+      "Collect needed items for the procedure",
+      "Connect tubing to hub of VAD after insertion using sterile technique and ensure all connections are locked with luer-connection",
+      "Cross check physician’s order"
+    ],
+    "answer": "Compare the label on the PN bag to the patient’s wristband",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Remove the bag of parenteral nutrition at least 1 hr. from the refrigerator if refrigerated",
+      "Use aseptic technique to attach tubing with filter to TNA bag and purge out air",
+      "Close all clamps on new tubing and insert tubing in volume control infuses",
+      "Discard old supplies as per agency protocol, and perform hand hygiene"
+    ],
+    "answer": "Use aseptic technique to attach tubing with filter to TNA bag and purge out air",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Explain procedure to the patient and obtain consent",
+      "Clean insertion site with povidone iodine solution",
+      "Close all clamps on new tubing and insert tubing in volume control infuses",
+      "Sanitize connections and change IV tubing as per agency policy when changing tubing"
+    ],
+    "answer": "Close all clamps on new tubing and insert tubing in volume control infuses",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Perform nutritional assessment",
+      "Perform hand hygiene, done gown, cap, mask and gloves",
+      "Open all clamps and regulate flow using volume control infuser",
+      "Place patient in supine position and turn head away from venous access device insertion site"
+    ],
+    "answer": "Place patient in supine position and turn head away from venous access device insertion site",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Clean insertion site with povidone iodine solution",
+      "Review prescribers’ orders and compare to content label on PN solution bag(s) and for rate of infusion. Each component of the PN solution must be verified with the physician’s orders",
+      "Complete all safety checks for central venous catheter as per hospital’s policy",
+      "Provide Privacy"
+    ],
+    "answer": "Clean insertion site with povidone iodine solution",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Inspect fluid for consistency(creamy, or any change in constitution)",
+      "Assist physician while inserting intravenous line",
+      "Close all clamps on new tubing and insert tubing in volume control infuses",
+      "Monitor administration hourly; assessing for integrity of fluid, administration system, patient tolerance and other symptoms of complications related to PN"
+    ],
+    "answer": "Assist physician while inserting intravenous line",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Perform hand hygiene",
+      "Clean insertion site with povidone iodine solution",
+      "Connect tubing to hub of VAD after insertion using sterile technique and ensure all connections are locked with luer-connection",
+      "Insert new PN solution and IV tubing into electronic infusion device"
+    ],
+    "answer": "Connect tubing to hub of VAD after insertion using sterile technique and ensure all connections are locked with luer-connection",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Cross check physician’s order",
+      "Compare the label on the PN bag to the patient’s wristband",
+      "Start PN infusion rate as ordered",
+      "Complete all safety checks for central venous catheter as per hospital’s policy"
+    ],
+    "answer": "Complete all safety checks for central venous catheter as per hospital’s policy",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Complete the flushing protocol as per hospital’s policy",
+      "Remove the bag of parenteral nutrition at least 1 hr. from the refrigerator if refrigerated",
+      "Complete all safety checks for central venous catheter as per hospital’s policy",
+      "Establish rapport with patient"
+    ],
+    "answer": "Complete the flushing protocol as per hospital’s policy",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Collect supplies, prepare PN solution, and prime IV tubing with filter as per hospital’s protocol",
+      "Sanitize connections and change IV tubing as per agency policy when changing tubing",
+      "Place patient in supine position and turn head away from venous access device insertion site",
+      "Document the procedure in the patient chart as per hospital policy"
+    ],
+    "answer": "Sanitize connections and change IV tubing as per agency policy when changing tubing",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Collect needed items for the procedure",
+      "Assist physician while inserting intravenous line",
+      "Insert new PN solution and IV tubing into electronic infusion device",
+      "Open all clamps and regulate flow using volume control infuser"
+    ],
+    "answer": "Insert new PN solution and IV tubing into electronic infusion device",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Provide Privacy",
+      "Use aseptic technique to attach tubing with filter to TNA bag and purge out air",
+      "Discard old supplies as per agency protocol, and perform hand hygiene",
+      "Open all clamps and regulate flow using volume control infuser"
+    ],
+    "answer": "Open all clamps and regulate flow using volume control infuser",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Start PN infusion rate as ordered",
+      "Inspect fluid for consistency(creamy, or any change in constitution)",
+      "Complete the flushing protocol as per hospital’s policy",
+      "Explain procedure to the patient and obtain consent"
+    ],
+    "answer": "Start PN infusion rate as ordered",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Perform hand hygiene, done gown, cap, mask and gloves",
+      "Discard old supplies as per agency protocol, and perform hand hygiene",
+      "Clean insertion site with povidone iodine solution",
+      "Perform nutritional assessment"
+    ],
+    "answer": "Discard old supplies as per agency protocol, and perform hand hygiene",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 27 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Review prescribers’ orders and compare to content label on PN solution bag(s) and for rate of infusion. Each component of the PN solution must be verified with the physician’s orders",
+      "Connect tubing to hub of VAD after insertion using sterile technique and ensure all connections are locked with luer-connection",
+      "Monitor administration hourly; assessing for integrity of fluid, administration system, patient tolerance and other symptoms of complications related to PN",
+      "Open all clamps and regulate flow using volume control infuser"
+    ],
+    "answer": "Monitor administration hourly; assessing for integrity of fluid, administration system, patient tolerance and other symptoms of complications related to PN",
+    "explanation": "This checks recall of step 27 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 28 of PARENTERAL NUTRITION (PN)?",
+    "options": [
+      "Establish rapport with patient",
+      "Close all clamps on new tubing and insert tubing in volume control infuses",
+      "Discard old supplies as per agency protocol, and perform hand hygiene",
+      "Document the procedure in the patient chart as per hospital policy"
+    ],
+    "answer": "Document the procedure in the patient chart as per hospital policy",
+    "explanation": "This checks recall of step 28 in the procedure sequence."
+  }
+],
   },
 ];

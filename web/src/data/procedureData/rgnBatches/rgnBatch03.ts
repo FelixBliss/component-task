@@ -960,13 +960,12 @@ export const rgnBatch03: Procedure[] = [
     id: "rgn-021",
     title: "PRE-OPERATIVE PREPARATION OF A PATIENT",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
       "This is the care given to patients before a surgical procedure. The nurse/midwife has a role to ensure that the patient is physically, psychologically and physiologically fit for the intended procedure.",
-    purpose: [
-      "Relieve patient’s anxiety",
-      "Ensure successful operation",
-      "Prevent complications after surgery",
-    ],
+    purpose: [],
     indications: [
       "Scheduled/elective surgical procedure",
       "Emergency surgical procedure requiring pre-operative preparation",
@@ -974,46 +973,49 @@ export const rgnBatch03: Procedure[] = [
       "Procedures requiring transfer to theatre",
     ],
     equipment: [
-      "A trolley containing the following:",
-      "Vital signs tray",
-      "Theatre gown",
-      "Name tag",
-      "Mackintosh and dressing towel",
-      "Sterile gauze in a gallipot",
-      "Antiseptic solution",
-      "Bowl of water",
-      "Soap and sponge",
-      "Sterile drape",
-      "Adhesive strip",
-      "Urinal/bedpan",
-    ],
+  "A trolley containing the following:",
+  "Vital signs tray",
+  "Theatre gown",
+  "Name tag",
+  "Mackintosh and dressing towel",
+  "Sterile gauze in a gallipot",
+  "Antiseptic solution",
+  "Bowl of water",
+  "Soap and sponge",
+  "Sterile drape",
+  "Adhesive strip",
+  "Urinal/bedpan",
+  "Consent form",
+  "Pre-medication as ordered",
+  "Patient’s medical records (Manual or electronic)"
+],
     steps: [
-      "Confirm the type of surgical procedure and site against physician/doctor’s order",
-      "Establish rapport with patient (Refer to steps)",
-      "Prepare and send trolley to bedside",
-      "Provide privacy",
-      "Ask patient to empty bladder/bowel",
-      "Place patient into a desirable position",
-      "Expose the site to be prepared",
-      "Protect the bed clothes with a mackintosh and dressing towel",
-      "Wear gloves",
-      "Wash the area with mild soap and water",
-      "Dry and clean area with antiseptic lotion",
-      "Cover area with sterile drape and secure it in position with adhesive strapping",
-      "Dress patient with a clean theatre gown",
-      "Label and apply the name tag as per facility’s protocol",
-      "Remove accessories and dentures if any",
-      "Check and record vital signs",
-      "Assist patient to sign the consent form as per facility’s protocol",
-      "Confirm if all laboratory results, items for surgery and medications are ready for the procedure",
-      "Dispose off used items and decontaminate trolley",
-      "Perform hand hygiene",
-      "Give prescribed pre-medication when patient is ready for the theatre",
-      "Send patient to the theater either on a stretcher or wheelchair",
-      "Hand over patient, medical records and items to the theater staff",
-      "Document procedure in the appropriate notes (manual/electronic)",
-      "Prepare an operation bed to receive the patient",
-    ],
+  "Confirm the type of surgical procedure and site against physician/doctor’s order",
+  "Establish rapport with patient (Refer to steps)",
+  "Prepare and send trolley to bedside",
+  "Provide privacy",
+  "Ask patient to empty bladder/bowel",
+  "Place patient into a desirable position",
+  "Expose the site to be prepared",
+  "Protect the bed clothes with a mackintosh and dressing towel",
+  "Wear gloves",
+  "Wash the area with mild soap and water",
+  "Dry and clean area with antiseptic lotion",
+  "Cover area with sterile drape and secure it in position with adhesive strapping",
+  "Dress patient with a clean theatre gown",
+  "Label and apply the name tag as per facility’s protocol",
+  "Remove accessories and dentures if any",
+  "Check and record vital signs",
+  "Assist patient to sign the consent form as per facility’s protocol",
+  "Confirm if all laboratory results, items for surgery and medications are ready for the procedure",
+  "Dispose off used items and decontaminate trolley",
+  "Perform hand hygiene",
+  "Give prescribed pre-medication when patient is ready for the theatre",
+  "Send patient to the theater either on a stretcher or wheelchair",
+  "Hand over patient, medical records and items to the theater staff",
+  "Document procedure in the appropriate notes (manual/electronic)",
+  "Prepare an operation bed to receive the patient"
+],
     precautions: [
       "Verify patient identity, procedure and operative site before preparation",
       "Confirm that informed consent requirements have been completed according to facility policy",
@@ -1025,62 +1027,346 @@ export const rgnBatch03: Procedure[] = [
       "Ensure safe transportation and complete handover with the patient's records",
     ],
     videoUrl: "https://www.youtube.com/watch?v=oKFokcxPuwI",
-    quiz: rgn_021Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Confirm the type of surgical procedure and site against physician/doctor’s order",
+      "Ask patient to empty bladder/bowel",
+      "Check and record vital signs",
+      "Prepare and send trolley to bedside"
+    ],
+    "answer": "Confirm the type of surgical procedure and site against physician/doctor’s order",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Wash the area with mild soap and water",
+      "Establish rapport with patient (Refer to steps)",
+      "Cover area with sterile drape and secure it in position with adhesive strapping",
+      "Hand over patient, medical records and items to the theater staff"
+    ],
+    "answer": "Establish rapport with patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Place patient into a desirable position",
+      "Assist patient to sign the consent form as per facility’s protocol",
+      "Prepare and send trolley to bedside",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Prepare and send trolley to bedside",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Confirm the type of surgical procedure and site against physician/doctor’s order",
+      "Dress patient with a clean theatre gown",
+      "Document procedure in the appropriate notes (manual/electronic)",
+      "Provide privacy"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Ask patient to empty bladder/bowel",
+      "Wear gloves",
+      "Perform hand hygiene",
+      "Expose the site to be prepared"
+    ],
+    "answer": "Ask patient to empty bladder/bowel",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Label and apply the name tag as per facility’s protocol",
+      "Place patient into a desirable position",
+      "Check and record vital signs",
+      "Establish rapport with patient (Refer to steps)"
+    ],
+    "answer": "Place patient into a desirable position",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Wash the area with mild soap and water",
+      "Give prescribed pre-medication when patient is ready for the theatre",
+      "Expose the site to be prepared",
+      "Hand over patient, medical records and items to the theater staff"
+    ],
+    "answer": "Expose the site to be prepared",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Ask patient to empty bladder/bowel",
+      "Assist patient to sign the consent form as per facility’s protocol",
+      "Prepare and send trolley to bedside",
+      "Protect the bed clothes with a mackintosh and dressing towel"
+    ],
+    "answer": "Protect the bed clothes with a mackintosh and dressing towel",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Wear gloves",
+      "Dress patient with a clean theatre gown",
+      "Document procedure in the appropriate notes (manual/electronic)",
+      "Dry and clean area with antiseptic lotion"
+    ],
+    "answer": "Wear gloves",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Confirm if all laboratory results, items for surgery and medications are ready for the procedure",
+      "Wash the area with mild soap and water",
+      "Perform hand hygiene",
+      "Place patient into a desirable position"
+    ],
+    "answer": "Wash the area with mild soap and water",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Label and apply the name tag as per facility’s protocol",
+      "Prepare an operation bed to receive the patient",
+      "Dry and clean area with antiseptic lotion",
+      "Establish rapport with patient (Refer to steps)"
+    ],
+    "answer": "Dry and clean area with antiseptic lotion",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Wear gloves",
+      "Give prescribed pre-medication when patient is ready for the theatre",
+      "Expose the site to be prepared",
+      "Cover area with sterile drape and secure it in position with adhesive strapping"
+    ],
+    "answer": "Cover area with sterile drape and secure it in position with adhesive strapping",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Dress patient with a clean theatre gown",
+      "Assist patient to sign the consent form as per facility’s protocol",
+      "Prepare and send trolley to bedside",
+      "Remove accessories and dentures if any"
+    ],
+    "answer": "Dress patient with a clean theatre gown",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Send patient to the theater either on a stretcher or wheelchair",
+      "Label and apply the name tag as per facility’s protocol",
+      "Document procedure in the appropriate notes (manual/electronic)",
+      "Wash the area with mild soap and water"
+    ],
+    "answer": "Label and apply the name tag as per facility’s protocol",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Confirm if all laboratory results, items for surgery and medications are ready for the procedure",
+      "Provide privacy",
+      "Remove accessories and dentures if any",
+      "Place patient into a desirable position"
+    ],
+    "answer": "Remove accessories and dentures if any",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Dress patient with a clean theatre gown",
+      "Prepare an operation bed to receive the patient",
+      "Dry and clean area with antiseptic lotion",
+      "Check and record vital signs"
+    ],
+    "answer": "Check and record vital signs",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Assist patient to sign the consent form as per facility’s protocol",
+      "Give prescribed pre-medication when patient is ready for the theatre",
+      "Expose the site to be prepared",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Assist patient to sign the consent form as per facility’s protocol",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Confirm the type of surgical procedure and site against physician/doctor’s order",
+      "Confirm if all laboratory results, items for surgery and medications are ready for the procedure",
+      "Prepare and send trolley to bedside",
+      "Label and apply the name tag as per facility’s protocol"
+    ],
+    "answer": "Confirm if all laboratory results, items for surgery and medications are ready for the procedure",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Send patient to the theater either on a stretcher or wheelchair",
+      "Protect the bed clothes with a mackintosh and dressing towel",
+      "Dispose off used items and decontaminate trolley",
+      "Wash the area with mild soap and water"
+    ],
+    "answer": "Dispose off used items and decontaminate trolley",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Assist patient to sign the consent form as per facility’s protocol",
+      "Provide privacy",
+      "Remove accessories and dentures if any",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Give prescribed pre-medication when patient is ready for the theatre",
+      "Prepare an operation bed to receive the patient",
+      "Dry and clean area with antiseptic lotion",
+      "Hand over patient, medical records and items to the theater staff"
+    ],
+    "answer": "Give prescribed pre-medication when patient is ready for the theatre",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Ask patient to empty bladder/bowel",
+      "Send patient to the theater either on a stretcher or wheelchair",
+      "Expose the site to be prepared",
+      "Confirm if all laboratory results, items for surgery and medications are ready for the procedure"
+    ],
+    "answer": "Send patient to the theater either on a stretcher or wheelchair",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Confirm the type of surgical procedure and site against physician/doctor’s order",
+      "Cover area with sterile drape and secure it in position with adhesive strapping",
+      "Hand over patient, medical records and items to the theater staff",
+      "Label and apply the name tag as per facility’s protocol"
+    ],
+    "answer": "Hand over patient, medical records and items to the theater staff",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Give prescribed pre-medication when patient is ready for the theatre",
+      "Protect the bed clothes with a mackintosh and dressing towel",
+      "Dispose off used items and decontaminate trolley",
+      "Document procedure in the appropriate notes (manual/electronic)"
+    ],
+    "answer": "Document procedure in the appropriate notes (manual/electronic)",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of PRE-OPERATIVE PREPARATION OF A PATIENT?",
+    "options": [
+      "Prepare an operation bed to receive the patient",
+      "Provide privacy",
+      "Remove accessories and dentures if any",
+      "Establish rapport with patient (Refer to steps)"
+    ],
+    "answer": "Prepare an operation bed to receive the patient",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  }
+],
   },
 
   {
     id: "rgn-022",
     title: "TEPID SPONGING",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
       "Tepid sponging is the application of lukewarm water on the skin surface when the body temperature is above 39℃. The temperature of the water used should be between 27-37℃. The procedure is based on the principle of conduction and evaporation of heat.",
-    purpose: [
-      "Gradually reduce a patient's body temperature by not more than 1℃ at a time",
-      "Ultimately reduce the body's temperature to a value between the normal range (36.5 – 37.2℃)",
-    ],
+    purpose: [],
     indications: [
       "Fever or elevated body temperature when tepid sponging is clinically appropriate",
       "Patient discomfort associated with elevated temperature",
       "Adjunctive cooling when prescribed or included in the patient's plan of care",
     ],
     equipment: [
-      "A trolley containing the following:",
-      "Top shelf:",
-      "Two bowls/basin",
-      "6-8 small towels",
-      "Vital signs tray",
-      "Bath thermometer (if available)",
-    ],
+  "A trolley containing the following:",
+  "Top shelf:",
+  "Two bowls/basin",
+  "6-8 small towels",
+  "Vital signs tray",
+  "Bath thermometer (if available)",
+  "Bottom shelf:",
+  "Two jugs with hot and cold water respectively",
+  "Disposable gloves",
+  "Long mackintosh and bath blanket",
+  "Receptacle for soiled linen",
+  "Receptacle for used water",
+  "New linen and clothing",
+  "Bath towel"
+],
     steps: [
-      "Establish rapport with patient and relatives (Refer to steps)",
-      "Explain procedure to patient and relatives (Refer to steps)",
-      "Provide privacy",
-      "Perform hand hygiene",
-      "Prepare trolley and send to the bedside",
-      "Check and record patient's temperature",
-      "Arrange top bed/counterpane clothes leaving top sheet",
-      "Protect bottom sheet with a long mackintosh and bath blanket",
-      "Undress the patient leaving him/her covered with the top sheet",
-      "Prepare the tepid water in the bowl/basin, test the water with the bath thermometer or elbow",
-      "Place the pieces of towels into the basin with tepid water",
-      "Squeeze out excess water, place a wet towel in each axilla and groin",
-      "Change the wet towel frequently to keep them tepid",
-      "Sponge lower limbs, trunk, back and upper arms in strokes",
-      "Wash and dry the face of the patient to refresh him/her",
-      "Place the wet towel on the forehead of patient",
-      "Leave small drops of water on the skin",
-      "Change water as often as necessary",
-      "Leave patient for 15-20 minutes",
-      "Cover the patient with the top bedclothing",
-      "Recheck temperature and record",
-      "Repeat procedure till temperature falls by 1℃",
-      "Remove long mackintosh and bath blanket",
-      "Assist patient to dress up and put him/her into a desirable position",
-      "Perform hand hygiene",
-      "Serve cold drink if patient can tolerate",
-      "Serve prescribed antipyretic",
-      "Document procedures, chart temperature and report findings to appropriate officer",
-    ],
+  "Establish rapport with patient and relatives (Refer to steps)",
+  "Explain procedure to patient and relatives (Refer to steps)",
+  "Provide privacy",
+  "Perform hand hygiene",
+  "Prepare trolley and send to the bedside",
+  "Check and record patient’s temperature",
+  "Arrange top bed/counterpane clothes leaving top sheet",
+  "Protect bottom sheet with a long mackintosh and bath blanket",
+  "Undress the patient leaving him/her covered with the top sheet",
+  "Prepare the tepid water in the bowel/basin, test the water with the bath thermometer or elbow",
+  "Place the pieces of towels into the basin with tepid water",
+  "Squeeze out excess water, place a wet towel in each axilla and groin",
+  "Change the wet towel frequently to keep them tepid",
+  "Sponge lower limbs, trunk, back and upper arms in strokes",
+  "Wash and dry the face of the patient to refresh him/her",
+  "Place the wet towel on the forehead of patient",
+  "Leave small drops of water on the skin",
+  "Change water as often as necessary",
+  "Leave patient for 15-20 minutes",
+  "Cover the patient with the top bedclothing",
+  "Recheck temperature and record",
+  "Repeat procedure till temperatures falls by 1℃",
+  "Remove long mackintosh and bath blanket",
+  "Assist patient to dress up and put him/her into a desirable position",
+  "Perform hand hygiene",
+  "Serve cold drink if patient can tolerate",
+  "Serve prescribed antipyretic",
+  "Document procedures, charts temperature and report findings to appropriate officer"
+],
     precautions: [
       "Use tepid/lukewarm water and avoid ice-cold water",
       "Monitor the patient's temperature and response throughout the procedure",
@@ -1091,21 +1377,329 @@ export const rgnBatch03: Procedure[] = [
       "Administer antipyretics only when prescribed or otherwise authorized",
     ],
     videoUrl: "https://www.youtube.com/watch?v=qZN4_9gRecc",
-    quiz: rgn_022Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of TEPID SPONGING?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Prepare trolley and send to the bedside",
+      "Place the wet towel on the forehead of patient",
+      "Document procedures, charts temperature and report findings to appropriate officer"
+    ],
+    "answer": "Establish rapport with patient and relatives (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of TEPID SPONGING?",
+    "options": [
+      "Protect bottom sheet with a long mackintosh and bath blanket",
+      "Explain procedure to patient and relatives (Refer to steps)",
+      "Squeeze out excess water, place a wet towel in each axilla and groin",
+      "Remove long mackintosh and bath blanket"
+    ],
+    "answer": "Explain procedure to patient and relatives (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of TEPID SPONGING?",
+    "options": [
+      "Perform hand hygiene",
+      "Wash and dry the face of the patient to refresh him/her",
+      "Provide privacy",
+      "Leave patient for 15-20 minutes"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of TEPID SPONGING?",
+    "options": [
+      "Serve prescribed antipyretic",
+      "Place the pieces of towels into the basin with tepid water",
+      "Repeat procedure till temperatures falls by 1℃",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of TEPID SPONGING?",
+    "options": [
+      "Prepare trolley and send to the bedside",
+      "Arrange top bed/counterpane clothes leaving top sheet",
+      "Change water as often as necessary",
+      "Explain procedure to patient and relatives (Refer to steps)"
+    ],
+    "answer": "Prepare trolley and send to the bedside",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of TEPID SPONGING?",
+    "options": [
+      "Prepare the tepid water in the bowel/basin, test the water with the bath thermometer or elbow",
+      "Check and record patient’s temperature",
+      "Sponge lower limbs, trunk, back and upper arms in strokes",
+      "Serve cold drink if patient can tolerate"
+    ],
+    "answer": "Check and record patient’s temperature",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of TEPID SPONGING?",
+    "options": [
+      "Prepare trolley and send to the bedside",
+      "Leave small drops of water on the skin",
+      "Arrange top bed/counterpane clothes leaving top sheet",
+      "Recheck temperature and record"
+    ],
+    "answer": "Arrange top bed/counterpane clothes leaving top sheet",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of TEPID SPONGING?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Change the wet towel frequently to keep them tepid",
+      "Assist patient to dress up and put him/her into a desirable position",
+      "Protect bottom sheet with a long mackintosh and bath blanket"
+    ],
+    "answer": "Protect bottom sheet with a long mackintosh and bath blanket",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of TEPID SPONGING?",
+    "options": [
+      "Undress the patient leaving him/her covered with the top sheet",
+      "Protect bottom sheet with a long mackintosh and bath blanket",
+      "Cover the patient with the top bedclothing",
+      "Perform hand hygiene"
+    ],
+    "answer": "Undress the patient leaving him/her covered with the top sheet",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of TEPID SPONGING?",
+    "options": [
+      "Squeeze out excess water, place a wet towel in each axilla and groin",
+      "Prepare the tepid water in the bowel/basin, test the water with the bath thermometer or elbow",
+      "Place the wet towel on the forehead of patient",
+      "Document procedures, charts temperature and report findings to appropriate officer"
+    ],
+    "answer": "Prepare the tepid water in the bowel/basin, test the water with the bath thermometer or elbow",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of TEPID SPONGING?",
+    "options": [
+      "Arrange top bed/counterpane clothes leaving top sheet",
+      "Leave patient for 15-20 minutes",
+      "Place the pieces of towels into the basin with tepid water",
+      "Remove long mackintosh and bath blanket"
+    ],
+    "answer": "Place the pieces of towels into the basin with tepid water",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of TEPID SPONGING?",
+    "options": [
+      "Provide privacy",
+      "Wash and dry the face of the patient to refresh him/her",
+      "Serve prescribed antipyretic",
+      "Squeeze out excess water, place a wet towel in each axilla and groin"
+    ],
+    "answer": "Squeeze out excess water, place a wet towel in each axilla and groin",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of TEPID SPONGING?",
+    "options": [
+      "Change the wet towel frequently to keep them tepid",
+      "Prepare the tepid water in the bowel/basin, test the water with the bath thermometer or elbow",
+      "Repeat procedure till temperatures falls by 1℃",
+      "Check and record patient’s temperature"
+    ],
+    "answer": "Change the wet towel frequently to keep them tepid",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of TEPID SPONGING?",
+    "options": [
+      "Change the wet towel frequently to keep them tepid",
+      "Sponge lower limbs, trunk, back and upper arms in strokes",
+      "Change water as often as necessary",
+      "Explain procedure to patient and relatives (Refer to steps)"
+    ],
+    "answer": "Sponge lower limbs, trunk, back and upper arms in strokes",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of TEPID SPONGING?",
+    "options": [
+      "Undress the patient leaving him/her covered with the top sheet",
+      "Recheck temperature and record",
+      "Wash and dry the face of the patient to refresh him/her",
+      "Serve cold drink if patient can tolerate"
+    ],
+    "answer": "Wash and dry the face of the patient to refresh him/her",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of TEPID SPONGING?",
+    "options": [
+      "Prepare trolley and send to the bedside",
+      "Leave small drops of water on the skin",
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Place the wet towel on the forehead of patient"
+    ],
+    "answer": "Place the wet towel on the forehead of patient",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of TEPID SPONGING?",
+    "options": [
+      "Leave small drops of water on the skin",
+      "Squeeze out excess water, place a wet towel in each axilla and groin",
+      "Assist patient to dress up and put him/her into a desirable position",
+      "Protect bottom sheet with a long mackintosh and bath blanket"
+    ],
+    "answer": "Leave small drops of water on the skin",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of TEPID SPONGING?",
+    "options": [
+      "Wash and dry the face of the patient to refresh him/her",
+      "Change water as often as necessary",
+      "Cover the patient with the top bedclothing",
+      "Perform hand hygiene"
+    ],
+    "answer": "Change water as often as necessary",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of TEPID SPONGING?",
+    "options": [
+      "Place the pieces of towels into the basin with tepid water",
+      "Remove long mackintosh and bath blanket",
+      "Leave patient for 15-20 minutes",
+      "Document procedures, charts temperature and report findings to appropriate officer"
+    ],
+    "answer": "Leave patient for 15-20 minutes",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of TEPID SPONGING?",
+    "options": [
+      "Arrange top bed/counterpane clothes leaving top sheet",
+      "Change water as often as necessary",
+      "Provide privacy",
+      "Cover the patient with the top bedclothing"
+    ],
+    "answer": "Cover the patient with the top bedclothing",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of TEPID SPONGING?",
+    "options": [
+      "Recheck temperature and record",
+      "Sponge lower limbs, trunk, back and upper arms in strokes",
+      "Serve prescribed antipyretic",
+      "Prepare the tepid water in the bowel/basin, test the water with the bath thermometer or elbow"
+    ],
+    "answer": "Recheck temperature and record",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of TEPID SPONGING?",
+    "options": [
+      "Leave small drops of water on the skin",
+      "Repeat procedure till temperatures falls by 1℃",
+      "Recheck temperature and record",
+      "Check and record patient’s temperature"
+    ],
+    "answer": "Repeat procedure till temperatures falls by 1℃",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of TEPID SPONGING?",
+    "options": [
+      "Change the wet towel frequently to keep them tepid",
+      "Serve cold drink if patient can tolerate",
+      "Remove long mackintosh and bath blanket",
+      "Explain procedure to patient and relatives (Refer to steps)"
+    ],
+    "answer": "Remove long mackintosh and bath blanket",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of TEPID SPONGING?",
+    "options": [
+      "Undress the patient leaving him/her covered with the top sheet",
+      "Cover the patient with the top bedclothing",
+      "Prepare trolley and send to the bedside",
+      "Assist patient to dress up and put him/her into a desirable position"
+    ],
+    "answer": "Assist patient to dress up and put him/her into a desirable position",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of TEPID SPONGING?",
+    "options": [
+      "Perform hand hygiene",
+      "Leave small drops of water on the skin",
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Change the wet towel frequently to keep them tepid"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of TEPID SPONGING?",
+    "options": [
+      "Leave patient for 15-20 minutes",
+      "Serve cold drink if patient can tolerate",
+      "Remove long mackintosh and bath blanket",
+      "Protect bottom sheet with a long mackintosh and bath blanket"
+    ],
+    "answer": "Serve cold drink if patient can tolerate",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 27 of TEPID SPONGING?",
+    "options": [
+      "Wash and dry the face of the patient to refresh him/her",
+      "Document procedures, charts temperature and report findings to appropriate officer",
+      "Serve prescribed antipyretic",
+      "Perform hand hygiene"
+    ],
+    "answer": "Serve prescribed antipyretic",
+    "explanation": "This checks recall of step 27 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 28 of TEPID SPONGING?",
+    "options": [
+      "Place the pieces of towels into the basin with tepid water",
+      "Repeat procedure till temperatures falls by 1℃",
+      "Arrange top bed/counterpane clothes leaving top sheet",
+      "Document procedures, charts temperature and report findings to appropriate officer"
+    ],
+    "answer": "Document procedures, charts temperature and report findings to appropriate officer",
+    "explanation": "This checks recall of step 28 in the procedure sequence."
+  }
+],
   },
 
   {
     id: "rgn-023",
     title: "PREPARATION FOR WARD ROUNDS",
     category: "General Nursing (RGN)",
+    types: [
+  "Planned/Routine",
+  "Adhoc/Emergency"
+],
     overview:
-      "Ward rounds is an organized review of in-patients by the health care team members. It is to discuss, make decisions and assign responsibilities to various practitioners in relation to the management of patients’ condition. The nurse/midwife has the responsibility to ensure that the needed gadgets or devices are readily available for the activity. The nurse/midwife ensures that accurate documentation is done.",
-    purpose: [
-      "Enhance effective communication among health team members",
-      "Provide plan of care for patients",
-      "Keep patients informed about progress of care",
-      "Serve as teaching and learning experience for staff and interns",
-    ],
+      "Ward rounds is an organized review of in-patients by the health care team members. It is to discuss, make decisions and assign responsibilities to various practitioners in relation to the management of patients' condition. The nurse/midwife has the responsibility to ensure that the needed gadgets or devices are readily available for the activity. The nurse/midwife ensures that accurate documentation is done.",
+    purpose: [],
     indications: [
       "Planned or routine ward round",
       "Multidisciplinary review of admitted patients",
@@ -1113,31 +1707,39 @@ export const rgnBatch03: Procedure[] = [
       "Ad hoc or emergency clinical review",
     ],
     equipment: [
-      "A trolley containing the following:",
-      "Top shelf",
-      "Adequate supply of tablet for documentation or the following stationery:",
-      "Patient's Medical Records",
-      "Nurse's changes book",
-      "Continuation sheet",
-      "Treatment sheet",
-      "Investigative request forms e.g. X'ray, laboratory",
-      "Prescription form",
-      "Stapler with pins",
-    ],
+  "A trolley containing the following: \\n Top shelf",
+  "Adequate supply of tablet for documentation or the following stationery:",
+  "Patient’s Medical Records",
+  "Nurse’s changes book",
+  "Continuation sheet",
+  "Treatment sheet",
+  "Investigative request forms e.g. X’ray, laboratory",
+  "Prescription form",
+  "Stapler with pins",
+  "Bottom shelf",
+  "Vital signs tray",
+  "Diagnostic set",
+  "Pocket torch light",
+  "Measuring tape",
+  "Disposable tongue depressors/padded spatula",
+  "Neurological set",
+  "Receiver for used articles",
+  "Other trays may be set depending on the specific needs of patient"
+],
     steps: [
-      "Ensure the ward and its annexes are clean",
-      "Ensure all patients and visitors are in bed and out of the ward respectively",
-      "Conduct charge nurse's round, note down concerns and complaints of patients",
-      "Classify patients according to their needs or depending on the protocol of the unit",
-      "Ensure all reports are duly filed and records are up to date",
-      "Arrange patient's medical records in the correct sequence for the rounds",
-      "Facilitate rounds, present patients' problems, concerns and progress",
-      "Assist when doctor is examining the patients",
-      "Give patients opportunity to ask questions",
-      "Provide appropriate answers to patients' questions",
-      "Record all changes, directives and tasks assigned in appropriate documents",
-      "Ensure patient's notes are returned to their proper place on the rack after the procedure",
-    ],
+  "Ensure the ward and its annexes are clean",
+  "Ensure all patients and visitors are in bed and out of the ward respectively",
+  "Conduct charge nurse’s round, note down concerns and complaints of patients",
+  "Classify patients according to their needs or depending on the protocol of the unit",
+  "Ensure all reports are dully filed and records are up to date",
+  "Arrange patient’s medical records in the correct sequence for the rounds",
+  "Facilitate rounds, present patients’ problems, concerns and progress",
+  "Assist when doctor is examining the patients",
+  "Give patients’ opportunity to ask questions",
+  "Provide appropriate answers to patients’ questions",
+  "Record all changes, directives and tasks assigned in appropriate documents",
+  "Ensure patient’s notes are returned to their proper place on the rack after the procedure"
+],
     precautions: [
       "Maintain patient privacy, dignity and confidentiality during the ward round",
       "Use appropriate standard precautions and personal protective equipment where indicated",
@@ -1147,42 +1749,175 @@ export const rgnBatch03: Procedure[] = [
       "Clarify unclear instructions before implementing them according to facility policy",
       "Do not leave patient records unattended or accessible to unauthorized persons",
     ],
-    quiz: rgn_023Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Ensure the ward and its annexes are clean",
+      "Ensure all reports are dully filed and records are up to date",
+      "Ensure all patients and visitors are in bed and out of the ward respectively",
+      "Conduct charge nurse’s round, note down concerns and complaints of patients"
+    ],
+    "answer": "Ensure the ward and its annexes are clean",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Conduct charge nurse’s round, note down concerns and complaints of patients",
+      "Ensure all patients and visitors are in bed and out of the ward respectively",
+      "Ensure patient’s notes are returned to their proper place on the rack after the procedure",
+      "Ensure the ward and its annexes are clean"
+    ],
+    "answer": "Ensure all patients and visitors are in bed and out of the ward respectively",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Ensure the ward and its annexes are clean",
+      "Ensure all patients and visitors are in bed and out of the ward respectively",
+      "Conduct charge nurse’s round, note down concerns and complaints of patients",
+      "Assist when doctor is examining the patients"
+    ],
+    "answer": "Conduct charge nurse’s round, note down concerns and complaints of patients",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Conduct charge nurse’s round, note down concerns and complaints of patients",
+      "Ensure the ward and its annexes are clean",
+      "Ensure all patients and visitors are in bed and out of the ward respectively",
+      "Classify patients according to their needs or depending on the protocol of the unit"
+    ],
+    "answer": "Classify patients according to their needs or depending on the protocol of the unit",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Ensure all reports are dully filed and records are up to date",
+      "Record all changes, directives and tasks assigned in appropriate documents",
+      "Ensure the ward and its annexes are clean",
+      "Ensure all patients and visitors are in bed and out of the ward respectively"
+    ],
+    "answer": "Ensure all reports are dully filed and records are up to date",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Ensure all patients and visitors are in bed and out of the ward respectively",
+      "Arrange patient’s medical records in the correct sequence for the rounds",
+      "Facilitate rounds, present patients’ problems, concerns and progress",
+      "Ensure the ward and its annexes are clean"
+    ],
+    "answer": "Arrange patient’s medical records in the correct sequence for the rounds",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Ensure the ward and its annexes are clean",
+      "Conduct charge nurse’s round, note down concerns and complaints of patients",
+      "Facilitate rounds, present patients’ problems, concerns and progress",
+      "Ensure all patients and visitors are in bed and out of the ward respectively"
+    ],
+    "answer": "Facilitate rounds, present patients’ problems, concerns and progress",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Provide appropriate answers to patients’ questions",
+      "Ensure the ward and its annexes are clean",
+      "Ensure all patients and visitors are in bed and out of the ward respectively",
+      "Assist when doctor is examining the patients"
+    ],
+    "answer": "Assist when doctor is examining the patients",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Give patients’ opportunity to ask questions",
+      "Ensure all reports are dully filed and records are up to date",
+      "Ensure the ward and its annexes are clean",
+      "Ensure all patients and visitors are in bed and out of the ward respectively"
+    ],
+    "answer": "Give patients’ opportunity to ask questions",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Conduct charge nurse’s round, note down concerns and complaints of patients",
+      "Provide appropriate answers to patients’ questions",
+      "Ensure the ward and its annexes are clean",
+      "Ensure all patients and visitors are in bed and out of the ward respectively"
+    ],
+    "answer": "Provide appropriate answers to patients’ questions",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Ensure the ward and its annexes are clean",
+      "Ensure all patients and visitors are in bed and out of the ward respectively",
+      "Record all changes, directives and tasks assigned in appropriate documents",
+      "Assist when doctor is examining the patients"
+    ],
+    "answer": "Record all changes, directives and tasks assigned in appropriate documents",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of PREPARATION FOR WARD ROUNDS?",
+    "options": [
+      "Classify patients according to their needs or depending on the protocol of the unit",
+      "Ensure the ward and its annexes are clean",
+      "Ensure all patients and visitors are in bed and out of the ward respectively",
+      "Ensure patient’s notes are returned to their proper place on the rack after the procedure"
+    ],
+    "answer": "Ensure patient’s notes are returned to their proper place on the rack after the procedure",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  }
+],
   },
 
   {
     id: "rgn-024",
     title: "DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
       "This is the process of building a therapeutic relationship with patient/client and family who visits the hospital. It makes the patient/client and family feel at ease to discuss his/her needs with the nurse. This action is performed by the nurse immediately he/she comes into contact with a patient/client and family.",
-    purpose: [
-      "Develop mutual trust between patient/client and the nurse",
-      "Reduce anxiety",
-      "Maintain the dignity of patient/client",
-      "Promote effective communication",
-    ],
+    purpose: [],
     indications: [
       "At the beginning of the nurse-patient relationship",
       "On admission or first contact with a patient/client",
       "When establishing therapeutic communication with a patient/client and family",
       "When the patient/client requires emotional support or clarification",
     ],
-    equipment: ["N/A"],
+    equipment: [
+  "N/A"
+],
     steps: [
-      "Introduce yourself to the patient/client",
-      "Maintain a relaxed attitude when interacting with patient/client",
-      "Identify patient/client's name, title and address him/her as such",
-      "Speak to patient/client using simple and clear language",
-      "Assure patient/client of total confidentiality",
-      "Establish eye contact with the patient/client during the interaction",
-      "Enquire from the patient/client the purpose of visit (if applicable)",
-      "Encourage patient/client to express his/her needs and listen attentively",
-      "Explain to patient/client what he/she should expect from the nurses",
-      "Show consistency in approaching the patient/client",
-      "Demonstrate firmness in dealing with inappropriate requests and behaviour by the patient/client if any",
-      "Express appreciation to patient/client for his/her cooperation",
-    ],
+  "Introduce yourself to the patient/client",
+  "Maintain a relaxed attitude when interacting with patient/client",
+  "Identify patient/client’s name, title and address him/her as such",
+  "Speak to patient/client using simple and clear language",
+  "Assure patient/client of total confidentiality",
+  "Establish eye contact with the patient/client during the interaction",
+  "Enquire from the patient/client the purpose of visit (if applicable)",
+  "Encourage patient/client to express his/her needs and listen attentively",
+  "Explain to patient/client what he/she should expect from the nurses",
+  "Show consistency in approaching the patient/client",
+  "Demonstrate firmness in dealing with inappropriate requests and behaviour by the patient/client if any",
+  "Express appreciation to patient/client for his/her cooperation"
+],
     precautions: [
       "Maintain professional therapeutic boundaries",
       "Protect patient/client confidentiality and privacy",
@@ -1193,43 +1928,177 @@ export const rgnBatch03: Procedure[] = [
       "Seek assistance when communication barriers affect safe care",
     ],
     videoUrl: "https://www.youtube.com/watch?v=t_59thyrje8",
-    quiz: rgn_024Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Introduce yourself to the patient/client",
+      "Assure patient/client of total confidentiality",
+      "Maintain a relaxed attitude when interacting with patient/client",
+      "Identify patient/client’s name, title and address him/her as such"
+    ],
+    "answer": "Introduce yourself to the patient/client",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Identify patient/client’s name, title and address him/her as such",
+      "Maintain a relaxed attitude when interacting with patient/client",
+      "Express appreciation to patient/client for his/her cooperation",
+      "Introduce yourself to the patient/client"
+    ],
+    "answer": "Maintain a relaxed attitude when interacting with patient/client",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Introduce yourself to the patient/client",
+      "Maintain a relaxed attitude when interacting with patient/client",
+      "Identify patient/client’s name, title and address him/her as such",
+      "Encourage patient/client to express his/her needs and listen attentively"
+    ],
+    "answer": "Identify patient/client’s name, title and address him/her as such",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Identify patient/client’s name, title and address him/her as such",
+      "Introduce yourself to the patient/client",
+      "Maintain a relaxed attitude when interacting with patient/client",
+      "Speak to patient/client using simple and clear language"
+    ],
+    "answer": "Speak to patient/client using simple and clear language",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Assure patient/client of total confidentiality",
+      "Demonstrate firmness in dealing with inappropriate requests and behaviour by the patient/client if any",
+      "Introduce yourself to the patient/client",
+      "Maintain a relaxed attitude when interacting with patient/client"
+    ],
+    "answer": "Assure patient/client of total confidentiality",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Maintain a relaxed attitude when interacting with patient/client",
+      "Establish eye contact with the patient/client during the interaction",
+      "Enquire from the patient/client the purpose of visit (if applicable)",
+      "Introduce yourself to the patient/client"
+    ],
+    "answer": "Establish eye contact with the patient/client during the interaction",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Introduce yourself to the patient/client",
+      "Identify patient/client’s name, title and address him/her as such",
+      "Enquire from the patient/client the purpose of visit (if applicable)",
+      "Maintain a relaxed attitude when interacting with patient/client"
+    ],
+    "answer": "Enquire from the patient/client the purpose of visit (if applicable)",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Show consistency in approaching the patient/client",
+      "Introduce yourself to the patient/client",
+      "Maintain a relaxed attitude when interacting with patient/client",
+      "Encourage patient/client to express his/her needs and listen attentively"
+    ],
+    "answer": "Encourage patient/client to express his/her needs and listen attentively",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Explain to patient/client what he/she should expect from the nurses",
+      "Assure patient/client of total confidentiality",
+      "Introduce yourself to the patient/client",
+      "Maintain a relaxed attitude when interacting with patient/client"
+    ],
+    "answer": "Explain to patient/client what he/she should expect from the nurses",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Identify patient/client’s name, title and address him/her as such",
+      "Show consistency in approaching the patient/client",
+      "Introduce yourself to the patient/client",
+      "Maintain a relaxed attitude when interacting with patient/client"
+    ],
+    "answer": "Show consistency in approaching the patient/client",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Introduce yourself to the patient/client",
+      "Maintain a relaxed attitude when interacting with patient/client",
+      "Demonstrate firmness in dealing with inappropriate requests and behaviour by the patient/client if any",
+      "Encourage patient/client to express his/her needs and listen attentively"
+    ],
+    "answer": "Demonstrate firmness in dealing with inappropriate requests and behaviour by the patient/client if any",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of DEVELOPING INTERPERSONAL RELATIONSHIP WITH THE PATIENT/CLIENT (ESTABLISHING RAPPORT)?",
+    "options": [
+      "Speak to patient/client using simple and clear language",
+      "Introduce yourself to the patient/client",
+      "Maintain a relaxed attitude when interacting with patient/client",
+      "Express appreciation to patient/client for his/her cooperation"
+    ],
+    "answer": "Express appreciation to patient/client for his/her cooperation",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  }
+],
   },
 
   {
     id: "rgn-025",
     title: "ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
       "Is the practice of introducing the in-patient to the staff and ward setting. This activity enables the patient and relatives to adapt to his/her new setting and know the routines of the ward.",
-    purpose: [
-      "Ensure patient safety",
-      "Aid easy movement with the ward",
-      "Know the ward environment",
-    ],
+    purpose: [],
     indications: [
       "New admission to the ward",
       "Transfer of an ambulant patient to a new ward",
       "When a patient requires orientation to a new ward environment",
       "When ward routines or facilities need to be explained to the patient",
     ],
-    equipment: ["N/A"],
+    equipment: [
+  "N/A"
+],
     steps: [
-      "Establish rapport with patient and relatives (Refer to steps)",
-      "Mention the name of the ward to patient and relatives",
-      "Introduce patient to ward staff around",
-      "Show patient the nurse's station",
-      "Show patient his/her bed",
-      "Show patient his/her bed side cabinet/locker and how it operates",
-      "Introduce him/her to other patients if any",
-      "Show patient the bathroom, toilet and how the sanitary fittings operates",
-      "Show patient the kitchen, day room and its uses (if available)",
-      "Inform patient of ward routines and activities",
-      "Inform patient whom to contact for any information or complaints",
-      "Encourage patient to ask questions for clarity",
-      "Thank patient and send him/her to bed",
-      "Report to appropriate officer",
-    ],
+  "Establish rapport with patient and relatives (Refer to steps)",
+  "Mention the name of the ward to patient and relatives",
+  "Introduce patient to ward staff around",
+  "Show patient the nurse’s station",
+  "Show patient his/her bed",
+  "Show patient his/her bed side cabinet/locker and how it operates",
+  "Introduce him/her to other patients if any",
+  "Show patient the bathroom, toilet and how the sanitary fittings operates",
+  "Show patient the kitchen, day room and its uses (if available)",
+  "Inform patient of ward routines and activities",
+  "Inform patient whom to contact for any information or complaints",
+  "Encourage patient to ask questions for clarity",
+  "Thank patient and send him/her to bed",
+  "Report to appropriate officer"
+],
     precautions: [
       "Maintain patient privacy and dignity during orientation",
       "Provide information appropriate to the patient's level of understanding",
@@ -1238,20 +2107,177 @@ export const rgnBatch03: Procedure[] = [
       "Ensure the patient knows whom to contact for assistance",
       "Consider mobility, sensory and cognitive limitations when providing orientation",
     ],
-    quiz: rgn_025Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Show patient his/her bed",
+      "Introduce patient to ward staff around",
+      "Report to appropriate officer"
+    ],
+    "answer": "Establish rapport with patient and relatives (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Show patient the bathroom, toilet and how the sanitary fittings operates",
+      "Mention the name of the ward to patient and relatives",
+      "Encourage patient to ask questions for clarity",
+      "Inform patient of ward routines and activities"
+    ],
+    "answer": "Mention the name of the ward to patient and relatives",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Show patient the nurse’s station",
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Introduce patient to ward staff around",
+      "Show patient his/her bed side cabinet/locker and how it operates"
+    ],
+    "answer": "Introduce patient to ward staff around",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Thank patient and send him/her to bed",
+      "Inform patient whom to contact for any information or complaints",
+      "Show patient the kitchen, day room and its uses (if available)",
+      "Show patient the nurse’s station"
+    ],
+    "answer": "Show patient the nurse’s station",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Show patient his/her bed",
+      "Introduce him/her to other patients if any",
+      "Show patient the nurse’s station",
+      "Mention the name of the ward to patient and relatives"
+    ],
+    "answer": "Show patient his/her bed",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Inform patient of ward routines and activities",
+      "Show patient his/her bed side cabinet/locker and how it operates",
+      "Report to appropriate officer",
+      "Encourage patient to ask questions for clarity"
+    ],
+    "answer": "Show patient his/her bed side cabinet/locker and how it operates",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Show patient his/her bed",
+      "Introduce patient to ward staff around",
+      "Introduce him/her to other patients if any",
+      "Show patient the bathroom, toilet and how the sanitary fittings operates"
+    ],
+    "answer": "Introduce him/her to other patients if any",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Thank patient and send him/her to bed",
+      "Inform patient whom to contact for any information or complaints",
+      "Show patient the bathroom, toilet and how the sanitary fittings operates"
+    ],
+    "answer": "Show patient the bathroom, toilet and how the sanitary fittings operates",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Show patient the kitchen, day room and its uses (if available)",
+      "Show patient the bathroom, toilet and how the sanitary fittings operates",
+      "Show patient his/her bed side cabinet/locker and how it operates",
+      "Show patient the nurse’s station"
+    ],
+    "answer": "Show patient the kitchen, day room and its uses (if available)",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Encourage patient to ask questions for clarity",
+      "Inform patient of ward routines and activities",
+      "Mention the name of the ward to patient and relatives",
+      "Report to appropriate officer"
+    ],
+    "answer": "Inform patient of ward routines and activities",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Introduce him/her to other patients if any",
+      "Show patient his/her bed",
+      "Inform patient whom to contact for any information or complaints",
+      "Show patient the kitchen, day room and its uses (if available)"
+    ],
+    "answer": "Inform patient whom to contact for any information or complaints",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Introduce patient to ward staff around",
+      "Establish rapport with patient and relatives (Refer to steps)",
+      "Thank patient and send him/her to bed",
+      "Encourage patient to ask questions for clarity"
+    ],
+    "answer": "Encourage patient to ask questions for clarity",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Thank patient and send him/her to bed",
+      "Inform patient of ward routines and activities",
+      "Show patient the bathroom, toilet and how the sanitary fittings operates",
+      "Show patient his/her bed side cabinet/locker and how it operates"
+    ],
+    "answer": "Thank patient and send him/her to bed",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ORIENTATION OF PATIENT TO WARD ENVIRONMENT (AMBULANT)?",
+    "options": [
+      "Thank patient and send him/her to bed",
+      "Report to appropriate officer",
+      "Show patient the nurse’s station",
+      "Mention the name of the ward to patient and relatives"
+    ],
+    "answer": "Report to appropriate officer",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  }
+],
   },
 
   {
     id: "rgn-026",
     title: "TRANSFER-IN (TRANS-IN)",
     category: "General Nursing (RGN)",
+    types: [
+  "Unit to unit",
+  "Unit to a center",
+  "Unit to department",
+  "The reverse of (2) and (3) above"
+],
     overview:
       "This is when a patient is received from another unit or place of first admission to a new unit or department. The patient can be received from a wheelchair, bed or trolley within the same facility. The ambulance can be used when the patient is being transferred from one unit/department to the other within the same hospital.",
-    purpose: [
-      "Mostly for specialty treatment",
-      "Investigations e.g. C.T. scan, MRI etc.",
-      "To ensure continuity of care between units",
-    ],
+    purpose: [],
     indications: [
       "Unit to unit",
       "Unit to a center",
@@ -1260,28 +2286,28 @@ export const rgnBatch03: Procedure[] = [
       "Transfer for specialty treatment or investigation",
     ],
     equipment: [
-      "Patient's medical records (Manual or electronic)",
-      "Referral notes (Manual or electronic)",
-    ],
+  "Patient’s medical records (Manual or electronic)",
+  "Referral notes (Manual or electronic)"
+],
     steps: [
-      "Confirm transfer of patient/client with the referring unit or hospital",
-      "Make appropriate bed to receive the patient/client",
-      "Assemble necessary equipment e.g. oxygen cylinders, suction machine, vital signs tray etc.",
-      "Assemble documentation and investigation forms (Manual or electronic)",
-      "Receive incoming patient/client, relatives and accompanying nurse warmly",
-      "Confirm identity of patient/client with accompanying nurse",
-      "Explain the importance of the transfer to the patient to obtain his/her cooperation",
-      "Take over transfer notes and personal belongings from accompanying nurse",
-      "Ask for clarification on vital issues pertaining to patients/clients condition from the accompanying nurse",
-      "Introduce yourself and other staff to patient/client and relatives",
-      "Admit patient into bed ensuring patient safety",
-      "Do quick assessment of patients/clients condition and compare with patient/clients medical records",
-      "Assess for any drainage or tubings and connect appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
-      "Review patients notes, treatment plan and act accordingly",
-      "Orientate patient/client and relatives on environment and routine of the unit if necessary",
-      "Document all assessments, findings and treatments in nurses' notes (manually or electronically)",
-      "Plan care for the patient/client",
-    ],
+  "Confirm transfer of patient/client with the referring unit or hospital",
+  "Make appropriate bed to receive the patient/client",
+  "Assemble necessary equipment e.g. oxygen cylinders, suction machine, vital signs tray etc.",
+  "Assemble documentation and investigation forms (Manual or electronic)",
+  "Receive incoming patient/client, relatives and accompanying nurse warmly",
+  "Confirm identity of patient/client with accompanying nurse",
+  "Explain the importance of the transfer to the patient to obtain his/her cooperation",
+  "Take over transfer notes and personal belongings from accompanying nurse",
+  "Ask for clarification on vital issues pertaining to patients/clients condition from the accompanying nurse",
+  "Introduce yourself and other staff to patient/client and relatives",
+  "Admit patient into bed ensuring patient safety",
+  "Do quick assessment of patients/clients condition and compare with patient/clients medical records",
+  "Assess for any drainage or tubings and connects appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
+  "Review patients notes, treatment plan and act accordingly",
+  "Orientate patient/client and relatives on environment and routine of the unit if necessary",
+  "Document all assessments, findings and treatments in nurses’ notes (manually or electronically)",
+  "Plan care for the patient/client"
+],
     precautions: [
       "Confirm the transfer with the referring and receiving units",
       "Verify patient identity using appropriate identifiers",
@@ -1294,20 +2320,210 @@ export const rgnBatch03: Procedure[] = [
       "Document the transfer, assessment findings and handover",
     ],
     videoUrl: "https://vimeo.com/691787237",
-    quiz: rgn_026Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Confirm transfer of patient/client with the referring unit or hospital",
+      "Receive incoming patient/client, relatives and accompanying nurse warmly",
+      "Document all assessments, findings and treatments in nurses’ notes (manually or electronically)",
+      "Admit patient into bed ensuring patient safety"
+    ],
+    "answer": "Confirm transfer of patient/client with the referring unit or hospital",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Confirm transfer of patient/client with the referring unit or hospital",
+      "Make appropriate bed to receive the patient/client",
+      "Do quick assessment of patients/clients condition and compare with patient/clients medical records",
+      "Explain the importance of the transfer to the patient to obtain his/her cooperation"
+    ],
+    "answer": "Make appropriate bed to receive the patient/client",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Review patients notes, treatment plan and act accordingly",
+      "Ask for clarification on vital issues pertaining to patients/clients condition from the accompanying nurse",
+      "Assemble necessary equipment e.g. oxygen cylinders, suction machine, vital signs tray etc.",
+      "Make appropriate bed to receive the patient/client"
+    ],
+    "answer": "Assemble necessary equipment e.g. oxygen cylinders, suction machine, vital signs tray etc.",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Introduce yourself and other staff to patient/client and relatives",
+      "Receive incoming patient/client, relatives and accompanying nurse warmly",
+      "Document all assessments, findings and treatments in nurses’ notes (manually or electronically)",
+      "Assemble documentation and investigation forms (Manual or electronic)"
+    ],
+    "answer": "Assemble documentation and investigation forms (Manual or electronic)",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Receive incoming patient/client, relatives and accompanying nurse warmly",
+      "Plan care for the patient/client",
+      "Do quick assessment of patients/clients condition and compare with patient/clients medical records",
+      "Explain the importance of the transfer to the patient to obtain his/her cooperation"
+    ],
+    "answer": "Receive incoming patient/client, relatives and accompanying nurse warmly",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Review patients notes, treatment plan and act accordingly",
+      "Confirm identity of patient/client with accompanying nurse",
+      "Take over transfer notes and personal belongings from accompanying nurse",
+      "Make appropriate bed to receive the patient/client"
+    ],
+    "answer": "Confirm identity of patient/client with accompanying nurse",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Introduce yourself and other staff to patient/client and relatives",
+      "Assemble documentation and investigation forms (Manual or electronic)",
+      "Explain the importance of the transfer to the patient to obtain his/her cooperation",
+      "Orientate patient/client and relatives on environment and routine of the unit if necessary"
+    ],
+    "answer": "Explain the importance of the transfer to the patient to obtain his/her cooperation",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Receive incoming patient/client, relatives and accompanying nurse warmly",
+      "Plan care for the patient/client",
+      "Do quick assessment of patients/clients condition and compare with patient/clients medical records",
+      "Take over transfer notes and personal belongings from accompanying nurse"
+    ],
+    "answer": "Take over transfer notes and personal belongings from accompanying nurse",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Ask for clarification on vital issues pertaining to patients/clients condition from the accompanying nurse",
+      "Assess for any drainage or tubings and connects appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
+      "Explain the importance of the transfer to the patient to obtain his/her cooperation",
+      "Make appropriate bed to receive the patient/client"
+    ],
+    "answer": "Ask for clarification on vital issues pertaining to patients/clients condition from the accompanying nurse",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Ask for clarification on vital issues pertaining to patients/clients condition from the accompanying nurse",
+      "Introduce yourself and other staff to patient/client and relatives",
+      "Assemble necessary equipment e.g. oxygen cylinders, suction machine, vital signs tray etc.",
+      "Orientate patient/client and relatives on environment and routine of the unit if necessary"
+    ],
+    "answer": "Introduce yourself and other staff to patient/client and relatives",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Receive incoming patient/client, relatives and accompanying nurse warmly",
+      "Plan care for the patient/client",
+      "Admit patient into bed ensuring patient safety",
+      "Introduce yourself and other staff to patient/client and relatives"
+    ],
+    "answer": "Admit patient into bed ensuring patient safety",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Confirm transfer of patient/client with the referring unit or hospital",
+      "Assess for any drainage or tubings and connects appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
+      "Explain the importance of the transfer to the patient to obtain his/her cooperation",
+      "Do quick assessment of patients/clients condition and compare with patient/clients medical records"
+    ],
+    "answer": "Do quick assessment of patients/clients condition and compare with patient/clients medical records",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Assess for any drainage or tubings and connects appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
+      "Take over transfer notes and personal belongings from accompanying nurse",
+      "Assemble necessary equipment e.g. oxygen cylinders, suction machine, vital signs tray etc.",
+      "Orientate patient/client and relatives on environment and routine of the unit if necessary"
+    ],
+    "answer": "Assess for any drainage or tubings and connects appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Receive incoming patient/client, relatives and accompanying nurse warmly",
+      "Review patients notes, treatment plan and act accordingly",
+      "Document all assessments, findings and treatments in nurses’ notes (manually or electronically)",
+      "Introduce yourself and other staff to patient/client and relatives"
+    ],
+    "answer": "Review patients notes, treatment plan and act accordingly",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Confirm transfer of patient/client with the referring unit or hospital",
+      "Do quick assessment of patients/clients condition and compare with patient/clients medical records",
+      "Orientate patient/client and relatives on environment and routine of the unit if necessary",
+      "Confirm identity of patient/client with accompanying nurse"
+    ],
+    "answer": "Orientate patient/client and relatives on environment and routine of the unit if necessary",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Assess for any drainage or tubings and connects appropriately e.g. oxygen, intravenous line, urinary catheter etc.",
+      "Take over transfer notes and personal belongings from accompanying nurse",
+      "Assemble necessary equipment e.g. oxygen cylinders, suction machine, vital signs tray etc.",
+      "Document all assessments, findings and treatments in nurses’ notes (manually or electronically)"
+    ],
+    "answer": "Document all assessments, findings and treatments in nurses’ notes (manually or electronically)",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of TRANSFER-IN (TRANS-IN)?",
+    "options": [
+      "Plan care for the patient/client",
+      "Assemble documentation and investigation forms (Manual or electronic)",
+      "Orientate patient/client and relatives on environment and routine of the unit if necessary",
+      "Introduce yourself and other staff to patient/client and relatives"
+    ],
+    "answer": "Plan care for the patient/client",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  }
+],
   },
 
   {
     id: "rgn-027",
     title: "TRANSFER-OUT (TRANS-OUT)",
     category: "General Nursing (RGN)",
+    types: [
+  "Unit to unit",
+  "Unit to a center",
+  "Unit to department",
+  "The reverse of (2) and (3) above"
+],
     overview:
-      "This is when a patient is moved out from one unit of admission within the same hospital for updated treatment. It is done at the discretion of the medical team or at the request of the patient. A good knowledge of patient's/client's condition is very important.",
-    purpose: [
-      "Mostly for specialty treatment",
-      "Investigations e.g. C.T. scan, MRI etc.",
-      "On patient's request",
-    ],
+      "This is when a patient is moved out from one unit of admission within the same hospital for update treatment. It is done at the discretion of the medical team or at the request of the patient. A good knowledge of patients/clients condition is very important.",
+    purpose: [],
     indications: [
       "Transfer to another unit for specialist treatment",
       "Transfer to another department for investigation",
@@ -1316,25 +2532,25 @@ export const rgnBatch03: Procedure[] = [
       "Transfer requested by the patient when clinically and administratively appropriate",
     ],
     equipment: [
-      "Patient's medical records (Manual or electronic)",
-      "Referral notes (Manual or electronic)",
-    ],
+  "Patient’s medical records (Manual or electronic)",
+  "Referral notes (Manual or electronic)"
+],
     steps: [
-      "Confirm patient's trans-out order with medical team",
-      "Assess patient's/clients condition",
-      "Inform the receiving unit or facility about the intended transfer and the state of patient",
-      "Explain reason for the trans out to patient and relatives",
-      "Arrange for accompanying nurse and appropriate means of transportation",
-      "Collect all necessary data",
-      "Pack patient's personal belongings",
-      "Collect patient's medication, laboratory results and transfer documents",
-      "Ensure patient settles bills where applicable",
-      "Assist patient onto stretcher, wheel chair or ambulance where applicable",
-      "Hand over patient's notes and belongings to the accompanying nurse",
-      "Ensure linen are removed",
-      "Decontaminate beds and its accessories",
-      "Make new bed for next patient",
-    ],
+  "Confirm patients trans-out order with medical team",
+  "Assess patients/clients condition",
+  "Inform the receiving unit or facility about the intended transfer and the state of patient",
+  "Explain reason for the trans out to patient and relatives",
+  "Arrange for accompanying nurse and appropriate means of transportation",
+  "Collect all necessary data",
+  "Pack patient’s personal belongings",
+  "Collect patient’s medication, laboratory results and transfer",
+  "Ensure patient settle bills where applicable",
+  "Assist patient onto stretcher, wheel chair or ambulance where applicable",
+  "Hand over patient’s notes and belongings to the accompanying nurse",
+  "Ensure linen are removed",
+  "Decontaminate beds and its accessories",
+  "Make new bed for next patient"
+],
     precautions: [
       "Confirm the authorized transfer order before moving the patient",
       "Assess the patient's clinical condition and stability before transfer",
@@ -1347,22 +2563,174 @@ export const rgnBatch03: Procedure[] = [
       "Document the transfer and condition of the patient",
     ],
     videoUrl: "https://vimeo.com/691787237",
-    quiz: rgn_027Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Confirm patients trans-out order with medical team",
+      "Arrange for accompanying nurse and appropriate means of transportation",
+      "Inform the receiving unit or facility about the intended transfer and the state of patient",
+      "Make new bed for next patient"
+    ],
+    "answer": "Confirm patients trans-out order with medical team",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Collect patient’s medication, laboratory results and transfer",
+      "Assess patients/clients condition",
+      "Ensure linen are removed",
+      "Assist patient onto stretcher, wheel chair or ambulance where applicable"
+    ],
+    "answer": "Assess patients/clients condition",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Explain reason for the trans out to patient and relatives",
+      "Confirm patients trans-out order with medical team",
+      "Inform the receiving unit or facility about the intended transfer and the state of patient",
+      "Collect all necessary data"
+    ],
+    "answer": "Inform the receiving unit or facility about the intended transfer and the state of patient",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Decontaminate beds and its accessories",
+      "Hand over patient’s notes and belongings to the accompanying nurse",
+      "Ensure patient settle bills where applicable",
+      "Explain reason for the trans out to patient and relatives"
+    ],
+    "answer": "Explain reason for the trans out to patient and relatives",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Arrange for accompanying nurse and appropriate means of transportation",
+      "Pack patient’s personal belongings",
+      "Explain reason for the trans out to patient and relatives",
+      "Assess patients/clients condition"
+    ],
+    "answer": "Arrange for accompanying nurse and appropriate means of transportation",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Assist patient onto stretcher, wheel chair or ambulance where applicable",
+      "Collect all necessary data",
+      "Make new bed for next patient",
+      "Ensure linen are removed"
+    ],
+    "answer": "Collect all necessary data",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Arrange for accompanying nurse and appropriate means of transportation",
+      "Inform the receiving unit or facility about the intended transfer and the state of patient",
+      "Pack patient’s personal belongings",
+      "Collect patient’s medication, laboratory results and transfer"
+    ],
+    "answer": "Pack patient’s personal belongings",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Confirm patients trans-out order with medical team",
+      "Decontaminate beds and its accessories",
+      "Hand over patient’s notes and belongings to the accompanying nurse",
+      "Collect patient’s medication, laboratory results and transfer"
+    ],
+    "answer": "Collect patient’s medication, laboratory results and transfer",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Ensure patient settle bills where applicable",
+      "Collect patient’s medication, laboratory results and transfer",
+      "Collect all necessary data",
+      "Explain reason for the trans out to patient and relatives"
+    ],
+    "answer": "Ensure patient settle bills where applicable",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Ensure linen are removed",
+      "Assist patient onto stretcher, wheel chair or ambulance where applicable",
+      "Assess patients/clients condition",
+      "Make new bed for next patient"
+    ],
+    "answer": "Assist patient onto stretcher, wheel chair or ambulance where applicable",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Pack patient’s personal belongings",
+      "Arrange for accompanying nurse and appropriate means of transportation",
+      "Hand over patient’s notes and belongings to the accompanying nurse",
+      "Ensure patient settle bills where applicable"
+    ],
+    "answer": "Hand over patient’s notes and belongings to the accompanying nurse",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Inform the receiving unit or facility about the intended transfer and the state of patient",
+      "Confirm patients trans-out order with medical team",
+      "Decontaminate beds and its accessories",
+      "Ensure linen are removed"
+    ],
+    "answer": "Ensure linen are removed",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Decontaminate beds and its accessories",
+      "Assist patient onto stretcher, wheel chair or ambulance where applicable",
+      "Collect patient’s medication, laboratory results and transfer",
+      "Collect all necessary data"
+    ],
+    "answer": "Decontaminate beds and its accessories",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of TRANSFER-OUT (TRANS-OUT)?",
+    "options": [
+      "Decontaminate beds and its accessories",
+      "Make new bed for next patient",
+      "Explain reason for the trans out to patient and relatives",
+      "Assess patients/clients condition"
+    ],
+    "answer": "Make new bed for next patient",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  }
+],
   },
 
   {
     id: "rgn-028",
     title: "CARE OF THE HANDS AND FEET",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
       "This is the act of maintaining cleanliness of the hands and feet of a patient while on admission. It is recommended that this procedure is performed after the bath of a patient/client. Nail care can also be given after soaking the hands or feet in a basin of warm water for 10-15 minutes to soften the nails.",
-    purpose: [
-      "Keep hands and feet clean",
-      "Prevent skin injury and infections",
-      "Detect or examine abnormalities",
-      "Improve grooming",
-      "Promote self esteem",
-    ],
+    purpose: [],
     indications: [
       "Routine personal hygiene and grooming",
       "Patient unable to independently maintain hand and foot hygiene",
@@ -1371,48 +2739,54 @@ export const rgnBatch03: Procedure[] = [
       "Prevention of skin problems associated with poor hygiene",
     ],
     equipment: [
-      "A trolley containing the following:",
-      "Top Shelf",
-      "Two bowls or basins",
-      "Nail clipper and file in a receiver",
-      "Soap in a dish",
-      "Nail brush",
-      "Sponge",
-      "Hand or bath towel",
-      "Mackintosh and dressing towel",
-      "Hand cream or lotion",
-      "Orange stick (toothpick)",
-    ],
+  "A trolley containing the following:",
+  "Top Shelf",
+  "Two bowels or basins",
+  "Two bowels or basins",
+  "Nail clipper and file in a receiver",
+  "Soap in a dish",
+  "Nail brush",
+  "Sponge",
+  "Hand or bath towel",
+  "Mackintosh and dressing towel",
+  "Hand cream or lotion",
+  "Orange stick (toothpick)",
+  "Bottom Shelf",
+  "Two jugs containing hot and cold water",
+  "Bucket to receive used water",
+  "Heart table",
+  "Chair"
+],
     steps: [
-      "Establish rapport (Refer to steps)",
-      "Explain procedure to patient",
-      "Perform hand hygiene",
-      "Provide privacy and take trolley to bedside",
-      "Position patient in a desirable position",
-      "Inspect the skin of hands and feet for callous, swelling and any sores",
-      "Protect the bed with a mackintosh and dressing towel",
-      "Mix and allow patient to check the temperature of the water",
-      "Place bowl of warm water on the mackintosh and towel",
-      "Wet fingers in a bowl of warm water",
-      "Immerse feet in a bowl of water",
-      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper",
-      "Cut toe nails across to prevent in-growing toe nails",
-      "Put all nail clippings into a receiver",
-      "Put hands into the bowl of warm water and scrub nails gently with nail brush",
-      "Use orange stick to remove debris",
-      "Wash hands thoroughly using soap and sponge",
-      "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush",
-      "Use orange stick to remove debris",
-      "Wash feet thoroughly using soap and sponge",
-      "Change warm water and rinse the hands and feet alternatively",
-      "Dry hands and feet thoroughly",
-      "Apply hand cream or lotion to the hands and feet",
-      "Remove mackintosh and towel",
-      "Assist patient into a desirable position",
-      "Dispose off used items and decontaminate instruments",
-      "Perform hand hygiene",
-      "Document procedure and report findings (manual or electronic)",
-    ],
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient",
+  "Perform hand hygiene",
+  "Provide privacy and take trolley to bedside",
+  "Position patient in a desirable position",
+  "Inspect the skin of hands and feet for callous, swelling and any sores",
+  "Protect the bed with a mackintosh and dressing towel",
+  "Mix and allow patient to check the temperature of the water",
+  "Place bowl of warm water on the mackintosh and towel",
+  "Wet fingers in a bowl of warm water",
+  "Immerse feet in a bowel of water",
+  "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper",
+  "Cut toe nails across to prevent in-growing toe nails",
+  "Put all nail clippings into a receiver",
+  "Put hands into the bowl of warm water and scrub nails gently with nail brush",
+  "Use orange stick to remove debris",
+  "Wash hands thoroughly using soap and sponge",
+  "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush",
+  "Use orange stick to remove debris",
+  "Wash feet thoroughly using soap and sponge",
+  "Change warm water and rinse the hands and feet alternatively",
+  "Dry hands and feet thoroughly",
+  "Apply hand cream or lotion to the hands and feet",
+  "Remove mackintosh and towel",
+  "Assist patient into a desirable position",
+  "Dispose off used items and decontaminate instruments",
+  "Perform hand hygiene",
+  "Document procedure and report findings (manual or electronic)"
+],
     precautions: [
       "Assess the skin for wounds, infection, swelling, poor circulation or other abnormalities before nail care",
       "Use appropriate infection-prevention precautions",
@@ -1424,19 +2798,328 @@ export const rgnBatch03: Procedure[] = [
       "Dispose of nail clippings and contaminated materials appropriately",
     ],
     videoUrl: "https://www.youtube.com/watch?v=QUGwjC1ZxIA",
-    quiz: rgn_028Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Position patient in a desirable position",
+      "Use orange stick to remove debris",
+      "Explain procedure to patient"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Place bowl of warm water on the mackintosh and towel",
+      "Explain procedure to patient",
+      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper",
+      "Remove mackintosh and towel"
+    ],
+    "answer": "Explain procedure to patient",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Position patient in a desirable position",
+      "Use orange stick to remove debris",
+      "Perform hand hygiene",
+      "Wash feet thoroughly using soap and sponge"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Document procedure and report findings (manual or electronic)",
+      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper",
+      "Remove mackintosh and towel",
+      "Provide privacy and take trolley to bedside"
+    ],
+    "answer": "Provide privacy and take trolley to bedside",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Position patient in a desirable position",
+      "Mix and allow patient to check the temperature of the water",
+      "Wash feet thoroughly using soap and sponge",
+      "Provide privacy and take trolley to bedside"
+    ],
+    "answer": "Position patient in a desirable position",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper",
+      "Inspect the skin of hands and feet for callous, swelling and any sores",
+      "Put hands into the bowl of warm water and scrub nails gently with nail brush",
+      "Document procedure and report findings (manual or electronic)"
+    ],
+    "answer": "Inspect the skin of hands and feet for callous, swelling and any sores",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Mix and allow patient to check the temperature of the water",
+      "Wash feet thoroughly using soap and sponge",
+      "Protect the bed with a mackintosh and dressing towel",
+      "Apply hand cream or lotion to the hands and feet"
+    ],
+    "answer": "Protect the bed with a mackintosh and dressing towel",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Perform hand hygiene",
+      "Put hands into the bowl of warm water and scrub nails gently with nail brush",
+      "Document procedure and report findings (manual or electronic)",
+      "Mix and allow patient to check the temperature of the water"
+    ],
+    "answer": "Mix and allow patient to check the temperature of the water",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Place bowl of warm water on the mackintosh and towel",
+      "Immerse feet in a bowel of water",
+      "Apply hand cream or lotion to the hands and feet",
+      "Protect the bed with a mackintosh and dressing towel"
+    ],
+    "answer": "Place bowl of warm water on the mackintosh and towel",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Put hands into the bowl of warm water and scrub nails gently with nail brush",
+      "Wet fingers in a bowl of warm water",
+      "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush",
+      "Perform hand hygiene"
+    ],
+    "answer": "Wet fingers in a bowl of warm water",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Wet fingers in a bowl of warm water",
+      "Apply hand cream or lotion to the hands and feet",
+      "Immerse feet in a bowel of water",
+      "Dispose off used items and decontaminate instruments"
+    ],
+    "answer": "Immerse feet in a bowel of water",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Inspect the skin of hands and feet for callous, swelling and any sores",
+      "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush",
+      "Perform hand hygiene",
+      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper"
+    ],
+    "answer": "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Cut toe nails across to prevent in-growing toe nails",
+      "Put all nail clippings into a receiver",
+      "Dispose off used items and decontaminate instruments",
+      "Wet fingers in a bowl of warm water"
+    ],
+    "answer": "Cut toe nails across to prevent in-growing toe nails",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush",
+      "Put all nail clippings into a receiver",
+      "Dry hands and feet thoroughly",
+      "Inspect the skin of hands and feet for callous, swelling and any sores"
+    ],
+    "answer": "Put all nail clippings into a receiver",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Cut toe nails across to prevent in-growing toe nails",
+      "Dispose off used items and decontaminate instruments",
+      "Put hands into the bowl of warm water and scrub nails gently with nail brush",
+      "Explain procedure to patient"
+    ],
+    "answer": "Put hands into the bowl of warm water and scrub nails gently with nail brush",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Place bowl of warm water on the mackintosh and towel",
+      "Dry hands and feet thoroughly",
+      "Inspect the skin of hands and feet for callous, swelling and any sores",
+      "Use orange stick to remove debris"
+    ],
+    "answer": "Use orange stick to remove debris",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Wash hands thoroughly using soap and sponge",
+      "Use orange stick to remove debris",
+      "Explain procedure to patient",
+      "Cut toe nails across to prevent in-growing toe nails"
+    ],
+    "answer": "Wash hands thoroughly using soap and sponge",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Dry hands and feet thoroughly",
+      "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush",
+      "Assist patient into a desirable position",
+      "Place bowl of warm water on the mackintosh and towel"
+    ],
+    "answer": "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Wash hands thoroughly using soap and sponge",
+      "Explain procedure to patient",
+      "Use orange stick to remove debris",
+      "Position patient in a desirable position"
+    ],
+    "answer": "Use orange stick to remove debris",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper",
+      "Assist patient into a desirable position",
+      "Place bowl of warm water on the mackintosh and towel",
+      "Wash feet thoroughly using soap and sponge"
+    ],
+    "answer": "Wash feet thoroughly using soap and sponge",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Change warm water and rinse the hands and feet alternatively",
+      "Wash feet thoroughly using soap and sponge",
+      "Position patient in a desirable position",
+      "Use orange stick to remove debris"
+    ],
+    "answer": "Change warm water and rinse the hands and feet alternatively",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Assist patient into a desirable position",
+      "Dry hands and feet thoroughly",
+      "Establish rapport (Refer to steps)",
+      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper"
+    ],
+    "answer": "Dry hands and feet thoroughly",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Wash feet thoroughly using soap and sponge",
+      "Position patient in a desirable position",
+      "Apply hand cream or lotion to the hands and feet",
+      "Mix and allow patient to check the temperature of the water"
+    ],
+    "answer": "Apply hand cream or lotion to the hands and feet",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Put hands into the bowl of warm water and scrub nails gently with nail brush",
+      "Establish rapport (Refer to steps)",
+      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper",
+      "Remove mackintosh and towel"
+    ],
+    "answer": "Remove mackintosh and towel",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Assist patient into a desirable position",
+      "Apply hand cream or lotion to the hands and feet",
+      "Mix and allow patient to check the temperature of the water",
+      "Wash feet thoroughly using soap and sponge"
+    ],
+    "answer": "Assist patient into a desirable position",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Dispose off used items and decontaminate instruments",
+      "Provide privacy and take trolley to bedside",
+      "Put hands into the bowl of warm water and scrub nails gently with nail brush"
+    ],
+    "answer": "Dispose off used items and decontaminate instruments",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 27 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Remove mackintosh and towel",
+      "Place bowl of warm water on the mackintosh and towel",
+      "Perform hand hygiene",
+      "Cut finger nails to the shape of finger tips using a pair of scissors or nail clipper"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 27 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 28 of CARE OF THE HANDS AND FEET?",
+    "options": [
+      "Alternatively put feet into the bowl of warm water and scrub nails gently with a nail brush",
+      "Provide privacy and take trolley to bedside",
+      "Put hands into the bowl of warm water and scrub nails gently with nail brush",
+      "Document procedure and report findings (manual or electronic)"
+    ],
+    "answer": "Document procedure and report findings (manual or electronic)",
+    "explanation": "This checks recall of step 28 in the procedure sequence."
+  }
+],
   },
 
   {
     id: "rgn-029",
     title: "RECORDING OF INTAKE AND OUTPUT",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "It is the process of measuring and noting the amount and type of fluids introduced into the body and excreted from the body over a 24-hour period. This procedure assists the nurse to maintain an accurate record of a patient's fluid balance.\n\nFluid intake includes:\n1. Oral fluids\n2. Intravenous fluids\n3. Nasopharyngeal fluids\n4. Intragastric fluids\n\nFluid output includes:\nUrine\nVomitus\nAspirates\nDiarrhoeal stool\nSweat",
-    purpose: [
-      "Assess the therapeutic effects of medication",
-      "Monitor fluid overload and dehydration",
-    ],
+      "It is the process of measuring and noting the amount and type of fluids introduced into the body and excreted from the body over a 24-hour period. This procedure assists the nurse to maintain an accurate record of a patient's fluid balance. Fluid intake includes: oral fluids, intravenous fluids, nasopharyngeal fluids, intragastric fluids. Fluid output includes: urine, vomitus, aspirates, diarrhoeal stool, sweat.",
+    purpose: [],
     indications: [
       "Patients requiring monitoring of fluid balance",
       "Patients at risk of dehydration",
@@ -1447,31 +3130,32 @@ export const rgnBatch03: Procedure[] = [
       "Patients requiring accurate urine output monitoring",
     ],
     equipment: [
-      "A trolley containing the following:",
-      "Top shelf: Drinking cup (To measure fluid input)",
-      "Bottom Shelf",
-      "Urinal or bedpan",
-      "Measuring jug (To measure output)",
-    ],
+  "A trolley containing the following:",
+  "Top shelf: Drinking cup (To measure fluid input)",
+  "Bottom Shelf",
+  "Urinal or bedpan",
+  "Measuring jug (To measure output)",
+  "Fluid chart (manual/ electronic)"
+],
     steps: [
-      "Establish rapport (Refer to steps)",
-      "Explain the importance of keeping the fluid balance chart to patient and relatives",
-      "Obtain fluid intake and output chart (manually or electronically) and confirm with patient's identity",
-      "Determine the types of fluid intake or output",
-      "Observe amount of fluids given to patient",
-      "Record the amount of oral and intravenous fluids prescribed at the intake column indicating the date and time",
-      "Add together the values for oral and parenteral fluids",
-      "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume OR if there is urine in a urine bag, empty content into the measuring jug and note the volume",
-      "Record other forms of output such as watery stools and vomitus at the output column indicating date, time and the amount",
-      "Record all measurements in milliliters",
-      "Add together all the values obtained for outputs",
-      "Total the intake and output at the end of every 24 hours",
-      "Find out amount of fluid retained by subtracting the values of fluid output from the intake",
-      "Perform hand hygiene",
-      "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output",
-      "Record findings in the appropriate recording software and observation chart",
-      "Dispose off used items and decontaminate trolley",
-    ],
+  "Establish rapport (Refer to steps)",
+  "Explain the importance of keeping the fluid balance chart to patient and relatives",
+  "Obtain fluid intake and output chart (manually or electronically) and confirm with patient’s identity",
+  "Determine the types of fluid intake or output",
+  "Observe amount of fluids given to patient",
+  "Record the amount of oral and intravenous fluids prescribed at the intake column indicating the date and time",
+  "Add together the values for oral and parenteral fluids",
+  "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume OR If there is urine in a urine bag, empty content into the measuring jug and note the volume",
+  "Record other forms of output such as watery stools, vomitus at the output column indicating date, time and the amount",
+  "Record all measurements in milliliters",
+  "Add together all the values obtained for outputs",
+  "Total the intake and output at the end of every 24 hours",
+  "Find out amount of fluid retained by subtracting the values of fluid output from the intake",
+  "Perform hand hygiene",
+  "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output",
+  "Record findings in the appropriate recording software and observation chart",
+  "Dispose off used items and decontaminate trolley (manual or electronic)"
+],
     precautions: [
       "Confirm the patient's identity before recording intake or output",
       "Use appropriately calibrated or graduated measuring equipment",
@@ -1485,6 +3169,194 @@ export const rgnBatch03: Procedure[] = [
       "Document totals accurately at the required interval and at the end of the 24-hour period",
     ],
     videoUrl: "https://www.youtube.com/watch?v=k3QNri_QCV8",
-    quiz: rgn_029Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Observe amount of fluids given to patient",
+      "Record findings in the appropriate recording software and observation chart",
+      "Add together all the values obtained for outputs"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Explain the importance of keeping the fluid balance chart to patient and relatives",
+      "Total the intake and output at the end of every 24 hours",
+      "Add together the values for oral and parenteral fluids"
+    ],
+    "answer": "Explain the importance of keeping the fluid balance chart to patient and relatives",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Perform hand hygiene",
+      "Record other forms of output such as watery stools, vomitus at the output column indicating date, time and the amount",
+      "Obtain fluid intake and output chart (manually or electronically) and confirm with patient’s identity",
+      "Explain the importance of keeping the fluid balance chart to patient and relatives"
+    ],
+    "answer": "Obtain fluid intake and output chart (manually or electronically) and confirm with patient’s identity",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Record all measurements in milliliters",
+      "Observe amount of fluids given to patient",
+      "Record findings in the appropriate recording software and observation chart",
+      "Determine the types of fluid intake or output"
+    ],
+    "answer": "Determine the types of fluid intake or output",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Observe amount of fluids given to patient",
+      "Dispose off used items and decontaminate trolley (manual or electronic)",
+      "Total the intake and output at the end of every 24 hours",
+      "Add together the values for oral and parenteral fluids"
+    ],
+    "answer": "Observe amount of fluids given to patient",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Perform hand hygiene",
+      "Record the amount of oral and intravenous fluids prescribed at the intake column indicating the date and time",
+      "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume OR If there is urine in a urine bag, empty content into the measuring jug and note the volume",
+      "Explain the importance of keeping the fluid balance chart to patient and relatives"
+    ],
+    "answer": "Record the amount of oral and intravenous fluids prescribed at the intake column indicating the date and time",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Record all measurements in milliliters",
+      "Determine the types of fluid intake or output",
+      "Add together the values for oral and parenteral fluids",
+      "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output"
+    ],
+    "answer": "Add together the values for oral and parenteral fluids",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Observe amount of fluids given to patient",
+      "Dispose off used items and decontaminate trolley (manual or electronic)",
+      "Total the intake and output at the end of every 24 hours",
+      "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume OR If there is urine in a urine bag, empty content into the measuring jug and note the volume"
+    ],
+    "answer": "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume OR If there is urine in a urine bag, empty content into the measuring jug and note the volume",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Record other forms of output such as watery stools, vomitus at the output column indicating date, time and the amount",
+      "Find out amount of fluid retained by subtracting the values of fluid output from the intake",
+      "Add together the values for oral and parenteral fluids",
+      "Explain the importance of keeping the fluid balance chart to patient and relatives"
+    ],
+    "answer": "Record other forms of output such as watery stools, vomitus at the output column indicating date, time and the amount",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Record other forms of output such as watery stools, vomitus at the output column indicating date, time and the amount",
+      "Record all measurements in milliliters",
+      "Obtain fluid intake and output chart (manually or electronically) and confirm with patient’s identity",
+      "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output"
+    ],
+    "answer": "Record all measurements in milliliters",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Observe amount of fluids given to patient",
+      "Dispose off used items and decontaminate trolley (manual or electronic)",
+      "Add together all the values obtained for outputs",
+      "Record all measurements in milliliters"
+    ],
+    "answer": "Add together all the values obtained for outputs",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Find out amount of fluid retained by subtracting the values of fluid output from the intake",
+      "Add together the values for oral and parenteral fluids",
+      "Total the intake and output at the end of every 24 hours"
+    ],
+    "answer": "Total the intake and output at the end of every 24 hours",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Find out amount of fluid retained by subtracting the values of fluid output from the intake",
+      "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume OR If there is urine in a urine bag, empty content into the measuring jug and note the volume",
+      "Obtain fluid intake and output chart (manually or electronically) and confirm with patient’s identity",
+      "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output"
+    ],
+    "answer": "Find out amount of fluid retained by subtracting the values of fluid output from the intake",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Observe amount of fluids given to patient",
+      "Perform hand hygiene",
+      "Record findings in the appropriate recording software and observation chart",
+      "Record all measurements in milliliters"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Total the intake and output at the end of every 24 hours",
+      "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output",
+      "Record the amount of oral and intravenous fluids prescribed at the intake column indicating the date and time"
+    ],
+    "answer": "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Find out amount of fluid retained by subtracting the values of fluid output from the intake",
+      "Assist patient to void into a bedpan or urinal if possible, empty content into the measuring jug and note the volume OR If there is urine in a urine bag, empty content into the measuring jug and note the volume",
+      "Obtain fluid intake and output chart (manually or electronically) and confirm with patient’s identity",
+      "Record findings in the appropriate recording software and observation chart"
+    ],
+    "answer": "Record findings in the appropriate recording software and observation chart",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of RECORDING OF INTAKE AND OUTPUT?",
+    "options": [
+      "Dispose off used items and decontaminate trolley (manual or electronic)",
+      "Determine the types of fluid intake or output",
+      "Inform the nurse in charge/doctor immediately if amount put out is greater than the amount taken in or when there is abnormally low output",
+      "Record all measurements in milliliters"
+    ],
+    "answer": "Dispose off used items and decontaminate trolley (manual or electronic)",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  }
+],
   },
 ];

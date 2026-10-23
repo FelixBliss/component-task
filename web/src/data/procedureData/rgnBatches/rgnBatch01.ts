@@ -3,49 +3,51 @@ import type { Procedure } from "../../procedureTypes";
 export const rgnBatch01: Procedure[] = [
   {
     id: "rgn-001",
-    title: "Immediate Post-Operative Care of a Patient",
+    title: "IMMEDIATE POST OPERATIVE CARE OF A PATIENT",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Immediate nursing care provided after surgery to maintain airway, circulation, safety, comfort and early recognition of complications.",
-    purpose: [
-      "Monitor the progress of patient’s recovery from anaesthesia after surgical procedure",
-      "Note and report any abnormalities to the surgical team",
-      "Relieve patient of pain",
-    ],
+      "This is the nursing management of a patient after a surgical procedure. The nurse/midwife has a role to ensure that the patient recovers fully from the effect of anaesthesia.",
+    purpose: [],
     indications: [
       "Patient returning from an operation.",
       "Patient recovering from anaesthesia.",
       "Patient requiring immediate post-operative monitoring."
     ],
     equipment: [
-      "Bed and clean bed linen",
-      "Vital-sign monitoring equipment",
-      "Oxygen equipment where indicated",
-      "Suction equipment where indicated",
-      "Prescribed intravenous fluids and infusion equipment",
-      "Documentation materials"
-    ],
+  "Operation bed with side rails",
+  "Post anaethestic tray e.g. vomit bowl, wound dressing set, padded spatula or tongue holding forceps, receiver for soiled swab, adhesive tape, sterile gauze etc",
+  "Oxygen apparatus",
+  "Suction machine",
+  "Vital signs tray",
+  "Medication tray",
+  "Infusion stand",
+  "Mouth care tray",
+  "Observation chart"
+],
     steps: [
-      "Assess patient level of consciousness by calling the patient by name and using an appropriate recognised clinical stimulus when indicated; do not use a pointed object.",
-      "Remove hot water bottles and receive patient gently into bed.",
-      "Position the patient to protect the airway and support breathing, taking account of level of consciousness, the operation performed, anaesthetic considerations, and the surgical team's instructions; do not automatically place every patient flat.",
-      "Reassure patient if conscious.",
-      "Provide side rails for safety if necessary.",
-      "Read through the patient’s case notes for post-operative instructions.",
-      "Observe operational site for bleeding and report for possible reinforcement.",
-      "Monitor vital signs according to the applicable post-anaesthesia recovery protocol and the patient’s condition; increase observation frequency and escalate promptly if abnormalities or deterioration occur.",
-      "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered.",
-      "Check and ensure that all drainage tubes e.g. naso-gastric tube and catheter are in situ and are draining well.",
-      "Record intake and output accurately.",
-      "Assess for pain, administer prescribed analgesics and record.",
-      "Check and administer all prescribed medication per the appropriate route.",
-      "Maintain personal and oral hygiene.",
-      "Observe any abnormality in the patient’s condition.",
-      "Put patient in a desirable position or as ordered by surgeon when he/she is fully conscious.",
-      "Follow nutritional orders as prescribed by the surgeon.",
-      "Educate patient and relatives on post-operative restrictions if any.",
-      "Document findings and nursing interventions in appropriate notes (manual or electronic).",
-    ],
+  "Assess patient level of consciousness by the use of stimulus e.g. pointed object or by calling patient by name",
+  "Remove hot water bottles and receive patient gently into bed",
+  "Place patient flat on bed with the head turned to one side or in the appropriate position according to the operation performed",
+  "Reassure patient if conscious",
+  "Provide side rails for safety if necessary",
+  "Read through the patient’s case notes for post-operative instructions",
+  "Observe operational site for bleeding and report for possible reinforcement",
+  "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes",
+  "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered",
+  "Check and ensure that all drainage tubes e.g. naso-gastric tube and catheter are in situ and are draining well",
+  "Record intake and output accurately",
+  "Assess for pain, administer prescribed analgesics and record",
+  "Check and administer all prescribed medication per the appropriate route",
+  "Maintain personal and oral hygiene",
+  "Observe any abnormality in the patient’s condition",
+  "Put patient in a desirable position or as ordered by surgeon when he/she is fully conscious",
+  "Follow nutritional orders as prescribed by the surgeon",
+  "Educate patient and relatives on post-operative restrictions if any",
+  "Document findings and nursing interventions in appropriate notes (manual or electronic)"
+],
     precautions: [
       "Maintain appropriate infection-prevention measures.",
       "Do not leave an unstable patient unattended.",
@@ -55,212 +57,229 @@ export const rgnBatch01: Procedure[] = [
     ],
     videoUrl: "https://www.youtube.com/watch?v=2WT8z8KsHJo",
     quiz: [
-        {
-          "question": "How should the nurse assess the patient's level of consciousness on arrival?",
-          "options": [
-            "Call the patient by name and use an appropriate recognised clinical stimulus when indicated",
-            "Use a pointed object on the patient",
-            "Assume the patient is asleep",
-            "Wait until the next routine observation"
-          ],
-          "answer": "Call the patient by name and use an appropriate recognised clinical stimulus when indicated"
-        },
-        {
-          "question": "What should be done with hot water bottles when receiving the post-operative patient?",
-          "options": [
-            "Remove them and receive the patient gently into bed",
-            "Leave them against the patient",
-            "Place them under the patient",
-            "Use them to assess consciousness"
-          ],
-          "answer": "Remove them and receive the patient gently into bed"
-        },
-        {
-          "question": "What guides the patient's position immediately after surgery?",
-          "options": [
-            "Airway protection, breathing, consciousness, operation and clinical instructions",
-            "A rule that every patient must lie flat",
-            "The patient's preferred sleeping position only",
-            "The time of day"
-          ],
-          "answer": "Airway protection, breathing, consciousness, operation and clinical instructions"
-        },
-        {
-          "question": "When should the nurse reassure the patient?",
-          "options": [
-            "If the patient is conscious",
-            "Only after discharge",
-            "Only when relatives arrive",
-            "Never during recovery"
-          ],
-          "answer": "If the patient is conscious"
-        },
-        {
-          "question": "Why might side rails be provided?",
-          "options": [
-            "For patient safety when indicated by assessment and policy",
-            "To restrain every patient routinely",
-            "To replace observation",
-            "To prevent the patient from communicating"
-          ],
-          "answer": "For patient safety when indicated by assessment and policy"
-        },
-        {
-          "question": "Why should the nurse review the patient's case notes?",
-          "options": [
-            "To check post-operative instructions",
-            "To decide the patient's occupation",
-            "To avoid speaking to the surgical team",
-            "To replace vital-sign monitoring"
-          ],
-          "answer": "To check post-operative instructions"
-        },
-        {
-          "question": "What should the nurse do if bleeding is observed at the operative site?",
-          "options": [
-            "Assess and promptly report it according to protocol",
-            "Ignore it unless the patient complains",
-            "Wait until the next shift",
-            "Remove all dressings without assessment"
-          ],
-          "answer": "Assess and promptly report it according to protocol"
-        },
-        {
-          "question": "How should post-operative vital-sign monitoring frequency be determined?",
-          "options": [
-            "By the recovery protocol and patient's condition, with escalation for deterioration",
-            "Always every four hours from arrival",
-            "Only when the patient reports pain",
-            "Only once after surgery"
-          ],
-          "answer": "By the recovery protocol and patient's condition, with escalation for deterioration"
-        },
-        {
-          "question": "What should be checked regarding the intravenous cannula and fluids?",
-          "options": [
-            "Cannula status and prescribed infusion rate",
-            "Only the colour of the fluid bag",
-            "Whether the patient can remove the cannula",
-            "The infusion rate without checking the order"
-          ],
-          "answer": "Cannula status and prescribed infusion rate"
-        },
-        {
-          "question": "What should the nurse check about drainage tubes and catheters?",
-          "options": [
-            "That they are appropriately positioned and draining as expected",
-            "That they are removed immediately",
-            "That drainage is never measured",
-            "Only their colour"
-          ],
-          "answer": "That they are appropriately positioned and draining as expected"
-        },
-        {
-          "question": "Why must intake and output be recorded accurately?",
-          "options": [
-            "To monitor fluid balance and support clinical assessment",
-            "To replace all other observations",
-            "Only to complete paperwork",
-            "To determine the patient's meal preference"
-          ],
-          "answer": "To monitor fluid balance and support clinical assessment"
-        },
-        {
-          "question": "What is appropriate when the patient reports post-operative pain?",
-          "options": [
-            "Assess pain, administer prescribed analgesia and document the response",
-            "Ignore it if vital signs are normal",
-            "Give any available analgesic without an order",
-            "Delay assessment until discharge"
-          ],
-          "answer": "Assess pain, administer prescribed analgesia and document the response"
-        },
-        {
-          "question": "What must be checked before administering prescribed medication?",
-          "options": [
-            "The order and appropriate route, following medication-safety policy",
-            "Only the packaging colour",
-            "Whether another patient takes the same medicine",
-            "Nothing if the patient requests it"
-          ],
-          "answer": "The order and appropriate route, following medication-safety policy"
-        },
-        {
-          "question": "Which care should be maintained as the patient recovers?",
-          "options": [
-            "Personal and oral hygiene as clinically appropriate",
-            "Avoid all hygiene until discharge",
-            "Only change the bed linen",
-            "Stop assessing the patient"
-          ],
-          "answer": "Personal and oral hygiene as clinically appropriate"
-        },
-        {
-          "question": "What should the nurse do when noticing an abnormal change in the patient's condition?",
-          "options": [
-            "Assess, document and promptly report or escalate it",
-            "Ignore it if it was not present at handover",
-            "Wait for the family to report it",
-            "Record it only at the end of the week"
-          ],
-          "answer": "Assess, document and promptly report or escalate it"
-        },
-        {
-          "question": "When should further positioning changes be made as the patient becomes conscious?",
-          "options": [
-            "According to the patient's condition and surgical instructions",
-            "Automatically place every patient flat",
-            "Only after food is served",
-            "Without checking airway or comfort"
-          ],
-          "answer": "According to the patient's condition and surgical instructions"
-        },
-        {
-          "question": "How should post-operative nutrition be managed?",
-          "options": [
-            "Follow the prescribed nutritional orders",
-            "Offer any food immediately to every patient",
-            "Withhold all nutrition indefinitely",
-            "Allow relatives to decide without checking orders"
-          ],
-          "answer": "Follow the prescribed nutritional orders"
-        },
-        {
-          "question": "What should patient and relatives be taught about after surgery?",
-          "options": [
-            "Relevant post-operative restrictions and instructions",
-            "Only the hospital visiting hours",
-            "How to adjust prescribed medication independently",
-            "To ignore symptoms after discharge"
-          ],
-          "answer": "Relevant post-operative restrictions and instructions"
-        },
-        {
-          "question": "What should be included in post-operative documentation?",
-          "options": [
-            "Assessment findings and nursing interventions in the appropriate record",
-            "Only the patient's name",
-            "Only normal findings",
-            "No record if the patient is stable"
-          ],
-          "answer": "Assessment findings and nursing interventions in the appropriate record"
-        }
-      ]
+  {
+    "question": "Which action is listed as step 1 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Assess patient level of consciousness by the use of stimulus e.g. pointed object or by calling patient by name",
+      "Provide side rails for safety if necessary",
+      "Put patient in a desirable position or as ordered by surgeon when he/she is fully conscious",
+      "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered"
+    ],
+    "answer": "Assess patient level of consciousness by the use of stimulus e.g. pointed object or by calling patient by name",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Put patient in a desirable position or as ordered by surgeon when he/she is fully conscious",
+      "Remove hot water bottles and receive patient gently into bed",
+      "Assess for pain, administer prescribed analgesics and record",
+      "Provide side rails for safety if necessary"
+    ],
+    "answer": "Remove hot water bottles and receive patient gently into bed",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Assess for pain, administer prescribed analgesics and record",
+      "Provide side rails for safety if necessary",
+      "Place patient flat on bed with the head turned to one side or in the appropriate position according to the operation performed",
+      "Document findings and nursing interventions in appropriate notes (manual or electronic)"
+    ],
+    "answer": "Place patient flat on bed with the head turned to one side or in the appropriate position according to the operation performed",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes",
+      "Document findings and nursing interventions in appropriate notes (manual or electronic)",
+      "Assess for pain, administer prescribed analgesics and record",
+      "Reassure patient if conscious"
+    ],
+    "answer": "Reassure patient if conscious",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Provide side rails for safety if necessary",
+      "Observe any abnormality in the patient’s condition",
+      "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes",
+      "Document findings and nursing interventions in appropriate notes (manual or electronic)"
+    ],
+    "answer": "Provide side rails for safety if necessary",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes",
+      "Read through the patient’s case notes for post-operative instructions",
+      "Place patient flat on bed with the head turned to one side or in the appropriate position according to the operation performed",
+      "Observe any abnormality in the patient’s condition"
+    ],
+    "answer": "Read through the patient’s case notes for post-operative instructions",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Place patient flat on bed with the head turned to one side or in the appropriate position according to the operation performed",
+      "Observe any abnormality in the patient’s condition",
+      "Observe operational site for bleeding and report for possible reinforcement",
+      "Record intake and output accurately"
+    ],
+    "answer": "Observe operational site for bleeding and report for possible reinforcement",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Educate patient and relatives on post-operative restrictions if any",
+      "Record intake and output accurately",
+      "Place patient flat on bed with the head turned to one side or in the appropriate position according to the operation performed",
+      "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes"
+    ],
+    "answer": "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered",
+      "Read through the patient’s case notes for post-operative instructions",
+      "Educate patient and relatives on post-operative restrictions if any",
+      "Record intake and output accurately"
+    ],
+    "answer": "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Educate patient and relatives on post-operative restrictions if any",
+      "Check and ensure that all drainage tubes e.g. naso-gastric tube and catheter are in situ and are draining well",
+      "Maintain personal and oral hygiene",
+      "Read through the patient’s case notes for post-operative instructions"
+    ],
+    "answer": "Check and ensure that all drainage tubes e.g. naso-gastric tube and catheter are in situ and are draining well",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Maintain personal and oral hygiene",
+      "Read through the patient’s case notes for post-operative instructions",
+      "Record intake and output accurately",
+      "Remove hot water bottles and receive patient gently into bed"
+    ],
+    "answer": "Record intake and output accurately",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered",
+      "Remove hot water bottles and receive patient gently into bed",
+      "Maintain personal and oral hygiene",
+      "Assess for pain, administer prescribed analgesics and record"
+    ],
+    "answer": "Assess for pain, administer prescribed analgesics and record",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Check and administer all prescribed medication per the appropriate route",
+      "Follow nutritional orders as prescribed by the surgeon",
+      "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered",
+      "Remove hot water bottles and receive patient gently into bed"
+    ],
+    "answer": "Check and administer all prescribed medication per the appropriate route",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Ensure cannula is in situ, check the flow rate of the intravenous fluid and regulate as ordered",
+      "Maintain personal and oral hygiene",
+      "Provide side rails for safety if necessary",
+      "Follow nutritional orders as prescribed by the surgeon"
+    ],
+    "answer": "Maintain personal and oral hygiene",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Provide side rails for safety if necessary",
+      "Follow nutritional orders as prescribed by the surgeon",
+      "Observe any abnormality in the patient’s condition",
+      "Assess for pain, administer prescribed analgesics and record"
+    ],
+    "answer": "Observe any abnormality in the patient’s condition",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Assess patient level of consciousness by the use of stimulus e.g. pointed object or by calling patient by name",
+      "Assess for pain, administer prescribed analgesics and record",
+      "Provide side rails for safety if necessary",
+      "Put patient in a desirable position or as ordered by surgeon when he/she is fully conscious"
+    ],
+    "answer": "Put patient in a desirable position or as ordered by surgeon when he/she is fully conscious",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Follow nutritional orders as prescribed by the surgeon",
+      "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes",
+      "Assess patient level of consciousness by the use of stimulus e.g. pointed object or by calling patient by name",
+      "Assess for pain, administer prescribed analgesics and record"
+    ],
+    "answer": "Follow nutritional orders as prescribed by the surgeon",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Assess patient level of consciousness by the use of stimulus e.g. pointed object or by calling patient by name",
+      "Educate patient and relatives on post-operative restrictions if any",
+      "Observe any abnormality in the patient’s condition",
+      "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes"
+    ],
+    "answer": "Educate patient and relatives on post-operative restrictions if any",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of IMMEDIATE POST OPERATIVE CARE OF A PATIENT?",
+    "options": [
+      "Observe any abnormality in the patient’s condition",
+      "Monitor vital signs for 15minutes for first one hour, 30 minutes for the next hour, 1 hour for the next 4 hours and 4 hourly intervals as condition stabilizes",
+      "Document findings and nursing interventions in appropriate notes (manual or electronic)",
+      "Reassure patient if conscious"
+    ],
+    "answer": "Document findings and nursing interventions in appropriate notes (manual or electronic)",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  }
+]
 
   },
 
   {
     id: "rgn-002",
-    title: "Care of a Stoma and Changing of a Stoma Pouch",
+    title: "CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Nursing care of a patient with a stoma, including assessment of the stoma and surrounding skin and appropriate pouch management.",
-    purpose: [
-      "Maintain stoma function and cleanliness.",
-      "Protect the skin around the stoma.",
-      "Prevent leakage and infection.",
-      "Promote patient comfort and independence."
-    ],
+      "It is the removal of the pouch and cleaning of an artificial opening created on the lower abdominal surface of a patient. The opening may be temporary or permanent.",
+    purpose: [],
     indications: [
       "Patient with an established stoma.",
       "Pouch is full or leaking.",
@@ -268,25 +287,50 @@ export const rgnBatch01: Procedure[] = [
       "Peristomal skin requires assessment."
     ],
     equipment: [
-      "Appropriate stoma pouch",
-      "Clean gloves",
-      "Waste receptacle",
-      "Warm water and appropriate cleansing materials",
-      "Measuring guide where required",
-      "Skin protection products where indicated"
-    ],
+  "A trolley containing the following:",
+  "New stoma pouch",
+  "Sterile gloves",
+  "Disposable gloves",
+  "Wipes or tissue",
+  "Measuring template",
+  "Gallipot with gauze swabs",
+  "Mackintosh and dressing towel",
+  "Towel",
+  "Bowl of tepid water",
+  "Barrier cream",
+  "Large receiver",
+  "Deodorizing tablet or liquid",
+  "Plastic bag",
+  "Scissors",
+  "Soap/mild detergent"
+],
     steps: [
-      "Explain the procedure and provide privacy.",
-      "Perform hand hygiene and put on appropriate gloves.",
-      "Assess the stoma and surrounding skin.",
-      "Gently remove the existing pouch.",
-      "Dispose of the used pouch appropriately.",
-      "Clean the stoma and surrounding skin gently.",
-      "Measure the stoma when required.",
-      "Prepare the new pouching system.",
-      "Apply the pouch securely while protecting surrounding skin.",
-      "Dispose of waste, remove gloves, perform hand hygiene and document care."
-    ],
+  "Establish rapport with patient (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Provide privacy",
+  "Prepare and send trolley to bedside",
+  "Position the patient and turn down top sheet to expose stoma",
+  "Protect site with mackintosh and dressing towel",
+  "Preform hand hygiene and put on disposable gloves",
+  "Gently remove soiled pouch and places in large receiver/plastic bag",
+  "Remove disposable gloves and perform hand hygiene",
+  "Put on sterile gloves",
+  "Examine the stoma and note any abnormalities",
+  "Clean the stoma with the wipes/tissue",
+  "Wash area around the stoma with mild soap/detergent and tepid water",
+  "Dry area gently with sterile swabs",
+  "Cover the stoma with a swab while you prepare a new pouch",
+  "Estimate stoma using the measuring template and cut the desired opening on the pouch",
+  "Apply barrier cream",
+  "Put few drops of the deodorizing liquid or tablets in the pouch if available",
+  "Attach the one side of the edge of the pouch to the skin, rolling it up and over the stoma",
+  "Press the edges of the pouch to secure it in position",
+  "Remove gloves and perform hand hygiene",
+  "Reposition patient",
+  "Remove mackintosh and dressing towel",
+  "Dispose off, decontaminate, clean and stores used items",
+  "Document procedure and report findings to appropriate officer"
+],
     precautions: [
       "Avoid unnecessary trauma to the stoma.",
       "Observe for abnormal colour, bleeding or swelling.",
@@ -296,71 +340,294 @@ export const rgnBatch01: Procedure[] = [
     ],
     videoUrl: "https://www.youtube.com/watch?v=VM-WZqF6xhw",
     quiz: [
-      {
-        question: "What should be assessed before changing a stoma pouch?",
-        options: ["The stoma and surrounding skin", "The patient's hairstyle", "The patient's footwear", "The room temperature only"],
-        answer: "The stoma and surrounding skin"
-      },
-      {
-        question: "Why should the pouch fit appropriately?",
-        options: ["To reduce leakage and protect the skin", "To increase waste production", "To make removal difficult", "To prevent stoma assessment"],
-        answer: "To reduce leakage and protect the skin"
-      },
-      {
-        question: "What should be done before the procedure?",
-        options: ["Perform hand hygiene", "Remove all bed linen", "Give unrelated medication", "Ask the patient to leave"],
-        answer: "Perform hand hygiene"
-      },
-      {
-        question: "Which finding should be reported?",
-        options: ["Marked abnormal stoma colour", "Correctly fitting pouch", "Clean surrounding skin", "Normal stoma appearance"],
-        answer: "Marked abnormal stoma colour"
-      },
-      {
-        question: "What should be protected during pouch changing?",
-        options: ["Peristomal skin", "Hair", "Shoes", "Nails only"],
-        answer: "Peristomal skin"
-      },
-      {
-        question: "How should the stoma area generally be cleaned?",
-        options: ["Gently", "By vigorous scrubbing", "With a sharp instrument", "By applying unnecessary pressure"],
-        answer: "Gently"
-      },
-      {
-        question: "What is one purpose of stoma care?",
-        options: ["Promote comfort and protect the skin", "Prevent all oral intake", "Restrict mobility permanently", "Avoid patient education"],
-        answer: "Promote comfort and protect the skin"
-      },
-      {
-        question: "What should be done with the used pouch?",
-        options: ["Dispose of it appropriately", "Place it on the bedside table", "Reuse it routinely", "Leave it beside the patient"],
-        answer: "Dispose of it appropriately"
-      },
-      {
-        question: "What is important after completing stoma care?",
-        options: ["Document relevant findings and care", "Leave the patient without instructions", "Remove the new pouch", "Avoid hand hygiene"],
-        answer: "Document relevant findings and care"
-      },
-      {
-        question: "What can leakage around a stoma cause?",
-        options: ["Skin irritation and breakdown", "Improved skin integrity", "Better pouch adhesion", "Reduced need for assessment"],
-        answer: "Skin irritation and breakdown"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Position the patient and turn down top sheet to expose stoma",
+      "Estimate stoma using the measuring template and cut the desired opening on the pouch",
+      "Provide privacy"
+    ],
+    "answer": "Establish rapport with patient (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Put on sterile gloves",
+      "Explain procedure to patient (Refer to steps)",
+      "Clean the stoma with the wipes/tissue",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Protect site with mackintosh and dressing towel",
+      "Apply barrier cream",
+      "Provide privacy",
+      "Attach the one side of the edge of the pouch to the skin, rolling it up and over the stoma"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Wash area around the stoma with mild soap/detergent and tepid water",
+      "Dispose off, decontaminate, clean and stores used items",
+      "Prepare and send trolley to bedside"
+    ],
+    "answer": "Prepare and send trolley to bedside",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Position the patient and turn down top sheet to expose stoma",
+      "Remove disposable gloves and perform hand hygiene",
+      "Press the edges of the pouch to secure it in position",
+      "Preform hand hygiene and put on disposable gloves"
+    ],
+    "answer": "Position the patient and turn down top sheet to expose stoma",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Dry area gently with sterile swabs",
+      "Protect site with mackintosh and dressing towel",
+      "Estimate stoma using the measuring template and cut the desired opening on the pouch",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Protect site with mackintosh and dressing towel",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Put on sterile gloves",
+      "Remove gloves and perform hand hygiene",
+      "Preform hand hygiene and put on disposable gloves",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Preform hand hygiene and put on disposable gloves",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Position the patient and turn down top sheet to expose stoma",
+      "Apply barrier cream",
+      "Provide privacy",
+      "Gently remove soiled pouch and places in large receiver/plastic bag"
+    ],
+    "answer": "Gently remove soiled pouch and places in large receiver/plastic bag",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Remove disposable gloves and perform hand hygiene",
+      "Wash area around the stoma with mild soap/detergent and tepid water",
+      "Dispose off, decontaminate, clean and stores used items",
+      "Examine the stoma and note any abnormalities"
+    ],
+    "answer": "Remove disposable gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Put few drops of the deodorizing liquid or tablets in the pouch if available",
+      "Put on sterile gloves",
+      "Press the edges of the pouch to secure it in position",
+      "Protect site with mackintosh and dressing towel"
+    ],
+    "answer": "Put on sterile gloves",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Dry area gently with sterile swabs",
+      "Document procedure and report findings to appropriate officer",
+      "Examine the stoma and note any abnormalities",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Examine the stoma and note any abnormalities",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Remove disposable gloves and perform hand hygiene",
+      "Remove gloves and perform hand hygiene",
+      "Preform hand hygiene and put on disposable gloves",
+      "Clean the stoma with the wipes/tissue"
+    ],
+    "answer": "Clean the stoma with the wipes/tissue",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Wash area around the stoma with mild soap/detergent and tepid water",
+      "Apply barrier cream",
+      "Provide privacy",
+      "Cover the stoma with a swab while you prepare a new pouch"
+    ],
+    "answer": "Wash area around the stoma with mild soap/detergent and tepid water",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Reposition patient",
+      "Dry area gently with sterile swabs",
+      "Dispose off, decontaminate, clean and stores used items",
+      "Put on sterile gloves"
+    ],
+    "answer": "Dry area gently with sterile swabs",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Put few drops of the deodorizing liquid or tablets in the pouch if available",
+      "Prepare and send trolley to bedside",
+      "Cover the stoma with a swab while you prepare a new pouch",
+      "Protect site with mackintosh and dressing towel"
+    ],
+    "answer": "Cover the stoma with a swab while you prepare a new pouch",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Wash area around the stoma with mild soap/detergent and tepid water",
+      "Document procedure and report findings to appropriate officer",
+      "Examine the stoma and note any abnormalities",
+      "Estimate stoma using the measuring template and cut the desired opening on the pouch"
+    ],
+    "answer": "Estimate stoma using the measuring template and cut the desired opening on the pouch",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Apply barrier cream",
+      "Remove gloves and perform hand hygiene",
+      "Preform hand hygiene and put on disposable gloves",
+      "Attach the one side of the edge of the pouch to the skin, rolling it up and over the stoma"
+    ],
+    "answer": "Apply barrier cream",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Put few drops of the deodorizing liquid or tablets in the pouch if available",
+      "Provide privacy",
+      "Dry area gently with sterile swabs"
+    ],
+    "answer": "Put few drops of the deodorizing liquid or tablets in the pouch if available",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Reposition patient",
+      "Gently remove soiled pouch and places in large receiver/plastic bag",
+      "Attach the one side of the edge of the pouch to the skin, rolling it up and over the stoma",
+      "Put on sterile gloves"
+    ],
+    "answer": "Attach the one side of the edge of the pouch to the skin, rolling it up and over the stoma",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Apply barrier cream",
+      "Prepare and send trolley to bedside",
+      "Cover the stoma with a swab while you prepare a new pouch",
+      "Press the edges of the pouch to secure it in position"
+    ],
+    "answer": "Press the edges of the pouch to secure it in position",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Remove gloves and perform hand hygiene",
+      "Document procedure and report findings to appropriate officer",
+      "Examine the stoma and note any abnormalities",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Position the patient and turn down top sheet to expose stoma",
+      "Reposition patient",
+      "Preform hand hygiene and put on disposable gloves",
+      "Put few drops of the deodorizing liquid or tablets in the pouch if available"
+    ],
+    "answer": "Reposition patient",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Clean the stoma with the wipes/tissue",
+      "Remove mackintosh and dressing towel",
+      "Dry area gently with sterile swabs"
+    ],
+    "answer": "Remove mackintosh and dressing towel",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Remove gloves and perform hand hygiene",
+      "Gently remove soiled pouch and places in large receiver/plastic bag",
+      "Attach the one side of the edge of the pouch to the skin, rolling it up and over the stoma",
+      "Dispose off, decontaminate, clean and stores used items"
+    ],
+    "answer": "Dispose off, decontaminate, clean and stores used items",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH?",
+    "options": [
+      "Document procedure and report findings to appropriate officer",
+      "Prepare and send trolley to bedside",
+      "Cover the stoma with a swab while you prepare a new pouch",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Document procedure and report findings to appropriate officer",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  }
+]
   },
 
   {
     id: "rgn-003",
-    title: "Prevention and Treatment of Pressure Areas",
+    title: "TREATMENT OF PRESSURE AREAS",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Nursing measures used to prevent pressure injury and provide appropriate care when pressure-related skin damage is identified.",
-    purpose: [
-      "Prevent pressure injury.",
-      "Maintain skin integrity.",
-      "Reduce prolonged pressure and shear.",
-      "Promote healing where pressure injury exists."
-    ],
+      "It is the specific care rendered to the skin and bony prominences of a bedridden patient. It is performed to prevent pressure sores or decubitus ulcers. Untreated pressure areas may lead to tissue ischeamia and death.",
+    purpose: [],
     indications: [
       "Patients with reduced mobility.",
       "Patients confined to bed or chair.",
@@ -368,24 +635,42 @@ export const rgnBatch01: Procedure[] = [
       "Patients at increased risk of pressure injury."
     ],
     equipment: [
-      "Clean bed linen",
-      "Pressure-relieving equipment where indicated",
-      "Pillows or positioning aids",
-      "Skin-care materials",
-      "Appropriate dressing materials where prescribed"
-    ],
+  "A trolley with the following items:",
+  "Top shelf",
+  "A bowl",
+  "Soap in a dish",
+  "Barrier cream",
+  "2/3 hand towels",
+  "Bottom shelf",
+  "Jug of warm water",
+  "Bucket for used water",
+  "Mackintosh and dressing towel",
+  "Bed linen"
+],
     steps: [
-      "Assess the patient's pressure-injury risk.",
-      "Inspect vulnerable pressure areas.",
-      "Maintain clean and dry skin.",
-      "Reposition the patient according to individual need and care plan.",
-      "Use appropriate pressure-relieving devices.",
-      "Avoid unnecessary friction and shear.",
-      "Maintain adequate nutrition and hydration as appropriate.",
-      "Provide wound care according to the patient's condition and prescribed plan.",
-      "Educate the patient and caregiver about pressure-injury prevention.",
-      "Document findings, interventions and patient response."
-    ],
+  "Explain procedure to patient",
+  "Assess patient’s skin",
+  "Perform hand hygiene",
+  "Set trolley and send to patient bedside",
+  "Provide privacy",
+  "Remove patient’s bedclothes and cover with a sheet",
+  "Protect bed with long mackintosh and bath towel/blanket",
+  "Pour water into the basin",
+  "Roll patient onto the side, left/right lateral or prone, with head turned to one side",
+  "Examine and note any abnormality",
+  "Clean all pressure areas (back of the head, ears, hand, scapula, sacrum, elbows, hips, buttocks, knees, ankles, heels and toes) with soap and water in a soft towel with gloved hands",
+  "Knead or rub in a circular motion all pressure areas with tip of fingers, or pad of one area at a time",
+  "Rinse and dry skin with a soft dry towel",
+  "Ensure skin is dry without any moisture",
+  "Apply moisturizing cream or barrier cream",
+  "Groom and dress patient in a clean clothing",
+  "Position patient intermittently in any of the following positions at 30° angle: prone, supine, right or left lateral, right or left sim’s",
+  "Remove long mackintosh and dressing towel",
+  "Dispose off used items, decontaminate trolley and used linen",
+  "Perform hand hygiene",
+  "Document procedure and report findings",
+  "Inform the appropriate officer of any abnormality"
+],
     precautions: [
       "Do not massage damaged skin.",
       "Avoid prolonged pressure on vulnerable areas.",
@@ -395,57 +680,249 @@ export const rgnBatch01: Procedure[] = [
     ],
     videoUrl: "https://www.youtube.com/watch?v=FSGgPkG-x1U",
     quiz: [
-      {
-        question: "What is the main goal of pressure-area care?",
-        options: ["Maintain skin integrity", "Increase pressure", "Restrict movement", "Delay assessment"],
-        answer: "Maintain skin integrity"
-      },
-      {
-        question: "Which patient is at increased risk of pressure injury?",
-        options: ["A patient with reduced mobility", "A fully mobile patient", "A patient walking independently", "A patient with no risk factors"],
-        answer: "A patient with reduced mobility"
-      },
-      {
-        question: "Which action helps prevent pressure injury?",
-        options: ["Regular repositioning", "Maintaining one position all day", "Ignoring skin changes", "Increasing friction"],
-        answer: "Regular repositioning"
-      },
-      {
-        question: "What should vulnerable pressure areas be subjected to?",
-        options: ["Regular inspection", "Constant pressure", "Vigorous rubbing", "No assessment"],
-        answer: "Regular inspection"
-      },
-      {
-        question: "Which factor can contribute to skin breakdown?",
-        options: ["Moisture", "Appropriate repositioning", "Good skin care", "Pressure relief"],
-        answer: "Moisture"
-      },
-      {
-        question: "What should be avoided over damaged skin?",
-        options: ["Massage", "Assessment", "Appropriate care", "Documentation"],
-        answer: "Massage"
-      },
-      {
-        question: "Why is nutrition important in pressure-injury care?",
-        options: ["It supports tissue health and healing", "It increases pressure", "It replaces repositioning", "It prevents all infections"],
-        answer: "It supports tissue health and healing"
-      },
-      {
-        question: "What should the nurse document?",
-        options: ["Skin findings and interventions", "Only the patient's name", "Only meal preferences", "Nothing"],
-        answer: "Skin findings and interventions"
-      },
-      {
-        question: "Which technique should be minimized?",
-        options: ["Friction and shear", "Pressure relief", "Skin inspection", "Patient education"],
-        answer: "Friction and shear"
-      },
-      {
-        question: "What should happen if a pressure injury deteriorates?",
-        options: ["The change should be reported promptly", "It should be ignored", "The patient should be left alone", "Documentation should stop"],
-        answer: "The change should be reported promptly"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Explain procedure to patient",
+      "Provide privacy",
+      "Groom and dress patient in a clean clothing",
+      "Protect bed with long mackintosh and bath towel/blanket"
+    ],
+    "answer": "Explain procedure to patient",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Ensure skin is dry without any moisture",
+      "Assess patient’s skin",
+      "Knead or rub in a circular motion all pressure areas with tip of fingers, or pad of one area at a time",
+      "Perform hand hygiene"
+    ],
+    "answer": "Assess patient’s skin",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Examine and note any abnormality",
+      "Inform the appropriate officer of any abnormality",
+      "Perform hand hygiene",
+      "Dispose off used items, decontaminate trolley and used linen"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Remove patient’s bedclothes and cover with a sheet",
+      "Position patient intermittently in any of the following positions at 30° angle: prone, supine, right or left lateral, right or left sim’s",
+      "Pour water into the basin",
+      "Set trolley and send to patient bedside"
+    ],
+    "answer": "Set trolley and send to patient bedside",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Provide privacy",
+      "Rinse and dry skin with a soft dry towel",
+      "Perform hand hygiene",
+      "Apply moisturizing cream or barrier cream"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Explain procedure to patient",
+      "Remove patient’s bedclothes and cover with a sheet",
+      "Document procedure and report findings",
+      "Clean all pressure areas (back of the head, ears, hand, scapula, sacrum, elbows, hips, buttocks, knees, ankles, heels and toes) with soap and water in a soft towel with gloved hands"
+    ],
+    "answer": "Remove patient’s bedclothes and cover with a sheet",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Remove long mackintosh and dressing towel",
+      "Roll patient onto the side, left/right lateral or prone, with head turned to one side",
+      "Protect bed with long mackintosh and bath towel/blanket",
+      "Remove patient’s bedclothes and cover with a sheet"
+    ],
+    "answer": "Protect bed with long mackintosh and bath towel/blanket",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Ensure skin is dry without any moisture",
+      "Set trolley and send to patient bedside",
+      "Groom and dress patient in a clean clothing",
+      "Pour water into the basin"
+    ],
+    "answer": "Pour water into the basin",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Roll patient onto the side, left/right lateral or prone, with head turned to one side",
+      "Inform the appropriate officer of any abnormality",
+      "Knead or rub in a circular motion all pressure areas with tip of fingers, or pad of one area at a time",
+      "Assess patient’s skin"
+    ],
+    "answer": "Roll patient onto the side, left/right lateral or prone, with head turned to one side",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Roll patient onto the side, left/right lateral or prone, with head turned to one side",
+      "Examine and note any abnormality",
+      "Protect bed with long mackintosh and bath towel/blanket",
+      "Dispose off used items, decontaminate trolley and used linen"
+    ],
+    "answer": "Examine and note any abnormality",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Provide privacy",
+      "Position patient intermittently in any of the following positions at 30° angle: prone, supine, right or left lateral, right or left sim’s",
+      "Clean all pressure areas (back of the head, ears, hand, scapula, sacrum, elbows, hips, buttocks, knees, ankles, heels and toes) with soap and water in a soft towel with gloved hands",
+      "Apply moisturizing cream or barrier cream"
+    ],
+    "answer": "Clean all pressure areas (back of the head, ears, hand, scapula, sacrum, elbows, hips, buttocks, knees, ankles, heels and toes) with soap and water in a soft towel with gloved hands",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Explain procedure to patient",
+      "Rinse and dry skin with a soft dry towel",
+      "Perform hand hygiene",
+      "Knead or rub in a circular motion all pressure areas with tip of fingers, or pad of one area at a time"
+    ],
+    "answer": "Knead or rub in a circular motion all pressure areas with tip of fingers, or pad of one area at a time",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Rinse and dry skin with a soft dry towel",
+      "Pour water into the basin",
+      "Document procedure and report findings",
+      "Examine and note any abnormality"
+    ],
+    "answer": "Rinse and dry skin with a soft dry towel",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Remove long mackintosh and dressing towel",
+      "Ensure skin is dry without any moisture",
+      "Groom and dress patient in a clean clothing",
+      "Remove patient’s bedclothes and cover with a sheet"
+    ],
+    "answer": "Ensure skin is dry without any moisture",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Rinse and dry skin with a soft dry towel",
+      "Set trolley and send to patient bedside",
+      "Apply moisturizing cream or barrier cream",
+      "Assess patient’s skin"
+    ],
+    "answer": "Apply moisturizing cream or barrier cream",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Roll patient onto the side, left/right lateral or prone, with head turned to one side",
+      "Inform the appropriate officer of any abnormality",
+      "Clean all pressure areas (back of the head, ears, hand, scapula, sacrum, elbows, hips, buttocks, knees, ankles, heels and toes) with soap and water in a soft towel with gloved hands",
+      "Groom and dress patient in a clean clothing"
+    ],
+    "answer": "Groom and dress patient in a clean clothing",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Position patient intermittently in any of the following positions at 30° angle: prone, supine, right or left lateral, right or left sim’s",
+      "Groom and dress patient in a clean clothing",
+      "Protect bed with long mackintosh and bath towel/blanket",
+      "Dispose off used items, decontaminate trolley and used linen"
+    ],
+    "answer": "Position patient intermittently in any of the following positions at 30° angle: prone, supine, right or left lateral, right or left sim’s",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Provide privacy",
+      "Remove long mackintosh and dressing towel",
+      "Perform hand hygiene",
+      "Ensure skin is dry without any moisture"
+    ],
+    "answer": "Remove long mackintosh and dressing towel",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Explain procedure to patient",
+      "Knead or rub in a circular motion all pressure areas with tip of fingers, or pad of one area at a time",
+      "Dispose off used items, decontaminate trolley and used linen",
+      "Examine and note any abnormality"
+    ],
+    "answer": "Dispose off used items, decontaminate trolley and used linen",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Remove long mackintosh and dressing towel",
+      "Roll patient onto the side, left/right lateral or prone, with head turned to one side",
+      "Document procedure and report findings",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Document procedure and report findings",
+      "Set trolley and send to patient bedside",
+      "Apply moisturizing cream or barrier cream",
+      "Remove patient’s bedclothes and cover with a sheet"
+    ],
+    "answer": "Document procedure and report findings",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of TREATMENT OF PRESSURE AREAS?",
+    "options": [
+      "Rinse and dry skin with a soft dry towel",
+      "Inform the appropriate officer of any abnormality",
+      "Clean all pressure areas (back of the head, ears, hand, scapula, sacrum, elbows, hips, buttocks, knees, ankles, heels and toes) with soap and water in a soft towel with gloved hands",
+      "Assess patient’s skin"
+    ],
+    "answer": "Inform the appropriate officer of any abnormality",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  }
+]
   },
 
   {
@@ -549,16 +1026,14 @@ export const rgnBatch01: Procedure[] = [
 
   {
     id: "rgn-005",
-    title: "Mouth Care",
+    title: "COMPLETE MOUTH CARE",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Provision of oral hygiene to maintain oral cleanliness, comfort and health in patients who require assistance.",
-    purpose: [
-      "Maintain oral hygiene.",
-      "Promote comfort.",
-      "Reduce accumulation of oral debris.",
-      "Support oral health."
-    ],
+      "This is the act of cleaning the buccal cavity of seriously ill, unconscious patients' or those who have difficulty utilizing their upper extremities. This procedure is carried out solely by the nurse.",
+    purpose: [],
     indications: [
       "Patients unable to perform oral hygiene independently.",
       "Unconscious or critically ill patients requiring appropriate oral care.",
@@ -566,25 +1041,44 @@ export const rgnBatch01: Procedure[] = [
       "Patients requiring assisted mouth care."
     ],
     equipment: [
-      "Toothbrush or appropriate oral-care equipment",
-      "Toothpaste where appropriate",
-      "Water",
-      "Kidney dish or appropriate receptacle",
-      "Towel",
-      "Gloves where indicated"
-    ],
+  "1. A tray containing the following:",
+  "a. Two gallipots (for mouth cleaning lotion and cotton wool or gauze)",
+  "b. Two receivers (for used swab and return mouth wash)",
+  "c. Mouth cleaning lotion (e.g. normal saline, sodium bicarbonate, weak strength of hydrogen peroxide, mouthwash)",
+  "d. Padded Spatula",
+  "e. Mouth gag",
+  "f. Artery, sponge or dressing forceps",
+  "g. Dissecting forceps",
+  "h. Bowl for dentures if any",
+  "i. Lip balm e.g. glycerine or vaseline",
+  "j. Orange sticks (toothpick)",
+  "k. Towel and mackintosh",
+  "l. Jaconet cape/adult bib",
+  "m. A jug of water"
+],
     steps: [
-      "Explain the procedure and provide privacy.",
-      "Perform hand hygiene.",
-      "Position the patient safely.",
-      "Protect clothing and bedding.",
-      "Inspect the oral cavity.",
-      "Clean the teeth, gums and tongue appropriately.",
-      "Allow the patient to rinse where appropriate.",
-      "Clean and dry the patient's mouth and surrounding area.",
-      "Dispose of waste appropriately.",
-      "Document relevant findings and care."
-    ],
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient and provide privacy",
+  "Perform hand hygiene",
+  "Prepare tray and take to the patient’s bedside",
+  "Put patient in a suitable position",
+  "Protect patient’s bed linen with mackintosh and towel",
+  "Protect patient’s neck area with the jaconet cape/adult bib",
+  "Use the mouth jag to secure the mouth and position if available",
+  "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
+  "Pour lotion into gallipots",
+  "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
+  "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
+  "Control movement of the tongue with padded spatula",
+  "Use orange sticks to clean in between teeth",
+  "Clean mouth with water or any diluted mouth wash",
+  "Clean lips and apply lip balm e.g. vaseline or glycerin",
+  "Assist patient to resume desirable position",
+  "Dispose off used items, decontaminate, wash and sterilize instruments",
+  "Perform hand hygiene",
+  "Document procedure and findings (manual or electronic)",
+  "Report to appropriate officer"
+],
     precautions: [
       "Use appropriate positioning for patients at risk of aspiration.",
       "Avoid causing trauma to oral tissues.",
@@ -594,57 +1088,238 @@ export const rgnBatch01: Procedure[] = [
     ],
     videoUrl: "https://www.youtube.com/watch?v=SQEjgHODEz0",
     quiz: [
-      {
-        question: "What is a major purpose of mouth care?",
-        options: ["Maintain oral hygiene and comfort", "Increase oral debris", "Prevent communication", "Cause gum trauma"],
-        answer: "Maintain oral hygiene and comfort"
-      },
-      {
-        question: "What should be assessed during mouth care?",
-        options: ["The oral cavity", "The patient's shoes", "The patient's occupation", "The room number only"],
-        answer: "The oral cavity"
-      },
-      {
-        question: "Why is positioning important during oral care?",
-        options: ["It can help reduce aspiration risk", "It increases aspiration risk", "It prevents assessment", "It eliminates the need for hygiene"],
-        answer: "It can help reduce aspiration risk"
-      },
-      {
-        question: "What should be protected during mouth care?",
-        options: ["The patient's clothing and bedding", "Only the bedside table", "The ward door", "The patient's footwear"],
-        answer: "The patient's clothing and bedding"
-      },
-      {
-        question: "What should be avoided?",
-        options: ["Trauma to oral tissues", "Gentle cleaning", "Inspection", "Hand hygiene"],
-        answer: "Trauma to oral tissues"
-      },
-      {
-        question: "What should be used individually?",
-        options: ["Oral-care equipment", "Ward furniture", "The patient's room", "The bed frame"],
-        answer: "Oral-care equipment"
-      },
-      {
-        question: "What should be reported?",
-        options: ["Unusual oral findings", "Normal oral appearance", "Completion of hygiene", "Patient comfort"],
-        answer: "Unusual oral findings"
-      },
-      {
-        question: "What should happen after mouth care?",
-        options: ["Dispose of waste appropriately", "Leave contaminated materials at the bedside", "Reuse disposable materials", "Skip hand hygiene"],
-        answer: "Dispose of waste appropriately"
-      },
-      {
-        question: "Which area is included in oral cleaning?",
-        options: ["Teeth, gums and tongue", "Only the forehead", "Only the hands", "Only the ears"],
-        answer: "Teeth, gums and tongue"
-      },
-      {
-        question: "What should be documented when relevant?",
-        options: ["Findings and care provided", "Only the patient's age", "Only the room number", "Nothing"],
-        answer: "Findings and care provided"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Put patient in a suitable position",
+      "Clean lips and apply lip balm e.g. vaseline or glycerin",
+      "Use the mouth jag to secure the mouth and position if available"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Clean mouth with water or any diluted mouth wash",
+      "Explain procedure to patient and provide privacy",
+      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
+      "Prepare tray and take to the patient’s bedside"
+    ],
+    "answer": "Explain procedure to patient and provide privacy",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
+      "Explain procedure to patient and provide privacy",
+      "Perform hand hygiene",
+      "Document procedure and findings (manual or electronic)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Protect patient’s neck area with the jaconet cape/adult bib",
+      "Dispose off used items, decontaminate, wash and sterilize instruments",
+      "Pour lotion into gallipots",
+      "Prepare tray and take to the patient’s bedside"
+    ],
+    "answer": "Prepare tray and take to the patient’s bedside",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Put patient in a suitable position",
+      "Use orange sticks to clean in between teeth",
+      "Protect patient’s bed linen with mackintosh and towel",
+      "Assist patient to resume desirable position"
+    ],
+    "answer": "Put patient in a suitable position",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Prepare tray and take to the patient’s bedside",
+      "Protect patient’s bed linen with mackintosh and towel",
+      "Establish rapport (Refer to steps)",
+      "Control movement of the tongue with padded spatula"
+    ],
+    "answer": "Protect patient’s bed linen with mackintosh and towel",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Report to appropriate officer",
+      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
+      "Protect patient’s neck area with the jaconet cape/adult bib",
+      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any"
+    ],
+    "answer": "Protect patient’s neck area with the jaconet cape/adult bib",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Clean lips and apply lip balm e.g. vaseline or glycerin",
+      "Protect patient’s neck area with the jaconet cape/adult bib",
+      "Document procedure and findings (manual or electronic)",
+      "Use the mouth jag to secure the mouth and position if available"
+    ],
+    "answer": "Use the mouth jag to secure the mouth and position if available",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
+      "Perform hand hygiene",
+      "Clean mouth with water or any diluted mouth wash",
+      "Protect patient’s bed linen with mackintosh and towel"
+    ],
+    "answer": "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Use orange sticks to clean in between teeth",
+      "Pour lotion into gallipots",
+      "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
+      "Explain procedure to patient and provide privacy"
+    ],
+    "answer": "Pour lotion into gallipots",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
+      "Establish rapport (Refer to steps)",
+      "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
+      "Dispose off used items, decontaminate, wash and sterilize instruments"
+    ],
+    "answer": "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Put patient in a suitable position",
+      "Assist patient to resume desirable position",
+      "Use the mouth jag to secure the mouth and position if available",
+      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently"
+    ],
+    "answer": "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Control movement of the tongue with padded spatula",
+      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
+      "Prepare tray and take to the patient’s bedside",
+      "Clean lips and apply lip balm e.g. vaseline or glycerin"
+    ],
+    "answer": "Control movement of the tongue with padded spatula",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Perform hand hygiene",
+      "Use orange sticks to clean in between teeth",
+      "Report to appropriate officer",
+      "Take swab with forceps, dips into cleansing lotion and squeezes out excess"
+    ],
+    "answer": "Use orange sticks to clean in between teeth",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Document procedure and findings (manual or electronic)",
+      "Pour lotion into gallipots",
+      "Clean mouth with water or any diluted mouth wash",
+      "Protect patient’s neck area with the jaconet cape/adult bib"
+    ],
+    "answer": "Clean mouth with water or any diluted mouth wash",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Use orange sticks to clean in between teeth",
+      "Protect patient’s bed linen with mackintosh and towel",
+      "Dispose off used items, decontaminate, wash and sterilize instruments",
+      "Clean lips and apply lip balm e.g. vaseline or glycerin"
+    ],
+    "answer": "Clean lips and apply lip balm e.g. vaseline or glycerin",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Assist patient to resume desirable position",
+      "Explain procedure to patient and provide privacy",
+      "Control movement of the tongue with padded spatula",
+      "Put patient in a suitable position"
+    ],
+    "answer": "Assist patient to resume desirable position",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
+      "Dispose off used items, decontaminate, wash and sterilize instruments",
+      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Dispose off used items, decontaminate, wash and sterilize instruments",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
+      "Report to appropriate officer",
+      "Perform hand hygiene",
+      "Assist patient to resume desirable position"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Prepare tray and take to the patient’s bedside",
+      "Clean mouth with water or any diluted mouth wash",
+      "Protect patient’s neck area with the jaconet cape/adult bib",
+      "Document procedure and findings (manual or electronic)"
+    ],
+    "answer": "Document procedure and findings (manual or electronic)",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of COMPLETE MOUTH CARE?",
+    "options": [
+      "Report to appropriate officer",
+      "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
+      "Perform hand hygiene",
+      "Use orange sticks to clean in between teeth"
+    ],
+    "answer": "Report to appropriate officer",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  }
+]
   },
 
   {
@@ -947,41 +1622,68 @@ export const rgnBatch01: Procedure[] = [
 
   {
     id: "rgn-009",
-    title: "Basic Wound Care and Dressing",
+    title: "DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Assessment and nursing care of wounds using appropriate infection-prevention and dressing principles within the nurse's competence and applicable protocol.",
-    purpose: [
-      "Promote wound healing.",
-      "Protect the wound.",
-      "Reduce contamination and infection risk.",
-      "Assess wound progress."
-    ],
+      "It is the process of aseptically caring for an injury to body tissues or break in the continuity of the skin or mucous membrane.",
+    purpose: [],
     indications: [
       "Patients with wounds requiring nursing care.",
       "Wounds requiring dressing changes.",
       "Post-operative wounds according to applicable orders and protocols."
     ],
     equipment: [
-      "Appropriate dressing materials",
-      "Gloves",
-      "Sterile supplies where required",
-      "Waste receptacle",
-      "Cleaning solution according to protocol",
-      "Documentation materials"
-    ],
+  "A trolley containing the following:",
+  "Top shelf ( a Sterile field with the following sterile items)",
+  "Two (2) or three (3) gallipots for lotions",
+  "Two (2) kidney dish",
+  "Two (2) pairs of dressing forceps",
+  "Two (2) pairs of dissecting forceps",
+  "Sinus forceps",
+  "Probe",
+  "Bottom shelf with the following:",
+  "Dressing lotion",
+  "Sterile cotton and gauze swab in a drum/ pack",
+  "Mackintosh and dressing towel",
+  "Adhesive tape/strip",
+  "Bandage",
+  "Scissors",
+  "Apron",
+  "Disposable gloves",
+  "Sterile gloves",
+  "Receiver for used dressings"
+],
     steps: [
-      "Verify the patient's identity and wound-care plan.",
-      "Explain the procedure and provide privacy.",
-      "Perform hand hygiene and prepare equipment.",
-      "Assess the wound and surrounding skin.",
-      "Remove the existing dressing appropriately.",
-      "Dispose of contaminated materials safely.",
-      "Clean the wound according to the prescribed or approved technique.",
-      "Apply the appropriate dressing.",
-      "Ensure the patient is comfortable.",
-      "Document wound findings, dressing applied and patient response."
-    ],
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Ensure privacy",
+  "Put on mask perform hand hygiene",
+  "Prepare and send trolley aseptically to the patient’s bedside",
+  "Assist patient into a desirable position",
+  "Protect bed clothes with mackintosh and dressing towel",
+  "Assembly instruments and pours lotions into gallipots",
+  "Perform hand hygiene",
+  "Wear disposable gloves",
+  "Expose area of wound and removes plaster or bandage",
+  "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
+  "Perform hand hygiene",
+  "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
+  "Where necessary gently irrigates wound with syringe and saline",
+  "Clean or dab wound with series of swabs until wound is clean",
+  "Clean the surrounding skin",
+  "Apply sterile dressing using prescribed dressing lotion",
+  "Add enough sterile dressing and secures into position or leaves exposed where necessary",
+  "Apply adhesive tape or bandage to the site where necessary",
+  "Remove mackintosh and dressing towel",
+  "Reposition patient in bed",
+  "Inform patient about the state of the wound",
+  "Dispose off used items, decontaminate used instruments and trolley",
+  "Perform hand hygiene",
+  "Documents and reports state of the wound in the nurse notes (manually or electronically)"
+],
     precautions: [
       "Use appropriate infection-prevention measures.",
       "Avoid unnecessary contamination.",
@@ -991,57 +1693,293 @@ export const rgnBatch01: Procedure[] = [
     ],
     videoUrl: "https://www.youtube.com/watch?v=VC0O-7BQSO8",
     quiz: [
-      {
-        question: "What should be assessed during wound care?",
-        options: ["The wound and surrounding skin", "The patient's shoes", "The patient's occupation", "The room decoration"],
-        answer: "The wound and surrounding skin"
-      },
-      {
-        question: "What is one purpose of a wound dressing?",
-        options: ["Protect the wound", "Increase contamination", "Cause trauma", "Prevent assessment"],
-        answer: "Protect the wound"
-      },
-      {
-        question: "What should be performed before preparing the wound?",
-        options: ["Hand hygiene", "Eating", "Changing the patient's identity", "Removing all equipment"],
-        answer: "Hand hygiene"
-      },
-      {
-        question: "What should happen to contaminated dressing materials?",
-        options: ["Dispose of them safely", "Place them on a clean trolley", "Reuse them", "Keep them on the patient's bed"],
-        answer: "Dispose of them safely"
-      },
-      {
-        question: "What should be reported?",
-        options: ["Signs of infection or deterioration", "Normal healing only", "The patient's favourite food", "The room number"],
-        answer: "Signs of infection or deterioration"
-      },
-      {
-        question: "Why is wound assessment important?",
-        options: ["To monitor healing and identify problems", "To prevent documentation", "To increase contamination", "To delay treatment"],
-        answer: "To monitor healing and identify problems"
-      },
-      {
-        question: "What should determine the wound-care technique?",
-        options: ["The applicable prescription or approved protocol", "Personal preference only", "The patient's clothing", "The ward television"],
-        answer: "The applicable prescription or approved protocol"
-      },
-      {
-        question: "What should be documented after dressing?",
-        options: ["Wound findings and dressing applied", "Only the patient's age", "Only the room number", "Nothing"],
-        answer: "Wound findings and dressing applied"
-      },
-      {
-        question: "Which principle reduces contamination?",
-        options: ["Appropriate infection-prevention practice", "Reusing dirty equipment", "Touching sterile materials unnecessarily", "Ignoring hand hygiene"],
-        answer: "Appropriate infection-prevention practice"
-      },
-      {
-        question: "What is an important outcome of wound care?",
-        options: ["Support wound healing", "Increase infection risk", "Prevent observation", "Cause additional injury"],
-        answer: "Support wound healing"
-      }
-    ]
+  {
+    "question": "Which action is listed as step 1 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Prepare and send trolley aseptically to the patient’s bedside",
+      "Clean the surrounding skin",
+      "Put on mask perform hand hygiene"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Expose area of wound and removes plaster or bandage",
+      "Explain procedure to patient (Refer to steps)",
+      "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
+      "Dispose off used items, decontaminate used instruments and trolley"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Protect bed clothes with mackintosh and dressing towel",
+      "Add enough sterile dressing and secures into position or leaves exposed where necessary",
+      "Ensure privacy",
+      "Apply adhesive tape or bandage to the site where necessary"
+    ],
+    "answer": "Ensure privacy",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Explain procedure to patient (Refer to steps)",
+      "Where necessary gently irrigates wound with syringe and saline",
+      "Establish rapport (Refer to steps)",
+      "Put on mask perform hand hygiene"
+    ],
+    "answer": "Put on mask perform hand hygiene",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Prepare and send trolley aseptically to the patient’s bedside",
+      "Wear disposable gloves",
+      "Reposition patient in bed",
+      "Perform hand hygiene"
+    ],
+    "answer": "Prepare and send trolley aseptically to the patient’s bedside",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Clean the surrounding skin",
+      "Assist patient into a desirable position",
+      "Apply sterile dressing using prescribed dressing lotion",
+      "Put on mask perform hand hygiene"
+    ],
+    "answer": "Assist patient into a desirable position",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
+      "Dispose off used items, decontaminate used instruments and trolley",
+      "Protect bed clothes with mackintosh and dressing towel",
+      "Documents and reports state of the wound in the nurse notes (manually or electronically)"
+    ],
+    "answer": "Protect bed clothes with mackintosh and dressing towel",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Protect bed clothes with mackintosh and dressing towel",
+      "Apply adhesive tape or bandage to the site where necessary",
+      "Assist patient into a desirable position",
+      "Assembly instruments and pours lotions into gallipots"
+    ],
+    "answer": "Assembly instruments and pours lotions into gallipots",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Perform hand hygiene",
+      "Clean or dab wound with series of swabs until wound is clean",
+      "Explain procedure to patient (Refer to steps)",
+      "Where necessary gently irrigates wound with syringe and saline"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Reposition patient in bed",
+      "Wear disposable gloves",
+      "Inform patient about the state of the wound",
+      "Perform hand hygiene"
+    ],
+    "answer": "Wear disposable gloves",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Apply sterile dressing using prescribed dressing lotion",
+      "Put on mask perform hand hygiene",
+      "Expose area of wound and removes plaster or bandage",
+      "Prepare and send trolley aseptically to the patient’s bedside"
+    ],
+    "answer": "Expose area of wound and removes plaster or bandage",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
+      "Documents and reports state of the wound in the nurse notes (manually or electronically)",
+      "Expose area of wound and removes plaster or bandage",
+      "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard"
+    ],
+    "answer": "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Perform hand hygiene",
+      "Remove mackintosh and dressing towel",
+      "Protect bed clothes with mackintosh and dressing towel",
+      "Apply adhesive tape or bandage to the site where necessary"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Explain procedure to patient (Refer to steps)",
+      "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
+      "Ensure privacy",
+      "Clean or dab wound with series of swabs until wound is clean"
+    ],
+    "answer": "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Inform patient about the state of the wound",
+      "Perform hand hygiene",
+      "Where necessary gently irrigates wound with syringe and saline",
+      "Wear disposable gloves"
+    ],
+    "answer": "Where necessary gently irrigates wound with syringe and saline",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Add enough sterile dressing and secures into position or leaves exposed where necessary",
+      "Prepare and send trolley aseptically to the patient’s bedside",
+      "Apply sterile dressing using prescribed dressing lotion",
+      "Clean or dab wound with series of swabs until wound is clean"
+    ],
+    "answer": "Clean or dab wound with series of swabs until wound is clean",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Clean the surrounding skin",
+      "Establish rapport (Refer to steps)",
+      "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
+      "Documents and reports state of the wound in the nurse notes (manually or electronically)"
+    ],
+    "answer": "Clean the surrounding skin",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Protect bed clothes with mackintosh and dressing towel",
+      "Apply sterile dressing using prescribed dressing lotion",
+      "Assembly instruments and pours lotions into gallipots",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Apply sterile dressing using prescribed dressing lotion",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Ensure privacy",
+      "Where necessary gently irrigates wound with syringe and saline",
+      "Add enough sterile dressing and secures into position or leaves exposed where necessary",
+      "Clean or dab wound with series of swabs until wound is clean"
+    ],
+    "answer": "Add enough sterile dressing and secures into position or leaves exposed where necessary",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Dispose off used items, decontaminate used instruments and trolley",
+      "Wear disposable gloves",
+      "Inform patient about the state of the wound",
+      "Apply adhesive tape or bandage to the site where necessary"
+    ],
+    "answer": "Apply adhesive tape or bandage to the site where necessary",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Remove mackintosh and dressing towel",
+      "Assist patient into a desirable position",
+      "Apply sterile dressing using prescribed dressing lotion",
+      "Prepare and send trolley aseptically to the patient’s bedside"
+    ],
+    "answer": "Remove mackintosh and dressing towel",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
+      "Reposition patient in bed",
+      "Dab or clean wound with sterile forceps/gloves using prescribed lotion from within outwards",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Reposition patient in bed",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Assembly instruments and pours lotions into gallipots",
+      "Apply adhesive tape or bandage to the site where necessary",
+      "Inform patient about the state of the wound",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Inform patient about the state of the wound",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Put on mask perform hand hygiene",
+      "Clean or dab wound with series of swabs until wound is clean",
+      "Ensure privacy",
+      "Dispose off used items, decontaminate used instruments and trolley"
+    ],
+    "answer": "Dispose off used items, decontaminate used instruments and trolley",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Perform hand hygiene",
+      "Remove soiled dressing with dissecting forceps or disposable gloves, assess for the type of exudate and discard",
+      "Dispose off used items, decontaminate used instruments and trolley",
+      "Expose area of wound and removes plaster or bandage"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 26 of DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)?",
+    "options": [
+      "Apply sterile dressing using prescribed dressing lotion",
+      "Documents and reports state of the wound in the nurse notes (manually or electronically)",
+      "Add enough sterile dressing and secures into position or leaves exposed where necessary",
+      "Assist patient into a desirable position"
+    ],
+    "answer": "Documents and reports state of the wound in the nurse notes (manually or electronically)",
+    "explanation": "This checks recall of step 26 in the procedure sequence."
+  }
+]
   },
 
   {
