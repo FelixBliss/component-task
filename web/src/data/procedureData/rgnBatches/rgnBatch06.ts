@@ -1032,15 +1032,14 @@ const rgn_056Quiz: ProcedureQuizQuestion[] = [
 export const rgnBatch06: Procedure[] = [
   {
     id: "rgn-048",
-    title: "Administration of Intrathecal Medication",
+    title: "ADMINISTRATION OF INTRATHECAL MEDICATION",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Intrathecal medication is introduced into the cerebrospinal fluid within the spinal canal. It is a high-risk neuraxial procedure, not an ordinary independent nursing task. The appropriately trained and authorized practitioner performs the administration according to institutional policy and professional scope; the nurse prepares, assists, monitors and escalates within competence.",
-    purpose: [
-      "Deliver a specifically prescribed medication into the intrathecal space",
-      "Provide selected spinal analgesic, anaesthetic or other specialist therapy",
-      "Support safe observation of the patient's neurological and physiological response",
-    ],
+      "This is the administration of medication into the spinal canal or the subarachnoid space which gradually reaches the cerebro-spinal fluid. This route of medication administration is mostly performed by a physician or an anaesthetist. The nurse therefore has the responsibility to prepare trolley, assist and observe the patient throughout the procedure.",
+    purpose: [],
     indications: [
       "A specialist prescriber has prescribed an intrathecal medication for an appropriate clinical indication",
       "Intrathecal analgesia or anaesthesia is required under an approved service protocol",
@@ -1052,28 +1051,45 @@ export const rgnBatch06: Procedure[] = [
       "Explain the roles, positioning, monitoring and possible sensations to the patient; provide privacy and emotional support.",
     ],
     equipment: [
-      "Prescribed intrathecal medication in route-specific packaging",
-      "Approved intrathecal or spinal procedure pack and sterile field",
-      "Sterile gloves, gown, mask, cap and appropriate drapes",
-      "Skin antiseptic, sterile gauze, dressing and local anaesthetic when prescribed",
-      "Sterile syringes, needles and spinal needle selected by the authorized practitioner",
-      "Monitoring equipment for oxygen saturation, blood pressure, pulse and respiration",
-      "Oxygen, suction, resuscitation equipment and emergency medicines according to policy",
-      "Sharps container, waste receptacle and documentation forms",
-    ],
+  "A trolley containing the following:",
+  "Top Shelf: A sterile field with two sterile gallipots",
+  "Bottom Shelf",
+  "Sterile and epidural pack (if available)",
+  "Local anaesthetic agent",
+  "Antimicrobial solution",
+  "Sterile gloves",
+  "Sterile cotton wool swab",
+  "Spinal cannula different sizes",
+  "Medication",
+  "Adhesive tape/strip",
+  "Receiver for used items",
+  "Syringes and needles",
+  "Vital signs tray",
+  "Sharps container"
+],
     steps: [
-      "Confirm the procedure, authorization, prescription, patient identity, allergies, consent and required independent medication checks.",
-      "Ensure emergency equipment, monitoring, assistance and a clear escalation plan are immediately available.",
-      "Ask the patient to void when appropriate, record baseline observations and position safely with privacy and support.",
-      "Perform hand hygiene and assist the authorized practitioner to prepare a sterile field using strict aseptic non-touch technique.",
-      "Separate and clearly label intrathecal medication; prevent access to medicines intended for other routes and follow independent-check policy.",
-      "Support the patient in the prescribed sitting or lateral position, maintain alignment and provide reassurance without touching sterile areas.",
-      "Observe the authorized practitioner during the procedure, provide equipment within scope and maintain sterile precautions.",
-      "Monitor consciousness, respiration, oxygen saturation, blood pressure, pulse, pain and neurological status throughout and afterward.",
-      "Escalate immediately for respiratory depression, hypotension, altered consciousness, new neurological deficit, severe headache, allergic reaction or other deterioration.",
-      "After needle removal, apply the prescribed sterile dressing, dispose of sharps safely, clean equipment and perform hand hygiene.",
-      "Reposition the patient as ordered, continue post-procedure observations and document all medication, checks, personnel, response and escalation.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain the procedure to the patient",
+  "Obtain verbal or formal consent from patient and relatives",
+  "Reassure him/her to gain co-operation",
+  "Provide privacy",
+  "Instruct patient to void before the procedure",
+  "Perform hand hygiene",
+  "Prepare sterile trolley and send to the bedside",
+  "Check patient’s vital signs",
+  "Provide adequate lightening at the puncture site",
+  "Assist patient into a required position i.e. lying or sitting and supports him/her",
+  "Open the equipment tray taking care not to contaminate",
+  "Continue to support, observe and reassure patient throughout the procedure",
+  "Wear sterile gloves and applies sterile dressing when needle is withdrawn",
+  "Secure punctured site firmly with a sterile dry swab and an adhesive tape",
+  "Allow patient to lie flat on the back and make him/her comfortable",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate trolley",
+  "Perform hand hygiene",
+  "Observe patient continuously for therapeutic and adverse effects"
+],
     precautions: [
       "Intrathecal administration must only be performed by appropriately trained and authorized practitioners under institutional policy and applicable professional scope.",
       "Never administer a medication unless its intrathecal suitability, label, dose, concentration and route have been independently verified as required.",
@@ -1103,44 +1119,283 @@ export const rgnBatch06: Procedure[] = [
       "Keep the medication and documentation traceable from preparation through post-procedure monitoring.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=oNCObzqSMa0",
-    quiz: rgn_048Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Reassure him/her to gain co-operation",
+      "Secure punctured site firmly with a sterile dry swab and an adhesive tape",
+      "Perform hand hygiene"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Wear sterile gloves and applies sterile dressing when needle is withdrawn",
+      "Establish rapport (Refer to steps)",
+      "Assist patient into a required position i.e. lying or sitting and supports him/her",
+      "Obtain verbal or formal consent from patient and relatives"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Provide adequate lightening at the puncture site",
+      "Establish rapport (Refer to steps)",
+      "Explain the procedure to the patient",
+      "Dispose off used items and decontaminate trolley"
+    ],
+    "answer": "Explain the procedure to the patient",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Instruct patient to void before the procedure",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Check patient’s vital signs",
+      "Obtain verbal or formal consent from patient and relatives"
+    ],
+    "answer": "Obtain verbal or formal consent from patient and relatives",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Reassure him/her to gain co-operation",
+      "Continue to support, observe and reassure patient throughout the procedure",
+      "Provide privacy",
+      "Allow patient to lie flat on the back and make him/her comfortable"
+    ],
+    "answer": "Reassure him/her to gain co-operation",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Obtain verbal or formal consent from patient and relatives",
+      "Provide privacy",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Open the equipment tray taking care not to contaminate"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Observe patient continuously for therapeutic and adverse effects",
+      "Assist patient into a required position i.e. lying or sitting and supports him/her",
+      "Instruct patient to void before the procedure",
+      "Prepare sterile trolley and send to the bedside"
+    ],
+    "answer": "Instruct patient to void before the procedure",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Secure punctured site firmly with a sterile dry swab and an adhesive tape",
+      "Instruct patient to void before the procedure",
+      "Dispose off used items and decontaminate trolley",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Prepare sterile trolley and send to the bedside",
+      "Explain the procedure to the patient",
+      "Wear sterile gloves and applies sterile dressing when needle is withdrawn",
+      "Provide privacy"
+    ],
+    "answer": "Prepare sterile trolley and send to the bedside",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Continue to support, observe and reassure patient throughout the procedure",
+      "Check patient’s vital signs",
+      "Provide adequate lightening at the puncture site",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Check patient’s vital signs",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Prepare sterile trolley and send to the bedside",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Provide adequate lightening at the puncture site",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "Provide adequate lightening at the puncture site",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Reassure him/her to gain co-operation",
+      "Allow patient to lie flat on the back and make him/her comfortable",
+      "Perform hand hygiene",
+      "Assist patient into a required position i.e. lying or sitting and supports him/her"
+    ],
+    "answer": "Assist patient into a required position i.e. lying or sitting and supports him/her",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Open the equipment tray taking care not to contaminate",
+      "Assist patient into a required position i.e. lying or sitting and supports him/her",
+      "Obtain verbal or formal consent from patient and relatives",
+      "Secure punctured site firmly with a sterile dry swab and an adhesive tape"
+    ],
+    "answer": "Open the equipment tray taking care not to contaminate",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Explain the procedure to the patient",
+      "Continue to support, observe and reassure patient throughout the procedure",
+      "Observe patient continuously for therapeutic and adverse effects",
+      "Provide adequate lightening at the puncture site"
+    ],
+    "answer": "Continue to support, observe and reassure patient throughout the procedure",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Dispose off used items and decontaminate trolley",
+      "Check patient’s vital signs",
+      "Wear sterile gloves and applies sterile dressing when needle is withdrawn",
+      "Instruct patient to void before the procedure"
+    ],
+    "answer": "Wear sterile gloves and applies sterile dressing when needle is withdrawn",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Continue to support, observe and reassure patient throughout the procedure",
+      "Provide privacy",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Secure punctured site firmly with a sterile dry swab and an adhesive tape"
+    ],
+    "answer": "Secure punctured site firmly with a sterile dry swab and an adhesive tape",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Allow patient to lie flat on the back and make him/her comfortable",
+      "Establish rapport (Refer to steps)",
+      "Open the equipment tray taking care not to contaminate",
+      "Reassure him/her to gain co-operation"
+    ],
+    "answer": "Allow patient to lie flat on the back and make him/her comfortable",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Assist patient into a required position i.e. lying or sitting and supports him/her",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Prepare sterile trolley and send to the bedside",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Observe patient continuously for therapeutic and adverse effects",
+      "Dispose off used items and decontaminate trolley",
+      "Secure punctured site firmly with a sterile dry swab and an adhesive tape"
+    ],
+    "answer": "Dispose off used items and decontaminate trolley",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Obtain verbal or formal consent from patient and relatives",
+      "Secure punctured site firmly with a sterile dry swab and an adhesive tape",
+      "Instruct patient to void before the procedure",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF INTRATHECAL MEDICATION?",
+    "options": [
+      "Observe patient continuously for therapeutic and adverse effects",
+      "Provide adequate lightening at the puncture site",
+      "Explain the procedure to the patient",
+      "Continue to support, observe and reassure patient throughout the procedure"
+    ],
+    "answer": "Observe patient continuously for therapeutic and adverse effects",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-049",
-    title: "Administration of Topical Medication",
+    title: "ADMINISTRATION OF TOPICAL MEDICATION",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Topical medication is applied to the skin or another prescribed external surface to produce a local effect, protect tissue or provide selected transdermal treatment. Safe administration requires site assessment, correct medication and amount, gloves, contamination control, patient teaching and documentation.",
-    purpose: [
-      "Treat or protect a local skin or external condition",
-      "Provide prescribed anti-inflammatory, antimicrobial, emollient, analgesic or other topical therapy",
-      "Deliver a prescribed transdermal medication when indicated",
-    ],
+      "This is the application of medication directly on the skin and the mucous membrane. These medications are available in the form of creams, lotions, ointment and patches.",
+    purpose: [],
     indications: [
       "A valid prescription for cream, ointment, lotion, gel, powder, solution or transdermal patch",
       "A diagnosed or assessed condition appropriate for topical therapy",
       "A prescribed external application site that is accessible and suitable",
     ],
     equipment: [
-      "Prescribed topical medication and treatment chart",
-      "Clean tray, disposable applicator or gauze and measuring device when required",
-      "Disposable gloves and additional PPE according to risk assessment",
-      "Normal saline or approved cleansing materials when site cleaning is prescribed",
-      "Mackintosh or protective towel, dressing or cover if ordered",
-      "Waste receptacle and hand hygiene supplies",
-    ],
+  "A tray containing the following:",
+  "Medication",
+  "Disposable gloves",
+  "Gallipot containing sterile swabs",
+  "Receiver for used swabs",
+  "Mackintosh and dressing towel",
+  "Treatment chart (manual or electronic)"
+],
     steps: [
-      "Verify the patient, medication, site, amount, route, timing, expiry, allergies and prescription.",
-      "Assess the skin or external surface for redness, broken skin, drainage, pain, infection, previous reaction and treatment response.",
-      "Explain the procedure, obtain consent, provide privacy and expose only the area to be treated.",
-      "Perform hand hygiene, prepare the medication and put on gloves and other PPE as indicated.",
-      "Clean and dry the site only as directed, using a new clean swab for each area and avoiding unnecessary friction.",
-      "Apply the prescribed amount evenly with a clean applicator or gloved hand, avoiding contamination of the container.",
-      "For a patch, remove the previous patch if due, check the site, apply to the prescribed clean dry area and record application time.",
-      "Cover the site only when ordered, remove gloves safely, perform hand hygiene and make the patient comfortable.",
-      "Observe for local irritation or systemic symptoms, dispose of waste and decontaminate reusable equipment.",
-      "Document medication, amount, site, time, skin findings, teaching, response and any abnormality reported.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Prepare tray and send to bedside",
+  "Provide privacy and expose the area",
+  "Assess the site for application of medication",
+  "Cover the bed with mackintosh and dressing towel",
+  "Perform hand hygiene and wear gloves",
+  "Dab skin area with a dry swab to dry and remove flicking skin",
+  "Apply topical agents evenly on the skin and rub if necessary",
+  "Remove glove and perform hand hygiene",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate tray",
+  "Perform hand hygiene",
+  "Report to appropriate officer"
+],
     precautions: [
       "Do not apply to an infected, broken or unexpectedly damaged site without appropriate clinical direction.",
       "Check allergy history and avoid transferring medication to the eyes, mouth, mucosa or another person.",
@@ -1170,43 +1425,243 @@ export const rgnBatch06: Procedure[] = [
       "Use an interpreter or communication aid when needed for safe self-care teaching.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=ZJGNFg6ccYM",
-    quiz: rgn_049Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Report to appropriate officer",
+      "Apply topical agents evenly on the skin and rub if necessary"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Establish rapport (Refer to steps)",
+      "Apply topical agents evenly on the skin and rub if necessary",
+      "Assess the site for application of medication"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Dab skin area with a dry swab to dry and remove flicking skin",
+      "Explain procedure",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Explain procedure",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Dab skin area with a dry swab to dry and remove flicking skin",
+      "Provide privacy and expose the area",
+      "Establish rapport (Refer to steps)",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Establish rapport (Refer to steps)",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Perform hand hygiene and wear gloves"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Prepare tray and send to bedside",
+      "Perform hand hygiene and wear gloves",
+      "Perform hand hygiene"
+    ],
+    "answer": "Prepare tray and send to bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Remove glove and perform hand hygiene",
+      "Cover the bed with mackintosh and dressing towel",
+      "Provide privacy and expose the area",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Provide privacy and expose the area",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Cover the bed with mackintosh and dressing towel",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Report to appropriate officer",
+      "Assess the site for application of medication"
+    ],
+    "answer": "Assess the site for application of medication",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Cover the bed with mackintosh and dressing towel",
+      "Report to appropriate officer",
+      "Apply topical agents evenly on the skin and rub if necessary",
+      "Provide privacy and expose the area"
+    ],
+    "answer": "Cover the bed with mackintosh and dressing towel",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Perform hand hygiene and wear gloves",
+      "Provide privacy and expose the area",
+      "Explain procedure"
+    ],
+    "answer": "Perform hand hygiene and wear gloves",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene and wear gloves",
+      "Prepare tray and send to bedside",
+      "Dab skin area with a dry swab to dry and remove flicking skin",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Dab skin area with a dry swab to dry and remove flicking skin",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Prepare tray and send to bedside",
+      "Establish rapport (Refer to steps)",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Apply topical agents evenly on the skin and rub if necessary"
+    ],
+    "answer": "Apply topical agents evenly on the skin and rub if necessary",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Remove glove and perform hand hygiene",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Cover the bed with mackintosh and dressing towel",
+      "Perform hand hygiene"
+    ],
+    "answer": "Remove glove and perform hand hygiene",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Apply topical agents evenly on the skin and rub if necessary",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Perform hand hygiene",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Assess the site for application of medication",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Dispose off used items and decontaminate tray",
+      "Apply topical agents evenly on the skin and rub if necessary"
+    ],
+    "answer": "Dispose off used items and decontaminate tray",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Report to appropriate officer",
+      "Apply topical agents evenly on the skin and rub if necessary",
+      "Perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF TOPICAL MEDICATION?",
+    "options": [
+      "Report to appropriate officer",
+      "Dab skin area with a dry swab to dry and remove flicking skin",
+      "Provide privacy and expose the area",
+      "Explain procedure"
+    ],
+    "answer": "Report to appropriate officer",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-050",
-    title: "Instillation of Eye Drops",
+    title: "INSTILLATION OF EYE DROPS",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Eye-drop instillation delivers a prescribed ophthalmic solution into the lower conjunctival sac. The nurse verifies the correct patient, medication, dose and eye, positions the patient safely, prevents dropper contamination, applies punctal occlusion when appropriate and observes the response.",
-    purpose: [
-      "Provide prescribed local ophthalmic treatment",
-      "Irrigate or lubricate the eye when ordered",
-      "Deliver selected diagnostic or local anaesthetic drops",
-    ],
+      "It is the administration of medication in the form of liquid drop by drop into a body space of cavity.",
+    purpose: [],
     indications: [
       "A valid prescription for an ophthalmic solution or suspension",
       "Treatment of an assessed eye condition or prescribed diagnostic procedure",
       "A patient who can safely cooperate or has appropriate assistance",
     ],
     equipment: [
-      "Prescribed eye drops and medication chart",
-      "Clean tray and sterile gauze or cotton swabs",
-      "Sterile normal saline when cleansing is required",
-      "Disposable gloves when discharge, infection or contact precautions require them",
-      "Tissues, waste receptacle and hand hygiene supplies",
-    ],
+  "A tray containing the following:",
+  "Medication with eye dropper",
+  "Sterile cotton wool swab in a gallipot",
+  "Bottle of sterile 0.9% ophthalmic saline",
+  "Paper towels",
+  "Treatment Chart (Manual or Electronic)"
+],
     steps: [
-      "Verify patient identity, medication, dose, time, expiry, allergies and the correct eye; inspect the bottle and solution.",
-      "Explain the procedure, obtain consent and position the patient sitting or lying with the head supported and slightly extended.",
-      "Perform hand hygiene and apply gloves when indicated; remove discharge from inner to outer canthus using a clean swab for each wipe.",
-      "Ask the patient to look upward, gently pull the lower eyelid down to form the conjunctival sac and avoid pressure on the globe.",
-      "Hold the dropper above the eye without touching the eye, eyelashes, eyelid or any surface.",
-      "Instil the prescribed number of drops into the lower conjunctival sac, then allow the patient to close the eye gently.",
-      "Apply gentle punctal occlusion when clinically appropriate for the medicine and patient, without pressing on the eye.",
-      "If multiple eye medicines are prescribed, allow the required interval between drops and apply ointment after drops when ordered.",
-      "Wipe excess from the skin with clean gauze, remove gloves, perform hand hygiene and dispose of materials safely.",
-      "Observe pain, redness, swelling, vision change, discharge, allergy and tolerance; document the eye treated, response and teaching.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure (Refer to steps)",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Set tray and send to the bedside",
+  "Check medication against the treatment chart (manual or electronic) for the right dosage",
+  "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended",
+  "Perform hand hygiene and wear gloves",
+  "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment",
+  "Ask patient to look at the ceiling and retract lower eye lid with your dominant hand",
+  "Place a wool swab on the lower lid against the lid margin",
+  "Draw up eye drops",
+  "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
+  "Wipe off excess medication with cotton wool, moving from inner to outer canthus",
+  "Ask patient to keep the eye closed for one (1) to two (2) minutes",
+  "Encourage patient to report any irritation or blurriness of vision",
+  "Remove the gloves and perform hand hygiene",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Dispose off used items and decontaminate tray",
+  "Perform hand hygiene",
+  "Report to appropriate officer"
+],
     precautions: [
       "Do not administer to the wrong eye or use a contaminated, expired or cloudy preparation.",
       "Avoid contact between the dropper and the eye or eyelashes; do not share ophthalmic bottles between patients.",
@@ -1236,19 +1691,261 @@ export const rgnBatch06: Procedure[] = [
       "Maintain privacy and use communication support when visual or language barriers affect understanding.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=mVY3dKcvID4",
-    quiz: rgn_050Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Ask patient to keep the eye closed for one (1) to two (2) minutes",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
+      "Establish rapport (Refer to steps)",
+      "Place a wool swab on the lower lid against the lid margin",
+      "Explain procedure (Refer to steps)"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment",
+      "Report to appropriate officer",
+      "Explain procedure (Refer to steps)",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "Explain procedure (Refer to steps)",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Set tray and send to the bedside",
+      "Encourage patient to report any irritation or blurriness of vision",
+      "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Perform hand hygiene",
+      "Draw up eye drops",
+      "Explain procedure (Refer to steps)",
+      "Wipe off excess medication with cotton wool, moving from inner to outer canthus"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Set tray and send to the bedside",
+      "Dispose off used items and decontaminate tray",
+      "Ask patient to look at the ceiling and retract lower eye lid with your dominant hand"
+    ],
+    "answer": "Set tray and send to the bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Remove the gloves and perform hand hygiene",
+      "Perform hand hygiene and wear gloves",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Set tray and send to the bedside"
+    ],
+    "answer": "Check medication against the treatment chart (manual or electronic) for the right dosage",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Ask patient to keep the eye closed for one (1) to two (2) minutes",
+      "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended"
+    ],
+    "answer": "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Perform hand hygiene and wear gloves",
+      "Report to appropriate officer",
+      "Place a wool swab on the lower lid against the lid margin",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Perform hand hygiene and wear gloves",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Perform hand hygiene and wear gloves",
+      "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Perform hand hygiene",
+      "Encourage patient to report any irritation or blurriness of vision",
+      "Ask patient to look at the ceiling and retract lower eye lid with your dominant hand",
+      "Wipe off excess medication with cotton wool, moving from inner to outer canthus"
+    ],
+    "answer": "Ask patient to look at the ceiling and retract lower eye lid with your dominant hand",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Draw up eye drops",
+      "Explain procedure (Refer to steps)",
+      "Place a wool swab on the lower lid against the lid margin"
+    ],
+    "answer": "Place a wool swab on the lower lid against the lid margin",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Draw up eye drops",
+      "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended",
+      "Dispose off used items and decontaminate tray",
+      "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment"
+    ],
+    "answer": "Draw up eye drops",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Remove the gloves and perform hand hygiene",
+      "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
+      "Ask patient to keep the eye closed for one (1) to two (2) minutes",
+      "Set tray and send to the bedside"
+    ],
+    "answer": "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Draw up eye drops",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Wipe off excess medication with cotton wool, moving from inner to outer canthus",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Wipe off excess medication with cotton wool, moving from inner to outer canthus",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Perform hand hygiene and wear gloves",
+      "Report to appropriate officer",
+      "Ask patient to look at the ceiling and retract lower eye lid with your dominant hand",
+      "Ask patient to keep the eye closed for one (1) to two (2) minutes"
+    ],
+    "answer": "Ask patient to keep the eye closed for one (1) to two (2) minutes",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Encourage patient to report any irritation or blurriness of vision",
+      "Ask patient to keep the eye closed for one (1) to two (2) minutes",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)"
+    ],
+    "answer": "Encourage patient to report any irritation or blurriness of vision",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Perform hand hygiene",
+      "Remove the gloves and perform hand hygiene",
+      "Explain procedure (Refer to steps)",
+      "Supporting eye dropper on bridge of patient’s nose instill medication as ordered onto conjunctival space of lower lid"
+    ],
+    "answer": "Remove the gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Place a wool swab on the lower lid against the lid margin",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Clean eye gently with sterile cotton wool swab soaked in saline solution to remove any discharge or previous ointment"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Encourage patient to report any irritation or blurriness of vision",
+      "Assist patient to sit in an upright position or lie down with the neck slightly hyper extended",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Dispose off used items and decontaminate tray",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Perform hand hygiene",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Ask patient to keep the eye closed for one (1) to two (2) minutes",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of INSTILLATION OF EYE DROPS?",
+    "options": [
+      "Draw up eye drops",
+      "Report to appropriate officer",
+      "Ask patient to look at the ceiling and retract lower eye lid with your dominant hand",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Report to appropriate officer",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-051",
-    title: "Administration of Rectal Medication",
+    title: "ADMINISTRATION OF RECTAL MEDICATION",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Rectal medication is introduced through the anus, commonly as a suppository, to achieve a local or systemic therapeutic effect. The nurse protects privacy, checks contraindications, uses lubrication and gentle technique, maintains infection prevention and observes the patient afterward.",
-    purpose: [
-      "Administer a prescribed rectal medication for local or systemic effect",
-      "Provide treatment when the rectal route is prescribed or another route is unsuitable",
-      "Support comfort, retention and therapeutic response",
-    ],
+      "This is the administration of medication through the rectum in the form of suppository.",
+    purpose: [],
     indications: [
       "A valid prescription for a rectal suppository, cream or other rectal medication",
       "Local treatment or systemic absorption is clinically indicated",
@@ -1260,25 +1957,40 @@ export const rgnBatch06: Procedure[] = [
       "Explain the intimate procedure, provide privacy and encourage the patient to empty the bladder when appropriate.",
     ],
     equipment: [
-      "Prescribed rectal medication",
-      "Disposable gloves and additional PPE according to risk assessment",
-      "Water-soluble lubricant",
-      "Mackintosh, disposable pad, tissue and wipes or cleansing supplies",
-      "Receiver or waste receptacle",
-      "Hand hygiene supplies and documentation chart",
-    ],
+  "A tray containing the following:",
+  "Rectal suppository",
+  "Wipes/soap and water",
+  "Tissue",
+  "Disposable gloves",
+  "Mackintosh and dressing towel",
+  "Receiver for used items",
+  "Treatment Chart (Manual or Electronic)"
+],
     steps: [
-      "Identify the patient using approved identifiers, explain the procedure and obtain consent.",
-      "Close the curtain or door, provide draping and position the patient in left lateral or left Sims position with the upper leg flexed.",
-      "Perform hand hygiene, protect the bed and put on gloves.",
-      "Inspect the accessible anal area for bleeding, lesions or unexpected findings and report concerns before proceeding.",
-      "Unwrap the medication, apply suitable water-soluble lubricant and encourage slow breathing to relax the sphincter.",
-      "Separate the buttocks gently and insert the suppository or prescribed applicator through the anal sphincter without force or trauma.",
-      "Withdraw the finger or applicator gently, dispose of it safely and hold the buttocks together briefly if appropriate.",
-      "Remove gloves, perform hand hygiene and assist the patient to remain in the recommended position for the prescribed time.",
-      "Observe for pain, bleeding, dizziness, urgency, allergic reaction and therapeutic response; assist with hygiene and comfort.",
-      "Dispose of equipment, decontaminate reusable items, perform hand hygiene and document the procedure and outcome.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Send tray to bedside",
+  "Provide privacy",
+  "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
+  "Protect bed with mackintosh and dressing towel at the buttocks",
+  "Fold back the top bedclothes to expose the buttocks",
+  "Perform hand hygiene and wear gloves",
+  "Clean anal area with wipes/soap, water and dry",
+  "Remove gloves and perform hand hygiene",
+  "Remove medication, checks label and compares with patient’s treatment chart (manual or electronic)",
+  "Wear gloves, unwraps the suppository",
+  "Encourage the patient to relax by breathing through the mouth",
+  "Insert the suppository gently into the rectum using the gloved index finger and press the patient’s buttocks together for few minutes",
+  "Ask the patient to squeeze the buttock together and remain in the left lateral or supine position for at least ten (10) – fifteen (15) minutes",
+  "Remove gloves and perform hand hygiene",
+  "Dispose off used items and decontaminate tray",
+  "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
+  "Assess patient after thirty (30) minutes for therapeutic effects",
+  "Assist patient into a desirable position"
+],
     precautions: [
       "Do not proceed through severe pain, active rectal bleeding, suspected obstruction or an unreviewed contraindication.",
       "Never force insertion or use a sharp or unsuitable applicator.",
@@ -1308,44 +2020,308 @@ export const rgnBatch06: Procedure[] = [
       "Follow product instructions for position, retention time and post-administration review.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=hLDyZ4QW9Fo",
-    quiz: rgn_051Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Encourage the patient to relax by breathing through the mouth",
+      "Send tray to bedside"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Remove gloves and perform hand hygiene",
+      "Establish rapport (Refer to steps)",
+      "Clean anal area with wipes/soap, water and dry",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Protect bed with mackintosh and dressing towel at the buttocks",
+      "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
+      "Explain procedure",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Explain procedure",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Encourage the patient to relax by breathing through the mouth",
+      "Send tray to bedside",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Clean anal area with wipes/soap, water and dry",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Remove gloves and perform hand hygiene"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
+      "Send tray to bedside",
+      "Dispose off used items and decontaminate tray",
+      "Protect bed with mackintosh and dressing towel at the buttocks"
+    ],
+    "answer": "Send tray to bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Encourage the patient to relax by breathing through the mouth",
+      "Perform hand hygiene",
+      "Provide privacy",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Clean anal area with wipes/soap, water and dry",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Remove gloves and perform hand hygiene",
+      "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed"
+    ],
+    "answer": "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Protect bed with mackintosh and dressing towel at the buttocks",
+      "Dispose off used items and decontaminate tray",
+      "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
+      "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)"
+    ],
+    "answer": "Protect bed with mackintosh and dressing towel at the buttocks",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Fold back the top bedclothes to expose the buttocks",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Encourage the patient to relax by breathing through the mouth"
+    ],
+    "answer": "Fold back the top bedclothes to expose the buttocks",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Remove gloves and perform hand hygiene",
+      "Perform hand hygiene and wear gloves",
+      "Clean anal area with wipes/soap, water and dry"
+    ],
+    "answer": "Perform hand hygiene and wear gloves",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
+      "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
+      "Clean anal area with wipes/soap, water and dry"
+    ],
+    "answer": "Clean anal area with wipes/soap, water and dry",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Remove gloves and perform hand hygiene",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Encourage the patient to relax by breathing through the mouth",
+      "Perform hand hygiene"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Clean anal area with wipes/soap, water and dry",
+      "Remove medication, checks label and compares with patient’s treatment chart (manual or electronic)",
+      "Perform hand hygiene and wear gloves",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Remove medication, checks label and compares with patient’s treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
+      "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
+      "Wear gloves, unwraps the suppository",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Wear gloves, unwraps the suppository",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Wear gloves, unwraps the suppository",
+      "Perform hand hygiene",
+      "Encourage the patient to relax by breathing through the mouth"
+    ],
+    "answer": "Encourage the patient to relax by breathing through the mouth",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Insert the suppository gently into the rectum using the gloved index finger and press the patient’s buttocks together for few minutes",
+      "Perform hand hygiene and wear gloves",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Clean anal area with wipes/soap, water and dry"
+    ],
+    "answer": "Insert the suppository gently into the rectum using the gloved index finger and press the patient’s buttocks together for few minutes",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
+      "Ask the patient to squeeze the buttock together and remain in the left lateral or supine position for at least ten (10) – fifteen (15) minutes",
+      "Dispose off used items and decontaminate tray",
+      "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed"
+    ],
+    "answer": "Ask the patient to squeeze the buttock together and remain in the left lateral or supine position for at least ten (10) – fifteen (15) minutes",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Encourage the patient to relax by breathing through the mouth",
+      "Perform hand hygiene",
+      "Remove gloves and perform hand hygiene",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene and wear gloves",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Clean anal area with wipes/soap, water and dry",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Dispose off used items and decontaminate tray",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
+      "Ask the patient to squeeze the buttock together and remain in the left lateral or supine position for at least ten (10) – fifteen (15) minutes",
+      "Assist patient to a left lateral or left Sim’s position, with the upper leg flexed",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Document procedure on treatment chart (manual or electronic) and nurses notes (manual/electronic)",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Assess patient after thirty (30) minutes for therapeutic effects",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Wear gloves, unwraps the suppository"
+    ],
+    "answer": "Assess patient after thirty (30) minutes for therapeutic effects",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of ADMINISTRATION OF RECTAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Clean anal area with wipes/soap, water and dry",
+      "Assist patient into a desirable position",
+      "Perform hand hygiene and wear gloves"
+    ],
+    "answer": "Assist patient into a desirable position",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-052",
-    title: "Instillation of Ear Drops",
+    title: "INSTILLATION OF EAR DROPS",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Ear-drop instillation places prescribed liquid medication into the external auditory canal. The nurse confirms the correct ear and medicine, assesses the ear, warms the preparation to room temperature when appropriate, positions the patient correctly and monitors for dizziness, nausea or other reactions.",
-    purpose: [
-      "Deliver prescribed local treatment to the external ear canal",
-      "Provide therapeutic, cleansing or local anaesthetic effects when ordered",
-      "Support safe treatment while protecting the ear from contamination and trauma",
-    ],
+      "It is the administration of medication in the form of liquid drop by drop into a body space of cavity.",
+    purpose: [],
     indications: [
       "A valid prescription for ear drops or an approved ear-care solution",
       "An assessed ear condition for which the medication is appropriate",
       "A patient able to cooperate or supported safely during positioning",
     ],
     equipment: [
-      "Prescribed ear drops and medication chart",
-      "Clean tray and dropper",
-      "Sterile gauze or swabs for external discharge",
-      "Water bath or approved method for bringing medication to room temperature",
-      "Disposable gloves when discharge or infection precautions require them",
-      "Tissues, waste receptacle and hand hygiene supplies",
-    ],
+  "A tray containing the following:",
+  "Medicine with a dropper",
+  "Sterile cotton swabs in a gallipot",
+  "Gauze or paper wipes",
+  "Solution bowl for water bath",
+  "Sterile swabs stick",
+  "Receiver for used items",
+  "Treatment Chart (Manual or Electronic)"
+],
     steps: [
-      "Verify patient, medication, dose, time, expiry, allergies and the correct ear; inspect the order and preparation.",
-      "Assess pain, discharge, dizziness, hearing symptoms and the external ear; report unexpected findings.",
-      "Bring the drops to room temperature when appropriate, explain the procedure and obtain consent.",
-      "Perform hand hygiene, position the patient with the affected ear uppermost and support the head.",
-      "For an adult, gently pull the auricle upward and backward; for a young child, pull it downward and backward according to age and policy.",
-      "Clean only visible external discharge with a clean sterile swab; do not probe deeply into the canal.",
-      "Hold the dropper above the ear without touching the auricle or canal and instil the prescribed number of drops.",
-      "Ask the patient to remain with the ear uppermost for the prescribed time, commonly several minutes, unless contraindicated.",
-      "Observe for dizziness, nausea, pain, hearing change, rash or other reaction; assist the patient slowly when sitting or standing.",
-      "Dispose of waste, perform hand hygiene and document the ear treated, medication, response, teaching and abnormalities.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Set tray and send to the bedside",
+  "Check medication against the treatment chart (manual or electronic) for the right dosage",
+  "Confirm the ear for their instillation by first inspecting unaffected ear then the affected ear",
+  "Position patient in sitting up or lying down with the affected ear up",
+  "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
+  "Clean external auditory canal with sterile swab stick if there is a discharge",
+  "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary",
+  "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops",
+  "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+  "Assist patient into a desirable position",
+  "Remain with patient for five (5) minutes if a child",
+  "Dispose off used items and decontaminate tray",
+  "Perform hand hygiene",
+  "Report to appropriate officer"
+],
     precautions: [
       "Do not use a preparation with uncertain label, expiry, contamination or unsuitable storage.",
       "Use additional clinical direction when tympanic membrane perforation, ear surgery, severe pain or heavy discharge is suspected.",
@@ -1375,19 +2351,228 @@ export const rgnBatch06: Procedure[] = [
       "Follow the product and institutional policy for warming, position and contact time.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=3fxgxiJQIa0",
-    quiz: rgn_052Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Remain with patient for five (5) minutes if a child",
+      "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Establish rapport (Refer to steps)",
+      "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary",
+      "Set tray and send to the bedside"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Explain procedure to patient (Refer to steps)",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Position patient in sitting up or lying down with the affected ear up",
+      "Establish rapport (Refer to steps)",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Perform hand hygiene",
+      "Remain with patient for five (5) minutes if a child",
+      "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
+      "Explain procedure to patient (Refer to steps)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Clean external auditory canal with sterile swab stick if there is a discharge",
+      "Set tray and send to the bedside",
+      "Perform hand hygiene",
+      "Dispose off used items and decontaminate tray"
+    ],
+    "answer": "Set tray and send to the bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Set tray and send to the bedside",
+      "Report to appropriate officer",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops"
+    ],
+    "answer": "Check medication against the treatment chart (manual or electronic) for the right dosage",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Confirm the ear for their instillation by first inspecting unaffected ear then the affected ear"
+    ],
+    "answer": "Confirm the ear for their instillation by first inspecting unaffected ear then the affected ear",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Position patient in sitting up or lying down with the affected ear up",
+      "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
+      "Explain procedure to patient (Refer to steps)",
+      "Assist patient into a desirable position"
+    ],
+    "answer": "Position patient in sitting up or lying down with the affected ear up",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
+      "Dispose off used items and decontaminate tray",
+      "Clean external auditory canal with sterile swab stick if there is a discharge"
+    ],
+    "answer": "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Report to appropriate officer",
+      "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary",
+      "Clean external auditory canal with sterile swab stick if there is a discharge",
+      "Set tray and send to the bedside"
+    ],
+    "answer": "Clean external auditory canal with sterile swab stick if there is a discharge",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary"
+    ],
+    "answer": "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops",
+      "Explain procedure to patient (Refer to steps)",
+      "Assist patient into a desirable position",
+      "Confirm the ear for their instillation by first inspecting unaffected ear then the affected ear"
+    ],
+    "answer": "Hold medicine dropper almost horizontally, steady patient’s head to absorb excess ear drops",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Remain with patient for five (5) minutes if a child",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Clean external auditory canal with sterile swab stick if there is a discharge",
+      "Perform hand hygiene",
+      "Assist patient into a desirable position",
+      "Report to appropriate officer"
+    ],
+    "answer": "Assist patient into a desirable position",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Check medication against the treatment chart (manual or electronic) for the right dosage",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Instruct patient to remain lying down with ear upward for about 5 minutes if necessary",
+      "Remain with patient for five (5) minutes if a child"
+    ],
+    "answer": "Remain with patient for five (5) minutes if a child",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Dispose off used items and decontaminate tray",
+      "Document procedure on nurses’ notes and chart on the treatment chart (manual or electronic)",
+      "Confirm the ear for their instillation by first inspecting unaffected ear then the affected ear",
+      "Establish rapport (Refer to steps)"
+    ],
+    "answer": "Dispose off used items and decontaminate tray",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Hold auricle upward, backward and outward to straighten the auditory canal of an adult. Hold it downward in a child",
+      "Perform hand hygiene",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Remain with patient for five (5) minutes if a child"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of INSTILLATION OF EAR DROPS?",
+    "options": [
+      "Perform hand hygiene",
+      "Remain with patient for five (5) minutes if a child",
+      "Report to appropriate officer",
+      "Clean external auditory canal with sterile swab stick if there is a discharge"
+    ],
+    "answer": "Report to appropriate officer",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-053",
-    title: "Administration of Vaginal Medication",
+    title: "ADMINISTRATION OF VAGINAL MEDICATION",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Vaginal medication is inserted or applied aseptically to the vagina, commonly as a pessary, cream, gel or foam, to provide a local therapeutic effect. The nurse explains the intimate procedure, protects privacy, uses the correct applicator and technique, supports comfort and documents the response.",
-    purpose: [
-      "Deliver prescribed local treatment to the vagina",
-      "Treat infection, inflammation or another diagnosed condition",
-      "Provide the prescribed effect while maintaining dignity and preventing contamination",
-    ],
+      "It is the aseptic administration of medication into the vagina. These medications come in the form of creams, jellies, foams and pessaries.",
+    purpose: [],
     indications: [
       "A valid prescription for a vaginal pessary, cream, gel, foam or other preparation",
       "A diagnosed or assessed condition appropriate for vaginal treatment",
@@ -1399,25 +2584,41 @@ export const rgnBatch06: Procedure[] = [
       "Prepare a private area and position the patient safely with appropriate draping.",
     ],
     equipment: [
-      "Prescribed vaginal medication and medication chart",
-      "Disposable gloves and additional PPE according to risk assessment",
-      "Manufacturer-supplied applicator when applicable",
-      "Compatible water-soluble lubricant when required by the product",
-      "Perineal wipes, clean pad and mackintosh or disposable bed protector",
-      "Receiver or waste receptacle and hand hygiene supplies",
-    ],
+  "A tray containing the following:",
+  "Vaginal medication and applicator",
+  "Perineal Wipes",
+  "Disposable gloves",
+  "Mackintosh and dressing towel",
+  "Receiver for used items",
+  "Treatment Chart (Manual or Electronic)"
+],
     steps: [
-      "Identify the patient, explain the procedure, obtain consent and provide privacy and dignity.",
-      "Position the patient in dorsal recumbent or lithotomy position with knees flexed, support and draping.",
-      "Perform hand hygiene, put on gloves and inspect the external perineal area for pain, bleeding or unexpected findings.",
-      "Provide perineal cleansing when appropriate, working from clean to less clean areas and using clean materials.",
-      "Remove gloves if contaminated, perform hand hygiene and put on fresh gloves before handling medication.",
-      "Prepare the medication and applicator according to manufacturer instructions; apply compatible lubricant when required.",
-      "Separate the labia gently and insert the applicator along the posterior vaginal wall to the depth directed, without force.",
-      "Depress the applicator, withdraw it gently, place it in the receiver and cleanse excess medication from the external area.",
-      "Assist the patient to remain supine for the prescribed time, provide a pad if appropriate and observe comfort or reaction.",
-      "Dispose of single-use equipment, decontaminate reusable items, perform hand hygiene and document the procedure and response.",
-    ],
+  "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to patient (Refer to steps)",
+  "Ensure patient’s right to know/consent and to refuse medication",
+  "Perform hand hygiene",
+  "Send tray to bedside",
+  "Encourage patient to void",
+  "Provide privacy",
+  "Assist patient into lithotomy position with the upper leg flexed",
+  "Protect bed with mackintosh and dressing towel at the buttocks",
+  "Fold back the top bedclothes to expose the perineal area",
+  "Perform hand hygiene and wear gloves",
+  "Assess and clean the perineal area with wipes",
+  "Remove gloves and perform hand hygiene",
+  "Wear gloves and unwrap the medication",
+  "Remove the medication and attach to the applicator as per manufacturer’s instructions",
+  "Encourage the patient to relax by breathing through the mouth",
+  "Expose the vaginal orifice with your non-dominant hand",
+  "Insert the applicator gently into the posterior wall of the vagina",
+  "Slowly push the plunger until the applicator is empty",
+  "Remove the applicator and place in a receiver",
+  "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
+  "Remove gloves and perform hand hygiene",
+  "Dispose off used items and decontaminate applicator and tray",
+  "Document procedure on treatment chart (manual or electronic) and nurses notes"
+],
     precautions: [
       "Stop and seek review for severe pain, active bleeding, suspected injury, allergy or a patient who withdraws consent.",
       "Use the product-specific applicator and do not insert beyond the directed depth or force through resistance.",
@@ -1447,19 +2648,294 @@ export const rgnBatch06: Procedure[] = [
       "Use an interpreter or communication aid to support informed consent and self-care teaching.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=8Ci0rv5dLR4",
-    quiz: rgn_053Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene",
+      "Remove the medication and attach to the applicator as per manufacturer’s instructions",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Fold back the top bedclothes to expose the perineal area",
+      "Establish rapport (Refer to steps)",
+      "Perform hand hygiene and wear gloves",
+      "Dispose off used items and decontaminate applicator and tray"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Encourage patient to void",
+      "Expose the vaginal orifice with your non-dominant hand",
+      "Explain procedure to patient (Refer to steps)",
+      "Insert the applicator gently into the posterior wall of the vagina"
+    ],
+    "answer": "Explain procedure to patient (Refer to steps)",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Remove gloves and perform hand hygiene",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Ensure patient’s right to know/consent and to refuse medication",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene",
+      "Protect bed with mackintosh and dressing towel at the buttocks",
+      "Remove the applicator and place in a receiver",
+      "Assist patient into lithotomy position with the upper leg flexed"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Remove the medication and attach to the applicator as per manufacturer’s instructions",
+      "Send tray to bedside",
+      "Encourage the patient to relax by breathing through the mouth",
+      "Ensure patient’s right to know/consent and to refuse medication"
+    ],
+    "answer": "Send tray to bedside",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene and wear gloves",
+      "Dispose off used items and decontaminate applicator and tray",
+      "Encourage patient to void",
+      "Document procedure on treatment chart (manual or electronic) and nurses notes"
+    ],
+    "answer": "Encourage patient to void",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Encourage patient to void",
+      "Insert the applicator gently into the posterior wall of the vagina",
+      "Send tray to bedside",
+      "Provide privacy"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Assist patient into lithotomy position with the upper leg flexed",
+      "Wear gloves and unwrap the medication",
+      "Establish rapport (Refer to steps)",
+      "Remove gloves and perform hand hygiene"
+    ],
+    "answer": "Assist patient into lithotomy position with the upper leg flexed",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Remove the applicator and place in a receiver",
+      "Protect bed with mackintosh and dressing towel at the buttocks",
+      "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
+      "Assist patient into lithotomy position with the upper leg flexed"
+    ],
+    "answer": "Protect bed with mackintosh and dressing towel at the buttocks",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Encourage the patient to relax by breathing through the mouth",
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Fold back the top bedclothes to expose the perineal area",
+      "Perform hand hygiene"
+    ],
+    "answer": "Fold back the top bedclothes to expose the perineal area",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Assess and clean the perineal area with wipes",
+      "Document procedure on treatment chart (manual or electronic) and nurses notes",
+      "Fold back the top bedclothes to expose the perineal area",
+      "Perform hand hygiene and wear gloves"
+    ],
+    "answer": "Perform hand hygiene and wear gloves",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Assess and clean the perineal area with wipes",
+      "Slowly push the plunger until the applicator is empty",
+      "Encourage patient to void",
+      "Insert the applicator gently into the posterior wall of the vagina"
+    ],
+    "answer": "Assess and clean the perineal area with wipes",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Remove gloves and perform hand hygiene",
+      "Explain procedure to patient (Refer to steps)",
+      "Wear gloves and unwrap the medication"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
+      "Assist patient into lithotomy position with the upper leg flexed",
+      "Wear gloves and unwrap the medication",
+      "Protect bed with mackintosh and dressing towel at the buttocks"
+    ],
+    "answer": "Wear gloves and unwrap the medication",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Expose the vaginal orifice with your non-dominant hand",
+      "Perform hand hygiene",
+      "Encourage the patient to relax by breathing through the mouth",
+      "Remove the medication and attach to the applicator as per manufacturer’s instructions"
+    ],
+    "answer": "Remove the medication and attach to the applicator as per manufacturer’s instructions",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Encourage the patient to relax by breathing through the mouth",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date",
+      "Perform hand hygiene and wear gloves",
+      "Document procedure on treatment chart (manual or electronic) and nurses notes"
+    ],
+    "answer": "Encourage the patient to relax by breathing through the mouth",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Encourage patient to void",
+      "Expose the vaginal orifice with your non-dominant hand",
+      "Provide privacy",
+      "Slowly push the plunger until the applicator is empty"
+    ],
+    "answer": "Expose the vaginal orifice with your non-dominant hand",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Explain procedure to patient (Refer to steps)",
+      "Remove gloves and perform hand hygiene",
+      "Insert the applicator gently into the posterior wall of the vagina",
+      "Wear gloves and unwrap the medication"
+    ],
+    "answer": "Insert the applicator gently into the posterior wall of the vagina",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Dispose off used items and decontaminate applicator and tray",
+      "Protect bed with mackintosh and dressing towel at the buttocks",
+      "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
+      "Slowly push the plunger until the applicator is empty"
+    ],
+    "answer": "Slowly push the plunger until the applicator is empty",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Remove the applicator and place in a receiver",
+      "Send tray to bedside",
+      "Encourage the patient to relax by breathing through the mouth",
+      "Perform hand hygiene"
+    ],
+    "answer": "Remove the applicator and place in a receiver",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Perform hand hygiene and wear gloves",
+      "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
+      "Assess and clean the perineal area with wipes",
+      "Check for the right patient, right medication, right time, right dose against doctor’s order and treatment chart (manual or electronic) as well as the expiry date"
+    ],
+    "answer": "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Provide privacy",
+      "Slowly push the plunger until the applicator is empty",
+      "Remove gloves and perform hand hygiene",
+      "Remove the applicator and place in a receiver"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Ensure patient’s right to know/consent and to refuse medication",
+      "Wear gloves and unwrap the medication",
+      "Explain procedure to patient (Refer to steps)",
+      "Dispose off used items and decontaminate applicator and tray"
+    ],
+    "answer": "Dispose off used items and decontaminate applicator and tray",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of ADMINISTRATION OF VAGINAL MEDICATION?",
+    "options": [
+      "Document procedure on treatment chart (manual or electronic) and nurses notes",
+      "Fold back the top bedclothes to expose the perineal area",
+      "Dry perineal area and ask the patient to remain in the supine position for at least ten (10) – fifteen (15) minutes",
+      "Protect bed with mackintosh and dressing towel at the buttocks"
+    ],
+    "answer": "Document procedure on treatment chart (manual or electronic) and nurses notes",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-054",
-    title: "Collection of Blood Specimens",
+    title: "COLLECTION OF BLOOD SPECIMENS",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "Blood specimen collection is the safe removal of a prescribed volume of venous blood for laboratory investigation. The nurse verifies the request and patient, selects an appropriate site, uses aseptic venipuncture and the correct tubes, labels at the bedside, transports promptly and manages complications.",
-    purpose: [
-      "Obtain a suitable specimen for diagnosis and clinical decision-making",
-      "Monitor disease, treatment response or physiological status",
-      "Provide blood for tests such as haematology, chemistry, grouping, cross-match or microbiology",
-    ],
+      "Blood specimens are required for numerous investigations e.g. full blood count, white blood cells and erythrocyte sedimentation rate. Among others are grouping and cross matching, culture and sensitivity, blood urea, electrolytes and creatinine. The amount required range from a few drops to 10mls from the capillaries or veins depending on the test requested. Two types of bottles or tubes are used – plain/universal or bottles containing some chemical substance or culture medium.",
+    purpose: [],
     indications: [
       "A valid laboratory request from an authorized prescriber or service",
       "Need for diagnostic, monitoring, therapeutic or pre-procedure blood testing",
@@ -1471,27 +2947,43 @@ export const rgnBatch06: Procedure[] = [
       "Explain the procedure, obtain cooperation, provide privacy and position the patient safely with the arm supported.",
     ],
     equipment: [
-      "Laboratory request form and approved specimen labels",
-      "Appropriate evacuated tubes or sterile specimen bottles in the laboratory-approved order of draw",
-      "Safety needle and holder or sterile syringe system according to local policy",
-      "Tourniquet, approved skin antiseptic and sterile gauze",
-      "Gloves, apron or other PPE according to risk assessment",
-      "Adhesive dressing, tray, sharps container and waste receptacle",
-      "Hand hygiene supplies and transport bag or container",
-    ],
+  "A tray with the following:",
+  "Sterile syringes and needles",
+  "Antimicrobial solution",
+  "Appropriate specimen bottle",
+  "Dry cotton wool swabs in a gallipot",
+  "Disposable gloves",
+  "Tourniquet",
+  "Adhesive strip",
+  "Receiver for used items",
+  "Appropriate laboratory or specimen form",
+  "Appropriate PPE’s e.g. apron",
+  "Sharps container"
+],
     steps: [
-      "Perform hand hygiene and identify the patient using approved identifiers; compare the request with the patient.",
-      "Explain the tests, obtain consent and position the patient safely, protecting the bed if required.",
-      "Assemble tubes in the correct order, check expiry and inspect equipment; perform hand hygiene and put on gloves.",
-      "Apply the tourniquet, select a suitable vein and release or reapply it according to the venipuncture technique.",
-      "Clean the site with approved antiseptic and allow it to dry completely without touching the site.",
-      "Insert the needle using the approved angle and technique, collect the required tubes and volumes in the correct order.",
-      "Release the tourniquet as soon as appropriate, remove the needle, apply firm pressure and activate the safety device.",
-      "Discard the needle immediately into the sharps container without recapping; apply a dressing when bleeding has stopped.",
-      "Mix additive tubes gently as required, label every specimen at the bedside and complete the request form accurately.",
-      "Check the patient for dizziness, pain, bleeding or haematoma, remove gloves, perform hand hygiene and transport promptly.",
-      "Document collection, site, time, patient tolerance, complications and specimen dispatch according to policy.",
-    ],
+  "Establish rapport (Refer to steps)",
+  "Explain procedure to the patient (Refer to steps)",
+  "Perform hand hygiene",
+  "Take tray and send to the bedside",
+  "Provide privacy",
+  "Protect the bed with a mackintosh and a dressing towel",
+  "Assist patient into a desirable position",
+  "Assist the doctor or laboratory technician to take the sample",
+  "Dispose off used items and decontaminate the tray",
+  "Ensure all needles are disposed off in the sharps container",
+  "Ensure labelled specimen with signed laboratory forms are sent to the laboratory",
+  "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
+  "Choose a site preferably on the forearm",
+  "Apply tourniquet to locate a prominent vein",
+  "Clean the site with antimicrobial solution",
+  "Insert the needle gently with syringe attached into the vein at an angle of 45",
+  "Withdraw the required amount of blood",
+  "Release the tourniquet",
+  "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip",
+  "Disconnect needle from syringe, poor blood into specimen bottle",
+  "Ensure specimen container is well labelled",
+  "Perform hand hygiene"
+],
     precautions: [
       "Do not collect from an unsafe site, through an active IV line or from a limb with a fistula or relevant restriction without direction.",
       "Use the laboratory-approved order of draw, tube type and required volume; do not substitute containers.",
@@ -1521,19 +3013,261 @@ export const rgnBatch06: Procedure[] = [
       "Use a qualified colleague or alternative collection method when repeated attempts or patient risk exceeds competence.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=CLVyxRY8lZU",
-    quiz: rgn_054Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Provide privacy",
+      "Insert the needle gently with syringe attached into the vein at an angle of 45",
+      "Assist patient into a desirable position"
+    ],
+    "answer": "Establish rapport (Refer to steps)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Apply tourniquet to locate a prominent vein",
+      "Explain procedure to the patient (Refer to steps)",
+      "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
+      "Perform hand hygiene"
+    ],
+    "answer": "Explain procedure to the patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Ensure all needles are disposed off in the sharps container",
+      "Ensure specimen container is well labelled",
+      "Perform hand hygiene",
+      "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Protect the bed with a mackintosh and a dressing towel",
+      "Withdraw the required amount of blood",
+      "Assist the doctor or laboratory technician to take the sample",
+      "Take tray and send to the bedside"
+    ],
+    "answer": "Take tray and send to the bedside",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Provide privacy",
+      "Choose a site preferably on the forearm",
+      "Perform hand hygiene",
+      "Clean the site with antimicrobial solution"
+    ],
+    "answer": "Provide privacy",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Protect the bed with a mackintosh and a dressing towel",
+      "Disconnect needle from syringe, poor blood into specimen bottle",
+      "Ensure labelled specimen with signed laboratory forms are sent to the laboratory"
+    ],
+    "answer": "Protect the bed with a mackintosh and a dressing towel",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Release the tourniquet",
+      "Dispose off used items and decontaminate the tray",
+      "Assist patient into a desirable position",
+      "Protect the bed with a mackintosh and a dressing towel"
+    ],
+    "answer": "Assist patient into a desirable position",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Apply tourniquet to locate a prominent vein",
+      "Take tray and send to the bedside",
+      "Insert the needle gently with syringe attached into the vein at an angle of 45",
+      "Assist the doctor or laboratory technician to take the sample"
+    ],
+    "answer": "Assist the doctor or laboratory technician to take the sample",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Dispose off used items and decontaminate the tray",
+      "Ensure specimen container is well labelled",
+      "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
+      "Explain procedure to the patient (Refer to steps)"
+    ],
+    "answer": "Dispose off used items and decontaminate the tray",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Dispose off used items and decontaminate the tray",
+      "Ensure all needles are disposed off in the sharps container",
+      "Assist patient into a desirable position",
+      "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip"
+    ],
+    "answer": "Ensure all needles are disposed off in the sharps container",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Provide privacy",
+      "Withdraw the required amount of blood",
+      "Ensure labelled specimen with signed laboratory forms are sent to the laboratory",
+      "Clean the site with antimicrobial solution"
+    ],
+    "answer": "Ensure labelled specimen with signed laboratory forms are sent to the laboratory",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "Choose a site preferably on the forearm",
+      "Perform hand hygiene",
+      "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7"
+    ],
+    "answer": "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Choose a site preferably on the forearm",
+      "Assist the doctor or laboratory technician to take the sample",
+      "Disconnect needle from syringe, poor blood into specimen bottle",
+      "Ensure all needles are disposed off in the sharps container"
+    ],
+    "answer": "Choose a site preferably on the forearm",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Release the tourniquet",
+      "Apply tourniquet to locate a prominent vein",
+      "Insert the needle gently with syringe attached into the vein at an angle of 45",
+      "Protect the bed with a mackintosh and a dressing towel"
+    ],
+    "answer": "Apply tourniquet to locate a prominent vein",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Choose a site preferably on the forearm",
+      "Take tray and send to the bedside",
+      "Clean the site with antimicrobial solution",
+      "Explain procedure to the patient (Refer to steps)"
+    ],
+    "answer": "Clean the site with antimicrobial solution",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Dispose off used items and decontaminate the tray",
+      "Ensure specimen container is well labelled",
+      "Ensure labelled specimen with signed laboratory forms are sent to the laboratory",
+      "Insert the needle gently with syringe attached into the vein at an angle of 45"
+    ],
+    "answer": "Insert the needle gently with syringe attached into the vein at an angle of 45",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Withdraw the required amount of blood",
+      "Insert the needle gently with syringe attached into the vein at an angle of 45",
+      "Assist patient into a desirable position",
+      "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip"
+    ],
+    "answer": "Withdraw the required amount of blood",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Provide privacy",
+      "Release the tourniquet",
+      "Perform hand hygiene",
+      "Apply tourniquet to locate a prominent vein"
+    ],
+    "answer": "Release the tourniquet",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Establish rapport (Refer to steps)",
+      "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
+      "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip",
+      "Ensure all needles are disposed off in the sharps container"
+    ],
+    "answer": "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Withdraw the required amount of blood",
+      "Assist the doctor or laboratory technician to take the sample",
+      "Remove the needle gently from the vein, apply a dry swab to the area immediately and hold it in place with an adhesive strip",
+      "Disconnect needle from syringe, poor blood into specimen bottle"
+    ],
+    "answer": "Disconnect needle from syringe, poor blood into specimen bottle",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Ensure specimen container is well labelled",
+      "Take tray and send to the bedside",
+      "Clean the site with antimicrobial solution",
+      "Protect the bed with a mackintosh and a dressing towel"
+    ],
+    "answer": "Ensure specimen container is well labelled",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of COLLECTION OF BLOOD SPECIMENS?",
+    "options": [
+      "Apply tourniquet to locate a prominent vein",
+      "Perform hand hygiene",
+      "\\n. If the nurse is taking the blood specimen then the following steps should be followed after step 7",
+      "Explain procedure to the patient (Refer to steps)"
+    ],
+    "answer": "Perform hand hygiene",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-055",
-    title: "Collecting a Single Voided Specimen",
+    title: "COLLECTING A SINGLE VOIDED SPECIMEN",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "A single voided specimen is a urine sample passed naturally by the patient and collected in an appropriate container for laboratory examination. The nurse verifies the request, teaches the required clean-catch or midstream technique, prevents contamination, labels at the bedside and transports the specimen promptly.",
-    purpose: [
-      "Provide urine for diagnosis or monitoring",
-      "Evaluate urinary disease, infection, renal function or treatment response",
-      "Obtain a representative specimen using the least invasive appropriate method",
-    ],
+      "It is the process of collecting urine from a patient/client to aid in the diagnosis of a condition.",
+    purpose: [],
     indications: [
       "A valid request for urinalysis, microscopy, culture or another urine investigation",
       "A patient who can void independently or with assistance",
@@ -1545,25 +3279,30 @@ export const rgnBatch06: Procedure[] = [
       "Label the container according to policy only when the patient has been correctly identified and collection is ready.",
     ],
     equipment: [
-      "Appropriate sterile or clean specimen container with secure lid",
-      "Laboratory request form and approved label",
-      "Disposable gloves and PPE according to risk assessment",
-      "Clean bedpan or urinal when the patient cannot void directly into the container",
-      "Mackintosh or disposable pad, tissue and hand hygiene supplies",
-      "Transport bag or container and waste receptacle",
-    ],
+  "Laboratory form",
+  "Specimen container",
+  "Bedpan or urinal",
+  "Disposable gloves",
+  "Tissue",
+  "Ballpoint pen",
+  "Mackintosh and dressing towel"
+],
     steps: [
-      "Identify the patient using approved identifiers and compare the request with the container and form.",
-      "Explain the required specimen, including clean-catch or midstream instructions, and provide privacy.",
-      "Ask the patient to perform perineal cleansing as instructed; provide assistance while maintaining dignity.",
-      "Ask the patient to begin voiding, collect the required midstream portion without touching the container inside, then finish voiding.",
-      "If a bedpan or urinal is used, keep it clean and transfer urine without contaminating the container or lid.",
-      "Secure the lid immediately, wipe the outside if needed and label the specimen at the bedside with identifiers, date and time.",
-      "Place the specimen and completed form in the approved transport bag without placing the form in contact with the specimen.",
-      "Remove gloves, perform hand hygiene and assist the patient with hygiene and comfort.",
-      "Send the specimen promptly according to laboratory policy; refrigerate only when specifically directed.",
-      "Document the collection method, time, patient tolerance, appearance if clinically relevant, labeling and transport.",
-    ],
+  "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+  "Establish rapport with patient (Refer to steps)",
+  "Explain the procedure (Refer to steps)",
+  "Assemble requirements",
+  "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+  "Protect the bed with mackintosh and a dressing towel",
+  "Perform hand hygiene and put on gloves",
+  "Assist the patient/client to void into a clean bedpan/urinal",
+  "Pour about 10-20 mL of urine into the labeled specimen bottle or container and cover the bottle or container",
+  "Discard the excess urine",
+  "Dispose off used items",
+  "Remove gloves and perform hand hygiene.",
+  "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+  "Document the procedure in the designated place"
+],
     precautions: [
       "Do not touch the inside of a sterile container or lid and do not transfer urine using contaminated equipment.",
       "Do not send an unlabeled, leaking, insufficient or visibly contaminated specimen as valid.",
@@ -1593,19 +3332,173 @@ export const rgnBatch06: Procedure[] = [
       "Follow the laboratory's requirements for volume, timing, preservatives and transport.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=oFChXnQqZek",
-    quiz: rgn_055Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+      "Explain the procedure (Refer to steps)",
+      "Document the procedure in the designated place"
+    ],
+    "answer": "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Assist the patient/client to void into a clean bedpan/urinal",
+      "Establish rapport with patient (Refer to steps)",
+      "Remove gloves and perform hand hygiene.",
+      "Discard the excess urine"
+    ],
+    "answer": "Establish rapport with patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Assemble requirements",
+      "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+      "Explain the procedure (Refer to steps)",
+      "Protect the bed with mackintosh and a dressing towel"
+    ],
+    "answer": "Explain the procedure (Refer to steps)",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+      "Dispose off used items",
+      "Pour about 10-20 mL of urine into the labeled specimen bottle or container and cover the bottle or container",
+      "Assemble requirements"
+    ],
+    "answer": "Assemble requirements",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+      "Perform hand hygiene and put on gloves",
+      "Assemble requirements",
+      "Establish rapport with patient (Refer to steps)"
+    ],
+    "answer": "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Discard the excess urine",
+      "Protect the bed with mackintosh and a dressing towel",
+      "Document the procedure in the designated place",
+      "Remove gloves and perform hand hygiene."
+    ],
+    "answer": "Protect the bed with mackintosh and a dressing towel",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+      "Explain the procedure (Refer to steps)",
+      "Perform hand hygiene and put on gloves",
+      "Assist the patient/client to void into a clean bedpan/urinal"
+    ],
+    "answer": "Perform hand hygiene and put on gloves",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+      "Dispose off used items",
+      "Assist the patient/client to void into a clean bedpan/urinal"
+    ],
+    "answer": "Assist the patient/client to void into a clean bedpan/urinal",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Pour about 10-20 mL of urine into the labeled specimen bottle or container and cover the bottle or container",
+      "Assist the patient/client to void into a clean bedpan/urinal",
+      "Protect the bed with mackintosh and a dressing towel",
+      "Assemble requirements"
+    ],
+    "answer": "Pour about 10-20 mL of urine into the labeled specimen bottle or container and cover the bottle or container",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Remove gloves and perform hand hygiene.",
+      "Discard the excess urine",
+      "Establish rapport with patient (Refer to steps)",
+      "Document the procedure in the designated place"
+    ],
+    "answer": "Discard the excess urine",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Perform hand hygiene and put on gloves",
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+      "Dispose off used items",
+      "Pour about 10-20 mL of urine into the labeled specimen bottle or container and cover the bottle or container"
+    ],
+    "answer": "Dispose off used items",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Explain the procedure (Refer to steps)",
+      "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+      "Remove gloves and perform hand hygiene."
+    ],
+    "answer": "Remove gloves and perform hand hygiene.",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+      "Discard the excess urine",
+      "Assist the patient/client to void into a clean bedpan/urinal",
+      "Protect the bed with mackintosh and a dressing towel"
+    ],
+    "answer": "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of COLLECTING A SINGLE VOIDED SPECIMEN?",
+    "options": [
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+      "Document the procedure in the designated place",
+      "Assemble requirements",
+      "Establish rapport with patient (Refer to steps)"
+    ],
+    "answer": "Document the procedure in the designated place",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  }
+],
   },
   {
     id: "rgn-056",
-    title: "Collecting a Urine Specimen from a Retention Catheter",
+    title: "COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER",
     category: "General Nursing (RGN)",
+    types: [
+  "N/A"
+],
     overview:
-      "This procedure obtains a fresh urine specimen from the sampling port of an indwelling retention catheter. The closed urinary drainage system is maintained: the drainage bag is never used as the collection source, the sampling port is disinfected and fresh urine is aspirated with sterile appropriate equipment.",
-    purpose: [
-      "Obtain a representative urine specimen for laboratory investigation",
-      "Support diagnosis or monitoring while preserving the closed catheter system",
-      "Reduce catheter-associated infection risk during specimen collection",
-    ],
+      "It is the process of collecting urine from a patient/client to aid in the diagnosis of a condition.",
+    purpose: [],
     indications: [
       "A valid laboratory request for urine from a patient with an indwelling retention catheter",
       "The catheter has a designated sampling port and the requested test requires fresh urine",
@@ -1617,25 +3510,47 @@ export const rgnBatch06: Procedure[] = [
       "Gather sterile equipment and ensure the drainage tubing is not kinked; do not plan to collect from the drainage bag.",
     ],
     equipment: [
-      "Correct sterile specimen container with secure lid and laboratory request form",
-      "Approved sterile syringe or sampling device without contaminating the port",
-      "Approved antiseptic swab or sterile supplies for disinfecting the sampling port",
-      "Clean gloves and additional PPE according to risk assessment",
-      "Clamp only when indicated by policy and for the shortest safe period",
-      "Label, transport bag, waste receptacle and hand hygiene supplies",
-    ],
+  "Laboratory form",
+  "Specimen container",
+  "Bedpan or urinal",
+  "Disposable gloves",
+  "Tissue",
+  "Ballpoint pen",
+  "Mackintosh and dressing towel",
+  "Tray containing the following:",
+  "Antimicrobial solution",
+  "Cotton wool swabs in a gallipot",
+  "10-20-mLsyringe with 21-25-gauge needle",
+  "Clamp or rubber band",
+  "Receiver for used items"
+],
     steps: [
-      "Identify the patient and verify the request, specimen type, container and required volume.",
-      "Explain that the sample will be taken from the catheter sampling port and that the drainage system will remain closed.",
-      "Perform hand hygiene, put on gloves and position the patient comfortably while keeping the collection bag below bladder level.",
-      "Inspect the catheter, tubing and sampling port; correct kinks and assess whether fresh urine is available.",
-      "If required by policy, clamp the drainage tubing briefly below the sampling port to allow fresh urine to collect; never disconnect the catheter from the bag.",
-      "Disinfect the sampling port with the approved antiseptic and allow it to dry completely.",
-      "Using sterile non-touch technique, attach the sterile syringe or sampling device to the port and withdraw the required fresh urine.",
-      "Transfer urine into the correct sterile container without touching the inside, then remove the device and cap or protect the port according to policy.",
-      "Remove any clamp promptly, confirm unobstructed drainage and return the bag below bladder level.",
-      "Label the container at the bedside, complete the request form, transport promptly, remove gloves, perform hand hygiene and document.",
-    ],
+  "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+  "Establish rapport with patient (Refer to steps)",
+  "Explain the procedure (Refer to steps)",
+  "Assemble requirements",
+  "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+  "Protect the bed with mackintosh and a dressing towel",
+  "Assist patient into a supine position and expose the perineal area",
+  "Perform hand hygiene and put on gloves",
+  "Disconnect the urine bag if attached",
+  "Clamp the tubing:",
+  "Clamp the drainage tubing or bend the tubing",
+  "Allow adequate time for urine collection",
+  "Clean the aspiration port with an antimicrobial solution",
+  "Withdraw the urine by:",
+  "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe",
+  "Allowing the urine to flow from the catheter into a clean container",
+  "Transfer the urine to the labeled specimen container",
+  "Unclamp the catheter and attach urine bag if necessary",
+  "Remove mackintosh and dressing towel",
+  "Remove gloves and perform hand hygiene",
+  "Reposition patient",
+  "Discard the excess urine, dispose of used items and decontaminate tray",
+  "Remove gloves and perform hand hygiene",
+  "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+  "Document the procedure in the designated place"
+],
     precautions: [
       "Never collect a diagnostic specimen from the drainage bag because it may contain old or contaminated urine.",
       "Do not unnecessarily disconnect the catheter from the drainage system or break the closed system.",
@@ -1665,6 +3580,282 @@ export const rgnBatch06: Procedure[] = [
       "Use sterile supplies and seek assistance if the catheter has no sampling port or the system is compromised.",
     ],
     videoUrl: "https://www.youtube.com/watch?v=48M_CwJE7Z0",
-    quiz: rgn_056Quiz,
+    quiz: [
+  {
+    "question": "Which action is listed as step 1 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+      "Allowing the urine to flow from the catheter into a clean container",
+      "Assemble requirements"
+    ],
+    "answer": "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+    "explanation": "This checks recall of step 1 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 2 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Clamp the drainage tubing or bend the tubing",
+      "Establish rapport with patient (Refer to steps)",
+      "Allow adequate time for urine collection",
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form"
+    ],
+    "answer": "Establish rapport with patient (Refer to steps)",
+    "explanation": "This checks recall of step 2 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 3 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Assist patient into a supine position and expose the perineal area",
+      "Unclamp the catheter and attach urine bag if necessary",
+      "Explain the procedure (Refer to steps)",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Explain the procedure (Refer to steps)",
+    "explanation": "This checks recall of step 3 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 4 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Withdraw the urine by:",
+      "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+      "Assemble requirements"
+    ],
+    "answer": "Assemble requirements",
+    "explanation": "This checks recall of step 4 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 5 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+      "Clamp the tubing:",
+      "Reposition patient",
+      "Disconnect the urine bag if attached"
+    ],
+    "answer": "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+    "explanation": "This checks recall of step 5 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 6 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Allowing the urine to flow from the catheter into a clean container",
+      "Protect the bed with mackintosh and a dressing towel",
+      "Transfer the urine to the labeled specimen container",
+      "Assemble requirements"
+    ],
+    "answer": "Protect the bed with mackintosh and a dressing towel",
+    "explanation": "This checks recall of step 6 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 7 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Allow adequate time for urine collection",
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+      "Assist patient into a supine position and expose the perineal area",
+      "Document the procedure in the designated place"
+    ],
+    "answer": "Assist patient into a supine position and expose the perineal area",
+    "explanation": "This checks recall of step 7 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 8 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Assist patient into a supine position and expose the perineal area",
+      "Remove mackintosh and dressing towel",
+      "Protect the bed with mackintosh and a dressing towel",
+      "Perform hand hygiene and put on gloves"
+    ],
+    "answer": "Perform hand hygiene and put on gloves",
+    "explanation": "This checks recall of step 8 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 9 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Disconnect the urine bag if attached",
+      "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe",
+      "Establish rapport with patient (Refer to steps)",
+      "Withdraw the urine by:"
+    ],
+    "answer": "Disconnect the urine bag if attached",
+    "explanation": "This checks recall of step 9 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 10 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Reposition patient",
+      "Clamp the tubing:",
+      "Discard the excess urine, dispose of used items and decontaminate tray",
+      "Disconnect the urine bag if attached"
+    ],
+    "answer": "Clamp the tubing:",
+    "explanation": "This checks recall of step 10 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 11 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Transfer the urine to the labeled specimen container",
+      "Assemble requirements",
+      "Clamp the drainage tubing or bend the tubing",
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name"
+    ],
+    "answer": "Clamp the drainage tubing or bend the tubing",
+    "explanation": "This checks recall of step 11 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 12 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Clean the aspiration port with an antimicrobial solution",
+      "Document the procedure in the designated place",
+      "Clamp the drainage tubing or bend the tubing",
+      "Allow adequate time for urine collection"
+    ],
+    "answer": "Allow adequate time for urine collection",
+    "explanation": "This checks recall of step 12 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 13 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Clean the aspiration port with an antimicrobial solution",
+      "Remove gloves and perform hand hygiene",
+      "Assist patient into a supine position and expose the perineal area",
+      "Remove mackintosh and dressing towel"
+    ],
+    "answer": "Clean the aspiration port with an antimicrobial solution",
+    "explanation": "This checks recall of step 13 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 14 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Establish rapport with patient (Refer to steps)",
+      "Withdraw the urine by:",
+      "Explain the procedure (Refer to steps)",
+      "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe"
+    ],
+    "answer": "Withdraw the urine by:",
+    "explanation": "This checks recall of step 14 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 15 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Discard the excess urine, dispose of used items and decontaminate tray",
+      "Disconnect the urine bag if attached",
+      "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe",
+      "Clamp the tubing:"
+    ],
+    "answer": "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe",
+    "explanation": "This checks recall of step 15 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 16 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Unclamp the catheter and attach urine bag if necessary",
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name",
+      "Transfer the urine to the labeled specimen container",
+      "Allowing the urine to flow from the catheter into a clean container"
+    ],
+    "answer": "Allowing the urine to flow from the catheter into a clean container",
+    "explanation": "This checks recall of step 16 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 17 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Transfer the urine to the labeled specimen container",
+      "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)",
+      "Allow adequate time for urine collection",
+      "Document the procedure in the designated place"
+    ],
+    "answer": "Transfer the urine to the labeled specimen container",
+    "explanation": "This checks recall of step 17 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 18 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Assist patient into a supine position and expose the perineal area",
+      "Unclamp the catheter and attach urine bag if necessary",
+      "Perform hand hygiene and put on gloves",
+      "Remove gloves and perform hand hygiene"
+    ],
+    "answer": "Unclamp the catheter and attach urine bag if necessary",
+    "explanation": "This checks recall of step 18 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 19 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Explain the procedure (Refer to steps)",
+      "Withdraw the urine by:",
+      "Remove mackintosh and dressing towel",
+      "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe"
+    ],
+    "answer": "Remove mackintosh and dressing towel",
+    "explanation": "This checks recall of step 19 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 20 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+      "Clamp the tubing:",
+      "Discard the excess urine, dispose of used items and decontaminate tray",
+      "Remove gloves and perform hand hygiene"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 20 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 21 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Reposition patient",
+      "Protect the bed with mackintosh and a dressing towel",
+      "Transfer the urine to the labeled specimen container",
+      "Label the bottle or container with the date, patient’s name, department identification and physician/doctor’s name"
+    ],
+    "answer": "Reposition patient",
+    "explanation": "This checks recall of step 21 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 22 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Allow adequate time for urine collection",
+      "Discard the excess urine, dispose of used items and decontaminate tray",
+      "Clean the aspiration port with an antimicrobial solution",
+      "Confirm physician/doctor’s request against the specimen form with patient’s name, date and content of urinalysis (manual or electronic)"
+    ],
+    "answer": "Discard the excess urine, dispose of used items and decontaminate tray",
+    "explanation": "This checks recall of step 22 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 23 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Perform hand hygiene and put on gloves",
+      "Remove mackintosh and dressing towel",
+      "Remove gloves and perform hand hygiene",
+      "Reposition patient"
+    ],
+    "answer": "Remove gloves and perform hand hygiene",
+    "explanation": "This checks recall of step 23 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 24 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Assemble requirements",
+      "Inserting the needle into the aspiration port to withdraw sufficient amount of urine into the syringe",
+      "Explain the procedure (Refer to steps)",
+      "Send the specimen bottle or container to the laboratory immediately with the specimen form"
+    ],
+    "answer": "Send the specimen bottle or container to the laboratory immediately with the specimen form",
+    "explanation": "This checks recall of step 24 in the procedure sequence."
+  },
+  {
+    "question": "Which action is listed as step 25 of COLLECTING A URINE SPECIMEN FROM A RETENTION CATHETER?",
+    "options": [
+      "Document the procedure in the designated place",
+      "Clamp the drainage tubing or bend the tubing",
+      "Discard the excess urine, dispose of used items and decontaminate tray",
+      "Clamp the tubing:"
+    ],
+    "answer": "Document the procedure in the designated place",
+    "explanation": "This checks recall of step 25 in the procedure sequence."
+  }
+],
   },
 ];
