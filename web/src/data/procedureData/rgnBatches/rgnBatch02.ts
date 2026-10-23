@@ -57,7 +57,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.youtube.com/watch?v=QU7vFB7IGdk",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "The nurse is carrying out educating a patient on medication prior to discharge. Which action best matches this part of the procedure?",
     "options": [
       "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
       "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
@@ -65,10 +65,10 @@ export const rgnBatch02: Procedure[] = [
       "Identify the suitable language for the patient"
     ],
     "answer": "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "To complete educating a patient on medication prior to discharge safely, which action should the nurse take at this point?",
     "options": [
       "Ensure patient and significant other understands the teaching and clarify where need be",
       "Establish rapport with the patient (Refer to steps)",
@@ -76,10 +76,10 @@ export const rgnBatch02: Procedure[] = [
       "Involve relatives or significant other if any"
     ],
     "answer": "Establish rapport with the patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Before carrying out educating a patient on medication prior to discharge, what should the nurse do to support informed cooperation?",
     "options": [
       "Find patient’s level or awareness on possible management options",
       "Establish rapport with the patient (Refer to steps)",
@@ -87,10 +87,10 @@ export const rgnBatch02: Procedure[] = [
       "Thank patient and relatives for the cooperation"
     ],
     "answer": "Explain the need for education to patient",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Which nursing action is required at this stage of educating a patient on medication prior to discharge?",
     "options": [
       "Sit comfortably by the patient",
       "Provide patient with clear simple pamphlets or other sources of readable information",
@@ -98,10 +98,10 @@ export const rgnBatch02: Procedure[] = [
       "Involve relatives or significant other if any"
     ],
     "answer": "Involve relatives or significant other if any",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "A patient is about to undergo educating a patient on medication prior to discharge. Which action protects their dignity during preparation?",
     "options": [
       "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
       "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
@@ -109,10 +109,10 @@ export const rgnBatch02: Procedure[] = [
       "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt"
     ],
     "answer": "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 6 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "When positioning the patient for educating a patient on medication prior to discharge, what should guide the nurse's choice of position?",
     "options": [
       "Involve relatives or significant other if any",
       "Assist patient into a desirable position",
@@ -120,10 +120,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain the possible outcome of condition and prognoses"
     ],
     "answer": "Assist patient into a desirable position",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 7 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Which step should be performed now during educating a patient on medication prior to discharge?",
     "options": [
       "Document procedure and report to appropriate officer",
       "Explain to patient the rationale for the various investigations and treatment adopted",
@@ -131,10 +131,10 @@ export const rgnBatch02: Procedure[] = [
       "Find patient’s level or awareness of condition"
     ],
     "answer": "Sit comfortably by the patient",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Which nursing action is required at this stage of educating a patient on medication prior to discharge?",
     "options": [
       "Allow patient and significant other to ask questions for clarity",
       "Sit comfortably by the patient",
@@ -142,10 +142,10 @@ export const rgnBatch02: Procedure[] = [
       "Identify the suitable language for the patient"
     ],
     "answer": "Identify the suitable language for the patient",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "The nurse is carrying out educating a patient on medication prior to discharge. Which action best matches this part of the procedure?",
     "options": [
       "Find patient’s level or awareness of condition",
       "Explain the need for education to patient",
@@ -153,10 +153,10 @@ export const rgnBatch02: Procedure[] = [
       "Assist patient into a desirable position"
     ],
     "answer": "Find patient’s level or awareness of condition",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "To complete educating a patient on medication prior to discharge safely, which action should the nurse take at this point?",
     "options": [
       "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
       "Build on what the patient knows about the condition with scientific data of condition",
@@ -164,10 +164,10 @@ export const rgnBatch02: Procedure[] = [
       "Establish rapport with the patient (Refer to steps)"
     ],
     "answer": "Build on what the patient knows about the condition with scientific data of condition",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Which step should be performed now during educating a patient on medication prior to discharge?",
     "options": [
       "Find patient’s level or awareness of condition",
       "Confirm patient’s diagnoses against the patient’s record (manually or electronic)",
@@ -175,10 +175,10 @@ export const rgnBatch02: Procedure[] = [
       "Provide patient with clear simple pamphlets or other sources of readable information"
     ],
     "answer": "Find patient’s level or awareness on possible management options",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Before carrying out educating a patient on medication prior to discharge, what should the nurse do to support informed cooperation?",
     "options": [
       "Ensure enabling and relaxed environment to maintain privacy and individuality of patient",
       "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
@@ -186,10 +186,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain to patient the rationale for the various investigations and treatment adopted"
     ],
     "answer": "Explain to patient the rationale for the various investigations and treatment adopted",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 13 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Before carrying out educating a patient on medication prior to discharge, what should the nurse do to support informed cooperation?",
     "options": [
       "Explain the possible outcome of condition and prognoses",
       "Explain to patient the rationale for the various investigations and treatment adopted",
@@ -197,10 +197,10 @@ export const rgnBatch02: Procedure[] = [
       "Allow patient and significant other to ask questions for clarity"
     ],
     "answer": "Explain the possible outcome of condition and prognoses",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 14 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Before carrying out educating a patient on medication prior to discharge, what should the nurse do to support informed cooperation?",
     "options": [
       "Explain the need for education to patient",
       "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
@@ -208,10 +208,10 @@ export const rgnBatch02: Procedure[] = [
       "Find patient’s level or awareness on possible management options"
     ],
     "answer": "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 15 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Which step should be performed now during educating a patient on medication prior to discharge?",
     "options": [
       "Thank patient and relatives for the cooperation",
       "Build on what the patient knows about the condition with scientific data of condition",
@@ -219,10 +219,10 @@ export const rgnBatch02: Procedure[] = [
       "Sit comfortably by the patient"
     ],
     "answer": "Ensure patient and significant other understands the teaching and clarify where need be",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Which nursing action is required at this stage of educating a patient on medication prior to discharge?",
     "options": [
       "Explain and demonstrate the use of devices/gadgets (if any) included in the management process e.g. glucometer, clutches, spirometer etc.",
       "Assist patient into a desirable position",
@@ -230,10 +230,10 @@ export const rgnBatch02: Procedure[] = [
       "Allow patient and significant other to ask questions for clarity"
     ],
     "answer": "Allow patient and significant other to ask questions for clarity",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "The nurse is carrying out educating a patient on medication prior to discharge. Which action best matches this part of the procedure?",
     "options": [
       "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
       "Establish rapport with the patient (Refer to steps)",
@@ -241,10 +241,10 @@ export const rgnBatch02: Procedure[] = [
       "Ensure enabling and relaxed environment to maintain privacy and individuality of patient"
     ],
     "answer": "Encourage patient and significant other to co-operate with health team and ask questions whenever he/she is in doubt",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "To complete educating a patient on medication prior to discharge safely, which action should the nurse take at this point?",
     "options": [
       "Explain to patient the rationale for the various investigations and treatment adopted",
       "Provide patient with clear simple pamphlets or other sources of readable information",
@@ -252,10 +252,10 @@ export const rgnBatch02: Procedure[] = [
       "Confirm patient’s diagnoses against the patient’s record (manually or electronic)"
     ],
     "answer": "Provide patient with clear simple pamphlets or other sources of readable information",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "Which step should be performed now during educating a patient on medication prior to discharge?",
     "options": [
       "Identify the suitable language for the patient",
       "Document procedure and report to appropriate officer",
@@ -263,10 +263,10 @@ export const rgnBatch02: Procedure[] = [
       "Allow patient and significant other to ask questions for clarity"
     ],
     "answer": "Thank patient and relatives for the cooperation",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of EDUCATING A PATIENT ON MEDICATION PRIOR TO DISCHARGE?",
+    "question": "After completing this part of educating a patient on medication prior to discharge, what makes the clinical record useful for continuity of care?",
     "options": [
       "Involve relatives or significant other if any",
       "Ensure patient and significant other understands the teaching and clarify where need be",
@@ -274,7 +274,7 @@ export const rgnBatch02: Procedure[] = [
       "Document procedure and report to appropriate officer"
     ],
     "answer": "Document procedure and report to appropriate officer",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ]
   },
@@ -320,7 +320,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.youtube.com/watch?v=eNIbpEAVk4g",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "Before carrying out explanation of procedure to patient/client and family, what should the nurse do to support informed cooperation?",
     "options": [
       "Inform patient/clients about the specific procedure and its purpose",
       "Explain to patient/client the level of invasion or pain (if any)",
@@ -328,10 +328,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain to patient/client what he/she should expect from the nurses"
     ],
     "answer": "Inform patient/clients about the specific procedure and its purpose",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 2 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "To complete explanation of procedure to patient/client and family safely, which action should the nurse take at this point?",
     "options": [
       "Inform patient/clients about the specific procedure and its purpose",
       "Find out patient/clients level of knowledge on the intended procedure",
@@ -339,10 +339,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain to patient/client his/her role during and after the procedure"
     ],
     "answer": "Find out patient/clients level of knowledge on the intended procedure",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "Before carrying out explanation of procedure to patient/client and family, what should the nurse do to support informed cooperation?",
     "options": [
       "Outline the actions that will be taken to reduce pain (if any)",
       "Assess patient/clients level of willingness to undergo the specific procedure",
@@ -350,10 +350,10 @@ export const rgnBatch02: Procedure[] = [
       "Find out patient/clients level of knowledge on the intended procedure"
     ],
     "answer": "Explain to patient/client what he/she should expect from the nurses",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "Before carrying out explanation of procedure to patient/client and family, what should the nurse do to support informed cooperation?",
     "options": [
       "Inform patient/clients about the specific procedure and its purpose",
       "Explain to patient/client the level of invasion or pain (if any)",
@@ -361,10 +361,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain the steps of the procedure in clear and simple language"
     ],
     "answer": "Explain the steps of the procedure in clear and simple language",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 5 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "Before carrying out explanation of procedure to patient/client and family, what should the nurse do to support informed cooperation?",
     "options": [
       "Explain to patient/client the level of invasion or pain (if any)",
       "Assess patient/clients level of willingness to undergo the specific procedure",
@@ -372,10 +372,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain to patient/client his/her role during and after the procedure"
     ],
     "answer": "Explain to patient/client the level of invasion or pain (if any)",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 6 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "A patient reports discomfort during explanation of procedure to patient/client and family. Which care action addresses pain safely?",
     "options": [
       "Explain to patient/client the level of invasion or pain (if any)",
       "Outline the actions that will be taken to reduce pain (if any)",
@@ -383,10 +383,10 @@ export const rgnBatch02: Procedure[] = [
       "Find out patient/clients level of knowledge on the intended procedure"
     ],
     "answer": "Outline the actions that will be taken to reduce pain (if any)",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "Assess pain and relevant contraindications, administer only prescribed analgesia within scope, then reassess the response and document both the intervention and effect."
   },
   {
-    "question": "Which action is listed as step 7 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "Before carrying out explanation of procedure to patient/client and family, what should the nurse do to support informed cooperation?",
     "options": [
       "Inform patient/clients about the specific procedure and its purpose",
       "Explain the steps of the procedure in clear and simple language",
@@ -394,10 +394,10 @@ export const rgnBatch02: Procedure[] = [
       "Outline the actions that will be taken to reduce pain (if any)"
     ],
     "answer": "Explain to patient/client his/her role during and after the procedure",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 8 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "Which nursing action is required at this stage of explanation of procedure to patient/client and family?",
     "options": [
       "Explain to patient/client the level of invasion or pain (if any)",
       "Assess patient/clients level of willingness to undergo the specific procedure",
@@ -405,10 +405,10 @@ export const rgnBatch02: Procedure[] = [
       "Allow patient/client to ask questions for clarity"
     ],
     "answer": "Allow patient/client to ask questions for clarity",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of EXPLANATION OF PROCEDURE TO PATIENT/CLIENT AND FAMILY?",
+    "question": "The nurse is carrying out explanation of procedure to patient/client and family. Which action best matches this part of the procedure?",
     "options": [
       "Assess patient/clients level of willingness to undergo the specific procedure",
       "Explain the steps of the procedure in clear and simple language",
@@ -416,7 +416,7 @@ export const rgnBatch02: Procedure[] = [
       "Find out patient/clients level of knowledge on the intended procedure"
     ],
     "answer": "Assess patient/clients level of willingness to undergo the specific procedure",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ]
   },
@@ -474,7 +474,7 @@ export const rgnBatch02: Procedure[] = [
       "https://my.clevelandclinic.org/podcasts/nurse-essentials/planning-for-safe-patient-discharges",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of DISCHARGE PLANNING?",
+    "question": "The nurse is carrying out discharge planning. Which action best matches this part of the procedure?",
     "options": [
       "Review patient assessment data and admission notes",
       "Establish rapport with patient and relatives (Refer to steps)",
@@ -482,10 +482,10 @@ export const rgnBatch02: Procedure[] = [
       "Encourage them to express their fears and ask questions"
     ],
     "answer": "Review patient assessment data and admission notes",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of DISCHARGE PLANNING?",
+    "question": "To complete discharge planning safely, which action should the nurse take at this point?",
     "options": [
       "Physiotherapist",
       "Estimate possible duration of hospitalization with health team members",
@@ -493,10 +493,10 @@ export const rgnBatch02: Procedure[] = [
       "Identify with health team issues that has to be discussed with patient about his/her treatment and after care"
     ],
     "answer": "Estimate possible duration of hospitalization with health team members",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of DISCHARGE PLANNING?",
+    "question": "Which step should be performed now during discharge planning?",
     "options": [
       "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary",
       "Estimate possible duration of hospitalization with health team members",
@@ -504,10 +504,10 @@ export const rgnBatch02: Procedure[] = [
       "Document circumstance of discharge."
     ],
     "answer": "Discuss with the unit staff patient treatment plan for nursing care",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of DISCHARGE PLANNING?",
+    "question": "Which nursing action is required at this stage of discharge planning?",
     "options": [
       "Discuss with patient and family the possible duration of hospitalization",
       "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any",
@@ -515,10 +515,10 @@ export const rgnBatch02: Procedure[] = [
       "Identify with health team issues that has to be discussed with patient about his/her treatment and after care"
     ],
     "answer": "Identify with health team issues that has to be discussed with patient about his/her treatment and after care",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of DISCHARGE PLANNING?",
+    "question": "The nurse is carrying out discharge planning. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport with patient and relatives (Refer to steps)",
       "Social Worker",
@@ -526,10 +526,10 @@ export const rgnBatch02: Procedure[] = [
       "Discuss plan with patient and relatives discharge"
     ],
     "answer": "Establish rapport with patient and relatives (Refer to steps)",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of DISCHARGE PLANNING?",
+    "question": "To complete discharge planning safely, which action should the nurse take at this point?",
     "options": [
       "Identify with health team issues that has to be discussed with patient about his/her treatment and after care",
       "Educate patient and relatives on the disease condition and its management",
@@ -537,10 +537,10 @@ export const rgnBatch02: Procedure[] = [
       "Nutritionist"
     ],
     "answer": "Educate patient and relatives on the disease condition and its management",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of DISCHARGE PLANNING?",
+    "question": "Which step should be performed now during discharge planning?",
     "options": [
       "Give emotional support all through procedure and provide patient with necessary explanations",
       "Public Health Nurse",
@@ -548,10 +548,10 @@ export const rgnBatch02: Procedure[] = [
       "Involve patient and relatives in the care process"
     ],
     "answer": "Discuss with patient and family the possible duration of hospitalization",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of DISCHARGE PLANNING?",
+    "question": "Which nursing action is required at this stage of discharge planning?",
     "options": [
       "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge",
       "Discuss with patient and family the possible duration of hospitalization",
@@ -559,10 +559,10 @@ export const rgnBatch02: Procedure[] = [
       "Encourage them to express their fears and ask questions"
     ],
     "answer": "Encourage them to express their fears and ask questions",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of DISCHARGE PLANNING?",
+    "question": "The nurse is carrying out discharge planning. Which action best matches this part of the procedure?",
     "options": [
       "Involve patient and relatives in the care process",
       "Discuss with the unit staff patient treatment plan for nursing care",
@@ -570,10 +570,10 @@ export const rgnBatch02: Procedure[] = [
       "Educate patient and relatives on the disease condition and its management"
     ],
     "answer": "Involve patient and relatives in the care process",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of DISCHARGE PLANNING?",
+    "question": "To complete discharge planning safely, which action should the nurse take at this point?",
     "options": [
       "Social Worker",
       "Obtain signed referral forms to specific therapist if applicable",
@@ -581,10 +581,10 @@ export const rgnBatch02: Procedure[] = [
       "Estimate possible duration of hospitalization with health team members"
     ],
     "answer": "Obtain signed referral forms to specific therapist if applicable",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of DISCHARGE PLANNING?",
+    "question": "Which step should be performed now during discharge planning?",
     "options": [
       "Involve patient and relatives in the care process",
       "Review patient assessment data and admission notes",
@@ -592,10 +592,10 @@ export const rgnBatch02: Procedure[] = [
       "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any"
     ],
     "answer": "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of DISCHARGE PLANNING?",
+    "question": "Which nursing action is required at this stage of discharge planning?",
     "options": [
       "Establish rapport with patient and relatives (Refer to steps)",
       "Discuss plan with patient and relatives discharge",
@@ -603,10 +603,10 @@ export const rgnBatch02: Procedure[] = [
       "Public Health Nurse"
     ],
     "answer": "Public Health Nurse",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of DISCHARGE PLANNING?",
+    "question": "The nurse is carrying out discharge planning. Which action best matches this part of the procedure?",
     "options": [
       "Nutritionist",
       "Public Health Nurse",
@@ -614,10 +614,10 @@ export const rgnBatch02: Procedure[] = [
       "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge"
     ],
     "answer": "Nutritionist",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of DISCHARGE PLANNING?",
+    "question": "To complete discharge planning safely, which action should the nurse take at this point?",
     "options": [
       "Discuss with the unit staff patient treatment plan for nursing care",
       "Social Worker",
@@ -625,10 +625,10 @@ export const rgnBatch02: Procedure[] = [
       "Arrange a visit between any of the following therapist and the patient/relatives to make assessment and plan for continuity of care if necessary"
     ],
     "answer": "Social Worker",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of DISCHARGE PLANNING?",
+    "question": "Which step should be performed now during discharge planning?",
     "options": [
       "Document circumstance of discharge.",
       "Obtain signed referral forms to specific therapist if applicable",
@@ -636,10 +636,10 @@ export const rgnBatch02: Procedure[] = [
       "Discuss with patient and family the possible duration of hospitalization"
     ],
     "answer": "Physiotherapist",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of DISCHARGE PLANNING?",
+    "question": "Before carrying out discharge planning, what should the nurse do to support informed cooperation?",
     "options": [
       "Social Worker",
       "Educate patient and relatives on the disease condition and its management",
@@ -647,10 +647,10 @@ export const rgnBatch02: Procedure[] = [
       "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge"
     ],
     "answer": "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 17 of DISCHARGE PLANNING?",
+    "question": "The nurse is carrying out discharge planning. Which action best matches this part of the procedure?",
     "options": [
       "Discuss plan with patient and relatives discharge",
       "Estimate possible duration of hospitalization with health team members",
@@ -658,10 +658,10 @@ export const rgnBatch02: Procedure[] = [
       "Establish rapport with patient and relatives (Refer to steps)"
     ],
     "answer": "Discuss plan with patient and relatives discharge",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of DISCHARGE PLANNING?",
+    "question": "To complete discharge planning safely, which action should the nurse take at this point?",
     "options": [
       "Public Health Nurse",
       "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any",
@@ -669,10 +669,10 @@ export const rgnBatch02: Procedure[] = [
       "Review patient assessment data and admission notes"
     ],
     "answer": "Conduct home visits to ascertain relative’s preparedness to receive patient and closest referral point if any",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of DISCHARGE PLANNING?",
+    "question": "After completing this part of discharge planning, what makes the clinical record useful for continuity of care?",
     "options": [
       "Encourage them to express their fears and ask questions",
       "Give emotional support all through procedure and provide patient with necessary explanations",
@@ -680,10 +680,10 @@ export const rgnBatch02: Procedure[] = [
       "Inform patient of any change in treatment plan as soon as it is agreed upon and indicate progress being made towards discharge"
     ],
     "answer": "Document circumstance of discharge.",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 20 of DISCHARGE PLANNING?",
+    "question": "Which nursing action is required at this stage of discharge planning?",
     "options": [
       "Identify with health team issues that has to be discussed with patient about his/her treatment and after care",
       "Physiotherapist",
@@ -691,7 +691,7 @@ export const rgnBatch02: Procedure[] = [
       "Give emotional support all through procedure and provide patient with necessary explanations"
     ],
     "answer": "Give emotional support all through procedure and provide patient with necessary explanations",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ]
   },
@@ -749,7 +749,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.osmosis.org/learn/Hospital_discharges%3A_Role_of_the_nurse",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of DISCHARGE OF A PATIENT?",
+    "question": "The nurse is carrying out discharge of a patient. Which action best matches this part of the procedure?",
     "options": [
       "Ensure that discharge papers are duly signed by discharging doctor",
       "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
@@ -757,10 +757,10 @@ export const rgnBatch02: Procedure[] = [
       "Help patient to pack his/her belongings"
     ],
     "answer": "Ensure that discharge papers are duly signed by discharging doctor",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of DISCHARGE OF A PATIENT?",
+    "question": "Before carrying out discharge of a patient, what should the nurse do to support informed cooperation?",
     "options": [
       "Ensure linen are removed, decontaminate beds and its accessories",
       "Inform patient and relatives about discharge and current state of health",
@@ -768,10 +768,10 @@ export const rgnBatch02: Procedure[] = [
       "Ensure that patient’s hospital bill is assessed"
     ],
     "answer": "Inform patient and relatives about discharge and current state of health",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of DISCHARGE OF A PATIENT?",
+    "question": "Which step should be performed now during discharge of a patient?",
     "options": [
       "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance",
       "Let patient and relative know the cost of treatment and payment modalities",
@@ -779,10 +779,10 @@ export const rgnBatch02: Procedure[] = [
       "Ensure that discharge papers are duly signed by discharging doctor"
     ],
     "answer": "Allay patients fear and anxiety on the impending discharge",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of DISCHARGE OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of discharge of a patient?",
     "options": [
       "Explain how medication should be taken and stored and disposed off at home",
       "Inform patient and relatives about discharge and current state of health",
@@ -790,10 +790,10 @@ export const rgnBatch02: Procedure[] = [
       "Educate patient and relative(s) on need for continuing treatment and follow up care"
     ],
     "answer": "Educate patient and relative(s) on need for continuing treatment and follow up care",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of DISCHARGE OF A PATIENT?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
       "Thank and bids them good-bye",
@@ -801,10 +801,10 @@ export const rgnBatch02: Procedure[] = [
       "Allay patients fear and anxiety on the impending discharge"
     ],
     "answer": "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 6 of DISCHARGE OF A PATIENT?",
+    "question": "To complete discharge of a patient safely, which action should the nurse take at this point?",
     "options": [
       "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed",
       "Ensure that patient’s hospital bill is assessed",
@@ -812,10 +812,10 @@ export const rgnBatch02: Procedure[] = [
       "Ensure linen are removed, decontaminate beds and its accessories"
     ],
     "answer": "Ensure that patient’s hospital bill is assessed",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of DISCHARGE OF A PATIENT?",
+    "question": "Which step should be performed now during discharge of a patient?",
     "options": [
       "Ensure that patient’s hospital bill is assessed",
       "Make new bed for next patient",
@@ -823,10 +823,10 @@ export const rgnBatch02: Procedure[] = [
       "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance"
     ],
     "answer": "Let patient and relative know the cost of treatment and payment modalities",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of DISCHARGE OF A PATIENT?",
+    "question": "What safety principle applies when the procedure requires prescribed medication?",
     "options": [
       "Inform patient and relatives about discharge and current state of health",
       "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
@@ -834,10 +834,10 @@ export const rgnBatch02: Procedure[] = [
       "Collect medication for patient from hospital’s pharmacy where applicable"
     ],
     "answer": "Collect medication for patient from hospital’s pharmacy where applicable",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Verify the prescription and patient, allergies, medicine, dose, route, timing and required monitoring under local policy. Clarify an unsafe or unclear order before administration."
   },
   {
-    "question": "Which action is listed as step 9 of DISCHARGE OF A PATIENT?",
+    "question": "Before carrying out discharge of a patient, what should the nurse do to support informed cooperation?",
     "options": [
       "Explain how medication should be taken and stored and disposed off at home",
       "Help patient to pack his/her belongings",
@@ -845,10 +845,10 @@ export const rgnBatch02: Procedure[] = [
       "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)"
     ],
     "answer": "Explain how medication should be taken and stored and disposed off at home",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 10 of DISCHARGE OF A PATIENT?",
+    "question": "To complete discharge of a patient safely, which action should the nurse take at this point?",
     "options": [
       "Educate patient and relative(s) on need for continuing treatment and follow up care",
       "Help patient to pack his/her belongings",
@@ -856,10 +856,10 @@ export const rgnBatch02: Procedure[] = [
       "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed"
     ],
     "answer": "Help patient to pack his/her belongings",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of DISCHARGE OF A PATIENT?",
+    "question": "Which step should be performed now during discharge of a patient?",
     "options": [
       "Make new bed for next patient",
       "Remove all I.V. access lines and other tubes or drainage",
@@ -867,10 +867,10 @@ export const rgnBatch02: Procedure[] = [
       "Ensure that patient’s hospital bill is assessed"
     ],
     "answer": "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of DISCHARGE OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of discharge of a patient?",
     "options": [
       "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
       "Let patient and relative know the cost of treatment and payment modalities",
@@ -878,10 +878,10 @@ export const rgnBatch02: Procedure[] = [
       "Remove all I.V. access lines and other tubes or drainage"
     ],
     "answer": "Remove all I.V. access lines and other tubes or drainage",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of DISCHARGE OF A PATIENT?",
+    "question": "The nurse is carrying out discharge of a patient. Which action best matches this part of the procedure?",
     "options": [
       "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance",
       "Allay patients fear and anxiety on the impending discharge",
@@ -889,10 +889,10 @@ export const rgnBatch02: Procedure[] = [
       "Collect medication for patient from hospital’s pharmacy where applicable"
     ],
     "answer": "Remind patient and relative(s) of the review date, department to visit, follow-up appointments and stresses on its importance",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of DISCHARGE OF A PATIENT?",
+    "question": "To complete discharge of a patient safely, which action should the nurse take at this point?",
     "options": [
       "Thank and bids them good-bye",
       "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
@@ -900,10 +900,10 @@ export const rgnBatch02: Procedure[] = [
       "Educate patient and relative(s) on need for continuing treatment and follow up care"
     ],
     "answer": "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of DISCHARGE OF A PATIENT?",
+    "question": "After completing this part of discharge of a patient, what makes the clinical record useful for continuity of care?",
     "options": [
       "Hand over any valuables in the nurse’s custody to the patient or relative(s) and records, witnessed and signed",
       "Discuss the type of follow-up care that have been prescribed e.g. physio, wound dressing",
@@ -911,10 +911,10 @@ export const rgnBatch02: Procedure[] = [
       "Make new bed for next patient"
     ],
     "answer": "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 16 of DISCHARGE OF A PATIENT?",
+    "question": "Which nursing action is required at this stage of discharge of a patient?",
     "options": [
       "Let patient and relative know the cost of treatment and payment modalities",
       "Ensure that discharge papers are duly signed by discharging doctor",
@@ -922,10 +922,10 @@ export const rgnBatch02: Procedure[] = [
       "Thank and bids them good-bye"
     ],
     "answer": "Thank and bids them good-bye",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of DISCHARGE OF A PATIENT?",
+    "question": "After the hands-on part of discharge of a patient, how should used equipment and waste be managed?",
     "options": [
       "Ensure linen are removed, decontaminate beds and its accessories",
       "Record all payment receipt numbers in admission and discharge book and hands over receipt to patient or relative",
@@ -933,10 +933,10 @@ export const rgnBatch02: Procedure[] = [
       "Inform patient and relatives about discharge and current state of health"
     ],
     "answer": "Ensure linen are removed, decontaminate beds and its accessories",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 18 of DISCHARGE OF A PATIENT?",
+    "question": "To complete discharge of a patient safely, which action should the nurse take at this point?",
     "options": [
       "Explain how medication should be taken and stored and disposed off at home",
       "Make new bed for next patient",
@@ -944,7 +944,7 @@ export const rgnBatch02: Procedure[] = [
       "Documents in the admission and discharge book, daily ward state and nurses’ notes (manual or electronic)"
     ],
     "answer": "Make new bed for next patient",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ]
   },
@@ -1012,7 +1012,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "The nurse is carrying out checking and recording of body temperature. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Provide privacy",
@@ -1020,10 +1020,10 @@ export const rgnBatch02: Procedure[] = [
       "Prepare and send tray to patient’s bedside"
     ],
     "answer": "Establish rapport with patient (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Before carrying out checking and recording of body temperature, what should the nurse do to support informed cooperation?",
     "options": [
       "Oral – ensure the mouth is empty",
       "Explain procedure to patient (Refer to steps)",
@@ -1031,10 +1031,10 @@ export const rgnBatch02: Procedure[] = [
       "Chart readings of on observation 14 hourly chart (manual or electronic)"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which step should be performed now during checking and recording of body temperature?",
     "options": [
       "Perform hand hygiene",
       "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
@@ -1042,10 +1042,10 @@ export const rgnBatch02: Procedure[] = [
       "Leave thermometer for two to three minutes or as indicated by manufacturer"
     ],
     "answer": "Prepare and send tray to patient’s bedside",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "When positioning the patient for checking and recording of body temperature, what should guide the nurse's choice of position?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
@@ -1053,10 +1053,10 @@ export const rgnBatch02: Procedure[] = [
       "Assist patient into an appropriate position"
     ],
     "answer": "Assist patient into an appropriate position",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 5 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "A patient is about to undergo checking and recording of body temperature. Which action protects their dignity during preparation?",
     "options": [
       "Provide privacy",
       "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
@@ -1064,10 +1064,10 @@ export const rgnBatch02: Procedure[] = [
       "Expose and clean area where temperature will be taken, if:"
     ],
     "answer": "Provide privacy",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 6 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Before proceeding with checking and recording of body temperature, what infection-prevention action is required at this point?",
     "options": [
       "Check temperature as follows:",
       "Perform hand hygiene",
@@ -1075,10 +1075,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 7 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which step should be performed now during checking and recording of body temperature?",
     "options": [
       "Oral – ensure the mouth is empty",
       "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
@@ -1086,10 +1086,10 @@ export const rgnBatch02: Procedure[] = [
       "Chart readings of on observation 14 hourly chart (manual or electronic)"
     ],
     "answer": "Expose and clean area where temperature will be taken, if:",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which nursing action is required at this stage of checking and recording of body temperature?",
     "options": [
       "Provide privacy",
       "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
@@ -1097,10 +1097,10 @@ export const rgnBatch02: Procedure[] = [
       "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool"
     ],
     "answer": "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "The nurse is carrying out checking and recording of body temperature. Which action best matches this part of the procedure?",
     "options": [
       "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
       "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
@@ -1108,10 +1108,10 @@ export const rgnBatch02: Procedure[] = [
       "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap"
     ],
     "answer": "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "To complete checking and recording of body temperature safely, which action should the nurse take at this point?",
     "options": [
       "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
       "Oral – ensure the mouth is empty",
@@ -1119,10 +1119,10 @@ export const rgnBatch02: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Oral – ensure the mouth is empty",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which step should be performed now during checking and recording of body temperature?",
     "options": [
       "Check temperature as follows:",
       "Dispose off used items and return thermometer back to its storage section",
@@ -1130,10 +1130,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Rectal – move clothing away and expose the rectal area are cleaned with a clean soap",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "A patient is about to undergo checking and recording of body temperature. Which action protects their dignity during preparation?",
     "options": [
       "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
       "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
@@ -1141,10 +1141,10 @@ export const rgnBatch02: Procedure[] = [
       "Press knob to show reading on the screen"
     ],
     "answer": "Press knob to show reading on the screen",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 13 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "When collecting a specimen as part of checking and recording of body temperature, which principle protects the reliability of the result?",
     "options": [
       "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
       "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
@@ -1152,10 +1152,10 @@ export const rgnBatch02: Procedure[] = [
       "Axilla – inserts thermometer into the axilla between two skin folds"
     ],
     "answer": "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 14 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "To complete checking and recording of body temperature safely, which action should the nurse take at this point?",
     "options": [
       "Discuss findings with patient and report any abnormalities detected to appropriate officer",
       "Check temperature as follows:",
@@ -1163,10 +1163,10 @@ export const rgnBatch02: Procedure[] = [
       "Oral – ensure the mouth is empty"
     ],
     "answer": "Check temperature as follows:",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which step should be performed now during checking and recording of body temperature?",
     "options": [
       "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
       "Assist patient into an appropriate position",
@@ -1174,10 +1174,10 @@ export const rgnBatch02: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Axilla – inserts thermometer into the axilla between two skin folds",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which nursing action is required at this stage of checking and recording of body temperature?",
     "options": [
       "Clean the thermometer with a dry cotton wool swab from bulb to the stem",
       "Dispose off used items and return thermometer back to its storage section",
@@ -1185,10 +1185,10 @@ export const rgnBatch02: Procedure[] = [
       "Temporal – place the probe flush on patient’s forehead"
     ],
     "answer": "Temporal – place the probe flush on patient’s forehead",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "The nurse is carrying out checking and recording of body temperature. Which action best matches this part of the procedure?",
     "options": [
       "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
       "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
@@ -1196,10 +1196,10 @@ export const rgnBatch02: Procedure[] = [
       "Leave thermometer for two to three minutes or as indicated by manufacturer"
     ],
     "answer": "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "To complete checking and recording of body temperature safely, which action should the nurse take at this point?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
@@ -1207,10 +1207,10 @@ export const rgnBatch02: Procedure[] = [
       "Check temperature as follows:"
     ],
     "answer": "Rectal – slide a clean disposable plastic cover over the temperature probe and place it gently into the rectum",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 19 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which step should be performed now during checking and recording of body temperature?",
     "options": [
       "Discuss findings with patient and report any abnormalities detected to appropriate officer",
       "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool",
@@ -1218,10 +1218,10 @@ export const rgnBatch02: Procedure[] = [
       "Oral – ensure the mouth is empty"
     ],
     "answer": "Leave thermometer for two to three minutes or as indicated by manufacturer",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "After completing this part of checking and recording of body temperature, what makes the clinical record useful for continuity of care?",
     "options": [
       "Oral – slide a clean disposable plastic cover over the temperature probe and place it gently under the tongue",
       "Assist patient into an appropriate position",
@@ -1229,10 +1229,10 @@ export const rgnBatch02: Procedure[] = [
       "Removes thermometer after beep, read and record findings on the chart"
     ],
     "answer": "Removes thermometer after beep, read and record findings on the chart",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 21 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "After the hands-on part of checking and recording of body temperature, how should used equipment and waste be managed?",
     "options": [
       "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
       "Dispose off used items and return thermometer back to its storage section",
@@ -1240,10 +1240,10 @@ export const rgnBatch02: Procedure[] = [
       "Chart readings of on observation 14 hourly chart (manual or electronic)"
     ],
     "answer": "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 22 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Before proceeding with checking and recording of body temperature, what infection-prevention action is required at this point?",
     "options": [
       "Provide privacy",
       "Perform hand hygiene",
@@ -1251,10 +1251,10 @@ export const rgnBatch02: Procedure[] = [
       "Leave thermometer for two to three minutes or as indicated by manufacturer"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 22 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 23 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which step should be performed now during checking and recording of body temperature?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Press knob to show reading on the screen",
@@ -1262,10 +1262,10 @@ export const rgnBatch02: Procedure[] = [
       "Check temperature as follows:"
     ],
     "answer": "Discuss findings with patient and report any abnormalities detected to appropriate officer",
-    "explanation": "This checks recall of step 23 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 24 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "Which nursing action is required at this stage of checking and recording of body temperature?",
     "options": [
       "Clean thermometer from stem to the bulb or remove and dispose off probe cover if used",
       "Axilla – move clothing away from the patient shoulder and arm to expose the axilla and dry with clean cotton wool",
@@ -1273,10 +1273,10 @@ export const rgnBatch02: Procedure[] = [
       "Chart readings of on observation 14 hourly chart (manual or electronic)"
     ],
     "answer": "Chart readings of on observation 14 hourly chart (manual or electronic)",
-    "explanation": "This checks recall of step 24 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 25 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "When positioning the patient for checking and recording of body temperature, what should guide the nurse's choice of position?",
     "options": [
       "Assist patient to return to a desirable position",
       "Assist patient into an appropriate position",
@@ -1284,10 +1284,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Assist patient to return to a desirable position",
-    "explanation": "This checks recall of step 25 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 26 of CHECKING AND RECORDING OF BODY TEMPERATURE?",
+    "question": "After the hands-on part of checking and recording of body temperature, how should used equipment and waste be managed?",
     "options": [
       "Temporal – ensure that forehead is dry and wipe with dry cotton wool",
       "Dispose off used items and return thermometer back to its storage section",
@@ -1295,7 +1295,7 @@ export const rgnBatch02: Procedure[] = [
       "Discuss findings with patient and report any abnormalities detected to appropriate officer"
     ],
     "answer": "Dispose off used items and return thermometer back to its storage section",
-    "explanation": "This checks recall of step 26 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   }
 ]
   },
@@ -1346,7 +1346,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of CHECKING AND RECORDING OF PULSE?",
+    "question": "The nurse is carrying out checking and recording of pulse. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport with the patient (Refer to steps)",
       "Feel the pulsations of the radial artery",
@@ -1354,10 +1354,10 @@ export const rgnBatch02: Procedure[] = [
       "Assist patient into an appropriate resting position"
     ],
     "answer": "Establish rapport with the patient (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of CHECKING AND RECORDING OF PULSE?",
+    "question": "Before carrying out checking and recording of pulse, what should the nurse do to support informed cooperation?",
     "options": [
       "Assist patient into an appropriate resting position",
       "Explain procedure to patient (Refer to steps)",
@@ -1365,10 +1365,10 @@ export const rgnBatch02: Procedure[] = [
       "Establish rapport with the patient (Refer to steps)"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of CHECKING AND RECORDING OF PULSE?",
+    "question": "When positioning the patient for checking and recording of pulse, what should guide the nurse's choice of position?",
     "options": [
       "Establish rapport with the patient (Refer to steps)",
       "Explain procedure to patient (Refer to steps)",
@@ -1376,10 +1376,10 @@ export const rgnBatch02: Procedure[] = [
       "Note the rhythm, volume and tension of the pulse"
     ],
     "answer": "Assist patient into an appropriate resting position",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 4 of CHECKING AND RECORDING OF PULSE?",
+    "question": "Which nursing action is required at this stage of checking and recording of pulse?",
     "options": [
       "Assist patient into an appropriate resting position",
       "Establish rapport with the patient (Refer to steps)",
@@ -1387,10 +1387,10 @@ export const rgnBatch02: Procedure[] = [
       "Place first three fingers of one hand on the anterior aspect of patient forearm just above the base of the thumb"
     ],
     "answer": "Place first three fingers of one hand on the anterior aspect of patient forearm just above the base of the thumb",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of CHECKING AND RECORDING OF PULSE?",
+    "question": "The nurse is carrying out checking and recording of pulse. Which action best matches this part of the procedure?",
     "options": [
       "Feel the pulsations of the radial artery",
       "Assist patient to return to a desirable position",
@@ -1398,10 +1398,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Feel the pulsations of the radial artery",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of CHECKING AND RECORDING OF PULSE?",
+    "question": "To complete checking and recording of pulse safely, which action should the nurse take at this point?",
     "options": [
       "Explain procedure to patient (Refer to steps)",
       "With the aid of an appropriate timer count for a full minute",
@@ -1409,10 +1409,10 @@ export const rgnBatch02: Procedure[] = [
       "Establish rapport with the patient (Refer to steps)"
     ],
     "answer": "With the aid of an appropriate timer count for a full minute",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of CHECKING AND RECORDING OF PULSE?",
+    "question": "Which step should be performed now during checking and recording of pulse?",
     "options": [
       "Establish rapport with the patient (Refer to steps)",
       "Assist patient into an appropriate resting position",
@@ -1420,10 +1420,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Concentrate on the beats of the pulse when counting rather than the timer",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of CHECKING AND RECORDING OF PULSE?",
+    "question": "Which nursing action is required at this stage of checking and recording of pulse?",
     "options": [
       "Perform hand hygiene",
       "Establish rapport with the patient (Refer to steps)",
@@ -1431,10 +1431,10 @@ export const rgnBatch02: Procedure[] = [
       "Note the rhythm, volume and tension of the pulse"
     ],
     "answer": "Note the rhythm, volume and tension of the pulse",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of CHECKING AND RECORDING OF PULSE?",
+    "question": "The nurse is carrying out checking and recording of pulse. Which action best matches this part of the procedure?",
     "options": [
       "Record the pulse on the observation chart",
       "Feel the pulsations of the radial artery",
@@ -1442,10 +1442,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Record the pulse on the observation chart",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of CHECKING AND RECORDING OF PULSE?",
+    "question": "Before proceeding with checking and recording of pulse, what infection-prevention action is required at this point?",
     "options": [
       "Assist patient into an appropriate resting position",
       "Perform hand hygiene",
@@ -1453,10 +1453,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 11 of CHECKING AND RECORDING OF PULSE?",
+    "question": "When positioning the patient for checking and recording of pulse, what should guide the nurse's choice of position?",
     "options": [
       "Establish rapport with the patient (Refer to steps)",
       "Explain procedure to patient (Refer to steps)",
@@ -1464,10 +1464,10 @@ export const rgnBatch02: Procedure[] = [
       "Note the rhythm, volume and tension of the pulse"
     ],
     "answer": "Assist patient to return to a desirable position",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 12 of CHECKING AND RECORDING OF PULSE?",
+    "question": "Which nursing action is required at this stage of checking and recording of pulse?",
     "options": [
       "Place first three fingers of one hand on the anterior aspect of patient forearm just above the base of the thumb",
       "Establish rapport with the patient (Refer to steps)",
@@ -1475,7 +1475,7 @@ export const rgnBatch02: Procedure[] = [
       "Discuss findings with patient and report any abnormalities detected to appropriate officer"
     ],
     "answer": "Discuss findings with patient and report any abnormalities detected to appropriate officer",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ]
   },
@@ -1526,7 +1526,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "The nurse is carrying out checking and recording of respiration. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Observe the position in which patient breath better and skin colour",
@@ -1534,10 +1534,10 @@ export const rgnBatch02: Procedure[] = [
       "Assist patient into an appropriate resting position"
     ],
     "answer": "Establish rapport with patient (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "Before carrying out checking and recording of respiration, what should the nurse do to support informed cooperation?",
     "options": [
       "Assist patient into an appropriate resting position",
       "Explain procedure to patient (Refer to steps)",
@@ -1545,10 +1545,10 @@ export const rgnBatch02: Procedure[] = [
       "Establish rapport with patient (Refer to steps)"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "When positioning the patient for checking and recording of respiration, what should guide the nurse's choice of position?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Explain procedure to patient (Refer to steps)",
@@ -1556,10 +1556,10 @@ export const rgnBatch02: Procedure[] = [
       "Note the depth rhythm and any difficulty in breathing"
     ],
     "answer": "Assist patient into an appropriate resting position",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 4 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "Which nursing action is required at this stage of checking and recording of respiration?",
     "options": [
       "Assist patient into an appropriate resting position",
       "Establish rapport with patient (Refer to steps)",
@@ -1567,10 +1567,10 @@ export const rgnBatch02: Procedure[] = [
       "Observe patient respiration without his/her awareness"
     ],
     "answer": "Observe patient respiration without his/her awareness",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "When positioning the patient for checking and recording of respiration, what should guide the nurse's choice of position?",
     "options": [
       "Observe the position in which patient breath better and skin colour",
       "Assist patient to return to a desirable position",
@@ -1578,10 +1578,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Observe the position in which patient breath better and skin colour",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 6 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "To complete checking and recording of respiration safely, which action should the nurse take at this point?",
     "options": [
       "Explain procedure to patient (Refer to steps)",
       "Note the rise and fall of patient chest during inspiration and expiration, the rise and fall counts as one cycle",
@@ -1589,10 +1589,10 @@ export const rgnBatch02: Procedure[] = [
       "Establish rapport with patient (Refer to steps)"
     ],
     "answer": "Note the rise and fall of patient chest during inspiration and expiration, the rise and fall counts as one cycle",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "Which step should be performed now during checking and recording of respiration?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Assist patient into an appropriate resting position",
@@ -1600,10 +1600,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "With the aid of an appropriate timer count for a full minute",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "Which nursing action is required at this stage of checking and recording of respiration?",
     "options": [
       "Perform hand hygiene",
       "Establish rapport with patient (Refer to steps)",
@@ -1611,10 +1611,10 @@ export const rgnBatch02: Procedure[] = [
       "Note the depth rhythm and any difficulty in breathing"
     ],
     "answer": "Note the depth rhythm and any difficulty in breathing",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "After completing this part of checking and recording of respiration, what makes the clinical record useful for continuity of care?",
     "options": [
       "Record the findings on the observational chart (manual/electronic)",
       "Observe the position in which patient breath better and skin colour",
@@ -1622,10 +1622,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Record the findings on the observational chart (manual/electronic)",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 10 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "Before proceeding with checking and recording of respiration, what infection-prevention action is required at this point?",
     "options": [
       "Assist patient into an appropriate resting position",
       "Perform hand hygiene",
@@ -1633,10 +1633,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 11 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "When positioning the patient for checking and recording of respiration, what should guide the nurse's choice of position?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Explain procedure to patient (Refer to steps)",
@@ -1644,10 +1644,10 @@ export const rgnBatch02: Procedure[] = [
       "Note the depth rhythm and any difficulty in breathing"
     ],
     "answer": "Assist patient to return to a desirable position",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 12 of CHECKING AND RECORDING OF RESPIRATION?",
+    "question": "Which nursing action is required at this stage of checking and recording of respiration?",
     "options": [
       "Observe patient respiration without his/her awareness",
       "Establish rapport with patient (Refer to steps)",
@@ -1655,7 +1655,7 @@ export const rgnBatch02: Procedure[] = [
       "Discuss findings with patient and report any abnormalities detected appropriate officer"
     ],
     "answer": "Discuss findings with patient and report any abnormalities detected appropriate officer",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ]
   },
@@ -1718,7 +1718,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of CHECKING OF BLOOD PRESSURE?",
+    "question": "The nurse is carrying out checking of blood pressure. Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport and identify the patient by the name",
       "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
@@ -1726,10 +1726,10 @@ export const rgnBatch02: Procedure[] = [
       "Inflates cuff by:"
     ],
     "answer": "Establish rapport and identify the patient by the name",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Before carrying out checking of blood pressure, what should the nurse do to support informed cooperation?",
     "options": [
       "Remove cuff and reassemble apparatus",
       "Explain procedure to patient",
@@ -1737,10 +1737,10 @@ export const rgnBatch02: Procedure[] = [
       "Assist patient into an appropriate resting position with the arm supported"
     ],
     "answer": "Explain procedure to patient",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Which step should be performed now during checking of blood pressure?",
     "options": [
       "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury",
       "Explain procedure to patient",
@@ -1748,10 +1748,10 @@ export const rgnBatch02: Procedure[] = [
       "Assist patient to return to a desirable position"
     ],
     "answer": "Prepare tray and sent to bedside",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of CHECKING OF BLOOD PRESSURE?",
+    "question": "When positioning the patient for checking of blood pressure, what should guide the nurse's choice of position?",
     "options": [
       "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
       "Perform hand hygiene",
@@ -1759,10 +1759,10 @@ export const rgnBatch02: Procedure[] = [
       "Assist patient into an appropriate resting position with the arm supported"
     ],
     "answer": "Assist patient into an appropriate resting position with the arm supported",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 5 of CHECKING OF BLOOD PRESSURE?",
+    "question": "The nurse is carrying out checking of blood pressure. Which action best matches this part of the procedure?",
     "options": [
       "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
       "Deflate the cuff until the mercury disappear",
@@ -1770,10 +1770,10 @@ export const rgnBatch02: Procedure[] = [
       "Record the findings on the observation chart"
     ],
     "answer": "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of CHECKING OF BLOOD PRESSURE?",
+    "question": "To complete checking of blood pressure safely, which action should the nurse take at this point?",
     "options": [
       "Assist patient into an appropriate resting position with the arm supported",
       "Empty cuff of air and place the center of the cuff over the brachial artery",
@@ -1781,10 +1781,10 @@ export const rgnBatch02: Procedure[] = [
       "Release cuff pressure slowly and listen to the sound with stethoscope against the movement of the mercury"
     ],
     "answer": "Empty cuff of air and place the center of the cuff over the brachial artery",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Which step should be performed now during checking of blood pressure?",
     "options": [
       "Discuss findings with patient and report any abnormalities detected to appropriate officer",
       "Check, wear and place stethoscope on brachial artery",
@@ -1792,10 +1792,10 @@ export const rgnBatch02: Procedure[] = [
       "Electronic – pressing the start knob and wait for reading to appear on the screen"
     ],
     "answer": "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Which nursing action is required at this stage of checking of blood pressure?",
     "options": [
       "Thank and makes patient comfortable",
       "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends",
@@ -1803,10 +1803,10 @@ export const rgnBatch02: Procedure[] = [
       "Inflates cuff by:"
     ],
     "answer": "Inflates cuff by:",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of CHECKING OF BLOOD PRESSURE?",
+    "question": "A patient is about to undergo checking of blood pressure. Which action protects their dignity during preparation?",
     "options": [
       "Electronic – pressing the start knob and wait for reading to appear on the screen",
       "Prepare tray and sent to bedside",
@@ -1814,10 +1814,10 @@ export const rgnBatch02: Procedure[] = [
       "Empty cuff of air and place the center of the cuff over the brachial artery"
     ],
     "answer": "Electronic – pressing the start knob and wait for reading to appear on the screen",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
   },
   {
-    "question": "Which action is listed as step 10 of CHECKING OF BLOOD PRESSURE?",
+    "question": "To complete checking of blood pressure safely, which action should the nurse take at this point?",
     "options": [
       "Deflate the cuff until the mercury disappear",
       "Manual",
@@ -1825,10 +1825,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient"
     ],
     "answer": "Manual",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Which step should be performed now during checking of blood pressure?",
     "options": [
       "Electronic – pressing the start knob and wait for reading to appear on the screen",
       "Establish rapport and identify the patient by the name",
@@ -1836,10 +1836,10 @@ export const rgnBatch02: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Which nursing action is required at this stage of checking of blood pressure?",
     "options": [
       "Stretch patient’s arm and places sphygmomanometer beside arm at the same level",
       "Record the findings on the observation chart",
@@ -1847,10 +1847,10 @@ export const rgnBatch02: Procedure[] = [
       "Check, wear and place stethoscope on brachial artery"
     ],
     "answer": "Check, wear and place stethoscope on brachial artery",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of CHECKING OF BLOOD PRESSURE?",
+    "question": "The nurse is carrying out checking of blood pressure. Which action best matches this part of the procedure?",
     "options": [
       "Release cuff pressure slowly and listen to the sound with stethoscope against the movement of the mercury",
       "Check, wear and place stethoscope on brachial artery",
@@ -1858,10 +1858,10 @@ export const rgnBatch02: Procedure[] = [
       "Thank and makes patient comfortable"
     ],
     "answer": "Release cuff pressure slowly and listen to the sound with stethoscope against the movement of the mercury",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of CHECKING OF BLOOD PRESSURE?",
+    "question": "To complete checking of blood pressure safely, which action should the nurse take at this point?",
     "options": [
       "Prepare tray and sent to bedside",
       "Deflate the cuff until the mercury disappear",
@@ -1869,10 +1869,10 @@ export const rgnBatch02: Procedure[] = [
       "Palpate radial artery and inflate cuff until pulse disappears and note the height of the mercury"
     ],
     "answer": "Deflate the cuff until the mercury disappear",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Which step should be performed now during checking of blood pressure?",
     "options": [
       "Assist patient to return to a desirable position",
       "Manual",
@@ -1880,10 +1880,10 @@ export const rgnBatch02: Procedure[] = [
       "Wrap the cuff around arm above the elbow making sure the artery arrow marked on the outside of the cuff is placed correctly and secure the ends"
     ],
     "answer": "Remove cuff and reassemble apparatus",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 16 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Which nursing action is required at this stage of checking of blood pressure?",
     "options": [
       "Deflate the cuff until the mercury disappear",
       "Empty cuff of air and place the center of the cuff over the brachial artery",
@@ -1891,10 +1891,10 @@ export const rgnBatch02: Procedure[] = [
       "Thank and makes patient comfortable"
     ],
     "answer": "Thank and makes patient comfortable",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 17 of CHECKING OF BLOOD PRESSURE?",
+    "question": "After completing this part of checking of blood pressure, what makes the clinical record useful for continuity of care?",
     "options": [
       "Record the findings on the observation chart",
       "Explain procedure to patient",
@@ -1902,10 +1902,10 @@ export const rgnBatch02: Procedure[] = [
       "Stretch patient’s arm and places sphygmomanometer beside arm at the same level"
     ],
     "answer": "Record the findings on the observation chart",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 18 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Before proceeding with checking of blood pressure, what infection-prevention action is required at this point?",
     "options": [
       "Check, wear and place stethoscope on brachial artery",
       "Perform hand hygiene",
@@ -1913,10 +1913,10 @@ export const rgnBatch02: Procedure[] = [
       "Establish rapport and identify the patient by the name"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 19 of CHECKING OF BLOOD PRESSURE?",
+    "question": "When positioning the patient for checking of blood pressure, what should guide the nurse's choice of position?",
     "options": [
       "Inflates cuff by:",
       "Discuss findings with patient and report any abnormalities detected to appropriate officer",
@@ -1924,10 +1924,10 @@ export const rgnBatch02: Procedure[] = [
       "Thank and makes patient comfortable"
     ],
     "answer": "Assist patient to return to a desirable position",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 20 of CHECKING OF BLOOD PRESSURE?",
+    "question": "Which nursing action is required at this stage of checking of blood pressure?",
     "options": [
       "Assist patient into an appropriate resting position with the arm supported",
       "Remove cuff and reassemble apparatus",
@@ -1935,7 +1935,7 @@ export const rgnBatch02: Procedure[] = [
       "Discuss findings with patient and report any abnormalities detected to appropriate officer"
     ],
     "answer": "Discuss findings with patient and report any abnormalities detected to appropriate officer",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ]
   },
@@ -1989,7 +1989,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.youtube.com/watch?v=gUWJ-6nL5-8",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "The nurse is carrying out checking and recording of oxygen saturation (spo2). Which action best matches this part of the procedure?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Assist patient into an appropriate position",
@@ -1997,10 +1997,10 @@ export const rgnBatch02: Procedure[] = [
       "Press the start knob to check if the device is functioning"
     ],
     "answer": "Establish rapport with patient (Refer to steps)",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "Before carrying out checking and recording of oxygen saturation (spo2), what should the nurse do to support informed cooperation?",
     "options": [
       "Place the device on either the finger, toe or earlobe",
       "Explain procedure to patient (Refer to steps)",
@@ -2008,10 +2008,10 @@ export const rgnBatch02: Procedure[] = [
       "Record findings on the oximeter on the observation chart (manual or electronic)"
     ],
     "answer": "Explain procedure to patient (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 3 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "Which step should be performed now during checking and recording of oxygen saturation (spo2)?",
     "options": [
       "Perform hand hygiene",
       "Assist patient into an appropriate position",
@@ -2019,10 +2019,10 @@ export const rgnBatch02: Procedure[] = [
       "Examine the sites for capillary refill and coldness"
     ],
     "answer": "Press the start knob to check if the device is functioning",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 4 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "Which nursing action is required at this stage of checking and recording of oxygen saturation (spo2)?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Discuss findings with patient and appropriate officer",
@@ -2030,10 +2030,10 @@ export const rgnBatch02: Procedure[] = [
       "Prepare and send tray to patient’s bedside"
     ],
     "answer": "Prepare and send tray to patient’s bedside",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 5 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "When positioning the patient for checking and recording of oxygen saturation (spo2), what should guide the nurse's choice of position?",
     "options": [
       "Assist patient into an appropriate position",
       "Warm the sites if the area is cold by either rubbing or applying warm compress",
@@ -2041,10 +2041,10 @@ export const rgnBatch02: Procedure[] = [
       "Examine the sites for capillary refill and coldness"
     ],
     "answer": "Assist patient into an appropriate position",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
   },
   {
-    "question": "Which action is listed as step 6 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "Before proceeding with checking and recording of oxygen saturation (spo2), what infection-prevention action is required at this point?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Perform hand hygiene",
@@ -2052,10 +2052,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 7 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "Which step should be performed now during checking and recording of oxygen saturation (spo2)?",
     "options": [
       "Place the device on either the finger, toe or earlobe",
       "Warm the sites if the area is cold by either rubbing or applying warm compress",
@@ -2063,10 +2063,10 @@ export const rgnBatch02: Procedure[] = [
       "Record findings on the oximeter on the observation chart (manual or electronic)"
     ],
     "answer": "Examine the sites for capillary refill and coldness",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "When collecting a specimen as part of checking and recording of oxygen saturation (spo2), which principle protects the reliability of the result?",
     "options": [
       "Assist patient into an appropriate position",
       "Prepare and send tray to patient’s bedside",
@@ -2074,10 +2074,10 @@ export const rgnBatch02: Procedure[] = [
       "Clean the site with a dry swab"
     ],
     "answer": "Clean the site with a dry swab",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
   },
   {
-    "question": "Which action is listed as step 9 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "The nurse is carrying out checking and recording of oxygen saturation (spo2). Which action best matches this part of the procedure?",
     "options": [
       "Warm the sites if the area is cold by either rubbing or applying warm compress",
       "Discuss findings with patient and appropriate officer",
@@ -2085,10 +2085,10 @@ export const rgnBatch02: Procedure[] = [
       "Record findings on the oximeter on the observation chart (manual or electronic)"
     ],
     "answer": "Warm the sites if the area is cold by either rubbing or applying warm compress",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "To complete checking and recording of oxygen saturation (spo2) safely, which action should the nurse take at this point?",
     "options": [
       "Assist patient into an appropriate position",
       "Place the device on either the finger, toe or earlobe",
@@ -2096,10 +2096,10 @@ export const rgnBatch02: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Place the device on either the finger, toe or earlobe",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "After completing this part of checking and recording of oxygen saturation (spo2), what makes the clinical record useful for continuity of care?",
     "options": [
       "Establish rapport with patient (Refer to steps)",
       "Discuss findings with patient and appropriate officer",
@@ -2107,10 +2107,10 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Record findings on the oximeter on the observation chart (manual or electronic)",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 12 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "Which nursing action is required at this stage of checking and recording of oxygen saturation (spo2)?",
     "options": [
       "Warm the sites if the area is cold by either rubbing or applying warm compress",
       "Clean the site with a dry swab",
@@ -2118,10 +2118,10 @@ export const rgnBatch02: Procedure[] = [
       "Remove the device"
     ],
     "answer": "Remove the device",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of CHECKING AND RECORDING OF OXYGEN SATURATION (SPO2)?",
+    "question": "The nurse is carrying out checking and recording of oxygen saturation (spo2). Which action best matches this part of the procedure?",
     "options": [
       "Discuss findings with patient and appropriate officer",
       "Prepare and send tray to patient’s bedside",
@@ -2129,7 +2129,7 @@ export const rgnBatch02: Procedure[] = [
       "Explain procedure to patient (Refer to steps)"
     ],
     "answer": "Discuss findings with patient and appropriate officer",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   }
 ]
   },
@@ -2196,7 +2196,7 @@ export const rgnBatch02: Procedure[] = [
       "https://www.youtube.com/watch?v=MZCf621bRHs",
     quiz: [
   {
-    "question": "Which action is listed as step 1 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "The nurse is carrying out monitoring blood glucose level. Which action best matches this part of the procedure?",
     "options": [
       "Check physicians order for the frequency of monitoring glucose level",
       "Check the functionality of the glucose meter and ensure reading is in mmol/L",
@@ -2204,10 +2204,10 @@ export const rgnBatch02: Procedure[] = [
       "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)"
     ],
     "answer": "Check physicians order for the frequency of monitoring glucose level",
-    "explanation": "This checks recall of step 1 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 2 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "To complete monitoring blood glucose level safely, which action should the nurse take at this point?",
     "options": [
       "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
       "Identify patient and establish rapport (Refer to steps)",
@@ -2215,10 +2215,10 @@ export const rgnBatch02: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Identify patient and establish rapport (Refer to steps)",
-    "explanation": "This checks recall of step 2 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 3 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Before carrying out monitoring blood glucose level, what should the nurse do to support informed cooperation?",
     "options": [
       "Clean the area with antimicrobial solution and allow to dry",
       "Identify patient and establish rapport (Refer to steps)",
@@ -2226,10 +2226,10 @@ export const rgnBatch02: Procedure[] = [
       "Document on the appropriate recording software and observation chart (manual or electronic)"
     ],
     "answer": "Explain procedure (Refer to steps)",
-    "explanation": "This checks recall of step 3 in the procedure sequence."
+    "explanation": "A clear explanation helps the patient understand the procedure and cooperate. Obtain consent as required, check understanding and address concerns before proceeding."
   },
   {
-    "question": "Which action is listed as step 4 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Before proceeding with monitoring blood glucose level, what infection-prevention action is required at this point?",
     "options": [
       "Select the site for glucose check (fingers/palmer area)",
       "Discuss findings with the patient and appropriate officer",
@@ -2237,10 +2237,10 @@ export const rgnBatch02: Procedure[] = [
       "Perform hand hygiene"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 4 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 5 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "The nurse is carrying out monitoring blood glucose level. Which action best matches this part of the procedure?",
     "options": [
       "Check the functionality of the glucose meter and ensure reading is in mmol/L",
       "Drop blood on the glucose strip and allow to read",
@@ -2248,10 +2248,10 @@ export const rgnBatch02: Procedure[] = [
       "Remove gloves"
     ],
     "answer": "Check the functionality of the glucose meter and ensure reading is in mmol/L",
-    "explanation": "This checks recall of step 5 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 6 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "To complete monitoring blood glucose level safely, which action should the nurse take at this point?",
     "options": [
       "Perform hand hygiene",
       "Set the tray and send to the bedside",
@@ -2259,10 +2259,10 @@ export const rgnBatch02: Procedure[] = [
       "Puncture the area using lancet or needle"
     ],
     "answer": "Set the tray and send to the bedside",
-    "explanation": "This checks recall of step 6 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 7 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Which step should be performed now during monitoring blood glucose level?",
     "options": [
       "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
       "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm",
@@ -2270,10 +2270,10 @@ export const rgnBatch02: Procedure[] = [
       "Insert glucose strip into the glucometer and check for its functionality"
     ],
     "answer": "Select the site for glucose check (fingers/palmer area)",
-    "explanation": "This checks recall of step 7 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 8 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Which nursing action is required at this stage of monitoring blood glucose level?",
     "options": [
       "After noting the reading on the glucometer remove the strip and dispose off",
       "Select the site for glucose check (fingers/palmer area)",
@@ -2281,10 +2281,10 @@ export const rgnBatch02: Procedure[] = [
       "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)"
     ],
     "answer": "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)",
-    "explanation": "This checks recall of step 8 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 9 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "The nurse is carrying out monitoring blood glucose level. Which action best matches this part of the procedure?",
     "options": [
       "Insert glucose strip into the glucometer and check for its functionality",
       "Explain procedure (Refer to steps)",
@@ -2292,10 +2292,10 @@ export const rgnBatch02: Procedure[] = [
       "Set the tray and send to the bedside"
     ],
     "answer": "Insert glucose strip into the glucometer and check for its functionality",
-    "explanation": "This checks recall of step 9 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 10 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "To complete monitoring blood glucose level safely, which action should the nurse take at this point?",
     "options": [
       "Drop blood on the glucose strip and allow to read",
       "Wear disposable glove",
@@ -2303,10 +2303,10 @@ export const rgnBatch02: Procedure[] = [
       "Identify patient and establish rapport (Refer to steps)"
     ],
     "answer": "Wear disposable glove",
-    "explanation": "This checks recall of step 10 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 11 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Which step should be performed now during monitoring blood glucose level?",
     "options": [
       "Insert glucose strip into the glucometer and check for its functionality",
       "Check physicians order for the frequency of monitoring glucose level",
@@ -2314,10 +2314,10 @@ export const rgnBatch02: Procedure[] = [
       "Discuss findings with the patient and appropriate officer"
     ],
     "answer": "Clean the area with antimicrobial solution and allow to dry",
-    "explanation": "This checks recall of step 11 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 12 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Which nursing action is required at this stage of monitoring blood glucose level?",
     "options": [
       "Check the functionality of the glucose meter and ensure reading is in mmol/L",
       "Remove gloves",
@@ -2325,10 +2325,10 @@ export const rgnBatch02: Procedure[] = [
       "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm"
     ],
     "answer": "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm",
-    "explanation": "This checks recall of step 12 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 13 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "The nurse is carrying out monitoring blood glucose level. Which action best matches this part of the procedure?",
     "options": [
       "Puncture the area using lancet or needle",
       "Stroke from the base of the finger/palmer area to fill the capillary tube and make the place warm",
@@ -2336,10 +2336,10 @@ export const rgnBatch02: Procedure[] = [
       "After noting the reading on the glucometer remove the strip and dispose off"
     ],
     "answer": "Puncture the area using lancet or needle",
-    "explanation": "This checks recall of step 13 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 14 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "To complete monitoring blood glucose level safely, which action should the nurse take at this point?",
     "options": [
       "Explain procedure (Refer to steps)",
       "Drop blood on the glucose strip and allow to read",
@@ -2347,10 +2347,10 @@ export const rgnBatch02: Procedure[] = [
       "Clean the area with antimicrobial solution and allow to dry"
     ],
     "answer": "Drop blood on the glucose strip and allow to read",
-    "explanation": "This checks recall of step 14 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 15 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Which assessment during monitoring blood glucose level can reveal a potentially urgent complication?",
     "options": [
       "Document on the appropriate recording software and observation chart (manual or electronic)",
       "Wear disposable glove",
@@ -2358,10 +2358,10 @@ export const rgnBatch02: Procedure[] = [
       "Select the site for glucose check (fingers/palmer area)"
     ],
     "answer": "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
-    "explanation": "This checks recall of step 15 in the procedure sequence."
+    "explanation": "Inspect for bleeding and assess the patient's overall condition. Report fresh, increasing or otherwise concerning bleeding immediately and follow the relevant escalation protocol."
   },
   {
-    "question": "Which action is listed as step 16 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "After the hands-on part of monitoring blood glucose level, how should used equipment and waste be managed?",
     "options": [
       "Drop blood on the glucose strip and allow to read",
       "Set the tray and send to the bedside",
@@ -2369,10 +2369,10 @@ export const rgnBatch02: Procedure[] = [
       "After noting the reading on the glucometer remove the strip and dispose off"
     ],
     "answer": "After noting the reading on the glucometer remove the strip and dispose off",
-    "explanation": "This checks recall of step 16 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   },
   {
-    "question": "Which action is listed as step 17 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "The nurse is carrying out monitoring blood glucose level. Which action best matches this part of the procedure?",
     "options": [
       "Remove gloves",
       "Identify patient and establish rapport (Refer to steps)",
@@ -2380,10 +2380,10 @@ export const rgnBatch02: Procedure[] = [
       "Check the functionality of the glucose meter and ensure reading is in mmol/L"
     ],
     "answer": "Remove gloves",
-    "explanation": "This checks recall of step 17 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 18 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Before proceeding with monitoring blood glucose level, what infection-prevention action is required at this point?",
     "options": [
       "Puncture the area using lancet or needle",
       "Perform hand hygiene",
@@ -2391,10 +2391,10 @@ export const rgnBatch02: Procedure[] = [
       "Check physicians order for the frequency of monitoring glucose level"
     ],
     "answer": "Perform hand hygiene",
-    "explanation": "This checks recall of step 18 in the procedure sequence."
+    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
   },
   {
-    "question": "Which action is listed as step 19 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "Which step should be performed now during monitoring blood glucose level?",
     "options": [
       "Assess the selected site for any cut, callous, scars or rashes (if any is found choose an alternate site)",
       "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
@@ -2402,10 +2402,10 @@ export const rgnBatch02: Procedure[] = [
       "After noting the reading on the glucometer remove the strip and dispose off"
     ],
     "answer": "Discuss findings with the patient and appropriate officer",
-    "explanation": "This checks recall of step 19 in the procedure sequence."
+    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
   },
   {
-    "question": "Which action is listed as step 20 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "After completing this part of monitoring blood glucose level, what makes the clinical record useful for continuity of care?",
     "options": [
       "Perform hand hygiene",
       "Place dry swab on punctured area applying pressure about fifteen (15) seconds to stop bleeding",
@@ -2413,10 +2413,10 @@ export const rgnBatch02: Procedure[] = [
       "Document on the appropriate recording software and observation chart (manual or electronic)"
     ],
     "answer": "Document on the appropriate recording software and observation chart (manual or electronic)",
-    "explanation": "This checks recall of step 20 in the procedure sequence."
+    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   },
   {
-    "question": "Which action is listed as step 21 of MONITORING BLOOD GLUCOSE LEVEL?",
+    "question": "After the hands-on part of monitoring blood glucose level, how should used equipment and waste be managed?",
     "options": [
       "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
       "Clean the area with antimicrobial solution and allow to dry",
@@ -2424,7 +2424,7 @@ export const rgnBatch02: Procedure[] = [
       "Drop blood on the glucose strip and allow to read"
     ],
     "answer": "Dispose off used items, decontaminate tray and place the glucometer in a safe area",
-    "explanation": "This checks recall of step 21 in the procedure sequence."
+    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
   }
 ]
   }
