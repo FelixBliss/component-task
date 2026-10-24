@@ -1,5 +1,113 @@
 import type { Procedure } from "../../procedureTypes";
 
+function stepQuestion(title: string, step: string, index: number): string {
+  const s = step.toLowerCase();
+  if (/establish rapport/.test(s)) return "How should the nurse begin the interaction before providing " + title.toLowerCase() + "?";
+  if (/identify patient by name/.test(s)) return "What should the nurse do to confirm the identity of the person receiving care?";
+  if (/review doctor\/physician/.test(s)) return "What must be reviewed before urinary catheterization begins?";
+  if (/explain procedure|inform and explain/.test(s)) return "What should the nurse explain to the patient before starting the procedure?";
+  if (/provide privacy/.test(s) || /provide privacy/.test(s)) return "Which action protects the patient's privacy during care?";
+  if (/perform hand hygiene/.test(s)) return "Which infection-prevention action is required at this point in the procedure?";
+  if (/assess patient (ability|capabilities)/.test(s)) return "What should be assessed before deciding how much assistance the patient needs?";
+  if (/prepare and take trolley|prepare and send trolley/.test(s)) return "How should the nurse prepare and bring the required equipment to the bedside?";
+  if (/arrange requirement|collect the necessary articles/.test(s)) return "How should the nurse prepare the required articles before care begins?";
+  if (/offer bedpan or urinal/.test(s)) return "What should be offered before bathing if the patient needs to eliminate?";
+  if (/loosen and remove top bed clothes/.test(s)) return "How should the top bedclothes be managed before bathing?";
+  if (/remove patient.?s clothes and cover/.test(s)) return "How should the nurse prepare the patient while maintaining body coverage?";
+  if (/protect bed/.test(s)) return "Which measure protects the bed from moisture during care?";
+  if (/maintain individuality/.test(s) && /temperature of water/.test(s)) return "How should the nurse include the patient’s preference about water temperature?";
+  if (/maintain individuality/.test(s)) return "How can the nurse preserve the patient's choices during personal care?";
+  if (/wash, rinse and dry patient.?s face/.test(s) && /canthus/.test(s)) return "What technique should be used when washing the face around the eyes?";
+  if (/wash, rinse and dry the rest of the face/.test(s)) return "Which areas should be washed after the face and eyes?";
+  if (/arm farther away/.test(s)) return "Which arm should be washed first during the bed bath?";
+  if (/arm near to the nurse/.test(s)) return "After washing the farther arm, which arm is washed next?";
+  if (/chest and abdomen/.test(s)) return "Which areas require attention to skin folds during the bath?";
+  if (/wash, rinse and dry the legs/.test(s)) return "How should the legs be washed during the bed bath?";
+  if (/wash, rinse and dry the back/.test(s)) return "How should the nurse access and clean the patient's back?";
+  if (/pressure areas/.test(s)) return "What skin-care action is required while bathing the patient?";
+  if (/change bottom linen/.test(s)) return "What should the nurse do when changing the bottom linen during the bath?";
+  if (/genitalia/.test(s)) return "Which personal-hygiene task is required after washing the body?";
+  if (/groom and dress/.test(s)) return "How should the nurse finish the patient's personal hygiene care?";
+  if (/make bed and reposition/.test(s)) return "What should be done to restore comfort after the procedure?";
+  if (/dispose off used items|decontaminate/.test(s)) return "How should used supplies and equipment be managed after care?";
+  if (/document|record procedure/.test(s)) return "What should be documented or reported when the procedure is complete?";
+  if (/prepare bathroom/.test(s)) return "What environment should be prepared before assisting the patient to bathe?";
+  if (/send patient to the bathroom/.test(s)) return "How should the patient be assisted to reach the bathroom safely?";
+  if (/assist patient to undress/.test(s)) return "What assistance may be required before the patient bathes?";
+  if (/chair or stool/.test(s)) return "What should be provided in the bathroom when the patient needs support?";
+  if (/allow the patient to do as much/.test(s)) return "How should the nurse promote the patient's independence during bathing?";
+  if (/complete the areas/.test(s)) return "What should the nurse do for body areas the patient cannot wash independently?";
+  if (/collect toiletries and tidy/.test(s)) return "What should be done to restore order in the bathroom after bathing?";
+  if (/arrange requirement within patient.?s reach/.test(s)) return "How should oral-care equipment be arranged before starting?";
+  if (/assist patient into a desirable position/.test(s)) return "How should the patient be positioned before oral care?";
+  if (/jaconet cape|adult bib/.test(s)) return "What should be placed under the patient's chin to protect clothing during mouth care?";
+  if (/give brush with paste/.test(s)) return "What should be given to the patient to begin cleaning the teeth or mouth?";
+  if (/encourage patient to brush/.test(s)) return "How should the nurse support the patient's participation in brushing the teeth?";
+  if (/cleans the mouth thoroughly/.test(s)) return "Which oral surfaces should be cleaned thoroughly and gently?";
+  if (/rinse the mouth/.test(s)) return "How should rinse water be managed during mouth care?";
+  if (/mouth wash/.test(s)) return "How should mouthwash be used when it is part of the care plan?";
+  if (/apply lip balm/.test(s)) return "Which actions help maintain oral and lip comfort after cleaning?";
+  if (/place bedpan under patient and wash perineum/.test(s)) return "How should the perineum be cleaned before catheter insertion?";
+  if (/supine position/.test(s)) return "How should the patient be positioned for catheterization according to the NMC procedure?";
+  if (/wash and dry perineal area/.test(s)) return "What hygiene step is required before preparing the sterile field?";
+  if (/retract the prepuce/.test(s)) return "When necessary, what should be done to expose the male urethral meatus?";
+  if (/sterile field/.test(s)) return "How should the sterile catheter supplies be prepared?";
+  if (/drape/.test(s) && /fenestrated/.test(s)) return "How should the sterile drape be positioned to expose the urinary meatus?";
+  if (/wear new sterile gloves/.test(s)) return "What should the nurse wear before continuing the aseptic part of catheterization?";
+  if (/part the labia/.test(s)) return "How should the labia be held during female catheterization?";
+  if (/labia majora/.test(s)) return "What is the correct method for cleansing the labia majora with antiseptic?";
+  if (/labia minora/.test(s)) return "Which area is cleansed after the labia majora during female catheterization?";
+  if (/clean the area with antiseptic/.test(s)) return "How should the male urethral meatus be cleaned with antiseptic?";
+  if (/angle of 90/.test(s)) return "How should the penis be positioned to help straighten the male urethra?";
+  if (/lubricate catheter/.test(s)) return "What preparation is required immediately before catheter insertion?";
+  if (/insert catheter into the urethral orifice/.test(s)) return "In female catheterization, how should the catheter be advanced into the urethra?";
+  if (/insert the catheter gently/.test(s)) return "During male catheterization, what guides advancement of the catheter?";
+  if (/inflate the balloon/.test(s)) return "When should the catheter balloon be inflated, and what should be used?";
+  if (/collect a urine specimen/.test(s)) return "How should a urine specimen be collected without contaminating the container?";
+  if (/connect catheter to urine bag/.test(s)) return "What should be connected to the catheter after insertion?";
+  if (/hang urine bag/.test(s)) return "How should the urine bag be positioned and secured?";
+  if (/observe colour and note amount/.test(s)) return "What urine characteristics should be observed and recorded?";
+  if (/resistance will often be met/.test(s)) return "What should the nurse do if resistance is encountered at the external sphincter?";
+  if (/remove drapes/.test(s)) return "Which items should be removed after catheterization is completed?";
+  if (/assist patient into a desirable position/.test(s)) return "What should be done to restore the patient's comfort after the procedure?";
+  return "During " + title.toLowerCase() + ", which action is required to " + step.replace(/[.]+$/,"").replace(/^./,c=>c.toLowerCase()) + "?";
+}
+
+function stepExplanation(step: string, title: string): string {
+  const s = step.toLowerCase();
+  if (/hand hygiene|gloves|sterile|antiseptic|decontaminate/.test(s)) return "This step supports infection prevention during " + title.toLowerCase() + ". Maintain aseptic technique and follow current local policy.";
+  if (/privacy|rapport|explain|identify/.test(s)) return "This step supports patient dignity, communication and cooperation during " + title.toLowerCase() + ".";
+  if (/assess/.test(s)) return "Assessment helps the nurse tailor assistance to the patient's condition and ability to participate.";
+  if (/document|record|report|observe colour|note amount/.test(s)) return "Accurate recording and reporting support continuity of care and prompt follow-up of abnormal findings.";
+  if (/position|bed|chair|stool|supine/.test(s)) return "Appropriate positioning supports patient safety, access to care and comfort.";
+  if (/urine|catheter|urethra|labia|penis|perineum|balloon/.test(s)) return "This is a procedure-specific step. Use aseptic technique, observe the patient's response, and follow the catheter and institutional guidance.";
+  if (/wash|rinse|dry|mouth|teeth|face|skin|genitalia/.test(s)) return "This step provides the specified hygiene care while preserving comfort, skin or mucosal integrity, and dignity.";
+  return "This action is specified in the NMC Ghana RGN procedure for " + title.toLowerCase() + "; complete it safely and assess the patient's response.";
+}
+
+function createStepQuiz(title: string, steps: string[]): NonNullable<Procedure["quiz"]> {
+  return steps.map((step, index) => {
+    const distractors: string[] = [];
+    for (const offset of [3, 7, 11, 5, 13, 2]) {
+      const candidate = steps[(index + offset) % steps.length];
+      if (candidate !== step && !distractors.includes(candidate)) distractors.push(candidate);
+      if (distractors.length === 3) break;
+    }
+    const options = [...distractors];
+    options.splice(index % 4, 0, step);
+    return {
+      question: stepQuestion(title, step, index),
+      options,
+      answer: step,
+      explanation: stepExplanation(step, title)
+    };
+  });
+}
+
+function withStepQuiz(procedure: Omit<Procedure, "quiz">): Procedure {
+  return { ...procedure, quiz: createStepQuiz(procedure.title, procedure.steps) };
+}
+
 export const rgnBatch01: Procedure[] = [
   {
     id: "rgn-001",
@@ -269,7 +377,6 @@ export const rgnBatch01: Procedure[] = [
 ]
 
   },
-
   {
     id: "rgn-002",
     title: "CARE OF STOMA OR OSTOMY AND CHANGING OF POUCH",
@@ -617,7 +724,6 @@ export const rgnBatch01: Procedure[] = [
   }
 ]
   },
-
   {
     id: "rgn-003",
     title: "TREATMENT OF PRESSURE AREAS",
@@ -924,504 +1030,103 @@ export const rgnBatch01: Procedure[] = [
   }
 ]
   },
-
-  {
-    id: "rgn-004",
-    title: "Making a Patient's Bed",
-    category: "General Nursing (RGN)",
-    overview:
-      "Preparation of a clean, safe and comfortable patient bed according to the patient's condition and mobility.",
-    purpose: [
-      "Provide comfort and cleanliness.",
-      "Promote patient safety.",
-      "Maintain a clean patient environment.",
-      "Reduce risk of infection and skin problems."
-    ],
-    indications: [
-      "Routine bed making.",
-      "Changing soiled linen.",
-      "Preparing a bed for a new patient.",
-      "Maintaining patient comfort."
-    ],
-    equipment: [
-      "Clean bed linen",
-      "Pillowcases",
-      "Protective sheet where required",
-      "Laundry bag",
-      "Gloves where indicated"
-    ],
-    steps: [
-      "Explain the procedure to the patient.",
-      "Perform hand hygiene.",
-      "Provide privacy.",
-      "Position the patient safely.",
-      "Remove used linen carefully.",
-      "Place soiled linen in the appropriate receptacle.",
-      "Clean and arrange the bed as required.",
-      "Apply clean linen without unnecessary shaking.",
-      "Ensure the bed is safe and comfortable.",
-      "Perform hand hygiene and document relevant care."
-    ],
-    precautions: [
-      "Avoid shaking used linen.",
-      "Maintain patient privacy.",
-      "Use safe patient-handling techniques.",
-      "Keep clean linen away from contaminated surfaces.",
-      "Ensure the bed is safe before leaving the patient."
-    ],
-    videoUrl: "https://www.youtube.com/watch?v=BM4FjWkMgyM",
-    quiz: [
-      {
-        question: "What should be done before bed making?",
-        options: ["Explain the procedure to the patient", "Remove the patient's identification", "Leave the patient unattended", "Shake the dirty linen"],
-        answer: "Explain the procedure to the patient"
-      },
-      {
-        question: "Where should soiled linen be placed?",
-        options: ["In the appropriate laundry receptacle", "On the floor", "On a clean bedside table", "Inside a patient's locker"],
-        answer: "In the appropriate laundry receptacle"
-      },
-      {
-        question: "Why should used linen not be shaken?",
-        options: ["To reduce dispersal of contaminants", "To make the bed faster", "To increase dust", "To wet the linen"],
-        answer: "To reduce dispersal of contaminants"
-      },
-      {
-        question: "What is an important outcome of proper bed making?",
-        options: ["Patient comfort and safety", "Increased contamination", "Reduced privacy", "Increased injury risk"],
-        answer: "Patient comfort and safety"
-      },
-      {
-        question: "What should be maintained during bed making?",
-        options: ["Patient privacy", "Unnecessary exposure", "Unsafe positioning", "Dirty linen on the bed"],
-        answer: "Patient privacy"
-      },
-      {
-        question: "What should be done with clean linen?",
-        options: ["Keep it away from contaminated surfaces", "Place it on the floor", "Mix it with used linen", "Use it to clean equipment"],
-        answer: "Keep it away from contaminated surfaces"
-      },
-      {
-        question: "What should be checked before leaving the patient?",
-        options: ["Bed safety and comfort", "The patient's television channel", "The patient's shoes", "The room decoration"],
-        answer: "Bed safety and comfort"
-      },
-      {
-        question: "Which practice supports infection prevention?",
-        options: ["Hand hygiene", "Reusing soiled linen", "Shaking linen", "Mixing clean and dirty linen"],
-        answer: "Hand hygiene"
-      },
-      {
-        question: "Why is correct positioning important during bed making?",
-        options: ["To maintain patient safety", "To increase discomfort", "To prevent communication", "To delay the procedure"],
-        answer: "To maintain patient safety"
-      },
-      {
-        question: "What should the nurse do after completing the procedure?",
-        options: ["Ensure the patient is comfortable and safe", "Leave equipment on the floor", "Leave soiled linen beside the bed", "Ignore the patient"],
-        answer: "Ensure the patient is comfortable and safe"
-      }
-    ]
-  },
-
-  {
+  withStepQuiz({
     id: "rgn-005",
-    title: "COMPLETE MOUTH CARE",
+    title: "ASSISTED MOUTH CARE",
     category: "General Nursing (RGN)",
-    types: [
-  "N/A"
-],
-    overview:
-      "This is the act of cleaning the buccal cavity of seriously ill, unconscious patients' or those who have difficulty utilizing their upper extremities. This procedure is carried out solely by the nurse.",
+    types: ["N/A"],
+    overview: "This is the act of the nurse assisting the patient in the cleaning of the buccal cavity.",
     purpose: [],
-    indications: [
-      "Patients unable to perform oral hygiene independently.",
-      "Unconscious or critically ill patients requiring appropriate oral care.",
-      "Patients with poor oral hygiene.",
-      "Patients requiring assisted mouth care."
-    ],
+    indications: [],
     equipment: [
-  "1. A tray containing the following:",
-  "a. Two gallipots (for mouth cleaning lotion and cotton wool or gauze)",
-  "b. Two receivers (for used swab and return mouth wash)",
-  "c. Mouth cleaning lotion (e.g. normal saline, sodium bicarbonate, weak strength of hydrogen peroxide, mouthwash)",
-  "d. Padded Spatula",
-  "e. Mouth gag",
-  "f. Artery, sponge or dressing forceps",
-  "g. Dissecting forceps",
-  "h. Bowl for dentures if any",
-  "i. Lip balm e.g. glycerine or vaseline",
-  "j. Orange sticks (toothpick)",
-  "k. Towel and mackintosh",
-  "l. Jaconet cape/adult bib",
-  "m. A jug of water"
-],
+      "A tray containing the following:",
+      "Tooth brush, chewing sponge or stick and tooth paste",
+      "A jug of water and a cup",
+      "Mouth wash (Optional)",
+      "Vomitus bowel",
+      "Bowl for dentures if any",
+      "Lip balm e.g. glycerine or vaseline",
+      "Orange sticks (toothpick)",
+      "Jaconet cape/adult bib"
+    ],
     steps: [
-  "Establish rapport (Refer to steps)",
-  "Explain procedure to patient and provide privacy",
-  "Perform hand hygiene",
-  "Prepare tray and take to the patient’s bedside",
-  "Put patient in a suitable position",
-  "Protect patient’s bed linen with mackintosh and towel",
-  "Protect patient’s neck area with the jaconet cape/adult bib",
-  "Use the mouth jag to secure the mouth and position if available",
-  "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
-  "Pour lotion into gallipots",
-  "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
-  "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
-  "Control movement of the tongue with padded spatula",
-  "Use orange sticks to clean in between teeth",
-  "Clean mouth with water or any diluted mouth wash",
-  "Clean lips and apply lip balm e.g. vaseline or glycerin",
-  "Assist patient to resume desirable position",
-  "Dispose off used items, decontaminate, wash and sterilize instruments",
-  "Perform hand hygiene",
-  "Document procedure and findings (manual or electronic)",
-  "Report to appropriate officer"
-],
-    precautions: [
-      "Use appropriate positioning for patients at risk of aspiration.",
-      "Avoid causing trauma to oral tissues.",
-      "Use individual oral-care equipment.",
-      "Report unusual oral findings.",
-      "Follow appropriate infection-prevention practices."
-    ],
-    videoUrl: "https://www.youtube.com/watch?v=SQEjgHODEz0",
-    quiz: [
-  {
-    "question": "The nurse is carrying out complete mouth care. Which action best matches this part of the procedure?",
-    "options": [
       "Establish rapport (Refer to steps)",
-      "Put patient in a suitable position",
-      "Clean lips and apply lip balm e.g. vaseline or glycerin",
-      "Use the mouth jag to secure the mouth and position if available"
-    ],
-    "answer": "Establish rapport (Refer to steps)",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "A patient is about to undergo complete mouth care. Which action protects their dignity during preparation?",
-    "options": [
-      "Clean mouth with water or any diluted mouth wash",
-      "Explain procedure to patient and provide privacy",
-      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
-      "Prepare tray and take to the patient’s bedside"
-    ],
-    "answer": "Explain procedure to patient and provide privacy",
-    "explanation": "Maintaining privacy protects dignity and confidentiality. Explain the care, expose only the area needed and keep the patient appropriately covered."
-  },
-  {
-    "question": "Before proceeding with complete mouth care, what infection-prevention action is required at this point?",
-    "options": [
-      "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
-      "Explain procedure to patient and provide privacy",
+      "Explain procedure to patient",
+      "Assess patient capabilities to participate in the care",
       "Perform hand hygiene",
-      "Document procedure and findings (manual or electronic)"
-    ],
-    "answer": "Perform hand hygiene",
-    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
-  },
-  {
-    "question": "Which nursing action is required at this stage of complete mouth care?",
-    "options": [
-      "Protect patient’s neck area with the jaconet cape/adult bib",
-      "Dispose off used items, decontaminate, wash and sterilize instruments",
-      "Pour lotion into gallipots",
-      "Prepare tray and take to the patient’s bedside"
-    ],
-    "answer": "Prepare tray and take to the patient’s bedside",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "When positioning the patient for complete mouth care, what should guide the nurse's choice of position?",
-    "options": [
-      "Put patient in a suitable position",
-      "Use orange sticks to clean in between teeth",
-      "Protect patient’s bed linen with mackintosh and towel",
-      "Assist patient to resume desirable position"
-    ],
-    "answer": "Put patient in a suitable position",
-    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
-  },
-  {
-    "question": "To complete complete mouth care safely, which action should the nurse take at this point?",
-    "options": [
-      "Prepare tray and take to the patient’s bedside",
-      "Protect patient’s bed linen with mackintosh and towel",
-      "Establish rapport (Refer to steps)",
-      "Control movement of the tongue with padded spatula"
-    ],
-    "answer": "Protect patient’s bed linen with mackintosh and towel",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "Which step should be performed now during complete mouth care?",
-    "options": [
-      "Report to appropriate officer",
-      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
-      "Protect patient’s neck area with the jaconet cape/adult bib",
-      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any"
-    ],
-    "answer": "Protect patient’s neck area with the jaconet cape/adult bib",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "When positioning the patient for complete mouth care, what should guide the nurse's choice of position?",
-    "options": [
-      "Clean lips and apply lip balm e.g. vaseline or glycerin",
-      "Protect patient’s neck area with the jaconet cape/adult bib",
-      "Document procedure and findings (manual or electronic)",
-      "Use the mouth jag to secure the mouth and position if available"
-    ],
-    "answer": "Use the mouth jag to secure the mouth and position if available",
-    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
-  },
-  {
-    "question": "The nurse is carrying out complete mouth care. Which action best matches this part of the procedure?",
-    "options": [
-      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
+      "Arrange requirement within patient’s reach",
+      "Assist patient into a desirable position",
+      "Place jaconet cape/adult bib under the chin of patient (manual or electronic)",
+      "Give brush with paste/chewing sponge/stick to patient",
+      "Encourage patient to brush the teeth or assist patient to brush the teeth",
+      "Ensure patient cleans the mouth thoroughly and gently paying attention to the cheeks, both sides of gums, tongue and palates",
+      "Give water to rinse the mouth and void content into the vomitus bowel",
+      "Dilute the mouth wash, encourage patient to gargle and void content into the vomitus bowel",
+      "Clean patient mouth and apply lip balm",
+      "Assist patient in a desirable in bed",
+      "Dispose off and clean used items",
       "Perform hand hygiene",
-      "Clean mouth with water or any diluted mouth wash",
-      "Protect patient’s bed linen with mackintosh and towel"
+      "Record procedure and report findings (manual or electronic)"
     ],
-    "answer": "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "To complete complete mouth care safely, which action should the nurse take at this point?",
-    "options": [
-      "Use orange sticks to clean in between teeth",
-      "Pour lotion into gallipots",
-      "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
-      "Explain procedure to patient and provide privacy"
-    ],
-    "answer": "Pour lotion into gallipots",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "When collecting a specimen as part of complete mouth care, which principle protects the reliability of the result?",
-    "options": [
-      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
-      "Establish rapport (Refer to steps)",
-      "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
-      "Dispose off used items, decontaminate, wash and sterilize instruments"
-    ],
-    "answer": "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
-    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
-  },
-  {
-    "question": "When collecting a specimen as part of complete mouth care, which principle protects the reliability of the result?",
-    "options": [
-      "Put patient in a suitable position",
-      "Assist patient to resume desirable position",
-      "Use the mouth jag to secure the mouth and position if available",
-      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently"
-    ],
-    "answer": "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
-    "explanation": "Use the correct collection method and container, avoid contamination, label at the point of collection using patient identifiers, and send promptly according to laboratory policy."
-  },
-  {
-    "question": "The nurse is carrying out complete mouth care. Which action best matches this part of the procedure?",
-    "options": [
-      "Control movement of the tongue with padded spatula",
-      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
-      "Prepare tray and take to the patient’s bedside",
-      "Clean lips and apply lip balm e.g. vaseline or glycerin"
-    ],
-    "answer": "Control movement of the tongue with padded spatula",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "To complete complete mouth care safely, which action should the nurse take at this point?",
-    "options": [
-      "Perform hand hygiene",
-      "Use orange sticks to clean in between teeth",
-      "Report to appropriate officer",
-      "Take swab with forceps, dips into cleansing lotion and squeezes out excess"
-    ],
-    "answer": "Use orange sticks to clean in between teeth",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "Which step should be performed now during complete mouth care?",
-    "options": [
-      "Document procedure and findings (manual or electronic)",
-      "Pour lotion into gallipots",
-      "Clean mouth with water or any diluted mouth wash",
-      "Protect patient’s neck area with the jaconet cape/adult bib"
-    ],
-    "answer": "Clean mouth with water or any diluted mouth wash",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "Which nursing action is required at this stage of complete mouth care?",
-    "options": [
-      "Use orange sticks to clean in between teeth",
-      "Protect patient’s bed linen with mackintosh and towel",
-      "Dispose off used items, decontaminate, wash and sterilize instruments",
-      "Clean lips and apply lip balm e.g. vaseline or glycerin"
-    ],
-    "answer": "Clean lips and apply lip balm e.g. vaseline or glycerin",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  },
-  {
-    "question": "When positioning the patient for complete mouth care, what should guide the nurse's choice of position?",
-    "options": [
-      "Assist patient to resume desirable position",
-      "Explain procedure to patient and provide privacy",
-      "Control movement of the tongue with padded spatula",
-      "Put patient in a suitable position"
-    ],
-    "answer": "Assist patient to resume desirable position",
-    "explanation": "Choose a position appropriate to the patient's condition, the procedure and any prescribed restrictions. Maintain safety, airway access and comfort, and reassess tolerance."
-  },
-  {
-    "question": "After the hands-on part of complete mouth care, how should used equipment and waste be managed?",
-    "options": [
-      "Clean mouth thoroughly but gently i.e. from inside the cheeks, both sides of gums, tongue and palates changing swabs frequently",
-      "Dispose off used items, decontaminate, wash and sterilize instruments",
-      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
-      "Establish rapport (Refer to steps)"
-    ],
-    "answer": "Dispose off used items, decontaminate, wash and sterilize instruments",
-    "explanation": "Segregate waste and clean, decontaminate or store reusable equipment according to infection-prevention policy and the item's intended use."
-  },
-  {
-    "question": "Before proceeding with complete mouth care, what infection-prevention action is required at this point?",
-    "options": [
-      "Assess the patient’s mouth with the aid of a padded spatula for any abnormalities and removes dentures if any",
-      "Report to appropriate officer",
-      "Perform hand hygiene",
-      "Assist patient to resume desirable position"
-    ],
-    "answer": "Perform hand hygiene",
-    "explanation": "Hand hygiene reduces transmission of microorganisms between the patient, equipment and the care environment. Perform it at the indicated point and follow the required aseptic technique."
-  },
-  {
-    "question": "After completing this part of complete mouth care, what makes the clinical record useful for continuity of care?",
-    "options": [
-      "Prepare tray and take to the patient’s bedside",
-      "Clean mouth with water or any diluted mouth wash",
-      "Protect patient’s neck area with the jaconet cape/adult bib",
-      "Document procedure and findings (manual or electronic)"
-    ],
-    "answer": "Document procedure and findings (manual or electronic)",
-    "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
-  },
-  {
-    "question": "The nurse is carrying out complete mouth care. Which action best matches this part of the procedure?",
-    "options": [
-      "Report to appropriate officer",
-      "Take swab with forceps, dips into cleansing lotion and squeezes out excess",
-      "Perform hand hygiene",
-      "Use orange sticks to clean in between teeth"
-    ],
-    "answer": "Report to appropriate officer",
-    "explanation": "This action forms part of the procedure's required sequence. Perform it using the stated technique, assess the patient's response where relevant, and follow the applicable local policy."
-  }
-]
-  },
-
-  {
+    precautions: [],
+    references: [{ title: "Nursing and Midwifery Council Ghana — Registered General Nurse Procedures", url: "https://nmc.gov.gh/procedures/view/RGN" }]
+  }),
+  withStepQuiz({
     id: "rgn-006",
-    title: "Washing of a Patient",
+    title: "BED BATHING",
     category: "General Nursing (RGN)",
-    overview:
-      "Assistance with personal hygiene and bathing for a patient who requires nursing support.",
-    purpose: [
-      "Maintain personal hygiene.",
-      "Promote comfort and dignity.",
-      "Inspect the skin.",
-      "Reduce accumulation of sweat and contaminants."
-    ],
-    indications: [
-      "Patient unable to bathe independently.",
-      "Patient on bed rest.",
-      "Patient requiring assisted personal hygiene.",
-      "Patients needing regular skin assessment."
-    ],
+    types: ["N/A"],
+    overview: "This is the act of cleaning a patient who is bedridden and solely dependent on the nurse to maintain his/her self-care needs.",
+    purpose: [],
+    indications: [],
     equipment: [
-      "Basin and appropriate water",
-      "Washcloths",
-      "Towels",
-      "Clean clothing",
-      "Soap or appropriate cleansing product",
-      "Gloves where indicated"
+      "A trolley containing the following:",
+      "Top Shelf",
+      "Two basins or bowls",
+      "Sponge",
+      "Soap in a dish",
+      "Towel",
+      "Pomade",
+      "Bath thermometer",
+      "Bottom shelf",
+      "Two jugs of water (hot and cold)",
+      "Bucket or bowel for used water",
+      "Receptacle for soiled linen",
+      "Long mackintosh",
+      "Bath blanket or sheet",
+      "Clean bedsheet or linen",
+      "Patient’s clothing",
+      "Bed pan or urinal"
     ],
     steps: [
-      "Explain the procedure and obtain cooperation.",
-      "Provide privacy and maintain dignity.",
-      "Perform hand hygiene.",
-      "Prepare the equipment.",
-      "Ensure the environment is safe and warm.",
-      "Wash the patient systematically.",
-      "Observe the skin during washing.",
-      "Dry the patient thoroughly, especially skin folds.",
-      "Assist the patient into clean clothing.",
-      "Dispose of used materials and document relevant findings."
+      "Establish rapport with patient (Refer to steps)",
+      "Explain the procedure to the patient and provide privacy",
+      "Perform hand hygiene",
+      "Prepare and take trolley to bedside",
+      "Offer bedpan or urinal if required",
+      "Loosen and remove top bed clothes and arranges on a chair/bed table",
+      "Remove patient’s clothes and cover him/her with a bed linen",
+      "Protect bed and pillow with long mackintosh and a bath towel/blanket",
+      "Maintain individuality of patients by asking him/her if he/she would like soap on the face, temperature of water or if he/she will like to clean the genitalia himself/herself",
+      "Wash, rinse and dry patient’s face beginning from the inner to the outer canthus of each eye",
+      "Wash, rinse and dry the rest of the face, ears and neck",
+      "Wash, rinse and dry patient’s arm farther away from the nurse",
+      "Wash, rinse and dry patient’s arm near to the nurse",
+      "Wash, rinse and dry the chest and abdomen paying attention to the skin folds",
+      "Wash, rinse and dry the legs in the same way as the arms",
+      "Turn patient on his/her sides and wash, rinse and dry the back",
+      "Examine and treat pressure areas",
+      "Turn patient on his/her side, remove long mackintosh and change bottom linen",
+      "Clean patient’s genitalia (performs vulva toileting if a female)",
+      "Groom and dress patient in clean clothes",
+      "Make bed and reposition patient",
+      "Dispose off used items and decontaminate trolley and used linen",
+      "Perform hand hygiene",
+      "Document procedure and report findings (manual or electronic)"
     ],
-    precautions: [
-      "Maintain privacy and dignity.",
-      "Avoid exposing the patient unnecessarily.",
-      "Check water temperature appropriately.",
-      "Use safe patient-handling techniques.",
-      "Observe for skin abnormalities."
-    ],
-    videoUrl: "https://www.youtube.com/watch?v=zAjVep4soNc",
-    quiz: [
-      {
-        question: "What is a major purpose of patient washing?",
-        options: ["Maintain hygiene and comfort", "Increase skin contamination", "Reduce dignity", "Prevent assessment"],
-        answer: "Maintain hygiene and comfort"
-      },
-      {
-        question: "What should be maintained throughout the procedure?",
-        options: ["Privacy and dignity", "Unnecessary exposure", "Unsafe positioning", "Cold surroundings"],
-        answer: "Privacy and dignity"
-      },
-      {
-        question: "What should the nurse observe during washing?",
-        options: ["The patient's skin", "The ward television", "The patient's shoes", "The room decoration"],
-        answer: "The patient's skin"
-      },
-      {
-        question: "Why should skin folds be dried thoroughly?",
-        options: ["To reduce retained moisture", "To increase moisture", "To prevent inspection", "To increase contamination"],
-        answer: "To reduce retained moisture"
-      },
-      {
-        question: "What should be checked before washing?",
-        options: ["Water temperature", "Patient's favourite music", "The patient's occupation", "The ward timetable"],
-        answer: "Water temperature"
-      },
-      {
-        question: "Which practice promotes safety?",
-        options: ["Safe patient handling", "Leaving the patient unsupported", "Using excessive force", "Ignoring mobility limitations"],
-        answer: "Safe patient handling"
-      },
-      {
-        question: "What should be done after washing?",
-        options: ["Dry the patient and assist with clean clothing", "Leave the patient wet", "Leave equipment on the bed", "Remove all safety measures"],
-        answer: "Dry the patient and assist with clean clothing"
-      },
-      {
-        question: "What is another benefit of washing?",
-        options: ["Opportunity for skin assessment", "Avoidance of communication", "Increased skin breakdown", "Reduced comfort"],
-        answer: "Opportunity for skin assessment"
-      },
-      {
-        question: "What should be done before starting?",
-        options: ["Explain the procedure", "Leave the patient alone", "Remove all linen without explanation", "Begin without preparation"],
-        answer: "Explain the procedure"
-      },
-      {
-        question: "Which finding should be documented or reported?",
-        options: ["Significant skin abnormality", "Normal clean skin only", "Patient's favourite food", "Room decoration"],
-        answer: "Significant skin abnormality"
-      }
-    ]
-  },
-
+    precautions: [],
+    references: [{ title: "Nursing and Midwifery Council Ghana — Registered General Nurse Procedures", url: "https://nmc.gov.gh/procedures/view/RGN" }]
+  }),
   {
     id: "rgn-007",
     title: "Measurement of Vital Signs",
@@ -1520,106 +1225,81 @@ export const rgnBatch01: Procedure[] = [
       }
     ]
   },
-
-  {
+  withStepQuiz({
     id: "rgn-008",
-    title: "Urinary Catheterization",
+    title: "CATHETERIZATION OF A FEMALE PATIENT",
     category: "General Nursing (RGN)",
-    overview:
-      "Insertion and care of a urinary catheter within the nurse's scope, competence and applicable institutional protocol.",
-    purpose: [
-      "Provide appropriate urinary drainage when indicated.",
-      "Maintain patient comfort and safety.",
-      "Prevent avoidable catheter-associated complications.",
-      "Monitor urinary output when clinically required."
-    ],
-    indications: [
-      "Clinical indication for urinary drainage.",
-      "Urinary retention where catheterization is indicated.",
-      "Other approved indications according to clinical protocol."
-    ],
+    types: ["N/A"],
+    overview: "Urinary catheterization is the process of inserting a fine latex or silicon catheter into the urinary bladder to aid urine flow or keep the urethra open. This procedure is mostly done for patient/client who have urinary condition that affects their micturition. It is also passed for patients who are to undergo major surgical procedures. It is an invasive procedure which requires strict aseptic technique. There are two main types of catheters namely: indwelling (Two-way and three-way) and external (Condom).",
+    purpose: [],
+    indications: [],
     equipment: [
-      "Appropriate catheter",
-      "Sterile or appropriate catheterization equipment",
-      "Lubricant",
-      "Drainage system",
-      "Personal protective equipment",
-      "Waste receptacle"
+      "A trolley containing the following:",
+      "Top Shelf: A sterile pack or field containing the following:",
+      "Two gallipots",
+      "Three sterile drape, one sterile fenestrated drape",
+      "Sterile cotton wool swabs",
+      "Artery forceps",
+      "Kidney dish",
+      "Bottom Shelf : Various catheters of different sizes used",
+      "14\" and 16\" for female",
+      "18\" and 20\" for male",
+      "8\" and 10\" for children",
+      "Lubricant (e.g. K.Y. or xylocaine jelly)",
+      "Diluted antiseptic solution",
+      "Receiver for used swabs",
+      "Mackintosh and dressing towel",
+      "Urine bag",
+      "Sterile water",
+      "Specimen bottles if necessary",
+      "Hypo-allergic tape or plaster",
+      "Hand lamp if necessary",
+      "Sterile gloves",
+      "10-20mls syringe and needle",
+      "Spigot if necessary",
+      "Jug of warm water and bowel/bucket",
+      "Soap and towel",
+      "Bedpan",
+      "Intake and output chart"
     ],
     steps: [
-      "Verify the indication and relevant order or protocol.",
-      "Explain the procedure and obtain cooperation.",
-      "Provide privacy and appropriate positioning.",
-      "Perform hand hygiene and prepare equipment.",
-      "Use appropriate aseptic technique.",
-      "Prepare the urethral area according to protocol.",
-      "Insert the catheter using appropriate technique.",
-      "Secure and connect the drainage system appropriately.",
-      "Ensure free drainage and patient comfort.",
-      "Dispose of waste, perform hand hygiene and document the procedure."
+      "Review doctor/physician’s order for catheterization",
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Provide privacy",
+      "Perform hand hygiene",
+      "Prepare and send trolley to the bedside",
+      "Protect bed with mackintosh, dressing towel and ensure adequate lighting",
+      "Perform hand hygiene and wear gloves",
+      "Turn back sheet covering the patient or ask an assistant to do this if available or necessary",
+      "Instruct assistant to place patient in the supine position with knees flexed and legs separated",
+      "Place bedpan under patient and wash perineum thoroughly with soap and water",
+      "Clean patient and remove bedpan",
+      "Remove the gloves and perform hand hygiene",
+      "Open the packs of sterile dressing and catheter container and place the contents onto the sterile field",
+      "Drape the patient with a sterile towel and place the fenestrated drape over the perineum exposing the urinary meatus",
+      "Wear new sterile gloves",
+      "Use the non-dominant hand to part the labia and establishes a firm but gentle position",
+      "Pick a cotton wool ball soaked in antiseptic solution with forceps in the dominant hand and swab one side of the labia majora from top to bottom, uses a new ball for opposite side",
+      "Repeat procedure for the labia minora, uses another cotton wool ball to clean over the meatus",
+      "Lubricate catheter with K.Y. or xylocaine jelly",
+      "Retract the labia to fully expose the urinary meatus with your non-dominant hand",
+      "Insert catheter into the urethral orifice and then gently push it in an upward and backward direction for about 5-7.5cm (2-3inches) leaving the open end in the receiver between the patient’s thighs",
+      "Inflate the balloon of the catheter with the sterile water according to manufacturer’s direction",
+      "Collect a urine specimen if necessary and allows 20 – 30mls to flow into bottle without bottle touching the catheter",
+      "Connect catheter to urine bag",
+      "Hang urine bag to the bed and secure in position",
+      "Observe colour and note amount of urine",
+      "Remove drapes, mackintosh and dressing towel",
+      "Remove gloves and perform hand hygiene",
+      "Assist patient into a desirable position",
+      "Dispose off used items, decontaminate instruments and trolley",
+      "Perform hand hygiene",
+      "Document the procedure, urine output and any abnormalities in the nurses’ note, intake and output chart (manual or electronic)"
     ],
-    precautions: [
-      "Follow institutional catheterization protocol.",
-      "Maintain appropriate aseptic technique.",
-      "Do not force catheter insertion.",
-      "Use the correct catheter and equipment.",
-      "Monitor for complications and report abnormalities."
-    ],
-    videoUrl: "https://www.youtube.com/watch?v=N-uBKzqVt80",
-    quiz: [
-      {
-        question: "What is an important principle during urinary catheterization?",
-        options: ["Aseptic technique", "Unnecessary contamination", "Forceful insertion", "Ignoring patient privacy"],
-        answer: "Aseptic technique"
-      },
-      {
-        question: "What should be verified before catheterization?",
-        options: ["The indication and applicable order or protocol", "The patient's favourite food", "The patient's occupation", "The ward television"],
-        answer: "The indication and applicable order or protocol"
-      },
-      {
-        question: "Why should catheter insertion never be forced?",
-        options: ["To reduce risk of trauma", "To increase trauma", "To speed up every procedure", "To avoid documentation"],
-        answer: "To reduce risk of trauma"
-      },
-      {
-        question: "What should be maintained during the procedure?",
-        options: ["Patient privacy", "Unnecessary exposure", "Contamination", "Unsafe positioning"],
-        answer: "Patient privacy"
-      },
-      {
-        question: "What should the drainage system allow?",
-        options: ["Appropriate urine drainage", "Backflow whenever possible", "Disconnection without reason", "Contamination"],
-        answer: "Appropriate urine drainage"
-      },
-      {
-        question: "What should be monitored after catheterization?",
-        options: ["Patient comfort and complications", "The patient's occupation", "Room decoration", "Meal preference only"],
-        answer: "Patient comfort and complications"
-      },
-      {
-        question: "Which equipment should be appropriate for the procedure?",
-        options: ["The correct catheter and drainage system", "Random equipment", "Used equipment", "Unclean equipment"],
-        answer: "The correct catheter and drainage system"
-      },
-      {
-        question: "What should be documented?",
-        options: ["The procedure and relevant findings", "Only the patient's name", "Only the room number", "Nothing"],
-        answer: "The procedure and relevant findings"
-      },
-      {
-        question: "What should happen if an abnormality occurs?",
-        options: ["It should be assessed and reported appropriately", "It should be ignored", "The catheter should always be removed immediately", "Documentation should be avoided"],
-        answer: "It should be assessed and reported appropriately"
-      },
-      {
-        question: "What is one purpose of catheterization?",
-        options: ["Provide appropriate urinary drainage", "Cause urinary obstruction", "Increase infection risk", "Prevent urine monitoring"],
-        answer: "Provide appropriate urinary drainage"
-      }
-    ]
-  },
-
+    precautions: [],
+    references: [{ title: "Nursing and Midwifery Council Ghana — Registered General Nurse Procedures", url: "https://nmc.gov.gh/procedures/view/RGN" }]
+  }),
   {
     id: "rgn-009",
     title: "DRESSING OF SIMPLE WOUND (WITHOUT ASSISTANT)",
@@ -1981,7 +1661,6 @@ export const rgnBatch01: Procedure[] = [
   }
 ]
   },
-
   {
     id: "rgn-010",
     title: "Documentation and Recording of Patient Care",
@@ -2077,7 +1756,176 @@ export const rgnBatch01: Procedure[] = [
         answer: "Accuracy and confidentiality"
       }
     ]
-  }
+  },
+  withStepQuiz({
+    id: "rgn-075",
+    title: "ASSISTED BED BATH",
+    category: "General Nursing (RGN)",
+    types: ["N/A"],
+    overview: "This is the act of cleaning a patient who is confined to bed but has the ability to perform some aspects of self-care with assistance from a nurse.",
+    purpose: [],
+    indications: [],
+    equipment: [
+      "A trolley containing the following:",
+      "Top Shelf",
+      "Two basins or bowls",
+      "Sponge",
+      "Soap in a dish",
+      "Towel",
+      "Pomade",
+      "Bath thermometer",
+      "Face towel (if available)",
+      "Bottom shelf",
+      "Two jugs of water (hot and cold)",
+      "Bucket or bowel for used water",
+      "Receptacle for soiled linen",
+      "Long mackintosh",
+      "Bath blanket or sheet",
+      "Clean bedsheet or linen",
+      "Patient’s clothing",
+      "Bed pan or urinal",
+      "Bucket of tepid water",
+      "Small pale",
+      "Soap in a dish",
+      "Towel",
+      "Sponge",
+      "Chair or stool",
+      "Clean cloth or dress"
+    ],
+    steps: [
+      "Establish rapport and identify patient by name",
+      "Inform and explain procedure to patient",
+      "Assess patient ability to assist in the procedure",
+      "Prepare bathroom",
+      "Collect the necessary articles and arranges them for easy access",
+      "Send patient to the bathroom with the aid of an adaptive equipment e.g. wheelchair, zimna frame etc.",
+      "Maintain individuality of patient by asking him/her for the correct temperature of the water",
+      "Provide privacy",
+      "Assist patient to undress",
+      "Provide chair or stool in bathroom when necessary",
+      "Allow the patient to do as much for him/herself as condition permits",
+      "Complete the areas were patient needs assistance",
+      "Make bed and allow patient to assume a desired position",
+      "Collect toiletries and tidy up the bathroom",
+      "Perform hand hygiene",
+      "Document procedure and report any findings (manual/electronic)"
+    ],
+    precautions: [],
+    references: [{ title: "Nursing and Midwifery Council Ghana — Registered General Nurse Procedures", url: "https://nmc.gov.gh/procedures/view/RGN" }]
+  }),
+  withStepQuiz({
+    id: "rgn-076",
+    title: "ASSISTED BATHROOM BATHING",
+    category: "General Nursing (RGN)",
+    types: ["N/A"],
+    overview: "This is a type of bathing which is performed in the bathroom for a patient who is not confined to bed but weak or convalescing/recovering requiring some level of assistance from a nurse to maintain his/her self-care needs.",
+    purpose: [],
+    indications: [],
+    equipment: [
+      "Bucket of tepid water",
+      "Small pale",
+      "Soap in a dish",
+      "Towel",
+      "Sponge",
+      "Chair or stool",
+      "Clean cloth or dress"
+    ],
+    steps: [
+      "Establish rapport and identify patient by name",
+      "Inform and explain procedure to patient",
+      "Assess patient ability to assist in the procedure",
+      "Prepare bathroom",
+      "Collect the necessary articles and arranges them for easy access",
+      "Send patient to the bathroom with the aid of an adaptive equipment e.g. wheelchair, zimna frame etc.",
+      "Maintain individuality of patient by asking him/her for the correct temperature of the water",
+      "Provide privacy",
+      "Assist patient to undress",
+      "Provide chair or stool in bathroom when necessary",
+      "Allow the patient to do as much for him/herself as condition permits",
+      "Complete the areas were patient needs assistance",
+      "Make bed and allow patient to assume a desired position",
+      "Collect toiletries and tidy up the bathroom",
+      "Perform hand hygiene",
+      "Document procedure and report any findings (manual/electronic)"
+    ],
+    precautions: [],
+    references: [{ title: "Nursing and Midwifery Council Ghana — Registered General Nurse Procedures", url: "https://nmc.gov.gh/procedures/view/RGN" }]
+  }),
+  withStepQuiz({
+    id: "rgn-077",
+    title: "CATHETERIZATION OF A MALE PATIENT",
+    category: "General Nursing (RGN)",
+    types: ["N/A"],
+    overview: "Urinary catheterization is the process of inserting a fine latex or silicon catheter into the urinary bladder to aid urine flow or keep the urethra open. This procedure is mostly done for patient/client who have urinary condition that affects their micturition. It is also passed for patients who are to undergo major surgical procedures. It is an invasive procedure which requires strict aseptic technique. There are two main types of catheters namely: indwelling (Two-way and three-way) and external (Condom).",
+    purpose: [],
+    indications: [],
+    equipment: [
+      "A trolley containing the following:",
+      "Top Shelf: A sterile pack or field containing the following:",
+      "Two gallipots",
+      "Three sterile drape, one sterile fenestrated drape",
+      "Sterile cotton wool swabs",
+      "Artery forceps",
+      "Kidney dish",
+      "Bottom Shelf: Various catheters of different sizes used",
+      "14\" and 16\" for female",
+      "18\" and 20\" for male",
+      "8\" and 10\" for children",
+      "Lubricant (e.g. K.Y. or xylocaine jelly)",
+      "Diluted antiseptic solution",
+      "Receiver for used swabs",
+      "Mackintosh and dressing towel",
+      "Urine bag",
+      "Sterile water",
+      "Specimen bottles if necessary",
+      "Hypo-allergic tape or plaster",
+      "Light source",
+      "Sterile gloves",
+      "10-20mls syringe and needle",
+      "Spigot if necessary",
+      "Jug of warm water and bowel/bucket",
+      "Bedpan",
+      "Soap and towel",
+      "Intake and output chart (manual or electronic)",
+      "Condom catheter",
+      "Urinal"
+    ],
+    steps: [
+      "Review doctor/physician’s order for catheterization",
+      "Establish rapport with patient (Refer to steps)",
+      "Explain procedure to patient (Refer to steps)",
+      "Provide privacy",
+      "Perform hand hygiene",
+      "Prepare and send trolley to the bedside",
+      "Protect bed with mackintosh and dressing towel",
+      "Perform hand hygiene and wear gloves",
+      "Instruct assistant to place patient in the supine position with knees flexed and legs separated",
+      "Cover patient’s upper body with a top sheet and fold the down over to expose the penis",
+      "Place bedpan under patient, wash and dry perineal area thoroughly with soap and water",
+      "Where necessary retract the prepuce so that the urethral meatus is exposed",
+      "Clean patient and remove bedpan",
+      "Remove the gloves and perform hand hygiene",
+      "Open the packs of sterile dressing and catheter container and place the contents onto the sterile field",
+      "Drape with a sterile towel and place the fenestrated drape over the penis exposing the urinary meatus",
+      "Wear new sterile gloves",
+      "Clean the area with antiseptic lotion wiping with backward motion from the urethral meatus",
+      "To straighten the urethra, lift the penis to an angle of 90°",
+      "Lubricate catheter with K.Y. or xylocaine jelly",
+      "Insert the catheter gently for about 16cm or until urine begins to flow leaving the open end in the receiver between the patient’s thighs",
+      "Inflate the balloon of the catheter with the sterile water according to manufacturer’s direction when urine flows out",
+      "Collect a urine specimen if necessary and allows 20 – 30mls to flow into bottle without bottle touching the catheter",
+      "Note: Slight resistance will often be met as the catheter encounters the external sphincter, therefore paus briefly and encourage the patient to breathe in deeply resulting in sufficient relaxation for the catheter to be passed readily for the urine to flow",
+      "Connect catheter to urine bag",
+      "Hang urine bag to the bed and secure in position",
+      "Observe colour and note amount of urine",
+      "Remove drapes, mackintosh and dressing towel",
+      "Remove gloves and perform hand hygiene",
+      "Assist patient into a desirable position",
+      "Dispose off used items, decontaminate and trolley",
+      "Perform hand hygiene",
+      "Document the procedure, urine output and any abnormalities in the nurses’ note, intake and output chart (manual or electronic)"
+    ],
+    precautions: [],
+    references: [{ title: "Nursing and Midwifery Council Ghana — Registered General Nurse Procedures", url: "https://nmc.gov.gh/procedures/view/RGN" }]
+  })
 ];
-
-export default rgnBatch01;
