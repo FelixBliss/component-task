@@ -1200,3 +1200,6 @@ export function completeRgnProcedure(procedure: Procedure): Procedure {
     quiz: completeQuiz(completed, completed.quiz),
   };
 }
+export function buildRgnStepQuiz(procedure: Procedure): ProcedureQuizQuestion[] {
+  return buildQuiz(procedure);
+}
