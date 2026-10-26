@@ -3627,6 +3627,23 @@ html.dark-mode .procedure-card:hover {
   list-style: none;
 }
 
+.lumbar-puncture-equipment {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lumbar-puncture-equipment h3 {
+  margin: 0 0 10px;
+  color: var(--dark-green);
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.lumbar-puncture-equipment section + section {
+  margin-top: 2px;
+}
+
 .procedure-detail-section ul li {
   position: relative;
 
