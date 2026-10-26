@@ -18,7 +18,7 @@ export const rgnProcedures: Procedure[] = [
   ...rgnBatch07,
   ...rgnBatch08,
 ].sort((a, b) => {
-  const aNumber = Number(a.id.match(/(\\d+)$/)?.[1] ?? 0);
-  const bNumber = Number(b.id.match(/(\\d+)$/)?.[1] ?? 0);
+  const aNumber = Number(a.id.match(/(\d+)$/)?.[1] ?? 0);
+  const bNumber = Number(b.id.match(/(\d+)$/)?.[1] ?? 0);
   return aNumber - bNumber;
 });
