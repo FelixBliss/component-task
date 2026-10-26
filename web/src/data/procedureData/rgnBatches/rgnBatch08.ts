@@ -2819,5 +2819,197 @@ export const rgnBatch08: Procedure[] = [
         explanation: "The supplied step describes supporting the neck and knees to help maintain positioning; do not force flexion or compromise breathing."
       }
     ]
+  },
+  {
+    id: "rgn-079",
+    title: "PREPARATION AND CARE OF PATIENT DURING AND AFTER LUMBAR PUNCTURE",
+    category: "General Nursing (RGN)",
+    types: ["N/A"],
+    overview: "Nursing preparation, support and observation of a patient during and after a lumbar puncture.",
+    purpose: [],
+    indications: [],
+    equipment: [],
+    steps:     [
+          "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+          "Ensures the consent form has been signed.",
+          "Provides privacy and instructs the patient to void before the procedure.",
+          "Washes and dries hands.",
+          "Opens the equipment tray, taking care not to contaminate it.",
+          "Provides adequate lighting at the puncture site.",
+          "Assists the patient into the required position, i.e. lying or sitting, and supports him/her.",
+          "Continues to support, observe and reassure the patient throughout the procedure.",
+          "Wears sterile gloves and applies a sterile dressing when the needle is withdrawn, securing it firmly with adhesive tape.",
+          "Allows the patient to lie flat on the back and makes him/her comfortable.",
+          "Observes the patient for the next 24 hours for leakage from the puncture site, headache and backache.",
+          "Checks and records vital signs.",
+          "Thanks the patient, then washes and dries hands.",
+          "Documents the procedure."
+    ],
+    precautions: [
+      "Maintain privacy and use aseptic technique when handling the equipment and applying the dressing.",
+      "Support the patient in the required position and observe for puncture-site leakage, headache, backache and changes in vital signs.",
+      "Follow the responsible clinician's instructions and local policy for post-procedure positioning and monitoring."
+    ],
+    references: [
+      { title: "Nursing and Midwifery Council Ghana — Registered General Nurse Procedures", url: "https://nmc.gov.gh/procedures/view/RGN" },
+      { title: "RegisteredNurseRN — Lumbar Puncture Procedure (Spinal Tap) Nursing NCLEX CSF, Opening Pressure", url: "https://www.youtube.com/watch?v=NVAGiTtOZFg" }
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=NVAGiTtOZFg",
+    quiz:     [
+          {
+                "question": "Before beginning the lumbar puncture, what should the nurse do to gain the patient's cooperation?",
+                "options": [
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure.",
+                      "Washes and dries hands."
+                ],
+                "answer": "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                "explanation": "Explain the procedure and reassure the patient."
+          },
+          {
+                "question": "Which consent-related check is specified before the procedure?",
+                "options": [
+                      "Ensures the consent form has been signed.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Provides privacy and instructs the patient to void before the procedure.",
+                      "Washes and dries hands."
+                ],
+                "answer": "Ensures the consent form has been signed.",
+                "explanation": "The consent form must be signed."
+          },
+          {
+                "question": "What should the nurse do to preserve privacy and prepare the patient before the procedure?",
+                "options": [
+                      "Provides privacy and instructs the patient to void before the procedure.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Washes and dries hands."
+                ],
+                "answer": "Provides privacy and instructs the patient to void before the procedure.",
+                "explanation": "Provide privacy and instruct the patient to void before the procedure."
+          },
+          {
+                "question": "Which infection-prevention action is listed before handling the equipment?",
+                "options": [
+                      "Washes and dries hands.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Washes and dries hands.",
+                "explanation": "Wash and dry hands."
+          },
+          {
+                "question": "How should the nurse open the equipment tray?",
+                "options": [
+                      "Opens the equipment tray, taking care not to contaminate it.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Opens the equipment tray, taking care not to contaminate it.",
+                "explanation": "Open it carefully without contaminating it."
+          },
+          {
+                "question": "What environmental support is required at the puncture site?",
+                "options": [
+                      "Provides adequate lighting at the puncture site.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Provides adequate lighting at the puncture site.",
+                "explanation": "Provide adequate lighting."
+          },
+          {
+                "question": "What should the nurse do when positioning the patient?",
+                "options": [
+                      "Assists the patient into the required position, i.e. lying or sitting, and supports him/her.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Assists the patient into the required position, i.e. lying or sitting, and supports him/her.",
+                "explanation": "Assist the patient into the required lying or sitting position and support them."
+          },
+          {
+                "question": "What should the nurse continue doing throughout the procedure?",
+                "options": [
+                      "Continues to support, observe and reassure the patient throughout the procedure.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Continues to support, observe and reassure the patient throughout the procedure.",
+                "explanation": "Continue supporting, observing and reassuring the patient."
+          },
+          {
+                "question": "What dressing action is specified when the needle is withdrawn?",
+                "options": [
+                      "Wears sterile gloves and applies a sterile dressing when the needle is withdrawn, securing it firmly with adhesive tape.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Wears sterile gloves and applies a sterile dressing when the needle is withdrawn, securing it firmly with adhesive tape.",
+                "explanation": "Wear sterile gloves, apply a sterile dressing and secure it with adhesive tape."
+          },
+          {
+                "question": "How should the patient be positioned after the procedure according to the supplied task list?",
+                "options": [
+                      "Allows the patient to lie flat on the back and makes him/her comfortable.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Allows the patient to lie flat on the back and makes him/her comfortable.",
+                "explanation": "Allow the patient to lie flat on the back and make them comfortable."
+          },
+          {
+                "question": "What should the nurse observe for during the following 24 hours?",
+                "options": [
+                      "Observes the patient for the next 24 hours for leakage from the puncture site, headache and backache.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Observes the patient for the next 24 hours for leakage from the puncture site, headache and backache.",
+                "explanation": "Leakage from the puncture site, headache and backache."
+          },
+          {
+                "question": "Which observations should the nurse check and record?",
+                "options": [
+                      "Checks and records vital signs.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Checks and records vital signs.",
+                "explanation": "Vital signs."
+          },
+          {
+                "question": "What should the nurse do after completing patient care?",
+                "options": [
+                      "Thanks the patient, then washes and dries hands.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Thanks the patient, then washes and dries hands.",
+                "explanation": "Thank the patient and wash and dry hands."
+          },
+          {
+                "question": "What final record-keeping action is required?",
+                "options": [
+                      "Documents the procedure.",
+                      "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+                      "Ensures the consent form has been signed.",
+                      "Provides privacy and instructs the patient to void before the procedure."
+                ],
+                "answer": "Documents the procedure.",
+                "explanation": "Document the procedure."
+          }
+    ]
   }
 ];
