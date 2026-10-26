@@ -2710,8 +2710,7 @@ export const rgnBatch08: Procedure[] = [
     "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
-  },,
-
+  },
   {
     id: "rgn-075",
     title: "PREPARING PATIENT AND A TROLLEY FOR LUMBAR PUNCTURE",
