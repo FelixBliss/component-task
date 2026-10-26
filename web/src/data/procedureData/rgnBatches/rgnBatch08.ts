@@ -3012,4 +3012,173 @@ export const rgnBatch08: Procedure[] = [
           }
     ]
   }
+
+  {
+    id: "rgn-004",
+    title: "CHANGING BOTTOM SHEET (TOP TO BOTTOM)",
+    category: "General Nursing (RGN)",
+    types: ["Changing a bottom sheet from top to bottom"],
+    overview: "A procedure for changing a patient's bottom sheet from the top end of the bed to the bottom end while keeping the patient covered and supported.",
+    purpose: [],
+    indications: [
+      "When the bottom sheet needs changing while the patient remains in bed",
+      "When the top-to-bottom method is appropriate for the patient's condition and mobility"
+    ],
+    equipment: [
+      "A trolley with clean bed linen",
+      "Clean bottom sheet",
+      "Mackintosh or waterproof bed mat, if required",
+      "Draw sheet",
+      "Top sheet",
+      "Counterpane",
+      "Pillows and pillowcases",
+      "Chair or heart table",
+      "Dirty linen container",
+      "Screen, if required",
+      "Gloves, if indicated by risk assessment or local policy"
+    ],
+    steps: [
+      "Explains procedure to patient and provides privacy",
+      "Collects and arrange necessary items on a trolley",
+      "Arranges sheet in order of use on a chair or heart table",
+      "Loosens sheet at the sides and foot end of the bed",
+      "Removes counterpane by folding it into 3 and places it on chairs",
+      "Leaves patient covered with the top sheet",
+      "Holds top sheet over patient's shoulder with hand nearest to the head of bed",
+      "Moves patient to foot end of bed with help of an assistant and lets him/her lean/rest on a heart table with a pillow",
+      "Removes pillows on the head end of the bed and places on chair",
+      "Rolls the soiled sheets down from the top end of the bed to the patients buttocks",
+      "Makes top half foundation bed with clean sheets and arranges pillows at top half of bed",
+      "Helps patient back to position keeping him/her covered",
+      "One nurse lifts the patient's legs while the other removes the soiled bottom sheets and places it in the dirty linen container",
+      "Pulls down the clean bottom sheet, mackintosh and draw sheets",
+      "Both nurses pull the bottom sheet tight and tucks in using enveloped corners",
+      "Finishes making bed using top sheet and makes patient comfortable",
+      "Clears items and removes screen",
+      "Washes and dries hands",
+      "Document findings"
+    ],
+    precautions: [
+      "Maintain the patient's privacy, dignity and warmth throughout the procedure",
+      "Assess the patient's condition and ability to tolerate repositioning before starting",
+      "Use an assistant and safe moving and handling techniques",
+      "Protect the patient's head, limbs and attached devices during movement",
+      "Avoid shaking soiled linen and place it directly in the dirty linen container",
+      "Keep the bed stable and apply brakes before repositioning",
+      "Report and document relevant findings or any change in the patient's condition"
+    ],
+    quiz: [
+      q(
+        "What should the nurse do before beginning the top-to-bottom bottom-sheet change?",
+        [
+          "Explain the procedure to the patient and provide privacy",
+          "Roll the soiled sheets down to the patient's buttocks",
+          "Lift the patient's legs to remove the soiled sheet",
+          "Finish making the bed with the top sheet"
+        ],
+        "Explain the procedure to the patient and provide privacy",
+        "The procedure begins by explaining the planned care and protecting the patient's privacy."
+      ),
+      q(
+        "After collecting the necessary items, how should the nurse prepare the linen?",
+        [
+          "Arrange the sheets in order of use on a chair or heart table",
+          "Place all linen on the floor",
+          "Put the soiled linen on top of the clean linen",
+          "Remove the patient's pillows before arranging the items"
+        ],
+        "Arrange the sheets in order of use on a chair or heart table",
+        "Arranging linen in order of use supports an orderly procedure."
+      ),
+      q(
+        "What should be done with the counterpane?",
+        [
+          "Fold it into three and place it on a chair",
+          "Place it in the dirty linen container immediately",
+          "Leave it covering the patient's face",
+          "Place it under the mattress"
+        ],
+        "Fold it into three and place it on a chair",
+        "The checklist specifies folding the counterpane into three and placing it on a chair."
+      ),
+      q(
+        "How should the patient be covered while preparing to change the bottom sheet?",
+        [
+          "Leave the patient covered with the top sheet",
+          "Remove all covers and leave the patient exposed",
+          "Cover only the feet",
+          "Ask the patient to hold the soiled linen"
+        ],
+        "Leave the patient covered with the top sheet",
+        "Keeping the patient covered protects privacy and dignity."
+      ),
+      q(
+        "Where is the patient moved for the top-to-bottom method?",
+        [
+          "Toward the foot end of the bed with an assistant",
+          "To the floor beside the bed",
+          "To the head end without assistance",
+          "Out of the room without support"
+        ],
+        "Toward the foot end of the bed with an assistant",
+        "The provided steps specify moving the patient toward the foot end with an assistant and support from a heart table and pillow."
+      ),
+      q(
+        "How far are the soiled sheets rolled down before the clean top half is prepared?",
+        [
+          "To the patient's buttocks",
+          "Only to the patient's shoulders",
+          "Under the pillow",
+          "All the way onto the floor"
+        ],
+        "To the patient's buttocks",
+        "The soiled sheets are rolled from the top end down to the patient's buttocks."
+      ),
+      q(
+        "Which part of the foundation bed is made first with clean sheets?",
+        [
+          "The top half of the bed",
+          "Only the foot end",
+          "The floor beside the bed",
+          "The mattress underside"
+        ],
+        "The top half of the bed",
+        "The checklist specifies making the top half of the foundation bed and arranging the pillows there first."
+      ),
+      q(
+        "When are the soiled bottom sheets removed and placed in the dirty linen container?",
+        [
+          "While one nurse lifts the patient's legs and the other removes the linen",
+          "Before explaining the procedure",
+          "After leaving the patient unattended",
+          "After placing the soiled linen on the clean sheets"
+        ],
+        "While one nurse lifts the patient's legs and the other removes the linen",
+        "The supplied checklist describes coordinated assistance: one nurse lifts the legs while the other removes the soiled bottom sheets."
+      ),
+      q(
+        "How should the clean bottom sheet be secured?",
+        [
+          "Pull it tight and tuck it in using enveloped corners",
+          "Leave it loose and creased",
+          "Tie it around the patient's legs",
+          "Place it over the counterpane"
+        ],
+        "Pull it tight and tuck it in using enveloped corners",
+        "The checklist specifies pulling the bottom sheet tight and tucking it in with enveloped corners."
+      ),
+      q(
+        "What are the final actions in the procedure?",
+        [
+          "Finish making the bed, make the patient comfortable, clear items, remove the screen, wash and dry hands, and document findings",
+          "Leave the bed unfinished and omit documentation",
+          "Leave used linen on the bed and exit",
+          "Remove the patient's cover and leave the room"
+        ],
+        "Finish making the bed, make the patient comfortable, clear items, remove the screen, wash and dry hands, and document findings",
+        "The final steps include completing the bed, ensuring comfort, clearing equipment, hand hygiene and documentation."
+      )
+    ]
+  },
+
 ];
