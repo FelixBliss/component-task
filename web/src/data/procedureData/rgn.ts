@@ -7,6 +7,7 @@ import { rgnBatch06 } from "./rgnBatches/rgnBatch06";
 import { rgnBatch07 } from "./rgnBatches/rgnBatch07";
 import { rgnBatch08 } from "./rgnBatches/rgnBatch08";
 import type { Procedure } from "../procedureTypes";
+import { buildRgnStepQuiz } from "./rgnCompletion";
 
 export const rgnProcedures: Procedure[] = [
   ...rgnBatch01,
@@ -17,7 +18,10 @@ export const rgnProcedures: Procedure[] = [
   ...rgnBatch06,
   ...rgnBatch07,
   ...rgnBatch08,
-].sort((a, b) => {
+].map((procedure) => ({
+  ...procedure,
+  quiz: buildRgnStepQuiz(procedure),
+})).sort((a, b) => {
   const aNumber = Number(a.id.match(/(\d+)$/)?.[1] ?? 0);
   const bNumber = Number(b.id.match(/(\d+)$/)?.[1] ?? 0);
   return aNumber - bNumber;
