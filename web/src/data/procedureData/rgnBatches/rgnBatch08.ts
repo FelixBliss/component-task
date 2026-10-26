@@ -3181,7 +3181,6 @@ export const rgnBatch08: Procedure[] = [
       )
     ]
   },
-,
 
   {
     id: "rgn-080",
