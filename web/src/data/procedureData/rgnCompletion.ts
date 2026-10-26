@@ -1152,9 +1152,12 @@ function questionForStep(
     if (verbQuestions[verb]) return verbQuestions[verb];
   }
   const actionFocus = step.replace(/[.]+$/, "").replace(/^[A-Za-z]+(?:\s+|$)/, "").trim();
-  return actionFocus
-    ? `What should the nurse do regarding ${actionFocus.toLowerCase()} during ${title}?`
-    : `Which action is required during ${title} at this stage?`;
+  if (actionFocus) {
+    return `Which instruction correctly describes the step “${actionFocus}” in ${title}?`;
+  }
+  // Never emit a generic fallback. If a step cannot be converted into a
+  // meaningful step-specific question, fail validation visibly instead.
+  throw new Error(`Unable to generate a step-specific quiz question for ${title}: ${step}`);
 }
 
 function stepExplanation(step: string, procedureTitle: string): string {
