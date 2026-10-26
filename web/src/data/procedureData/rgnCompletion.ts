@@ -1056,71 +1056,71 @@ function questionForStep(
   if (/allow the patient|encourage the patient|assist the patient/.test(s))
     return `How should the nurse assist the patient while carrying out this stage of ${title}?`;
   if (/hot water bottle|side rail|bed rail/.test(s))
-    return \`Which bedside safety measure is required during \${title}?\`;
+    return `Which bedside safety measure is required during ${title}?`;
   if (/case notes|admission notes|medical record|treatment plan/.test(s))
-    return \`Which patient record or care-plan detail should guide the nurse during \${title}?\`;
+    return `Which patient record or care-plan detail should guide the nurse during ${title}?`;
   if (/cannula|intravenous fluid|iv fluid|infusion flow/.test(s))
-    return \`What should the nurse verify about the IV access or infusion during \${title}?\`;
+    return `What should the nurse verify about the IV access or infusion during ${title}?`;
   if (/personal and oral hygiene|mouth care|oral hygiene|teeth|tooth|mouth/.test(s))
-    return \`Which oral-care or personal-hygiene action is required during \${title}?\`;
+    return `Which oral-care or personal-hygiene action is required during ${title}?`;
   if (/abnormality|abnormal finding|deteriorat|condition changes/.test(s))
-    return \`What should the nurse do when an abnormal finding is identified during \${title}?\`;
+    return `What should the nurse do when an abnormal finding is identified during ${title}?`;
   if (/nutritional order|feeding order|diet order|nutrition/.test(s))
-    return \`What should guide the patient's nutrition during \${title}?\`;
+    return `What should guide the patient's nutrition during ${title}?`;
   if (/stoma|pouch|ostomy|deodorizing liquid|barrier cream/.test(s))
-    return \`Which stoma or pouch-care action is required at this stage of \${title}?\`;
+    return `Which stoma or pouch-care action is required at this stage of ${title}?`;
   if (/skin|pressure area|pressure point|moisturizing cream/.test(s))
-    return \`What skin assessment or protection is required during \${title}?\`;
+    return `What skin assessment or protection is required during ${title}?`;
   if (/trolley|equipment|articles|instruments|gallipot|basin|receiver/.test(s))
-    return \`Which equipment-preparation or handling action is specified for \${title}?\`;
+    return `Which equipment-preparation or handling action is specified for ${title}?`;
   if (/mackintosh|bed linen|bed clothes|pillow|bath towel|blanket/.test(s))
-    return \`How should the nurse protect the bed or linen during \${title}?\`;
+    return `How should the nurse protect the bed or linen during ${title}?`;
   if (/pour water|temperature of the water|tepid water|hot and cold water/.test(s))
-    return \`What water-related preparation is required during \${title}?\`;
+    return `What water-related preparation is required during ${title}?`;
   if (/respiration|respiratory rate|count respirations/.test(s))
-    return \`How should the nurse assess respiration during \${title}?\`;
+    return `How should the nurse assess respiration during ${title}?`;
   if (/baseline|expected values|compare findings/.test(s))
-    return \`How should the nurse interpret the findings collected during \${title}?\`;
+    return `How should the nurse interpret the findings collected during ${title}?`;
   if (/irrigat.*wound|wound.*saline/.test(s))
-    return \`What method or solution is specified for wound irrigation during \${title}?\`;
+    return `What method or solution is specified for wound irrigation during ${title}?`;
   if (/language|interpreter|understands the teaching|clarify/.test(s))
-    return \`How should the nurse check or support the patient's understanding during \${title}?\`;
+    return `How should the nurse check or support the patient's understanding during ${title}?`;
   if (/relative|significant other|family/.test(s))
-    return \`How should the nurse involve the patient's chosen support person during \${title}?\`;
+    return `How should the nurse involve the patient's chosen support person during ${title}?`;
   if (/ask questions|questions for clarity|express their fears/.test(s))
-    return \`How should the nurse respond to the patient's questions or concerns during \${title}?\`;
+    return `How should the nurse respond to the patient's questions or concerns during ${title}?`;
   if (/pamphlet|readable information|written information|source of information/.test(s))
-    return \`What learning material should be offered to support the patient during \${title}?\`;
+    return `What learning material should be offered to support the patient during ${title}?`;
   if (/level of awareness|knowledge of|what the patient knows|willingness to undergo/.test(s))
-    return \`What should the nurse assess about the patient's knowledge or readiness for \${title}?\`;
+    return `What should the nurse assess about the patient's knowledge or readiness for ${title}?`;
   if (/investigation|rationale|prognos|outcome of condition|management options/.test(s))
-    return \`What should the nurse explain about the patient's investigations or management during \${title}?\`;
+    return `What should the nurse explain about the patient's investigations or management during ${title}?`;
   if (/device|gadget|glucometer|clutch|spirometer/.test(s))
-    return \`How should the nurse teach the patient to use the relevant device during \${title}?\`;
+    return `How should the nurse teach the patient to use the relevant device during ${title}?`;
   if (/hospitalization|duration of stay|continuity of care|therapist|referral/.test(s))
-    return \`Which planning or referral action supports continuity of care during \${title}?\`;
+    return `Which planning or referral action supports continuity of care during ${title}?`;
   if (/thank the patient|thank patient|thank.*relative/.test(s))
-    return \`How should the nurse close the interaction after \${title}?\`;
+    return `How should the nurse close the interaction after ${title}?`;
   if (/transfer|send patient|wheelchair|walking frame|zimmer frame|adaptive equipment/.test(s))
-    return \`How should the patient be moved or supported safely during \${title}?\`;
+    return `How should the patient be moved or supported safely during ${title}?`;
   if (/chair or stool|bathroom/.test(s))
-    return \`What environmental preparation is required to support the patient during \${title}?\`;
+    return `What environmental preparation is required to support the patient during ${title}?`;
   if (/arrange.*within.*reach|within patient's reach/.test(s))
-    return \`How should the nurse arrange the required items for the patient during \${title}?\`;
+    return `How should the nurse arrange the required items for the patient during ${title}?`;
   if (/estimate|measure.*opening|measuring template/.test(s))
-    return \`What should be measured or estimated at this stage of \${title}?\`;
+    return `What should be measured or estimated at this stage of ${title}?`;
   if (/apply barrier|apply.*cream|apply.*lotion/.test(s))
-    return \`Which topical product should be applied at this stage of \${title}?\`;
+    return `Which topical product should be applied at this stage of ${title}?`;
   if (/cover.*stoma|cover.*site|swab/.test(s))
-    return \`How should the relevant site be protected while preparing for the next stage of \${title}?\`;
+    return `How should the relevant site be protected while preparing for the next stage of ${title}?`;
   if (/examine|inspect/.test(s))
-    return \`What should the nurse examine for during this stage of \${title}?\`;
+    return `What should the nurse examine for during this stage of ${title}?`;
   if (/maintain individuality|patient preference|patient's choice|correct temperature/.test(s))
-    return \`How should the nurse incorporate the patient's preference during \${title}?\`;
+    return `How should the nurse incorporate the patient's preference during ${title}?`;
   if (/complete the areas|areas.*needs assistance|assist.*areas/.test(s))
-    return \`How should the nurse provide assistance for the care needs the patient cannot complete independently?\`;
+    return `How should the nurse provide assistance for the care needs the patient cannot complete independently?`;
   if (/toiletries|tidy up|clean up/.test(s))
-    return \`What should be done with the care area and toiletries after \${title}?\`;
+    return `What should be done with the care area and toiletries after ${title}?`;
 
   const cleaned = step.replace(/[.]+$/, "").trim();
   const verb = cleaned.match(/^[A-Za-z]+/)?.[0]?.toLowerCase() ?? "";
