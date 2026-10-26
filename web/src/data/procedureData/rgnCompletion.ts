@@ -995,6 +995,10 @@ function questionForStep(
     return `Which instruction or record must be checked before proceeding with ${title}?`;
   if (/consent/.test(s))
     return `What consent-related action is required before or during ${title}?`;
+  if (/skeletal traction|traction weight|traction setup|pin site|pin-site|steinmann|neurovascular/.test(s))
+    return `What traction, pin-site, or neurovascular safety action is required during ${title}?`;
+  if (/bottom sheet|draw sheet|bed sheet|soiled linen|turn.*side|side to side|logroll/.test(s))
+    return `Which linen-changing or patient-turning action is required at this stage of ${title}?`;
   if (/explain.*procedure|inform.*patient|educat.*patient|teach.*patient/.test(s))
     return `What information should the nurse communicate to the patient during ${title}?`;
   if (/provide privacy|maintain privacy|privacy and dignity/.test(s))
