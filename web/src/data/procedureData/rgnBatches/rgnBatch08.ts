@@ -2710,5 +2710,115 @@ export const rgnBatch08: Procedure[] = [
     "explanation": "Document the assessment, care provided, patient response, relevant findings and escalation in a timely, factual manner using the approved record."
   }
 ],
-  },
+  },,
+
+  {
+    id: "rgn-075",
+    title: "PREPARING PATIENT AND A TROLLEY FOR LUMBAR PUNCTURE",
+    category: "General Nursing (RGN)",
+    types: ["N/A"],
+    overview: "Preparation of the patient and required equipment before a clinician performs a lumbar puncture.",
+    purpose: [],
+    indications: [],
+    equipment: [
+      "Top shelf: Sterile fenestrated drape and sterile gallipot with sterile cotton wool swabs",
+      "Top shelf: Sterile gallipot containing an antiseptic cleaning agent",
+      "Top shelf: Sterile dressing pack",
+      "Top shelf: Sterile gloves packs for the doctor and nurse, plus a pack of examination gloves",
+      "Top shelf: Face mask",
+      "Top shelf: Receiver for soiled swabs and receiver for used instruments",
+      "Top shelf: 2ml syringe for local anaesthetic agent",
+      "Top shelf: 18G or 20G spinal needle with stylet",
+      "Top shelf: Three-way stopcock, manometer, and adhesive strapping",
+      "Top shelf: 3 labelled specimen collection tubes with stoppers",
+      "Bottom shelf/additional items: Laboratory request forms",
+      "Bottom shelf/additional items: Light source (touch light)",
+      "Bottom shelf/additional items: Counter scissors",
+      "Bottom shelf/additional items: Vital signs tray"
+    ],
+    steps: [
+      "Wash and dry hands, and prepare the trolley with the required items.",
+      "Explain the procedure to the patient, ensure cooperation, and provide privacy.",
+      "Bring the trolley to the bedside and maintain privacy.",
+      "Wash and dry hands, then open the top shelf of the trolley.",
+      "Assist the patient to lie on his/her side at the edge of the bed, assuming the knee-chest or fetal position.",
+      "Place one hand behind the patient's neck and the other behind the knees to assist the patient in maintaining the proper position."
+    ],
+    precautions: [
+      "Follow the responsible clinician's instructions and local policy for patient positioning.",
+      "Support the patient without forcing neck or hip flexion, and ensure the position does not compromise breathing."
+    ],
+    references: [
+      { title: "Nursing and Midwifery Council Ghana — Registered General Nurse Procedures", url: "https://nmc.gov.gh/procedures/view/RGN" }
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=NVAGiTtOZFg",
+    quiz: [
+      {
+        question: "Which action begins preparation of the trolley?",
+        options: [
+          "Wash and dry hands, and prepare the trolley with the required items.",
+          "Bring the trolley to the bedside and maintain privacy.",
+          "Assist the patient to lie on his/her side at the edge of the bed, assuming the knee-chest or fetal position.",
+          "Explain the procedure to the patient, ensure cooperation, and provide privacy."
+        ],
+        answer: "Wash and dry hands, and prepare the trolley with the required items.",
+        explanation: "Hand hygiene and preparation of the required equipment are the first steps in the supplied procedure."
+      },
+      {
+        question: "What should the nurse do when preparing the patient?",
+        options: [
+          "Open the top shelf of the trolley before explaining anything.",
+          "Explain the procedure to the patient, ensure cooperation, and provide privacy.",
+          "Begin the lumbar puncture without speaking to the patient.",
+          "Ask the patient to stand at the bedside."
+        ],
+        answer: "Explain the procedure to the patient, ensure cooperation, and provide privacy.",
+        explanation: "Explaining the procedure and maintaining privacy support informed cooperation and dignity."
+      },
+      {
+        question: "Where should the prepared trolley be taken?",
+        options: [
+          "Leave it outside the clinical area.",
+          "Bring the trolley to the bedside and maintain privacy.",
+          "Place it in the corridor until the procedure is complete.",
+          "Move the patient away from the bed to reach the trolley."
+        ],
+        answer: "Bring the trolley to the bedside and maintain privacy.",
+        explanation: "The supplied procedure specifies bringing the trolley to the bedside while maintaining privacy."
+      },
+      {
+        question: "What should the nurse do before opening the trolley's top shelf?",
+        options: [
+          "Remove the specimen labels.",
+          "Assist the patient to stand.",
+          "Wash and dry hands, then open the top shelf of the trolley.",
+          "Discard the sterile equipment."
+        ],
+        answer: "Wash and dry hands, then open the top shelf of the trolley.",
+        explanation: "The stated step requires handwashing and drying before opening the trolley's top shelf."
+      },
+      {
+        question: "Which position is specified in the supplied procedure?",
+        options: [
+          "Prone in the centre of the bed.",
+          "Standing with the back bent.",
+          "Supine with the legs fully extended.",
+          "On the side at the edge of the bed in the knee-chest or fetal position."
+        ],
+        answer: "On the side at the edge of the bed in the knee-chest or fetal position.",
+        explanation: "The supplied procedure specifies side-lying at the edge of the bed in the knee-chest or fetal position."
+      },
+      {
+        question: "How should the nurse help the patient maintain the described position?",
+        options: [
+          "Place one hand behind the neck and the other behind the knees.",
+          "Pull the patient's head forward forcefully.",
+          "Leave the patient unsupported at the edge of the bed.",
+          "Hold the patient's arms above the head."
+        ],
+        answer: "Place one hand behind the neck and the other behind the knees.",
+        explanation: "The supplied step describes supporting the neck and knees to help maintain positioning; do not force flexion or compromise breathing."
+      }
+    ]
+  }
 ];
