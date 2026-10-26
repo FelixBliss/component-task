@@ -981,127 +981,146 @@ function getProfile(procedure: Procedure, kind: ProcedureKind): Procedure {
   };
 }
 
-function explanationFor(
-  procedure: Procedure,
-  question: ProcedureQuizQuestion
+function questionForStep(
+  procedureTitle: string,
+  step: string,
+  index: number
 ): string {
-  const supportingStep = procedure.steps.find((step) =>
-    step.toLowerCase().includes(question.answer.toLowerCase())
-  );
+  const s = step.toLowerCase();
+  const title = procedureTitle.toLowerCase();
 
-  if (supportingStep) {
-    return `This is correct because the procedure states: “${supportingStep}”`;
+  if (/confirm.*(patient identity|identity.*patient)|identify patient|identify the patient/.test(s))
+    return \`Before \${title}, which action verifies that care is being provided to the correct patient?\`;
+  if (/confirm.*(order|prescription)|review.*(order|prescription|case notes)/.test(s))
+    return \`Which instruction or record must be checked before proceeding with \${title}?\`;
+  if (/consent/.test(s))
+    return \`What consent-related action is required before or during \${title}?\`;
+  if (/explain.*procedure|inform.*patient|educat.*patient|teach.*patient/.test(s))
+    return \`What information should the nurse communicate to the patient during \${title}?\`;
+  if (/provide privacy|maintain privacy|privacy and dignity/.test(s))
+    return \`Which action protects the patient's privacy during \${title}?\`;
+  if (/establish rapport|reassure/.test(s))
+    return \`How should the nurse support the patient's cooperation during \${title}?\`;
+  if (/perform hand hygiene|wash and dry hands|handwashing/.test(s))
+    return \`Which infection-prevention action is specified at this stage of \${title}?\`;
+  if (/wear.*gloves|put on.*gloves|sterile gloves/.test(s))
+    return \`What hand protection is required at this stage of \${title}?\`;
+  if (/sterile field|sterile pack|open.*pack|aseptic technique/.test(s))
+    return \`How should the nurse maintain asepsis while preparing for \${title}?\`;
+  if (/position|place.*patient|turn.*patient|supine|prone|side-lying/.test(s))
+    return \`How should the patient be positioned for the relevant stage of \${title}?\`;
+  if (/assess.*(conscious|consciousness|responsiveness|gcs|level of awareness)/.test(s))
+    return \`Which assessment evaluates the patient's level of consciousness during \${title}?\`;
+  if (/vital signs|temperature, pulse|blood pressure|respiratory rate|oxygen saturation/.test(s))
+    return \`Which observations should the nurse check or record at this stage of \${title}?\`;
+  if (/observe.*(bleeding|drainage|wound|site)|inspect.*(wound|site|skin)|wound appearance/.test(s))
+    return \`What should the nurse inspect for when assessing the relevant site during \${title}?\`;
+  if (/pain|analgesia/.test(s))
+    return \`What pain-related action is required during \${title}?\`;
+  if (/administer.*medication|prescribed medication|prescribed drug|medication.*(route|dose)/.test(s))
+    return \`What must guide medication administration during \${title}?\`;
+  if (/catheter|urethra|urinary meatus|penis|labia|perineum/.test(s))
+    return \`Which catheterization or perineal-care action is specified at this stage of \${title}?\`;
+  if (/urine|urinary output|intake and output/.test(s))
+    return \`What urine or fluid-balance action should the nurse complete during \${title}?\`;
+  if (/specimen|sample|laboratory/.test(s))
+    return \`How should the nurse handle the specimen at this stage of \${title}?\`;
+  if (/drainage tube|drain.*(in situ|flow|patent)|tube.*drain/.test(s))
+    return \`What should the nurse check about the patient's drainage system during \${title}?\`;
+  if (/document|record|chart/.test(s))
+    return \`Which information must be documented after this stage of \${title}?\`;
+  if (/report|escalat|notify.*(doctor|clinician|team)|seek.*review/.test(s))
+    return \`Which finding or event must be reported or escalated during \${title}?\`;
+  if (/dispose|discard|decontaminat|used items|soiled linen|waste/.test(s))
+    return \`How should used equipment or waste be managed at the end of this stage of \${title}?\`;
+  if (/clean|wash|rinse|dry|antiseptic|cleanse/.test(s))
+    return \`What cleaning or skin-preparation action is required at this stage of \${title}?\`;
+  if (/dress|dressing|bandage|cover.*(wound|site)|sterile drape/.test(s))
+    return \`How should the relevant area be covered or dressed during \${title}?\`;
+  if (/secure|fix|tape|attach|connect/.test(s))
+    return \`What should be secured or connected at this stage of \${title}?\`;
+  if (/inflate.*balloon/.test(s))
+    return \`When and how should the catheter balloon be managed during \${title}?\`;
+  if (/lubricat/.test(s))
+    return \`What preparation is required immediately before insertion during \${title}?\`;
+  if (/insert|advance|introduce/.test(s))
+    return \`How should the item specified for insertion be introduced during \${title}?\`;
+  if (/collect.*(equipment|article|requirement)|prepare.*(trolley|equipment|articles)/.test(s))
+    return \`What preparation of equipment is required before continuing \${title}?\`;
+  if (/remove.*(gloves|drape|linen|clothes|accessories|denture|jewellery)/.test(s))
+    return \`Which item should be removed at this stage of \${title}?\`;
+  if (/comfort|comfortable|reposition|make.*bed/.test(s))
+    return \`What should the nurse do to restore the patient's comfort during or after \${title}?\`;
+  if (/measure|amount|colour|quantity/.test(s))
+    return \`What measurement or characteristic should the nurse check during \${title}?\`;
+  if (/allow the patient|encourage the patient|assist the patient/.test(s))
+    return \`How should the nurse assist the patient while carrying out this stage of \${title}?\`;
+
+  const cleaned = step.replace(/[.]+$/, "").trim();
+  const verb = cleaned.match(/^[A-Za-z]+/)?.[0]?.toLowerCase() ?? "";
+  const focus = cleaned.replace(/^[A-Za-z]+(?:\\s+|$)/, "").replace(/^(the|a|an)\\s+/i, "");
+  if (focus && verb) {
+    const verbQuestions: Record<string, string> = {
+      check: \`What should the nurse check during \${title}?\`,
+      ensure: \`Which condition must be ensured during \${title}?\`,
+      maintain: \`What must be maintained at this stage of \${title}?\`,
+      assist: \`What assistance is required at this stage of \${title}?\`,
+      collect: \`What should be collected at this stage of \${title}?\`,
+      prepare: \`What preparation is required at this stage of \${title}?\`,
+      apply: \`What should be applied at this stage of \${title}?\`,
+      keep: \`What should be kept as specified during \${title}?\`,
+      give: \`What should be given at this stage of \${title}?\`,
+      take: \`What should the nurse take or obtain at this stage of \${title}?\`,
+      place: \`What should be placed as specified during \${title}?\`,
+      use: \`Which item or method should be used at this stage of \${title}?\`,
+      remove: \`What should be removed at this stage of \${title}?\`,
+      note: \`What finding should be noted during \${title}?\`,
+      obtain: \`What should be obtained before continuing \${title}?\`,
+      encourage: \`What should the nurse encourage the patient to do during \${title}?\`,
+      allow: \`What should the patient be allowed to do during \${title}?\`,
+    };
+    if (verbQuestions[verb]) return verbQuestions[verb];
   }
+  return \`Which procedure-specific action is required at step \${index + 1} of \${title}?\`;
+}
 
-  return `This is correct because it is consistent with the documented purpose, safety checks and nursing considerations for ${procedure.title.toLowerCase()}.`;
+function stepExplanation(step: string, procedureTitle: string): string {
+  return \`This answer matches the procedure step: “\${step}” Follow the stated sequence, assess the patient's response where relevant, and use the facility's approved policy for any clinical variation.\`;
 }
 
 function uniqueOptions(options: string[], answer: string): string[] {
   return [...new Set([answer, ...options.filter((option) => option !== answer)])];
 }
 
-function buildQuiz(
-  procedure: Procedure
-): ProcedureQuizQuestion[] {
-  const kind = kindFor(procedure.title);
-  const content = CONTENT[kind];
-  const indications = meaningful(procedure.indications);
-  const equipment = meaningful(procedure.equipment);
+function buildQuiz(procedure: Procedure): ProcedureQuizQuestion[] {
   const steps = meaningful(procedure.steps);
-  const precautions = meaningful(procedure.precautions);
-  const indication = indications[0] ?? content.indications[0];
-  const item = equipment[0] ?? content.equipment[0];
-  const firstStep = steps[0] ?? "Review the order and patient identity";
-  const precaution = precautions[0] ?? content.precautions[0];
-  const documentation = content.documentation[0];
-  const focus = procedure.title.toLowerCase();
+  if (steps.length === 0) return [];
 
-  return [
-    {
-      question: `Which situation is an appropriate indication for ${focus}?`,
-      options: uniqueOptions(
-        [
-          indication,
-          "A routine task unrelated to the patient's care plan",
-          "A procedure the patient has clearly refused",
-          "A substitute for assessment and clinical judgment",
-        ],
-        indication
-      ),
-      answer: indication,
-      explanation: `The indication is supported by the procedure record: “${indication}”`,
-    },
-    {
-      question: `Which requirement is specifically relevant when preparing for ${focus}?`,
-      options: uniqueOptions(
-        [
-          item,
-          "Unlabelled equipment from another patient",
-          "A medication with an unknown expiry date",
-          "No documentation or observation materials",
-        ],
-        item
-      ),
-      answer: item,
-      explanation: `The requirements list includes “${item}”; equipment must be appropriate, clean and available before starting.`,
-    },
-    {
-      question: `Which action is an essential safety precaution during ${focus}?`,
-      options: uniqueOptions(
-        [
-          precaution,
-          "Skip identity checks to save time",
-          "Continue despite severe deterioration",
-          "Reuse contaminated single-use equipment",
-        ],
-        precaution
-      ),
-      answer: precaution,
-      explanation: `This protects the patient because the procedure specifically requires: “${precaution}”`,
-    },
-    {
-      question: `What should guide the start of ${focus}?`,
-      options: uniqueOptions(
-        [
-          firstStep,
-          "Begin without explaining the procedure",
-          "Document only after an adverse event",
-          "Ignore the current order and care plan",
-        ],
-        firstStep
-      ),
-      answer: firstStep,
-      explanation: `The first step establishes the correct order, assessment or preparation before later actions are performed.`,
-    },
-    {
-      question: `Which documentation action is most appropriate after ${focus}?`,
-      options: uniqueOptions(
-        [
-          documentation,
-          "Record nothing if the patient appears comfortable",
-          "Document only the equipment brand",
-          "Wait until an unrelated future admission",
-        ],
-        documentation
-      ),
-      answer: documentation,
-      explanation: `Accurate documentation communicates the care provided, patient response and any action needed after the procedure.`,
-    },
-  ];
+  return steps.map((step, index) => {
+    const distractors: string[] = [];
+    for (const offset of [3, 7, 11, 5, 13, 2, 17, 1]) {
+      const candidate = steps[(index + offset) % steps.length];
+      if (candidate !== step && !distractors.includes(candidate)) distractors.push(candidate);
+      if (distractors.length === 3) break;
+    }
+    const options = [...distractors];
+    options.splice(index % 4, 0, step);
+    return {
+      question: questionForStep(procedure.title, step, index),
+      options: uniqueOptions(options, step).slice(0, 4),
+      answer: step,
+      explanation: stepExplanation(step, procedure.title),
+    };
+  });
 }
 
 function completeQuiz(
   procedure: Procedure,
-  quiz: ProcedureQuizQuestion[] | undefined
+  _quiz: ProcedureQuizQuestion[] | undefined
 ): ProcedureQuizQuestion[] {
-  if (!quiz || quiz.length === 0) {
-    return buildQuiz(procedure);
-  }
-
-  return quiz.map((question) => ({
-    ...question,
-    explanation: question.explanation ?? explanationFor(procedure, question),
-  }));
+  // Always derive the quiz from the actual procedure steps. Existing generic
+  // indication/equipment/safety templates must never override step-aligned items.
+  return buildQuiz(procedure);
 }
 
 export function completeRgnProcedure(procedure: Procedure): Procedure {
