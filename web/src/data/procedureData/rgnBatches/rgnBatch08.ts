@@ -3019,6 +3019,7 @@ export const rgnBatch08: Procedure[] = [
     category: "General Nursing (RGN)",
     types: ["Changing a bottom sheet from top to bottom"],
     overview: "A procedure for changing a patient's bottom sheet from the top end of the bed to the bottom end while keeping the patient covered and supported.",
+    videoUrl: "https://www.youtube.com/watch?v=_ccfMLFNedQ",
     purpose: [],
     indications: [
       "When the bottom sheet needs changing while the patient remains in bed",
@@ -3177,6 +3178,321 @@ export const rgnBatch08: Procedure[] = [
         ],
         "Finish making the bed, make the patient comfortable, clear items, remove the screen, wash and dry hands, and document findings",
         "The final steps include completing the bed, ensuring comfort, clearing equipment, hand hygiene and documentation."
+      )
+    ]
+  },
+
+  {
+    id: "rgn-080",
+    title: "CHANGING BOTTOM SHEET OF PATIENT FROM SIDE TO SIDE",
+    category: "General Nursing (RGN)",
+    types: ["Changing a bottom sheet from side to side"],
+    overview: "Changing the bottom sheet of a patient who remains in bed by turning the patient safely from side to side.",
+    purpose: [],
+    videoUrl: "https://www.youtube.com/watch?v=dBpSoJ5yBLQ",
+    indications: [
+      "When the bottom sheet needs changing while the patient remains in bed",
+      "When the patient cannot safely get out of bed and can be turned with assistance"
+    ],
+    equipment: [
+      "Trolley with clean bed linen",
+      "Clean bottom sheet",
+      "Draw mackintosh",
+      "Draw sheet",
+      "Top sheet and counterpane",
+      "Two chairs or a heart table",
+      "Dirty linen receptacle",
+      "Screen, if required",
+      "Gloves, if indicated by risk assessment or local policy"
+    ],
+    steps: [
+      "Explains procedure to patient and ensures privacy.",
+      "Collects and arranges items on trolley.",
+      "Arranges sheets in order of use on chairs or a heart table.",
+      "Removes any equipment attached to the bed e.g. drip stand, side rails etc.",
+      "Loosens sheets at the side of bed, leaves patient with only one pillow and covers him/her with top sheet.",
+      "Assists the patient to turn to the side away from the clean portion of the linen supported by another nurse.",
+      "Rolls dirty bottom sheet under patient.",
+      "Covers the bed with a clean rolled bottom sheet halfway in the middle of the bed.",
+      "Puts on draw mackintosh and draw sheet across bed tucking in greater part nearest to the door.",
+      "Removes dirty bottom sheet and places it in a receptacle.",
+      "Pulls the bottom sheet tightly and tucks in.",
+      "Covers patient with top sheet and counterpane, leaves him comfortable.",
+      "Clears items and removes screen.",
+      "Washes and dries hand.",
+      "Documents findings and reports."
+    ],
+    precautions: [
+      "Maintain privacy, dignity and warmth throughout the procedure.",
+      "Assess the patient's ability to turn and use adequate assistance and safe moving-and-handling technique.",
+      "Check attached lines, drains and devices before moving the patient; do not disconnect essential equipment without an appropriate plan.",
+      "Keep the patient covered and avoid shaking soiled linen.",
+      "Perform hand hygiene and use personal protective equipment according to risk assessment and local policy."
+    ],
+    quiz: [
+      q(
+        "What should the nurse do before starting the bed-linen change?",
+        [
+          "Explain the procedure and ensure privacy",
+          "Remove the patient's cover and leave the room",
+          "Roll the dirty sheet under the patient immediately",
+          "Pull the patient without assistance"
+        ],
+        "Explain the procedure and ensure privacy",
+        "Explaining the procedure and maintaining privacy are the first listed actions."
+      ),
+      q(
+        "How should the clean linen be prepared?",
+        [
+          "Arrange it in order of use on chairs or a heart table",
+          "Place it on the floor",
+          "Mix it with the dirty linen",
+          "Put it under the patient before gathering equipment"
+        ],
+        "Arrange it in order of use on chairs or a heart table",
+        "Organizing linen in order of use supports an orderly procedure."
+      ),
+      q(
+        "What should the nurse check before moving the patient?",
+        [
+          "Attached equipment and lines, and how to protect them during the turn",
+          "Only the colour of the bed linen",
+          "Whether the dirty sheet can be reused",
+          "Whether the patient can hold the trolley"
+        ],
+        "Attached equipment and lines, and how to protect them during the turn",
+        "Lines and devices must be protected and should not be inadvertently pulled or disconnected."
+      ),
+      q(
+        "How should the patient be covered during the procedure?",
+        [
+          "With the top sheet",
+          "With no cover",
+          "Only with the dirty bottom sheet",
+          "With the draw mackintosh over the face"
+        ],
+        "With the top sheet",
+        "The supplied steps specify leaving the patient covered with the top sheet."
+      ),
+      q(
+        "How should the patient be turned to expose one side of the bed?",
+        [
+          "With support from another nurse",
+          "By pulling one arm alone",
+          "Without checking attached equipment",
+          "By asking the patient to stand on the mattress"
+        ],
+        "With support from another nurse",
+        "The patient is turned with support from another nurse."
+      ),
+      q(
+        "What is done with the dirty bottom sheet first?",
+        [
+          "Roll it under the patient",
+          "Place it over the clean linen",
+          "Shake it beside the bed",
+          "Leave it on the floor"
+        ],
+        "Roll it under the patient",
+        "The dirty sheet is rolled under the patient to allow the clean linen to be placed."
+      ),
+      q(
+        "Where is the clean bottom sheet placed initially?",
+        [
+          "Rolled halfway across the middle of the bed",
+          "On the floor beside the bed",
+          "Over the patient's head",
+          "Inside the dirty linen receptacle"
+        ],
+        "Rolled halfway across the middle of the bed",
+        "The clean bottom sheet is rolled and placed halfway across the middle of the bed."
+      ),
+      q(
+        "What is placed across the bed after the clean bottom sheet?",
+        [
+          "The draw mackintosh and draw sheet",
+          "The dirty counterpane only",
+          "The trolley",
+          "The patient's footwear"
+        ],
+        "The draw mackintosh and draw sheet",
+        "The supplied procedure places the draw mackintosh and draw sheet across the bed."
+      ),
+      q(
+        "How should the dirty bottom sheet be handled?",
+        [
+          "Remove it and place it in a receptacle",
+          "Shake it over the clean bed",
+          "Put it back on the patient",
+          "Leave it beneath the mattress"
+        ],
+        "Remove it and place it in a receptacle",
+        "Soiled linen should be placed directly into the designated receptacle without shaking."
+      ),
+      q(
+        "Which actions complete the procedure?",
+        [
+          "Make the patient comfortable, clear items, remove the screen, perform hand hygiene, document and report",
+          "Leave the patient uncovered and omit documentation",
+          "Leave used linen on the bed",
+          "Disconnect all equipment and leave"
+        ],
+        "Make the patient comfortable, clear items, remove the screen, perform hand hygiene, document and report",
+        "The final actions include comfort, clearing equipment, hand hygiene and documentation/reporting."
+      )
+    ]
+  },
+  {
+    id: "rgn-081",
+    title: "CARE OF THE PATIENT IN SKELETAL TRACTION",
+    category: "General Nursing (RGN)",
+    types: ["Care of a patient in skeletal traction", "Skeletal traction and pin-site care"],
+    overview: "Nursing care of a patient in skeletal traction, including traction-system checks, neurovascular assessment, pin-site observation and prescribed pin-site care.",
+    purpose: [],
+    videoUrl: "https://www.youtube.com/watch?v=tS8opjdcd5I",
+    indications: [
+      "For nursing care and observation of a patient who has skeletal traction applied",
+      "For ongoing assessment of traction alignment, neurovascular status and pin sites"
+    ],
+    equipment: [
+      "Sterile dressing set",
+      "Sterile cotton balls",
+      "Sterile gauze packs",
+      "Normal saline",
+      "Povidone-iodine, only if prescribed or required by local protocol",
+      "Prescribed pin-site dressing supplies and personal protective equipment"
+    ],
+    steps: [
+      "Explains procedure to patient and provides privacy.",
+      "Sets trolley with sterile dressing set, sterile cotton balls, sterile gauze packs, normal saline and povidone-iodine as prescribed or required by local protocol.",
+      "Washes hands, observes infection-prevention measures and inspects the traction apparatus.",
+      "Ensures patient is in the appropriate position, and checks that the head, knee and foot of bed are properly elevated and trapeze well padded.",
+      "Turns patient as a unit to prevent the neck from twisting, while maintaining prescribed alignment and traction.",
+      "If a skull or Steinmann's pin becomes dislodged, supports and protects the affected area, summons urgent medical/orthopaedic assistance and follows the emergency protocol. Do not remove or adjust traction weights unless directed by an authorized clinician or explicitly required by the approved emergency protocol.",
+      "Assesses neurovascular status of the affected extremity.",
+      "Inspects the pin site at the frequency required by local policy to detect infection early and provides pin-site care using aseptic technique.",
+      "Cleans crusts only as directed by the approved pin-site protocol, applies the prescribed dressing agent and loosely applies gauze around the pin site; obtains a specimen for laboratory investigation if purulent drainage is present and a sample is ordered or indicated by protocol.",
+      "Teaches the patient deep breathing and coughing exercises, flexion and extension of the affected limb's toes, and range-of-motion exercises of the unaffected limb as appropriate.",
+      "Thanks the patient for cooperation.",
+      "Washes and dries hands and documents the procedure, assessment findings, traction observations and any abnormalities; reports concerns promptly."
+    ],
+    precautions: [
+      "This procedure must be performed by trained staff according to the responsible clinician's orders and the facility's current traction and pin-site protocol.",
+      "Keep traction aligned and ensure weights hang freely; do not remove or alter weights unless specifically directed under an authorized plan or emergency protocol.",
+      "Report pin loosening or dislodgement, new bleeding or purulent drainage, fever, increasing pain, swelling, altered sensation, weakness, pallor, coolness or reduced distal pulses urgently.",
+      "Use aseptic technique for pin-site care. The antiseptic and frequency of care must follow the prescribed or locally approved protocol; do not assume povidone-iodine is appropriate for every pin site.",
+      "Support the patient and maintain prescribed spinal or limb alignment during repositioning; never twist the neck or pull against the traction apparatus."
+    ],
+    quiz: [
+      q(
+        "What should the nurse do before beginning care?",
+        [
+          "Explain the procedure, provide privacy and prepare the required equipment",
+          "Remove the traction weights routinely",
+          "Turn the patient without checking alignment",
+          "Begin pin-site care without hand hygiene"
+        ],
+        "Explain the procedure, provide privacy and prepare the required equipment",
+        "Preparation includes explanation, privacy, equipment readiness and infection-prevention measures."
+      ),
+      q(
+        "What should be inspected as part of routine skeletal-traction care?",
+        [
+          "The traction apparatus and the patient's alignment",
+          "Only the bed linen",
+          "Only the patient's meal tray",
+          "The room clock alone"
+        ],
+        "The traction apparatus and the patient's alignment",
+        "The traction system and alignment need ongoing observation to help maintain safe, effective traction."
+      ),
+      q(
+        "How should the patient be turned?",
+        [
+          "As a unit while maintaining prescribed alignment",
+          "By twisting the neck independently of the body",
+          "By pulling on the traction pin",
+          "By lifting the traction weights by hand"
+        ],
+        "As a unit while maintaining prescribed alignment",
+        "Turning as a unit helps prevent twisting and protects alignment."
+      ),
+      q(
+        "What is the priority if a skull or Steinmann's pin becomes dislodged?",
+        [
+          "Support and protect the affected area, summon urgent clinical assistance and follow the emergency protocol",
+          "Push the pin back in",
+          "Ignore it if the patient reports no pain",
+          "Independently change the traction setup"
+        ],
+        "Support and protect the affected area, summon urgent clinical assistance and follow the emergency protocol",
+        "Pin dislodgement is urgent; do not manipulate the pin or alter traction except under an authorized emergency plan."
+      ),
+      q(
+        "Which assessment is essential for the affected extremity?",
+        [
+          "Neurovascular status",
+          "Hair colour only",
+          "Appetite only",
+          "Visual acuity only"
+        ],
+        "Neurovascular status",
+        "Neurovascular assessment helps identify compromised circulation or nerve function promptly."
+      ),
+      q(
+        "What technique is required for pin-site care?",
+        [
+          "Aseptic technique and the approved local protocol",
+          "Routine non-sterile handling regardless of policy",
+          "Reusing contaminated gauze",
+          "Applying any antiseptic without checking the order or protocol"
+        ],
+        "Aseptic technique and the approved local protocol",
+        "Pin-site care must use aseptic technique and follow the prescribed or approved protocol."
+      ),
+      q(
+        "What should the nurse do if purulent drainage is seen at a pin site?",
+        [
+          "Report it promptly and obtain a specimen when ordered or indicated by protocol",
+          "Hide the finding in the documentation",
+          "Ignore it if the traction is still attached",
+          "Remove the pin independently"
+        ],
+        "Report it promptly and obtain a specimen when ordered or indicated by protocol",
+        "Purulent drainage may indicate infection and requires prompt reporting and appropriate investigation."
+      ),
+      q(
+        "Which finding should be reported urgently?",
+        [
+          "New pallor, coolness, altered sensation or reduced distal pulses",
+          "The patient asking a question",
+          "A clean and dry dressing with no new concerns",
+          "The patient cooperating with care"
+        ],
+        "New pallor, coolness, altered sensation or reduced distal pulses",
+        "These can indicate neurovascular compromise and require urgent assessment."
+      ),
+      q(
+        "When should traction weights be removed or adjusted?",
+        [
+          "Only when directed by an authorized clinician or required by an approved emergency protocol",
+          "Whenever the patient asks",
+          "During every bed change",
+          "Whenever the nurse needs more room"
+        ],
+        "Only when directed by an authorized clinician or required by an approved emergency protocol",
+        "Unplanned changes can interrupt traction and compromise alignment; follow authorized instructions and emergency policy."
+      ),
+      q(
+        "What should be included in documentation?",
+        [
+          "Care provided, neurovascular findings, traction and pin-site observations, abnormalities and reports made",
+          "Only the patient's name",
+          "Only the equipment list",
+          "Nothing if no dressing was changed"
+        ],
+        "Care provided, neurovascular findings, traction and pin-site observations, abnormalities and reports made",
+        "Documentation should record care, relevant assessment findings and escalation of abnormalities."
       )
     ]
   },
