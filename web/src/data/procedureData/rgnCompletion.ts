@@ -894,6 +894,22 @@ const COMPLETED_STEPS: Record<string, string[]> = {
     "Dispose of the blood bag and giving set according to policy and perform hand hygiene.",
     "Document the product, checks, times, observations, patient response and any escalation or adverse event.",
   ],
+  "rgn-079":   [
+    "Explains the procedure to the patient and reassures him/her to gain co-operation.",
+    "Ensures the consent form has been signed.",
+    "Provides privacy and instructs the patient to void before the procedure.",
+    "Washes and dries hands.",
+    "Opens the equipment tray, taking care not to contaminate it.",
+    "Provides adequate lighting at the puncture site.",
+    "Assists the patient into the required position, i.e. lying or sitting, and supports him/her.",
+    "Continues to support, observe and reassure the patient throughout the procedure.",
+    "Wears sterile gloves and applies a sterile dressing when the needle is withdrawn, securing it firmly with adhesive tape.",
+    "Allows the patient to lie flat on the back and makes him/her comfortable.",
+    "Observes the patient for the next 24 hours for leakage from the puncture site, headache and backache.",
+    "Checks and records vital signs.",
+    "Thanks the patient, then washes and dries hands.",
+    "Documents the procedure."
+  ],
 };
 
 function getReferences(kind: ProcedureKind): ProcedureReference[] {
@@ -911,17 +927,21 @@ function getProfile(procedure: Procedure, kind: ProcedureKind): Procedure {
   return {
     ...procedure,
     purpose:
-      meaningful(procedure.purpose).length > 0
-        ? meaningful(procedure.purpose)
-        : content.purpose,
+      procedure.id === "rgn-078" || procedure.id === "rgn-079"
+        ? []
+        : meaningful(procedure.purpose).length > 0
+          ? meaningful(procedure.purpose)
+          : content.purpose,
     indications:
       meaningful(procedure.indications).length > 0
         ? meaningful(procedure.indications)
         : content.indications,
     equipment:
-      meaningful(procedure.equipment).length > 0
-        ? meaningful(procedure.equipment)
-        : content.equipment,
+      procedure.id === "rgn-079"
+        ? []
+        : meaningful(procedure.equipment).length > 0
+          ? meaningful(procedure.equipment)
+          : content.equipment,
     steps: COMPLETED_STEPS[procedure.id] ?? meaningful(procedure.steps),
     precautions:
       meaningful(procedure.precautions).length > 0
