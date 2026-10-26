@@ -2712,7 +2712,7 @@ export const rgnBatch08: Procedure[] = [
 ],
   },
   {
-    id: "rgn-075",
+    id: "rgn-078",
     title: "PREPARING PATIENT AND A TROLLEY FOR LUMBAR PUNCTURE",
     category: "General Nursing (RGN)",
     types: ["N/A"],
