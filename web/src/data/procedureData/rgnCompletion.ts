@@ -990,102 +990,102 @@ function questionForStep(
   const title = procedureTitle.toLowerCase();
 
   if (/confirm.*(patient identity|identity.*patient)|identify patient|identify the patient/.test(s))
-    return \`Before \${title}, which action verifies that care is being provided to the correct patient?\`;
+    return `Before ${title}, which action verifies that care is being provided to the correct patient?`;
   if (/confirm.*(order|prescription)|review.*(order|prescription|case notes)/.test(s))
-    return \`Which instruction or record must be checked before proceeding with \${title}?\`;
+    return `Which instruction or record must be checked before proceeding with ${title}?`;
   if (/consent/.test(s))
-    return \`What consent-related action is required before or during \${title}?\`;
+    return `What consent-related action is required before or during ${title}?`;
   if (/explain.*procedure|inform.*patient|educat.*patient|teach.*patient/.test(s))
-    return \`What information should the nurse communicate to the patient during \${title}?\`;
+    return `What information should the nurse communicate to the patient during ${title}?`;
   if (/provide privacy|maintain privacy|privacy and dignity/.test(s))
-    return \`Which action protects the patient's privacy during \${title}?\`;
+    return `Which action protects the patient's privacy during ${title}?`;
   if (/establish rapport|reassure/.test(s))
-    return \`How should the nurse support the patient's cooperation during \${title}?\`;
+    return `How should the nurse support the patient's cooperation during ${title}?`;
   if (/perform hand hygiene|wash and dry hands|handwashing/.test(s))
-    return \`Which infection-prevention action is specified at this stage of \${title}?\`;
+    return `Which infection-prevention action is specified at this stage of ${title}?`;
   if (/wear.*gloves|put on.*gloves|sterile gloves/.test(s))
-    return \`What hand protection is required at this stage of \${title}?\`;
+    return `What hand protection is required at this stage of ${title}?`;
   if (/sterile field|sterile pack|open.*pack|aseptic technique/.test(s))
-    return \`How should the nurse maintain asepsis while preparing for \${title}?\`;
+    return `How should the nurse maintain asepsis while preparing for ${title}?`;
   if (/position|place.*patient|turn.*patient|supine|prone|side-lying/.test(s))
-    return \`How should the patient be positioned for the relevant stage of \${title}?\`;
+    return `How should the patient be positioned for the relevant stage of ${title}?`;
   if (/assess.*(conscious|consciousness|responsiveness|gcs|level of awareness)/.test(s))
-    return \`Which assessment evaluates the patient's level of consciousness during \${title}?\`;
+    return `Which assessment evaluates the patient's level of consciousness during ${title}?`;
   if (/vital signs|temperature, pulse|blood pressure|respiratory rate|oxygen saturation/.test(s))
-    return \`Which observations should the nurse check or record at this stage of \${title}?\`;
+    return `Which observations should the nurse check or record at this stage of ${title}?`;
   if (/observe.*(bleeding|drainage|wound|site)|inspect.*(wound|site|skin)|wound appearance/.test(s))
-    return \`What should the nurse inspect for when assessing the relevant site during \${title}?\`;
+    return `What should the nurse inspect for when assessing the relevant site during ${title}?`;
   if (/pain|analgesia/.test(s))
-    return \`What pain-related action is required during \${title}?\`;
+    return `What pain-related action is required during ${title}?`;
   if (/administer.*medication|prescribed medication|prescribed drug|medication.*(route|dose)/.test(s))
-    return \`What must guide medication administration during \${title}?\`;
+    return `What must guide medication administration during ${title}?`;
   if (/catheter|urethra|urinary meatus|penis|labia|perineum/.test(s))
-    return \`Which catheterization or perineal-care action is specified at this stage of \${title}?\`;
+    return `Which catheterization or perineal-care action is specified at this stage of ${title}?`;
   if (/urine|urinary output|intake and output/.test(s))
-    return \`What urine or fluid-balance action should the nurse complete during \${title}?\`;
+    return `What urine or fluid-balance action should the nurse complete during ${title}?`;
   if (/specimen|sample|laboratory/.test(s))
-    return \`How should the nurse handle the specimen at this stage of \${title}?\`;
+    return `How should the nurse handle the specimen at this stage of ${title}?`;
   if (/drainage tube|drain.*(in situ|flow|patent)|tube.*drain/.test(s))
-    return \`What should the nurse check about the patient's drainage system during \${title}?\`;
+    return `What should the nurse check about the patient's drainage system during ${title}?`;
   if (/document|record|chart/.test(s))
-    return \`Which information must be documented after this stage of \${title}?\`;
+    return `Which information must be documented after this stage of ${title}?`;
   if (/report|escalat|notify.*(doctor|clinician|team)|seek.*review/.test(s))
-    return \`Which finding or event must be reported or escalated during \${title}?\`;
+    return `Which finding or event must be reported or escalated during ${title}?`;
   if (/dispose|discard|decontaminat|used items|soiled linen|waste/.test(s))
-    return \`How should used equipment or waste be managed at the end of this stage of \${title}?\`;
+    return `How should used equipment or waste be managed at the end of this stage of ${title}?`;
   if (/clean|wash|rinse|dry|antiseptic|cleanse/.test(s))
-    return \`What cleaning or skin-preparation action is required at this stage of \${title}?\`;
+    return `What cleaning or skin-preparation action is required at this stage of ${title}?`;
   if (/dress|dressing|bandage|cover.*(wound|site)|sterile drape/.test(s))
-    return \`How should the relevant area be covered or dressed during \${title}?\`;
+    return `How should the relevant area be covered or dressed during ${title}?`;
   if (/secure|fix|tape|attach|connect/.test(s))
-    return \`What should be secured or connected at this stage of \${title}?\`;
+    return `What should be secured or connected at this stage of ${title}?`;
   if (/inflate.*balloon/.test(s))
-    return \`When and how should the catheter balloon be managed during \${title}?\`;
+    return `When and how should the catheter balloon be managed during ${title}?`;
   if (/lubricat/.test(s))
-    return \`What preparation is required immediately before insertion during \${title}?\`;
+    return `What preparation is required immediately before insertion during ${title}?`;
   if (/insert|advance|introduce/.test(s))
-    return \`How should the item specified for insertion be introduced during \${title}?\`;
+    return `How should the item specified for insertion be introduced during ${title}?`;
   if (/collect.*(equipment|article|requirement)|prepare.*(trolley|equipment|articles)/.test(s))
-    return \`What preparation of equipment is required before continuing \${title}?\`;
+    return `What preparation of equipment is required before continuing ${title}?`;
   if (/remove.*(gloves|drape|linen|clothes|accessories|denture|jewellery)/.test(s))
-    return \`Which item should be removed at this stage of \${title}?\`;
+    return `Which item should be removed at this stage of ${title}?`;
   if (/comfort|comfortable|reposition|make.*bed/.test(s))
-    return \`What should the nurse do to restore the patient's comfort during or after \${title}?\`;
+    return `What should the nurse do to restore the patient's comfort during or after ${title}?`;
   if (/measure|amount|colour|quantity/.test(s))
-    return \`What measurement or characteristic should the nurse check during \${title}?\`;
+    return `What measurement or characteristic should the nurse check during ${title}?`;
   if (/allow the patient|encourage the patient|assist the patient/.test(s))
-    return \`How should the nurse assist the patient while carrying out this stage of \${title}?\`;
+    return `How should the nurse assist the patient while carrying out this stage of ${title}?`;
 
   const cleaned = step.replace(/[.]+$/, "").trim();
   const verb = cleaned.match(/^[A-Za-z]+/)?.[0]?.toLowerCase() ?? "";
-  const focus = cleaned.replace(/^[A-Za-z]+(?:\\s+|$)/, "").replace(/^(the|a|an)\\s+/i, "");
+  const focus = cleaned.replace(/^[A-Za-z]+(?:\s+|$)/, "").replace(/^(the|a|an)\s+/i, "");
   if (focus && verb) {
     const verbQuestions: Record<string, string> = {
-      check: \`What should the nurse check during \${title}?\`,
-      ensure: \`Which condition must be ensured during \${title}?\`,
-      maintain: \`What must be maintained at this stage of \${title}?\`,
-      assist: \`What assistance is required at this stage of \${title}?\`,
-      collect: \`What should be collected at this stage of \${title}?\`,
-      prepare: \`What preparation is required at this stage of \${title}?\`,
-      apply: \`What should be applied at this stage of \${title}?\`,
-      keep: \`What should be kept as specified during \${title}?\`,
-      give: \`What should be given at this stage of \${title}?\`,
-      take: \`What should the nurse take or obtain at this stage of \${title}?\`,
-      place: \`What should be placed as specified during \${title}?\`,
-      use: \`Which item or method should be used at this stage of \${title}?\`,
-      remove: \`What should be removed at this stage of \${title}?\`,
-      note: \`What finding should be noted during \${title}?\`,
-      obtain: \`What should be obtained before continuing \${title}?\`,
-      encourage: \`What should the nurse encourage the patient to do during \${title}?\`,
-      allow: \`What should the patient be allowed to do during \${title}?\`,
+      check: `What should the nurse check during ${title}?`,
+      ensure: `Which condition must be ensured during ${title}?`,
+      maintain: `What must be maintained at this stage of ${title}?`,
+      assist: `What assistance is required at this stage of ${title}?`,
+      collect: `What should be collected at this stage of ${title}?`,
+      prepare: `What preparation is required at this stage of ${title}?`,
+      apply: `What should be applied at this stage of ${title}?`,
+      keep: `What should be kept as specified during ${title}?`,
+      give: `What should be given at this stage of ${title}?`,
+      take: `What should the nurse take or obtain at this stage of ${title}?`,
+      place: `What should be placed as specified during ${title}?`,
+      use: `Which item or method should be used at this stage of ${title}?`,
+      remove: `What should be removed at this stage of ${title}?`,
+      note: `What finding should be noted during ${title}?`,
+      obtain: `What should be obtained before continuing ${title}?`,
+      encourage: `What should the nurse encourage the patient to do during ${title}?`,
+      allow: `What should the patient be allowed to do during ${title}?`,
     };
     if (verbQuestions[verb]) return verbQuestions[verb];
   }
-  return \`Which procedure-specific action is required at step \${index + 1} of \${title}?\`;
+  return `Which procedure-specific action is required at step ${index + 1} of ${title}?`;
 }
 
 function stepExplanation(step: string, procedureTitle: string): string {
-  return \`This answer matches the procedure step: “\${step}” Follow the stated sequence, assess the patient's response where relevant, and use the facility's approved policy for any clinical variation.\`;
+  return `For ${procedureTitle.toLowerCase()}, this answer matches the procedure step: “${step}” Follow the stated sequence, assess the patient's response where relevant, and use the facility's approved policy for any clinical variation.`;
 }
 
 function uniqueOptions(options: string[], answer: string): string[] {
