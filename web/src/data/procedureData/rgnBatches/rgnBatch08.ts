@@ -3014,7 +3014,7 @@ export const rgnBatch08: Procedure[] = [
   }
 
   {
-    id: "rgn-080",
+    id: "rgn-004",
     title: "CHANGING BOTTOM SHEET (TOP TO BOTTOM)",
     category: "General Nursing (RGN)",
     types: ["Changing a bottom sheet from top to bottom"],
