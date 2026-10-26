@@ -919,7 +919,20 @@ export default function ProcedureDetails({
             </details>
             <details className="procedure-detail-section procedure-collapsible-section">
               <summary className="procedure-section-summary"><h2>Requirements</h2></summary>
-              <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
+              {procedure.id === "rgn-078" ? (
+                <div className="lumbar-puncture-equipment">
+                  <section>
+                    <h3>Top shelf</h3>
+                    <ul>{procedure.equipment.filter((item) => item.startsWith("Top shelf: ")).map((item) => <li key={item}>{item.slice("Top shelf: ".length)}</li>)}</ul>
+                  </section>
+                  <section>
+                    <h3>Bottom shelf / additional items</h3>
+                    <ul>{procedure.equipment.filter((item) => item.startsWith("Bottom shelf/additional items: ")).map((item) => <li key={item}>{item.slice("Bottom shelf/additional items: ".length)}</li>)}</ul>
+                  </section>
+                </div>
+              ) : (
+                <ul>{procedure.equipment.map((item, index) => <li key={index}>{item}</li>)}</ul>
+              )}
             </details>
           </div>
 
