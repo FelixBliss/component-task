@@ -3019,6 +3019,7 @@ export const rgnBatch08: Procedure[] = [
     category: "General Nursing (RGN)",
     types: ["Changing a bottom sheet from top to bottom"],
     overview: "A procedure for changing a patient's bottom sheet from the top end of the bed to the bottom end while keeping the patient covered and supported.",
+    videoUrl: "https://www.youtube.com/watch?v=_ccfMLFNedQ",
     purpose: [],
     indications: [
       "When the bottom sheet needs changing while the patient remains in bed",
