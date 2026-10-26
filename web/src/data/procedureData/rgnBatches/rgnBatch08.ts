@@ -3011,7 +3011,7 @@ export const rgnBatch08: Procedure[] = [
                 "explanation": "Document the procedure."
           }
     ]
-  }
+  },
 
   {
     id: "rgn-004",
