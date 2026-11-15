@@ -721,6 +721,7 @@ const PLACEHOLDERS = new Set([
   "manual",
   "digital",
   "automatic",
+  "ward",
 ]);
 
 function meaningful(items: string[] | undefined): string[] {
