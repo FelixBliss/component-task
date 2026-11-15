@@ -718,6 +718,9 @@ const PLACEHOLDERS = new Set([
   "to be determined",
   "information unavailable",
   "coming soon",
+  "manual",
+  "digital",
+  "automatic",
 ]);
 
 function meaningful(items: string[] | undefined): string[] {
